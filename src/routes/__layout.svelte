@@ -62,7 +62,7 @@
 		console.log('deselected');
 	}
 
-	import PageTransition from '$lib/components/PageTransition.svelte';
+	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	export let key;
 </script>
 
@@ -71,13 +71,13 @@
 		<div class="main_content" on:click={close_sidebar}>
 			<div class="header_blue_bar" />
 			<div class="top_header_container">
-				
 				<div class="top_header_container_items">
-					<div class="header_logo_container">
-						<img class="header_logo" src="/images/tagaro-logo.png" alt="" />
-					</div>
-					<nav class="desktop">
-						<div class="main_navbar">
+					<img class="header_logo" src="/images/tagaro-logo.png" alt="" />
+					<!-- <div class="header_logo_container">
+						
+					</div> -->
+					<div class="desktop header_center_alignment">
+						<nav class="main_navbar">
 							{#each Object.entries(navbar_elements) as pair}
 								<div class="selectable_element">
 									{#if pair[1] instanceof Object}
@@ -139,14 +139,9 @@
 									{/if}
 								</div>
 							{/each}
-						</div>
-					</nav>
-					<img
-						class="desktop"
-						style="margin-left: 30px;"
-						src="/images/autorisiert_sky.png"
-						alt=""
-					/>
+						</nav>
+						<img style="margin-left: 30px;" src="/images/autorisiert_sky.png" alt="" />
+					</div>
 				</div>
 			</div>
 
@@ -251,6 +246,7 @@
 		min-width: 100vw;
 	}
 	.top_header_container_items {
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: left;
@@ -287,15 +283,11 @@
 		background: linear-gradient(to right, rgb(57, 42, 109), rgb(0, 90, 143));
 		transition-duration: 300ms;
 	}
-	.header_logo_container {
-		position: relative;
-		min-width: 140px;
-		min-height: 5px;
-	}
+
 	.header_logo {
 		position: absolute;
-		left: 70px;
-		bottom: -70px;
+		left: max(calc(25vw - 140px), 20px);
+		top: 0px;
 	}
 
 	.mobile_selector {
@@ -313,7 +305,10 @@
 		flex-direction: row;
 		justify-content: left;
 		margin: 0;
+	}
+	.header_center_alignment {
 		padding-top: calc(max(min(calc(40vh - 11vw), 23vh), 100px) / 2 - 20px);
+		display: flex;
 	}
 	.selectable_element {
 		display: flex;
@@ -377,8 +372,10 @@
 	.side_image {
 		width: 15px;
 	}
-
-	@media screen and (min-width: 800px) {
+	.desktop {
+		visibility: hidden;
+	}
+	@media screen and (min-width: 960px) {
 		.desktop {
 			visibility: visible;
 		}

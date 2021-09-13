@@ -40,7 +40,7 @@
 		mobile_slider_style = 'right:0vw';
 		console.log('close');
 	}
-	import PageTransition from '$lib/components/PageTransition.svelte';
+	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	export let key;
 </script>
 
