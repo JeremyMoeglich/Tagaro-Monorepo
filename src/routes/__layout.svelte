@@ -307,7 +307,7 @@
 		margin: 0;
 	}
 	.header_center_alignment {
-		padding-top: calc(max(min(calc(40vh - 11vw), 23vh), 100px) / 2 - 20px);
+		padding-top: calc(max(min(calc(40vh - 11vw), 23vh), 100px) / 2 - 30px);
 		display: flex;
 	}
 	.selectable_element {
@@ -375,7 +375,7 @@
 	.desktop {
 		visibility: hidden;
 	}
-	@media screen and (min-width: 960px) {
+	@media screen and (min-width: 1300px) {
 		.desktop {
 			visibility: visible;
 		}

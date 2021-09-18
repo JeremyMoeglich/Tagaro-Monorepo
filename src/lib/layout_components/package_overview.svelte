@@ -37,4 +37,7 @@
 		content: '+';
 		padding-right: 5px;
 	}
+	.image span img {
+		
+	}
 </style>
