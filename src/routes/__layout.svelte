@@ -30,6 +30,7 @@
 
 	let navbar_elements = {
 		Startseite: '/',
+		"Test": "/test",
 		'Sky Angebote': {
 			index: '/sky_angebote',
 			'Sky Sport': '/sky_angebote/sport',
@@ -69,6 +70,9 @@
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
+			<div class="trustami_container">
+
+			</div>
 			<div class="header_blue_bar" />
 			<div class="top_header_container">
 				<div class="top_header_container_items">
@@ -211,7 +215,11 @@
 	* {
 		font-family: 'Oxygen', sans-serif;
 	}
-
+	.trustami_container {
+		position: fixed;
+		right: 0px;
+		bottom: 20vh;
+	}
 	.context_menu {
 		position: absolute;
 		background: linear-gradient(to right, rgb(197, 194, 206), rgb(212, 197, 207));
