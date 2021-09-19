@@ -6,7 +6,10 @@
 	import EntertainmentPlusOverview from '$lib/site_components/packages/entertainment_plus_overview.svelte';
 	import SportOverview from '$lib/site_components/packages/sport_overview.svelte';
 	import LineSpacer from '$lib/site_components/line-spacer.svelte';
+	import EmptySpacer from '$lib/site_components/empty-spacer.svelte';
+	import PackageTable from '$lib/site_components/package_table.svelte';
 </script>
+
 <LineSpacer />
 <h1 class="blue_gradient_text centered_text">Alle Sky Pakete flexibel buchbar</h1>
 <p class="styled_p centered_text">
@@ -25,7 +28,8 @@
 <EntertainmentPlusOverview />
 <LineSpacer />
 <DaznOverview />
-<LineSpacer />
+<EmptySpacer />
+<PackageTable />
 
 <style>
 	.blue_gradient_text {
@@ -39,5 +43,6 @@
 	}
 	.styled_p {
 		line-height: 30px;
+		font-size: 18px;
 	}
 </style>

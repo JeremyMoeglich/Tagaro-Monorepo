@@ -142,7 +142,7 @@
 								</div>
 							{/each}
 						</nav>
-						<img style="margin-left: 30px;" src="/images/autorisiert_sky.png" alt="" />
+						<img class="autorisiert_logo" src="/images/autorisiert_sky.png" alt="" />
 					</div>
 				</div>
 			</div>
@@ -213,6 +213,7 @@
 	* {
 		font-family: 'Oxygen', sans-serif;
 	}
+	
 	.trustami_container {
 		position: fixed;
 		right: 0px;
@@ -220,15 +221,17 @@
 	}
 	.context_menu {
 		position: absolute;
-		background: linear-gradient(to right, rgb(197, 194, 206), rgb(212, 197, 207));
+		background-color: white;
 		left: 0px;
 		top: 40px;
 		border-radius: 10px;
+		box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.39);
 	}
 	.context_menu_element {
 		color: black;
 		padding: 8px;
 		min-width: max-content;
+		border: 1px solid transparent;
 	}
 	.sub_selectable_container {
 		position: relative;
@@ -292,6 +295,10 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.autorisiert_logo {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 
 	.mobile_selector {
 		width: 60px;
@@ -315,12 +322,14 @@
 	}
 
 	.header_center_alignment {
+		padding-top: 15px;
 		padding-top: calc(var(--top_bar_size) / 2 - 35px);
 		display: flex;
 		align-items: center;
 	}
 	.header_blue_bar {
 		background: linear-gradient(to right, #49358d, #027fc7);
+		min-height: 100px;
 		min-height: var(--top_bar_size);
 		min-width: 100vw;
 	}
@@ -331,6 +340,7 @@
 		text-align: center;
 		margin-right: 10px;
 		margin-left: 10px;
+		
 	}
 	.selectable_element_vert {
 		display: flex;

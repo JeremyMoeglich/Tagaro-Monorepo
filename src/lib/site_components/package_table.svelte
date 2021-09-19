@@ -115,7 +115,7 @@
 	}
 	table {
 		border-collapse: collapse;
-		min-width: 100vw;
+		min-width: 100%;
 	}
 	.text_cell {
 		border-left: 1px solid #ccc;
