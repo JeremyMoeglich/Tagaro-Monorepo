@@ -30,7 +30,7 @@
 
 	let navbar_elements = {
 		Startseite: '/',
-		"Test": "/test",
+		Test: '/test',
 		'Sky Angebote': {
 			index: '/sky_angebote',
 			'Sky Sport': '/sky_angebote/sport',
@@ -70,9 +70,7 @@
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
-			<div class="trustami_container">
-
-			</div>
+			<div class="trustami_container" />
 			<div class="header_blue_bar" />
 			<div class="top_header_container">
 				<div class="top_header_container_items">
@@ -248,16 +246,13 @@
 		top: 0px;
 		min-width: 100vw;
 	}
-	.header_blue_bar {
-		background: linear-gradient(to right, #49358d, #027fc7);
-		min-height: max(min(calc(40vh - 11vw), 23vh), 100px);
-		min-width: 100vw;
-	}
+	
 	.top_header_container_items {
 		position: relative;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: left;
+		
 	}
 	.mobile_slider {
 		min-width: 180vw;
@@ -293,9 +288,9 @@
 	}
 
 	.header_logo {
-		position: absolute;
-		left: max(calc(25vw - 140px), 20px);
-		top: 0px;
+		align-self: flex-start;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.mobile_selector {
@@ -314,9 +309,20 @@
 		justify-content: left;
 		margin: 0;
 	}
+	
+	:root {
+		--top_bar_size: max(min(calc(230px - 11vw), 180px), 100px);
+	}
+
 	.header_center_alignment {
-		padding-top: calc(max(min(calc(40vh - 11vw), 23vh), 100px) / 2 - 30px);
+		padding-top: calc(var(--top_bar_size) / 2 - 35px);
 		display: flex;
+		align-items: center;
+	}
+	.header_blue_bar {
+		background: linear-gradient(to right, #49358d, #027fc7);
+		min-height: var(--top_bar_size);
+		min-width: 100vw;
 	}
 	.selectable_element {
 		display: flex;

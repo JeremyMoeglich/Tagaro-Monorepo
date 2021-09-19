@@ -11,24 +11,24 @@
 	let selected;
 
 	const navbar_elements = {
-		"Startseite": "/",
+		Startseite: '/',
 		'Sky Angebote': {
-			"index":'/sky_angebote',
-			"Sky Sport": "/sky_angebote/sport",
-			"Sky Fußball-Bundesliga": "/sky_angebote/bundesliga",
-			"Sky Cinema": "/sky_angebote/cinema",
-			"Sky Entertainment": "/sky_angebote/entertainment",
-			"2 Sky Wunschpakete": "/sky_angebote/2_pakete",
-			"3 Sky Wunschpakete": "/sky_angebote/3_pakete",
-			"Alle 4 Sky Pakete": "/sky_angebote/alle_pakete"
+			index: '/sky_angebote',
+			'Sky Sport': '/sky_angebote/sport',
+			'Sky Fußball-Bundesliga': '/sky_angebote/bundesliga',
+			'Sky Cinema': '/sky_angebote/cinema',
+			'Sky Entertainment': '/sky_angebote/entertainment',
+			'2 Sky Wunschpakete': '/sky_angebote/2_pakete',
+			'3 Sky Wunschpakete': '/sky_angebote/3_pakete',
+			'Alle 4 Sky Pakete': '/sky_angebote/alle_pakete'
 		},
-		"Sky Q": '/sky_q',
+		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
 		Shops: {
 			'Ebay Shop': 'https://stores.ebay.de/TAGARO-Medienshop'
 		},
 		Kontakt: {
-			"index": '/kontakt'
+			index: '/kontakt'
 		}
 	};
 
@@ -221,7 +221,7 @@
 	}
 
 	.mobile_selector {
-		width:60px;
+		width: 60px;
 		position: absolute;
 		left: 80vw;
 	}

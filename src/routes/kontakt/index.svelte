@@ -1,6 +1,4 @@
-<style>
-    
-</style>
-<body>
+<body />
 
-</body>
+<style>
+</style>

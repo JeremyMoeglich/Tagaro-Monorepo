@@ -19,7 +19,7 @@
 		transition-duration: 200ms;
 	}
 	.input_field:hover {
-        bottom: 100px;
+		bottom: 100px;
 		transition-duration: 200ms;
-    }
+	}
 </style>
