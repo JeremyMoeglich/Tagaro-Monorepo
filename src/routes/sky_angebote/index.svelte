@@ -5,8 +5,8 @@
 	import EntertainmentOverview from '$lib/site_components/packages/entertainment_overview.svelte';
 	import EntertainmentPlusOverview from '$lib/site_components/packages/entertainment_plus_overview.svelte';
 	import SportOverview from '$lib/site_components/packages/sport_overview.svelte';
-	import LineSpacer from '$lib/site_components/line-spacer.svelte';
-	import EmptySpacer from '$lib/site_components/empty-spacer.svelte';
+	import LineSpacer from '$lib/site_components/line_spacer.svelte';
+	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
 	import PackageTable from '$lib/site_components/package_table.svelte';
 </script>
 
@@ -40,6 +40,9 @@
 	}
 	.centered_text {
 		text-align: center;
+		max-width: 90vw;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.styled_p {
 		line-height: 30px;

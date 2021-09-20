@@ -8,6 +8,7 @@
 
 <script>
 	// @ts-nocheck
+	import ZumAboformularBar from '$lib/site_components/zum_aboformular_bar.svelte';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -152,6 +153,7 @@
 					<slot />
 				</PageTransition>
 			</div>
+			<ZumAboformularBar />
 		</div>
 		<div class="mobile_sidebar" style="right: {'-' + (80 - mobile_slider_value)}vw;">
 			<div class="selectable_element_vert">
@@ -213,7 +215,7 @@
 	* {
 		font-family: 'Oxygen', sans-serif;
 	}
-	
+
 	.trustami_container {
 		position: fixed;
 		right: 0px;
@@ -249,13 +251,12 @@
 		top: 0px;
 		min-width: 100vw;
 	}
-	
+
 	.top_header_container_items {
 		position: relative;
 		display: flex;
 		align-items: flex-start;
 		justify-content: left;
-		
 	}
 	.mobile_slider {
 		min-width: 180vw;
@@ -316,14 +317,14 @@
 		justify-content: left;
 		margin: 0;
 	}
-	
+
 	:root {
 		--top_bar_size: max(min(calc(230px - 11vw), 180px), 100px);
 	}
 
 	.header_center_alignment {
 		padding-top: 15px;
-		padding-top: calc(var(--top_bar_size) / 2 - 35px);
+		padding-top: calc(var(--top_bar_size) / 2 - 30px);
 		display: flex;
 		align-items: center;
 	}
@@ -340,7 +341,6 @@
 		text-align: center;
 		margin-right: 10px;
 		margin-left: 10px;
-		
 	}
 	.selectable_element_vert {
 		display: flex;

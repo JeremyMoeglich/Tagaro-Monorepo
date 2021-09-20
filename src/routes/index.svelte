@@ -2,18 +2,18 @@
 	<div style="padding-top: 2vh;" />
 	<div class="top_header">
 		<div class="next_to_title">
-			<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+			<a target="_blank" href="/sky/bestellen"
 				><img
 					alt=""
-					src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/Sky_Signature.png"
+					src="/images/packages/Sky_Signature.png"
 					class="sky_logo"
 				/></a
 			>
 			<div class="sky_logo to_remove">
-				<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+				<a target="_blank" href="/sky/bestellen"
 					><img
 						alt=""
-						src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/dazn-logo-2020.svg"
+						src="/images/packages/dazn-logo-2020.svg"
 						class="sky_logo to_remove maxwidth90"
 					/></a
 				>
@@ -33,10 +33,10 @@
 			</h3>
 		</div>
 		<div style="order: 3;">
-			<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+			<a target="_blank" href="/sky/bestellen"
 				><img
 					alt=""
-					src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/sky_21-03_aa_fitbit_values_geraet.png"
+					src="/images/packages/sky_21-03_aa_fitbit_values_geraet.png"
 					style="width: max(10vw, 141px);"
 				/></a
 			>
@@ -45,54 +45,54 @@
 
 	<div style="padding-top:max(1vw, 20px);" />
 	<div class="imagesMain">
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/sky_bundesliga.jpg"
+				src="/images/packages/sky_bundesliga.jpg"
 				class="main_images"
 			/></a
 		>
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/sky_entertainment.jpg"
+				src="/images/packages/sky_entertainment.jpg"
 				class="main_images"
 			/></a
 		>
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/sky_cinema.jpg"
+				src="/images/packages/sky_cinema.jpg"
 				class="main_images r3"
 			/></a
 		>
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/sky_sport.jpg"
+				src="/images/packages/sky_sport.jpg"
 				class="main_images"
 			/></a
 		>
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/sky_kids.jpg"
+				src="/images/packages/sky_kids.jpg"
 				class="main_images r1"
 			/></a
 		>
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/sky_entertainment-plus.jpg"
+				src="/images/packages/sky_entertainment-plus.jpg"
 				class="main_images r2"
 			/></a
 		>
 	</div>
 	<div class="bottom_things">
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/praemie.png"
+				src="/images/packages/praemie.png"
 				class="bottom_icon"
 			/></a
 		>
@@ -105,24 +105,24 @@
 			<p>&#10004; Sky Q Receiver oder Sky Q IPTV Box</p>
 			<p>&#10004; € 20 Bonus und versandkostenfreie Lieferung</p>
 		</div>
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/mtlkuendbar.png"
+				src="/images/packages/mtlkuendbar.png"
 				class="bottom_icon"
 			/></a
 		>
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/payback.png"
+				src="/images/packages/payback.png"
 				class="bottom_icon"
 			/></a
 		>
-		<a target="_blank" href="https://www.tagaro.de/sky/bestellen"
+		<a target="_blank" href="/sky/bestellen"
 			><img
 				alt=""
-				src="https://www.tagaro.de/fileadmin/media/tagaro.de/Bilder/Startseite/fitbit_ersparnis.png"
+				src="/images/packages/fitbit_ersparnis.png"
 				class="bottom_icon"
 			/></a
 		>
