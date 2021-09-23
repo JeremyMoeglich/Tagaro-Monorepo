@@ -45,7 +45,7 @@
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
 		Shops: {
-			index: '/test',
+			index: '/shops',
 			'Ebay Shop': 'https://stores.ebay.de/TAGARO-Medienshop'
 		},
 		Kontakt: '/kontakt'
@@ -75,7 +75,7 @@
 			<div class="header_blue_bar" />
 			<div class="top_header_container">
 				<div class="top_header_container_items">
-					<img class="header_logo" src="/images/tagaro-logo.png" alt="" />
+					<a href="/" class="header_logo"><img src="/images/tagaro-logo.png" alt=""/></a>
 					<!-- <div class="header_logo_container">
 						
 					</div> -->
@@ -215,12 +215,16 @@
 
 	* {
 		font-family: 'Oxygen', sans-serif;
+		z-index: 100;
 	}
 
 	.trustami_container {
 		position: fixed;
 		right: 0px;
 		bottom: 20vh;
+		min-width: 50px;
+		min-height: 50px;
+		background-color: black;
 	}
 	.context_menu {
 		position: absolute;

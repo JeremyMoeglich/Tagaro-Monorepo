@@ -1,5 +1,6 @@
 <script>
 	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
+	import InputField from '$lib/layout_components/input_field.svelte';
 </script>
 
 <body>
@@ -26,8 +27,9 @@
 			</ul>
 		</div>
 		<form class="contact_form" method="POST" action="/data/recieve_form">
-			<input type="text" required name="email" placeholder="Email address" />
-			<input type="text" required name="message" placeholder="Enter message here" />
+			<InputField text={'Name'} box_height={45} name="name"/>
+			<InputField text={'Email address'} box_height={45} name="email"/>
+			<InputField text={'Message'} box_height={90} name="message"/>
 			<button type="submit">Send</button>
 		</form>
 	</div>
@@ -51,13 +53,10 @@
 	.contact_form {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		gap: 20px;
 	}
-	.contact_form > * {
-		border: 2px solid;
-		border-color: rgba(255, 255, 255, 0);
-		background-color: rgb(230, 230, 230);
-		outline: none;
-	}
+
 	* {
 		line-height: 30px;
 	}
@@ -68,5 +67,21 @@
 	ul {
 		list-style: none;
 		padding-left: 0px;
+	}
+	button {
+		border: 0px transparent;
+		background-color: rgb(0, 74, 233);
+		outline: none;
+		color: white;
+	}
+	button:hover {
+		background-color: rgb(15, 54, 136)
+	}
+	h1 {
+		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		padding-bottom: 10px;
 	}
 </style>

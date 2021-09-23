@@ -144,6 +144,9 @@
 		padding-bottom: 1vw;
 		align-self: auto;
 	}
+	.main_images:hover {
+		size: 3px;
+	}
 
 	.subtitle1 {
 		color: #4a4a4a;
