@@ -3,9 +3,9 @@
 </article>
 
 <style>
-    .spacer {
-        --space: 100px;
-        margin-top: var(--space);
-        margin-bottom: var(--space);
-    }
+	.spacer {
+		--space: 100px;
+		margin-top: var(--space);
+		margin-bottom: var(--space);
+	}
 </style>
