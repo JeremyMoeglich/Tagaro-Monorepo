@@ -9,21 +9,21 @@
 	a {
 		padding: 20px;
 		background-color: white;
-        max-height: min-content;
+		max-height: min-content;
 		color: black;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-    .main_text {
-        font-size: 33px;
-    }
+	.main_text {
+		font-size: 33px;
+	}
 	.main_container {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		align-content: center;
 		justify-content: center;
-        gap: 20vw;
+		gap: 20vw;
 		width: 100%;
 		min-height: 80px;
 		background: linear-gradient(to right, #49358d, #027fc7);

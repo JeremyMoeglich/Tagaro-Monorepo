@@ -101,7 +101,7 @@
 	img {
 		width: 100%;
 	}
-	.hd_logo{
+	.hd_logo {
 		width: 11vw;
 	}
 	td {
