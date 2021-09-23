@@ -1,25 +1,34 @@
-<article class="input_field">
-	<div class="floating_text">Test</div>
-	<input class="text_input" type="text" />
-</article>
+<script>
+	export let box_height;
+	export let text;
+</script>
+
+<div class="main_container">
+	<input type="text" style={'min-height: ' + box_height + 'px;max-height: ' + box_height + 'px;'} />
+	<p>{text}</p>
+</div>
 
 <style>
-	.text_input {
-		min-height: 40px;
-		min-width: 200px;
-	}
-	.input_field {
+	.main_container {
 		position: relative;
-		min-width: fit-content;
-		max-width: fit-content;
-		min-height: fit-content;
 	}
-	.floating_text {
+	p {
 		position: absolute;
-		transition-duration: 200ms;
+		bottom: calc(50% - 1ex);
+		left: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		transition-duration: 300ms;
 	}
-	.input_field:hover {
-		bottom: 100px;
-		transition-duration: 200ms;
+	input {
+		margin-top: 0px;
+		transition-duration: 300ms;
+	}
+
+	input:focus ~ p {
+		bottom: calc(100% - 40px)
+	}
+	input:focus {
+		margin-top: 50px;
 	}
 </style>

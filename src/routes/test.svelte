@@ -4,8 +4,12 @@
 	import PackageTable from '$lib/site_components/package_table.svelte';
 </script>
 
-<p>This is the end of that</p>
 
-<InputField />
+<InputField text={"Something"} box_height={45}/>
 
-<PackageTable />
+<InputField text={"Something else"} box_height={45}/>
+
+<InputField text={"ok"} box_height={45}/>
+
+<InputField text={"Something?"} box_height={150}/>
+
