@@ -3,11 +3,7 @@
 	<div class="top_header">
 		<div class="next_to_title">
 			<a target="_blank" href="/sky/bestellen"
-				><img
-					alt=""
-					src="/images/packages/Sky_Signature.png"
-					class="sky_logo"
-				/></a
+				><img alt="" src="/images/packages/Sky_Signature.png" class="sky_logo" /></a
 			>
 			<div class="sky_logo to_remove">
 				<a target="_blank" href="/sky/bestellen"
@@ -46,55 +42,27 @@
 	<div style="padding-top:max(1vw, 20px);" />
 	<div class="imagesMain">
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/sky_bundesliga.jpg"
-				class="main_images"
-			/></a
+			><img alt="" src="/images/packages/sky_bundesliga.jpg" class="main_images" /></a
 		>
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/sky_entertainment.jpg"
-				class="main_images"
-			/></a
+			><img alt="" src="/images/packages/sky_entertainment.jpg" class="main_images" /></a
 		>
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/sky_cinema.jpg"
-				class="main_images r3"
-			/></a
+			><img alt="" src="/images/packages/sky_cinema.jpg" class="main_images r3" /></a
 		>
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/sky_sport.jpg"
-				class="main_images"
-			/></a
+			><img alt="" src="/images/packages/sky_sport.jpg" class="main_images" /></a
 		>
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/sky_kids.jpg"
-				class="main_images r1"
-			/></a
+			><img alt="" src="/images/packages/sky_kids.jpg" class="main_images r1" /></a
 		>
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/sky_entertainment-plus.jpg"
-				class="main_images r2"
-			/></a
+			><img alt="" src="/images/packages/sky_entertainment-plus.jpg" class="main_images r2" /></a
 		>
 	</div>
 	<div class="bottom_things">
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/praemie.png"
-				class="bottom_icon"
-			/></a
+			><img alt="" src="/images/packages/praemie.png" class="bottom_icon" /></a
 		>
 		<div class="to_remove">
 			<p>
@@ -106,25 +74,13 @@
 			<p>&#10004; € 20 Bonus und versandkostenfreie Lieferung</p>
 		</div>
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/mtlkuendbar.png"
-				class="bottom_icon"
-			/></a
+			><img alt="" src="/images/packages/mtlkuendbar.png" class="bottom_icon" /></a
 		>
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/payback.png"
-				class="bottom_icon"
-			/></a
+			><img alt="" src="/images/packages/payback.png" class="bottom_icon" /></a
 		>
 		<a target="_blank" href="/sky/bestellen"
-			><img
-				alt=""
-				src="/images/packages/fitbit_ersparnis.png"
-				class="bottom_icon"
-			/></a
+			><img alt="" src="/images/packages/fitbit_ersparnis.png" class="bottom_icon" /></a
 		>
 	</div>
 	<div style="padding-top:max(1vw, 20px);" />

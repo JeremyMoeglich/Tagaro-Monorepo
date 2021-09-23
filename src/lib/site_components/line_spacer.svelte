@@ -3,10 +3,10 @@
 </article>
 
 <style>
-    .spacer {
-        border-top: 2px solid #ccc;
-        --space: 100px;
-        margin-top: var(--space);
-        margin-bottom: var(--space);
-    }
+	.spacer {
+		border-top: 2px solid #ccc;
+		--space: 100px;
+		margin-top: var(--space);
+		margin-bottom: var(--space);
+	}
 </style>
