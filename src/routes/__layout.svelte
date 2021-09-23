@@ -207,6 +207,7 @@
 		</div>
 		<img on:click={open_sidebar} class="mobile_selector" src="/images/mobile_open.svg" alt="" />
 	</div>
+	Some Text
 </body>
 
 <style>

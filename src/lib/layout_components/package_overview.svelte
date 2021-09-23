@@ -1,25 +1,23 @@
-<article class="package_overview">
+<script>
+	export let title;
+	export let points;
+	export let image;
+</script>
+
+<div class="package_overview">
 	<div class="alignment">
 		<div class="description">
-			<h2 class="title">
-				<slot name="title">
-					<span class="missing">Unknown title</span>
-				</slot>
-			</h2>
-			<div class="points">
-				<slot name="points">
-					<li class="missing">No Points given</li>
-				</slot>
-			</div>
+			<h2 class="title">{title}</h2>
+			<ul class="points">
+				{#each points as point}
+					<li>{point}</li>
+				{/each}
+			</ul>
 		</div>
 
-		<div class="image">
-			<slot name="image">
-				<span class="missing">Unknown image</span>
-			</slot>
-		</div>
+		<img src={image} alt="" class="image" />
 	</div>
-</article>
+</div>
 
 <style>
 	.alignment {
@@ -44,8 +42,7 @@
 	}
 
 	.image {
-		min-width: max(min(30vw, 340px), 200px);
-		max-width: min-content;
+		width: max(min(30vw, 340px), 200px);
 	}
 	.description {
 		min-width: max(340px, 25vw);
