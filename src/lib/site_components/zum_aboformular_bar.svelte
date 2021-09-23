@@ -1,7 +1,7 @@
 <article>
 	<div class="main_container">
-		<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
-		<a href="/sky/bestellen">Zum Aboformular</a>
+		<h2 class="main_text">This is a random test sentence for testing</h2>
+		<a href="/sky/bestellen">Something</a>
 	</div>
 </article>
 
@@ -9,13 +9,16 @@
 	a {
 		padding: 20px;
 		background-color: white;
-		max-height: min-content;
 		color: black;
-		margin-top: 10px;
-		margin-bottom: 10px;
+	}
+	a:hover {
+		background-color: rgb(140, 145, 160);
 	}
 	.main_text {
-		font-size: 33px;
+		font-size: 31px;
+		color: white;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.main_container {
 		display: flex;
@@ -23,8 +26,12 @@
 		flex-wrap: nowrap;
 		align-content: center;
 		justify-content: center;
-		gap: 20vw;
-		width: 100%;
+		align-items: center;
+		gap: 5vw;
+		width: calc(100% - 60px);
+		padding-left: 30px;
+		padding-right: 30px;
+
 		min-height: 80px;
 		background: linear-gradient(to right, #49358d, #027fc7);
 	}
