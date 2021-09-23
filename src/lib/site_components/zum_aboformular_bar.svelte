@@ -10,9 +10,10 @@
 		padding: 20px;
 		background-color: white;
 		color: black;
+		box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.438);
 	}
 	a:hover {
-		background-color: rgb(140, 145, 160);
+		background-color: rgb(179, 179, 179);
 	}
 	.main_text {
 		font-size: 31px;

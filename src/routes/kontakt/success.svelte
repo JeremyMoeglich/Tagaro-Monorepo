@@ -1,1 +1,1 @@
-ok it worked i guess
+<h1>Kontaktformular erfolgreich abgesendet</h1>

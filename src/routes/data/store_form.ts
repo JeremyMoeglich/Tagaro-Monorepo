@@ -2,11 +2,11 @@ import redis from 'redis';
 import sizeof from 'object-sizeof';
 import { DB_HOST, DB_PASSWORD, DB_PORT } from '$lib/Env';
 
-const client = redis.createClient({
-	host: DB_HOST,
-	password: DB_PASSWORD,
-	port: DB_PORT
-});
+//const client = redis.createClient({
+//	host: DB_HOST,
+//	password: DB_PASSWORD,
+//	port: DB_PORT
+//});
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
