@@ -7,8 +7,8 @@
 </script>
 
 <script>
+	import Footer from '$lib/site_components/footer.svelte';
 	// @ts-nocheck
-	import ZumAboformularBar from '$lib/site_components/zum_aboformular_bar.svelte';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -152,7 +152,7 @@
 					<slot />
 				</PageTransition>
 			</div>
-			<ZumAboformularBar />
+			<Footer />
 		</div>
 		<div class="mobile_sidebar" style="right: {'-' + (80 - mobile_slider_value)}vw;">
 			<div class="selectable_element_vert">
