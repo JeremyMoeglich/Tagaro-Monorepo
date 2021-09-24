@@ -1,13 +1,14 @@
 <script>
 	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
 	import InputField from '$lib/layout_components/input_field.svelte';
+	import KontaktForm from '$lib/site_components/kontakt_form.svelte';
 </script>
 
 <body>
 	<EmptySpacer />
 	<h1 class="main_title">Kontakt</h1>
 	<div class="side_alignment">
-		<div>
+		<div class="side_text_container">
 			<p>
 				<b>
 					Wir helfen Ihnen gerne weiter - sowohl per E-Mail und Kontaktformular rund um die Uhr als
@@ -26,37 +27,28 @@
 				<li><b>Internet: </b><a href="https://tagaro.de">www.tagaro.de</a></li>
 			</ul>
 		</div>
-		<form class="contact_form" method="POST" action="/data/recieve_form">
-			<InputField text={'Name'} box_height={45} name="name"/>
-			<InputField text={'Email address'} box_height={45} name="email"/>
-			<InputField text={'Message'} box_height={90} name="message"/>
-			<button type="submit">Send</button>
-		</form>
+		<KontaktForm />
 	</div>
 </body>
 
 <style>
+	.side_text_container {
+		min-width: 50%;
+	}
 	.side_alignment {
 		display: flex;
 		justify-content: center;
 		gap: 30px;
-	}
-	.side_alignment > * {
-		min-width: 40vw;
-		max-width: 40vw;
+		max-width: min(90%, 1000px);
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.main_title {
 		text-align: center;
 		font-size: 40px;
 		margin-bottom: 50px;
 	}
-	.contact_form {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 20px;
-	}
-
+	
 	* {
 		line-height: 30px;
 	}
@@ -68,15 +60,7 @@
 		list-style: none;
 		padding-left: 0px;
 	}
-	button {
-		border: 0px transparent;
-		background-color: rgb(0, 74, 233);
-		outline: none;
-		color: white;
-	}
-	button:hover {
-		background-color: rgb(15, 54, 136)
-	}
+	
 	h1 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;

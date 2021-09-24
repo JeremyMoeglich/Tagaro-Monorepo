@@ -1,25 +1,28 @@
 <article>
 	<div class="main_container">
-		<h2 class="main_text">This is a random test sentence for testing</h2>
-		<a href="/sky/bestellen">Something</a>
+		<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
+		<a href="/sky/bestellen"><b>Zum Aboformular</b></a>
 	</div>
 </article>
 
 <style>
 	a {
-		padding: 20px;
+		padding: 20px 30px;
 		background-color: white;
-		color: black;
-		box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.438);
+		color: #027fc7;
+		text-decoration: none;
+		margin-right: 20px;
 	}
+
 	a:hover {
 		background-color: rgb(179, 179, 179);
 	}
 	.main_text {
-		font-size: 31px;
+		font-size: 33px;
 		color: white;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-left: 20px;
 	}
 	.main_container {
 		display: flex;
@@ -28,11 +31,10 @@
 		align-content: center;
 		justify-content: center;
 		align-items: center;
-		gap: 5vw;
+		gap: 10vw;
 		width: calc(100% - 60px);
 		padding-left: 30px;
 		padding-right: 30px;
-
 		min-height: 80px;
 		background: linear-gradient(to right, #49358d, #027fc7);
 	}

@@ -27,7 +27,6 @@
 		margin-left: 10vw;
 		gap: calc(10vw - 80px);
 		justify-content: center;
-		align-items: center;
 		flex-wrap: wrap;
 	}
 	.title {
@@ -43,6 +42,7 @@
 
 	.image {
 		width: max(min(30vw, 340px), 200px);
+		align-self: center;
 	}
 	.description {
 		min-width: max(340px, 25vw);
