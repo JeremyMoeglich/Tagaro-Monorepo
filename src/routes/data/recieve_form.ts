@@ -1,5 +1,5 @@
 import sizeof from 'object-sizeof';
-//import nodemailer from 'nodemailer';
+import nodemailer from 'nodemailer';
 
 import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL } from '$lib/Env';
 
@@ -30,29 +30,32 @@ export async function post({ body }) {
 	console.log(bodyobj);
 
 
-	//let transporter = nodemailer.createTransport({
-	//	host: SMTP_HOST,
-	//	secure: true, // upgrade later with STARTTLS
-	//	auth: {
-	//		user: SMTP_MAIL,
-	//		pass: SMTP_PASSWORD
-	//	}
-	//});
+	const transporter = nodemailer.createTransport({
+		host: SMTP_HOST,
+		secure: true, // upgrade later with STARTTLS
+		auth: {
+			user: SMTP_MAIL,
+			pass: SMTP_PASSWORD
+		}
+	});
+
+	const message_body = Object.keys(bodyobj).map(k => k + " - " + bodyobj[k]).join("\n\n")
+
 
 	const mailOptions = {
 		from: SMTP_MAIL,
 		to: 'jeremy.moeglich@gmail.com',
-		subject: 'Kontaktformular von ' + bodyobj.email,
-		text: bodyobj.message
+		subject: 'Kontaktformular von ' + bodyobj.name,
+		text: message_body
 	};
 
-	//transporter.sendMail(mailOptions, function (error, info) {
-	//    if (error) {
-	//        console.log(error);
-	//    } else {
-	//        console.log('Email sent: ' + info.response);
-	//    }
-	//});
+	transporter.sendMail(mailOptions, function (error, info) {
+	    if (error) {
+	        console.log(error);
+	    } else {
+	        console.log('Email sent: ' + info.response);
+	    }
+	});
 
 	return {
 		headers: { Location: '/kontakt/success' },

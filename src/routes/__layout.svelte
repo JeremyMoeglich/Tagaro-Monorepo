@@ -71,11 +71,10 @@
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
-			<div class="trustami_container" />
 			<div class="header_blue_bar" />
 			<div class="top_header_container">
 				<div class="top_header_container_items">
-					<a href="/" class="header_logo"><img src="/images/tagaro-logo.png" alt=""/></a>
+					<a href="/" class="header_logo"><img src="/images/tagaro-logo.png" alt="" /></a>
 					<!-- <div class="header_logo_container">
 						
 					</div> -->
@@ -205,7 +204,11 @@
 				{/if}
 			{/each}
 		</div>
-		<img on:click={open_sidebar} class="mobile_selector" src="/images/mobile_open.svg" alt="" />
+		{#if mobile_slider_value == 0}
+			<img on:click={open_sidebar} class="mobile_selector" src="/images/mobile_open.svg" alt="" />
+		{:else}
+			<img on:click={close_sidebar} class="mobile_selector" src="/images/mobile_close.svg" alt="" />
+		{/if}
 	</div>
 	Some Text
 </body>
@@ -218,14 +221,6 @@
 		z-index: 100;
 	}
 
-	.trustami_container {
-		position: fixed;
-		right: 0px;
-		bottom: 20vh;
-		min-width: 50px;
-		min-height: 50px;
-		background-color: black;
-	}
 	.context_menu {
 		position: absolute;
 		background-color: white;
