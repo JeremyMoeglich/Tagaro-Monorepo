@@ -5,11 +5,3 @@
 </script>
 
 
-<InputField text={"Something"} box_height={45}/>
-
-<InputField text={"Something else"} box_height={45}/>
-
-<InputField text={"ok"} box_height={45}/>
-
-<InputField text={"Something?"} box_height={150}/>
-
