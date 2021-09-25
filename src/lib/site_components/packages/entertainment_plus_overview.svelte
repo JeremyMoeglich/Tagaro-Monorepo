@@ -11,5 +11,5 @@
 		'Inklusive Netflix-Standard-Abo (HD, 2 Streams)',
 		'Bereits Netflix-Kunde? Einfach Dein bestehendes Netflix Konto mitnehmen'
 	]}
-	image={'images/packages/sky_entertainment-plus.jpg'}
+	image={'/images/packages/sky_entertainment-plus.jpg'}
 />

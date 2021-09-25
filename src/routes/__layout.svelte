@@ -74,7 +74,7 @@
 			<div class="header_blue_bar" />
 			<div class="top_header_container">
 				<div class="top_header_container_items">
-					<a href="/" class="header_logo"><img src="/images/tagaro-logo.png" alt="" /></a>
+					<a href="/" class="header_logo"><img src="/images/badges/tagaro-logo.png" alt="" /></a>
 					<!-- <div class="header_logo_container">
 						
 					</div> -->
@@ -142,7 +142,7 @@
 								</div>
 							{/each}
 						</nav>
-						<img class="autorisiert_logo" src="/images/autorisiert_sky.png" alt="" />
+						<img class="autorisiert_logo" src="/images/badges/autorisiert_sky.png" alt="" />
 					</div>
 				</div>
 			</div>
@@ -210,7 +210,6 @@
 			<img on:click={close_sidebar} class="mobile_selector" src="/images/mobile_close.svg" alt="" />
 		{/if}
 	</div>
-	Some Text
 </body>
 
 <style>

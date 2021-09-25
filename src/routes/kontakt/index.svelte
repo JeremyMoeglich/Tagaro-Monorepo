@@ -1,6 +1,6 @@
 <script>
-	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
 	import InputField from '$lib/layout_components/input_field.svelte';
+	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
 	import KontaktForm from '$lib/site_components/kontakt_form.svelte';
 </script>
 
@@ -29,6 +29,7 @@
 		</div>
 		<KontaktForm />
 	</div>
+	<EmptySpacer />
 </body>
 
 <style>
@@ -48,7 +49,7 @@
 		font-size: 40px;
 		margin-bottom: 50px;
 	}
-	
+
 	* {
 		line-height: 30px;
 	}
@@ -60,7 +61,7 @@
 		list-style: none;
 		padding-left: 0px;
 	}
-	
+
 	h1 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;

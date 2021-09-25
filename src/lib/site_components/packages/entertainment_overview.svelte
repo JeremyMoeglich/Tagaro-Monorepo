@@ -10,5 +10,5 @@
 		'Alles ohne Werbeunterbrechung',
 		'Großartige Programmvielfalt mit Premium-Sendern für jeden Geschmack – live und auf Abruf'
 	]}
-	image={'images/packages/sky_entertainment.jpg'}
+	image={'/images/packages/sky_entertainment.jpg'}
 />

@@ -6,6 +6,7 @@
 	<EmptySpacer />
 	<div class="center_alignment">
         <h1 class="title">Kontaktformular erfolgreich abgesendet</h1>
+		<p><b>Wir melden uns bei Ihnen so schnell wie möglich!</b></p>
     </div>
     <EmptySpacer />
 </body>

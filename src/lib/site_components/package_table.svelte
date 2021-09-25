@@ -1,12 +1,16 @@
-<article>
+<script>
+	import Zubuchoption from '$lib/layout_components/zubuchoption.svelte';
+</script>
+
+<div class="main_container">
+	<h2 class="title">Pakete & Preise in der Übersicht</h2>
 	<table>
 		<tr>
 			<td colspan="4" />
-			<td class="text_cell">
+			<td class="text_cell hd_entertainment">
 				Alle Angebote inklusive Entertainment und HD
 				<img class="hd_logo" src="/images/specific/hd_logo.png" alt="" />
 			</td>
-			<td class="text_cell">Optional mit Netflix im Entertainment Plus Paket </td>
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
@@ -14,9 +18,6 @@
 			<td class="text_cell">
 				<p><b>Monat 1-12 nur<br />€ 12,50 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
-			</td>
-			<td class="text_cell">
-				<p>&nbsp;<b>+ € 7,50 mtl. </b></p>
 			</td>
 		</tr>
 		<tr>
@@ -27,7 +28,6 @@
 				<p><b>Monat 1-12 nur<br />€ 22,50 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
-			<td class="text_cell"><p><b>+ € 7,50 mtl. </b></p> </td>
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
@@ -37,7 +37,6 @@
 				<p><b>Monat 1-12 nur<br />€ 17,50 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
-			<td class="text_cell"><p><b>+ € 7,50 mtl. </b></p> </td>
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
@@ -47,7 +46,7 @@
 				><p><b>Monat 1-12 nur<br />€ 25,00 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
-			<td class="text_cell"><p><b>+ € 7,50 mtl. </b></p> </td>
+
 			<td />
 		</tr>
 		<tr>
@@ -59,7 +58,6 @@
 				><p><b>Monat 1-12 nur<br />€ 27,50 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
-			<td class="text_cell"><p><b>+ € 7,50 mtl. </b></p> </td>
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
@@ -70,7 +68,6 @@
 				><p><b>Monat 1-12 nur<br />€ 35,00 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
-			<td class="text_cell"><p><b>+ € 7,50 mtl. </b></p> </td>
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
@@ -81,7 +78,6 @@
 				><p><b>Monat 1-12 nur<br />€ 30,00 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
-			<td class="text_cell"><p><b>+ € 7,50 mtl. </b></p> </td>
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
@@ -92,14 +88,59 @@
 				><p><b>Monat 1-12 nur<br />€ 40,00 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
-			<td class="text_cell"><p><b>+ € 7,50 mtl. </b></p> </td>
 		</tr>
 	</table>
-</article>
+	<div class="zubuchoptionen">
+		<h2 class="title">Zubuchoptionen</h2>
+		<Zubuchoption
+			text="<b>UHD + € 5,00 mtl. (für Sat oder Kabel-Empfang)</b>"
+			image="/images/square_packages/sky_uhd.png"
+		/>
+		<Zubuchoption
+			text="<b>DAZN jährlich + € 12,50 mtl. </b>oder<b> <br/> DAZN monatlich + € 14,99 mtl.</b>"
+			image="/images/external/dazn.svg"
+		/>
+		<Zubuchoption
+			text="<b>Multiscreen + € 10,00 mtl. <br/></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br/> 2. Sky Q Receiver für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)"
+			image="/images/square_packages/sky_multiscreen.png"
+		/>
+		<Zubuchoption
+			text="<b>Sky Kids +  € 5,00 mtl.</b>"
+			image="/images/square_packages/sky_kids.png"
+		/>
+		<Zubuchoption
+			text="<b>trendSports + € 5,99 mtl.</b>"
+			image="/images/external/trendsports.png"
+		/>
+		<Zubuchoption
+			text="<b>18+ für Blue Movie € 0</b><br/> einmalige Versandpauschale 18+ PIN"
+			image="/images/external/18_plus.png"
+		/>
+	</div>
+</div>
 
 <style>
+	.main_container {
+		background-color: #f2f2f2;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.zubuchoptionen {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	.title {
+		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+		font-size: 35px;
+	}
 	img {
-		width: 100%;
+		width: min(100%, 100px);
 	}
 	.hd_logo {
 		width: 11vw;
@@ -125,5 +166,11 @@
 		line-height: 25px;
 		min-width: min(170px, 30vw);
 		max-width: 10vw;
+	}
+	.hd_entertainment {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
 	}
 </style>

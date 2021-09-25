@@ -13,5 +13,5 @@
 
 		'Abrechnung und Kundenservice aus einer Hand. Sky ist dein Ansprechpartner.'
 	]}
-	image={'images/external/dazn_double.jpg'}
+	image={'/images/external/dazn_double.jpg'}
 />

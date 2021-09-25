@@ -3,13 +3,13 @@
 	<div class="top_header">
 		<div class="next_to_title">
 			<a target="_blank" href="/sky/bestellen"
-				><img alt="" src="/images/packages/Sky_Signature.png" class="sky_logo" /></a
+				><img alt="" src="/images/badges/sky_signature.png" class="sky_logo" /></a
 			>
 			<div class="sky_logo to_remove">
 				<a target="_blank" href="/sky/bestellen"
 					><img
 						alt=""
-						src="/images/packages/dazn-logo-2020.svg"
+						src="/images/external/dazn.svg"
 						class="sky_logo to_remove maxwidth90"
 					/></a
 				>
@@ -27,15 +27,6 @@
 				Wir sind autorisierter Sky Onlinehändler und stehen für eine schnelle & zuverlässige
 				Bearbeitung.
 			</h3>
-		</div>
-		<div style="order: 3;">
-			<a target="_blank" href="/sky/bestellen"
-				><img
-					alt=""
-					src="/images/packages/sky_21-03_aa_fitbit_values_geraet.png"
-					style="width: max(10vw, 141px);"
-				/></a
-			>
 		</div>
 	</div>
 
@@ -62,7 +53,7 @@
 	</div>
 	<div class="bottom_things">
 		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/praemie.png" class="bottom_icon" /></a
+			><img alt="" src="/images/badges/praemie.png" class="bottom_icon" /></a
 		>
 		<div class="to_remove">
 			<p>
@@ -74,13 +65,10 @@
 			<p>&#10004; € 20 Bonus und versandkostenfreie Lieferung</p>
 		</div>
 		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/mtlkuendbar.png" class="bottom_icon" /></a
+			><img alt="" src="/images/badges/mtlkuendbar.png" class="bottom_icon" /></a
 		>
 		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/payback.png" class="bottom_icon" /></a
-		>
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/fitbit_ersparnis.png" class="bottom_icon" /></a
+			><img alt="" src="/images/badges/payback.png" class="bottom_icon" /></a
 		>
 	</div>
 	<div style="padding-top:max(1vw, 20px);" />
