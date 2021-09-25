@@ -37,7 +37,11 @@
 	}
 	.points {
 		list-style-image: url('/images/plus_char.svg');
-		font-size: 19px;
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		line-height: 150%;
 	}
 
 	.image {

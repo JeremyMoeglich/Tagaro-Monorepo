@@ -11,5 +11,5 @@
 
 		'Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
 	]}
-	image={'images/packages/sky_sport.jpg'}
+	image={'/images/packages/sky_sport.jpg'}
 />

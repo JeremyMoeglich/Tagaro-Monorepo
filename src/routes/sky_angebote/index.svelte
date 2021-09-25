@@ -8,14 +8,17 @@
 	import LineSpacer from '$lib/site_components/line_spacer.svelte';
 	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
 	import PackageTable from '$lib/site_components/package_table.svelte';
+	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen.svelte';
 </script>
 
 <LineSpacer />
-<h1 class="blue_gradient_text centered_text">Alle Sky Pakete flexibel buchbar</h1>
-<p class="styled_p centered_text">
-	Erhalten Sie hier Ihr Sky Abonnement mit versandkostenfreier Lieferung. <br />
-	Wählen Sie Ihre Wunschpakete individuell aus Sky Entertainment, Cinema, Sport und/oder Fußball-Bundesliga.
-</p>
+<div>
+	<h1 class="blue_gradient_text centered_text">Alle Sky Pakete flexibel buchbar</h1>
+	<p class="styled_p centered_text">
+		Erhalten Sie hier Ihr Sky Abonnement mit versandkostenfreier Lieferung. <br />
+		Wählen Sie Ihre Wunschpakete individuell aus Sky Entertainment, Cinema, Sport und/oder Fußball-Bundesliga.
+	</p>
+</div>
 <LineSpacer />
 <EntertainmentOverview />
 <LineSpacer />
@@ -30,7 +33,9 @@
 <DaznOverview />
 <EmptySpacer />
 <PackageTable />
-
+<EmptySpacer />
+<Vertragsinfomationen />
+<EmptySpacer />
 <style>
 	.blue_gradient_text {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);

@@ -9,5 +9,5 @@
 		'Große Filmvielfalt über alle Genres hinweg',
 		'Alle Filme ohne Werbeunterbrechung'
 	]}
-	image={'images/packages/sky_cinema.jpg'}
+	image={'/images/packages/sky_cinema.jpg'}
 />

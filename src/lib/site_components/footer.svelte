@@ -11,7 +11,7 @@
 			<li><a href="/service/datenschutz">- Datenschutz -</a></li>
 			<li><a href="/service/AGB">- AGB -</a></li>
 			<li><a href="/service">- Service -</a></li>
-			<li><a href="/service/inpressum">- Impressum -</a></li>
+			<li><a href="/service/impressum">- Impressum -</a></li>
 			<li><a href="/service/widerrufsrecht">- Widerrufsrecht -</a></li>
 		</ul>
 	</div>
@@ -30,8 +30,8 @@
 	</div>
 	<div class="einkaufen">
 		<h3>Sicher Einkaufen</h3>
-		<img src="/images/autorisiert.png" alt="" />
-		<img src="/images/ssl.png" alt="" />
+		<img src="/images/badges/autorisiert_sky.png" alt="" />
+		<img src="/images/badges/ssl.png" alt="" />
 	</div>
 	<div class="social">
 		<h3>Social Media</h3>
@@ -47,7 +47,6 @@
 		margin-right: auto;
 		flex-wrap: wrap;
 		justify-content: center;
-		text-align: center;
 		align-items: flex-start;
 		gap: 30px;
 		color: #545454;
@@ -58,7 +57,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
 		gap: 5px;
 		font-size: 18px;
 	}

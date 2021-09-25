@@ -10,5 +10,5 @@
 		'Alle Relegationsspiele und der Supercup live',
 		'Mit den Sky Konferenzen und Highlight-Videos kein Tor verpassen'
 	]}
-	image={'images/packages/sky_bundesliga.jpg'}
+	image={'/images/packages/sky_bundesliga.jpg'}
 />

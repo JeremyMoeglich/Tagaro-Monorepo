@@ -22,7 +22,7 @@ const config = {
 		target: '#svelte',
 
 
-		adapter: staticAdapter({ pages: 'build',prerender: true }),
+		adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
 
 		vite: {
 			ssr: {
