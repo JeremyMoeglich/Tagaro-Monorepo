@@ -1,5 +1,6 @@
 <script>
 	import PackageOverview from '$lib/layout_components/package_overview.svelte';
+	export let detailed = false;
 </script>
 
 <PackageOverview
@@ -12,4 +13,5 @@
 		'Bereits Netflix-Kunde? Einfach Dein bestehendes Netflix Konto mitnehmen'
 	]}
 	image={'/images/packages/sky_entertainment-plus.jpg'}
+	{detailed}
 />

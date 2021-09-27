@@ -1,5 +1,6 @@
 <script>
 	import PackageOverview from '$lib/layout_components/package_overview.svelte';
+	export let detailed = false;
 </script>
 
 <PackageOverview
@@ -12,4 +13,5 @@
 		'Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
 	]}
 	image={'/images/packages/sky_sport.jpg'}
+	{detailed}
 />

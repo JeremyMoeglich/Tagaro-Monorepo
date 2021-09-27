@@ -9,8 +9,10 @@
 	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
 	import PackageTable from '$lib/site_components/package_table.svelte';
 	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen.svelte';
+	import AngeboteRotator from '$lib/site_components/angebote_rotator.svelte';
 </script>
 
+<AngeboteRotator />
 <LineSpacer />
 <div>
 	<h1 class="blue_gradient_text centered_text">Alle Sky Pakete flexibel buchbar</h1>
@@ -36,6 +38,7 @@
 <EmptySpacer />
 <Vertragsinfomationen />
 <EmptySpacer />
+
 <style>
 	.blue_gradient_text {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);

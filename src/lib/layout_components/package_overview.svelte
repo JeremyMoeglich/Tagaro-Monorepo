@@ -2,6 +2,7 @@
 	export let title;
 	export let points;
 	export let image;
+	export let detailed;
 </script>
 
 <div class="package_overview">
@@ -10,9 +11,18 @@
 			<h2 class="title">{title}</h2>
 			<ul class="points">
 				{#each points as point}
-					<li>{point}</li>
+					{#if point[0] === '#'}
+						{#if detailed}
+							<li>{point.slice(1)}</li>
+						{/if}
+					{:else}
+						<li>{point}</li>
+					{/if}
 				{/each}
 			</ul>
+			{#if detailed}
+				<slot />
+			{/if}
 		</div>
 
 		<img src={image} alt="" class="image" />
@@ -25,11 +35,12 @@
 		min-width: 70vw;
 		margin-right: 10vw;
 		margin-left: 10vw;
-		gap: calc(10vw - 80px);
+		gap: calc(5vw + 50px);
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-	.title {
+	.title,
+	.description :global(h3) {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;
 		background-clip: text;

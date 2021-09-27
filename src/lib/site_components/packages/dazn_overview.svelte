@@ -1,5 +1,6 @@
 <script>
 	import PackageOverview from '$lib/layout_components/package_overview.svelte';
+	export let detailed = false;
 </script>
 
 <PackageOverview
@@ -14,4 +15,5 @@
 		'Abrechnung und Kundenservice aus einer Hand. Sky ist dein Ansprechpartner.'
 	]}
 	image={'/images/external/dazn_double.jpg'}
+	{detailed}
 />

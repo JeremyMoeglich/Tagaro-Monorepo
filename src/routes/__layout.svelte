@@ -8,6 +8,7 @@
 
 <script>
 	import Footer from '$lib/site_components/footer.svelte';
+
 	// @ts-nocheck
 
 	function clickOutside(node) {
@@ -67,6 +68,20 @@
 	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	export let key;
 </script>
+
+<svelte:head>
+	<script
+		id="trustamiwidget"
+		type="text/javascript"
+		src="https://cdn.trustami.com/widgetapi/widget2/trustami-widget.js"
+		data-profile="59e6544c53a49963318b4568"
+		data-user="dc45e2793250619a08045ba8ad253cd4a1004d2f"
+		data-platform="0"
+		async>
+	</script>
+</svelte:head>
+
+{@html '<div class="widget_container_overlay" />'}
 
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
