@@ -1,5 +1,6 @@
 <script>
 	import PackageOverview from '$lib/layout_components/package_overview.svelte';
+	export let detailed = false;
 </script>
 
 <PackageOverview
@@ -11,4 +12,5 @@
 		'Mit den Sky Konferenzen und Highlight-Videos kein Tor verpassen'
 	]}
 	image={'/images/packages/sky_bundesliga.jpg'}
+	{detailed}
 />

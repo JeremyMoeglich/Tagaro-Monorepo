@@ -2,6 +2,17 @@
 	import ZumAboformularBar from './zum_aboformular_bar.svelte';
 </script>
 
+<svelte:head>
+	{@html `<div id="fb-root"></div>`}
+	<script
+		async
+		defer
+		crossorigin="anonymous"
+		src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v12.0"
+		nonce="iQystOj2">
+	</script>
+</svelte:head>
+
 <ZumAboformularBar />
 
 <div class="side_alignment">
@@ -35,6 +46,26 @@
 	</div>
 	<div class="social">
 		<h3>Social Media</h3>
+		{@html `
+			<div
+				class="fb-page"
+				data-href="https://www.facebook.com/TagaroMedienshop/"
+				data-tabs="timeline" data-width=""
+				data-height=""
+				data-small-header="false"
+				data-adapt-container-width="true"
+				data-hide-cover="false"
+				data-show-facepile="true"
+			>
+				<blockquote
+					cite="https://www.facebook.com/TagaroMedienshop/"
+					class="fb-xfbml-parse-ignore"
+				>
+					<a href="https://www.facebook.com/TagaroMedienshop/">
+						Tagaro Medienshop
+					</a>
+				</blockquote>
+			</div>`}
 	</div>
 </div>
 

@@ -3,5 +3,5 @@
 </script>
 
 <body>
-	<CinemaOverview />
+	<CinemaOverview detailed={true}/>
 </body>

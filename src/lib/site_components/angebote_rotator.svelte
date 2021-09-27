@@ -1,0 +1,111 @@
+<script>
+	import WrappingElements from '$lib/layout_components/wrapping_elements.svelte';
+
+	const components = [
+		{
+			title: '2 Sky Pakete nach Wahl + € 20 Prämie',
+			image: '/fileadmin/media/tagaro.de/wahl_2aus4.png',
+			points: [
+				'+ Für Internet, Sat- oder Kabel',
+				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
+				'+ 12 Monatsabo, danach mtl. kündbar',
+				'+ € 20 Bonus on top',
+				'<b>+ € 125 Amazon Gutschein ab Buchung von Entertainment + 1 Paket</b>'
+			],
+			subtitle: 'ab € 32,50 monatlich* ',
+			info_text:
+				'(im Jahres-Abo, Preise je Wahl unterschiedlich) Optional Netflix, PAYBACK Punkte, DAZN'
+		},
+
+		{
+			title: '3 Sky Pakete nach Wahl + € 20 Prämie',
+			image: '/fileadmin/media/tagaro.de/wahl_3aus4.png',
+			points: [
+				'+ Für Internet, Sat- oder Kabel',
+				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
+				'+ 12 Monatsabo, danach mtl. kündbar',
+				'+ € 20 Bonus on top',
+				'<b>+ € 125 Amazon Gutschein ab Buchung von Entertainment + 1 Paket</b>'
+			],
+			subtitle: 'ab € 32,50 monatlich* ',
+			info_text:
+				'(im Jahres-Abo, Preise je Wahl unterschiedlich) Optional Netflix, PAYBACK Punkte, DAZN'
+		},
+
+		{
+			title: 'Alle 4 Sky Pakete + € 20 Prämie',
+			image: '/fileadmin/media/tagaro.de/wahl_4.png',
+			points: [
+				'+ Für Internet, Sat- oder Kabel',
+				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
+				'+ 12 Monatsabo, danach mtl. kündbar',
+				'+ € 20 Bonus on top',
+				'<b>+ € 125 Amazon Gutschein ab Buchung von Entertainment + 1 Paket</b>'
+			],
+			subtitle: '€ 40,00 monatlich* ',
+			info_text:
+				'(im Jahres-Abo, danach € 50,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,'
+		},
+
+		{
+			title: 'Sky Entertainment Paket + € 20 Prämie',
+			image: '/fileadmin/media/tagaro.de/wahl_entertainment.png',
+			points: [
+				'+ Für Internet, Sat- oder Kabel',
+				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
+				'+ 12 Monatsabo, danach mtl. kündbar',
+				'+ € 20 Bonus on top',
+				'<b>+ € 125 Amazon Gutschein ab Buchung von Entertainment + 1 Paket</b>'
+			],
+			subtitle: '€ 12,50 monatlich* ',
+			info_text: '(im Jahres-Abo, danach € 15,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK'
+		},
+
+		{
+			title: 'Sky Cinema Paket + € 20 Prämie',
+			image: '/fileadmin/media/tagaro.de/wahl_cinema.png',
+			points: [
+				'+ Für Internet, Sat- oder Kabel',
+				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
+				'+ 12 Monatsabo, danach mtl. kündbar',
+				'+ € 20 Bonus on top',
+				'<b>+ € 125 Amazon Gutschein ab Buchung von Entertainment + 1 Paket</b>'
+			],
+			subtitle: '€ 22,50 monatlich* ',
+			info_text:
+				'(im Jahres-Abo, danach €&nbsp;27,50&nbsp;mtl. im Monats-Abo) Optional Netflix, PAYBACK'
+		},
+
+		{
+			title: 'Sky Sport Paket + € 20 Prämie',
+			image: '/fileadmin/media/tagaro.de/wahl_sport.png',
+			points: [
+				'+ Für Internet, Sat- oder Kabel',
+				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
+				'+ 12 Monatsabo, danach mtl. kündbar',
+				'+ € 20 Bonus on top',
+				'<b>+ € 125 Amazon Gutschein ab Buchung von Entertainment + 1 Paket</b>'
+			],
+			subtitle: '€ 17,50 monatlich* ',
+			info_text:
+				'(im Jahres-Abo, danach € 22,50 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,'
+		},
+
+		{
+			title: 'Sky Fußball-Bundesliga Paket + € 20 Prämie',
+			image: '/fileadmin/media/tagaro.de/wahl_bundesliga.png',
+			points: [
+				'+ Für Internet, Sat- oder Kabel',
+				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
+				'+ 12 Monatsabo, danach mtl. kündbar',
+				'+ € 20 Bonus on top',
+				'<b>+ € 125 Amazon Gutschein ab Buchung von Entertainment + 1 Paket</b>'
+			],
+			subtitle: '€ 25,00 monatlich* ',
+			info_text:
+				'(im Jahres-Abo, danach € 30,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,'
+		}
+	];
+</script>
+
+<WrappingElements {components} />
