@@ -1,10 +1,10 @@
 <script lang="ts">
 	export let components: Array<{
-		title: String;
-		image: String;
-		points: Array<String>;
-		subtitle: String;
-		info_text: String;
+		title: string;
+		image: string;
+		points: Array<string>;
+		subtitle: string;
+		info_text: string;
 	}>;
 
 	let ci = -1;
