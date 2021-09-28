@@ -3,9 +3,9 @@
 	export let text;
 	export let name;
 	export let required = true;
-	export let type = "text"
+	export let type = 'text';
 	export let multiline = false;
-	export let autocomplete = "on";
+	export let autocomplete = 'on';
 </script>
 
 <div class="main_container">
@@ -22,12 +22,12 @@
 				'px;'}
 			{required}
 			placeholder=" "
-			autocomplete={autocomplete}
+			{autocomplete}
 		/>
 	{:else}
 		<input
 			{name}
-			type={type}
+			{type}
 			style={'min-height: ' +
 				box_height +
 				'px;max-height: ' +
@@ -38,7 +38,7 @@
 				'px;'}
 			{required}
 			placeholder=" "
-			autocomplete={autocomplete}
+			{autocomplete}
 		/>
 	{/if}
 	<p style={'top: calc(' + box_height + 'px / 2 - 12px);'}>{text}</p>
@@ -58,7 +58,8 @@
 		z-index: 1;
 		pointer-events: none;
 	}
-	input, textarea {
+	input,
+	textarea {
 		transition-duration: 300ms;
 		border-width: 3px;
 		border: rgb(37, 124, 255) solid;
@@ -73,7 +74,6 @@
 		background-color: #e6e6e6;
 	}
 	input:focus,
-	
 	:is(:is(input, textarea):focus, :not(:is(input, textarea):placeholder-shown)) ~ p {
 		color: rgb(0, 15, 245);
 	}

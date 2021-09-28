@@ -3,9 +3,16 @@
 </script>
 
 <form class="contact_form" method="POST" action="/data/recieve_form">
-	<InputField text={'Name*'} box_height={45} name="name" type="text" autocomplete="name"/>
-	<InputField text={'E-Mail Adresse*'} box_height={45} name="email" autocomplete="email"/>
-	<InputField text={'Telefonnummer'} box_height={45} name="number" type="number" required={false} autocomplete="tel"/>
+	<InputField text={'Name*'} box_height={45} name="name" type="text" autocomplete="name" />
+	<InputField text={'E-Mail Adresse*'} box_height={45} name="email" autocomplete="email" />
+	<InputField
+		text={'Telefonnummer'}
+		box_height={45}
+		name="number"
+		type="number"
+		required={false}
+		autocomplete="tel"
+	/>
 	<InputField text={'Nachricht*'} box_height={90} name="message" multiline={true} />
 	<button type="submit">Abschicken</button>
 </form>
