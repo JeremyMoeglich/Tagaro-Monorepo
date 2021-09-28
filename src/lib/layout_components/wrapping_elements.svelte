@@ -1,7 +1,7 @@
 <script>
 	export let components;
 	let actual_center_element = 0;
-	let center_element
+	let center_element;
 </script>
 
 <div class="main_container">
@@ -33,7 +33,7 @@
 		--box_width: calc(10vw + 200px);
 		--x_padding: 20px;
 		--actual_width: calc(var(--box_width) + var(--x_padding) * 2);
-		--background_color: #f2f2f2;;
+		--background_color: #f2f2f2;
 		--outer_padding: 100px;
 	}
 	ul {
@@ -50,11 +50,10 @@
 	}
 	.package_alignment {
 		padding: 30px var(--x_padding);
-		
+
 		border-radius: 2px;
 		max-width: var(--box_width);
 		min-width: var(--box_width);
-		
 	}
 	.middle_element {
 		box-shadow: 0 6px 20px 0 rgb(0 0 0 / 12%);

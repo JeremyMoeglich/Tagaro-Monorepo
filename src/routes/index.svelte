@@ -7,11 +7,7 @@
 			>
 			<div class="sky_logo to_remove">
 				<a target="_blank" href="/sky/bestellen"
-					><img
-						alt=""
-						src="/images/external/dazn.svg"
-						class="sky_logo to_remove maxwidth90"
-					/></a
+					><img alt="" src="/images/external/dazn.svg" class="sky_logo to_remove maxwidth90" /></a
 				>
 				<p class="subtext">DAZN Jetzt hinzubuchbar</p>
 			</div>
