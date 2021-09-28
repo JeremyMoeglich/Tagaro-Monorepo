@@ -29,7 +29,6 @@ export async function post({ body }) {
 	}
 	console.log(bodyobj);
 
-
 	const transporter = nodemailer.createTransport({
 		host: SMTP_HOST,
 		secure: true, // upgrade later with STARTTLS
@@ -39,8 +38,9 @@ export async function post({ body }) {
 		}
 	});
 
-	const message_body = Object.keys(bodyobj).map(k => k + " - " + bodyobj[k]).join("\n\n")
-
+	const message_body = Object.keys(bodyobj)
+		.map((k) => k + ' - ' + bodyobj[k])
+		.join('\n\n');
 
 	const mailOptions = {
 		from: SMTP_MAIL,
@@ -50,11 +50,11 @@ export async function post({ body }) {
 	};
 
 	transporter.sendMail(mailOptions, function (error, info) {
-	    if (error) {
-	        console.log(error);
-	    } else {
-	        console.log('Email sent: ' + info.response);
-	    }
+		if (error) {
+			console.log(error);
+		} else {
+			console.log('Email sent: ' + info.response);
+		}
 	});
 
 	return {

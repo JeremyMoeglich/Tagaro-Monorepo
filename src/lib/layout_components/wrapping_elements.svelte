@@ -1,13 +1,25 @@
-<script>
-	export let components;
-	let actual_center_element = 0;
-	let center_element
+<script lang="ts">
+	export let components: Array<{
+		title: String;
+		image: String;
+		points: Array<String>;
+		subtitle: String;
+		info_text: String;
+	}>;
+
+	let ci = -1;
+	components.forEach((element) => {
+		ci++;
+		element["id"] = ci;
+		return element;
+	});
+	let center_index;
 </script>
 
 <div class="main_container">
 	<div class="alignment">
 		{#each components as item}
-			<div class="package_alignment {item ? 'middle_element' : ''}">
+			<div class="package_alignment {item == center_index ? 'middle_element' : ''}">
 				<h3>{item.title}</h3>
 				<img src={item.image} alt="" />
 				<ul>
@@ -33,7 +45,7 @@
 		--box_width: calc(10vw + 200px);
 		--x_padding: 20px;
 		--actual_width: calc(var(--box_width) + var(--x_padding) * 2);
-		--background_color: #f2f2f2;;
+		--background_color: #f2f2f2;
 		--outer_padding: 100px;
 	}
 	ul {
@@ -50,11 +62,10 @@
 	}
 	.package_alignment {
 		padding: 30px var(--x_padding);
-		
+
 		border-radius: 2px;
 		max-width: var(--box_width);
 		min-width: var(--box_width);
-		
 	}
 	.middle_element {
 		box-shadow: 0 6px 20px 0 rgb(0 0 0 / 12%);
