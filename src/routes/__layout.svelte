@@ -376,7 +376,7 @@
 	}
 	.nav_element_mobile {
 		text-align: left;
-		--pad: 10px;
+		--pad: 1vh;
 		padding-top: var(--pad);
 		padding-bottom: var(--pad);
 		border-bottom: 1px solid white;
