@@ -24,7 +24,7 @@
 		});
 	}
 
-	let center_index = Math.floor(indexed_components.length * (0.5 + 10**10));
+	let center_index = Math.floor(indexed_components.length * (0.5 + 0 ** 10));
 	let current_x_pos = center_index;
 
 	let css_vars = {
@@ -37,15 +37,22 @@
 	};
 
 	function wrap(index) {
-		return index % indexed_components.length
+		return mod_floor(index, indexed_components.length);
+	}
+	function element_wrap(index) {
+		const l = indexed_components.length;
+		const hl = Math.floor(l / 2);
+		return ((((index + hl) % l) - hl * 2) % l) + hl;
 	}
 
 	function get_x_pos(index, x_index) {
-		return `left: calc(${wrap(index - x_index)} * (${
-			css_vars.actual_width
-		} + ${css_vars.element_spacing}) - ${css_vars.actual_width} / 2);`;
+		return `left: calc(${element_wrap(index - wrap(x_index))} * (${css_vars.actual_width} + ${
+			css_vars.element_spacing
+		}) - ${css_vars.actual_width} / 2);`;
 	}
-
+	function mod_floor(a, n) {
+		return ((a % n) + n) % n;
+	}
 	function lerp(v1, v2, f) {
 		if (f < 0 || f > 1) {
 			throw `Value must be between 0 and 1 value was: ${f}`;
@@ -56,20 +63,34 @@
 	let stop_id = undefined;
 	let last = 0;
 	function animate(now) {
-		frames++
+		frames++;
 		if (browser) {
-			if (!((Math.abs(current_x_pos - center_index)) < 0.001)) {
+			if (!(Math.abs(current_x_pos - center_index) < 0.001)) {
 				let dt = Math.max(Math.min((now - last) / 200, 1), 0);
 				last = now;
 				current_x_pos = lerp(current_x_pos, center_index, dt);
 				stop_id = window.requestAnimationFrame(animate);
 			} else {
-				current_x_pos = center_index
+				current_x_pos = center_index;
 			}
-			
- 		}
+		}
 	}
 
+	let slide_timeout_id;
+	const delay = 6000
+
+	function slide(amount = 1) {
+		center_index += amount;
+		last = window.performance.now();
+		window.clearTimeout(slide_timeout_id)
+		slide_timeout_id = setTimeout(slide, delay)
+		window.cancelAnimationFrame(stop_id);
+		window.requestAnimationFrame(animate);
+	}
+
+	if (browser) {
+		setTimeout(slide, delay)
+	}
 
 	$: css_vars_style = (function () {
 		let combined_style = '';
@@ -82,19 +103,21 @@
 
 <div class="buttons">
 	<div>{frames}</div>
-	<div on:click={function (){
-		center_index--;
-		last = window.performance.now();
-		window.cancelAnimationFrame(stop_id)
-		window.requestAnimationFrame(animate)
-		}}>-</div>
+	<div
+		on:click={function () {
+			slide(-1);
+		}}
+	>
+		-
+	</div>
 	<div>{center_index}</div>
-	<div on:click={function (){
-		center_index++;
-		last = window.performance.now();
-		window.cancelAnimationFrame(stop_id)
-		window.requestAnimationFrame(animate)
-		}}>+</div>
+	<div
+		on:click={function () {
+			slide(1);
+		}}
+	>
+		+
+	</div>
 </div>
 
 <div class="main_container" style={css_vars_style}>
@@ -128,7 +151,7 @@
 		display: flex;
 		justify-content: center;
 	}
-	.buttons div{
+	.buttons div {
 		padding: 50px;
 	}
 	ul {
@@ -162,6 +185,9 @@
 	}
 	.t {
 		min-width: calc(var(--actual_width) * 3 + var(--element_spacing) * 3);
+	}
+	img {
+		width: 100%;
 	}
 	.cover_element {
 		position: relative;
