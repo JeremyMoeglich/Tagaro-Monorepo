@@ -1,7 +1,5 @@
 <script lang="ts">
-import { object_without_properties } from "svelte/internal";
-
-
+	import { browser } from '$app/env';
 
 	export let components: Array<{
 		title: string;
@@ -18,46 +16,94 @@ import { object_without_properties } from "svelte/internal";
 		subtitle: string;
 		info_text: string;
 		id: number;
-	}> = []
+	}> = [];
 	for (const [index, element] of components.entries()) {
 		indexed_components.push({
 			...element,
-			id : index
-		})
-	};
-
-	function get_x_pos(index) {
-		return index % indexed_components.length
+			id: index
+		});
 	}
-	function lerp(v1, v2, f) {
-		if (f < 0 || f > 1) {
-			
-		}
-		return v1*(1-f) + v2*f
-	}
-		 
 
-	let center_index = Math.floor(indexed_components.length / 2);
-	let current_x_pos = center_index
+	let center_index = Math.floor(indexed_components.length * (0.5 + 10**10));
+	let current_x_pos = center_index;
 
 	let css_vars = {
-		element_spacing: "50px",
-		box_width: "calc(10vw + 200px)",
-		x_padding: "20px",
-		actual_width: "calc(var(--box_width) + var(--x_padding) * 2)",
-		background_color: "#f2f2f2",
-		outer_padding: "100px"
+		element_spacing: '10px',
+		box_width: 'calc(5vw + 200px)',
+		x_padding: '20px',
+		actual_width: 'calc(var(--box_width) + var(--x_padding) * 2)',
+		background_color: '#f2f2f2',
+		outer_padding: '100px'
+	};
+
+	function wrap(index) {
+		return index % indexed_components.length
 	}
 
-	$: css_vars_style = ":root{"+ Object.entries().forEach({
-		
-	}) +"}"
+	function get_x_pos(index, x_index) {
+		return `left: calc(${wrap(index - x_index)} * (${
+			css_vars.actual_width
+		} + ${css_vars.element_spacing}) - ${css_vars.actual_width} / 2);`;
+	}
+
+	function lerp(v1, v2, f) {
+		if (f < 0 || f > 1) {
+			throw `Value must be between 0 and 1 value was: ${f}`;
+		}
+		return v1 * (1 - f) + v2 * f;
+	}
+	let frames = 0;
+	let stop_id = undefined;
+	let last = 0;
+	function animate(now) {
+		frames++
+		if (browser) {
+			if (!((Math.abs(current_x_pos - center_index)) < 0.001)) {
+				let dt = Math.max(Math.min((now - last) / 200, 1), 0);
+				last = now;
+				current_x_pos = lerp(current_x_pos, center_index, dt);
+				stop_id = window.requestAnimationFrame(animate);
+			} else {
+				current_x_pos = center_index
+			}
+			
+ 		}
+	}
+
+
+	$: css_vars_style = (function () {
+		let combined_style = '';
+		for (const [key, value] of Object.entries(css_vars)) {
+			combined_style += '--' + key + ':' + value + ';';
+		}
+		return combined_style;
+	})();
 </script>
+
+<div class="buttons">
+	<div>{frames}</div>
+	<div on:click={function (){
+		center_index--;
+		last = window.performance.now();
+		window.cancelAnimationFrame(stop_id)
+		window.requestAnimationFrame(animate)
+		}}>-</div>
+	<div>{center_index}</div>
+	<div on:click={function (){
+		center_index++;
+		last = window.performance.now();
+		window.cancelAnimationFrame(stop_id)
+		window.requestAnimationFrame(animate)
+		}}>+</div>
+</div>
 
 <div class="main_container" style={css_vars_style}>
 	<div class="alignment">
-		{#each components as item}
-			<div class="package_alignment {item == center_index ? 'middle_element' : ''}">
+		{#each indexed_components as item}
+			<div
+				class="package_alignment {item.id == wrap(center_index) ? 'middle_element' : ''}"
+				style={get_x_pos(item.id, current_x_pos)}
+			>
 				<h3>{item.title}</h3>
 				<img src={item.image} alt="" />
 				<ul>
@@ -78,13 +124,12 @@ import { object_without_properties } from "svelte/internal";
 </div>
 
 <style>
-	:root {
-		--element_spacing: 50px;
-		--box_width: calc(10vw + 200px);
-		--x_padding: 20px;
-		--actual_width: calc(var(--box_width) + var(--x_padding) * 2);
-		--background_color: #f2f2f2;
-		--outer_padding: 100px;
+	.buttons {
+		display: flex;
+		justify-content: center;
+	}
+	.buttons div{
+		padding: 50px;
 	}
 	ul {
 		list-style: none;
@@ -97,10 +142,12 @@ import { object_without_properties } from "svelte/internal";
 		flex-wrap: nowrap;
 		justify-content: center;
 		gap: var(--element_spacing);
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.package_alignment {
+		position: absolute;
 		padding: 30px var(--x_padding);
-
 		border-radius: 2px;
 		max-width: var(--box_width);
 		min-width: var(--box_width);
@@ -136,5 +183,6 @@ import { object_without_properties } from "svelte/internal";
 		flex-direction: column;
 		background-color: var(--background_color);
 		padding: var(--outer_padding) 0px;
+		min-height: 500px;
 	}
 </style>
