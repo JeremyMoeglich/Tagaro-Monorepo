@@ -1,3 +1,7 @@
+<script>
+	import AngeboteRotator from '$lib/site_components/angebote_rotator.svelte';
+</script>
+
 <body>
 	<div style="padding-top: 2vh;" />
 	<div class="top_header">
@@ -68,6 +72,7 @@
 		>
 	</div>
 	<div style="padding-top:max(1vw, 20px);" />
+	<AngeboteRotator />
 </body>
 
 <style>
@@ -149,6 +154,7 @@
 		margin-bottom: 15px;
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;
+		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 

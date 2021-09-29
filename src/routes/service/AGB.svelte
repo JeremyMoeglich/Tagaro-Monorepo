@@ -1,4 +1,5 @@
 <div class="main_container">
+	<h1>Allgemeine Geschäftsbedingungen</h1>
 	<p>
 		<b>1. Allgemeines / Vertragsabschluss</b>
 	</p>
@@ -635,6 +636,14 @@
 </div>
 
 <style>
+    h1 {
+		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+		font-size: 40px;
+	}
 	div {
 		padding: 50px;
 	}
