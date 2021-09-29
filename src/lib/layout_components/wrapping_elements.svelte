@@ -17,6 +17,7 @@
 		info_text: string;
 		id: number;
 	}> = [];
+
 	for (const [index, element] of components.entries()) {
 		indexed_components.push({
 			...element,
@@ -27,7 +28,14 @@
 	let center_index = Math.floor(indexed_components.length * (0.5 + 0 ** 10));
 	let current_x_pos = center_index;
 
-	let css_vars = {
+	export let css_vars : {
+		element_spacing: string;
+		box_width: string;
+		x_padding: string;
+		actual_width: string;
+		background_color: string;
+		outer_padding: string;
+	} = {
 		element_spacing: '10px',
 		box_width: 'calc(5vw + 200px)',
 		x_padding: '20px',
