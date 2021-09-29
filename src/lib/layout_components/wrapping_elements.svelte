@@ -48,10 +48,10 @@ import { object_without_properties } from "svelte/internal";
 		background_color: "#f2f2f2",
 		outer_padding: "100px"
 	}
-
-	$: css_vars_style = ":root{"+ Object.entries().forEach({
-		
-	}) +"}"
+	let css_vars_style = ""
+	//$: css_vars_style = ":root{"+ Object.entries().forEach({
+	//	
+	//}) +"}"
 </script>
 
 <div class="main_container" style={css_vars_style}>
