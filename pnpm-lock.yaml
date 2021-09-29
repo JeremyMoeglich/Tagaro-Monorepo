@@ -38,7 +38,7 @@ dependencies:
   vite-imagetools: 3.6.8
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.175_svelte@3.43.0
+  '@sveltejs/kit': 1.0.0-next.176_svelte@3.43.0
   '@typescript-eslint/eslint-plugin': 4.32.0_1eacf2495a01e8a68ffa99482308e8ec
   '@typescript-eslint/parser': 4.32.0_eslint@7.32.0+typescript@4.4.3
   eslint: 7.32.0
@@ -149,8 +149,8 @@ packages:
     resolution: {integrity: sha512-vutVoloX35E6QnnrNofToOWn/er/Li2yoR15NbTPZ26Gp3M6A2ckQJNMJrDbBA5XZsktNIXchIVGaADnKIJrow==}
     dev: false
 
-  /@sveltejs/kit/1.0.0-next.175_svelte@3.43.0:
-    resolution: {integrity: sha512-GRD5gdCE0kuWZLwnBkQh933dJlT6lFiglpxC3g1U2aq8c4og/2jzDqkFJLsSMTzRu17JFKni6s6ZhEwhjojTSQ==}
+  /@sveltejs/kit/1.0.0-next.176_svelte@3.43.0:
+    resolution: {integrity: sha512-aFwZ1PjOcxOSAX93Py3jfJBgZgWmANO5Vt2fb8abvNGLTA/d6VVArdPXSccaSxLYCGmgzvx+CAr8P+P8FcJ+Ng==}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
@@ -1210,8 +1210,8 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
-  /nanocolors/0.2.11:
-    resolution: {integrity: sha512-83ttyvfJj66dKMadWfBkEUOEDFfRc8FpzTJvh1MySR/pzWFmFikTQZGOV6kHZRz7yR/heiQ1y/MHBBN5P/e7WQ==}
+  /nanocolors/0.2.12:
+    resolution: {integrity: sha512-SFNdALvzW+rVlzqexid6epYdt8H9Zol7xDoQarioEFcFN0JHo4CYNztAxmtfgGTVRCmFlEOqqhBpoFGKqSAMug==}
 
   /nanoid/3.1.28:
     resolution: {integrity: sha512-gSu9VZ2HtmoKYe/lmyPFES5nknFrHa+/DT9muUFWFMi6Jh9E1I7bkvlQ8xxf1Kos9pi9o8lBnIOkatMhKX/YUw==}
@@ -1321,7 +1321,7 @@ packages:
     resolution: {integrity: sha512-GT5bTjjZnwDifajzczOC+r3FI3Cu+PgPvrsjhQdRqa2kTJ4968/X9CUce9xttIB0xOs5c6xf0TCWZo/y9lF6bA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanocolors: 0.2.11
+      nanocolors: 0.2.12
       nanoid: 3.1.28
       source-map-js: 0.6.2
 
