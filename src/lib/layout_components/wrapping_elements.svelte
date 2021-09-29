@@ -1,4 +1,8 @@
 <script lang="ts">
+import { object_without_properties } from "svelte/internal";
+
+
+
 	export let components: Array<{
 		title: string;
 		image: string;
@@ -7,16 +11,50 @@
 		info_text: string;
 	}>;
 
-	let ci = -1;
-	components.forEach((element) => {
-		ci++;
-		element["id"] = ci;
-		return element;
-	});
-	let center_index;
+	let indexed_components: Array<{
+		title: string;
+		image: string;
+		points: Array<string>;
+		subtitle: string;
+		info_text: string;
+		id: number;
+	}> = []
+	for (const [index, element] of components.entries()) {
+		indexed_components.push({
+			...element,
+			id : index
+		})
+	};
+
+	function get_x_pos(index) {
+		return index % indexed_components.length
+	}
+	function lerp(v1, v2, f) {
+		if (f < 0 || f > 1) {
+			
+		}
+		return v1*(1-f) + v2*f
+	}
+		 
+
+	let center_index = Math.floor(indexed_components.length / 2);
+	let current_x_pos = center_index
+
+	let css_vars = {
+		element_spacing: "50px",
+		box_width: "calc(10vw + 200px)",
+		x_padding: "20px",
+		actual_width: "calc(var(--box_width) + var(--x_padding) * 2)",
+		background_color: "#f2f2f2",
+		outer_padding: "100px"
+	}
+
+	$: css_vars_style = ":root{"+ Object.entries().forEach({
+		
+	}) +"}"
 </script>
 
-<div class="main_container">
+<div class="main_container" style={css_vars_style}>
 	<div class="alignment">
 		{#each components as item}
 			<div class="package_alignment {item == center_index ? 'middle_element' : ''}">
