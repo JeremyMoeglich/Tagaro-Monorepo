@@ -4,7 +4,7 @@
 	const components = [
 		{
 			title: '2 Sky Pakete nach Wahl + € 20 Prämie',
-			image: '/fileadmin/media/tagaro.de/wahl_2aus4.png',
+			image: '/images/wahl/wahl_2aus4.png',
 			points: [
 				'+ Für Internet, Sat- oder Kabel',
 				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
@@ -19,7 +19,7 @@
 
 		{
 			title: '3 Sky Pakete nach Wahl + € 20 Prämie',
-			image: '/fileadmin/media/tagaro.de/wahl_3aus4.png',
+			image: '/images/wahl/wahl_3aus4.png',
 			points: [
 				'+ Für Internet, Sat- oder Kabel',
 				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
@@ -34,7 +34,7 @@
 
 		{
 			title: 'Alle 4 Sky Pakete + € 20 Prämie',
-			image: '/fileadmin/media/tagaro.de/wahl_4.png',
+			image: '/images/wahl/wahl_4.png',
 			points: [
 				'+ Für Internet, Sat- oder Kabel',
 				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
@@ -49,7 +49,7 @@
 
 		{
 			title: 'Sky Entertainment Paket + € 20 Prämie',
-			image: '/fileadmin/media/tagaro.de/wahl_entertainment.png',
+			image: '/images/wahl/wahl_entertainment.png',
 			points: [
 				'+ Für Internet, Sat- oder Kabel',
 				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
@@ -63,7 +63,7 @@
 
 		{
 			title: 'Sky Cinema Paket + € 20 Prämie',
-			image: '/fileadmin/media/tagaro.de/wahl_cinema.png',
+			image: '/images/wahl/wahl_cinema.png',
 			points: [
 				'+ Für Internet, Sat- oder Kabel',
 				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
@@ -78,7 +78,7 @@
 
 		{
 			title: 'Sky Sport Paket + € 20 Prämie',
-			image: '/fileadmin/media/tagaro.de/wahl_sport.png',
+			image: '/images/wahl/wahl_sport.png',
 			points: [
 				'+ Für Internet, Sat- oder Kabel',
 				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
@@ -93,7 +93,7 @@
 
 		{
 			title: 'Sky Fußball-Bundesliga Paket + € 20 Prämie',
-			image: '/fileadmin/media/tagaro.de/wahl_bundesliga.png',
+			image: '/images/wahl/wahl_bundesliga.png',
 			points: [
 				'+ Für Internet, Sat- oder Kabel',
 				'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',

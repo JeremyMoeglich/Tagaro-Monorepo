@@ -338,7 +338,7 @@
 
 	.header_center_alignment {
 		padding-top: 15px;
-		padding-top: calc(var(--top_bar_size) / 2 - 30px);
+		padding-top: calc(var(--top_bar_size) / 2 - 35px);
 		display: flex;
 		align-items: center;
 	}
@@ -376,7 +376,7 @@
 	}
 	.nav_element_mobile {
 		text-align: left;
-		--pad: 10px;
+		--pad: 1vh;
 		padding-top: var(--pad);
 		padding-bottom: var(--pad);
 		border-bottom: 1px solid white;

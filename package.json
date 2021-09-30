@@ -28,14 +28,15 @@
   "type": "module",
   "dependencies": {
     "@macfja/svelte-multi-adapter": "^1.0.0",
-    "@sveltejs/adapter-node": "^1.0.0-next.51",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.32",
+    "@sveltejs/adapter-node": "^1.0.0-next.52",
     "@sveltejs/adapter-static": "^1.0.0-next.20",
     "dotenv": "^10.0.0",
     "mdsvex": "^0.9.8",
     "nodemailer": "^6.6.5",
     "object-sizeof": "^1.6.1",
     "redis": "^3.1.2",
-    "vite": "^2.5.10",
+    "vite": "^2.6.1",
     "vite-imagetools": "^3.6.8"
   }
 }
