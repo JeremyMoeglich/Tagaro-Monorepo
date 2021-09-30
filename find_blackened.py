@@ -3,7 +3,7 @@ from typing import Iterable
 import PIL.Image
 import numpy as np
 from copy import deepcopy
-rootdir = "./src"
+rootdir = "."
 
 
 def is_black(img):
@@ -29,7 +29,10 @@ for dirpath, _, files in os.walk(rootdir):
         #if is_black(selected_image):
         #    print(img_path)
         total_files += 1
-        chars += len(open(img_path, "r").read().split(" "))
+        try:
+            chars += len(open(img_path, "r").read().split(" "))
+        except:
+            pass
 
 print(chars, total_files)
 

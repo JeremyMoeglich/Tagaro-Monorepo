@@ -426,6 +426,9 @@
 	}
 	.outer_container {
 		padding: 50px 30px;
+		max-width: min(1200px, 95%);
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.outer_container > div {
 		background-color: rgb(230, 230, 230);
