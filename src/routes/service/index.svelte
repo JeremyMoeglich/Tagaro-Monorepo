@@ -51,7 +51,7 @@
 		margin-right: auto;
 		justify-content: center;
 	}
-    h1 {
+	h1 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;
 		background-clip: text;
@@ -59,18 +59,18 @@
 		text-align: center;
 		font-size: 42px;
 	}
-    .side_alignment > div {
-        max-width: 50%;
+	.side_alignment > div {
+		max-width: 50%;
 		min-width: 50%;
-        padding: 40px 20px;
+		padding: 40px 20px;
 		background-color: #f2f2f2;
-    }
+	}
 	h2 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		font-size: 30px;
-        text-align: center;
+		text-align: center;
 	}
 </style>

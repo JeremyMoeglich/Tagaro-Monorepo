@@ -113,8 +113,8 @@
 	}
 
 	function select(id) {
-		center_index = id
-		slide(0)
+		center_index = id;
+		slide(0);
 	}
 
 	$: css_vars_style = (function () {
@@ -127,8 +127,6 @@
 </script>
 
 <div style={css_vars_style}>
-
-
 	<div class="main_container">
 		<div class="alignment">
 			{#each indexed_components as item}
@@ -155,9 +153,14 @@
 		</div>
 	</div>
 	<div class="controll_align">
-		<div class="line_control_container" >
+		<div class="line_control_container">
 			{#each indexed_components as item}
-				<div class={item.id == wrap(center_index) ? 'selected' : ''} on:click={function (){select(item.id)}}>
+				<div
+					class={item.id == wrap(center_index) ? 'selected' : ''}
+					on:click={function () {
+						select(item.id);
+					}}
+				>
 					&nbsp;
 				</div>
 			{/each}
@@ -198,7 +201,6 @@
 		padding-left: 0px;
 		line-height: 35px;
 	}
-
 	.alignment {
 		position: relative;
 		display: flex;
