@@ -338,7 +338,7 @@
 
 	.header_center_alignment {
 		padding-top: 15px;
-		padding-top: calc(var(--top_bar_size) / 2 - 30px);
+		padding-top: calc(var(--top_bar_size) / 2 - 35px);
 		display: flex;
 		align-items: center;
 	}
