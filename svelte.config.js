@@ -3,6 +3,7 @@ import preprocess from 'svelte-preprocess';
 import multiAdapter from '@macfja/svelte-multi-adapter'
 import staticAdapter from '@sveltejs/adapter-static'
 import nodeAdapter from '@sveltejs/adapter-node'
+import netlifyAdapter from '@sveltejs/adapter-netlify'
 
 import { imagetools } from 'vite-imagetools';
 
@@ -21,8 +22,9 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 
-		adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
+		//adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
 		//adapter: staticAdapter({ pages: 'build',prerender: true }),
+		adapter: netlifyAdapter(),
 
 		vite: {
 			ssr: {
