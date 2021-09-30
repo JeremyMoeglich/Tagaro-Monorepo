@@ -28,7 +28,7 @@
 	let center_index = Math.floor(indexed_components.length * (0.5 + 0 ** 10));
 	let current_x_pos = center_index;
 
-	export let css_vars : {
+	export let css_vars: {
 		element_spacing: string;
 		box_width: string;
 		x_padding: string;
@@ -38,7 +38,7 @@
 	} = {
 		element_spacing: '10px',
 		box_width: 'calc(5vw + 200px)',
-		x_padding: '20px',
+		x_padding: '50px',
 		actual_width: 'calc(var(--box_width) + var(--x_padding) * 2)',
 		background_color: '#f2f2f2',
 		outer_padding: '100px'
@@ -74,7 +74,7 @@
 		frames++;
 		if (browser) {
 			if (!(Math.abs(current_x_pos - center_index) < 0.001)) {
-				let dt = Math.max(Math.min((now - last) / 200, 1), 0);
+				let dt = Math.max(Math.min(((now - last) / 200) * 2, 1), 0);
 				last = now;
 				current_x_pos = lerp(current_x_pos, center_index, dt);
 				stop_id = window.requestAnimationFrame(animate);
@@ -85,19 +85,36 @@
 	}
 
 	let slide_timeout_id;
-	const delay = 6000
+	const delay = 5000;
+	let focused = true;
 
 	function slide(amount = 1) {
-		center_index += amount;
-		last = window.performance.now();
-		window.clearTimeout(slide_timeout_id)
-		slide_timeout_id = setTimeout(slide, delay)
-		window.cancelAnimationFrame(stop_id);
-		window.requestAnimationFrame(animate);
+		if (focused) {
+			center_index += amount;
+			last = window.performance.now();
+			window.cancelAnimationFrame(stop_id);
+			window.requestAnimationFrame(animate);
+		}
+		window.clearTimeout(slide_timeout_id);
+		slide_timeout_id = setTimeout(slide, delay);
 	}
 
 	if (browser) {
-		setTimeout(slide, delay)
+		setTimeout(slide, delay);
+
+		window.onfocus = function () {
+			focused = true;
+			window.cancelAnimationFrame(stop_id);
+			window.requestAnimationFrame(animate);
+		};
+		window.onblur = function () {
+			focused = false;
+		};
+	}
+
+	function select(id) {
+		center_index = id
+		slide(0)
 	}
 
 	$: css_vars_style = (function () {
@@ -109,52 +126,90 @@
 	})();
 </script>
 
-<div class="buttons">
-	<div>{frames}</div>
-	<div
-		on:click={function () {
-			slide(-1);
-		}}
-	>
-		-
+<div style={css_vars_style}>
+	<div class="buttons">
+		<div>{frames}</div>
+		<div
+			on:click={function () {
+				slide(-1);
+			}}
+		>
+			-
+		</div>
+		<div>{center_index}</div>
+		<div
+			on:click={function () {
+				slide(1);
+			}}
+		>
+			+
+		</div>
 	</div>
-	<div>{center_index}</div>
-	<div
-		on:click={function () {
-			slide(1);
-		}}
-	>
-		+
-	</div>
-</div>
 
-<div class="main_container" style={css_vars_style}>
-	<div class="alignment">
-		{#each indexed_components as item}
-			<div
-				class="package_alignment {item.id == wrap(center_index) ? 'middle_element' : ''}"
-				style={get_x_pos(item.id, current_x_pos)}
-			>
-				<h3>{item.title}</h3>
-				<img src={item.image} alt="" />
-				<ul>
-					{#each item.points as point}
-						<li>{@html point}</li>
-					{/each}
-				</ul>
-				<h3>{item.subtitle}</h3>
-				<p>{item.info_text}</p>
-			</div>
-		{/each}
+	<div class="main_container">
+		<div class="alignment">
+			{#each indexed_components as item}
+				<div
+					class="package_alignment {item.id == wrap(center_index) ? 'middle_element' : ''}"
+					style={get_x_pos(item.id, current_x_pos)}
+				>
+					<h3>{item.title}</h3>
+					<img src={item.image} alt="" />
+					<ul>
+						{#each item.points as point}
+							<li>{@html point}</li>
+						{/each}
+					</ul>
+					<h3>{item.subtitle}</h3>
+					<p>{item.info_text}</p>
+				</div>
+			{/each}
+		</div>
+		<div class="cover_elements">
+			<div class="cover cover_element" />
+			<div class="t cover_element" />
+			<div class="cover cover_element" />
+		</div>
 	</div>
-	<div class="cover_elements">
-		<div class="cover cover_element" />
-		<div class="t cover_element" />
-		<div class="cover cover_element" />
+	<div class="controll_align">
+		<div class="line_control_container" >
+			{#each indexed_components as item}
+				<div class={item.id == wrap(center_index) ? 'selected' : ''} on:click={function (){select(item.id)}}>
+					&nbsp;
+				</div>
+			{/each}
+		</div>
 	</div>
 </div>
 
 <style>
+	:root {
+		--background_height: calc(830px - 5vw);
+	}
+	.controll_align {
+		display: flex;
+		min-height: calc(var(--outer_padding) * 1.5);
+		background-color: var(--background_color);
+		justify-content: center;
+		align-items: center;
+	}
+	.line_control_container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 13px;
+		min-width: calc(var(--actual_width) * 0.8);
+	}
+	.line_control_container > div {
+		background-color: rgb(219, 219, 219);
+		width: 100%;
+		height: 7px;
+	}
+	.line_control_container > .selected {
+		background: linear-gradient(to right, #49358d, #027fc7);
+		width: 100%;
+		height: 16px;
+	}
 	.buttons {
 		display: flex;
 		justify-content: center;
@@ -165,6 +220,7 @@
 	ul {
 		list-style: none;
 		padding-left: 0px;
+		line-height: 35px;
 	}
 
 	.alignment {
@@ -178,7 +234,9 @@
 	}
 	.package_alignment {
 		position: absolute;
-		padding: 30px var(--x_padding);
+		display: flex;
+		flex-direction: column;
+		padding: 70px var(--x_padding);
 		border-radius: 2px;
 		max-width: var(--box_width);
 		min-width: var(--box_width);
@@ -186,6 +244,13 @@
 	.middle_element {
 		box-shadow: 0 6px 20px 0 rgb(0 0 0 / 12%);
 		background-color: white;
+	}
+	h3 {
+		min-height: 60px;
+		margin: 0px;
+	}
+	p {
+		margin: 0px;
 	}
 	.cover {
 		background-color: var(--background_color);
@@ -195,7 +260,7 @@
 		min-width: calc(var(--actual_width) * 3 + var(--element_spacing) * 3);
 	}
 	img {
-		width: 100%;
+		align-self: center;
 	}
 	.cover_element {
 		position: relative;
@@ -216,7 +281,7 @@
 		display: flex;
 		flex-direction: column;
 		background-color: var(--background_color);
-		padding: var(--outer_padding) 0px;
-		min-height: 500px;
+		padding-top: var(--outer_padding);
+		min-height: var(--background_height);
 	}
 </style>
