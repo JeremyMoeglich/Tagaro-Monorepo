@@ -43,12 +43,12 @@
 </body>
 
 <style>
-    .alignment {
-        max-width: min(85%, 1000px);
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-    }
+	.alignment {
+		max-width: min(85%, 1000px);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+	}
 	h1 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;

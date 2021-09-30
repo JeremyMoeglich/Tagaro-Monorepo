@@ -8,7 +8,7 @@
 
 <script>
 	import Footer from '$lib/site_components/footer.svelte';
-	
+
 	// @ts-nocheck
 
 	function clickOutside(node) {
