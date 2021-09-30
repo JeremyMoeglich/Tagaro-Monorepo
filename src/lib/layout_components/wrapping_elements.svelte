@@ -127,24 +127,7 @@
 </script>
 
 <div style={css_vars_style}>
-	<div class="buttons">
-		<div>{frames}</div>
-		<div
-			on:click={function () {
-				slide(-1);
-			}}
-		>
-			-
-		</div>
-		<div>{center_index}</div>
-		<div
-			on:click={function () {
-				slide(1);
-			}}
-		>
-			+
-		</div>
-	</div>
+
 
 	<div class="main_container">
 		<div class="alignment">
@@ -209,13 +192,6 @@
 		background: linear-gradient(to right, #49358d, #027fc7);
 		width: 100%;
 		height: 16px;
-	}
-	.buttons {
-		display: flex;
-		justify-content: center;
-	}
-	.buttons div {
-		padding: 50px;
 	}
 	ul {
 		list-style: none;
