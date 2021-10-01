@@ -2,6 +2,7 @@
 	import AngeboteRotator from '$lib/site_components/angebote_rotator.svelte';
 </script>
 
+
 <body>
 	<div style="padding-top: 2vh;" />
 	<div class="top_header">

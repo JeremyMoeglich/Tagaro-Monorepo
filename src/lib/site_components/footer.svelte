@@ -34,7 +34,7 @@
 		<h3>Sicher Einkaufen</h3>
 		<img src="/images/badges/autorisiert_sky.png" alt="" />
 		<img src="/images/badges/ssl.png" alt="" />
-		<a
+		<!-- <a
 			href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung"
 			target="_blank"
 			title="Klicken Sie für weitere Informationen"
@@ -45,11 +45,12 @@
 				src="https://cdn.trustami.com/userimages/100226/hdSeals/59e6544c53a49963318b4568.png?widget=true"
 				alt="Trustami"
 			/></a
-		>
+		> -->
+		{@html '<div class="widget_container_badge"></div>'}
 	</div>
 	<div class="social">
 		<h3>Social Media</h3>
-		<iframe src="/raw_components/page_plugin.html" frameborder="0" title="" />
+		<iframe src="/raw_components/page_plugin.html" frameborder="0" title="Tagaro Medienshop Facebook" />
 	</div>
 </div>
 
