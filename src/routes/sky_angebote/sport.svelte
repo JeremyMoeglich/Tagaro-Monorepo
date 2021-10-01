@@ -1,5 +1,5 @@
 <script>
-	import SportOverview from '$lib/site_components/packages/sport_overview.svelte';
+	import SportOverview from '$lib/site_components/packages/overviews/sport_overview.svelte';
 </script>
 
 <body>
