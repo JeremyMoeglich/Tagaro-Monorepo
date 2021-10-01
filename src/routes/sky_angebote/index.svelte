@@ -1,5 +1,5 @@
 <script>
-	import BundesligaOverview from '$lib/site_components/packages/bundesliga_overview.svelte';
+	import BundesligaOverview from '$lib/site_components/packages/overviews/bundesliga_overview.svelte';
 	import CinemaOverview from '$lib/site_components/packages/cinema_overview.svelte';
 	import DaznOverview from '$lib/site_components/packages/dazn_overview.svelte';
 	import EntertainmentOverview from '$lib/site_components/packages/entertainment_overview.svelte';

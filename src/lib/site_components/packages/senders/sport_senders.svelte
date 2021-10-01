@@ -1,0 +1,13 @@
+<script>
+    import SenderLayout from "$lib/layout_components/sender_layout.svelte";
+</script>
+
+<body>
+    <SenderLayout
+        content={[
+            
+        ]}
+    >
+        <h1>Sport Sender</h1>
+    </SenderLayout>
+</body>
