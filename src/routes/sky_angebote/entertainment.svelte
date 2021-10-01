@@ -3,5 +3,5 @@
 </script>
 
 <body>
-	<EntertainmentOverview />
+	<EntertainmentOverview detailed={true}/>
 </body>

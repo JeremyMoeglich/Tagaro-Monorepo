@@ -9,9 +9,14 @@
 		'Alle Rennen der Formel 1 live – exklusiv auf Sky',
 		'Alle Spiele des DFB Pokals einzeln und in der Original Sky Konferenz live',
 		'Alle Spiele der Premier League exklusiv, davon 232 Spiele live',
-
 		'Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
 	]}
 	image={'/images/packages/sky_sport.jpg'}
 	{detailed}
-/>
+>
+	<h3>12 Monate nur € 17,50 mtl.*</h3>
+	<p>
+		(im Jahres-Abo, danach € 17,50 mtl. im Monats-Abo) <br />
+		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
+	</p>
+</PackageOverview>

@@ -3,5 +3,5 @@
 </script>
 
 <body>
-	<BundesligaOverview />
+	<BundesligaOverview detailed={true}/>
 </body>

@@ -3,5 +3,5 @@
 </script>
 
 <body>
-	<SportOverview />
+	<SportOverview detailed={true}/>
 </body>

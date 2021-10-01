@@ -13,4 +13,10 @@
 	]}
 	image={'/images/packages/sky_bundesliga.jpg'}
 	{detailed}
-/>
+	>
+	<h3>12 Monate nur € 25,00 mtl.*</h3>
+	<p>
+		(im Jahres-Abo, danach € 25,00 mtl. im Monats-Abo) <br />
+		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
+	</p>
+</PackageOverview>
