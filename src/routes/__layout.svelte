@@ -233,7 +233,6 @@
 	* {
 		font-family: 'Oxygen', sans-serif;
 		z-index: 100;
-		line-height: 140%;
 	}
 
 	.context_menu {
