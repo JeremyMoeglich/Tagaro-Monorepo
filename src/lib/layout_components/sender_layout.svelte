@@ -1,4 +1,5 @@
 <script lang="ts">
+	export let title: string;
 	export let content: Array<{
 		title: string;
 		image: string;
@@ -6,6 +7,7 @@
 </script>
 
 <body>
+	<h2>{title}</h2>
 	<div class="main_alignment">
 		{#each content as element}
 			<div class="sender_box">
@@ -17,15 +19,29 @@
 </body>
 
 <style>
-    .main_alignment {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sender_box {
-        max-width: 250px;
-        width: 7vw;
-        min-width: 125px;
-        background-color: #f2f2f2;
-        border-radius: 5px;
-    }
+	.main_alignment {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.sender_box {
+		max-width: 250px;
+		width: 7vw;
+		min-width: 125px;
+		background-color: #f2f2f2;
+		border-radius: 5px;
+	}
+	h2,
+	h3 {
+		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	h3 {
+		font-size: 20px;
+	}
 </style>
