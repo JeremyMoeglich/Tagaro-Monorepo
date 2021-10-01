@@ -7,9 +7,9 @@
 </script>
 
 <script>
-	import Footer from '$lib/site_components/footer.svelte';
-
 	// @ts-nocheck
+
+	import Footer from '$lib/site_components/footer.svelte';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {

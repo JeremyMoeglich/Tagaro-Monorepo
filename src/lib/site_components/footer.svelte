@@ -50,7 +50,11 @@
 	</div>
 	<div class="social">
 		<h3>Social Media</h3>
-		<iframe src="/raw_components/page_plugin.html" frameborder="0" title="Tagaro Medienshop Facebook" />
+		<iframe
+			src="/raw_components/page_plugin.html"
+			frameborder="0"
+			title="Tagaro Medienshop Facebook"
+		/>
 	</div>
 </div>
 
