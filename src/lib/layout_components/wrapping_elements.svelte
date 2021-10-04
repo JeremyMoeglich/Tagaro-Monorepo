@@ -1,12 +1,15 @@
 <script lang="ts">
 	import { browser } from '$app/env';
+	import Button from '../layout_components/button.svelte';
 
+	export let title;
 	export let components: Array<{
 		title: string;
 		image: string;
 		points: Array<string>;
 		subtitle: string;
 		info_text: string;
+		route: string;
 	}>;
 
 	let indexed_components: Array<{
@@ -16,6 +19,7 @@
 		subtitle: string;
 		info_text: string;
 		id: number;
+		route: string;
 	}> = [];
 
 	for (const [index, element] of components.entries()) {
@@ -34,14 +38,12 @@
 		x_padding: string;
 		actual_width: string;
 		background_color: string;
-		outer_padding: string;
 	} = {
 		element_spacing: '10px',
 		box_width: 'calc(5vw + 200px)',
 		x_padding: '50px',
 		actual_width: 'calc(var(--box_width) + var(--x_padding) * 2)',
-		background_color: '#f2f2f2',
-		outer_padding: '100px'
+		background_color: '#f2f2f2'
 	};
 
 	function wrap(index) {
@@ -72,15 +74,13 @@
 	let last = 0;
 	function animate(now) {
 		frames++;
-		if (browser) {
-			if (!(Math.abs(current_x_pos - center_index) < 0.001)) {
-				let dt = Math.max(Math.min(((now - last) / 200) * 2, 1), 0);
-				last = now;
-				current_x_pos = lerp(current_x_pos, center_index, dt);
-				stop_id = window.requestAnimationFrame(animate);
-			} else {
-				current_x_pos = center_index;
-			}
+		if (!(Math.abs(current_x_pos - center_index) < 0.001)) {
+			let dt = Math.max(Math.min(((now - last) / 200) * 2, 1), 0);
+			last = now;
+			current_x_pos = lerp(current_x_pos, center_index, dt);
+			stop_id = requestAnimationFrame(animate);
+		} else {
+			current_x_pos = center_index;
 		}
 	}
 
@@ -91,23 +91,23 @@
 	function slide(amount = 1) {
 		if (focused) {
 			center_index += amount;
-			last = window.performance.now();
-			window.cancelAnimationFrame(stop_id);
-			window.requestAnimationFrame(animate);
+			last = performance.now();
+			cancelAnimationFrame(stop_id);
+			requestAnimationFrame(animate);
 		}
-		window.clearTimeout(slide_timeout_id);
+		clearTimeout(slide_timeout_id);
 		slide_timeout_id = setTimeout(slide, delay);
 	}
 
 	if (browser) {
 		setTimeout(slide, delay);
 
-		window.onfocus = function () {
+		onfocus = function () {
 			focused = true;
-			window.cancelAnimationFrame(stop_id);
-			window.requestAnimationFrame(animate);
+			cancelAnimationFrame(stop_id);
+			requestAnimationFrame(animate);
 		};
-		window.onblur = function () {
+		onblur = function () {
 			focused = false;
 		};
 	}
@@ -128,21 +128,25 @@
 
 <div style={css_vars_style}>
 	<div class="main_container">
+		<h2 class="gradient_text">{title}</h2>
 		<div class="alignment">
 			{#each indexed_components as item}
 				<div
 					class="package_alignment {item.id == wrap(center_index) ? 'middle_element' : ''}"
 					style={get_x_pos(item.id, current_x_pos)}
 				>
-					<h3>{item.title}</h3>
+					<h3>{@html item.title}</h3>
 					<img src={item.image} alt="" />
 					<ul>
 						{#each item.points as point}
 							<li>{@html point}</li>
 						{/each}
 					</ul>
-					<h3>{item.subtitle}</h3>
-					<p>{item.info_text}</p>
+					<h3>{@html item.subtitle}</h3>
+					<p>{@html item.info_text}</p>
+					<div class="btn">
+						<Button text={'Mehr erfahren'} route={item.route} />
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -170,11 +174,15 @@
 
 <style>
 	:root {
-		--background_height: calc(830px - 5vw);
+		--background_height: calc((830px - 5vw) * 1.2);
+		--outer_padding: 70px;
+	}
+	.btn {
+		margin-top: 50px;
 	}
 	.controll_align {
 		display: flex;
-		min-height: calc(var(--outer_padding) * 1.5);
+		min-height: calc(var(--outer_padding) * 2.5);
 		background-color: var(--background_color);
 		justify-content: center;
 		align-items: center;
@@ -226,6 +234,20 @@
 	h3 {
 		min-height: 60px;
 		margin: 0px;
+		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	h2 {
+		margin-bottom: 60px;
+		font-size: 35px;
+	}
+	.gradient_text {
+		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	p {
 		margin: 0px;
@@ -253,13 +275,17 @@
 		justify-content: center;
 		min-width: 100%;
 		min-height: 100%;
+		z-index: 5;
+		pointer-events: none;
 	}
 	.main_container {
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		background-color: var(--background_color);
 		padding-top: var(--outer_padding);
+		padding-bottom: var(--outer_padding);
 		min-height: var(--background_height);
 	}
 </style>

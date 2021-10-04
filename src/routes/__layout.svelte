@@ -6,12 +6,12 @@
 	});
 </script>
 
-<script>
+<script lang="ts">
 	// @ts-nocheck
 
 	import Footer from '$lib/site_components/footer.svelte';
 	import SiteLogo from '$lib/site_components/site_logo.svelte';
-	import { browser } from '$app/env';
+	import * as urls from '$lib/vars/urls';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -47,10 +47,13 @@
 		},
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
-		Shops: {
-			index: '/shops',
-			'Ebay Shop': 'https://stores.ebay.de/TAGARO-Medienshop'
-		},
+		Shops: (function () {
+			let shops_dict = { index: '/shops' };
+			urls.shops.forEach(shop => {
+				shops_dict[shop.name+" Shop"] = shop.route;
+			});
+			return shops_dict;
+		})(),
 		Kontakt: '/kontakt'
 	};
 

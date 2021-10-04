@@ -1,5 +1,6 @@
 <script>
 	import AngeboteRotator from '$lib/site_components/angebote_rotator.svelte';
+	import SchnellSkyAbonnieren from '$lib/site_components/schnell_sky_abonnieren.svelte';
 </script>
 
 <body>
@@ -73,6 +74,7 @@
 	</div>
 	<div style="padding-top:max(1vw, 20px);" />
 	<AngeboteRotator />
+	<SchnellSkyAbonnieren />
 </body>
 
 <style>
