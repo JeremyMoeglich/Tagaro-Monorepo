@@ -59,6 +59,7 @@
 		width: max(min(30vw, 340px), 200px);
 		align-self: center;
 	}
+
 	.description {
 		min-width: max(340px, 25vw);
 		max-width: min-content;
