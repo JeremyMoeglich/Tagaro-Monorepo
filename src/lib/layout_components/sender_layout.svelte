@@ -22,8 +22,12 @@
 	.main_alignment {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.sender_box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		max-width: 250px;
 		width: 7vw;
 		min-width: 125px;
@@ -44,4 +48,8 @@
 	h3 {
 		font-size: 20px;
 	}
+	img {
+		width: 100px;
+		text-align: center;
+		}
 </style>

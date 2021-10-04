@@ -64,7 +64,7 @@
 		}
 	}
 	function close_sidebar() {
-		if (mobile_slider_value === 1) {
+		if (mobile_slider_value === 80) {
 			mobile_slider_value = 0;
 			console.log('close');
 		}

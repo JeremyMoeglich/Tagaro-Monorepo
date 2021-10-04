@@ -3,7 +3,9 @@
 </script>
 
 <body>
-	<SenderLayout content={[{ title: 'ok', image: '/favicon.svg' }]}>
-		<h1>Sport Sender</h1>
-	</SenderLayout>
+	<SenderLayout title="Sport Sender" content={[
+			{ title: 'ok', image: '/favicon.svg' },
+			{ title: 'ok', image: '/favicon.svg' },
+			{ title: 'ok', image: '/favicon.svg' }
+		]} />
 </body>
