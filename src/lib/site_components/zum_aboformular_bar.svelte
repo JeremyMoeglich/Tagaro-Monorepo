@@ -20,22 +20,23 @@
 	.main_text {
 		font-size: 33px;
 		color: white;
-		padding-top: 30px;
-		padding-bottom: 30px;
 		margin-left: 20px;
+		text-align: center;
 	}
 	.main_container {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		align-content: center;
 		justify-content: center;
 		align-items: center;
-		gap: 10vw;
 		width: calc(100% - 60px);
-		padding-left: 30px;
-		padding-right: 30px;
+		padding: 30px;
 		min-height: 80px;
 		background: linear-gradient(to right, #49358d, #027fc7);
+	}
+	.main_container > *{
+		margin-left: 5vw;
+		margin-right: 5vw;
 	}
 </style>

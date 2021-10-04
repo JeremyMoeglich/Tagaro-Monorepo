@@ -57,6 +57,8 @@
 		/>
 	</div>
 </div>
+<p class="copyright">© 2021 - TAGARO Medienshop Möglich & Möglich GbR</p>
+
 
 <style>
 	.side_alignment {
@@ -89,6 +91,11 @@
 		max-width: 90vw;
 	}
 	h3 {
-		font-size: 25px;
+		font-size: 21px;
+	}
+	.copyright {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 90px;
 	}
 </style>

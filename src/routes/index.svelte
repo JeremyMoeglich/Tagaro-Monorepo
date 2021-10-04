@@ -1,17 +1,18 @@
 <script>
 	import AngeboteRotator from '$lib/site_components/angebote_rotator.svelte';
+	import SchnellSkyAbonnieren from '$lib/site_components/schnell_sky_abonnieren.svelte';
 </script>
 
 <body>
-	<div style="padding-top: 2vh;" />
+	<div style="padding-top: max(2vh, 30px);" />
 	<div class="top_header">
 		<div class="next_to_title">
 			<a target="_blank" href="/sky/bestellen"
-				><img alt="" src="/images/badges/sky_signature.png" class="sky_logo" /></a
+				><img alt="" src="/images/badges/sky_signature.svg" class="sky_logo" /></a
 			>
 			<div class="sky_logo to_remove">
 				<a target="_blank" href="/sky/bestellen"
-					><img alt="" src="/images/external/dazn.svg" class="sky_logo to_remove maxwidth90" /></a
+					><img alt="" src="/images/external/dazn.svg" class="dazn_logo to_remove maxwidth90" /></a
 				>
 				<p class="subtext">DAZN Jetzt hinzubuchbar</p>
 			</div>
@@ -73,6 +74,7 @@
 	</div>
 	<div style="padding-top:max(1vw, 20px);" />
 	<AngeboteRotator />
+	<SchnellSkyAbonnieren />
 </body>
 
 <style>
@@ -167,7 +169,15 @@
 
 	.sky_logo {
 		order: 0;
-		max-width: 160px;
+		width: 160px;
+		padding-top: max(10px, 2vh);
+		padding-bottom: 0px;
+		align-self: auto;
+		flex: 1 1 auto;
+	}
+	.dazn_logo {
+		order: 0;
+		width: 90px;
 		padding-top: max(10px, 2vh);
 		padding-bottom: 0px;
 		align-self: auto;

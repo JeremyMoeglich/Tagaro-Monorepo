@@ -6,10 +6,12 @@
 	});
 </script>
 
-<script>
+<script lang="ts">
 	// @ts-nocheck
 
 	import Footer from '$lib/site_components/footer.svelte';
+	import SiteLogo from '$lib/site_components/site_logo.svelte';
+	import * as urls from '$lib/vars/urls';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -45,10 +47,13 @@
 		},
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
-		Shops: {
-			index: '/shops',
-			'Ebay Shop': 'https://stores.ebay.de/TAGARO-Medienshop'
-		},
+		Shops: (function () {
+			let shops_dict = { index: '/shops' };
+			urls.shops.forEach(shop => {
+				shops_dict[shop.name+" Shop"] = shop.route;
+			});
+			return shops_dict;
+		})(),
 		Kontakt: '/kontakt'
 	};
 
@@ -93,7 +98,7 @@
 			<div class="header_blue_bar" />
 			<div class="top_header_container">
 				<div class="top_header_container_items">
-					<a href="/" class="header_logo"><img src="/images/badges/tagaro-logo.png" alt="" /></a>
+					<a href="/" class="header_logo"><SiteLogo /></a>
 					<!-- <div class="header_logo_container">
 						
 					</div> -->
@@ -161,7 +166,7 @@
 								</div>
 							{/each}
 						</nav>
-						<img class="autorisiert_logo" src="/images/badges/autorisiert_sky.png" alt="" />
+						<img class="autorisiert_logo" src="/images/badges/autorisiert.svg" alt="" />
 					</div>
 				</div>
 			</div>
@@ -311,8 +316,8 @@
 
 	.header_logo {
 		align-self: flex-start;
-		padding-left: 20px;
-		padding-right: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	.autorisiert_logo {
 		margin-left: 20px;
