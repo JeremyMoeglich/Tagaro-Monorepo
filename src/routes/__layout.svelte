@@ -53,12 +53,16 @@
 	};
 
 	function open_sidebar() {
-		mobile_slider_value = 80;
-		console.log('open');
+		if (mobile_slider_value === 0) {
+			mobile_slider_value = 80;
+			console.log('open');
+		}
 	}
 	function close_sidebar() {
-		mobile_slider_value = 0;
-		console.log('close');
+		if (mobile_slider_value === 1) {
+			mobile_slider_value = 0;
+			console.log('close');
+		}
 	}
 	function deselect() {
 		selected = undefined;

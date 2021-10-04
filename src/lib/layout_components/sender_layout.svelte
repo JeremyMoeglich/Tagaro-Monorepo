@@ -11,7 +11,7 @@
 	<div class="main_alignment">
 		{#each content as element}
 			<div class="sender_box">
-				<h3>element.title</h3>
+				<h3>{element.title}</h3>
 				<img src={element.image} alt="" />
 			</div>
 		{/each}
