@@ -34,7 +34,6 @@
 
 	let navbar_elements = {
 		Startseite: '/',
-		Test: '/test',
 		'Sky Angebote': {
 			index: '/sky_angebote',
 			'Sky Sport': '/sky_angebote/sport',
@@ -388,6 +387,7 @@
 		--pad: 1vh;
 		padding-top: var(--pad);
 		padding-bottom: var(--pad);
+		font-size: 2vh;
 		border-bottom: 1px solid white;
 		width: 80vw;
 		color: white;

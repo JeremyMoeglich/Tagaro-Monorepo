@@ -1,6 +1,7 @@
 <script>
 	import Button from '$lib/layout_components/button.svelte';
 	import AllOverviews from '$lib/site_components/packages/overviews/all_overviews.svelte';
+	import AlleBuchbar from '$lib/site_components/alle_buchbar.svelte';
 	import * as urls from '$lib/vars/urls';
 </script>
 
@@ -70,6 +71,7 @@
 	</div>
 	<div class="btn"><Button text="Jetzt Ihr Sky Wunschabo mit Sky Q zusammenstellen" route={urls.aboformular} /></div>
 </div>
+<AlleBuchbar />
 <AllOverviews />
 
 <style>
@@ -106,13 +108,13 @@
         flex-wrap: wrap;    
         justify-content: center;
         gap: 20px;
+		padding-bottom: 30px;
     }
     ul {
         line-height: 250%;
     }
-    .side_alignment > img {
-        width: 100%;
-        max-width: min(500px, 70vw);
-        object-fit: contain;
-    }
+	.side_alignment > img {
+		height: 1000px;
+		max-width: 85vw;
+	}
 </style>

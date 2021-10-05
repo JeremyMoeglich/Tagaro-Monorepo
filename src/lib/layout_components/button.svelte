@@ -27,9 +27,10 @@
 		padding: 20px 30px;
 		background: linear-gradient(to bottom right, #49358d, #027fc7);
 		color: white;
+		max-width: 90vw;
 		z-index: 0;
-		max-width: fit-content;
 		text-decoration: none;
 		margin: 0px;
+		text-align: center;
 	}
 </style>
