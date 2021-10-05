@@ -49,8 +49,8 @@
 		'Sky übers Internet': '/sky_q_internet',
 		Shops: (function () {
 			let shops_dict = { index: '/shops' };
-			urls.shops.forEach(shop => {
-				shops_dict[shop.name+" Shop"] = shop.route;
+			urls.shops.forEach((shop) => {
+				shops_dict[shop.name + ' Shop'] = shop.route;
 			});
 			return shops_dict;
 		})(),
@@ -108,7 +108,11 @@
 								<div class="selectable_element">
 									{#if pair[1] instanceof Object}
 										{#if 'index' in pair[1]}
-											<a class="nav_element nav_element_hover" href={pair[1]['index']}>
+											<a
+												class="nav_element nav_element_hover"
+												href={pair[1]['index']}
+												aria-label={pair[0] + ' öffnen'}
+											>
 												{pair[0]}
 											</a>
 										{:else}
@@ -135,7 +139,12 @@
 												class="side_image_container nav_element nav_element_hover"
 											>
 												{#if selected == pair[0]}
-													<img src="/images/arrow.svg" alt="" class="side_image" />
+													<img
+														src="/images/arrow.svg"
+														alt=""
+														class="side_image"
+														aria-label="Mehr Anzeigen"
+													/>
 												{:else}
 													<img
 														style="transform: rotate(-90deg);"
@@ -152,9 +161,13 @@
 														{#each Object.entries(pair[1]) as subtab}
 															{#if subtab[0] != 'index'}
 																<div class="selectable_element" on:click={deselect}>
-																	<a class="context_menu_element nav_element_hover" href={subtab[1]}
-																		>{subtab[0]}</a
+																	<a
+																		class="context_menu_element nav_element_hover"
+																		href={subtab[1]}
+																		aria-label={subtab[0] + ' öffnen'}
 																	>
+																		{subtab[0]}
+																	</a>
 																</div>
 															{/if}
 														{/each}
@@ -166,7 +179,11 @@
 								</div>
 							{/each}
 						</nav>
-						<img class="autorisiert_logo" src="/images/badges/autorisiert.svg" alt="" />
+						<img
+							class="autorisiert_logo"
+							src="/images/badges/autorisiert.svg"
+							alt="Autorisierter Online Händler"
+						/>
 					</div>
 				</div>
 			</div>
@@ -219,6 +236,7 @@
 									class="nav_element_mobile nav_element_hover_mobile"
 									on:click={close_sidebar}
 									href={subpair[1]}
+									aria-label={subpair[0] + " öffnen"}
 								>
 									<p class="no_margin small_start_margin">{subpair[0]}</p>
 								</a>
@@ -229,9 +247,21 @@
 			{/each}
 		</div>
 		{#if mobile_slider_value == 0}
-			<img on:click={open_sidebar} class="mobile_selector" src="/images/mobile_open.svg" alt="" />
+			<img
+				on:click={open_sidebar}
+				class="mobile_selector"
+				src="/images/mobile_open.svg"
+				alt="Navigation Öffnen"
+				aria-label="Navigation Öffnen"
+			/>
 		{:else}
-			<img on:click={close_sidebar} class="mobile_selector" src="/images/mobile_close.svg" alt="" />
+			<img
+				on:click={close_sidebar}
+				class="mobile_selector"
+				src="/images/mobile_close.svg"
+				alt="Navigation Schließen"
+				aria-label="Navigation Schließen"
+			/>
 		{/if}
 	</div>
 </body>
