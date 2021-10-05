@@ -1,7 +1,7 @@
 <script>
 	export let title;
 	export let points;
-	export let image;
+	export let image = undefined;
 	export let detailed;
 </script>
 
@@ -25,7 +25,9 @@
 			{/if}
 		</div>
 
-		<img src={image} alt="" class="image" />
+		{#if image}
+			<img src={image} alt="" class="image" />
+		{/if}
 	</div>
 </div>
 

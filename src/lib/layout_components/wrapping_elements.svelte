@@ -128,7 +128,7 @@
 
 <div style={css_vars_style}>
 	<div class="main_container">
-		<h2 class="gradient_text">{title}</h2>
+		<h2 class="gradient_text" style="text-align: center;">{title}</h2>
 		<div class="alignment">
 			{#each indexed_components as item}
 				<div

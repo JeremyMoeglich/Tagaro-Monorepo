@@ -1,18 +1,14 @@
 <script lang="ts">
-	export let title: string;
-	export let content: Array<{
-		title: string;
-		image: string;
-	}>;
+	export let text: string;
+	export let content: Array<string>;
 </script>
 
 <body>
-	<h2>{title}</h2>
+	<h2>{text}</h2>
 	<div class="main_alignment">
 		{#each content as element}
 			<div class="sender_box">
-				<h3>{element.title}</h3>
-				<img src={element.image} alt="" />
+				<img src={element} alt="" />
 			</div>
 		{/each}
 	</div>
@@ -22,7 +18,12 @@
 	.main_alignment {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
+		width: 1300px;
+		max-width: 85vw;
+		margin-left: auto;
+		margin-right: auto;
+		gap: 25px;
 	}
 	.sender_box {
 		display: flex;
@@ -31,11 +32,8 @@
 		max-width: 250px;
 		width: 7vw;
 		min-width: 125px;
-		background-color: #f2f2f2;
-		border-radius: 5px;
 	}
-	h2,
-	h3 {
+	h2 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;
 		background-clip: text;
