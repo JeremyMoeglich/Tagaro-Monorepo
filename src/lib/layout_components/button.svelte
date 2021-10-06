@@ -10,8 +10,7 @@
 
 <button class="outer">
 	{#if route}
-		<a href={route} {style} class={reversed ? "white" : "blue"}
-		>
+		<a href={route} {style} class={reversed ? 'white' : 'blue'}>
 			{text}
 		</a>
 	{:else}
@@ -24,13 +23,17 @@
 <style>
 	a,
 	p {
-        display: block;
+		display: block;
 		padding: 20px 30px;
 		max-width: 90vw;
 		z-index: 0;
 		text-decoration: none;
 		margin: 0px;
 		text-align: center;
+	}
+	button {
+		background-color: transparent;
+		border: none;
 	}
 	.blue {
 		background: linear-gradient(to bottom right, #49358d, #027fc7);

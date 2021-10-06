@@ -76,7 +76,7 @@
 	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	export let key;
 </script>
-<!-- 
+
 <svelte:head>
 	<script
 		id="trustamiwidget"
@@ -87,7 +87,15 @@
 		data-platform="0"
 		async>
 	</script>
-</svelte:head> -->
+
+	<meta property="og:title" content="TAGARO Medienshop" />
+	<meta property="og:image" content="/share_preview.png" />
+	<meta property="og:description" content="TAGARO ist ein autorisierter Sky-Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an." />
+	<meta property="og:url" content="node.tagaro.de" />
+	<meta property="og:image:width" content="2209" />
+	<meta property="og:image:height" content="2209" />
+	<meta property="og:type" content="website" />
+</svelte:head>
 
 {@html '<div class="widget_container_overlay" />'}
 
@@ -235,7 +243,7 @@
 									class="nav_element_mobile nav_element_hover_mobile"
 									on:click={close_sidebar}
 									href={subpair[1]}
-									aria-label={subpair[0] + " öffnen"}
+									aria-label={subpair[0] + ' öffnen'}
 								>
 									<p class="no_margin small_start_margin">{subpair[0]}</p>
 								</a>
@@ -271,6 +279,9 @@
 	* {
 		font-family: 'Oxygen', sans-serif;
 		z-index: 100;
+	}
+	:global(p) {
+		line-height: 170%;
 	}
 
 	.context_menu {

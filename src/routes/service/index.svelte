@@ -46,7 +46,7 @@
 <style>
 	.side_alignment {
 		display: flex;
-		max-width: min(1000px, 85%);
+		max-width: min(1000px, 85vw);
 		margin-left: auto;
 		margin-right: auto;
 		justify-content: center;

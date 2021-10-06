@@ -646,5 +646,9 @@
 	}
 	div {
 		padding: 50px;
+		width: 1000px;
+		max-width: 85vw;
+		margin-left: auto;
+		margin-right: auto;
 	}
 </style>
