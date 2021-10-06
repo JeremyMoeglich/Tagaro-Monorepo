@@ -76,7 +76,7 @@
 	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	export let key;
 </script>
-
+<!-- 
 <svelte:head>
 	<script
 		id="trustamiwidget"
@@ -87,7 +87,7 @@
 		data-platform="0"
 		async>
 	</script>
-</svelte:head>
+</svelte:head> -->
 
 {@html '<div class="widget_container_overlay" />'}
 

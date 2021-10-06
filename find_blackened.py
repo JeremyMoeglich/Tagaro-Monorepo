@@ -3,7 +3,7 @@ from typing import Iterable
 import PIL.Image
 import numpy as np
 from copy import deepcopy
-rootdir = "./src"
+rootdir = "./"
 
 
 def is_black(img):

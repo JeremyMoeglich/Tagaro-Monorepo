@@ -8,9 +8,10 @@
 	$: style = `padding: ${padding_y} ${padding_x};`;
 </script>
 
-<div class="outer">
+<button class="outer">
 	{#if route}
-		<a href={route} {style}>
+		<a href={route} {style} class={reversed ? "white" : "blue"}
+		>
 			{text}
 		</a>
 	{:else}
@@ -18,19 +19,35 @@
 			{text}
 		</p>
 	{/if}
-</div>
+</button>
 
 <style>
 	a,
 	p {
         display: block;
 		padding: 20px 30px;
-		background: linear-gradient(to bottom right, #49358d, #027fc7);
-		color: white;
 		max-width: 90vw;
 		z-index: 0;
 		text-decoration: none;
 		margin: 0px;
 		text-align: center;
+	}
+	.blue {
+		background: linear-gradient(to bottom right, #49358d, #027fc7);
+		color: white;
+	}
+	.white {
+		background-color: white;
+		color: #235dad;
+	}
+	.blue:hover {
+		filter: brightness(150%) contrast(150%);
+		box-shadow: inset;
+		box-shadow: 0px 0px 47px -12px rgba(0, 0, 0, 0.69);
+	}
+	.white:hover {
+		filter: brightness(70%) contrast(150%);
+		box-shadow: inset;
+		box-shadow: 0px 0px 47px -12px rgba(0, 0, 0, 0.69);
 	}
 </style>
