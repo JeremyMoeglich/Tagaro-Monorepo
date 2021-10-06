@@ -131,9 +131,10 @@
 		<h2 class="gradient_text" style="text-align: center;">{title}</h2>
 		<div class="alignment">
 			{#each indexed_components as item}
-				<div
+				<a
 					class="package_alignment {item.id == wrap(center_index) ? 'middle_element' : ''}"
 					style={get_x_pos(item.id, current_x_pos)}
+					href={item.route}
 				>
 					<h3>{@html item.title}</h3>
 					<img src={item.image} alt="" />
@@ -147,7 +148,7 @@
 					<div class="btn">
 						<Button text={'Mehr erfahren'} route={item.route} />
 					</div>
-				</div>
+				</a>
 			{/each}
 		</div>
 		<div class="cover_elements">
@@ -261,6 +262,10 @@
 	}
 	img {
 		align-self: center;
+	}
+	a {
+		text-decoration: none;
+		color: black;
 	}
 	.cover_element {
 		position: relative;

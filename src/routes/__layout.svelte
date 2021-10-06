@@ -90,7 +90,10 @@
 
 	<meta property="og:title" content="TAGARO Medienshop" />
 	<meta property="og:image" content="/share_preview.png" />
-	<meta property="og:description" content="TAGARO ist ein autorisierter Sky-Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an." />
+	<meta
+		property="og:description"
+		content="TAGARO ist ein autorisierter Sky-Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an."
+	/>
 	<meta property="og:url" content="node.tagaro.de" />
 	<meta property="og:image:width" content="2209" />
 	<meta property="og:image:height" content="2209" />
@@ -105,7 +108,7 @@
 			<div class="header_blue_bar" />
 			<div class="top_header_container">
 				<div class="top_header_container_items">
-					<a href="/" class="header_logo"><SiteLogo /></a>
+					<a href="/" title="Startseite öffnen" class="header_logo"><SiteLogo /></a>
 					<!-- <div class="header_logo_container">
 						
 					</div> -->
@@ -128,7 +131,11 @@
 											</p>
 										{/if}
 									{:else}
-										<a class="nav_element nav_element_hover" href={pair[1]}>
+										<a
+											title={pair[0] + ' öffnen'}
+											class="nav_element nav_element_hover"
+											href={pair[1]}
+										>
 											{pair[0]}
 										</a>
 									{/if}
@@ -146,18 +153,14 @@
 												class="side_image_container nav_element nav_element_hover"
 											>
 												{#if selected == pair[0]}
-													<img
-														src="/images/arrow.svg"
-														alt=""
-														class="side_image"
-														title="Mehr Anzeigen"
-													/>
+													<img src="/images/arrow.svg" alt="" class="side_image" />
 												{:else}
 													<img
 														style="transform: rotate(-90deg);"
 														src="/images/arrow.svg"
 														alt=""
 														class="side_image"
+														title="Mehr Anzeigen"
 													/>
 												{/if}
 											</div>
@@ -223,6 +226,7 @@
 					{:else}
 						<a
 							class="nav_element_mobile nav_element_hover_mobile"
+							title={pair[0] + ' öffnen'}
 							on:click={close_sidebar}
 							href={pair[1]}
 						>
