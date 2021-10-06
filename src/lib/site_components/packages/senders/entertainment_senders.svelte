@@ -4,24 +4,37 @@
 
 <body>
 	<SenderLayout
-		text="Sender im Sport Paket:"
+		text="Sender im Entertainment Paket:"
 		content={[
-			'/images/senders/sport/sky_logo_eurosport2-hd_w.png',
-			'/images/senders/sport/sky_logo_eurosport360-hd_w.webp',
-			'/images/senders/sport/sky_logo_sky-sport-1.png',
-			'/images/senders/sport/sky_logo_sky-sport-10.png',
-			'/images/senders/sport/sky_logo_sky-sport-11.png',
-			'/images/senders/sport/sky_logo_sky-sport-2.png',
-			'/images/senders/sport/sky_logo_sky-sport-3.png',
-			'/images/senders/sport/sky_logo_sky-sport-4.png',
-			'/images/senders/sport/sky_logo_sky-sport-5.png',
-			'/images/senders/sport/sky_logo_sky-sport-6.png',
-			'/images/senders/sport/sky_logo_sky-sport-7.png',
-			'/images/senders/sport/sky_logo_sky-sport-8.png',
-			'/images/senders/sport/sky_logo_sky-sport-9.png',
-			'/images/senders/sport/sky_logo_sky-sport-austria.png',
-			'/images/senders/sport/sky_logo_sky-sport-f1.png',
-			'/images/senders/sport/sky_logo_sky-sport-uhd.png'
+			"/images/senders/entertainment/116_sky_logo_13thstreethd_w.png",
+			"/images/senders/entertainment/117_sky_logo_entertainment_w.png",
+			"/images/senders/entertainment/16_sky_logo_romancetv_w.png",
+			"/images/senders/entertainment/388_sky_logo_spiegelgeschichtehd_w.png",
+			"/images/senders/entertainment/452_sky_logo_jukebox.png",
+			"/images/senders/entertainment/52_sky_logo_motorvision_w.png",
+			"/images/senders/entertainment/72_sky_logo_heimatkanal.png",
+			"/images/senders/entertainment/81_sky_logo_natgeochannelhd_w.png",
+			"/images/senders/entertainment/83_sky_logo_discovery-hd_w.png",
+			"/images/senders/entertainment/86_sky_logo_historyhd_w.png",
+			"/images/senders/entertainment/94_sky_logo_boomerang.png",
+			"/images/senders/entertainment/95_sky_logo_cartoonnetwork_w.png",
+			"/images/senders/entertainment/99_sky_logo_classica.png",
+			"/images/senders/entertainment/sky_logo_beateuhse-hd.png",
+			"/images/senders/entertainment/sky_logo_crime-investigation_w.png",
+			"/images/senders/entertainment/sky_logo_natgeowild-hd_w.png",
+			"/images/senders/entertainment/sky_logo_sky-atlantic_w.png",
+			"/images/senders/entertainment/sky_logo_sky-comedy_w.png",
+			"/images/senders/entertainment/sky_logo_sky-crime_w.png",
+			"/images/senders/entertainment/sky_logo_sky-documentary_b.png",
+			"/images/senders/entertainment/sky_logo_sky-krimi_w.png",
+			"/images/senders/entertainment/sky_logo_sky-nature_b.png",
+			"/images/senders/entertainment/sky_logo_sky-one_w.png",
+			"/images/senders/entertainment/sky_logo_sky-sport-news.png",
+			"/images/senders/entertainment/sky_logo_spiegel-wissen.png",
+			"/images/senders/entertainment/sky_logo_syfyhd_w.png",
+			"/images/senders/entertainment/sky_logo_universalchannelhd_b.png",
+			"/images/senders/entertainment/sky_logo_wb-comedy-hd_b.png",
+			"/images/senders/entertainment/sky_logo_wb-serie-hd_b.png"
 		]}
 	/>
 </body>

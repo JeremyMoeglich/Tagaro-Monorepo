@@ -118,7 +118,7 @@
 											<a
 												class="nav_element nav_element_hover"
 												href={pair[1]['index']}
-												aria-label={pair[0] + ' öffnen'}
+												title={pair[0] + ' öffnen'}
 											>
 												{pair[0]}
 											</a>
@@ -150,7 +150,7 @@
 														src="/images/arrow.svg"
 														alt=""
 														class="side_image"
-														aria-label="Mehr Anzeigen"
+														title="Mehr Anzeigen"
 													/>
 												{:else}
 													<img
@@ -171,7 +171,7 @@
 																	<a
 																		class="context_menu_element nav_element_hover"
 																		href={subtab[1]}
-																		aria-label={subtab[0] + ' öffnen'}
+																		title={subtab[0] + ' öffnen'}
 																	>
 																		{subtab[0]}
 																	</a>
@@ -243,7 +243,7 @@
 									class="nav_element_mobile nav_element_hover_mobile"
 									on:click={close_sidebar}
 									href={subpair[1]}
-									aria-label={subpair[0] + ' öffnen'}
+									title={subpair[0] + ' öffnen'}
 								>
 									<p class="no_margin small_start_margin">{subpair[0]}</p>
 								</a>
@@ -259,7 +259,7 @@
 				class="mobile_selector"
 				src="/images/mobile_open.svg"
 				alt="Navigation Öffnen"
-				aria-label="Navigation Öffnen"
+				title="Navigation Öffnen"
 			/>
 		{:else}
 			<img
@@ -267,7 +267,7 @@
 				class="mobile_selector"
 				src="/images/mobile_close.svg"
 				alt="Navigation Schließen"
-				aria-label="Navigation Schließen"
+				title="Navigation Schließen"
 			/>
 		{/if}
 	</div>

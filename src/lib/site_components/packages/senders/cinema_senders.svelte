@@ -4,24 +4,18 @@
 
 <body>
 	<SenderLayout
-		text="Sender im Sport Paket:"
+		text="Sender im Cinema Paket:"
 		content={[
-			'/images/senders/sport/sky_logo_eurosport2-hd_w.png',
-			'/images/senders/sport/sky_logo_eurosport360-hd_w.webp',
-			'/images/senders/sport/sky_logo_sky-sport-1.png',
-			'/images/senders/sport/sky_logo_sky-sport-10.png',
-			'/images/senders/sport/sky_logo_sky-sport-11.png',
-			'/images/senders/sport/sky_logo_sky-sport-2.png',
-			'/images/senders/sport/sky_logo_sky-sport-3.png',
-			'/images/senders/sport/sky_logo_sky-sport-4.png',
-			'/images/senders/sport/sky_logo_sky-sport-5.png',
-			'/images/senders/sport/sky_logo_sky-sport-6.png',
-			'/images/senders/sport/sky_logo_sky-sport-7.png',
-			'/images/senders/sport/sky_logo_sky-sport-8.png',
-			'/images/senders/sport/sky_logo_sky-sport-9.png',
-			'/images/senders/sport/sky_logo_sky-sport-austria.png',
-			'/images/senders/sport/sky_logo_sky-sport-f1.png',
-			'/images/senders/sport/sky_logo_sky-sport-uhd.png'
+			"/images/senders/cinema/sky_logo_kinowelt_w.png",
+			"/images/senders/cinema/sky_logo_sky-cinema-action_w.png",
+			"/images/senders/cinema/sky_logo_sky-cinema-best-of_w.png",
+			"/images/senders/cinema/sky_logo_sky-cinema-classics_w.png",
+			"/images/senders/cinema/sky_logo_sky-cinema-family_w.png",
+			"/images/senders/cinema/sky_logo_sky-cinema-fun_w.png",
+			"/images/senders/cinema/sky_logo_sky-cinema-premieren-plus24_w.png",
+			"/images/senders/cinema/sky_logo_sky-cinema-premieren_w.png",
+			"/images/senders/cinema/sky_logo_sky-cinema-thriller_w.png",
+			"/images/senders/cinema/sky_logo_wb-film-hd_b.png"
 		]}
 	/>
 </body>

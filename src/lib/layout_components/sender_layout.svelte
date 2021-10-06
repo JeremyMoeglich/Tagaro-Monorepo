@@ -18,7 +18,7 @@
 	.main_alignment {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: left;
 		width: 1300px;
 		max-width: 85vw;
 		margin-left: auto;
@@ -43,11 +43,11 @@
 	h2 {
 		font-size: 35px;
 	}
-	h3 {
-		font-size: 20px;
-	}
 	img {
 		width: 100px;
+		max-height: 60px;
+		object-fit: contain;
 		text-align: center;
-		}
+		gap: 20px;
+	}
 </style>
