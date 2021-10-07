@@ -155,6 +155,7 @@
 									{#if pair[1] instanceof Object}
 										<div class="sub_selectable_container">
 											<button
+												title={`Mehr zu ${pair[0]} anzeigen`}
 												on:click={async function selector() {
 													if (selected !== pair[0]) {
 														selected = pair[0];

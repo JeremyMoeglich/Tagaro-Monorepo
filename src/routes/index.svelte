@@ -8,11 +8,15 @@
 	<div class="top_header">
 		<div class="next_to_title">
 			<a target="_blank" href="/sky/bestellen"
-				><img alt="" src="/images/badges/sky_signature.svg" class="sky_logo" /></a
+				><img alt="Sky Logo" src="/images/badges/sky_signature.svg" class="sky_logo" /></a
 			>
 			<div class="sky_logo to_remove">
 				<a target="_blank" href="/sky/bestellen"
-					><img alt="" src="/images/external/dazn.svg" class="dazn_logo to_remove maxwidth90" /></a
+					><img
+						alt="Dazn Logo"
+						src="/images/external/dazn.svg"
+						class="dazn_logo to_remove maxwidth90"
+					/></a
 				>
 				<p class="subtext">DAZN Jetzt hinzubuchbar</p>
 			</div>
@@ -33,28 +37,40 @@
 
 	<div style="padding-top:max(1vw, 20px);" />
 	<div class="imagesMain">
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/sky_bundesliga.jpg" class="main_images" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img
+				alt="Bundesliga Paket"
+				src="/images/packages/sky_bundesliga.jpg"
+				class="main_images"
+			/></a
 		>
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/sky_entertainment.jpg" class="main_images" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img
+				alt="Entertainment Paket"
+				src="/images/packages/sky_entertainment.jpg"
+				class="main_images"
+			/></a
 		>
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/sky_cinema.jpg" class="main_images r3" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img alt="Cinema Paket" src="/images/packages/sky_cinema.jpg" class="main_images r3" /></a
 		>
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/sky_sport.jpg" class="main_images" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img alt="Sport Paket" src="/images/packages/sky_sport.jpg" class="main_images" /></a
 		>
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/sky_kids.jpg" class="main_images r1" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img alt="Kids Paket" src="/images/packages/sky_kids.jpg" class="main_images r1" /></a
 		>
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/packages/sky_entertainment-plus.jpg" class="main_images r2" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img
+				alt="Entertainment Plus Paket"
+				src="/images/packages/sky_entertainment-plus.jpg"
+				class="main_images r2"
+			/></a
 		>
 	</div>
 	<div class="bottom_things">
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/badges/praemie.png" class="bottom_icon" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img alt="20 Euro Prämie" src="/images/badges/praemie.png" class="bottom_icon" /></a
 		>
 		<div class="to_remove">
 			<p>
@@ -65,11 +81,11 @@
 			<p>&#10004; Sky Q Receiver oder Sky Q IPTV Box</p>
 			<p>&#10004; € 20 Bonus und versandkostenfreie Lieferung</p>
 		</div>
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/badges/mtlkuendbar.png" class="bottom_icon" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img alt="Monatlich kündbar" src="/images/badges/mtlkuendbar.png" class="bottom_icon" /></a
 		>
-		<a target="_blank" href="/sky/bestellen"
-			><img alt="" src="/images/badges/payback.png" class="bottom_icon" /></a
+		<a target="_blank" href="/sky/bestellen" aria-label="Aboformular Öffnen"
+			><img alt="500 Payback Punkte" src="/images/badges/payback.png" class="bottom_icon" /></a
 		>
 	</div>
 	<div style="padding-top:max(1vw, 20px);" />

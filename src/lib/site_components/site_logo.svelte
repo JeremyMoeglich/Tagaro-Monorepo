@@ -30,9 +30,7 @@
 			class="scalar"
 		>
 			{#each images as image}
-				{#if images[current_image] === image}
-                    <img src={image} alt="" class="icon" />
-                {/if}
+				<img src={image} alt="" class={`icon ${images[current_image] === image ? 'visible' : 'invisible'}`} />
 			{/each}
 		</div>
 	</div>
@@ -60,9 +58,14 @@
 		border-color: white;
 		border-radius: 50%;
 	}
+	.invisible {
+		visibility: hidden;
+	}
 	.icon {
+		width: 0px;
+	}
+	.visible {
 		width: 68%;
-        
 	}
 	.scalar {
 		min-height: 100%;

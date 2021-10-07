@@ -78,8 +78,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 5px;
 		font-size: 18px;
+		gap:14px;
+	}
+	.nopoint a {
+		padding: 10px;
 	}
 	a {
 		text-decoration: none;
