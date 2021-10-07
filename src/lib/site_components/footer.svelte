@@ -25,14 +25,14 @@
 			Per E-Mail 24 Stunden lang
 		</p>
 		<p>
-			Telefon: 06443 - 819 427 <br />
+			<a href="tel:06443-819427">Telefon: 06443 - 819 427</a> <br />
 			Fax: 0321 - 2111 6558 <br />
-			E-Mail: <a href="mailto://info@tagaro.de">info@tagaro.de</a>
+			<a href="mailto://info@tagaro.de">E-Mail: info@tagaro.de</a>
 		</p>
 	</div>
 	<div class="einkaufen">
 		<h3>Sicher Einkaufen</h3>
-		<img src="/images/badges/autorisiert_sky.png" alt="" />
+		<img src="/images/badges/autorisiert.svg" alt="" />
 		<img src="/images/badges/ssl.png" alt="" />
 		<!-- <a
 			href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung"
@@ -58,7 +58,6 @@
 	</div>
 </div>
 <p class="copyright">© 2021 - TAGARO Medienshop Möglich & Möglich GbR</p>
-
 
 <style>
 	.side_alignment {

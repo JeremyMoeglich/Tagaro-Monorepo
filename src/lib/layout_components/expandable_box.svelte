@@ -8,7 +8,7 @@
 </script>
 
 <div class="main_container">
-	<button class="selectable" on:click={toggle_box} aria-label={opened ? title : `${title} aufklappen`}>
+	<button class="selectable" on:click={toggle_box} title={opened ? title : `${title} aufklappen`}>
 		<p>
 			{opened ? title : `${title} aufklappen`}
 		</p>

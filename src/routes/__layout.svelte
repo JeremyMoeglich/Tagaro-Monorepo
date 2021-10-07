@@ -12,6 +12,7 @@
 	import Footer from '$lib/site_components/footer.svelte';
 	import SiteLogo from '$lib/site_components/site_logo.svelte';
 	import * as urls from '$lib/vars/urls';
+	import { page } from '$app/stores';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -126,7 +127,9 @@
 									{#if pair[1] instanceof Object}
 										{#if 'index' in pair[1]}
 											<a
-												class="nav_element nav_element_hover"
+												class={`nav_element nav_element_hover ${
+													$page.path === pair[1]['index'] ? 'current_route' : ''
+												}`}
 												href={pair[1]['index']}
 												title={pair[0] + ' öffnen'}
 											>
@@ -140,7 +143,9 @@
 									{:else}
 										<a
 											title={pair[0] + ' öffnen'}
-											class="nav_element nav_element_hover"
+											class={`nav_element nav_element_hover ${
+												$page.path === pair[1] ? 'current_route' : ''
+											}`}
 											href={pair[1]}
 										>
 											{pair[0]}
@@ -467,7 +472,8 @@
 		text-decoration: underline;
 	}
 
-	.nav_element_hover:hover {
+	.nav_element_hover:hover,
+	.current_route {
 		/* background-color: rgb(42, 29, 87); */
 		border: 1px solid white;
 	}
