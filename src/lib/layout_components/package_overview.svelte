@@ -49,7 +49,7 @@
 		-webkit-text-fill-color: transparent;
 	}
 	.points {
-		list-style-image: url('/images/plus_char.svg');
+		list-style-image: url('/images/icons/plus_char.svg');
 		font-size: 16px;
 		display: flex;
 		flex-direction: column;

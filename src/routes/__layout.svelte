@@ -74,6 +74,7 @@
 	}
 
 	import PageTransition from '$lib/internal_components/PageTransition.svelte';
+	import PhoneBox from '$lib/site_components/phone_box.svelte';
 	export let key;
 </script>
 
@@ -98,6 +99,12 @@
 	<meta property="og:image:width" content="2209" />
 	<meta property="og:image:height" content="2209" />
 	<meta property="og:type" content="website" />
+	<meta
+		name="description"
+		content="TAGARO ist ein autorisierter Sky-Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an."
+	/>
+	<meta name="keywords" content="Sky, Abo, Tagaro" />
+	<meta name="author" content="Jeremy Möglich" />
 </svelte:head>
 
 {@html '<div class="widget_container_overlay" />'}
@@ -142,7 +149,7 @@
 
 									{#if pair[1] instanceof Object}
 										<div class="sub_selectable_container">
-											<div
+											<button
 												on:click={async function selector() {
 													if (selected !== pair[0]) {
 														selected = pair[0];
@@ -153,24 +160,24 @@
 												class="side_image_container nav_element nav_element_hover"
 											>
 												{#if selected == pair[0]}
-													<img src="/images/arrow.svg" alt="" class="side_image" />
+													<img src="/images/icons/arrow.svg" alt="" class="side_image" />
 												{:else}
 													<img
 														style="transform: rotate(-90deg);"
-														src="/images/arrow.svg"
+														src="/images/icons/arrow.svg"
 														alt=""
 														class="side_image"
 														title="Mehr Anzeigen"
 													/>
 												{/if}
-											</div>
+											</button>
 											<div>
 												{#if selected == pair[0]}
 													<div class="context_menu" use:clickOutside on:click_outside={deselect}>
 														<b>{pair[0]}</b>
 														{#each Object.entries(pair[1]) as subtab}
 															{#if subtab[0] != 'index'}
-																<div class="selectable_element" on:click={deselect}>
+																<button class="selectable_element" on:click={deselect}>
 																	<a
 																		class="context_menu_element nav_element_hover"
 																		href={subtab[1]}
@@ -178,7 +185,7 @@
 																	>
 																		{subtab[0]}
 																	</a>
-																</div>
+																</button>
 															{/if}
 														{/each}
 													</div>
@@ -189,6 +196,9 @@
 								</div>
 							{/each}
 						</nav>
+						<div class="phone_box">
+							<PhoneBox />
+						</div>
 						<img
 							class="autorisiert_logo"
 							src="/images/badges/autorisiert.svg"
@@ -261,7 +271,7 @@
 			<img
 				on:click={open_sidebar}
 				class="mobile_selector"
-				src="/images/mobile_open.svg"
+				src="/images/icons/mobile_open.svg"
 				alt="Navigation Öffnen"
 				title="Navigation Öffnen"
 			/>
@@ -269,7 +279,7 @@
 			<img
 				on:click={close_sidebar}
 				class="mobile_selector"
-				src="/images/mobile_close.svg"
+				src="/images/icons/mobile_close.svg"
 				alt="Navigation Schließen"
 				title="Navigation Schließen"
 			/>
@@ -284,8 +294,16 @@
 		font-family: 'Oxygen', sans-serif;
 		z-index: 100;
 	}
+	:global(button) {
+		background-color: transparent;
+		border: none;
+		font-size: medium;
+	}
 	:global(p) {
 		line-height: 170%;
+	}
+	:global(body) {
+		margin: 0px;
 	}
 
 	.context_menu {
@@ -466,6 +484,10 @@
 	}
 	.desktop {
 		visibility: hidden;
+	}
+	.phone_box {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	@media screen and (min-width: 1300px) {
 		.desktop {

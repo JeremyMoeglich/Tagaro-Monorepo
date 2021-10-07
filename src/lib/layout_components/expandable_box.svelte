@@ -8,12 +8,9 @@
 </script>
 
 <div class="main_container">
-	<div class="selectable" on:click={toggle_box}>
+	<button class="selectable" on:click={toggle_box} aria-label={opened ? title : `${title} aufklappen`}>
 		<p>
-			{title}
-			{#if !opened}
-				aufklappen
-			{/if}
+			{opened ? title : `${title} aufklappen`}
 		</p>
 		<p class="pm">
 			{#if opened}
@@ -22,7 +19,7 @@
 				+
 			{/if}
 		</p>
-	</div>
+	</button>
 	{#if opened}
 		<div class="main_text">
 			<slot name="main_text">This is empty</slot>
@@ -57,6 +54,7 @@
 		min-width: 90%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 	.main_text {
 		max-width: 90%;

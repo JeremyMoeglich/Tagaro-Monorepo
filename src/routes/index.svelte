@@ -129,14 +129,25 @@
 		order: 0;
 		width: min(16vw, max(19vh, 150px));
 		--total_padding: max(0px, calc(min(110px, 10vw) - 100px));
-		padding-left: var(--total_padding);
-		padding-right: var(--total_padding);
-		padding-top: 0px;
-		padding-bottom: 1vw;
+		margin-left: var(--total_padding);
+		margin-right: var(--total_padding);
+		margin-top: 0px;
+		padding: 5px;
+		margin-bottom: 1vw;
 		align-self: auto;
+		transition-duration: 400ms;
 	}
 	.main_images:hover {
-		size: 3px;
+		transform: scale(1.1);
+		padding: 5px;
+		background: linear-gradient(
+			142deg,
+			rgba(253, 122, 29, 1) 0%,
+			rgba(253, 29, 29, 1) 21%,
+			rgba(194, 64, 159, 1) 51%,
+			rgba(106, 92, 186, 1) 77%,
+			rgba(29, 162, 253, 1) 100%
+		);
 	}
 
 	.subtitle1 {
