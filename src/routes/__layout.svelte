@@ -13,6 +13,9 @@
 	import SiteLogo from '$lib/site_components/site_logo.svelte';
 	import * as urls from '$lib/vars/urls';
 	import { page } from '$app/stores';
+	import PageTransition from '$lib/internal_components/PageTransition.svelte';
+	import PhoneBox from '$lib/site_components/phone_box.svelte';
+	import { browser } from '$app/env';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -31,6 +34,7 @@
 	}
 
 	let mobile_slider_value = 0;
+	let is_shown = false;
 	let selected;
 
 	let navbar_elements = {
@@ -60,12 +64,16 @@
 	function open_sidebar() {
 		if (mobile_slider_value === 0) {
 			mobile_slider_value = 80;
+			is_shown = true;
 			console.log('open');
 		}
 	}
 	function close_sidebar() {
 		if (mobile_slider_value === 80) {
 			mobile_slider_value = 0;
+			setTimeout(function () {
+				is_shown = false;
+			}, 300);
 			console.log('close');
 		}
 	}
@@ -74,8 +82,14 @@
 		console.log('deselected');
 	}
 
-	import PageTransition from '$lib/internal_components/PageTransition.svelte';
-	import PhoneBox from '$lib/site_components/phone_box.svelte';
+	let scroll_position = 0;
+	if (browser) {
+		const scroller = document.querySelector('#nav_bar');
+		scroller.addEventListener('scroll', (event) => {
+			scroll_position = `scrollTop: ${scroller.scrollTop}`;
+		});
+	}
+
 	export let key;
 </script>
 
@@ -114,7 +128,15 @@
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
 			<div class="header_blue_bar" />
-			<div class="top_header_container">
+			<a
+				href="#nav_bar"
+				class="go_to_start"
+				style={scroll_position > 0 ? '' : 'visibility: visible;'}
+			>
+				<img src="/images/icons/go_to_start.svg" alt="go_to_beginning" />
+				<p>{scroll_position}</p>
+			</a>
+			<div class="top_header_container" id="nav_bar">
 				<div class="top_header_container_items">
 					<a href="/" title="Startseite öffnen" class="header_logo"><SiteLogo /></a>
 					<!-- <div class="header_logo_container">
@@ -221,7 +243,12 @@
 			</div>
 			<Footer />
 		</div>
-		<div class="mobile_sidebar" style="right: {'-' + (80 - mobile_slider_value)}vw;">
+		<div
+			class="mobile_sidebar"
+			style={`right: -${80 - mobile_slider_value}vw; ${
+				is_shown ? 'visibility: visible;' : 'visibility: hidden;'
+			}`}
+		>
 			<div class="selectable_element_vert">
 				<div class="nav_element_mobile no_margin">
 					<p class="no_margin" style="text-align: center;">Tagaro</p>
@@ -397,7 +424,12 @@
 		position: absolute;
 		left: 80vw;
 	}
-
+	.go_to_start {
+		position: fixed;
+		transition-duration: 200ms;
+		right: 30px;
+		bottom: -10%;
+	}
 	.desktop {
 		visibility: hidden;
 	}
