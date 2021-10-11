@@ -1,4 +1,5 @@
 <script>
+	import Button from '$lib/layout_components/button.svelte';
 	import InputField from '$lib/layout_components/input_field.svelte';
 </script>
 
@@ -14,20 +15,10 @@
 		autocomplete="tel"
 	/>
 	<InputField text={'Nachricht*'} box_height={90} name="message" multiline={true} />
-	<button type="submit">Abschicken</button>
+	<Button text="test" />
 </form>
 
-<style>
-	button {
-		border: 0px transparent;
-		background-color: #027fc7;
-		outline: none;
-		color: white;
-		padding: 20px 40px;
-	}
-	button:hover {
-		background-color: rgb(15, 54, 136);
-	}
+<style lang='scss'>
 	form {
 		display: flex;
 		flex-direction: column;

@@ -22,7 +22,7 @@
 </div>
 <div class="vertragsinfo"><Vertragsinfomationen /></div>
 
-<style>
+<style lang='scss'>
 	.main-title {
 		margin-top: 50px;
 		font-size: min(max(2vw, 35px), 4vw);
@@ -50,7 +50,7 @@
 		line-height: 200%;
 		margin-top: 40px;
 	}
-    .vertragsinfo {
-        margin: 90px;
-    }
+	.vertragsinfo {
+		margin: 90px;
+	}
 </style>

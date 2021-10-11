@@ -408,7 +408,7 @@
 	</div>
 </body>
 
-<style>
+<style lang='scss'>
 	h1 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;

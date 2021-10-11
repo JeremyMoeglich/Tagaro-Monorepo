@@ -49,12 +49,15 @@
 	</div>
 </body>
 
-<style>
+<style lang='scss'>
 	body {
 		position: relative;
 	}
 	p {
 		color: white;
+	}
+	.back {
+		padding-top: 40px;
 	}
 	.back::before {
 		content: '';
@@ -64,7 +67,7 @@
 		width: 100%;
 		height: 100%;
 		background-image: url('/images/specific/header-2018.jpg');
-		filter: brightness(30%) blur(5px);
+		filter: brightness(23%) contrast(60%) sepia(100%) hue-rotate(190deg) saturate(300%);
 		z-index: -5;
 	}
 	.side_alignment {

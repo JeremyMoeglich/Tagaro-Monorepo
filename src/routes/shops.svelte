@@ -6,7 +6,7 @@
 	<div class="alignment">
 		{#each shops_vars.shops as item}
 			<a style="position: relative;" href={item.route}>
-				<img src={`/images/specific/${item.name}_shop_preview.png`} alt="" />
+				<img src={`/images/specific/${item.name.toLowerCase()}_shop_preview.png`} alt="" />
 				<p class="centered">
 					<b>{item.name}</b>
 				</p>
@@ -15,7 +15,7 @@
 	</div>
 </body>
 
-<style>
+<style lang='scss'>
 	.alignment {
 		display: flex;
 		justify-content: center;

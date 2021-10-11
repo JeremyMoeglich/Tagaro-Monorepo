@@ -9,10 +9,10 @@
 		genau richtig. Wir vermitteln Ihnen als autorisierter Sky-Onlinehändler Sky-Verträge bereits
 		seit 2006. Viele Angebote gibt es exklusiv und mit Abschlussprämie.
 	</p>
-	<Button text={'Angebote & Pakete'} route={"/sky_angebote"}/>
+	<Button text={'Angebote & Pakete'} route={'/sky_angebote'} />
 </div>
 
-<style>
+<style lang='scss'>
 	.alignment {
 		display: flex;
 		flex-direction: column;

@@ -14,13 +14,13 @@
 			{text}
 		</a>
 	{:else}
-		<p {style}>
+		<p {style} class={reversed ? 'white' : 'blue'}>
 			{text}
 		</p>
 	{/if}
 </button>
 
-<style>
+<style lang='scss'>
 	a,
 	p {
 		display: block;
@@ -34,6 +34,10 @@
 	button {
 		background-color: transparent;
 		border: none;
+	}
+	button:hover {
+		transform: scale(1.05);
+		transition-duration: 200ms;
 	}
 	.blue {
 		background: linear-gradient(to bottom right, #49358d, #027fc7);

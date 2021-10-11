@@ -82,13 +82,13 @@
 		console.log('deselected');
 	}
 
-	let scroll_position = 0;
-	if (browser) {
-		const scroller = document.querySelector('#nav_bar');
-		scroller.addEventListener('scroll', (event) => {
-			scroll_position = `scrollTop: ${scroller.scrollTop}`;
-		});
-	}
+	//let scroll_position = 0;
+	//if (browser) {
+	//	const scroller = document.querySelector('#nav_bar');
+	//	scroller.addEventListener('scroll', (event) => {
+	//		scroll_position = `scrollTop: ${scroller.scrollTop}`;
+	//	});
+	//}
 
 	export let key;
 </script>
@@ -128,14 +128,7 @@
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
 			<div class="header_blue_bar" />
-			<a
-				href="#nav_bar"
-				class="go_to_start"
-				style={scroll_position > 0 ? '' : 'visibility: visible;'}
-			>
-				<img src="/images/icons/go_to_start.svg" alt="go_to_beginning" />
-				<p>{scroll_position}</p>
-			</a>
+
 			<div class="top_header_container" id="nav_bar">
 				<div class="top_header_container_items">
 					<a href="/" title="Startseite öffnen" class="header_logo"><SiteLogo /></a>
@@ -187,17 +180,13 @@
 												}}
 												class="side_image_container nav_element nav_element_hover"
 											>
-												{#if selected == pair[0]}
-													<img src="/images/icons/arrow.svg" alt="" class="side_image" />
-												{:else}
-													<img
-														style="transform: rotate(-90deg);"
-														src="/images/icons/arrow.svg"
-														alt=""
-														class="side_image"
-														title="Mehr Anzeigen"
-													/>
-												{/if}
+												<img
+													src="/images/icons/arrow.svg"
+													alt=""
+													class="side_image"
+													style={selected == pair[0] ? '' : 'transform: rotate(-90deg);'}
+													title={selected == pair[0] ? '' : 'Mehr Anzeigen'}
+												/>
 											</button>
 											<div>
 												{#if selected == pair[0]}
@@ -320,7 +309,7 @@
 	</div>
 </body>
 
-<style>
+<style lang='scss'>
 	@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 	* {
@@ -520,7 +509,9 @@
 
 	.side_image {
 		width: 15px;
+		transition-duration: 200ms;
 	}
+
 	.desktop {
 		visibility: hidden;
 	}

@@ -119,7 +119,7 @@
 	</div>
 </div>
 
-<style>
+<style lang='scss'>
 	.main_container {
 		background-color: #f2f2f2;
 		padding-top: 50px;

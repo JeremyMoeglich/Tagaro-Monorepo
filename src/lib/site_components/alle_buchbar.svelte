@@ -1,5 +1,5 @@
 <script>
-    import LineSpacer from "./line_spacer.svelte";
+	import LineSpacer from './line_spacer.svelte';
 </script>
 
 <LineSpacer />
@@ -12,7 +12,7 @@
 </div>
 <LineSpacer />
 
-<style>
+<style lang='scss'>
 	.blue_gradient_text {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;

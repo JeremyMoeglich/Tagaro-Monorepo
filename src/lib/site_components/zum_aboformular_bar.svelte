@@ -4,10 +4,10 @@
 
 <div class="main_container">
 	<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
-	<Button text="Zum Aboformular" route="/sky/bestellen" reversed/>
+	<Button text="Zum Aboformular" route="/sky/bestellen" reversed />
 </div>
 
-<style>
+<style lang='scss'>
 	.main_text {
 		font-size: 33px;
 		color: white;

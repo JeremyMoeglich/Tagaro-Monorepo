@@ -22,30 +22,29 @@
 			<a href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung">Trustami</a> an.
 		</p>
 		<div class="btn">
-            <Button text="Alle Infomationen zu Sky Q" route="/sky_q" />
-        </div>
+			<Button text="Alle Infomationen zu Sky Q" route="/sky_q" />
+		</div>
 	</div>
 	<img src="/images/visuals/skyq_header_4.png" alt="" />
 </div>
 
-<style>
-    .left {
-        max-width: 800px;
-    }
+<style lang='scss'>
+	.left {
+		max-width: 800px;
+	}
 	.side_alignment {
 		display: flex;
 		line-height: 200%;
-        max-width: 85vw;
-        margin-left: auto;
-        margin-right: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 50px;
-
+		max-width: 85vw;
+		margin-left: auto;
+		margin-right: auto;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 50px;
 	}
 	img {
 		width: 50%;
-        max-width: 500px;
+		max-width: 500px;
 		object-fit: contain;
 	}
 	.gradient_text {
@@ -58,10 +57,10 @@
 		text-align: center;
 		font-size: 38px;
 	}
-    .btn {
-        max-width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-    }
+	.btn {
+		max-width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+	}
 </style>

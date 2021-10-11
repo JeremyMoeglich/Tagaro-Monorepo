@@ -12,7 +12,7 @@
 	</div>
 </body>
 
-<style>
+<style lang='scss'>
 	.alignment {
 		margin-top: 90px;
 	}

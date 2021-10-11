@@ -30,13 +30,17 @@
 			class="scalar"
 		>
 			{#each images as image}
-				<img src={image} alt="" class={`icon ${images[current_image] === image ? 'visible' : 'invisible'}`} />
+				<img
+					src={image}
+					alt=""
+					class={`icon ${images[current_image] === image ? 'visible' : 'invisible'}`}
+				/>
 			{/each}
 		</div>
 	</div>
 </div>
 
-<style>
+<style lang='scss'>
 	.main_container {
 		--logo_size: 128px;
 		display: flex;

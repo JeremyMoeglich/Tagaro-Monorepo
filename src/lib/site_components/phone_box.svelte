@@ -1,5 +1,5 @@
 <div class="alignment">
-	<img src="/images/icons/phone.svg" alt="Telefonnummer:" />
+	<img src="/images/icons/phone.svg" alt="Telefonnummer:" class="phone_icon" />
 	<p class="number"><a class="number" href="tel:06443-819427">06443 - 819 427</a></p>
 	<div class="hover_align_relative">
 		<img class="hover_show" src="/images/icons/clock.svg" alt="Öffnungzeiten" />
@@ -15,7 +15,7 @@
 	</div>
 </div>
 
-<style>
+<style lang='scss'>
 	.alignment {
 		display: flex;
 		align-items: center;
@@ -48,5 +48,15 @@
 	}
 	.hover_show:hover ~ .hover_container {
 		visibility: visible;
+	}
+	.hover_show:hover {
+		transform: rotate(360deg);
+		transition-duration: 500ms;
+	}
+	.phone_icon {
+		transition-duration: 500ms;
+	}
+	.phone_icon:hover {
+		transform: rotate(30deg);
 	}
 </style>

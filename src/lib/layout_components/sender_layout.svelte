@@ -14,7 +14,7 @@
 	</div>
 </body>
 
-<style>
+<style lang='scss'>
 	.main_alignment {
 		display: flex;
 		flex-wrap: wrap;

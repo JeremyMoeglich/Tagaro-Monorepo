@@ -9,7 +9,7 @@
 	<p>{@html text}</p>
 </div>
 
-<style>
+<style lang='scss'>
 	img {
 		width: min(100px, 33.33vw);
 	}

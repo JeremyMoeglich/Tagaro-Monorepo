@@ -173,7 +173,7 @@
 	</div>
 </div>
 
-<style>
+<style lang='scss'>
 	:root {
 		--background_height: calc((830px - 5vw) * 1.2);
 		--outer_padding: 70px;
@@ -199,6 +199,11 @@
 		background-color: rgb(219, 219, 219);
 		width: 100%;
 		height: 7px;
+	}
+	.line_control_container > div:hover:not(.selected) {
+		background: linear-gradient(to right, rgb(130, 117, 173), rgb(102, 174, 216));
+		width: 100%;
+		height: 16px;
 	}
 	.line_control_container > .selected {
 		background: linear-gradient(to right, #49358d, #027fc7);

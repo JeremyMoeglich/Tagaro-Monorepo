@@ -32,7 +32,7 @@
 	<EmptySpacer />
 </body>
 
-<style>
+<style lang='scss'>
 	.side_text_container {
 		min-width: 50%;
 	}

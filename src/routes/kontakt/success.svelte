@@ -11,7 +11,7 @@
 	<EmptySpacer />
 </body>
 
-<style>
+<style lang='scss'>
 	.center_alignment {
 		display: flex;
 		flex-direction: column;

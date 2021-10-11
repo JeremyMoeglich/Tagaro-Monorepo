@@ -27,7 +27,7 @@
 	{/if}
 </div>
 
-<style>
+<style lang='scss'>
 	.main_container {
 		min-width: min(1000px, 90%);
 		max-width: min-content;

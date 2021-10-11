@@ -2,7 +2,7 @@
 	<div class="spacer" />
 </article>
 
-<style>
+<style lang='scss'>
 	.spacer {
 		--space: 100px;
 		margin-top: var(--space);

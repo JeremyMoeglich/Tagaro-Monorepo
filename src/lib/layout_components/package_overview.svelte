@@ -31,7 +31,7 @@
 	</div>
 </div>
 
-<style>
+<style lang='scss'>
 	.alignment {
 		display: flex;
 		min-width: 70vw;
@@ -65,5 +65,11 @@
 	.description {
 		min-width: max(340px, 25vw);
 		max-width: min-content;
+	}
+	.package_overview {
+		transition-duration: 300ms;
+	}
+	.package_overview:hover {
+		transform: scale(1.03);
 	}
 </style>

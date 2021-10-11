@@ -4,6 +4,6 @@
 	import Overview2 from '$lib/site_components/packages/overviews/Overview2.svelte';
 </script>
 
-<Overview2 detailed/>
+<Overview2 detailed />
 <Inklusive />
 <AllOverviews />

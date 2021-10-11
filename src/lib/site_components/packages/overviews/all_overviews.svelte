@@ -1,5 +1,5 @@
 <script>
-    import BundesligaOverview from '$lib/site_components/packages/overviews/bundesliga_overview.svelte';
+	import BundesligaOverview from '$lib/site_components/packages/overviews/bundesliga_overview.svelte';
 	import CinemaOverview from '$lib/site_components/packages/overviews/cinema_overview.svelte';
 	import DaznOverview from '$lib/site_components/packages/overviews/dazn_overview.svelte';
 	import EntertainmentOverview from '$lib/site_components/packages/overviews/entertainment_overview.svelte';
@@ -29,7 +29,7 @@
 <Vertragsinfomationen />
 <EmptySpacer />
 
-<style>
+<style lang='scss'>
 	h1 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;

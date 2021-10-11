@@ -44,7 +44,7 @@
 	<p style={'top: calc(' + box_height + 'px / 2 - 12px);'}>{text}</p>
 </div>
 
-<style>
+<style lang='scss'>
 	.main_container {
 		position: relative;
 		width: 100%;

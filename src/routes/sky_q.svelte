@@ -69,20 +69,22 @@
 		</div>
 		<img src="/images/visuals/skyq_vorteile_3.png" alt="" />
 	</div>
-	<div class="btn"><Button text="Jetzt Ihr Sky Wunschabo mit Sky Q zusammenstellen" route={urls.aboformular} /></div>
+	<div class="btn">
+		<Button text="Jetzt Ihr Sky Wunschabo mit Sky Q zusammenstellen" route={urls.aboformular} />
+	</div>
 </div>
 <AlleBuchbar />
 <AllOverviews />
 
-<style>
-    .btn {
-        width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+<style lang='scss'>
+	.btn {
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	h1,
 	h2,
-    h3,
+	h3,
 	h4 {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
 		-webkit-background-clip: text;
@@ -93,26 +95,26 @@
 	h2 {
 		text-align: center;
 	}
-    .alignment {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 1500px;
-        width: 85vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-    }
-    .side_alignment {
-        display: flex;
-        flex-wrap: wrap;    
-        justify-content: center;
-        gap: 20px;
+	.alignment {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1500px;
+		width: 85vw;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+	.side_alignment {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
 		padding-bottom: 30px;
-    }
-    ul {
-        line-height: 250%;
-    }
+	}
+	ul {
+		line-height: 250%;
+	}
 	.side_alignment > img {
 		height: 1000px;
 		max-width: 85vw;

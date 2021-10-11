@@ -90,10 +90,12 @@
 	</div>
 	<div style="padding-top:max(1vw, 20px);" />
 	<AngeboteRotator />
-	<SchnellSkyAbonnieren />
+	<div class="scaling_element">
+		<SchnellSkyAbonnieren />
+	</div>
 </body>
 
-<style>
+<style lang='scss'>
 	.top_header {
 		display: flex;
 		flex-direction: row;
@@ -102,7 +104,12 @@
 		align-content: center;
 		align-items: center;
 	}
-
+	.scaling_element {
+		transition-duration: 300ms;
+	}
+	.scaling_element:hover {
+		transform: scale(1.03);
+	}
 	.bottom_icon {
 		margin-right: 1vw;
 		width: min(24vw, 141px);

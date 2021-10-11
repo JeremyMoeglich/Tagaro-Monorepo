@@ -15,7 +15,7 @@
 			subtitle: 'ab € 32,50 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, Preise je Wahl unterschiedlich) Optional Netflix, PAYBACK Punkte, DAZN',
-			route: "/sky_angebote/2_pakete"
+			route: '/sky_angebote/2_pakete'
 		},
 
 		{
@@ -31,7 +31,7 @@
 			subtitle: 'ab € 32,50 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, Preise je Wahl unterschiedlich) Optional Netflix, PAYBACK Punkte, DAZN',
-			route: "/sky_angebote/3_pakete"
+			route: '/sky_angebote/3_pakete'
 		},
 
 		{
@@ -47,7 +47,7 @@
 			subtitle: '€ 40,00 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, danach € 50,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,',
-			route: "/sky_angebote/alle_pakete"
+			route: '/sky_angebote/alle_pakete'
 		},
 
 		{
@@ -62,7 +62,7 @@
 			],
 			subtitle: '€ 12,50 monatlich* ',
 			info_text: '(im Jahres-Abo, danach € 15,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK',
-			route: "/sky_angebote/entertainment"
+			route: '/sky_angebote/entertainment'
 		},
 
 		{
@@ -78,7 +78,7 @@
 			subtitle: '€ 22,50 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, danach €&nbsp;27,50&nbsp;mtl. im Monats-Abo) Optional Netflix, PAYBACK',
-			route: "/sky_angebote/cinema"
+			route: '/sky_angebote/cinema'
 		},
 
 		{
@@ -94,7 +94,7 @@
 			subtitle: '€ 17,50 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, danach € 22,50 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,',
-			route: "/sky_angebote/sport"
+			route: '/sky_angebote/sport'
 		},
 
 		{
@@ -110,9 +110,9 @@
 			subtitle: '€ 25,00 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, danach € 30,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,',
-			route: "/sky_angebote/bundesliga"
+			route: '/sky_angebote/bundesliga'
 		}
 	];
 </script>
 
-<WrappingElements {components} title={"Aktuelle Angebote"}/>
+<WrappingElements {components} title={'Aktuelle Angebote'} />

@@ -64,7 +64,7 @@
 	</div>
 </body>
 
-<style>
+<style lang='scss'>
 	.alignment {
 		max-width: min(85%, 1000px);
 		margin-left: auto;

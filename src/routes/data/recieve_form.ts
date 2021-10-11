@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL } from '$lib/Env';
 
-console.log(SMTP_HOST)
+console.log(SMTP_HOST);
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
  */

@@ -2,7 +2,7 @@
 	<div class="spacer" />
 </article>
 
-<style>
+<style lang='scss'>
 	.spacer {
 		border-top: 2px solid #ccc;
 		--space: 100px;
