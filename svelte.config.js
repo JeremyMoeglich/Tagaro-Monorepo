@@ -7,7 +7,7 @@ import netlifyAdapter from '@sveltejs/adapter-netlify'
 import image from "svelte-image";
 
 const hasAdapter = process.env.ADAPTER;
-const adapt = hasAdapter ? hasAdapter : 'node';
+const adapt = hasAdapter ? hasAdapter : 'netlify';
 
 const getAdapters = (adapt) => {
 	switch (adapt) {
