@@ -21,14 +21,17 @@
 		</p>
 	</button>
 	{#if opened}
-		<div class="main_text gradient-text">
+		<div class="main_text">
 			<slot name="main_text">This is empty</slot>
 		</div>
 	{/if}
 </div>
 
 <style lang="scss">
-	@import '../style/global.scss';
+	@import '../style/mixins.scss';
+	.gradient-text {
+		@include gradient-text
+	}
 	.main_container {
 		min-width: min(1000px, 90%);
 		max-width: min-content;
@@ -60,6 +63,6 @@
 		list-style: none;
 	}
 	.main_text :global(h3) {
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+		@include gradient-text
 	}
 </style>

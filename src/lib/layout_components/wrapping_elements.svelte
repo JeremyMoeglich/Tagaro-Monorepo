@@ -173,10 +173,17 @@
 </div>
 
 <style lang="scss">
-	@import '../style/global.scss';
+	@import '../style/mixins.scss';
 	$background_height: calc((830px - 5vw) * 1.2);
 	$outer_padding: 70px;
 	$background_color: #f2f2f2;
+
+	.gradient-text {
+		@include gradient-text
+	}
+	.btn {
+		margin-top: 30px;
+	}
 
 	.controll_align {
 		display: flex;

@@ -3,7 +3,7 @@
 </article>
 
 <style lang="scss">
-	@import url('/src/lib/style/global.scss');
+	@import url('/src/lib/style/mixins.scss');
 	.spacer {
 		border-top: 2px solid #ccc;
 		$space: 100px;

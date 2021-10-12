@@ -120,7 +120,7 @@
 </div>
 
 <style lang="scss">
-	@import '../style/global.scss';
+	@import '../style/mixins.scss';
 
 	.main_container {
 		background-color: #f2f2f2;

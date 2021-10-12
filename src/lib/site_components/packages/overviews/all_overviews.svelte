@@ -30,7 +30,7 @@
 <EmptySpacer />
 
 <style lang="scss">
-	@import '../../../style/global.scss';
+	@import '../../../style/mixins.scss';
 	h1 {
 		@include gradient-text;
 		text-align: center;

@@ -4,7 +4,7 @@
 
 <LineSpacer />
 <div>
-	<h1 class="gradient_text centered_text">Alle Sky Pakete flexibel buchbar</h1>
+	<h1 class="gradient-text centered_text">Alle Sky Pakete flexibel buchbar</h1>
 	<p class="styled_p centered_text">
 		Erhalten Sie hier Ihr Sky Abonnement mit versandkostenfreier Lieferung. <br />
 		Wählen Sie Ihre Wunschpakete individuell aus Sky Entertainment, Cinema, Sport und/oder Fußball-Bundesliga.
@@ -13,8 +13,10 @@
 <LineSpacer />
 
 <style lang="scss">
-	@import url('/src/lib/style/global.scss');
-
+	@import '../style/mixins.scss';
+	.gradient-text {
+		@include gradient-text;
+	}
 	.centered_text {
 		text-align: center;
 		max-width: 90vw;

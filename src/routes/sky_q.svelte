@@ -77,7 +77,7 @@
 <AllOverviews />
 
 <style lang="scss">
-	@import '../lib/style/global.scss';
+	@import '../lib/style/mixins.scss';
 	.btn {
 		width: 500px;
 		margin-left: auto;

@@ -636,7 +636,7 @@
 </div>
 
 <style lang="scss">
-	@import '../../lib/style/global.scss';
+	@import '../../lib/style/mixins.scss';
 	h1 {
 		@include gradient-text;
 		text-align: center;

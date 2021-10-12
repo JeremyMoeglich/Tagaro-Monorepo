@@ -65,7 +65,7 @@
 </body>
 
 <style lang="scss">
-	@import '../../lib/style/global.scss';
+	@import '../../lib/style/mixins.scss';
 	.alignment {
 		max-width: min(85%, 1000px);
 		margin-left: auto;

@@ -96,7 +96,7 @@
 </body>
 
 <style lang="scss">
-	@import '../lib/style/global.scss';
+	@import '../lib/style/mixins.scss';
 	.top_header {
 		display: flex;
 		flex-direction: row;

@@ -21,7 +21,7 @@
 </button>
 
 <style lang="scss">
-	@import '../style/global.scss';
+	@import '../style/mixins.scss';
 	a,
 	p {
 		display: block;

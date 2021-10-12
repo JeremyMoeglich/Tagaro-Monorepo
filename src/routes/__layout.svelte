@@ -16,6 +16,7 @@
 	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	import PhoneBox from '$lib/site_components/phone_box.svelte';
 	import { browser } from '$app/env';
+	import { fly } from 'svelte/transition';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -189,7 +190,12 @@
 											</button>
 											<div>
 												{#if selected == pair[0]}
-													<div class="context_menu" use:clickOutside on:click_outside={deselect}>
+													<div
+														transition:fly={{ y: 60, duration: 200 }}
+														class="context_menu"
+														use:clickOutside
+														on:click_outside={deselect}
+													>
 														<b>{pair[0]}</b>
 														{#each Object.entries(pair[1]) as subtab}
 															{#if subtab[0] != 'index'}
@@ -488,6 +494,10 @@
 
 	a:hover {
 		text-decoration: underline;
+	}
+	.nav_element_hover,
+	.nav_element_hover_mobile {
+		transition-duration: 200ms;
 	}
 
 	.nav_element_hover:hover,

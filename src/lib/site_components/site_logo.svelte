@@ -42,7 +42,7 @@
 
 <style lang="scss">
 	@use "sass:math";
-	@import url('/src/lib/style/global.scss');
+	@import url('/src/lib/style/mixins.scss');
 
 	$logo_size: 128px;
 

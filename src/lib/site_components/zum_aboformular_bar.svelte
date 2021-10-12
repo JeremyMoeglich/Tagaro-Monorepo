@@ -8,7 +8,7 @@
 </div>
 
 <style lang="scss">
-	@import url('/src/lib/style/global.scss');
+	@import url('/src/lib/style/mixins.scss');
 	.main_text {
 		font-size: 33px;
 		color: white;

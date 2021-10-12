@@ -33,7 +33,7 @@
 </body>
 
 <style lang="scss">
-	@import '../../lib/style/global.scss';
+	@import '../../lib/style/mixins.scss';
 	.side_text_container {
 		min-width: 50%;
 	}

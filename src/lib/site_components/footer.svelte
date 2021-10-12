@@ -60,7 +60,7 @@
 </div>
 
 <style lang="scss">
-	@import url('/src/lib/style/global.scss');
+	@import url('/src/lib/style/mixins.scss');
 	.side_alignment {
 		margin-top: 60px;
 		display: flex;

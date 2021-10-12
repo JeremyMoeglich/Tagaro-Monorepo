@@ -13,7 +13,7 @@
 </div>
 
 <style lang="scss">
-	@import '../style/global.scss';
+	@import '../style/mixins.scss';
 	.alignment {
 		display: flex;
 		flex-direction: column;

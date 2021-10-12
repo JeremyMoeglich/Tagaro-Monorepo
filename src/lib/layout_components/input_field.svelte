@@ -45,7 +45,7 @@
 </div>
 
 <style lang="scss">
-	@import '../style/global.scss';
+	@import '../style/mixins.scss';
 	.main_container {
 		position: relative;
 		width: 100%;
