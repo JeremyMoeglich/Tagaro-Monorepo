@@ -95,7 +95,8 @@
 	</div>
 </body>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../lib/style/global.scss';
 	.top_header {
 		display: flex;
 		flex-direction: row;
@@ -151,9 +152,9 @@
 	.main_images {
 		order: 0;
 		width: min(16vw, max(19vh, 150px));
-		--total_padding: max(0px, calc(min(110px, 10vw) - 100px));
-		margin-left: var(--total_padding);
-		margin-right: var(--total_padding);
+		$total_padding: max(0px, min(110px, 10vw) - 100px);
+		margin-left: $total_padding;
+		margin-right: $total_padding;
 		margin-top: 0px;
 		padding: 5px;
 		margin-bottom: 1vw;
@@ -188,10 +189,7 @@
 	.main_title {
 		text-align: center;
 		margin-bottom: 15px;
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 	}
 
 	.maxwidth90 {

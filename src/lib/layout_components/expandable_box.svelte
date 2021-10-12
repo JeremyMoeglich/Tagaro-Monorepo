@@ -12,7 +12,7 @@
 		<p>
 			{opened ? title : `${title} aufklappen`}
 		</p>
-		<p class="pm">
+		<p class="pm gradient-text">
 			{#if opened}
 				-
 			{:else}
@@ -21,13 +21,14 @@
 		</p>
 	</button>
 	{#if opened}
-		<div class="main_text">
+		<div class="main_text gradient-text">
 			<slot name="main_text">This is empty</slot>
 		</div>
 	{/if}
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../style/global.scss';
 	.main_container {
 		min-width: min(1000px, 90%);
 		max-width: min-content;
@@ -45,10 +46,6 @@
 		font-size: 35px;
 		margin: 0;
 		padding: 0;
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
 	}
 	.selectable {
 		min-width: 90%;
@@ -64,9 +61,5 @@
 	}
 	.main_text :global(h3) {
 		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		font-size: 20px;
 	}
 </style>

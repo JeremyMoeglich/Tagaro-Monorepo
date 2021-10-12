@@ -49,7 +49,8 @@
 	</div>
 </body>
 
-<style lang='scss'>
+<style lang="scss">
+	@import url('/src/lib/style/global.scss');
 	body {
 		position: relative;
 	}

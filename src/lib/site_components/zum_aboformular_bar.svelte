@@ -7,7 +7,8 @@
 	<Button text="Zum Aboformular" route="/sky/bestellen" reversed />
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import url('/src/lib/style/global.scss');
 	.main_text {
 		font-size: 33px;
 		color: white;

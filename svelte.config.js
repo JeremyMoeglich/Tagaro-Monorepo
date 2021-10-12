@@ -30,12 +30,11 @@ const adapter = getAdapters(adapt);
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: preprocess({ scss: { prependData: `@import './src/lib/style/global.scss';`,outputStyle: 'compressed',} }),
+	preprocess: preprocess(),
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		ssr: true,
-		amp: true,
 		prerender: {
 			crawl: true,
 			enabled: true,

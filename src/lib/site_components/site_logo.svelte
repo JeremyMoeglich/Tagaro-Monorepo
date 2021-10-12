@@ -40,24 +40,28 @@
 	</div>
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@use "sass:math";
+	@import url('/src/lib/style/global.scss');
+
+	$logo_size: 128px;
+
 	.main_container {
-		--logo_size: 128px;
 		display: flex;
 		justify-content: center;
-		width: var(--logo_size);
-		height: var(--logo_size);
+		width: $logo_size;
+		height: $logo_size;
 		background-image: url('/images/logo/tagaro-logo.png');
-		background-size: var(--logo_size);
+		background-size: $logo_size;
 	}
 	.circle {
-		--circle_size: 63px;
+		$circle_size: 63px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: var(--circle_size);
-		height: var(--circle_size);
-		margin-top: calc(var(--logo_size) / 17);
+		width: $circle_size;
+		height: $circle_size;
+		margin-top: math.div($logo_size, 17);
 		border: 4px solid;
 		border-color: white;
 		border-radius: 50%;

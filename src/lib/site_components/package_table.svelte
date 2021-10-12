@@ -119,7 +119,9 @@
 	</div>
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../style/global.scss';
+
 	.main_container {
 		background-color: #f2f2f2;
 		padding-top: 50px;
@@ -132,10 +134,7 @@
 		gap: 20px;
 	}
 	.title {
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 		text-align: center;
 		font-size: 35px;
 	}
@@ -147,9 +146,9 @@
 	}
 	td {
 		padding: 20px;
-		--pad: max(min(34px, calc(7vw - 90px)), 0px);
-		padding-left: var(--pad);
-		padding-right: var(--pad);
+		$pad: max(min(34px, 7vw - 90px), 0px);
+		padding-left: $pad;
+		padding-right: $pad;
 	}
 	tr {
 		border-bottom: 1px solid #ccc;

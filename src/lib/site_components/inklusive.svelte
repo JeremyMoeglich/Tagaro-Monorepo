@@ -28,7 +28,8 @@
 	<img src="/images/visuals/skyq_header_4.png" alt="" />
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import url('/src/lib/style/global.scss');
 	.left {
 		max-width: 800px;
 	}
@@ -46,12 +47,6 @@
 		width: 50%;
 		max-width: 500px;
 		object-fit: contain;
-	}
-	.gradient_text {
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
 	}
 	h2 {
 		text-align: center;

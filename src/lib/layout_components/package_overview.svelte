@@ -31,7 +31,8 @@
 	</div>
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../style/global.scss';
 	.alignment {
 		display: flex;
 		min-width: 70vw;
@@ -43,10 +44,7 @@
 	}
 	.title,
 	.description :global(h3) {
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 	}
 	.points {
 		list-style-image: url('/images/icons/plus_char.svg');

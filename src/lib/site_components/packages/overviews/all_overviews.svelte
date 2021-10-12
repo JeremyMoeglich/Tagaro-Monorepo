@@ -29,12 +29,10 @@
 <Vertragsinfomationen />
 <EmptySpacer />
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../../../style/global.scss';
 	h1 {
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 		text-align: center;
 		margin: 70px;
 	}

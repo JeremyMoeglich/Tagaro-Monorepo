@@ -12,7 +12,8 @@
 	<Button text={'Angebote & Pakete'} route={'/sky_angebote'} />
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../style/global.scss';
 	.alignment {
 		display: flex;
 		flex-direction: column;
@@ -26,9 +27,6 @@
 	}
 	h2 {
 		font-size: 35px;
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 	}
 </style>

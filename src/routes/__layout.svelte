@@ -103,7 +103,6 @@
 		data-platform="0"
 		async>
 	</script>
-
 	<meta property="og:title" content="TAGARO Medienshop" />
 	<meta property="og:image" content="/share_preview.png" />
 	<meta
@@ -309,7 +308,8 @@
 	</div>
 </body>
 
-<style lang='scss'>
+<style lang="scss">
+	$top_bar_size: max(min(230px - 11vw, 180px), 100px);
 	@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 	* {
@@ -430,20 +430,16 @@
 		margin: 0;
 	}
 
-	:root {
-		--top_bar_size: max(min(calc(230px - 11vw), 180px), 100px);
-	}
-
 	.header_center_alignment {
 		padding-top: 15px;
-		padding-top: calc(var(--top_bar_size) / 2 - 35px);
+		padding-top: $top_bar_size / 2 - 35px;
 		display: flex;
 		align-items: center;
 	}
 	.header_blue_bar {
 		background: linear-gradient(to right, #49358d, #027fc7);
 		min-height: 100px;
-		min-height: var(--top_bar_size);
+		min-height: $top_bar_size;
 		min-width: 100vw;
 	}
 	.selectable_element {
@@ -462,11 +458,11 @@
 		text-align: center;
 	}
 	.nav_element {
-		--pad: 5px;
-		padding-left: var(--pad);
-		padding-top: var(--pad);
-		padding-right: var(--pad);
-		padding-bottom: var(--pad);
+		$pad: 5px;
+		padding-left: $pad;
+		padding-top: $pad;
+		padding-right: $pad;
+		padding-bottom: $pad;
 		border: 1px solid transparent;
 		margin-top: 0;
 		margin-bottom: 0;
@@ -474,9 +470,9 @@
 	}
 	.nav_element_mobile {
 		text-align: left;
-		--pad: 1vh;
-		padding-top: var(--pad);
-		padding-bottom: var(--pad);
+		$pad: 1vh;
+		padding-top: $pad;
+		padding-bottom: $pad;
 		font-size: 2vh;
 		border-bottom: 1px solid white;
 		width: 80vw;

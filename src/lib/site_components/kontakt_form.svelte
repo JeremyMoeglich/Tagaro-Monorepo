@@ -18,7 +18,8 @@
 	<Button text="test" />
 </form>
 
-<style lang='scss'>
+<style lang="scss">
+	@import url('/src/lib/style/global.scss');
 	form {
 		display: flex;
 		flex-direction: column;

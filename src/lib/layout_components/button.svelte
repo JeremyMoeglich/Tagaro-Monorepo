@@ -20,7 +20,8 @@
 	{/if}
 </button>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../style/global.scss';
 	a,
 	p {
 		display: block;

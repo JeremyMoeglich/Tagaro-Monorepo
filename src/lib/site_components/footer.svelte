@@ -59,7 +59,8 @@
 	<p class="copyright">© 2021 - TAGARO Medienshop Möglich & Möglich GbR</p>
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import url('/src/lib/style/global.scss');
 	.side_alignment {
 		margin-top: 60px;
 		display: flex;

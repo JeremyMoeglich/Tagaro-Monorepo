@@ -22,15 +22,13 @@
 </div>
 <div class="vertragsinfo"><Vertragsinfomationen /></div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../lib/style/global.scss';
 	.main-title {
 		margin-top: 50px;
 		font-size: min(max(2vw, 35px), 4vw);
 		text-align: center;
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 		flex: 1 0 max(4vw, 80px);
 	}
 	.header-text-image-align {

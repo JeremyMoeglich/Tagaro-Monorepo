@@ -278,7 +278,7 @@
 
 	<p>
 		7.1 Nach Ablauf der Widerrufsfrist von einem Monat oder bei Kaeufern, die nicht Verbraucher
-		i.S.d. § 13 BGB sind, erfolgt eine Warenruecknahme nur bei nachweislich falscher Belieferung.
+		i.S.d. $ 13 BGB sind, erfolgt eine Warenruecknahme nur bei nachweislich falscher Belieferung.
 		Bei Umtausch-, Ruecknahme- oder Gutschriftersuchen, deren Ursache die Moeglich & Moeglich GbR
 		nicht zu vertreten hat, erfolgt eine Abwicklung nur nach schriftlicher Bestaetigung durch den
 		Verkaeufer. Dies gilt auch im Falle der von der Moeglich & Moeglich GbR veranlassten Abholung
@@ -290,7 +290,7 @@
 	</p>
 
 	<p>
-		7.2 Nimmt ein Kaeufer, der nicht Verbraucher i.S.d. § 13 BGB ist, die verkaufte Ware nicht ab,
+		7.2 Nimmt ein Kaeufer, der nicht Verbraucher i.S.d. $ 13 BGB ist, die verkaufte Ware nicht ab,
 		so sind wir berechtigt, wahlweise auf Abnahme zu bestehen oder 10% des Kaufpreises als
 		pauschalisierten Schadens- und Aufwendungsersatz zu verlangen, es sei denn, der Kaeufer weist
 		nach, dass ein Schaden nicht oder in geringerer Hoehe entstanden ist. Im Falle eines
@@ -399,7 +399,7 @@
 	<p>
 		9.5 Offensichtliche Maengel sind innerhalb eines Monats nach Empfang der Lieferung schriftlich
 		anzuzeigen. Andernfalls sind hierfuer alle Maengelansprueche ausgeschlossen. Im kaufmaennischen
-		Verkehr gelten ergaenzend die §§ 377, 378 HGB.
+		Verkehr gelten ergaenzend die $$ 377, 378 HGB.
 	</p>
 
 	<p>
@@ -415,7 +415,7 @@
 
 	<p>
 		9.7 Nach Ablauf des ersten Jahres ist der Anspruch in der Regel auf Nachbesserung beschraenkt,
-		da branchenspezifisch die auftretenden Kosten regelmaessig unverhaeltnismaessig hoch sind (§ 439
+		da branchenspezifisch die auftretenden Kosten regelmaessig unverhaeltnismaessig hoch sind ($ 439
 		III BGB). Sollte die Moeglich & Moeglich GbR im Rahmen der Nachbesserung einen Tausch in ein
 		hoeherwertigeres Produkt vornehmen, gilt dieser bereits jetzt als akzeptiert. Weitergehende
 		Rechte, insbesondere die Rueckgaengigmachung des Kaufvertrags oder die Minderung des Kaufpreises
@@ -426,17 +426,17 @@
 	<p>
 		9.8 Handelt es sich bei dem Kaeufer um einen Unternehmer, so sind wir innerhalb eines Jahres
 		nach Lieferdatum nach unserer Wahl zur Maengelbeseitigung oder Lieferung mangelfreier Ware im
-		Sinne des § 439 BGB berechtigt. Nach Ablauf eines Jahres ab Lieferdatum beschraenken sich seine
+		Sinne des $ 439 BGB berechtigt. Nach Ablauf eines Jahres ab Lieferdatum beschraenken sich seine
 		Gewaehrleistungsansprueche auf Maengelbeseitigung oder Zeitwertgutschrift nach unserer Wahl.
-		Sollte der Unternehmer Aufwendungsersatz i.S.d. § 478 II BGB fordern, beschraenkt sich dieser
-		auf max. 2% des urspruenglichen Warenwerts. Ansprueche, die auf § 478 BGB zurueckgehen, sind
+		Sollte der Unternehmer Aufwendungsersatz i.S.d. $ 478 II BGB fordern, beschraenkt sich dieser
+		auf max. 2% des urspruenglichen Warenwerts. Ansprueche, die auf $ 478 BGB zurueckgehen, sind
 		durch die 24-monatige Gewaehrleistung fuer Unternehmer nach 8.1 abgedungen im Sinne des
-		gleichwertigen Ausgleichs nach § 478 IV S. 1 BGB.
+		gleichwertigen Ausgleichs nach $ 478 IV S. 1 BGB.
 	</p>
 
 	<p>
 		9.9 Durch einen Austausch im Rahmen der Gewaehrleistung/Garantie treten keine neuen
-		Gewaehrleistungs-/Garantiefristen in Kraft; § 203 BGB bleibt unberuehrt.
+		Gewaehrleistungs-/Garantiefristen in Kraft; $ 203 BGB bleibt unberuehrt.
 	</p>
 
 	<p>
@@ -446,7 +446,7 @@
 		entgangenen Gewinn oder sonstige Vermoegensschaeden des Kaeufers. Dies gilt nicht, sofern der
 		Schaden auf Vorsatz, grobe Fahrlaessigkeit oder Fehlen einer zugesicherten Eigenschaft,
 		Verletzung vertragswesentlicher Pflichten, Leistungsverzug, Unmoeglichkeit, sowie Anspruechen
-		nach §§ 1, 4 des Produkthaftungsgesetzes beruht. Fuer die Wiederherstellung von Daten haften wir
+		nach $$ 1, 4 des Produkthaftungsgesetzes beruht. Fuer die Wiederherstellung von Daten haften wir
 		nicht, es sei denn, dass wir den Verlust vorsaetzlich oder grob fahrlaessig verursacht haben und
 		der Kaeufer sichergestellt hat, dass eine Datensicherung erfolgt ist, so dass die Daten mit
 		vertretbarem Aufwand rekonstruiert werden koennen. Soweit unsere Haftung ausgeschlossen oder
@@ -568,7 +568,7 @@
 	</p>
 
 	<p>
-		<b>17. Alternative Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und § 36 VSBG:</b>
+		<b>17. Alternative Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO und $ 36 VSBG:</b>
 	</p>
 
 	<p>
@@ -584,7 +584,7 @@
 	<p>
 		18.1 Hinsichtlich der von uns erstmals mit Ware befuellten und an private Endverbraucher
 		abgegebene Verkaufsverpackungen hat sich unser Unternehmen zur Sicherstellung der Erfuellung
-		unserer gesetzlichen Pflichten nach § 6 VerpackV dem bundesweit taetigen Ruecknahmesystem der
+		unserer gesetzlichen Pflichten nach $ 6 VerpackV dem bundesweit taetigen Ruecknahmesystem der
 		Landbell AG, Mainz, (Kundennummer: 4100454) angeschlossen. Weitere Informationen finden Sie
 		unter www.landbell.de
 	</p>
@@ -635,12 +635,10 @@
 	</p>
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../../lib/style/global.scss';
 	h1 {
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 		text-align: center;
 		font-size: 40px;
 	}

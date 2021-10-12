@@ -2,14 +2,15 @@
 	<div class="spacer" />
 </article>
 
-<style lang='scss'>
+<style lang="scss">
+	@import url('/src/lib/style/global.scss');
 	.spacer {
 		border-top: 2px solid #ccc;
-		--space: 100px;
+		$space: 100px;
 		max-width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: var(--space);
-		margin-bottom: var(--space);
+		margin-top: $space;
+		margin-bottom: $space;
 	}
 </style>

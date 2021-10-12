@@ -11,16 +11,14 @@
 	<EmptySpacer />
 </body>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../../lib/style/global.scss';
 	.center_alignment {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	.title {
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 	}
 </style>

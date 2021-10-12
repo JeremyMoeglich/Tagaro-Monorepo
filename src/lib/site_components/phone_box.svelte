@@ -15,7 +15,8 @@
 	</div>
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import url('/src/lib/style/global.scss');
 	.alignment {
 		display: flex;
 		align-items: center;

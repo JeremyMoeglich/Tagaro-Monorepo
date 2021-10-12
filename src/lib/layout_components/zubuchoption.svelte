@@ -9,7 +9,8 @@
 	<p>{@html text}</p>
 </div>
 
-<style lang='scss'>
+<style lang="scss">
+	@import '../style/global.scss';
 	img {
 		width: min(100px, 33.33vw);
 	}

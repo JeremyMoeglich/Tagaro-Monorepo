@@ -37,13 +37,11 @@
 		box_width: string;
 		x_padding: string;
 		actual_width: string;
-		background_color: string;
 	} = {
 		element_spacing: '10px',
 		box_width: 'calc(5vw + 200px)',
 		x_padding: '50px',
-		actual_width: 'calc(var(--box_width) + var(--x_padding) * 2)',
-		background_color: '#f2f2f2'
+		actual_width: 'calc(var(--box_width) + var(--x_padding) * 2)'
 	};
 
 	function wrap(index) {
@@ -78,6 +76,7 @@
 			let dt = Math.max(Math.min(((now - last) / 200) * 2, 1), 0);
 			last = now;
 			current_x_pos = lerp(current_x_pos, center_index, dt);
+			
 			stop_id = requestAnimationFrame(animate);
 		} else {
 			current_x_pos = center_index;
@@ -128,7 +127,7 @@
 
 <div style={css_vars_style}>
 	<div class="main_container">
-		<h2 class="gradient_text" style="text-align: center;">{title}</h2>
+		<h2 class="gradient-text" style="text-align: center;">{title}</h2>
 		<div class="alignment">
 			{#each indexed_components as item}
 				<a
@@ -152,9 +151,9 @@
 			{/each}
 		</div>
 		<div class="cover_elements">
-			<div class="cover cover_element" />
-			<div class="t cover_element" />
-			<div class="cover cover_element" />
+			<div class="cover cover_element"/>
+			<div class="t cover_element"/>
+			<div class="cover cover_element"/>
 		</div>
 	</div>
 	<div class="controll_align">
@@ -173,18 +172,16 @@
 	</div>
 </div>
 
-<style lang='scss'>
-	:root {
-		--background_height: calc((830px - 5vw) * 1.2);
-		--outer_padding: 70px;
-	}
-	.btn {
-		margin-top: 50px;
-	}
+<style lang="scss">
+	@import '../style/global.scss';
+	$background_height: calc((830px - 5vw) * 1.2);
+	$outer_padding: 70px;
+	$background_color: #f2f2f2;
+
 	.controll_align {
 		display: flex;
-		min-height: calc(var(--outer_padding) * 2.5);
-		background-color: var(--background_color);
+		min-height: $outer_padding * 2.5;
+		background-color: $background_color;
 		justify-content: center;
 		align-items: center;
 	}
@@ -233,6 +230,10 @@
 		max-width: var(--box_width);
 		min-width: var(--box_width);
 	}
+	.package_alignment:hover {
+		transform: scale(1.05);
+	}
+
 	.middle_element {
 		box-shadow: 0 6px 20px 0 rgb(0 0 0 / 12%);
 		background-color: white;
@@ -240,30 +241,24 @@
 	h3 {
 		min-height: 60px;
 		margin: 0px;
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient-text;
 	}
 	h2 {
 		margin-bottom: 60px;
 		font-size: 35px;
 	}
-	.gradient_text {
-		background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+
 	p {
 		margin: 0px;
 	}
 	.cover {
-		background-color: var(--background_color);
+		background-color: $background_color;
 		min-width: 100%;
+		pointer-events: auto;
 	}
 	.t {
 		min-width: calc(var(--actual_width) * 3 + var(--element_spacing) * 3);
+		pointer-events: none;
 	}
 	img {
 		align-self: center;
@@ -287,15 +282,16 @@
 		min-height: 100%;
 		z-index: 5;
 		pointer-events: none;
+		
 	}
 	.main_container {
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: var(--background_color);
-		padding-top: var(--outer_padding);
-		padding-bottom: var(--outer_padding);
-		min-height: var(--background_height);
+		background-color: $background_color;
+		padding-top: $outer_padding;
+		padding-bottom: $outer_padding;
+		min-height: $background_height;
 	}
 </style>
