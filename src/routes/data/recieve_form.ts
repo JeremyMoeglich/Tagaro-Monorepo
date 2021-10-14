@@ -29,7 +29,7 @@ export async function post({ body }) {
 		};
 	}
 	console.log(bodyobj);
-
+	console.log(SMTP_HOST, SMTP_MAIL, SMTP_PASSWORD)
 	const transporter = nodemailer.createTransport({
 		host: SMTP_HOST,
 		secure: true, // upgrade later with STARTTLS
