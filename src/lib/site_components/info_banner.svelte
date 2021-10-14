@@ -40,8 +40,8 @@
 
 	export let preferences_object = accept_obj;
 	$: preferences_object = lodash.cloneDeep(accept_obj);
-
-	$: Cookies.set('preferences', JSON.stringify(accept_obj));
+	
+	$: Cookies.set('preferences', JSON.stringify(accept_obj), { expires: 128 });
 
 	let edit_preferences = lodash.cloneDeep(accept_obj);
 	Object.entries(edit_preferences).forEach((element) => {
@@ -157,7 +157,7 @@
 	}
 	.side_alignment {
 		display: flex;
-		gap: 30px;
+		gap: 20px;
 		padding: 20px;
 	}
 	.grey_out {
