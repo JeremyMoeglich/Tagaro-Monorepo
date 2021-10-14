@@ -4,36 +4,35 @@
 </script>
 
 <div class="scaling_element"><ZumAboformularBar /></div>
-<div class="scaling_element">
-	<div class="side_alignment">
-		<div class="infomationen">
-			<h3>Infomationen</h3>
-			<ul class="nopoint">
-				<li><a href="/service/datenschutz">- Datenschutz -</a></li>
-				<li><a href="/service/AGB">- AGB -</a></li>
-				<li><a href="/service">- Service -</a></li>
-				<li><a href="/service/impressum">- Impressum -</a></li>
-				<li><a href="/service/widerrufsrecht">- Widerrufsrecht -</a></li>
-			</ul>
-		</div>
-		<div class="sofortkontakt">
-			<h3>Ihr Sofortkontakt</h3>
-			<p>
-				Montag - Freitag <br />
-				10:00 - 13:00 und 14:00 - 18:00 Uhr <br />
-				Per E-Mail 24 Stunden lang
-			</p>
-			<p>
-				<a href="tel:06443-819427">Telefon: 06443 - 819 427</a> <br />
-				Fax: 0321 - 2111 6558 <br />
-				<a href="mailto://info@tagaro.de">E-Mail: info@tagaro.de</a>
-			</p>
-		</div>
-		<div class="einkaufen">
-			<h3>Sicher Einkaufen</h3>
-			<img src="/images/badges/autorisiert.svg" alt="" />
-			<img src="/images/badges/ssl.png" alt="" />
-			<!-- <a
+<div class="side_alignment">
+	<div class="infomationen">
+		<h3>Infomationen</h3>
+		<ul class="nopoint">
+			<li><a href="/service/datenschutz">- Datenschutz -</a></li>
+			<li><a href="/service/AGB">- AGB -</a></li>
+			<li><a href="/service">- Service -</a></li>
+			<li><a href="/service/impressum">- Impressum -</a></li>
+			<li><a href="/service/widerrufsrecht">- Widerrufsrecht -</a></li>
+		</ul>
+	</div>
+	<div class="sofortkontakt">
+		<h3>Ihr Sofortkontakt</h3>
+		<p>
+			Montag - Freitag <br />
+			10:00 - 13:00 und 14:00 - 18:00 Uhr <br />
+			Per E-Mail 24 Stunden lang
+		</p>
+		<p>
+			<a href="tel:06443-819427">Telefon: 06443 - 819 427</a> <br />
+			Fax: 0321 - 2111 6558 <br />
+			<a href="mailto://info@tagaro.de">E-Mail: info@tagaro.de</a>
+		</p>
+	</div>
+	<div class="einkaufen">
+		<h3>Sicher Einkaufen</h3>
+		<img src="/images/badges/autorisiert.svg" alt="" />
+		<img src="/images/badges/ssl.png" alt="" />
+		<!-- <a
 				href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung"
 				target="_blank"
 				title="Klicken Sie für weitere Informationen"
@@ -45,23 +44,22 @@
 					alt="Trustami"
 				/></a
 			> -->
-			{#if preferences_object['Social Media']}
-				{@html '<div class="widget_container_badge"></div>'}
-			{/if}
-		</div>
 		{#if preferences_object['Social Media']}
-			<div class="social">
-				<h3>Social Media</h3>
-				<iframe
-					src="/raw_components/page_plugin.html"
-					frameborder="0"
-					title="Tagaro Medienshop Facebook"
-				/>
-			</div>
+			{@html '<div class="widget_container_badge"></div>'}
 		{/if}
 	</div>
-	<p class="copyright">© 2021 - TAGARO Medienshop Möglich & Möglich GbR</p>
+	{#if preferences_object['Social Media']}
+		<div class="social">
+			<h3>Social Media</h3>
+			<iframe
+				src="/raw_components/page_plugin.html"
+				frameborder="0"
+				title="Tagaro Medienshop Facebook"
+			/>
+		</div>
+	{/if}
 </div>
+<p class="copyright">© 2021 - TAGARO Medienshop Möglich & Möglich GbR</p>
 
 <style lang="scss">
 	@import url('/src/lib/style/mixins.scss');

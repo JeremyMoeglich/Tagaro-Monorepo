@@ -4,7 +4,7 @@
 	import Cookies from 'js-cookie';
 	import lodash from 'lodash';
 	import * as cookie_keys from '$lib/vars/cookie_keys';
-	
+
 	function IsJsonString(str) {
 		try {
 			JSON.parse(str);
@@ -40,7 +40,7 @@
 
 	export let preferences_object = accept_obj;
 	$: preferences_object = lodash.cloneDeep(accept_obj);
-	
+
 	$: Cookies.set('preferences', JSON.stringify(accept_obj), { expires: 128 });
 
 	let edit_preferences = lodash.cloneDeep(accept_obj);
@@ -51,7 +51,7 @@
 		Cookies: `
 		Auf dieser Website werden Cookies und ähnliche Technologien genutzt.
 		Einige sind für den Betrieb der Website notwendig.
-		Andere können links aktiviert werden und dienen statistischen Erhebungen zur Optimierung der Webseite,
+		Andere können aktiviert werden und dienen statistischen Erhebungen zur Optimierung der Webseite,
 		der Nachverfolgung von Werbemaßnahmen, auch über mehrere Webseiten hinweg sowie der Personalisierung.
 		Bedenke, dass nicht aktivierte Cookies den Funktionsumfang der Webseite einschränken können.
 		Bei vereinzelten Cookies akzeptierst du zudem, dass deine Daten in Ländern,
@@ -59,106 +59,163 @@
 		verarbeitet werden können. Weitere Infos findest du in der Datenschutzerklärung.
 		`,
 		Kontakt: `
-		
+
 		`,
 		Aboformular: `
 		
 		`,
 		Widerrufsrecht: `
-		
+		Widerrufsrecht für Sky Verträge <br/>
+
+		Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Sky Vertrag zu widerrufen. <br/>
+	
+		Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses. <br/>
+
+		Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR, Bachstr. 61, 35614 Asslar-Werdorf, E-Mail info@tagaro.de, Telefon 06443 819427, Fax 0321 21116558 mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. <br/>
+
+		Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Sie können das Muster-Widerrufsformular oder eine andere eindeutige Erklärung auch auf unserer Webseite http://www.tagaro.de elektronisch ausfüllen und übermitteln. Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen unverzüglich (z. B. per E-Mail) eine Bestätigung über den Eingang eines solchen Widerrufs übermitteln. <br/>
+
+		Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden. <br/>
+
+		Folgen des Widerrufs <br/>
+
+		Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen 14 Tage ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. <br/>
+
+		Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen 14 Tage ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrages unterrichten, an uns (siehe Anschrift oben sowie auf dieser Seite) oder an Sky Deutschland, 22033 Hamburg vor Ablauf der Frist von 14 Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.
 		`
 	};
-	let current_tab = 'Cookies'
+	let current_tab = 'Cookies';
 </script>
+
+<svelte:head>
+	{#if !AreCookiesAccepted(accept_obj)}
+	<style type="text/css">
+		body {
+			overflow-y: hidden;
+		}
+	</style>
+	{/if}
+</svelte:head>
 
 {#if !AreCookiesAccepted(accept_obj)}
 	<div class="grey_out" />
 	<div class="outer">
-		<h2>Cookie Einstellungen</h2>
-		<div class="side_alignment">
-			<div class="options">
-				{#each Object.entries(edit_preferences) as pair}
-					<div class="option">
-						<p>{pair[0]}</p>
-						<label class="switch">
-							<input
-								type="checkbox"
-								bind:checked={edit_preferences[pair[0]]}
-								disabled={pair[0] === 'Essentiell'}
-							/>
-							<span class="slider round" />
-						</label>
-					</div>
-				{/each}
+		<div class="scroll_container">
+			<div class="top_bar">
+				<img src="/favicon.svg" alt="" style='height: 70px;'>
+				<h2>Cookie Einstellungen</h2>
 			</div>
-			<div class="tabs_container">
-				<div class="tab_bar">
-					{#each Object.keys(tabs) as tab_name}
-						<button class={current_tab === tab_name ? 'selected' : ''} on:click={function () {current_tab = tab_name}}>
-							{tab_name}
-						</button>
+			<div class="side_alignment">
+				<div class="options">
+					{#each Object.entries(edit_preferences) as pair}
+						<div class="option">
+							<p>{pair[0]}</p>
+							<label class="switch">
+								<input
+									type="checkbox"
+									bind:checked={edit_preferences[pair[0]]}
+									disabled={pair[0] === 'Essentiell'}
+								/>
+								<span class="slider round" />
+							</label>
+						</div>
 					{/each}
 				</div>
-				<div class="tab_content">
-					{tabs[current_tab]}
+				<div class="tabs_container">
+					<div class="tab_bar">
+						{#each Object.keys(tabs) as tab_name}
+							<button
+								class={current_tab === tab_name ? 'selected' : ''}
+								on:click={function () {
+									current_tab = tab_name;
+								}}
+							>
+								{tab_name}
+							</button>
+						{/each}
+					</div>
+					<div class="tab_content">
+						{@html tabs[current_tab]}
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="buttons">
-			<div
-				on:click={function () {
-					accept_obj = lodash.cloneDeep(edit_preferences);
-				}}
-			>
-				<Button text="Einstellungen Speichern" reversed={true} />
-			</div>
-			<div
-				on:click={function () {
-					accept_obj = lodash.cloneDeep(edit_preferences);
-					Object.keys(accept_obj).forEach(element => {
-						accept_obj[element] = true
-					});
-				}}
-			>
-				<Button text="Alle Akzeptieren" reversed={false} />
+			<div class="buttons">
+				<div
+					on:click={function () {
+						accept_obj = lodash.cloneDeep(edit_preferences);
+					}}
+				>
+					<Button text="Einstellungen Speichern" reversed={true} />
+				</div>
+				<div
+					on:click={function () {
+						accept_obj = lodash.cloneDeep(edit_preferences);
+						Object.keys(accept_obj).forEach((element) => {
+							accept_obj[element] = true;
+						});
+					}}
+				>
+					<Button text="Alle Akzeptieren" reversed={false} />
+				</div>
 			</div>
 		</div>
 	</div>
 {/if}
 
 <style lang="scss">
+	.top_bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 50%;
+		min-width: fit-content;
+		gap: 20px;
+	}
 	.tab_bar {
 		display: flex;
 		justify-content: space-between;
+		width: 100%;
 		button {
 			flex-grow: 1;
 			padding: 10px 0px;
+			font-size: min(17px, 5vw);
 		}
 		button.selected {
 			background-color: white;
 		}
 	}
 	.tab_content {
-		width: 500px;
+		width: calc(100% - 40px);
 		background-color: white;
 		padding: 20px;
+		overflow-y: scroll;
+		max-height: 300px;
 	}
 	.tabs_container {
+		font-size: min(17px, 5vw);
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		flex-grow: 1;
+		width: 500px;
+		max-width: 95vw;
 	}
 	.buttons {
 		display: flex;
 		gap: 20px;
-		min-width: 450px;
-		max-width: 600px;
+		width: 450px;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		max-width: 95vw;
+		justify-content: center;
 	}
 	.side_alignment {
 		display: flex;
 		gap: 20px;
 		padding: 20px;
+		justify-content: center;
+		width: fit-content;
+		max-width: 100%;
+		flex-wrap: wrap-reverse;
 	}
 	.grey_out {
 		position: fixed;
@@ -181,10 +238,9 @@
 		min-width: fit-content;
 		background-color: white;
 		padding: 20px;
+		flex-grow: 1;
 	}
 	.outer {
-		display: flex;
-		flex-direction: column;
 		position: fixed;
 		background-color: rgb(231, 231, 231);
 		left: 50%;
@@ -192,9 +248,18 @@
 		transform: translate(-50%, -50%);
 		z-index: 1001;
 		box-shadow: 0px 0px 300px -30px rgba(0, 0, 0, 0.75);
-		padding: 20px;
 		border-radius: 10px;
+	}
+	.scroll_container {
+		padding: 20px;
 		align-items: center;
+		width: 100%;
+		max-height: 100vh;
+		width: max-content;
+		max-width: 100vw;
+		display: flex;
+		flex-direction: column;
+		overflow-y: scroll;
 	}
 	h2 {
 		margin: 0px;
