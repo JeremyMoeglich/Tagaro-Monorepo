@@ -22,6 +22,7 @@
 
 <style lang="scss">
 	@import '../style/mixins.scss';
+	$blue_gradient: linear-gradient(to bottom right, #49358d, #027fc7);
 	a,
 	p {
 		display: block;
@@ -33,15 +34,23 @@
 		text-align: center;
 	}
 	button {
-		background-color: transparent;
-		border: none;
+		background: $blue_gradient;
+		padding: 5px;
 	}
 	button:hover {
 		transform: scale(1.05);
 		transition-duration: 200ms;
+		background-image: linear-gradient(
+			142deg,
+			rgba(253, 122, 29, 1) 0%,
+			rgba(253, 29, 29, 1) 21%,
+			rgba(194, 64, 159, 1) 51%,
+			rgba(106, 92, 186, 1) 77%,
+			rgba(29, 162, 253, 1) 100%
+		);
 	}
 	.blue {
-		background: linear-gradient(to bottom right, #49358d, #027fc7);
+		background: $blue_gradient;
 		color: white;
 	}
 	.white {
@@ -49,12 +58,11 @@
 		color: #235dad;
 	}
 	.blue:hover {
-		filter: brightness(150%) contrast(150%);
+		filter: brightness(150%);
 		box-shadow: inset;
 		box-shadow: 0px 0px 47px -12px rgba(0, 0, 0, 0.69);
 	}
 	.white:hover {
-		filter: brightness(70%) contrast(150%);
 		box-shadow: inset;
 		box-shadow: 0px 0px 47px -12px rgba(0, 0, 0, 0.69);
 	}

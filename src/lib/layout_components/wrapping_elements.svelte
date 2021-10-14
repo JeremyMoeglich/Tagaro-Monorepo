@@ -76,7 +76,7 @@
 			let dt = Math.max(Math.min(((now - last) / 200) * 2, 1), 0);
 			last = now;
 			current_x_pos = lerp(current_x_pos, center_index, dt);
-			
+
 			stop_id = requestAnimationFrame(animate);
 		} else {
 			current_x_pos = center_index;
@@ -151,9 +151,9 @@
 			{/each}
 		</div>
 		<div class="cover_elements">
-			<div class="cover cover_element"/>
-			<div class="t cover_element"/>
-			<div class="cover cover_element"/>
+			<div class="cover cover_element" />
+			<div class="t cover_element" />
+			<div class="cover cover_element" />
 		</div>
 	</div>
 	<div class="controll_align">
@@ -179,7 +179,7 @@
 	$background_color: #f2f2f2;
 
 	.gradient-text {
-		@include gradient-text
+		@include gradient-text;
 	}
 	.btn {
 		margin-top: 30px;
@@ -237,9 +237,6 @@
 		max-width: var(--box_width);
 		min-width: var(--box_width);
 	}
-	.package_alignment:hover {
-		transform: scale(1.05);
-	}
 
 	.middle_element {
 		box-shadow: 0 6px 20px 0 rgb(0 0 0 / 12%);
@@ -289,7 +286,6 @@
 		min-height: 100%;
 		z-index: 5;
 		pointer-events: none;
-		
 	}
 	.main_container {
 		position: relative;

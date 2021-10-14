@@ -30,7 +30,7 @@
 <style lang="scss">
 	@import '../style/mixins.scss';
 	.gradient-text {
-		@include gradient-text
+		@include gradient-text;
 	}
 	.main_container {
 		min-width: min(1000px, 90%);
@@ -63,6 +63,6 @@
 		list-style: none;
 	}
 	.main_text :global(h3) {
-		@include gradient-text
+		@include gradient-text;
 	}
 </style>

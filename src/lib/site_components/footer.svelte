@@ -1,8 +1,8 @@
 <script>
 	import ZumAboformularBar from './zum_aboformular_bar.svelte';
+	export let preferences_object;
 </script>
 
-<svelte:head />
 <div class="scaling_element"><ZumAboformularBar /></div>
 <div class="scaling_element">
 	<div class="side_alignment">
@@ -45,16 +45,20 @@
 					alt="Trustami"
 				/></a
 			> -->
-			{@html '<div class="widget_container_badge"></div>'}
+			{#if preferences_object['Social Media']}
+				{@html '<div class="widget_container_badge"></div>'}
+			{/if}
 		</div>
-		<div class="social">
-			<h3>Social Media</h3>
-			<iframe
-				src="/raw_components/page_plugin.html"
-				frameborder="0"
-				title="Tagaro Medienshop Facebook"
-			/>
-		</div>
+		{#if preferences_object['Social Media']}
+			<div class="social">
+				<h3>Social Media</h3>
+				<iframe
+					src="/raw_components/page_plugin.html"
+					frameborder="0"
+					title="Tagaro Medienshop Facebook"
+				/>
+			</div>
+		{/if}
 	</div>
 	<p class="copyright">© 2021 - TAGARO Medienshop Möglich & Möglich GbR</p>
 </div>

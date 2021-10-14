@@ -13,6 +13,12 @@
 			</a>
 		{/each}
 	</div>
+	<h2>Sky Angebote auf den großen Marktplätzen</h2>
+	<p>
+		Weitere Vorteilsangebote von Sky erhalten Sie in unserem eBay- und Hood-Shop. Bestellen Sie hier
+		bequem über Ihren bestehenden eBay- oder Hood-Zugang und füllen im Anschluss unser Aboformular
+		für Ihre Sky Paketwahl aus, das wir Ihnen nach dem Kauf zusenden.
+	</p>
 </body>
 
 <style lang="scss">

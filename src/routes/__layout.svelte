@@ -17,6 +17,7 @@
 	import PhoneBox from '$lib/site_components/phone_box.svelte';
 	import { browser } from '$app/env';
 	import { fly } from 'svelte/transition';
+	import InfoBanner from '$lib/site_components/info_banner.svelte';
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -62,6 +63,8 @@
 		Kontakt: '/kontakt'
 	};
 
+	let preferences_object = {};
+
 	function open_sidebar() {
 		if (mobile_slider_value === 0) {
 			mobile_slider_value = 80;
@@ -95,15 +98,30 @@
 </script>
 
 <svelte:head>
-	<script
-		id="trustamiwidget"
-		type="text/javascript"
-		src="https://cdn.trustami.com/widgetapi/widget2/trustami-widget.js"
-		data-profile="59e6544c53a49963318b4568"
-		data-user="dc45e2793250619a08045ba8ad253cd4a1004d2f"
-		data-platform="0"
-		async>
-	</script>
+	{#if preferences_object['Social Media']}
+		<script
+			id="trustamiwidget"
+			type="text/javascript"
+			src="https://cdn.trustami.com/widgetapi/widget2/trustami-widget.js"
+			data-profile="59e6544c53a49963318b4568"
+			data-user="dc45e2793250619a08045ba8ad253cd4a1004d2f"
+			data-platform="0"
+			async>
+		</script>
+	{/if}
+	{#if preferences_object['Analytics']}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKDK22D5"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-WVJKDK22D5');
+		</script>
+	{/if}
 	<meta property="og:title" content="TAGARO Medienshop" />
 	<meta property="og:image" content="/share_preview.png" />
 	<meta
@@ -122,8 +140,9 @@
 	<meta name="author" content="Jeremy Möglich" />
 </svelte:head>
 
-{@html '<div class="widget_container_overlay" />'}
-
+{#if preferences_object['Social Media']}
+	{@html '<div class="widget_container_overlay" />'}
+{/if}
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
@@ -235,7 +254,7 @@
 					<slot />
 				</PageTransition>
 			</div>
-			<Footer />
+			<Footer {preferences_object} />
 		</div>
 		<div
 			class="mobile_sidebar"
@@ -312,6 +331,7 @@
 			/>
 		{/if}
 	</div>
+	<InfoBanner bind:preferences_object />
 </body>
 
 <style lang="scss">
@@ -326,6 +346,7 @@
 		background-color: transparent;
 		border: none;
 		font-size: medium;
+		padding: 0px;
 	}
 	:global(p) {
 		line-height: 170%;
@@ -334,23 +355,6 @@
 		margin: 0px;
 	}
 
-	.context_menu {
-		position: absolute;
-		background-color: white;
-		left: 0px;
-		top: 40px;
-		border-radius: 10px;
-		box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.39);
-	}
-	.context_menu_element {
-		color: black;
-		padding: 8px;
-		min-width: max-content;
-		border: 1px solid transparent;
-	}
-	.sub_selectable_container {
-		position: relative;
-	}
 	body {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -448,13 +452,17 @@
 		min-height: $top_bar_size;
 		min-width: 100vw;
 	}
+
+	$side_margin: 10px;
+
 	.selectable_element {
 		display: flex;
+		position: relative;
 		justify-items: center;
 		align-items: center;
 		text-align: center;
-		margin-right: 10px;
-		margin-left: 10px;
+		margin-right: $side_margin;
+		margin-left: $side_margin;
 	}
 	.selectable_element_vert {
 		display: flex;
@@ -463,12 +471,13 @@
 		align-items: center;
 		text-align: center;
 	}
+
+	$nav_pad: 5px;
 	.nav_element {
-		$pad: 5px;
-		padding-left: $pad;
-		padding-top: $pad;
-		padding-right: $pad;
-		padding-bottom: $pad;
+		padding-left: $nav_pad;
+		padding-top: $nav_pad;
+		padding-right: $nav_pad;
+		padding-bottom: $nav_pad;
 		border: 1px solid transparent;
 		margin-top: 0;
 		margin-bottom: 0;
@@ -483,6 +492,21 @@
 		border-bottom: 1px solid white;
 		width: 80vw;
 		color: white;
+	}
+	$context-padding: 8px;
+	.context_menu {
+		position: absolute;
+		background-color: white;
+		left: -$side_margin - $context-padding + $nav_pad;
+		top: 40px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.39);
+	}
+	.context_menu_element {
+		color: black;
+		padding: $context-padding;
+		min-width: max-content;
+		border: 1px solid transparent;
 	}
 	a:link {
 		text-decoration: none;

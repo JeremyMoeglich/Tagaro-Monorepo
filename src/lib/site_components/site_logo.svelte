@@ -24,6 +24,7 @@
 </script>
 
 <div class="main_container">
+	<img src='/images/logo/tagaro-back.svg' alt="" class="back-image">
 	<div class="circle">
 		<div
 			style={`transform: scale(${current_width}, 1) rotate(0.02deg); transition: all ${transition_function} ${rotate_time}ms;`}
@@ -41,18 +42,22 @@
 </div>
 
 <style lang="scss">
-	@use "sass:math";
+	@use 'sass:math';
 	@import url('/src/lib/style/mixins.scss');
 
 	$logo_size: 128px;
 
 	.main_container {
+		position: relative;
 		display: flex;
 		justify-content: center;
 		width: $logo_size;
 		height: $logo_size;
-		background-image: url('/images/logo/tagaro-logo.png');
 		background-size: $logo_size;
+	}
+	.back-image {
+		position: absolute;
+		width: 100%;
 	}
 	.circle {
 		$circle_size: 63px;
@@ -65,6 +70,7 @@
 		border: 4px solid;
 		border-color: white;
 		border-radius: 50%;
+		z-index: 1;
 	}
 	.invisible {
 		visibility: hidden;
