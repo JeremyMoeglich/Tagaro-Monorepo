@@ -208,6 +208,7 @@
 		padding-bottom: 0px;
 		align-self: auto;
 		flex: 1 1 auto;
+		filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.219));
 	}
 	.dazn_logo {
 		order: 0;

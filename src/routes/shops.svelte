@@ -7,22 +7,24 @@
 		{#each shops_vars.shops as item}
 			<a style="position: relative;" href={item.route}>
 				<img src={`/images/specific/${item.name.toLowerCase()}_shop_preview.png`} alt="" />
-				<p class="centered">
+				<p class="centered gradient">
 					<b>{item.name}</b>
 				</p>
 			</a>
 		{/each}
 	</div>
-	<h2>Sky Angebote auf den großen Marktplätzen</h2>
-	<p>
-		Weitere Vorteilsangebote von Sky erhalten Sie in unserem eBay- und Hood-Shop. Bestellen Sie hier
-		bequem über Ihren bestehenden eBay- oder Hood-Zugang und füllen im Anschluss unser Aboformular
-		für Ihre Sky Paketwahl aus, das wir Ihnen nach dem Kauf zusenden.
-	</p>
+	<div class="text">
+		<h2>Sky Angebote auf den großen Marktplätzen</h2>
+		<p>
+			Weitere Vorteilsangebote von Sky erhalten Sie in unserem eBay- und Hood-Shop. Bestellen Sie
+			hier bequem über Ihren bestehenden eBay- oder Hood-Zugang und füllen im Anschluss unser
+			Aboformular für Ihre Sky Paketwahl aus, das wir Ihnen nach dem Kauf zusenden.
+		</p>
+	</div>
 </body>
 
 <style lang="scss">
-	@import url('/src/lib/style/mixins.scss');
+	@import '../lib/style/mixins.scss';
 	.alignment {
 		display: flex;
 		justify-content: center;
@@ -31,6 +33,7 @@
 		margin-right: auto;
 		padding: 70px 0px;
 		gap: 20px;
+		
 	}
 	.centered {
 		position: absolute;
@@ -62,10 +65,27 @@
 			rgba(29, 162, 253, 1) 100%
 		);
 	}
-	a:not(:hover) {
+	img:not(:hover) {
 		filter: grayscale(100%);
 	}
 	img {
 		width: 100%;
+		transition-duration: 400ms;
+	}
+	.gradient {
+		@include gradient-text;
+	}
+	.text {
+		margin-bottom: 100px;
+		h2 {
+			@include gradient-text;
+			text-align: center;
+		}
+		p {
+			width: 1000px;
+			max-width: 80vw;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 </style>
