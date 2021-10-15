@@ -47,18 +47,17 @@ export async function post({ body }) {
 		subject: 'Kontaktformular von ' + bodyobj.name,
 		text: message_body,
 	});
-
-	client.send(mailOptions, function (error, info) {
-		if (error) {
-			console.log(error);
-		} else {
-			console.log('Email sent: ', info);
-		}
-		return {
-			headers: { Location: '/kontakt/success' },
-			status: 302
-		};
-	});
-
+	try {
+		const message = await client.sendAsync(mailOptions);
+		console.log(message)
+	} catch (err) {
+		console.log(err)
+	}
+	return {
+		headers: { Location: '/kontakt/success' },
+		status: 302
+	};
+	
+	
 	
 }
