@@ -54,10 +54,11 @@ export async function post({ body }) {
 		} else {
 			console.log('Email sent: ', info);
 		}
+		return {
+			headers: { Location: '/kontakt/success' },
+			status: 302
+		};
 	});
 
-	return {
-		headers: { Location: '/kontakt/success' },
-		status: 302
-	};
+	
 }
