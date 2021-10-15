@@ -48,7 +48,7 @@
 		edit_preferences[element[0]] = Boolean(element[1]);
 	});
 	const tabs = {
-		Cookies: `
+		Cookies: /*html*/`
 		Auf dieser Website werden Cookies und ähnliche Technologien genutzt.
 		Einige sind für den Betrieb der Website notwendig.
 		Andere können aktiviert werden und dienen statistischen Erhebungen zur Optimierung der Webseite,
@@ -58,13 +58,13 @@
 		die unter Umständen kein adäquates Schutzniveau i.S.d. DSGVO bieten,
 		verarbeitet werden können. Weitere Infos findest du in der Datenschutzerklärung.
 		`,
-		Kontakt: `
+		Kontakt: /*html*/`
 
 		`,
-		Aboformular: `
+		Aboformular: /*html*/`
 		
 		`,
-		Widerrufsrecht: `
+		Widerrufsrecht: /*html*/`
 		Widerrufsrecht für Sky Verträge <br/>
 
 		Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Sky Vertrag zu widerrufen. <br/>
@@ -82,6 +82,47 @@
 		Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen 14 Tage ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. <br/>
 
 		Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen 14 Tage ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrages unterrichten, an uns (siehe Anschrift oben sowie auf dieser Seite) oder an Sky Deutschland, 22033 Hamburg vor Ablauf der Frist von 14 Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.
+		`,
+		Impressum: /*html*/`
+		<h1>Impressum</h1>
+		<h2>Unternehmen</h2>
+		<p>
+			TAGARO Medienshop ist eine Domain der <br />
+			Möglich & Möglich GbR <br />
+			Vertretungsberechtigte Gesellschafter: <br />
+			Jaco Möglich und Gertraud Möglich <br />
+			Rechtsform: GbR <br />
+			Bereich: Fachhandel für Unterhaltungsmedien und digitales Fernsehen
+		</p>
+
+		Urheberrechtsschutz: Alle Grafiken & Texte unterliegen dem Copyright des Unternehmens. Kopie
+		oder sonstige Verwendung sind ohne die schriftliche Zustimmung der Möglich & Möglich GbR
+		untersagt und werden bei Zuwiderhandlung strafrechtlich verfolgt.
+
+		<h2>Adresse</h2>
+		<p>
+			TAGARO Medienshop <br />
+			Möglich & Möglich GbR <br />
+			Bachstraße 61 <br />
+			D-35614 Asslar-Werdorf
+		</p>
+
+		<h2>Finanzamt</h2>
+		<p>
+			Finanzamt Wetzlar <br />
+			Steuer-Nummer: 039 347 00053 <br />
+			USt-IdNr.: DE 248966903
+		</p>
+
+		<h2>Bankverbindung</h2>
+		<p>
+			Volksbank Mittelhessen eG <br />
+			Kontoinhaber: TAGARO <br />
+			IBAN : DE27513900000046206800 <br />
+			SWIFT-BIC : VBMHDE5FXXX <br />
+			Kontonummer: 46206800 <br />
+			Bankleitzahl: 51390000
+		</p>
 		`
 	};
 	let current_tab = 'Cookies';
@@ -89,11 +130,11 @@
 
 <svelte:head>
 	{#if !AreCookiesAccepted(accept_obj)}
-	<style type="text/css">
-		body {
-			overflow-y: hidden;
-		}
-	</style>
+		<style type="text/css">
+			body {
+				overflow-y: hidden;
+			}
+		</style>
 	{/if}
 </svelte:head>
 
@@ -102,7 +143,7 @@
 	<div class="outer">
 		<div class="scroll_container">
 			<div class="top_bar">
-				<img src="/favicon.svg" alt="" style='height: 70px;'>
+				<img src="/favicon.svg" alt="" style="height: 70px;" />
 				<h2>Cookie Einstellungen</h2>
 			</div>
 			<div class="side_alignment">

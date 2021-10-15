@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL } from '$lib/Env';
 
-console.log(SMTP_HOST);
+
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
  */
@@ -38,10 +38,13 @@ export async function post({ body }) {
 			pass: SMTP_PASSWORD
 		}
 	});
+	console.log("transporter: ", transporter)
 
 	const message_body = Object.keys(bodyobj)
 		.map((k) => k + ' - ' + bodyobj[k])
 		.join('\n\n');
+
+	console.log("body: ", message_body)
 
 	const mailOptions = {
 		from: SMTP_MAIL,
@@ -49,8 +52,10 @@ export async function post({ body }) {
 		subject: 'Kontaktformular von ' + bodyobj.name,
 		text: message_body
 	};
+	console.log("mail_options: ", mailOptions)
 
 	transporter.sendMail(mailOptions, function (error, info) {
+		console.log("done?")
 		if (error) {
 			console.log(error);
 		} else {
