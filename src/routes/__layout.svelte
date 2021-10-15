@@ -63,6 +63,8 @@
 		Kontakt: '/kontakt'
 	};
 
+	let y;
+
 	let preferences_object = {};
 
 	function open_sidebar() {
@@ -86,17 +88,9 @@
 		console.log('deselected');
 	}
 
-	//let scroll_position = 0;
-	//if (browser) {
-	//	const scroller = document.querySelector('#nav_bar');
-	//	scroller.addEventListener('scroll', (event) => {
-	//		scroll_position = `scrollTop: ${scroller.scrollTop}`;
-	//	});
-	//}
 
 	export let key;
 </script>
-
 
 <svelte:head>
 	{#if preferences_object['Social Media']}
@@ -147,8 +141,8 @@
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
+			<img src="/images/icons/go_to_start.svg" alt="" class="go_to_start" style={y > 0 ? 'bottom: 100px;' : ''} on:click={() => y = 0}>
 			<div class="header_blue_bar" />
-
 			<div class="top_header_container" id="nav_bar">
 				<div class="top_header_container_items">
 					<a href="/" title="Startseite öffnen" class="header_logo"><SiteLogo /></a>
@@ -335,6 +329,8 @@
 	<InfoBanner bind:preferences_object />
 </body>
 
+<svelte:window bind:scrollY={y}/>
+
 <style lang="scss">
 	$top_bar_size: max(min(230px - 11vw, 180px), 100px);
 	@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
@@ -417,18 +413,22 @@
 	.autorisiert_logo {
 		margin-left: 20px;
 		margin-right: 20px;
+		box-shadow: 0px 10px 36px -10px rgba(0,0,0,0.75);
 	}
-
+	$size: 60px;
 	.mobile_selector {
-		width: 60px;
+		width: $size;
 		position: absolute;
 		left: 80vw;
 	}
+	
 	.go_to_start {
 		position: fixed;
-		transition-duration: 200ms;
+		transition-duration: 400ms;
 		right: 30px;
-		bottom: -10%;
+		bottom: -50px - $size;
+		width: $size;
+		height: $size;
 	}
 	.desktop {
 		visibility: hidden;

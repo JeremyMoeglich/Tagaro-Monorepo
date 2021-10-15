@@ -172,6 +172,8 @@
 			rgba(106, 92, 186, 1) 77%,
 			rgba(29, 162, 253, 1) 100%
 		);
+		box-shadow: 0px 10px 36px -10px rgba(0,0,0,0.75);
+		z-index: 5;
 	}
 
 	.subtitle1 {

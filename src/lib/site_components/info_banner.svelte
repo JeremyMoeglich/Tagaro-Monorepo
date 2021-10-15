@@ -56,10 +56,10 @@
 		Bedenke, dass nicht aktivierte Cookies den Funktionsumfang der Webseite einschränken können.
 		Bei vereinzelten Cookies akzeptierst du zudem, dass deine Daten in Ländern,
 		die unter Umständen kein adäquates Schutzniveau i.S.d. DSGVO bieten,
-		verarbeitet werden können. Weitere Infos findest du in der Datenschutzerklärung.
+		verarbeitet werden können.
 		`,
 		Kontakt: /*html*/`
-
+		
 		`,
 		Aboformular: /*html*/`
 		
@@ -84,7 +84,6 @@
 		Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen 14 Tage ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrages unterrichten, an uns (siehe Anschrift oben sowie auf dieser Seite) oder an Sky Deutschland, 22033 Hamburg vor Ablauf der Frist von 14 Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.
 		`,
 		Impressum: /*html*/`
-		<h1>Impressum</h1>
 		<h2>Unternehmen</h2>
 		<p>
 			TAGARO Medienshop ist eine Domain der <br />
@@ -230,7 +229,7 @@
 		background-color: white;
 		padding: 20px;
 		overflow-y: scroll;
-		max-height: 300px;
+		height: 300px;
 	}
 	.tabs_container {
 		font-size: min(17px, 5vw);
