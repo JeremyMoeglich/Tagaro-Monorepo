@@ -1,11 +1,15 @@
 <script>
 	import Button from '$lib/layout_components/button.svelte';
-</script>
+	import * as urls from '$lib/vars/urls';
 
-<div class="main_container">
-	<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
-	<Button text="Zum Aboformular" route="/sky/bestellen" reversed />
-</div>
+</script>
+<a href={urls.aboformular}>
+	<div class="main_container">
+		<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
+		<Button text="Zum Aboformular" route={urls.aboformular} reversed />
+	</div>
+</a>
+
 
 <style lang="scss">
 	@import url('/src/lib/style/mixins.scss');
@@ -14,6 +18,9 @@
 		color: white;
 		margin-left: 20px;
 		text-align: center;
+	}
+	a {
+		text-decoration: none;
 	}
 	.main_container {
 		display: flex;

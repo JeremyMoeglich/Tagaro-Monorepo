@@ -5,7 +5,7 @@ export const shops = [
 	},
 	{
 		name: 'Hood',
-		route: 'https://www.hood.de/shop/37475/tagaro-medienshop-sky-handel.htm'
+		route: 'https://tagaro.hood.de/'
 	}
 ];
 export const aboformular = 'https://fd10.formdesk.com/tagaromedienshopgbr/Sky-Bestellung-5';

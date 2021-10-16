@@ -3,7 +3,10 @@
 	export let preferences_object;
 </script>
 
-<div class="scaling_element"><ZumAboformularBar /></div>
+<div class="scaling_element">
+	<ZumAboformularBar />
+</div>
+
 <div class="side_alignment">
 	<div class="infomationen">
 		<h3>Infomationen</h3>

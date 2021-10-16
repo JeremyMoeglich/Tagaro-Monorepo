@@ -54,7 +54,7 @@
 		width: $logo_size;
 		height: $logo_size;
 		background-size: $logo_size;
-		box-shadow: 0px 10px 36px -10px rgba(0,0,0,0.75);
+		filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.61));
 	}
 	.back-image {
 		position: absolute;

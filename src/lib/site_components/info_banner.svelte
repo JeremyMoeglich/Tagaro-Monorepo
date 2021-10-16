@@ -48,7 +48,7 @@
 		edit_preferences[element[0]] = Boolean(element[1]);
 	});
 	const tabs = {
-		Cookies: /*html*/`
+		Cookies: /*html*/ `
 		Auf dieser Website werden Cookies und ähnliche Technologien genutzt.
 		Einige sind für den Betrieb der Website notwendig.
 		Andere können aktiviert werden und dienen statistischen Erhebungen zur Optimierung der Webseite,
@@ -58,32 +58,24 @@
 		die unter Umständen kein adäquates Schutzniveau i.S.d. DSGVO bieten,
 		verarbeitet werden können.
 		`,
-		Kontakt: /*html*/`
+		Kontakt: /*html*/ `
 		
 		`,
-		Aboformular: /*html*/`
+		Aboformular: /*html*/ `
 		
 		`,
-		Widerrufsrecht: /*html*/`
-		Widerrufsrecht für Sky Verträge <br/>
-
-		Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Sky Vertrag zu widerrufen. <br/>
-	
-		Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses. <br/>
-
-		Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR, Bachstr. 61, 35614 Asslar-Werdorf, E-Mail info@tagaro.de, Telefon 06443 819427, Fax 0321 21116558 mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. <br/>
-
-		Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Sie können das Muster-Widerrufsformular oder eine andere eindeutige Erklärung auch auf unserer Webseite http://www.tagaro.de elektronisch ausfüllen und übermitteln. Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen unverzüglich (z. B. per E-Mail) eine Bestätigung über den Eingang eines solchen Widerrufs übermitteln. <br/>
-
+		Widerrufsrecht: /*html*/ `
+		Widerrufsrecht für Sky Verträge <br/><br/>
+		Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Sky Vertrag zu widerrufen. <br/><br/>
+		Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses. <br/><br/>
+		Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR, Bachstr. 61, 35614 Asslar-Werdorf, E-Mail info@tagaro.de, Telefon 06443 819427, Fax 0321 21116558 mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. <br/><br/>
+		Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Sie können das Muster-Widerrufsformular oder eine andere eindeutige Erklärung auch auf unserer Webseite http://www.tagaro.de elektronisch ausfüllen und übermitteln. Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen unverzüglich (z. B. per E-Mail) eine Bestätigung über den Eingang eines solchen Widerrufs übermitteln. <br/><br/>
 		Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden. <br/>
-
-		Folgen des Widerrufs <br/>
-
-		Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen 14 Tage ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. <br/>
-
+		Folgen des Widerrufs <br/><br/>
+		Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen 14 Tage ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. <br/><br/>
 		Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen 14 Tage ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrages unterrichten, an uns (siehe Anschrift oben sowie auf dieser Seite) oder an Sky Deutschland, 22033 Hamburg vor Ablauf der Frist von 14 Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.
 		`,
-		Impressum: /*html*/`
+		Impressum: /*html*/ `
 		<h2>Unternehmen</h2>
 		<p>
 			TAGARO Medienshop ist eine Domain der <br />
@@ -140,63 +132,63 @@
 {#if !AreCookiesAccepted(accept_obj)}
 	<div class="grey_out" />
 	<div class="outer">
-		<div class="scroll_container">
-			<div class="top_bar">
-				<img src="/favicon.svg" alt="" style="height: 70px;" />
-				<h2>Cookie Einstellungen</h2>
+		<div class="top_bar">
+			<img src="/favicon.svg" alt="" style="height: 30px;" />
+			<h2>Cookie Einstellungen</h2>
+		</div>
+
+		<div class="side_alignment">
+			<div class="options">
+				{#each Object.entries(edit_preferences) as pair}
+					<div class="option">
+						<p>{pair[0]}</p>
+						<label class="switch">
+							<input
+								type="checkbox"
+								bind:checked={edit_preferences[pair[0]]}
+								disabled={pair[0] === 'Essentiell'}
+							/>
+							<span class="slider round" />
+						</label>
+					</div>
+				{/each}
 			</div>
-			<div class="side_alignment">
-				<div class="options">
-					{#each Object.entries(edit_preferences) as pair}
-						<div class="option">
-							<p>{pair[0]}</p>
-							<label class="switch">
-								<input
-									type="checkbox"
-									bind:checked={edit_preferences[pair[0]]}
-									disabled={pair[0] === 'Essentiell'}
-								/>
-								<span class="slider round" />
-							</label>
-						</div>
+
+			<div class="tabs_container">
+				<div class="tab_bar">
+					{#each Object.keys(tabs) as tab_name}
+						<button
+							class={current_tab === tab_name ? 'selected' : ''}
+							on:click={function () {
+								current_tab = tab_name;
+							}}
+						>
+							{tab_name}
+						</button>
 					{/each}
 				</div>
-				<div class="tabs_container">
-					<div class="tab_bar">
-						{#each Object.keys(tabs) as tab_name}
-							<button
-								class={current_tab === tab_name ? 'selected' : ''}
-								on:click={function () {
-									current_tab = tab_name;
-								}}
-							>
-								{tab_name}
-							</button>
-						{/each}
-					</div>
-					<div class="tab_content">
-						{@html tabs[current_tab]}
-					</div>
+				<div class="tab_content">
+					{@html tabs[current_tab]}
 				</div>
 			</div>
-			<div class="buttons">
-				<div
-					on:click={function () {
-						accept_obj = lodash.cloneDeep(edit_preferences);
-					}}
-				>
-					<Button text="Einstellungen Speichern" reversed={true} />
-				</div>
-				<div
-					on:click={function () {
-						accept_obj = lodash.cloneDeep(edit_preferences);
-						Object.keys(accept_obj).forEach((element) => {
-							accept_obj[element] = true;
-						});
-					}}
-				>
-					<Button text="Alle Akzeptieren" reversed={false} />
-				</div>
+		</div>
+		<div class="buttons">
+			<div
+				on:click={function () {
+					accept_obj = lodash.cloneDeep(edit_preferences);
+				}}
+			>
+				<Button text="Einstellungen Speichern" reversed={true} />
+			</div>
+			<div
+				on:click={function () {
+					accept_obj = lodash.cloneDeep(edit_preferences);
+					Object.keys(accept_obj).forEach((element) => {
+						accept_obj[element] = true;
+					});
+				}}
+			>
+				<Button text="Alle Akzeptieren" reversed={false} />
 			</div>
 		</div>
 	</div>
@@ -207,18 +199,16 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		width: 50%;
 		min-width: fit-content;
 		gap: 20px;
+		height: 100px;
 	}
 	.tab_bar {
 		display: flex;
-		justify-content: space-between;
 		width: 100%;
 		button {
 			flex-grow: 1;
-			padding: 10px 0px;
-			font-size: min(17px, 5vw);
+			padding: 10px 2px;
 		}
 		button.selected {
 			background-color: white;
@@ -229,33 +219,27 @@
 		background-color: white;
 		padding: 20px;
 		overflow-y: scroll;
-		height: 300px;
+		flex-grow: 1;
+		flex-shrink: 1;
 	}
 	.tabs_container {
-		font-size: min(17px, 5vw);
-		display: flex;
+		position: relative;
 		flex-direction: column;
-		flex-grow: 1;
 		width: 500px;
-		max-width: 95vw;
+		max-height: 100%;
+		flex-grow: 1;
+		flex-shrink: 1;
 	}
 	.buttons {
-		display: flex;
-		gap: 20px;
-		width: 450px;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		max-width: 95vw;
-		justify-content: center;
+		height: 100px;
 	}
 	.side_alignment {
 		display: flex;
 		gap: 20px;
 		padding: 20px;
+		flex-grow: 1;
+		flex-shrink: 1;
 		justify-content: center;
-		width: fit-content;
-		max-width: 100%;
-		flex-wrap: wrap-reverse;
 	}
 	.grey_out {
 		position: fixed;
@@ -271,16 +255,20 @@
 		align-items: center;
 		justify-content: space-between;
 		gap: 20px;
+		p {
+			margin: 0px;
+		}
 	}
 	.options {
 		display: flex;
 		flex-direction: column;
-		min-width: fit-content;
 		background-color: white;
 		padding: 20px;
-		flex-grow: 1;
+		gap: 5px;
 	}
 	.outer {
+		display: flex;
+		flex-direction: column;
 		position: fixed;
 		background-color: rgb(231, 231, 231);
 		left: 50%;
@@ -289,17 +277,11 @@
 		z-index: 1001;
 		box-shadow: 0px 0px 300px -30px rgba(0, 0, 0, 0.75);
 		border-radius: 10px;
-	}
-	.scroll_container {
 		padding: 20px;
 		align-items: center;
-		width: 100%;
-		max-height: 100vh;
+		max-height: 70vh;
 		width: max-content;
 		max-width: 100vw;
-		display: flex;
-		flex-direction: column;
-		overflow-y: scroll;
 	}
 	h2 {
 		margin: 0px;
@@ -311,8 +293,6 @@
 		height: 34px;
 		input {
 			opacity: 0;
-			width: 0;
-			height: 0;
 		}
 	}
 
@@ -324,7 +304,6 @@
 		right: 0;
 		bottom: 0;
 		background-color: #ccc;
-		-webkit-transition: 0.4s;
 		transition: 0.4s;
 	}
 
@@ -336,7 +315,6 @@
 		left: 4px;
 		bottom: 4px;
 		background-color: white;
-		-webkit-transition: 0.4s;
 		transition: 0.4s;
 	}
 

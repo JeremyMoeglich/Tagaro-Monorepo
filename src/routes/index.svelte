@@ -1,6 +1,7 @@
 <script>
 	import AngeboteRotator from '$lib/site_components/angebote_rotator.svelte';
 	import SchnellSkyAbonnieren from '$lib/site_components/schnell_sky_abonnieren.svelte';
+	import * as urls from '$lib/vars/urls';
 </script>
 
 <body>
@@ -90,13 +91,16 @@
 	</div>
 	<div style="padding-top:max(1vw, 20px);" />
 	<AngeboteRotator />
-	<div class="scaling_element">
-		<SchnellSkyAbonnieren />
-	</div>
+
+	<SchnellSkyAbonnieren />
+
 </body>
 
 <style lang="scss">
 	@import '../lib/style/mixins.scss';
+	a {
+		text-decoration: none;
+	}
 	.top_header {
 		display: flex;
 		flex-direction: row;
@@ -105,12 +109,7 @@
 		align-content: center;
 		align-items: center;
 	}
-	.scaling_element {
-		transition-duration: 300ms;
-	}
-	.scaling_element:hover {
-		transform: scale(1.03);
-	}
+	
 	.bottom_icon {
 		margin-right: 1vw;
 		width: min(24vw, 141px);

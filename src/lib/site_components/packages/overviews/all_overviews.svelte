@@ -12,17 +12,28 @@
 </script>
 
 <h1>Programmpakete bei Sky</h1>
-<EntertainmentOverview />
+<a href="/sky_angebote/entertainment">
+	<EntertainmentOverview />
+</a>
 <LineSpacer />
-<CinemaOverview />
+<a href="/sky_angebote/cinema">
+	<CinemaOverview />
+</a>
 <LineSpacer />
-<SportOverview />
+<a href="/sky_angebote/sport">
+	<SportOverview />
+</a>
 <LineSpacer />
-<BundesligaOverview />
+<a href="/sky_angebote/bundesliga">
+	<BundesligaOverview />
+</a>
 <LineSpacer />
-<EntertainmentPlusOverview />
+<a href="/sky_angebote/entertainment">
+	<EntertainmentPlusOverview />
+</a>
 <LineSpacer />
 <DaznOverview />
+
 <EmptySpacer />
 <PackageTable />
 <EmptySpacer />
@@ -35,5 +46,9 @@
 		@include gradient-text;
 		text-align: center;
 		margin: 70px;
+	}
+	a {
+		text-decoration: none;
+		color: black;
 	}
 </style>
