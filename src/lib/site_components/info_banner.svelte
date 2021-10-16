@@ -97,7 +97,7 @@
 			Bachstraße 61 <br />
 			D-35614 Asslar-Werdorf
 		</p>
-
+		
 		<h2>Finanzamt</h2>
 		<p>
 			Finanzamt Wetzlar <br />
@@ -199,7 +199,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		min-width: fit-content;
+		max-width: fit-content;
+		max-height: fit-content;
 		gap: 20px;
 		height: 100px;
 	}
@@ -221,24 +222,25 @@
 		overflow-y: scroll;
 		flex-grow: 1;
 		flex-shrink: 1;
+		font-size: 1.5vh;
 	}
 	.tabs_container {
 		position: relative;
 		flex-direction: column;
 		width: 500px;
-		max-height: 100%;
-		flex-grow: 1;
-		flex-shrink: 1;
+		max-width: 95vw;
 	}
 	.buttons {
 		height: 100px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
 	}
 	.side_alignment {
 		display: flex;
 		gap: 20px;
 		padding: 20px;
-		flex-grow: 1;
-		flex-shrink: 1;
+		flex-wrap: wrap;
 		justify-content: center;
 	}
 	.grey_out {
@@ -279,9 +281,15 @@
 		border-radius: 10px;
 		padding: 20px;
 		align-items: center;
-		max-height: 70vh;
+		height: 70vh;
 		width: max-content;
 		max-width: 100vw;
+	}
+	.outer > *, .tabs_container * {
+		min-height: 0px;
+		min-width: 0px;
+		flex: 1 1 0;
+		overflow: scroll;
 	}
 	h2 {
 		margin: 0px;
