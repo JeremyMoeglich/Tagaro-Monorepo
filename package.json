@@ -50,5 +50,15 @@
     "svelte-sequential-preprocessor": "^0.0.7",
     "vite": "^2.6.7",
     "vite-imagetools": "^3.8.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "nth-check@<2.0.1": ">=2.0.1",
+      "set-value@<4.0.1": ">=4.0.1",
+      "axios@<=0.21.1": ">=0.21.2",
+      "glob-parent@<5.1.2": ">=5.1.2",
+      "axios@<0.21.1": ">=0.21.1",
+      "braces@<2.3.1": ">=2.3.1"
+    }
   }
 }
