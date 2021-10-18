@@ -1,7 +1,7 @@
 import sizeof from 'object-sizeof';
 import { SMTPClient, Message } from 'emailjs';
 
-import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL } from '$lib/Env';
+import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL, RECEIVER } from '$lib/Env';
 
 
 /**
@@ -43,7 +43,7 @@ export async function post({ body }) {
 
 	const mailOptions = new Message({
 		from: SMTP_MAIL,
-		to: 'jeremy.moeglich@gmail.com',
+		to: RECEIVER,
 		subject: 'Kontaktformular von ' + bodyobj.name,
 		text: message_body,
 	});
