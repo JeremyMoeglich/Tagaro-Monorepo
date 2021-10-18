@@ -136,9 +136,23 @@
 			<img src="/favicon.svg" alt="" style="height: 30px;" />
 			<h2>Cookie Einstellungen</h2>
 		</div>
-
+		<div class="options_top">
+			{#each Object.entries(edit_preferences) as pair}
+				<div class="option">
+					<p>{pair[0]}</p>
+					<label class="switch">
+						<input
+							type="checkbox"
+							bind:checked={edit_preferences[pair[0]]}
+							disabled={pair[0] === 'Essentiell'}
+						/>
+						<span class="slider round" />
+					</label>
+				</div>
+			{/each}
+		</div>
 		<div class="side_alignment">
-			<div class="options">
+			<div class="options_side">
 				{#each Object.entries(edit_preferences) as pair}
 					<div class="option">
 						<p>{pair[0]}</p>
@@ -195,54 +209,6 @@
 {/if}
 
 <style lang="scss">
-	.top_bar {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: fit-content;
-		max-height: fit-content;
-		gap: 20px;
-		height: 100px;
-	}
-	.tab_bar {
-		display: flex;
-		width: 100%;
-		button {
-			flex-grow: 1;
-			padding: 10px 2px;
-		}
-		button.selected {
-			background-color: white;
-		}
-	}
-	.tab_content {
-		width: calc(100% - 40px);
-		background-color: white;
-		padding: 20px;
-		overflow-y: scroll;
-		flex-grow: 1;
-		flex-shrink: 1;
-		font-size: 1.5vh;
-	}
-	.tabs_container {
-		position: relative;
-		flex-direction: column;
-		width: 500px;
-		max-width: 95vw;
-	}
-	.buttons {
-		height: 100px;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
-	}
-	.side_alignment {
-		display: flex;
-		gap: 20px;
-		padding: 20px;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
 	.grey_out {
 		position: fixed;
 		left: 0px;
@@ -252,103 +218,156 @@
 		background-color: rgba(75, 75, 75, 0.774);
 		z-index: 1000;
 	}
-	.option {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 20px;
-		p {
-			margin: 0px;
-		}
-	}
-	.options {
-		display: flex;
-		flex-direction: column;
-		background-color: white;
-		padding: 20px;
-		gap: 5px;
-	}
+	$base_color: rgb(231, 231, 231);
 	.outer {
 		display: flex;
-		flex-direction: column;
 		position: fixed;
-		background-color: rgb(231, 231, 231);
+		flex-direction: column;
+		align-items: center;
+		background-color: $base_color;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 1001;
-		box-shadow: 0px 0px 300px -30px rgba(0, 0, 0, 0.75);
-		border-radius: 10px;
-		padding: 20px;
-		align-items: center;
-		height: 70vh;
-		width: max-content;
+		max-height: 80vh;
 		max-width: 100vw;
-	}
-	.outer > *, .tabs_container * {
-		min-height: 0px;
-		min-width: 0px;
-		flex: 1 1 0;
-		overflow: scroll;
-	}
-	h2 {
-		margin: 0px;
-	}
-	.switch {
-		position: relative;
-		display: inline-block;
-		width: 60px;
-		height: 34px;
-		input {
-			opacity: 0;
+		border-radius: 10px;
+		gap: 20px;
+		padding: 20px;
+		$wrap_px: 700px;
+		.top_bar {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			@media only screen and (max-width: $wrap_px) {
+				order: -1;
+			}
+			h2 {
+				margin: 0px;
+			}
 		}
-	}
+		.options_top,
+		.options_side {
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			background-color: white;
+		}
+		.options_top {
+			@media only screen and (min-width: $wrap_px) {
+				display: none;
+			}
+		}
+		.side_alignment {
+			max-width: 100vw;
+			flex: 1 1 0;
+			max-height: 300px;
+			display: flex;
+			gap: 20px;
+			@media only screen and (max-width: $wrap_px) {
+				max-height: 26vh;
+			}
+			.tabs_container {
+				position: relative;
+				overflow-y: scroll;
+				flex: 1 1 1;
+				.tab_bar {
+					position: absolute;
+					position: sticky;
+					top: -1px;
+					display: flex;
 
-	.slider {
-		position: absolute;
-		cursor: pointer;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: #ccc;
-		transition: 0.4s;
-	}
+					background-color: $base_color;
+					& > * {
+						flex: 1 1 0;
+						padding: 10px 1vw;
+						font-size: min(3.3vw, 15px);
+					}
+					.selected {
+						background-color: white;
+					}
+				}
+				.tab_content {
+					background-color: white;
+					padding: 20px;
+					font-size: min(3.3vw, 15px);
+				}
+			}
+			.options_side {
+				@media only screen and (max-width: $wrap_px) {
+					display: none;
+				}
+			}
+		}
+		.option {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			p {
+				margin: 0px;
+			}
+			.switch {
+				position: relative;
+				display: inline-block;
+				$width: 60px;
+				min-width: $width;
+				max-width: $width;
+				height: 34px;
 
-	.slider:before {
-		position: absolute;
-		content: '';
-		height: 26px;
-		width: 26px;
-		left: 4px;
-		bottom: 4px;
-		background-color: white;
-		transition: 0.4s;
-	}
-
-	input:checked + .slider {
-		background-color: #2196f3;
-	}
-	input[disabled]:checked + .slider {
-		background-color: rgb(120, 152, 179);
-	}
-
-	input:focus + .slider {
-		box-shadow: 0 0 1px #2196f3;
-	}
-
-	input:checked + .slider:before {
-		-webkit-transform: translateX(26px);
-		-ms-transform: translateX(26px);
-		transform: translateX(26px);
-	}
-
-	/* Rounded sliders */
-	.slider.round {
-		border-radius: 34px;
-	}
-
-	.slider.round:before {
-		border-radius: 50%;
+				.slider {
+					position: absolute;
+					cursor: pointer;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: #ccc;
+					transition: 0.4s;
+					&.round {
+						border-radius: 34px;
+					}
+					&.round:before {
+						border-radius: 50%;
+					}
+					&:before {
+						position: absolute;
+						content: '';
+						height: 26px;
+						width: 26px;
+						left: 4px;
+						bottom: 4px;
+						background-color: white;
+						transition: 0.4s;
+					}
+				}
+				input {
+					opacity: 0;
+					&:checked + .slider {
+						background-color: #2196f3;
+					}
+					&[disabled]:checked + .slider {
+						background-color: rgb(120, 152, 179);
+					}
+					&:focus + .slider {
+						box-shadow: 0 0 1px #2196f3;
+					}
+					&:checked + .slider:before {
+						-webkit-transform: translateX(26px);
+						-ms-transform: translateX(26px);
+						transform: translateX(26px);
+					}
+				}
+			}
+		}
+		.buttons {
+			display: flex;
+			gap: 1vh;
+			@media only screen and (max-width: $wrap_px) {
+				order: -1;
+			}
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 </style>
