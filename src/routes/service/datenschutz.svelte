@@ -1,7 +1,17 @@
 <body>
 	<div class="outer_container">
 		<h1>Datenschutz</h1>
+		<br />
+		<h2>Datenschutzhinweise von TAGARO Medienshop – Möglich & Möglich GbR</h2>
+		<p>
+			Auf dieser Seite erhalten Sie eine umfassende Übersicht über die Verarbeitung Ihrer Daten bei
+			der TAGARO Medienshop – Möglich & Möglich GbR. <br />
 
+			Über den folgenden Link gelangen Sie zu den Datenschutzhinweisen der Sky Deutschland Fernsehen
+			GmbH & Co. KG: <br />
+			<a href="https://www.sky.de/datenschutz" target="_blank">https://www.sky.de/datenschutz</a>
+			<br />
+		</p>
 		<div>
 			<h2>
 				1) Information über die Erhebung personenbezogener Daten und Kontaktdaten des
@@ -170,21 +180,27 @@
 				widerrufen werden.
 			</p>
 			<p>
-				5.4. Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG Im
+				5.4. Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG Im
 				Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden
 				eingereichte Abodaten eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse,
-				Lieferanschrift, Bezahlweise und Bankdaten) an Sky (Sky Deutschland Fernsehen GmbH & Co. KG,
+				Lieferanschrift und Bankverbindung) an Sky (Sky Deutschland Fernsehen GmbH & Co. KG,
 				Medienallee 26 85774 Unterföhring) weitergegeben. Die Weitergabe erfolgt über ein
-				verschlüsseltes Zugangssystem für Sky Partner. - Die Sky Deutschland Fernsehen GmbH & Co. KG
-				informiert zu den Regelfristen für die Löschung der Daten inhouse Nutzungsdaten zu
-				Abrechnungszwecken: Werden gelöscht mit einer Frist von derzeit 80 Tagen Bestandsdaten nach
-				Widerspruch: werden sofort gelöscht, sofern nicht gesetzliche Aufbewahrungspflichten und
-				-fristen dem entgegenstehen Sofern eine Löschung aus technischen oder organisatorischen
-				Gründen nicht oder nur mit unverhältnismäßigem Aufwand möglich ist, werden die Daten zur
-				weiteren Verarbeitung oder Nutzung gesperrt.
+				verschlüsseltes Zugangssystem für Sky Partner. Im Folgenden möchten wir Sie darüber
+				informieren, wie lange Sky personenbezogene Daten von Ihnen speichert oder, falls die Angabe
+				eines konkreten Zeitraums nicht möglich ist, wie die Kriterien für die Festlegung der
+				Speicherdauer sind. Sky bewahrt Ihre Daten über die folgenden Zeiträume auf; nach Ablauf
+				dieser Fristen werden die entsprechenden Daten routinemäßig gelöscht. Vertragsdaten in der
+				Kundendatenbank von Sky: Z.B. Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse,
+				Lieferanschrift, Bezahlweise und Bankdaten Aufbewahrungsfrist bei Sky: 10 Jahre, beginnend
+				mit Ende des Kalenderjahres, in dem der Vertrag beendet/der Dienst letztmalig genutzt wurde
+				Sofern Daten hiervon nicht berührt sind, werden die Daten gelöscht, wenn die Zwecke
+				wegfallen, für die sie erhoben wurden, oder wenn Sie eine Einwilligung, auf der eine
+				Datenverarbeitung beruht, widerrufen. Für den Fall, dass eine Löschung aus rechtlichen,
+				technischen oder organisatorischen Gründen nicht oder nur mit unverhältnismäßigem Aufwand
+				möglich ist, wird die Verarbeitung Ihrer Daten eingeschränkt.
 			</p>
 			<p>
-				5.5. Weitergabe personenbezogener Daten an die Innovero Software Solutions B.V. Im Rahmen
+				5.5. Weitergabe personenbezogener Daten an die Innovero Software Solutions B.V. Im Rahmen
 				und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden Abodaten eines
 				Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift, Bezahlweise
 				und Bankdaten) über das Formdesk Formular-System von Innovero (Innovero Software Solutions
@@ -426,7 +442,7 @@
 		margin-right: auto;
 	}
 	.outer_container > div {
-		background-color: rgb(230, 230, 230);
+		background-color: rgb(255, 255, 255);
 		padding: 5px;
 		border-radius: 5px;
 		margin-bottom: 20px;

@@ -3,7 +3,8 @@
 	import Button from '$lib/layout_components/button.svelte';
 	import Cookies from 'js-cookie';
 	import lodash from 'lodash';
-	import * as cookie_keys from '$lib/vars/cookie_keys';
+	import * as cookie_keys from '$lib/vars/cookie_data';
+	import { page } from '$app/stores';
 
 	function IsJsonString(str) {
 		try {
@@ -13,6 +14,9 @@
 		}
 		return true;
 	}
+
+	const disabled_routes = ['/service'];
+	$: banner_enabled = !disabled_routes.some((element) => $page.path.startsWith(element));
 
 	function GetPrefrenceObj(): { [key: string]: boolean | undefined } {
 		const original_cookie_json = Cookies.get('preferences');
@@ -35,37 +39,86 @@
 		//return false;
 		return !Object.values(object).some((key) => key === undefined) || !browser;
 	}
+	function IsBannerShown(object: { [key: string]: boolean | undefined }): boolean {
+		return !AreCookiesAccepted(object) && banner_enabled;
+	}
 
 	let accept_obj: { [key: string]: boolean } = GetPrefrenceObj();
 
 	export let preferences_object = accept_obj;
 	$: preferences_object = lodash.cloneDeep(accept_obj);
 
-	$: Cookies.set('preferences', JSON.stringify(accept_obj), { expires: 128 });
+	$: banner_enabled
+		? Cookies.set('preferences', JSON.stringify(accept_obj), { expires: 128 })
+		: undefined;
 
 	let edit_preferences = lodash.cloneDeep(accept_obj);
 	Object.entries(edit_preferences).forEach((element) => {
 		edit_preferences[element[0]] = Boolean(element[1]);
 	});
 	const tabs = {
-		Cookies: /*html*/ `
-		Auf dieser Website werden Cookies und ähnliche Technologien genutzt.
+		Datenschutz: /*html*/ `
+		<b>Datenerhebung</b><br />
+		<p>Auf dieser Website werden Cookies und ähnliche Technologien genutzt.
 		Einige sind für den Betrieb der Website notwendig.
 		Andere können aktiviert werden und dienen statistischen Erhebungen zur Optimierung der Webseite,
 		der Nachverfolgung von Werbemaßnahmen, auch über mehrere Webseiten hinweg sowie der Personalisierung.
 		Bedenke, dass nicht aktivierte Cookies den Funktionsumfang der Webseite einschränken können.
 		Bei vereinzelten Cookies akzeptierst du zudem, dass deine Daten in Ländern,
 		die unter Umständen kein adäquates Schutzniveau i.S.d. DSGVO bieten,
-		verarbeitet werden können.
-		`,
+		verarbeitet werden können.</p>
+		
+	`,
 		Kontakt: /*html*/ `
-		
+		Im Rahmen der Kontaktaufnahme mit uns werden folgende personenbezogene Daten erhoben.
+		<ul>
+			<li>Name</li>
+			<li>E-Mail-Adresse</li>
+			<li>Telefon-Nummer falls angegeben</li>
+			<li>Nachricht</li>
+		</ul>
+		Diese Daten werden ausschließlich zum Zweck der Beantwortung Ihres Anliegens bzw. für die
+		Kontaktaufnahme und die damit verbundene technische Administration gespeichert und verwendet. Rechtsgrundlage
+		für die Verarbeitung der Daten ist unser berechtigtes Interesse an der Beantwortung Ihres Anliegens gemäß
+		Art. 6 Abs. 1 lit. f DSGVO. Zielt Ihre Kontaktierung auf den Abschluss eines Vertrages ab, so ist zusätzliche
+		Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 lit. b DSGVO. Ihre Daten werden nach abschließender
+		Bearbeitung Ihrer Anfrage gelöscht, dies ist der Fall, wenn sich aus den Umständen entnehmen lässt, dass
+		der betroffene Sachverhalt abschließend geklärt ist und sofern keine gesetzlichen Aufbewahrungspflichten
+		entgegenstehen.
 		`,
-		Aboformular: /*html*/ `
-		
+		Vertragsaufnahme: /*html*/ `
+		<b>Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG </b><br /><br />
+		Im Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden eingereichte Abodaten eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift und Bankverbindung) an Sky (Sky Deutschland Fernsehen GmbH & Co. KG, Medienallee 26 <br />
+		85774 Unterföhring) weitergegeben. <br />
+		 <br />
+		Die Weitergabe erfolgt über ein verschlüsseltes Zugangssystem für Sky Partner. <br />
+		 <br />
+		Im Folgenden möchten wir Sie darüber informieren, wie lange Sky personenbezogene Daten von Ihnen speichert oder, falls die Angabe eines konkreten Zeitraums nicht möglich ist, wie die Kriterien für die Festlegung der Speicherdauer sind. <br />
+		Sky bewahrt Ihre Daten über die folgenden Zeiträume auf; nach Ablauf dieser Fristen werden die entsprechenden Daten routinemäßig gelöscht. <br />
+		 <br />
+		Vertragsdaten in der Kundendatenbank von Sky: <br />
+		 <br />
+		Z.B. Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift, Bezahlweise und Bankdaten <br />
+		Aufbewahrungsfrist bei Sky: <br />
+		10 Jahre, beginnend mit Ende des Kalenderjahres, in dem der Vertrag beendet/der Dienst letztmalig genutzt wurde  <br />
+		 <br />
+		Sofern Daten hiervon nicht berührt sind, werden die Daten gelöscht, wenn die Zwecke wegfallen, für die sie erhoben wurden, oder wenn Sie eine Einwilligung, auf der eine Datenverarbeitung beruht, widerrufen. <br />
+		Für den Fall, dass eine Löschung aus rechtlichen, technischen oder organisatorischen Gründen nicht oder nur mit unverhältnismäßigem Aufwand möglich ist, wird die Verarbeitung Ihrer Daten eingeschränkt.  <br />
+		 <br />
+		<b>Weitergabe personenbezogener Daten an die Innovero Software Solutions B.V.</b><br /><br />
+		Im Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden Abodaten eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift, Bezahlweise und Bankdaten) über das Formdesk Formular-System von Innovero (Innovero Software Solutions B.V., Rijksstraatweg 713 zu Wassenaar, Kamer van Koophandel-Nummer 27157981) aufgenommen. <br />
+		Sämtliche Aboformulare des Formdesk Formular-System sind SSL-verschlüsselt. <br />
+		Sie können eine verschlüsselte Verbindung an der Zeichenfolge „https://“ und dem Schloss-Symbol in Ihrer Browserzeile erkennen. <br />
+		Die Parteien haben am 18.05.2018 einen Vertrag in Bezug auf die Nutzung der Dienstleistung durch den Verarbeitungsverantwortlichen geschlossen. Zur Ausführung des Vertrags verarbeitet der Verarbeiter für den Verarbeitungsverantwortlichen Personenbezogene Daten. <br />
+		Im Rahmen der Vertragsausführung ist Innovero Software Solutions B.V. als Verarbeiter im Sinne der DSGVO zu betrachten und die TAGARO Medienshop - Möglich & Möglich GbR als Verarbeitungsverantwortlicher im Sinne der DSGVO zu betrachten. <br />
+		Die Parteien nehmen sich vor, sorgfältig und in Übereinstimmung mit der DSGVO und anderen anderen gesetzlichen Regelungen in Bezug auf die Verarbeitung von Personenbezogenen Daten mit den Personenbezogenen Daten umzugehen, die für die Vertragsausführung verarbeitet werden. <br />
+		Die Parteien nehmen sich vor, in Übereinstimmung mit der DSGVO und anderen gesetzlichen <br />
+		Regelungen in Bezug auf die Verarbeitung von Personenbezogenen Daten ihre Rechte und <br />
+		Pflichten hinsichtlich der Verarbeitung Personenbezogener Daten der Beteiligten schriftlich in einer Verarbeitungsvereinbarung festzuhalten. <br />
+		Ein entsprechender Vertrag liegt intern vor und kann bei rechtlicher Notwendigkeit vorgelegt werden. <br />
 		`,
 		Widerrufsrecht: /*html*/ `
-		Widerrufsrecht für Sky Verträge <br/><br/>
+		<b>Widerrufsrecht für Sky Verträge</b><br /><br /> 
 		Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Sky Vertrag zu widerrufen. <br/><br/>
 		Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses. <br/><br/>
 		Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR, Bachstr. 61, 35614 Asslar-Werdorf, E-Mail info@tagaro.de, Telefon 06443 819427, Fax 0321 21116558 mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. <br/><br/>
@@ -76,7 +129,7 @@
 		Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen 14 Tage ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrages unterrichten, an uns (siehe Anschrift oben sowie auf dieser Seite) oder an Sky Deutschland, 22033 Hamburg vor Ablauf der Frist von 14 Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren.
 		`,
 		Impressum: /*html*/ `
-		<h2>Unternehmen</h2>
+		<b>Unternehmen</b><br />
 		<p>
 			TAGARO Medienshop ist eine Domain der <br />
 			Möglich & Möglich GbR <br />
@@ -90,7 +143,7 @@
 		oder sonstige Verwendung sind ohne die schriftliche Zustimmung der Möglich & Möglich GbR
 		untersagt und werden bei Zuwiderhandlung strafrechtlich verfolgt.
 
-		<h2>Adresse</h2>
+		<b>Adresse</b><br />
 		<p>
 			TAGARO Medienshop <br />
 			Möglich & Möglich GbR <br />
@@ -98,29 +151,65 @@
 			D-35614 Asslar-Werdorf
 		</p>
 		
-		<h2>Finanzamt</h2>
+		<b>Finanzamt</b><br />
 		<p>
 			Finanzamt Wetzlar <br />
 			Steuer-Nummer: 039 347 00053 <br />
 			USt-IdNr.: DE 248966903
 		</p>
-
-		<h2>Bankverbindung</h2>
+		<b>Markenerwähnung „Sky“:</b><br />
 		<p>
-			Volksbank Mittelhessen eG <br />
-			Kontoinhaber: TAGARO <br />
-			IBAN : DE27513900000046206800 <br />
-			SWIFT-BIC : VBMHDE5FXXX <br />
-			Kontonummer: 46206800 <br />
-			Bankleitzahl: 51390000
+			Alle „Sky“-Marken einschließlich sonstiger geistiger Schutzrechte sind Eigentum der Sky
+			International AG und werden von Sky in Lizenz genutzt. Alle hier verwendeten Namen, Begriffe,
+			Zeichen, Logos und Grafiken können Marken- oder Warenzeichen im Besitze ihrer rechtlichen
+			Eigentümer sein. Die Rechte aller erwähnten und benutzten Marken- und Warenzeichen liegen
+			ausschließlich bei deren Besitzern.
 		</p>
+		<b>Bildnachweis:</b><br />
+
+		<p>
+			Teilweise werden auf tagaro.de Bilder bzw. Stockfotos von Shutterstock, Fotolia und der Website
+			Sky.de zu Vermittlungs- und Visualisierungszwecken der einzelnen Programmpakete verwendet.
+		</p>
+		<b>Zweck:</b><br />
+		
+		<p>
+			Die TAGARO Medienshop - Möglich & Möglich GbR ist ein autorisierter Onlinehändler der „Sky
+			Deutschland Fernsehen GmbH & Co. KG“ und dient dem Zweck, allen interessierten Neu- und
+			Bestandskunden von Sky, Abonnements von Sky zu vermitteln. Informationen zur Vertragsaufnahme und
+			der Vermittlung, finden Sie im Abschnitt „5) Datenverarbeitung zur Bestellabwicklung“ im Bereich
+			Datenschutz unter: https://www.tagaro.de/service/datenschutz.html
+		</p>
+		<p>
+			Die TAGARO Medienshop - Möglich & Möglich GbR nimmt keine Schreiben von Kündigungen,
+			Streitigkeiten, Änderungen von Bankverbindungen oder vorzeitigen Vertragsauflösungen (im
+			Sterbefall) entgegen.
+		</p>
+
+	<p>Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage ist, haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke sämtliche Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.</p>
+
+		<b>Post-Anschrift von Sky:</b><br />
+		<p>
+			Sky Deutschland Fernsehen GmbH & Co. KG <br />
+			Medienallee 26 <br />
+			85774 Unterföhring
+		</p>
+		
+		<b>Kundenservice-Postanschrift (für Bestandskunden):</b><br />
+		<p>
+			Sky Deutschland Fernsehen GmbH & Co. KG <br />
+			22033 Hamburg
+		<p>
+		
+		<b>Telefonischer Kundenservice von Sky:</b><br />
+		<p>089 - 99 72 79 00 (gebührenfrei).<p>
 		`
 	};
-	let current_tab = 'Cookies';
+	let current_tab = 'Datenschutz';
 </script>
 
 <svelte:head>
-	{#if !AreCookiesAccepted(accept_obj)}
+	{#if IsBannerShown(accept_obj)}
 		<style type="text/css">
 			body {
 				overflow-y: hidden;
@@ -129,12 +218,12 @@
 	{/if}
 </svelte:head>
 
-{#if !AreCookiesAccepted(accept_obj)}
+{#if IsBannerShown(accept_obj)}
 	<div class="grey_out" />
 	<div class="outer">
 		<div class="top_bar">
 			<img src="/favicon.svg" alt="" style="height: 30px;" />
-			<h2>Cookie Einstellungen</h2>
+			<h2>Datenschutz</h2>
 		</div>
 		<div class="options_top">
 			{#each Object.entries(edit_preferences) as pair}
