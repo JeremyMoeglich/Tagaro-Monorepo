@@ -7,11 +7,14 @@
 	<div style="padding-top: 2vh;" />
 	<div class="top_header">
 		<div class="next_to_title">
-			<a href={urls.aboformular}><img alt='' src="/images/badges/sky_signature.svg" class="sky_logo" /></a>
+			<a href={urls.aboformular}
+				><img alt="" src="/images/badges/sky_signature.svg" class="sky_logo" /></a
+			>
 			<div class="sky_logo to_remove">
 				<a href={urls.aboformular}
 					><img
-						alt='' src="/images/external/amazongiftcard.png"
+						alt=""
+						src="/images/external/amazongiftcard.png"
 						class="sky_logo to_remove maxwidth90"
 					/></a
 				>
@@ -34,24 +37,29 @@
 
 	<div style="padding-top:max(1vw, 20px);" />
 	<div class="imagesMain">
-		<a href={urls.aboformular}
-			><img alt='' src="/images/packages/sky_bundesliga.jpg" class="main_images" /></a
+		<a href="/sky_angebote/bundesliga"
+			><img alt="" src="/images/packages/sky_bundesliga.jpg" class="main_images" /></a
 		>
-		<a href={urls.aboformular}
-			><img alt='' src="/images/packages/sky_entertainment.jpg" class="main_images" /></a
+		<a href="/sky_angebote/entertainment"
+			><img alt="" src="/images/packages/sky_entertainment.jpg" class="main_images" /></a
 		>
-		<a href={urls.aboformular}
-			><img alt='' src="/images/packages/sky_cinema.jpg" class="main_images r3" /></a
+		<a href="/sky_angebote/cinema"
+			><img alt="" src="/images/packages/sky_cinema.jpg" class="main_images r3" /></a
 		>
-		<a href={urls.aboformular}><img alt='' src="/images/packages/sky_sport.jpg" class="main_images" /></a>
-		<a href={urls.aboformular}><img alt='' src="/images/packages/sky_kids.jpg" class="main_images r1" /></a
+		<a href="/sky_angebote/sport"
+			><img alt="" src="/images/packages/sky_sport.jpg" class="main_images" /></a
 		>
-		<a href={urls.aboformular}
-			><img alt='' src="/images/packages/sky_entertainment-plus.jpg" class="main_images r2" /></a
+		<a href="/sky_angebote/kids"
+			><img alt="" src="/images/packages/sky_kids.jpg" class="main_images r1" /></a
+		>
+		<a href="/sky_angebote/entertainment"
+			><img alt="" src="/images/packages/sky_entertainment-plus.jpg" class="main_images r2" /></a
 		>
 	</div>
 	<div class="bottom_things">
-		<a href={urls.aboformular}><img alt='' src="/images/badges/praemie.png" class="bottom_icon" /></a>
+		<a href={urls.aboformular}
+			><img alt="" src="/images/badges/praemie.png" class="bottom_icon" /></a
+		>
 		<div class="to_remove">
 			<p style="margin-right:30px;">
 				*Bei Buchung von Sky Entertainment + mindestens 1 Paket ein € 50 Amazon Gutschein on top
@@ -64,8 +72,12 @@
 				top
 			</p>
 		</div>
-		<a href={urls.aboformular}><img alt='' src="/images/badges/mtlkuendbar.png" class="bottom_icon" /></a>
-		<a href={urls.aboformular}><img alt='' src="/images/badges/payback.png" class="bottom_icon" /></a>
+		<a href={urls.aboformular}
+			><img alt="" src="/images/badges/mtlkuendbar.png" class="bottom_icon" /></a
+		>
+		<a href={urls.aboformular}
+			><img alt="" src="/images/badges/payback.png" class="bottom_icon" /></a
+		>
 	</div>
 	<div class="btn">
 		<Button text="Jetzt Bestellen" route={urls.aboformular} />
@@ -134,12 +146,12 @@
 		padding-right: var(--total_padding);
 		padding-top: 0px;
 		padding-bottom: 1vw;
-        padding: 5px;
+		padding: 5px;
 		align-self: auto;
-        transition-duration: 400ms;
-        z-index: 4;
+		transition-duration: 400ms;
+		z-index: 4;
 	}
-    .main_images:hover {
+	.main_images:hover {
 		transform: scale(1.1);
 		padding: 5px;
 		background: linear-gradient(
