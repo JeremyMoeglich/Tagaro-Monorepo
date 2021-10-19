@@ -16,7 +16,6 @@
 </div>
 
 <style lang="scss">
-	@import url('/src/lib/style/mixins.scss');
 	.alignment {
 		display: flex;
 		align-items: center;

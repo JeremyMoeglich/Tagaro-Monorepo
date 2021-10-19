@@ -4,6 +4,14 @@
 	import Overview4 from '$lib/site_components/packages/overviews/Overview4.svelte';
 </script>
 
-<Overview4 detailed />
-<Inklusive />
-<AllOverviews />
+<div class="alignment">
+	<Overview4 detailed />
+	<Inklusive />
+	<AllOverviews />
+</div>
+
+<style lang="scss">
+	.alignment {
+		margin-top: 90px;
+	}
+</style>

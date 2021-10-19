@@ -54,6 +54,9 @@
 		gap: 15px;
 		line-height: 150%;
 	}
+	:global(h3) {
+		margin-top: 40px;
+	}
 
 	.image {
 		width: max(min(30vw, 340px), 200px);
@@ -62,12 +65,10 @@
 
 	.description {
 		min-width: max(340px, 25vw);
-		max-width: min-content;
+		max-width: 700px;
+		flex: 1 1 0;
 	}
 	.package_overview {
 		transition-duration: 300ms;
-	}
-	.package_overview:hover {
-		transform: scale(1.03);
 	}
 </style>

@@ -16,7 +16,7 @@
 
 <style lang="scss">
 	@import '../style/mixins.scss';
-	a { 
+	a {
 		text-decoration: none;
 	}
 	.alignment {

@@ -88,7 +88,6 @@
 		console.log('deselected');
 	}
 
-
 	export let key;
 </script>
 
@@ -141,7 +140,13 @@
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
-			<img src="/images/icons/go_to_start.svg" alt="" class="go_to_start" style={y > 0 ? 'bottom: 100px;' : ''} on:click={() => y = 0}>
+			<img
+				src="/images/icons/go_to_start.svg"
+				alt=""
+				class="go_to_start"
+				style={y > 0 ? 'bottom: 100px;' : ''}
+				on:click={() => (y = 0)}
+			/>
 			<div class="header_blue_bar" />
 			<div class="top_header_container" id="nav_bar">
 				<div class="top_header_container_items">
@@ -329,7 +334,7 @@
 	<InfoBanner bind:preferences_object />
 </body>
 
-<svelte:window bind:scrollY={y}/>
+<svelte:window bind:scrollY={y} />
 
 <style lang="scss">
 	$top_bar_size: max(min(230px - 11vw, 180px), 100px);
@@ -413,7 +418,7 @@
 	.autorisiert_logo {
 		margin-left: 20px;
 		margin-right: 20px;
-		box-shadow: 0px 10px 36px -10px rgba(0,0,0,0.75);
+		box-shadow: 0px 10px 36px -10px rgba(0, 0, 0, 0.75);
 	}
 	$size: 60px;
 	.mobile_selector {
@@ -421,7 +426,7 @@
 		position: absolute;
 		left: 80vw;
 	}
-	
+
 	.go_to_start {
 		position: fixed;
 		transition-duration: 400ms;

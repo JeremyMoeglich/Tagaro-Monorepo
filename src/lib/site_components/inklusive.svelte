@@ -29,7 +29,10 @@
 </div>
 
 <style lang="scss">
-	@import url('/src/lib/style/mixins.scss');
+	@import '../style/mixins.scss';
+	.gradient_text {
+		@include gradient-text;
+	}
 	.left {
 		max-width: 800px;
 	}

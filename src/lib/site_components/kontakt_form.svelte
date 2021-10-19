@@ -1,10 +1,10 @@
 <script>
 	import Button from '$lib/layout_components/button.svelte';
 	import InputField from '$lib/layout_components/input_field.svelte';
-	import * as urls from '$lib/vars/urls'
+	import * as urls from '$lib/vars/urls';
 </script>
 
-<form class="contact_form" method="POST" action={urls.dynamic + "/data/recieve_form"}>
+<form class="contact_form" method="POST" action={urls.dynamic + '/data/recieve_form'}>
 	<InputField text={'Name*'} box_height={45} name="name" type="text" autocomplete="name" />
 	<InputField text={'E-Mail Adresse*'} box_height={45} name="email" autocomplete="email" />
 	<InputField
@@ -20,7 +20,6 @@
 </form>
 
 <style lang="scss">
-	@import url('/src/lib/style/mixins.scss');
 	form {
 		display: flex;
 		flex-direction: column;

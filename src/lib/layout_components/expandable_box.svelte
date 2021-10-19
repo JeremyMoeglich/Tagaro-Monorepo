@@ -9,7 +9,7 @@
 
 <div class="main_container">
 	<button class="selectable" on:click={toggle_box} title={opened ? title : `${title} aufklappen`}>
-		<p>
+		<p class="aufklappen">
 			{opened ? title : `${title} aufklappen`}
 		</p>
 		<p class="pm gradient-text">
@@ -44,6 +44,11 @@
 		margin-left: auto;
 		margin-right: auto;
 		flex-direction: column;
+		button:hover {
+			.aufklappen {
+				color: rgb(64, 64, 175);
+			}
+		}
 	}
 	.pm {
 		font-size: 35px;

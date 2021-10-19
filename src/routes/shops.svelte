@@ -33,7 +33,6 @@
 		margin-right: auto;
 		padding: 70px 0px;
 		gap: 20px;
-		
 	}
 	.centered {
 		position: absolute;

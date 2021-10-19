@@ -35,15 +35,16 @@
 			Medienallee 26 <br />
 			85774 Unterföhring
 		</p>
-		
+
 		<h2>Kundenservice-Postanschrift (für Bestandskunden):</h2>
 		<p>
 			Sky Deutschland Fernsehen GmbH & Co. KG <br />
 			22033 Hamburg
-		<p>
-		
+		</p>
+		<p />
 		<h2>Telefonischer Kundenservice von Sky:</h2>
-		<p>089 - 99 72 79 00 (gebührenfrei).<p>
+		<p>089 - 99 72 79 00 (gebührenfrei).</p>
+		<p />
 	</div>
 </body>
 

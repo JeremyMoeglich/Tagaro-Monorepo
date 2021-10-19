@@ -3,9 +3,7 @@
 	export let preferences_object;
 </script>
 
-<div class="scaling_element">
-	<ZumAboformularBar />
-</div>
+<ZumAboformularBar />
 
 <div class="side_alignment">
 	<div class="infomationen">
@@ -22,7 +20,7 @@
 		<h3>Ihr Sofortkontakt</h3>
 		<p>
 			Montag - Freitag <br />
-			10:00 - 13:00 und 14:00 - 18:00 Uhr <br />
+			10:00 - 18:00 Uhr <br />
 			Per E-Mail 24 Stunden lang
 		</p>
 		<p>
@@ -65,7 +63,6 @@
 <p class="copyright">© 2021 - TAGARO Medienshop Möglich & Möglich GbR</p>
 
 <style lang="scss">
-	@import url('/src/lib/style/mixins.scss');
 	.side_alignment {
 		margin-top: 60px;
 		display: flex;
@@ -93,6 +90,9 @@
 	a {
 		text-decoration: none;
 		color: #545454;
+		&:hover {
+			color: rgb(71, 118, 180);
+		}
 	}
 	.side_alignment > div {
 		min-width: min(300px, 90vw);
@@ -105,11 +105,5 @@
 		text-align: center;
 		margin-top: 30px;
 		margin-bottom: 90px;
-	}
-	.scaling_element {
-		transition-duration: 300ms;
-	}
-	.scaling_element:hover {
-		transform: scale(1.03);
 	}
 </style>

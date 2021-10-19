@@ -50,7 +50,6 @@
 </body>
 
 <style lang="scss">
-	@import url('/src/lib/style/mixins.scss');
 	body {
 		position: relative;
 	}

@@ -1,8 +1,8 @@
 <script>
 	import Button from '$lib/layout_components/button.svelte';
 	import * as urls from '$lib/vars/urls';
-
 </script>
+
 <a href={urls.aboformular}>
 	<div class="main_container">
 		<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
@@ -10,9 +10,7 @@
 	</div>
 </a>
 
-
 <style lang="scss">
-	@import url('/src/lib/style/mixins.scss');
 	.main_text {
 		font-size: 33px;
 		color: white;
