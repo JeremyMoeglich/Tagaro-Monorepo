@@ -49,7 +49,7 @@
 		<a href="/sky_angebote/sport"
 			><img alt="" src="/images/packages/sky_sport.jpg" class="main_images" /></a
 		>
-		<a href="/sky_angebote/kids"
+		<a href="/sky_angebote"
 			><img alt="" src="/images/packages/sky_kids.jpg" class="main_images r1" /></a
 		>
 		<a href="/sky_angebote/entertainment"
@@ -132,11 +132,6 @@
 		align-items: center;
 	}
 
-	.subtext {
-		text-align: center;
-		font-weight: 900;
-		margin-top: 5px;
-	}
 
 	.main_images {
 		order: 0;
