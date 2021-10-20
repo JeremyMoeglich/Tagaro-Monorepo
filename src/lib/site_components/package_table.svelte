@@ -90,7 +90,7 @@
 			</td>
 		</tr>
 	</table>
-	<div class="zubuchoptionen">
+	<div class="zubuchoptionen" id="zubuchoptionen">
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption
 			text="<b>UHD + € 5,00 mtl. (für Sat oder Kabel-Empfang)</b>"

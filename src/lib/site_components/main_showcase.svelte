@@ -49,7 +49,7 @@
 		<a href="/sky_angebote/sport"
 			><img alt="" src="/images/packages/sky_sport.jpg" class="main_images" /></a
 		>
-		<a href="/sky_angebote"
+		<a href="/sky_angebote#zubuchoptionen"
 			><img alt="" src="/images/packages/sky_kids.jpg" class="main_images r1" /></a
 		>
 		<a href="/sky_angebote/entertainment"
