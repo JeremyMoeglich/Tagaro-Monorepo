@@ -7,7 +7,7 @@ import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL, RECEIVER } from '$lib/Env';
  * @type {import('@sveltejs/kit').RequestHandler}
  */
 
-function getFormBody(body) {
+function getFormBody(body): { [key: string]: string } {
 	return [...body.entries()].reduce((data, [k, v]) => {
 		let value = v;
 		if (value === 'true') value = true;
@@ -25,6 +25,21 @@ export async function post({ body }) {
 		return {
 			status: 413,
 			body: 'Too large'
+		};
+	}
+	let is_spam = false;
+	Object.entries(bodyobj).forEach((element) => {
+		if (element[0].startsWith('sp_')) {
+			if (element[1].trim() !== '') {
+				is_spam = true;
+			}
+			delete bodyobj[element[0]];
+		}
+	});
+	if (is_spam) {
+		return {
+			status: 413,
+			body: 'Blocked because Spam'
 		};
 	}
 	console.log(bodyobj);

@@ -2,9 +2,11 @@
 	import Button from '$lib/layout_components/button.svelte';
 	import InputField from '$lib/layout_components/input_field.svelte';
 	import * as urls from '$lib/vars/urls';
+	import SpamField from '$lib/layout_components/spam_field.svelte';
 </script>
 
 <form class="contact_form" method="POST" action={urls.dynamic + '/data/recieve_form'}>
+	<SpamField />
 	<InputField text={'Name*'} box_height={45} name="name" type="text" autocomplete="name" />
 	<InputField text={'E-Mail Adresse*'} box_height={45} name="email" autocomplete="email" />
 	<InputField
