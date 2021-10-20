@@ -4,9 +4,11 @@
 </script>
 
 <a href={urls.aboformular}>
-	<div class="main_container">
-		<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
-		<Button text="Zum Aboformular" route={urls.aboformular} reversed />
+	<div class="inner_container">
+		<div class="main_container">
+			<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
+			<Button text="Zum Aboformular" route={urls.aboformular} reversed />
+		</div>
 	</div>
 </a>
 
@@ -16,6 +18,9 @@
 		color: white;
 		margin-left: 20px;
 		text-align: center;
+	}
+	.inner_container {
+		overflow: hidden;
 	}
 	a {
 		text-decoration: none;
@@ -31,9 +36,13 @@
 		padding: 30px;
 		min-height: 80px;
 		background: linear-gradient(to right, #49358d, #027fc7);
-	}
-	.main_container > * {
-		margin-left: 5vw;
-		margin-right: 5vw;
+		transition-duration: 300ms;
+		& > * {
+			margin-left: 5vw;
+			margin-right: 5vw;
+		}
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 </style>

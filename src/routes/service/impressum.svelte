@@ -29,6 +29,42 @@
 			Steuer-Nummer: 039 347 00053 <br />
 			USt-IdNr.: DE 248966903
 		</p>
+		<h2>Markenerwähnung „Sky“:</h2>
+		<p>
+			Alle „Sky“-Marken einschließlich sonstiger geistiger Schutzrechte sind Eigentum der Sky
+			International AG und werden von Sky in Lizenz genutzt. Alle hier verwendeten Namen, Begriffe,
+			Zeichen, Logos und Grafiken können Marken- oder Warenzeichen im Besitze ihrer rechtlichen
+			Eigentümer sein. Die Rechte aller erwähnten und benutzten Marken- und Warenzeichen liegen
+			ausschließlich bei deren Besitzern.
+		</p>
+		<h2>Bildnachweis:</h2>
+
+		<p>
+			Teilweise werden auf tagaro.de Bilder bzw. Stockfotos von Shutterstock, Fotolia und der
+			Website Sky.de zu Vermittlungs- und Visualisierungszwecken der einzelnen Programmpakete
+			verwendet.
+		</p>
+		<h2>Zweck:</h2>
+
+		<p>
+			Die TAGARO Medienshop - Möglich & Möglich GbR ist ein autorisierter Onlinehändler der „Sky
+			Deutschland Fernsehen GmbH & Co. KG“ und dient dem Zweck, allen interessierten Neu- und
+			Bestandskunden von Sky, Abonnements von Sky zu vermitteln. Informationen zur Vertragsaufnahme
+			und der Vermittlung, finden Sie im Abschnitt „5) Datenverarbeitung zur Bestellabwicklung“ im
+			Bereich Datenschutz unter: https://www.tagaro.de/service/datenschutz.html
+		</p>
+		<p>
+			Die TAGARO Medienshop - Möglich & Möglich GbR nimmt keine Schreiben von Kündigungen,
+			Streitigkeiten, Änderungen von Bankverbindungen oder vorzeitigen Vertragsauflösungen (im
+			Sterbefall) entgegen.
+		</p>
+
+		<p>
+			Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage ist,
+			haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke
+			sämtliche Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.
+		</p>
+
 		<h2>Post-Anschrift von Sky:</h2>
 		<p>
 			Sky Deutschland Fernsehen GmbH & Co. KG <br />

@@ -62,6 +62,7 @@
 			notwendigen Umgang mit ihnen zurückzuführen ist.
 		</p>
 	</div>
+	<a href='/downloads/Widerrufsformular.pdf' target='_blank'>Widerrufsformular</a>
 </body>
 
 <style lang="scss">

@@ -32,6 +32,17 @@
 		diese Bedingungen an. Sie haben als Kunde das 18. Lebensjahr erreicht und sind voll
 		Geschaeftsfaehig.
 	</p>
+	<p>
+		1.4 Die TAGARO Medienshop - Möglich & Möglich GbR nimmt keine Schreiben von Kündigungen,
+		Streitigkeiten, Änderungen von Bankverbindungen oder vorzeitigen Vertragsauflösungen (im
+		Sterbefall) entgegen.
+	</p>
+
+	<p>
+		1.5 Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage ist,
+		haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke
+		sämtliche Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.
+	</p>
 
 	<p>
 		<b>2. Pflichten des Kaeufers</b>
@@ -500,6 +511,13 @@
 		sind, und somit bei eventueller Abschaltung wegen Insolvenz des Anbieters nicht haften. Eine
 		Liste funktionsfaehiger Receiver finden Sie im Internet beim Betreiber.
 	</p>
+	<p>
+		11.4 Die TAGARO Medienshop - Möglich & Möglich GbR ist ein autorisierter Onlinehändler der „Sky
+		Deutschland Fernsehen GmbH & Co. KG“ und dient dem Zweck, allen interessierten Neu- und
+		Bestandskunden von Sky, Abonnements von Sky zu vermitteln. Informationen zur Vertragsaufnahme
+		und der Vermittlung, finden Sie im Abschnitt „5) Datenverarbeitung zur Bestellabwicklung“ im
+		Bereich Datenschutz unter: https://www.tagaro.de/service/datenschutz.html
+	</p>
 
 	<p>
 		<b>12. Erfuellungsort, Gerichtstand, Anwendbares Recht</b>
@@ -531,6 +549,18 @@
 		uebrigen richten sich die Rechte des Kaeufers nach den Lizenzbedingungen des jeweiligen
 		Herstellers bzw. Lizenzgebers, zu deren Beachtung und Einhaltung der Kaeufer sich hiermit
 		verpflichtet.
+	</p>
+	<p>
+		13.2 Alle „Sky“-Marken einschließlich sonstiger geistiger Schutzrechte sind Eigentum der Sky
+		International AG und werden von Sky in Lizenz genutzt. Alle hier verwendeten Namen, Begriffe,
+		Zeichen, Logos und Grafiken können Marken- oder Warenzeichen im Besitze ihrer rechtlichen
+		Eigentümer sein. Die Rechte aller erwähnten und benutzten Marken- und Warenzeichen liegen
+		ausschließlich bei deren Besitzern.
+	</p>
+	<p>
+		13.3 Teilweise werden auf tagaro.de Bilder bzw. Stockfotos von Shutterstock, Fotolia und der
+		Website Sky.de zu Vermittlungs- und Visualisierungszwecken der einzelnen Programmpakete
+		verwendet.
 	</p>
 
 	<p>
