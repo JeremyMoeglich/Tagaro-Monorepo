@@ -2,6 +2,7 @@
 	import Inklusive from '$lib/site_components/inklusive.svelte';
 	import CinemaOverview from '$lib/site_components/packages/overviews/cinema_overview.svelte';
 	import CinemaSenders from '$lib/site_components/packages/senders/cinema_senders.svelte';
+	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen.svelte';
 </script>
 
 <body>
@@ -9,11 +10,13 @@
 		<CinemaOverview detailed={true} />
 		<CinemaSenders />
 		<Inklusive />
+		<Vertragsinfomationen />
 	</div>
 </body>
 
 <style lang="scss">
 	.alignment {
 		margin-top: 90px;
+		margin-bottom: 90px;
 	}
 </style>
