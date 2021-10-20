@@ -109,31 +109,31 @@
 			<ul>
 				<li>
 					Internet Explorer: <a
-						href="https://windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies"
-						alt="">windows.microsoft.com/de-DE/windows-vista/Block-or-allow-cookies</a
+						href="https://support.microsoft.com/de-de/windows/l%C3%B6schen-und-verwalten-von-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+						alt=""
+						>https://support.microsoft.com/de-de/windows/l%C3%B6schen-und-verwalten-von-cookies-168dab11-0753-043d-7c16-ede5947fc64d</a
 					>
 				</li>
 				<li>
-					Firefox: <a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" alt=""
-						>support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen</a
+					Firefox: <a href="https://support.mozilla.org/de/kb/Cookies-blockieren" alt=""
+						>https://support.mozilla.org/de/kb/Cookies-blockieren</a
 					>
 				</li>
 				<li>
-					Chrome: <a href="https://support.google.com/chrome/bin/answer.py" alt=""
-						>support.google.com/chrome/bin/answer.py</a
+					Chrome: <a href="https://support.google.com/chrome/answer/95647?hl=DE" alt=""
+						>https://support.google.com/chrome/answer/95647?hl=DE</a
 					>
 				</li>
 				<li>
-					Safari: <a href="https://support.apple.com/kb/ph21411" alt=""
-						>support.apple.com/kb/ph21411</a
-					>
-				</li>
-				<li>
-					Opera: <a href="https://help.opera.com/Windows/10.20/de/cookies.html" alt=""
-						>help.opera.com/Windows/10.20/de/cookies.html</a
+					Safari: <a href="https://support.apple.com/de-de/guide/safari/sfri11471/mac" alt=""
+						>https://support.apple.com/de-de/guide/safari/sfri11471/mac</a
 					>
 				</li>
 			</ul>
+			<p>
+				Bitte beachten Sie, dass bei Nichtannahme von Cookies die Funktionalität unserer Website
+				eingeschränkt sein kann.
+			</p>
 		</div>
 		<div>
 			<h2>4) Kontaktaufnahme</h2>
@@ -180,47 +180,63 @@
 				widerrufen werden.
 			</p>
 			<p>
-				5.4. Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG Im
-				Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden
-				eingereichte Abodaten eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse,
-				Lieferanschrift und Bankverbindung) an Sky (Sky Deutschland Fernsehen GmbH & Co. KG,
-				Medienallee 26 85774 Unterföhring) weitergegeben. Die Weitergabe erfolgt über ein
-				verschlüsseltes Zugangssystem für Sky Partner. Im Folgenden möchten wir Sie darüber
-				informieren, wie lange Sky personenbezogene Daten von Ihnen speichert oder, falls die Angabe
-				eines konkreten Zeitraums nicht möglich ist, wie die Kriterien für die Festlegung der
-				Speicherdauer sind. Sky bewahrt Ihre Daten über die folgenden Zeiträume auf; nach Ablauf
-				dieser Fristen werden die entsprechenden Daten routinemäßig gelöscht. Vertragsdaten in der
-				Kundendatenbank von Sky: Z.B. Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse,
-				Lieferanschrift, Bezahlweise und Bankdaten Aufbewahrungsfrist bei Sky: 10 Jahre, beginnend
-				mit Ende des Kalenderjahres, in dem der Vertrag beendet/der Dienst letztmalig genutzt wurde
-				Sofern Daten hiervon nicht berührt sind, werden die Daten gelöscht, wenn die Zwecke
-				wegfallen, für die sie erhoben wurden, oder wenn Sie eine Einwilligung, auf der eine
-				Datenverarbeitung beruht, widerrufen. Für den Fall, dass eine Löschung aus rechtlichen,
-				technischen oder organisatorischen Gründen nicht oder nur mit unverhältnismäßigem Aufwand
-				möglich ist, wird die Verarbeitung Ihrer Daten eingeschränkt.
+				5.4. Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG <br
+				/>
+				<br />
+				Im Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden eingereichte
+				Abodaten eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift und
+				Bankverbindung) an Sky (Sky Deutschland Fernsehen GmbH & Co. KG, Medienallee 26 <br />
+				85774 Unterföhring) weitergegeben. <br />
+				<br />
+				Die Weitergabe erfolgt über ein verschlüsseltes Zugangssystem für Sky Partner. <br />
+				<br />
+				Im Folgenden möchten wir Sie darüber informieren, wie lange Sky personenbezogene Daten von Ihnen
+				speichert oder, falls die Angabe eines konkreten Zeitraums nicht möglich ist, wie die Kriterien
+				für die Festlegung der Speicherdauer sind. <br />
+				Sky bewahrt Ihre Daten über die folgenden Zeiträume auf; nach Ablauf dieser Fristen werden die
+				entsprechenden Daten routinemäßig gelöscht. <br />
+				<br />
+				Vertragsdaten in der Kundendatenbank von Sky: <br />
+				<br />
+				Z.B. Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift, Bezahlweise und Bankdaten
+				<br />
+				Aufbewahrungsfrist bei Sky: <br />
+				10 Jahre, beginnend mit Ende des Kalenderjahres, in dem der Vertrag beendet/der Dienst letztmalig
+				genutzt wurde <br />
+				<br />
+				Sofern Daten hiervon nicht berührt sind, werden die Daten gelöscht, wenn die Zwecke wegfallen,
+				für die sie erhoben wurden, oder wenn Sie eine Einwilligung, auf der eine Datenverarbeitung beruht,
+				widerrufen. <br />
+				Für den Fall, dass eine Löschung aus rechtlichen, technischen oder organisatorischen Gründen
+				nicht oder nur mit unverhältnismäßigem Aufwand möglich ist, wird die Verarbeitung Ihrer Daten
+				eingeschränkt.
 			</p>
 			<p>
-				5.5. Weitergabe personenbezogener Daten an die Innovero Software Solutions B.V. Im Rahmen
-				und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden Abodaten eines
-				Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift, Bezahlweise
-				und Bankdaten) über das Formdesk Formular-System von Innovero (Innovero Software Solutions
-				B.V., Rijksstraatweg 713 zu Wassenaar, Kamer van Koophandel-Nummer 27157981) aufgenommen.
-				Sämtliche Aboformulare des Formdesk Formular-System sind SSL-verschlüsselt. Sie können eine
-				verschlüsselte Verbindung an der Zeichenfolge „https://“ und dem Schloss-Symbol in Ihrer
-				Browserzeile erkennen. Die Parteien haben am 18.05.2018 einen Vertrag in Bezug auf die
-				Nutzung der Dienstleistung durch den Verarbeitungsverantwortlichen geschlossen. Zur
-				Ausführung des Vertrags verarbeitet der Verarbeiter für den Verarbeitungsverantwortlichen
-				Personenbezogene Daten. Im Rahmen der Vertragsausführung ist Innovero Software Solutions
-				B.V. als Verarbeiter im Sinne der DSGVO zu betrachten und die TAGARO Medienshop - Möglich &
-				Möglich GbR als Verarbeitungsverantwortlicher im Sinne der DSGVO zu betrachten. Die Parteien
-				nehmen sich vor, sorgfältig und in Übereinstimmung mit der DSGVO und anderen anderen
-				gesetzlichen Regelungen in Bezug auf die Verarbeitung von Personenbezogenen Daten mit den
-				Personenbezogenen Daten umzugehen, die für die Vertragsausführung verarbeitet werden. Die
-				Parteien nehmen sich vor, in Übereinstimmung mit der DSGVO und anderen gesetzlichen
-				Regelungen in Bezug auf die Verarbeitung von Personenbezogenen Daten ihre Rechte und
-				Pflichten hinsichtlich der Verarbeitung Personenbezogener Daten der Beteiligten schriftlich
-				in einer Verarbeitungsvereinbarung festzuhalten. Ein entsprechender Vertrag liegt intern vor
-				und kann bei rechtlicher Notwendigkeit vorgelegt werden.
+				5.5. Weitergabe personenbezogener Daten an die Innovero Software Solutions B.V. <br />
+				<br />
+				Im Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden Abodaten
+				eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift, Bezahlweise
+				und Bankdaten) über das Formdesk Formular-System von Innovero (Innovero Software Solutions B.V.,
+				Rijksstraatweg 713 zu Wassenaar, Kamer van Koophandel-Nummer 27157981) aufgenommen. <br />
+				Sämtliche Aboformulare des Formdesk Formular-System sind SSL-verschlüsselt. <br />
+				Sie können eine verschlüsselte Verbindung an der Zeichenfolge „https://“ und dem Schloss-Symbol
+				in Ihrer Browserzeile erkennen. <br />
+				Die Parteien haben am 18.05.2018 einen Vertrag in Bezug auf die Nutzung der Dienstleistung durch
+				den Verarbeitungsverantwortlichen geschlossen. Zur Ausführung des Vertrags verarbeitet der Verarbeiter
+				für den Verarbeitungsverantwortlichen Personenbezogene Daten. <br />
+				Im Rahmen der Vertragsausführung ist Innovero Software Solutions B.V. als Verarbeiter im Sinne
+				der DSGVO zu betrachten und die TAGARO Medienshop - Möglich & Möglich GbR als Verarbeitungsverantwortlicher
+				im Sinne der DSGVO zu betrachten. <br />
+				Die Parteien nehmen sich vor, sorgfältig und in Übereinstimmung mit der DSGVO und anderen anderen
+				gesetzlichen Regelungen in Bezug auf die Verarbeitung von Personenbezogenen Daten mit den Personenbezogenen
+				Daten umzugehen, die für die Vertragsausführung verarbeitet werden. <br />
+				Die Parteien nehmen sich vor, in Übereinstimmung mit der DSGVO und anderen gesetzlichen
+				<br />
+				Regelungen in Bezug auf die Verarbeitung von Personenbezogenen Daten ihre Rechte und <br />
+				Pflichten hinsichtlich der Verarbeitung Personenbezogener Daten der Beteiligten schriftlich in
+				einer Verarbeitungsvereinbarung festzuhalten. <br />
+				Ein entsprechender Vertrag liegt intern vor und kann bei rechtlicher Notwendigkeit vorgelegt
+				werden.
 			</p>
 		</div>
 		<div>
@@ -446,5 +462,8 @@
 		padding: 5px;
 		border-radius: 5px;
 		margin-bottom: 20px;
+	}
+	ul {
+		line-height: 150%;
 	}
 </style>
