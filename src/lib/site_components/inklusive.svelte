@@ -19,7 +19,7 @@
 		<p>
 			Als autorisierter Sky-Onlinehändler seit 2006, stehen wir für eine einfache und zügige
 			Abwicklung mit persönlichem Service. Schauen Sie sich unsere tausenden zufriedenen Kunden über
-			<a href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung">Trustami</a> an.
+			<a href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung" target="_blank">Trustami</a> an.
 		</p>
 		<div class="btn">
 			<Button text="Alle Infomationen zu Sky Q" route="/sky_q" />

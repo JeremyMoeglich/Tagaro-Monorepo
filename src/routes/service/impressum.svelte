@@ -51,7 +51,7 @@
 			Deutschland Fernsehen GmbH & Co. KG“ und dient dem Zweck, allen interessierten Neu- und
 			Bestandskunden von Sky, Abonnements von Sky zu vermitteln. Informationen zur Vertragsaufnahme
 			und der Vermittlung, finden Sie im Abschnitt „5) Datenverarbeitung zur Bestellabwicklung“ im
-			Bereich Datenschutz unter: https://www.tagaro.de/service/datenschutz.html
+			Bereich Datenschutz unter: <a href='/service/datenschutz'>https://www.tagaro.de/service/datenschutz</a>
 		</p>
 		<p>
 			Die TAGARO Medienshop - Möglich & Möglich GbR nimmt keine Schreiben von Kündigungen,
