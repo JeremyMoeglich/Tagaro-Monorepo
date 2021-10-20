@@ -418,7 +418,7 @@
 	.autorisiert_logo {
 		margin-left: 20px;
 		margin-right: 20px;
-		box-shadow: 0px 10px 36px -10px rgba(0, 0, 0, 0.75);
+		filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.61));
 	}
 	$size: 60px;
 	.mobile_selector {

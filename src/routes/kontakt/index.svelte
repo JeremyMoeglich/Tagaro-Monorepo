@@ -17,7 +17,7 @@
 			</p>
 			<p>
 				Sie möchten gerne persönlich mit uns sprechen? Wir sind Montag bis Freitag von 10:00 bis
-				13:00 Uhr sowie 14:00 bis 18:00 Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne
+				18:00 Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne
 				mittels Rückruf, wenn sie uns Ihren Kontaktwunsch mitteilen.
 			</p>
 			<ul>
