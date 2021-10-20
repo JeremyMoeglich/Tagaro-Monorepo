@@ -28,6 +28,7 @@ export async function post({ body }) {
 		};
 	}
 	let is_spam = false;
+	console.log(bodyobj);
 	Object.entries(bodyobj).forEach((element) => {
 		if (element[0].startsWith('sp_')) {
 			if (element[1].trim() !== '') {
@@ -37,12 +38,12 @@ export async function post({ body }) {
 		}
 	});
 	if (is_spam) {
+		console.log('blocked spam')
 		return {
 			status: 413,
 			body: 'Blocked because Spam'
 		};
 	}
-	console.log(bodyobj);
 	const client = new SMTPClient({
 		user: SMTP_MAIL,
 		password: SMTP_PASSWORD,
