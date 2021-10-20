@@ -407,7 +407,7 @@
 					& > * {
 						flex: 1 1 0;
 						padding: 10px 1vw;
-						font-size: min(3.3vw, 15px);
+						font-size: min(3.1vw, 15px);
 					}
 					.selected {
 						background-color: white;
