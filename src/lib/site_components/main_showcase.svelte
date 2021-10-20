@@ -26,7 +26,7 @@
 				Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis
 				zu € 125* erhalten
 			</h1>
-			<h2 class="subtitle1">Bei Vermittlung über TAGARO zusätzlich mit €&nbsp20 Bonus.</h2>
+			<h2 class="subtitle1">Bei Vermittlung über TAGARO zusätzlich mit € 20 Bonus.</h2>
 			<h3 class="subtitle2 to_remove">
 				Wir sind autorisierter Sky Onlinehändler und stehen für eine schnelle & zuverlässige
 				Bearbeitung.
