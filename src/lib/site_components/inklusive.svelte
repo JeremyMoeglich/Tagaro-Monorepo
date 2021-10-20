@@ -2,7 +2,7 @@
 	import Button from '$lib/layout_components/button.svelte';
 </script>
 
-<h2 class="gradient_text">Im Angebot inklusive</h2>
+<h2 class="gradient_text top_margin">Im Angebot inklusive</h2>
 <div class="side_alignment">
 	<div class="left">
 		<p>
@@ -33,8 +33,12 @@
 	.gradient_text {
 		@include gradient-text;
 	}
+
 	.left {
 		max-width: 800px;
+	}
+	.top_margin {
+		margin-top: 70px;
 	}
 	.side_alignment {
 		display: flex;

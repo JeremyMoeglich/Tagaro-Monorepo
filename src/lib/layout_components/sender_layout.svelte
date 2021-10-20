@@ -4,13 +4,15 @@
 </script>
 
 <body>
-	<h2>{text}</h2>
-	<div class="main_alignment">
-		{#each content as element}
-			<div class="sender_box">
-				<img src={element} alt="" />
-			</div>
-		{/each}
+	<div class="top_margin">
+		<h2>{text}</h2>
+		<div class="main_alignment">
+			{#each content as element}
+				<div class="sender_box">
+					<img src={element} alt="" />
+				</div>
+			{/each}
+		</div>
 	</div>
 </body>
 
@@ -25,6 +27,9 @@
 		margin-left: auto;
 		margin-right: auto;
 		gap: 25px;
+	}
+	.top_margin {
+		margin-top: 70px;
 	}
 	.sender_box {
 		display: flex;
