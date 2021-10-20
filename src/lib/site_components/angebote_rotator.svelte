@@ -6,7 +6,7 @@
 		'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
 		'+ 12 Monatsabo, danach mtl. kündbar',
 		'+ € 20 Bonus on top',
-		'<b>+ € 125 Amazon Gutschein ab Buchung von Entertainment + 1 Paket</b>'
+		'<b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amayon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b>'
 	];
 
 	const components = [
