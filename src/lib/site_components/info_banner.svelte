@@ -61,7 +61,6 @@
 	});
 	const tabs = {
 		Datenschutz: /*html*/ `
-			<b>Datenerhebung</b><br />
 			<p>
 				Auf dieser Website werden Cookies und ähnliche Technologien genutzt.
 				Einige sind für den Betrieb der Website notwendig.
@@ -96,7 +95,8 @@
 			</p>
 		`,
 		Vertragsaufnahme: /*html*/ `
-			<b>Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG </b><br /><br />
+			<p>
+				<b>Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG </b><br /><br />
 			Im Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden eingereichte Abodaten eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift und Bankverbindung) an Sky (Sky Deutschland Fernsehen GmbH & Co. KG, Medienallee 26 <br />
 			85774 Unterföhring) weitergegeben. <br />
 			 <br />
@@ -125,6 +125,7 @@
 			Regelungen in Bezug auf die Verarbeitung von Personenbezogenen Daten ihre Rechte und <br />
 			Pflichten hinsichtlich der Verarbeitung Personenbezogener Daten der Beteiligten schriftlich in einer Verarbeitungsvereinbarung festzuhalten. <br />
 			Ein entsprechender Vertrag liegt intern vor und kann bei rechtlicher Notwendigkeit vorgelegt werden. <br />
+			</p>
 		`,
 		Widerrufsrecht: /*html*/ `
 			<p>
@@ -132,7 +133,7 @@
 				Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Sky Vertrag zu widerrufen. <br/><br/>
 				Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses. <br/><br/>
 				Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR, Bachstr. 61, 35614 Asslar-Werdorf, E-Mail info@tagaro.de, Telefon 06443 819427, Fax 0321 21116558 mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. <br/><br/>
-				Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Sie können das Muster-Widerrufsformular oder eine andere eindeutige Erklärung auch auf unserer Webseite http://www.tagaro.de elektronisch ausfüllen und übermitteln. Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen unverzüglich (z. B. per E-Mail) eine Bestätigung über den Eingang eines solchen Widerrufs übermitteln. <br/><br/>
+				Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Sie können das Muster-Widerrufsformular oder eine andere eindeutige Erklärung auch auf unserer Webseite https://www.tagaro.de elektronisch ausfüllen und übermitteln. Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen unverzüglich (z. B. per E-Mail) eine Bestätigung über den Eingang eines solchen Widerrufs übermitteln. <br/><br/>
 				Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden. <br/>
 				Folgen des Widerrufs <br/><br/>
 				Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen 14 Tage ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. <br/><br/>
@@ -163,7 +164,9 @@
 			<a href='/service/widerrufsrecht'>Weitere Informationen</a>
 		`,
 		Impressum: /*html*/ `
-			<b>Unternehmen</b><br />
+			<p>
+				<b>Unternehmen</b><br />
+			</p>
 			<p>
 				TAGARO Medienshop ist eine Domain der <br />
 				Möglich & Möglich GbR <br />
