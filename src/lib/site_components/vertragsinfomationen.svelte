@@ -2,7 +2,7 @@
 	import ExpandableBox from '$lib/layout_components/expandable_box.svelte';
 </script>
 
-<ExpandableBox title={'*Vertragsinfomationen'}>
+<ExpandableBox title={'*Vertragsinformationen'}>
 	<span slot="main_text">
 		<div>
 			<h3>Wählbare Pakete und Kombinationen:</h3>
