@@ -6,9 +6,9 @@
 		'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
 		'+ 12 Monatsabo, danach mtl. kündbar',
 		'+ € 20 Bonus on top',
-		'<b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amayon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b>'
+		'<b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b>'
 	];
-
+	const optional = 'Optional Netflix, PAYBACK Punkte, DAZN'
 	const components = [
 		{
 			title: '2 Sky Pakete nach Wahl + € 20 Prämie',
@@ -16,7 +16,7 @@
 			points: atr,
 			subtitle: 'ab € 32,50 monatlich* ',
 			info_text:
-				'(im Jahres-Abo, Preise je Wahl unterschiedlich) Optional Netflix, PAYBACK Punkte, DAZN',
+				'(im Jahres-Abo, Preise je Wahl unterschiedlich) ' + optional,
 			route: '/sky_angebote/2_pakete'
 		},
 
@@ -26,7 +26,7 @@
 			points: atr,
 			subtitle: 'ab € 32,50 monatlich* ',
 			info_text:
-				'(im Jahres-Abo, Preise je Wahl unterschiedlich) Optional Netflix, PAYBACK Punkte, DAZN',
+				'(im Jahres-Abo, Preise je Wahl unterschiedlich) ' + optional,
 			route: '/sky_angebote/3_pakete'
 		},
 
@@ -36,7 +36,7 @@
 			points: atr,
 			subtitle: '€ 40,00 monatlich* ',
 			info_text:
-				'(im Jahres-Abo, danach € 50,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,',
+				'(im Jahres-Abo, danach € 50,00 mtl. im Monats-Abo) ' + optional,
 			route: '/sky_angebote/alle_pakete'
 		},
 
@@ -45,7 +45,7 @@
 			image: '/images/wahl/wahl_entertainment.png',
 			points: atr,
 			subtitle: '€ 12,50 monatlich* ',
-			info_text: '(im Jahres-Abo, danach € 15,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK',
+			info_text: '(im Jahres-Abo, danach € 15,00 mtl. im Monats-Abo) ' + optional,
 			route: '/sky_angebote/entertainment'
 		},
 
@@ -55,7 +55,7 @@
 			points: atr,
 			subtitle: '€ 22,50 monatlich* ',
 			info_text:
-				'(im Jahres-Abo, danach €&nbsp;27,50&nbsp;mtl. im Monats-Abo) Optional Netflix, PAYBACK',
+				'(im Jahres-Abo, danach €&nbsp;27,50&nbsp;mtl. im Monats-Abo) ' + optional,
 			route: '/sky_angebote/cinema'
 		},
 
@@ -65,7 +65,7 @@
 			points: atr,
 			subtitle: '€ 17,50 monatlich* ',
 			info_text:
-				'(im Jahres-Abo, danach € 22,50 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,',
+				'(im Jahres-Abo, danach € 22,50 mtl. im Monats-Abo) ' + optional,
 			route: '/sky_angebote/sport'
 		},
 
@@ -75,7 +75,7 @@
 			points: atr,
 			subtitle: '€ 25,00 monatlich* ',
 			info_text:
-				'(im Jahres-Abo, danach € 30,00 mtl. im Monats-Abo) Optional Netflix, PAYBACK Punkte,',
+				'(im Jahres-Abo, danach € 30,00 mtl. im Monats-Abo) ' + optional,
 			route: '/sky_angebote/bundesliga'
 		}
 	];
