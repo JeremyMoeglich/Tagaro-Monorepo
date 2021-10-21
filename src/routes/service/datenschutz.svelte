@@ -182,7 +182,6 @@
 			<p>
 				5.4. Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG <br
 				/>
-				<br />
 				Im Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden eingereichte
 				Abodaten eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift und
 				Bankverbindung) an Sky (Sky Deutschland Fernsehen GmbH & Co. KG, Medienallee 26 <br />
@@ -465,5 +464,8 @@
 	}
 	ul {
 		line-height: 150%;
+	}
+	p {
+		margin-bottom: 35px;
 	}
 </style>

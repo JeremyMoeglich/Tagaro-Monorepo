@@ -18,6 +18,7 @@
 	@import '../style/mixins.scss';
 	a {
 		text-decoration: none;
+		color: black;
 	}
 	.alignment {
 		display: flex;

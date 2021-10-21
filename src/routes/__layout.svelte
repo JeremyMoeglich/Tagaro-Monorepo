@@ -105,7 +105,7 @@
 	{/if}
 	{#if preferences_object['Analytics']}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKDK22D5"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-70CD2JS6R8"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
@@ -113,7 +113,7 @@
 			}
 			gtag('js', new Date());
 
-			gtag('config', 'G-WVJKDK22D5');
+			gtag('config', 'G-70CD2JS6R8');
 		</script>
 	{/if}
 	<meta property="og:title" content="TAGARO Medienshop" />
