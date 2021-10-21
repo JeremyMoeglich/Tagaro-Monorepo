@@ -8,8 +8,10 @@
 		<tr>
 			<td colspan="4" />
 			<td class="text_cell hd_entertainment">
-				Alle Angebote inklusive Entertainment und HD
-				<img class="hd_logo" src="/images/specific/hd_logo.png" alt="" />
+				<div class="inner">
+					<p>Alle Angebote inklusive Entertainment und HD</p>
+					<img class="hd_logo" src="/images/specific/hd_logo.png" alt="" />
+				</div>
 			</td>
 		</tr>
 		<tr>
@@ -167,9 +169,11 @@
 		max-width: 10vw;
 	}
 	.hd_entertainment {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-content: center;
+		.inner {
+			margin-left: auto;
+		}
+		img {
+			min-width: min(100%, 150px);
+		}
 	}
 </style>
