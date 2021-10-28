@@ -42,7 +42,7 @@
 				<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
 			</ul>
 		</div>
-		<div>
+		<!-- <div>
 			<h3>Amazon Gutschein von Sky:</h3>
 			<p>
 				Bei der Buchung von Sky Entertainment und mindestens einem weiteren Sky Programmpaket
@@ -54,6 +54,21 @@
 				Zahlungseingangs bei Sky, per E-Mail in Form eines digitalen Gutscheincodes ca. 6-8 Wochen
 				nach Abonnementvertragsabschluss per E-Mail versendet. Die Einlösung des Gutscheins ist bis
 				31.03.2022 nach Ausgabe des Gutscheins einlösbar.
+			</p>
+		</div> -->
+		<div>
+			<h3>TVNOW PREMIUM Gutschein:</h3>
+			<p>
+				Bei der Buchung von mindestens Sky Entertainment + 1 Sky Programmpaket (Cinema, Sport
+				und/oder Fußball-Bundesliga) ist ein Wertgutschein für ein 12 Monats-Abonnement von TVNOW
+				PREMIUM inklusive. Der Gutschein wird nach Ablauf der Widerrufsfrist und positiver
+				Bonitätsprüfung sowie des ersten positiven Zahlungseingangs bei Sky, in Form eines digitalen
+				Gutscheincodes ca. 6-8 Wochen nach Abonnementvertragsabschluss per E-Mail durch Sky
+				versendet. Die Einlösung des Gutscheins ist bis zum 31.03.2022 befristet. Im Falle der
+				Einlösung des TVNOW PREMIUM Gutscheins wird ein separates Abonnement unter Einbeziehung der
+				TVNOW AGB (<a href="https://www.tvnow.de/agb">https://www.tvnow.de/agb</a>) mit der RTL interactive GmbH geschlossen, welches nach
+				12 Monaten, soweit nicht gekündigt, sich automatisch jeweils um einen weiteren Monat zu €
+				4,99 mtl. verlängert. Jederzeit mit einer Frist von 30 Tagen kündbar. Laufzeit unbefristet.
 			</p>
 		</div>
 		<div>
