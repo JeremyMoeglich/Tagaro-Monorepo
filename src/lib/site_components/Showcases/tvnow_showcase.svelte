@@ -10,12 +10,12 @@
 			<a href={urls.aboformular}
 				><img alt="" src="/images/badges/sky_signature.svg" class="sky_logo" /></a
 			>
-			<div class="sky_logo to_remove">
+			<div class="sky_logo">
 				<a href={urls.aboformular}
 					><img
 						alt=""
 						src="/images/external/tvnow.webp"
-						class="sky_logo to_remove maxwidth90"
+						class="sky_logo maxwidth90"
 					/></a
 				>
 			</div>
@@ -86,7 +86,7 @@
 	.top_header {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
 		justify-content: center;
 		align-content: center;
 		align-items: center;
