@@ -63,8 +63,8 @@
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
-			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td />
 			<td class="text_cell"
 				><p><b>Monat 1-12 nur<br />€ 35,00 mtl. </b></p>

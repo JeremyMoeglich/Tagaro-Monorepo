@@ -14,7 +14,7 @@
 			title: '2 Sky Pakete nach Wahl + € 20 Prämie',
 			image: '/images/wahl/wahl_2aus4.png',
 			points: atr,
-			subtitle: 'ab € 32,50 monatlich* ',
+			subtitle: 'ab € 22,50 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, Preise je Wahl unterschiedlich) ' + optional,
 			route: '/sky_angebote/2_pakete'

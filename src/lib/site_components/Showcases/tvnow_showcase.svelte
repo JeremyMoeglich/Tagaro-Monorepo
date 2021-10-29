@@ -20,7 +20,7 @@
 		<div class="header_text">
 			<h1 class="main_title">
 				Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen TVNOW PREMIUM Gutschein über 12
-				Monate von Sky erhalten*.
+				Monate von Sky erhalten*
 			</h1>
 			<h2 class="subtitle1">Bei Vermittlung über TAGARO zusätzlich mit € 20 Bonus.</h2>
 			<h3 class="subtitle2 to_remove">
