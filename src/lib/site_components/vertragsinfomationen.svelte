@@ -42,7 +42,7 @@
 				<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
 			</ul>
 		</div>
-		<!-- <div>
+		<div>
 			<h3>Amazon Gutschein von Sky:</h3>
 			<p>
 				Bei der Buchung von Sky Entertainment und mindestens einem weiteren Sky Programmpaket
@@ -55,8 +55,8 @@
 				nach Abonnementvertragsabschluss per E-Mail versendet. Die Einlösung des Gutscheins ist bis
 				31.03.2022 nach Ausgabe des Gutscheins einlösbar.
 			</p>
-		</div> -->
-		<div>
+		</div>
+		<!-- <div>
 			<h3>TVNOW PREMIUM Gutschein:</h3>
 			<p>
 				Bei der Buchung von mindestens Sky Entertainment + 1 Sky Programmpaket (Cinema, Sport
@@ -70,7 +70,7 @@
 				12 Monaten, soweit nicht gekündigt, sich automatisch jeweils um einen weiteren Monat zu €
 				4,99 mtl. verlängert. Jederzeit mit einer Frist von 30 Tagen kündbar. Laufzeit unbefristet.
 			</p>
-		</div>
+		</div> -->
 		<div>
 			<h3>Sky Entertainment Plus:</h3>
 			<p>
