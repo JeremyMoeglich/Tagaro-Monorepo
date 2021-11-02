@@ -92,17 +92,6 @@
 </script>
 
 <svelte:head>
-	{#if preferences_object['Social Media']}
-		<script
-			id="trustamiwidget"
-			type="text/javascript"
-			src="https://cdn.trustami.com/widgetapi/widget2/trustami-widget.js"
-			data-profile="59e6544c53a49963318b4568"
-			data-user="dc45e2793250619a08045ba8ad253cd4a1004d2f"
-			data-platform="0"
-			async>
-		</script>
-	{/if}
 	{#if preferences_object['Analytics']}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-70CD2JS6R8"></script>
@@ -114,6 +103,17 @@
 			gtag('js', new Date());
 
 			gtag('config', 'G-70CD2JS6R8');
+		</script>
+	{/if}
+	{#if preferences_object['Social Media']}
+		<script
+			id="trustamiwidget"
+			type="text/javascript"
+			src="https://cdn.trustami.com/widgetapi/widget2/trustami-widget.js"
+			data-profile="59e6544c53a49963318b4568"
+			data-user="dc45e2793250619a08045ba8ad253cd4a1004d2f"
+			data-platform="0"
+			async>
 		</script>
 	{/if}
 	<meta property="og:title" content="TAGARO Medienshop" />

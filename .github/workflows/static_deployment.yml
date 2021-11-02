@@ -26,10 +26,25 @@ jobs:
       - name: copy
         uses: appleboy/scp-action@master
         with:
-          HOST: ${{ secrets.SSH_HOST }}
-          USERNAME: ${{ secrets.SSH_USER }}
-          PORT: ${{ secrets.SSH_PORT }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          port: ${{ secrets.SSH_PORT }}
           password: ${{ secrets.SSH_PASSWORD }}
           target: ${{ secrets.SSH_TARGET }}
           source: "./build/*"
           strip_components: 1
+      
+      - name: symlink
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          port: ${{ secrets.SSH_PORT }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd ${{ secrets.SSH_TARGET }}
+            ln -s ../shop/ebay_2 ./ebay_2
+            ln -s ../shop/ebay_3 ./ebay_3
+            ln -s ../shop/ebay_4 ./ebay_4
+            ln -s ../shop/skydd ./skydd
+          
