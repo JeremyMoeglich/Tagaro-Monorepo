@@ -6,7 +6,8 @@
 		'+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu',
 		'+ 12 Monatsabo, danach mtl. kündbar',
 		'+ € 20 Bonus on top',
-		'<b>+ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b>'
+		//'<b>+ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b>'
+		'<b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b>'
 	];
 	const optional = 'Optional Netflix, PAYBACK Punkte, DAZN'
 	const components = [

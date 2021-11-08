@@ -10,7 +10,6 @@
 		<BundesligaOverview detailed={true} />
 		<BundesligaSenders />
 		<Inklusive />
-		<Vertragsinfomationen />
 	</div>
 </body>
 

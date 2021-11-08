@@ -33,12 +33,8 @@
 </a>
 <LineSpacer />
 <DaznOverview />
+<EmptySpacer />
 
-<EmptySpacer />
-<PackageTable />
-<EmptySpacer />
-<Vertragsinfomationen />
-<EmptySpacer />
 
 <style lang="scss">
 	@import '../../../style/mixins.scss';

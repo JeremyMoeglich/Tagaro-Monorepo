@@ -10,7 +10,6 @@
 		<CinemaOverview detailed={true} />
 		<CinemaSenders />
 		<Inklusive />
-		<Vertragsinfomationen />
 	</div>
 </body>
 

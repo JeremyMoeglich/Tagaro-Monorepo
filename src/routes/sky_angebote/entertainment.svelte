@@ -10,7 +10,6 @@
 		<EntertainmentOverview detailed={true} />
 		<EntertainmentSenders />
 		<Inklusive />
-		<Vertragsinfomationen />
 	</div>
 </body>
 
