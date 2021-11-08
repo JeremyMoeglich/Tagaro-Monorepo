@@ -43,8 +43,8 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd ${{ secrets.SSH_TARGET }}
-            ln -s ../shop/ebay_2 ./ebay_2
-            ln -s ../shop/ebay_3 ./ebay_3
-            ln -s ../shop/ebay_4 ./ebay_4
-            ln -s ../shop/skydd ./skydd
+            ln -sf ../shop/ebay_2 ./ebay_2
+            ln -sf ../shop/ebay_3 ./ebay_3
+            ln -sf ../shop/ebay_4 ./ebay_4
+            ln -sf ../shop/skydd ./skydd
           
