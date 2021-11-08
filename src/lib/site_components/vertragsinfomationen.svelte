@@ -46,14 +46,14 @@
 			<h3>Amazon Gutschein von Sky:</h3>
 			<p>
 				Bei der Buchung von Sky Entertainment und mindestens einem weiteren Sky Programmpaket
-				(Cinema, Sport und/oder Fußball-Bundesliga) ist ein € 50-Wertgutschein von Amazon, bei
-				Buchung von Entertainment und mindestens zwei weiteren Programmpaketen oder Sky
-				Entertainment Plus und einem weiteren Sky Programmpaket (Cinema, Sport und/oder
-				Fußball-Bundesliga), ein € 125-Wertgutschein von Amazon inklusive. Der Gutschein wird von
-				Sky nach Ablauf der Widerrufsfrist und positiver Bonitätsprüfung sowie des ersten positiven
-				Zahlungseingangs bei Sky, per E-Mail in Form eines digitalen Gutscheincodes ca. 6-8 Wochen
-				nach Abonnementvertragsabschluss per E-Mail versendet. Die Einlösung des Gutscheins ist bis
-				31.03.2022 nach Ausgabe des Gutscheins einlösbar.
+				(Cinema, Sport und/oder Fußball-Bundesliga) oder Entertainment Plus ist ein €
+				50-Wertgutschein von Amazon, bei Buchung von Entertainment und mindestens zwei weiteren
+				Programmpaketen oder Sky Entertainment Plus und einem weiteren Sky Programmpaket (Cinema,
+				Sport und/oder Fußball-Bundesliga), ein € 125-Wertgutschein von Amazon inklusive. Der
+				Gutschein wird von Sky nach Ablauf der Widerrufsfrist und positiver Bonitätsprüfung sowie
+				des ersten positiven Zahlungseingangs bei Sky, per E-Mail in Form eines digitalen
+				Gutscheincodes ca. 6-8 Wochen nach Abonnementvertragsabschluss per E-Mail versendet. Die
+				Einlösung des Gutscheins ist bis 31.03.2022 nach Ausgabe des Gutscheins einlösbar.
 			</p>
 		</div>
 		<!-- <div>
