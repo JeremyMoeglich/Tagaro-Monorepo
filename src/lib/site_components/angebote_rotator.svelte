@@ -8,6 +8,7 @@
 		'+ € 20 Bonus on top',
 		//'<b>+ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b>'
 		//'<b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b>'
+		'<b>+ Bis 31.12.21 keine Abogebühren durch Sky</b>'
 	];
 	const optional = 'Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte'
 	const components = [
@@ -46,7 +47,7 @@
 			image: '/images/wahl/wahl_entertainment.png',
 			points: atr,
 			subtitle: '€ 14,50 monatlich* ',
-			info_text: '(im Jahres-Abo, danach € 15,00 mtl. im Monats-Abo) ' + optional,
+			info_text: '(im Jahres-Abo, danach € 17,00 mtl. im Monats-Abo) ' + optional,
 			route: '/sky_angebote/entertainment'
 		},
 

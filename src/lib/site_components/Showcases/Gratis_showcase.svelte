@@ -27,6 +27,9 @@
 
 	<div style="padding-top:max(1vw, 20px);" />
 	<div class="imagesMain">
+		<a href="/sky_angebote/entertainment"
+			><img alt="" src="/images/packages/sky_entertainment-plus.jpg" class="main_images" /></a
+		>
 		<a href="/sky_angebote/bundesliga"
 			><img alt="" src="/images/packages/sky_bundesliga.jpg" class="main_images" /></a
 		>
@@ -39,9 +42,6 @@
 		<a href="/sky_angebote#zubuchoptionen"
 			><img alt="" src="/images/packages/sky_kids.jpg" class="main_images r1" /></a
 		>
-		<a href="/sky_angebote/entertainment"
-			><img alt="" src="/images/packages/sky_entertainment-plus.jpg" class="main_images" /></a
-		>
 	</div>
 	<div class="bottom_things">
 		<a href={urls.aboformular}
@@ -51,9 +51,7 @@
 			<p style="margin-right:30px;">
 				✓ Vertrag für Internet, Sat- oder Kabel-Anschluss mit Sky Q Receiver oder Sky Q IPTV Box*
 			</p>
-			<p>
-				✓ € 20 Bonus und versandkostenfreie Vermittlung*
-			</p>
+			<p>✓ € 20 Bonus und versandkostenfreie Vermittlung*</p>
 		</div>
 		<a href={urls.aboformular}
 			><img alt="" src="/images/badges/mtlkuendbar.png" class="bottom_icon" /></a
@@ -114,7 +112,6 @@
 		align-content: center;
 		align-items: center;
 	}
-
 
 	.main_images {
 		order: 0;

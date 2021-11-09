@@ -10,7 +10,7 @@
 			<td colspan="3" />
 			<td class="text_cell">
 				<p><b>€ 14.50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 17 mlt. im Monats-Abo</p>
+				<p>danach € 17 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -18,7 +18,7 @@
 			<td colspan="3" />
 			<td class="text_cell">
 				<p><b>€ 20 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 25 mlt. im Monats-Abo</p>
+				<p>danach € 25 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -27,7 +27,7 @@
 			<td colspan="2" />
 			<td class="text_cell">
 				<p><b>€ 30 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 37,50 mlt. im Monats-Abo</p>
+				<p>danach € 37,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -36,7 +36,7 @@
 			<td colspan="2" />
 			<td class="text_cell">
 				<p><b>€ 20 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 25 mlt. im Monats-Abo</p>
+				<p>danach € 25 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -45,7 +45,7 @@
 			<td colspan="2" />
 			<td class="text_cell">
 				<p><b>€ 25,50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 33 mlt. im Monats-Abo</p>
+				<p>danach € 33 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -54,7 +54,7 @@
 			<td colspan="2" />
 			<td class="text_cell">
 				<p><b>€ 27 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 32 mlt. im Monats-Abo</p>
+				<p>danach € 32 mtl. im Monats-Abo</p>
 			</td><td />
 		</tr>
 		<tr>
@@ -63,7 +63,7 @@
 			<td colspan="2" />
 			<td class="text_cell">
 				<p><b>€ 32,50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 40 mlt. im Monats-Abo</p>
+				<p>danach € 40 mtl. im Monats-Abo</p>
 			</td><td />
 		</tr>
 		<tr>
@@ -73,7 +73,7 @@
 			<td />
 			<td class="text_cell">
 				<p><b>€ 30,50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 37,50 mlt. im Monats-Abo</p>
+				<p>danach € 37,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -83,7 +83,7 @@
 			<td />
 			<td class="text_cell">
 				<p><b>€ 35,50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 42,50 mlt. im Monats-Abo</p>
+				<p>danach € 42,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -93,7 +93,7 @@
 			<td />
 			<td class="text_cell">
 				<p><b>€ 32,50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 40 mlt. im Monats-Abo</p>
+				<p>danach € 40 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -102,8 +102,8 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 42,5 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 52,50 mlt. im Monats-Abo</p>
+				<p><b>€ 42,50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 52,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -113,7 +113,7 @@
 			<td />
 			<td class="text_cell">
 				<p><b>€ 32,50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 40 mlt. im Monats-Abo</p>
+				<p>danach € 40 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -123,7 +123,7 @@
 			<td />
 			<td class="text_cell">
 				<p><b>€ 38 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 48 mlt. im Monats-Abo</p>
+				<p>danach € 48 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -133,7 +133,7 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td class="text_cell">
 				<p><b>€ 42,50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 52,50 mlt. im Monats-Abo</p>
+				<p>danach € 52,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -143,7 +143,7 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td class="text_cell">
 				<p><b>€ 48 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 60,50 mlt. im Monats-Abo</p>
+				<p>danach € 60,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 	</table>
@@ -172,6 +172,10 @@
 		<Zubuchoption
 			text="<b>18+ für Blue Movie € 0</b><br/> einmalige Versandpauschale 18+ PIN"
 			image="/images/external/18_plus.png"
+		/>
+		<Zubuchoption
+			text="<b>Netflix Standard-Abo, HD/2 Streams + € 5 mtl. oder Netflix Premium-Abo, UHD/4 Streams + € 10 mtl."
+			image="/images/badges/NetflixSDHD.png"
 		/>
 	</div>
 </div>
