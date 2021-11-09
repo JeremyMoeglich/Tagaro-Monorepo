@@ -21,7 +21,7 @@
 </button>
 
 <style lang="scss">
-	@import '../style/mixins.scss';
+	@import '../shared/style/mixins.scss';
 	$blue_gradient: linear-gradient(to bottom right, #49358d, #027fc7);
 	a,
 	p {

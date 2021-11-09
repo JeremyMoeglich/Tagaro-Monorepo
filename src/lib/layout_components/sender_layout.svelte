@@ -17,7 +17,7 @@
 </body>
 
 <style lang="scss">
-	@import '../style/mixins.scss';
+	@import '../shared/style/mixins.scss';
 	.main_alignment {
 		display: flex;
 		flex-wrap: wrap;

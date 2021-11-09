@@ -23,7 +23,7 @@
 <div class="vertragsinfo"><Vertragsinfomationen /></div>
 
 <style lang="scss">
-	@import '../lib/style/mixins.scss';
+	@import '../lib/shared/style/mixins.scss';
 	.main-title {
 		margin-top: 50px;
 		font-size: min(max(2vw, 35px), 4vw);

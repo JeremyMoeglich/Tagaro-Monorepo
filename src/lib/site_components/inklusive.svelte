@@ -29,7 +29,7 @@
 </div>
 
 <style lang="scss">
-	@import '../style/mixins.scss';
+	@import '../shared/style/mixins.scss';
 	.gradient_text {
 		@include gradient-text;
 	}

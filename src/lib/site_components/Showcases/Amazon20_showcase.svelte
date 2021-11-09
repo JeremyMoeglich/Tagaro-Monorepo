@@ -85,7 +85,7 @@
 </body>
 
 <style lang="scss">
-	@import '../../style/mixins.scss';
+	@import '../../shared/style/mixins.scss';
 	.btn {
 		display: flex;
 		justify-content: center;

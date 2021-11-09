@@ -173,7 +173,7 @@
 </div>
 
 <style lang="scss">
-	@import '../style/mixins.scss';
+	@import '../shared/style/mixins.scss';
 	$background_height: calc((900px - 6vw) * 1.2);
 	$outer_padding: 70px;
 	$background_color: #f2f2f2;

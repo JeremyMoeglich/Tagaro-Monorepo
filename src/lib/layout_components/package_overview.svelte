@@ -32,7 +32,7 @@
 </div>
 
 <style lang="scss">
-	@import '../style/mixins.scss';
+	@import '../shared/style/mixins.scss';
 	.alignment {
 		display: flex;
 		min-width: 70vw;

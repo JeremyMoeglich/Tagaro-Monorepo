@@ -15,7 +15,7 @@
 </a>
 
 <style lang="scss">
-	@import '../style/mixins.scss';
+	@import '../shared/style/mixins.scss';
 	a {
 		text-decoration: none;
 		color: black;

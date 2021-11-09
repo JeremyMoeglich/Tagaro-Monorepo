@@ -27,7 +27,7 @@
 </body>
 
 <style lang="scss">
-	@import '../lib/style/mixins.scss';
+	@import '../lib/shared/style/mixins.scss';
 	.element {
 		width: 300px;
 	}
