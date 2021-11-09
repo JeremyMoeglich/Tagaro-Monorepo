@@ -5,21 +5,13 @@
 <div class="main_container">
 	<h2 class="title">Pakete & Preise in der Übersicht</h2>
 	<table>
-		<tr>
-			<td colspan="4" />
-			<td class="text_cell hd_entertainment">
-				<div class="inner">
-					<p>Alle Angebote inklusive Entertainment und HD</p>
-					<img class="hd_logo" src="/images/specific/hd_logo.png" alt="" />
-				</div>
-			</td>
-		</tr>
+
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
 			<td colspan="3" />
 			<td class="text_cell">
-				<p><b>Monat 1-12 nur<br />€ 12,50 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+				<p><b>€ 20 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 25 mlt. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -27,7 +19,7 @@
 			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>Monat 1-12 nur<br />€ 22,50 mtl. </b></p>
+				<p><b>Monat 1-12 nur<br />€ 24,50 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
 		</tr>
@@ -36,7 +28,7 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>Monat 1-12 nur<br />€ 17,50 mtl. </b></p>
+				<p><b>Monat 1-12 nur<br />€ 20,00 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
 		</tr>
@@ -45,7 +37,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 25,00 mtl. </b></p>
+				><p><b>Monat 1-12 nur<br />€ 27,00 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
 
@@ -57,26 +49,6 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td />
 			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 27,50 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
-			</td>
-		</tr>
-		<tr>
-			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
-			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
-			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
-			<td />
-			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 35,00 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
-			</td>
-		</tr>
-		<tr>
-			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
-			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
-			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
-			<td />
-			<td class="text_cell"
 				><p><b>Monat 1-12 nur<br />€ 30,00 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
@@ -85,9 +57,29 @@
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
+			<td />
+			<td class="text_cell"
+				><p><b>Monat 1-12 nur<br />€ 37,00 mtl. </b></p>
+				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+			</td>
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
+			<td />
+			<td class="text_cell"
+				><p><b>Monat 1-12 nur<br />€ 32,50 mtl. </b></p>
+				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+			</td>
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 40,00 mtl. </b></p>
+				><p><b>Monat 1-12 nur<br />€ 42,50 mtl. </b></p>
 				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
 			</td>
 		</tr>
