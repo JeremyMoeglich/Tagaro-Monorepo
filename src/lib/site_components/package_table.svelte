@@ -174,7 +174,7 @@
 			image="/images/external/18_plus.png"
 		/>
 		<Zubuchoption
-			text="<b>Netflix Standard-Abo</b>, HD/2 Streams + € 5 mtl. oder </br> Netflix Premium-Abo, UHD/4 Streams + € 10 mtl."
+			text="<b>Netflix Standard-Abo, HD/2 Streams + € 5 mtl.</b> oder </br> <b>Netflix Premium-Abo, UHD/4 Streams + € 10 mtl.</b>"
 			image="/images/badges/NetflixSDHD.png"
 		/>
 	</div>
