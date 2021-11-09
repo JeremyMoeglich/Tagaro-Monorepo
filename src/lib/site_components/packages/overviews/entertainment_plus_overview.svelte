@@ -2,8 +2,7 @@
 	import PackageOverview from '$lib/layout_components/package_overview.svelte';
 	export let detailed = false;
 </script>
-Hunderte  Serien, Dokus und Show mit exklusiven Top-Inhalten von Sky und HBO
-Netflix Basis-Abo (SD, 1 Stream) inklusive. Einfach dein bestehendes Netflix Konto mitnehmen
+
 <PackageOverview
 	title={'Entertainment Plus Paket - Alle Sky Serien und Netflix.'}
 	points={[

@@ -2,12 +2,14 @@
 	import Inklusive from '$lib/site_components/inklusive.svelte';
 	import SportOverview from '$lib/site_components/packages/overviews/sport_overview.svelte';
 	import SportSenders from '$lib/site_components/packages/senders/sport_senders.svelte';
+	import EntertainmentSenders from '$lib/site_components/packages/senders/entertainment_senders.svelte';
 </script>
 
 <body>
 	<div class="alignment">
 		<SportOverview detailed={true} />
 		<SportSenders />
+		<EntertainmentSenders />
 		<Inklusive />
 	</div>
 </body>

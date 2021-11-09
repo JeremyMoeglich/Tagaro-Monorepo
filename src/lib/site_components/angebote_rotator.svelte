@@ -21,7 +21,14 @@
 				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport) ' + optional,
 			route: '/sky_angebote/2_pakete'
 		},
-
+		{
+			title: 'Sky Entertainment Paket + € 20 Prämie',
+			image: '/images/wahl/wahl_entertainment.png',
+			points: atr,
+			subtitle: '€ 14,50 monatlich* ',
+			info_text: '(im Jahres-Abo, danach € 17,00 mtl. im Monats-Abo) ' + optional,
+			route: '/sky_angebote/entertainment-plus'
+		},
 		{
 			title: '3 Sky Pakete nach Wahl + € 20 Prämie',
 			image: '/images/wahl/wahl_3aus4.png',
@@ -42,14 +49,7 @@
 			route: '/sky_angebote/alle_pakete'
 		},
 
-		{
-			title: 'Sky Entertainment Paket + € 20 Prämie',
-			image: '/images/wahl/wahl_entertainment.png',
-			points: atr,
-			subtitle: '€ 14,50 monatlich* ',
-			info_text: '(im Jahres-Abo, danach € 17,00 mtl. im Monats-Abo) ' + optional,
-			route: '/sky_angebote/entertainment-plus'
-		},
+		
 
 		{
 			title: 'Sky Cinema Paket + € 20 Prämie',

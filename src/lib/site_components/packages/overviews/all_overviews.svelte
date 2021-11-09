@@ -30,7 +30,6 @@
 <a href="/sky_angebote/bundesliga">
 	<BundesligaOverview />
 </a>
-<LineSpacer />
 
 <LineSpacer />
 <DaznOverview />

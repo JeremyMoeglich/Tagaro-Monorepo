@@ -2,13 +2,14 @@
 	import Inklusive from '$lib/site_components/inklusive.svelte';
 	import BundesligaOverview from '$lib/site_components/packages/overviews/bundesliga_overview.svelte';
 	import BundesligaSenders from '$lib/site_components/packages/senders/bundesliga_senders.svelte';
-	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen.svelte';
+	import EntertainmentSenders from '$lib/site_components/packages/senders/entertainment_senders.svelte';
 </script>
 
 <body>
 	<div class="alignment">
 		<BundesligaOverview detailed={true} />
 		<BundesligaSenders />
+		<EntertainmentSenders />
 		<Inklusive />
 	</div>
 </body>

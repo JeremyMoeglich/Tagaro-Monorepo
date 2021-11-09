@@ -9,7 +9,7 @@
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
 			<td colspan="3" />
 			<td class="text_cell">
-				<p><b>€ 14.50 mtl. im Jahres-Abo,</b></p>
+				<p><b>€ 14,50 mtl. im Jahres-Abo,</b></p>
 				<p>danach € 17 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -92,8 +92,8 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 32,50 mtl. im Jahres-Abo,</b></p>
-				<p>danach € 40 mtl. im Monats-Abo</p>
+				<p><b>€ 37,00 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 44,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -174,7 +174,7 @@
 			image="/images/external/18_plus.png"
 		/>
 		<Zubuchoption
-			text="<b>Netflix Standard-Abo, HD/2 Streams + € 5 mtl. oder Netflix Premium-Abo, UHD/4 Streams + € 10 mtl."
+			text="<b>Netflix Standard-Abo</b>, HD/2 Streams + € 5 mtl. oder </br> Netflix Premium-Abo, UHD/4 Streams + € 10 mtl."
 			image="/images/badges/NetflixSDHD.png"
 		/>
 	</div>

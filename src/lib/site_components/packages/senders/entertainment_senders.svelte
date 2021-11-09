@@ -29,7 +29,6 @@
 			'/images/senders/entertainment/sky_logo_sky-krimi_w.png',
 			'/images/senders/entertainment/sky_logo_sky-nature_b.png',
 			'/images/senders/entertainment/sky_logo_sky-one_w.png',
-			'/images/senders/entertainment/sky_logo_sky-sport-news.png',
 			'/images/senders/entertainment/sky_logo_spiegel-wissen.png',
 			'/images/senders/entertainment/sky_logo_syfyhd_w.png',
 			'/images/senders/entertainment/sky_logo_universalchannelhd_b.png',
