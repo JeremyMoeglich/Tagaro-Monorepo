@@ -16,9 +16,9 @@
 	image={'/images/packages/sky_cinema.jpg'}
 	{detailed}
 >
-	<h3>12 Monate nur € 22,50 mtl.*</h3>
+	<h3>12 Monate nur € 30,00 mtl.*</h3>
 	<p>
-		(im Jahres-Abo, danach € 27,50 mtl. im Monats-Abo) <br />
+		(im Jahres-Abo, danach € 37,50 mtl. im Monats-Abo) <br />
 		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
 	</p>
 </PackageOverview>

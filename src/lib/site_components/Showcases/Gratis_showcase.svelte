@@ -27,7 +27,7 @@
 
 	<div style="padding-top:max(1vw, 20px);" />
 	<div class="imagesMain">
-		<a href="/sky_angebote/entertainment"
+		<a href="/sky_angebote/entertainment-plus"
 			><img alt="" src="/images/packages/sky_entertainment-plus.jpg" class="main_images" /></a
 		>
 		<a href="/sky_angebote/bundesliga"
@@ -193,10 +193,6 @@
 	@media only screen and (max-width: 800px) {
 		.main_images {
 			width: min(25vw, 25vh);
-		}
-
-		.r2 {
-			display: none;
 		}
 	}
 

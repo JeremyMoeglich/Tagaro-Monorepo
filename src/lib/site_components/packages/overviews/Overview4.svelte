@@ -16,9 +16,9 @@
 	]}
 	{detailed}
 >
-	<h3>12 Monate ab € 40,00 mtl.</h3>
+	<h3>12 Monate ab € 42,50 mtl.</h3>
 	<p>
-		Optional mit Netflix im Entertainment Plus Paket für zzgl. € 7,50 mtl. Der Vertrag hat eine
-		Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
+		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema
+		+ Sport + Bundesliga
 	</p>
 </PackageOverview>

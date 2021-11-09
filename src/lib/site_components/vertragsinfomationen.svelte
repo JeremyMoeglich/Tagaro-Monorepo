@@ -147,7 +147,7 @@
 			</p>
 		</div>
 		<div>
-			<h3>Sky Entertainment Plus Upgrade auf Netflix Premium:</h3>
+			<h3>Sky Entertainment Plus Upgrade auf Netflix Standard/Premium:</h3>
 			<p>
 				Gegen Aufpreis kann jederzeit ein Upgrade des Entertainment Plus Pakets von Netflix Basis
 				auf Netflix Standard (€ 5 mtl.) oder Premium (€ 10 mtl.) vorgenommen werden. Netflix
@@ -220,19 +220,20 @@
 		<div>
 			<h3>Multiscreen (bis zu 5 Geräte):</h3>
 			<p>
-				Mit Multiscreen kann das Sky Programm auf bis zu 3 Endgeräten gleichzeitig gestreamt werden.
+				Mit Multiscreen kann das Sky Programm mit Sky Q über das Internet auf bis zu 3 Endgeräten
+				und auf Sky Q über SAT oder Kabel auf bis zu 5 Endgeräten gleichzeitig gestreamt werden.
 				Voraussetzung ist die Nutzung von mindestens einem Sky Q Receiver oder einer Sky Q IPTV Box
 				sowie eine stabile Internetverbindung (ausgeschlossen ist die Verbindung über einen
 				VPN-Zugang). Empfohlene Bandbreite 6 Mbit/s für HD-Qualität. Für die Internetverbindung
 				anfallende Kosten sind nicht Bestandteil des Abonnements. Das Streaming des Sky Programmes
-				ist mit der Sky Q-Mini, der Sky Q App (auf Apple TV ab Generation 4, auf Smart TV von LG
-				Electronics mit Betriebssystem Web OS 2.0 oder höher oder Samsung Smart TV ab Modelljahr
-				2015 mit Tizen Betriebssystem oder einer Playstation 4 Konsole) und mit der Sky Go App auf
-				mobilen Endgeräten (Betriebssysteme: Android, iOS, Windows; Hersteller: Mac, Huawei)
-				möglich. Über die Sky Q IPTV Box und Sky Q-Mini sind UHD-Inhalte nicht verfügbar. Pro
-				Abonnement sind maximal 2 Sky Q Receiver zzgl. maximal 3 Sky Q-Mini oder maximal 3 Sky Q
-				IPTV Boxen buchbar. Bei Buchung von Multiscreen gibt es je nach Empfangsart ein Sky Q-Mini
-				oder eine Sky IPTV Box für jeweils einmalig € 29 dazu.
+				ist mit der Sky Q-Mini, der Sky Q IPTV Box, der Sky Q App (auf Apple TV ab Generation 4, auf
+				Smart TV von LG Electronics mit Betriebssystem Web OS 2.0 oder höher oder Samsung Smart TV
+				ab Modelljahr 2015 mit Tizen Betriebssystem oder einer Playstation 4 Konsole) und mit der
+				Sky Go App auf mobilen Endgeräten (Betriebssysteme: Android, iOS, Windows; Hersteller: Mac,
+				Huawei) möglich. Über die Sky Q IPTV Box und Sky Q-Mini sind UHD-Inhalte nicht verfügbar.
+				Pro Sky Q Abonnement über SAT oder Kabel sind maximal 2 Sky Q Receiver (je € 49 durch Sky)
+				zzgl. maximal 2 Sky Q-Mini (je € 29 durch Sky) oder bei einem Sky Q Abonnement über das
+				Internet maximal 3 Sky Q IPTV Boxen (je € 29 durch Sky) buchbar.
 			</p>
 		</div>
 		<div>
@@ -262,20 +263,15 @@
 				ersten 6 Laufzeitmonate kostenlos und es gilt eine Mindestvertragslaufzeit von einem Monat.
 				Das Abonnement verlängert sich nach Ablauf der Mindestlaufzeit um jeweils einen weiteren
 				Monat, wenn es nicht mit einer Frist von 1 Monat auf den Ablauf der Laufzeit gekündigt wird.
-				Danach beträgt die Abonnementgebühr € 5,75 mtl.. Vertragspartner des HD+ Abonnements ist die
-				HD PLUS GmbH. Die HD PLUS GmbH ermächtigt Sky, die Abonnementgebühren einzuziehen.
+				Danach beträgt die Abonnementgebühr € 6 mtl. Vertragspartner des HD+ Abonnements ist die HD
+				PLUS GmbH. Die HD PLUS GmbH ermächtigt Sky, die Abonnementgebühren einzuziehen.
 			</p>
 		</div>
 		<div>
 			<h3>Sky Q Receiver:</h3>
 			<p>
-				Bei Wahl von Sat- oder Kabel-Empfang erhalten Sie einen mietfreien Sky Q Receiver leihweise
-				für die Dauer des Sky Abonnements. Schauen Sie Ihr Sky Programm wann immer Sie wollen und
-				erleben Sie mit Sky On Demand Ihr gebuchtes Programm jederzeit auf Abruf. Der Sky Q Receiver
-				bietet integriertes WLAN für einen schnellen Zugriff auf Sky On Demand, eine 1 TB Festplatte
-				und er ist Ultra-HD-fähig. Schauen Sie Ihr Wunschprogramm auf bis zu 5 Geräten gleichzeitig
-				mit der zusätzlich buchbaren Multiscreen Option - Bis zu 2 zusätzliche TVs sowie 3
-				zusätzliche mobile Geräte.
+				Sky stellt einen Sky Q Receiver leihweise zur Verfügung (die Servicepauschale i. H. v. € 149
+				entfällt).
 			</p>
 		</div>
 		<div>
@@ -291,13 +287,13 @@
 		<div>
 			<h3>Sky Q IPTV Box:</h3>
 			<p>
-				Bei Wahl von Internet-Empfang erhalten Sie eine Sky Q IPTV Box leihweise für die Dauer des
-				Sky Abonnements. Mit der Sky Q IPTV Box können einzelne Inhalte des Sky Abonnements über das
-				Internet auf einem TV-Gerät mit HDMI-Anschluss empfangen werden. Voraussetzung ist ein Sky
-				Abonnement inkl. Sky Q sowie eine dauerhafte Internetverbindung. Empfohlene Bandbreite
-				mindestens 3,5 Mbit/s für SD-Qualität, 6 Mbit/s für HD-Qualität. Für die Internetverbindung
-				anfallende Kosten sind kein Bestandteil des Sky Abonnements. UHD-Inhalte sind über die Sky Q
-				IPTV Box nicht verfügbar.
+				Die Sky Q IPTV Box wird leihweise für die Dauer des Sky Abonnements zur Verfügung gestellt.
+				Mit der Sky Q IPTV Box können einzelne Inhalte des Sky Abonnements über das Internet auf
+				einem TV-Gerät mit HDMI-Anschluss empfangen werden. Voraussetzung ist ein Sky Abonnement
+				inkl. Sky Q sowie eine dauerhafte Internetverbindung. Empfohlene Bandbreite mindestens 3,5
+				Mbit/s für SD-Qualität, 6 Mbit/s für HD-Qualität. Für die Internetverbindung anfallende
+				Kosten sind kein Bestandteil des Sky Abonnements. UHD-Inhalte sind über die Sky Q IPTV Box
+				nicht verfügbar.
 			</p>
 		</div>
 		<div>
@@ -329,7 +325,7 @@
 			<h3>€ 20 Prämie von uns:</h3>
 			<p>
 				Als Dankeschön erhalten Sie einen Prämie von € 20 auf Ihr Konto überwiesen. Sie erhalten den
-				Betrag innerhalb von 4-6 Wochen nach Abobeginn gutgeschrieben.
+				Betrag innerhalb von 6-8 Wochen nach Abobeginn gutgeschrieben.
 			</p>
 		</div>
 	</span>

@@ -12,9 +12,12 @@
 </script>
 
 <h1>Programmpakete bei Sky</h1>
-<a href="/sky_angebote/entertainment">
-	<EntertainmentOverview />
+<a href="/sky_angebote/entertainment-plus">
+	<EntertainmentPlusOverview />
 </a>
+<!-- <a href="/sky_angebote/entertainment">
+	<EntertainmentOverview />
+</a> -->
 <LineSpacer />
 <a href="/sky_angebote/cinema">
 	<CinemaOverview />
@@ -28,9 +31,7 @@
 	<BundesligaOverview />
 </a>
 <LineSpacer />
-<a href="/sky_angebote/entertainment">
-	<EntertainmentPlusOverview />
-</a>
+
 <LineSpacer />
 <DaznOverview />
 <EmptySpacer />

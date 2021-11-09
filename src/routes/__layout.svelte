@@ -43,10 +43,10 @@
 		Startseite: '/',
 		'Sky Angebote': {
 			index: '/sky_angebote',
+			'Sky Entertainment Plus': '/sky_angebote/entertainment-plus',
 			'Sky Sport': '/sky_angebote/sport',
 			'Sky Fußball-Bundesliga': '/sky_angebote/bundesliga',
 			'Sky Cinema': '/sky_angebote/cinema',
-			'Sky Entertainment': '/sky_angebote/entertainment',
 			'2 Sky Wunschpakete': '/sky_angebote/2_pakete',
 			'3 Sky Wunschpakete': '/sky_angebote/3_pakete',
 			'4 Sky Pakete oder mehr': '/sky_angebote/alle_pakete'

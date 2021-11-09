@@ -48,7 +48,7 @@
 			points: atr,
 			subtitle: '€ 14,50 monatlich* ',
 			info_text: '(im Jahres-Abo, danach € 17,00 mtl. im Monats-Abo) ' + optional,
-			route: '/sky_angebote/entertainment'
+			route: '/sky_angebote/entertainment-plus'
 		},
 
 		{

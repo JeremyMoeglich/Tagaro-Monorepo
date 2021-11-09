@@ -16,10 +16,8 @@
 	]}
 	{detailed}
 >
-	<h3>12 Monate ab € 22,50 mtl.</h3>
+	<h3>12 Monate ab € 20,00 mtl.</h3>
 	<p>
-		Preis gilt für die Kombination Sky Entertainment + Sky Sport + Sky Kids (Andere weiteren
-		Kombinationen finden Sie in unserem Online-Bestellformular) Der Vertrag hat eine Laufzeit von 12
-		Monaten und ist im Anschluss monatlich kündbar
+		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport
 	</p>
 </PackageOverview>

@@ -16,9 +16,9 @@
 	image={'/images/packages/sky_entertainment.jpg'}
 	{detailed}
 >
-	<h3>12 Monate nur € 12,50 mtl.*</h3>
+	<h3>12 Monate nur € 14,50 mtl.*</h3>
 	<p>
-		(im Jahres-Abo, danach € 15,00 mtl. im Monats-Abo) <br />
+		(im Jahres-Abo, danach € 17,00 mtl. im Monats-Abo) <br />
 		Optional mit Netflix im Entertainment Plus Paket für zzgl. € 7,50 mtl. <br />
 		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
 	</p>
