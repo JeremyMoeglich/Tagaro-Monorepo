@@ -2,15 +2,15 @@
 	import PackageOverview from '$lib/layout_components/package_overview.svelte';
 	export let detailed = false;
 </script>
-
+Hunderte  Serien, Dokus und Show mit exklusiven Top-Inhalten von Sky und HBO
+Netflix Basis-Abo (SD, 1 Stream) inklusive. Einfach dein bestehendes Netflix Konto mitnehmen
 <PackageOverview
 	title={'Entertainment Plus Paket - Alle Sky Serien und Netflix.'}
 	points={[
-		'Jetzt Netflix als Upgrade zu jedem Abo hinzubuchbar. Einfach im Bestellvorgang "Abonnement mit Netflix" auswählen',
-
-		'Erweitere Dein Entertainment Paket um Netflix - zum Vorteilspreis',
-		'Inklusive Netflix-Standard-Abo (HD, 2 Streams)',
-		'Bereits Netflix-Kunde? Einfach Dein bestehendes Netflix Konto mitnehmen'
+		'Hunderte  Serien, Dokus und Show mit exklusiven Top-Inhalten von Sky und HBO',
+		'Netflix Basis-Abo (SD, 1 Stream) inklusive. Einfach dein bestehendes Netflix Konto mitnehmen',
+		'Alle Inhalte von Sky, Free TV, deinen Lieblingsapps und Mediatheken auf einen Blick vereint',
+		'Einfach. Alles mit einer Sprachfernbedienung'
 	]}
 	image={'/images/packages/sky_entertainment-plus.jpg'}
 	{detailed}
