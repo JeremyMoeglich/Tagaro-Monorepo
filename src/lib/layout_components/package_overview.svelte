@@ -1,8 +1,8 @@
-<script>
-	export let title;
-	export let points;
-	export let image = undefined;
-	export let detailed;
+<script lang='ts'>
+	export let title: string;
+	export let points: Array<string>;
+	export let image: string = undefined;
+	export let detailed: boolean;
 </script>
 
 <div class="package_overview">

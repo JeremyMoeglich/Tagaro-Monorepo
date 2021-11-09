@@ -5,9 +5,16 @@
 <div class="main_container">
 	<h2 class="title">Pakete & Preise in der Übersicht</h2>
 	<table>
-
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
+			<td colspan="3" />
+			<td class="text_cell">
+				<p><b>€ 14.50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 17 mlt. im Monats-Abo</p>
+			</td>
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment-plus.png" alt="" /> </td>
 			<td colspan="3" />
 			<td class="text_cell">
 				<p><b>€ 20 mtl. im Jahres-Abo,</b></p>
@@ -15,12 +22,12 @@
 			</td>
 		</tr>
 		<tr>
-			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_entertainment-plus.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>Monat 1-12 nur<br />€ 24,50 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+				<p><b>€ 30 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 37,50 mlt. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -28,29 +35,55 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>Monat 1-12 nur<br />€ 20,00 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+				<p><b>€ 20 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 25 mlt. im Monats-Abo</p>
+			</td>
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment-plus.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
+			<td colspan="2" />
+			<td class="text_cell">
+				<p><b>€ 25,50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 33 mlt. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td colspan="2" />
-			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 27,00 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
-			</td>
-
-			<td />
+			<td class="text_cell">
+				<p><b>€ 27 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 32 mlt. im Monats-Abo</p>
+			</td><td />
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment-plus.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
+			<td colspan="2" />
+			<td class="text_cell">
+				<p><b>€ 32,50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 40 mlt. im Monats-Abo</p>
+			</td><td />
 		</tr>
 		<tr>
 			<td> <img src="/images/square_packages/sky_entertainment.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td />
-			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 30,00 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+			<td class="text_cell">
+				<p><b>€ 30,50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 37,50 mlt. im Monats-Abo</p>
+			</td>
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment-plus.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
+			<td />
+			<td class="text_cell">
+				<p><b>€ 35,50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 42,50 mlt. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -58,9 +91,19 @@
 			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td />
-			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 37,00 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+			<td class="text_cell">
+				<p><b>€ 32,50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 40 mlt. im Monats-Abo</p>
+			</td>
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment-plus.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
+			<td />
+			<td class="text_cell">
+				<p><b>€ 42,5 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 52,50 mlt. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -68,9 +111,19 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td />
-			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 32,50 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+			<td class="text_cell">
+				<p><b>€ 32,50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 40 mlt. im Monats-Abo</p>
+			</td>
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment-plus.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
+			<td />
+			<td class="text_cell">
+				<p><b>€ 38 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 48 mlt. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -78,9 +131,19 @@
 			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
-			<td class="text_cell"
-				><p><b>Monat 1-12 nur<br />€ 42,50 mtl. </b></p>
-				<p>12-Monats-Abo <br /> Danach mtl. kündbar</p>
+			<td class="text_cell">
+				<p><b>€ 42,50 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 52,50 mlt. im Monats-Abo</p>
+			</td>
+		</tr>
+		<tr>
+			<td> <img src="/images/square_packages/sky_entertainment-plus.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
+			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
+			<td class="text_cell">
+				<p><b>€ 48 mtl. im Jahres-Abo,</b></p>
+				<p>danach € 60,50 mlt. im Monats-Abo</p>
 			</td>
 		</tr>
 	</table>
@@ -135,9 +198,7 @@
 	img {
 		width: min(100%, 100px);
 	}
-	.hd_logo {
-		width: 11vw;
-	}
+
 	td {
 		padding: 20px;
 		$pad: max(min(34px, 7vw - 90px), 0px);
@@ -159,13 +220,5 @@
 		line-height: 25px;
 		min-width: min(170px, 30vw);
 		max-width: 10vw;
-	}
-	.hd_entertainment {
-		.inner {
-			margin-left: auto;
-		}
-		img {
-			min-width: min(100%, 150px);
-		}
 	}
 </style>
