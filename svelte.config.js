@@ -1,10 +1,12 @@
 import preprocess from 'svelte-preprocess';
-import importAssets from 'svelte-preprocess-import-assets'
-import seqPreprocessor from 'svelte-sequential-preprocessor'
+//import importAssets from 'svelte-preprocess-import-assets'
+//import seqPreprocessor from 'svelte-sequential-preprocessor'
 import staticAdapter from '@sveltejs/adapter-static'
 import nodeAdapter from '@sveltejs/adapter-node'
 import netlifyAdapter from '@sveltejs/adapter-netlify'
-import image from "svelte-image";
+//import image from "svelte-image";
+
+//@ts-check
 
 const hasAdapter = process.env.ADAPTER;
 const adapt = hasAdapter ? hasAdapter : 'netlify';
