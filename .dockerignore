@@ -3,4 +3,3 @@ keys
 .svelte-kit
 svelte.config.js
 build
-push.sh
