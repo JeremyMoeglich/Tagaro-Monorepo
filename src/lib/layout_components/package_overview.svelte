@@ -22,6 +22,7 @@
 			</ul>
 			{#if detailed}
 				<slot />
+				<img class="badge" src="/images/badges/1monatgratis.png" alt="">
 			{/if}
 		</div>
 
@@ -41,6 +42,10 @@
 		gap: calc(5vw + 50px);
 		justify-content: center;
 		flex-wrap: wrap;
+	}
+	.badge {
+		width: 150px;
+		max-width: 95vw;
 	}
 	.title,
 	.description :global(h3) {
