@@ -10,6 +10,9 @@
 			<a href={urls.aboformular}
 				><img alt="" src="/images/badges/sky_signature.svg" class="sky_logo" /></a
 			>
+			<a href={urls.aboformular}
+				><img alt="" src="/images/badges/1monatgratis_startseite.png" class="sky_logo" /></a
+			>
 		</div>
 		<div class="val_break" style="width: 100%;" />
 		<div class="header_text">
