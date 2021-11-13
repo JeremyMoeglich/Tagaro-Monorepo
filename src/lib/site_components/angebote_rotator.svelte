@@ -46,7 +46,7 @@
 			subtitle: '€ 42,50 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport + Bundesliga)  ' + optional,
-			route: '/sky_angebote/alle_pakete'
+			route: '/sky_angebote/4_oder_mehr_pakete'
 		},
 
 		

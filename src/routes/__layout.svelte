@@ -49,7 +49,7 @@
 			'Sky Cinema': '/sky_angebote/cinema',
 			'2 Sky Wunschpakete': '/sky_angebote/2_pakete',
 			'3 Sky Wunschpakete': '/sky_angebote/3_pakete',
-			'4 Sky Pakete oder mehr': '/sky_angebote/alle_pakete'
+			'4 Sky Pakete oder mehr': '/sky_angebote/4_oder_mehr_pakete'
 		},
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
