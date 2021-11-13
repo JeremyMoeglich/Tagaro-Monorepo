@@ -67,6 +67,7 @@
 	.main_text :global(ul) {
 		list-style: none;
 		line-height: 150%;
+		padding-left: 0px;
 	}
 	.main_text :global(h3) {
 		@include gradient-text;

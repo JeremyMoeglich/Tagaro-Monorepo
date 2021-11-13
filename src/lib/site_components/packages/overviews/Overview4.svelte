@@ -4,7 +4,7 @@
 </script>
 
 <PackageOverview
-	title={'Alle 4 Sky Pakete im Abonnement - Großartige Unterhaltung aus allen Bereichen'}
+	title={'4 Sky Pakete oder mehr - Großartige Unterhaltung aus allen Bereichen'}
 	points={[
 		'Programmvielfalt mit zahlreichen hochwertigen deutschen Pay-TV Sendern im Entertainment Paket',
 		'Nationaler oder internationaler Live-Sport im Fußball-Bundesliga oder Sport Paket',
