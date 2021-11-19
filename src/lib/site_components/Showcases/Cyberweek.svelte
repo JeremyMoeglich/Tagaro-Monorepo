@@ -63,6 +63,7 @@
 		padding: 20px 0px;
 	}
     img.sub {
+        object-fit: cover;
         max-width: 30%;
     }
     .amazon_alignment {
@@ -71,6 +72,8 @@
         width: 1000px;
 		max-width: 80vw;
 		line-height: 160%;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 	.alignment {
 		display: flex;
@@ -87,7 +90,7 @@
 		text-align: center;
 	}
 	ul {
-		width: 1000px;
+		width: fit-content;
 		max-width: 80vw;
 		line-height: 160%;
 	}
