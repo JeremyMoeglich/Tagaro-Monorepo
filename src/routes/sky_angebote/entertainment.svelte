@@ -2,7 +2,7 @@
 	import Inklusive from '$lib/site_components/inklusive.svelte';
 	import EntertainmentOverview from '$lib/site_components/packages/overviews/entertainment_overview.svelte';
 	import EntertainmentSenders from '$lib/site_components/packages/senders/entertainment_senders.svelte';
-	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen.svelte';
+	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen/vertragsinfomationen.svelte';
 </script>
 
 <body>

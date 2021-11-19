@@ -8,7 +8,7 @@
 
 <script lang="ts">
 	// @ts-nocheck
-
+	import '../global.scss'
 	import Footer from '$lib/site_components/footer.svelte';
 	import SiteLogo from '$lib/site_components/site_logo.svelte';
 	import * as urls from '$lib/vars/urls';
