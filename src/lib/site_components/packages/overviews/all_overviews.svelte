@@ -8,7 +8,7 @@
 	import LineSpacer from '$lib/site_components/line_spacer.svelte';
 	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
 	import PackageTable from '$lib/site_components/package_table.svelte';
-	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen.svelte';
+	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen/vertragsinfomationen.svelte';
 </script>
 
 <h1>Programmpakete bei Sky</h1>
