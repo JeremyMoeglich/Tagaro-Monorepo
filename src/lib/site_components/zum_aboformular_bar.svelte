@@ -1,13 +1,17 @@
 <script>
 	import Button from '$lib/layout_components/button.svelte';
 	import * as urls from '$lib/vars/urls';
+	import { page } from '$app/stores';
+
+	const chosen_route = $page.path == '/' ? 'https://fd10.formdesk.com/tagaromedienshopgbr/Sky-Bestellung-1' : urls.aboformular 
+
 </script>
 
 <a href={urls.aboformular}>
 	<div class="inner_container">
 		<div class="main_container">
 			<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
-			<Button text="Zum Aboformular" route={urls.aboformular} reversed />
+			<Button text="Zum Aboformular" route={chosen_route} reversed />
 		</div>
 	</div>
 </a>

@@ -12,42 +12,49 @@
 		Hol dir alles von Sky für nur € 42,50 mtl. und Sky schenkt dir einen 32" Toshiba Full HD
 		LED-TV.*
 	</h2>
-	<h3>32" Toshiba Full HD LED-TV 32L3163DAS geschenkt*:</h3>
-	<ul>
-		<li>
-			Perfekte Bilddarstellung dank Full HD TV und HDR: 1080p Bildschirmauflösung für unglaubliche
-			Bilddetails und lebendige Farben
-		</li>
-		<li>
-			Mit Screen Share die schönsten Erinnerungen von Smartphone oder Tablet Fotos direkt auf dem
-			TV-Großbildschirm teilen
-		</li>
-		<li>
-			Smart TV mit beliebten Streaming-Apps wie Netflix, oder Prime Video als Standard eingebaut
-		</li>
-		<li>2x HDMI, 1x USB und Internal WLAN</li>
-		<li>Alexa Built-in und kompatibel mit Google</li>
-	</ul>
-	<h3>Deine Skyinhalte im Detail:</h3>
-	<ul>
-		<li>Filme, Serien und der beste Live-Sport</li>
-		<li>Sky Entertainment und Sky Q immer inklusive</li>
-		<li>Auf Wunsch auch inklusive Netflix</li>
-		<li>Mit der Sky Go App Sky auch von unterwegs erleben</li>
-	</ul>
-	<h3>
-		Du hast schon einen TV? Dann sichere dir alternativ einen Amazon Gutschein im Wert von € 150.
-	</h3>
-	<div class='amazon_alignment'>
-        <ul>
-            <li>Filme, Serien und der beste Live-Sport</li>
-            <li>Sky Entertainment und Sky Q immer inklusive</li>
-            <li>Auf Wunsch auch inklusive Netflix</li>
-            <li>Mit der Sky Go App Sky auch von unterwegs erleben</li>
-            <li>Inklusive Amazon Gutschein im Wert von € 150</li>
-        </ul>
-        <img class="sub" src="/images/visuals/cyberweek/sky_21-11_amazon-karte_16-9_v2.webp" alt="">
-    </div>
+	<div class="outer_box">
+		<h3>32" Toshiba Full HD LED-TV 32L3163DAS geschenkt*:</h3>
+		<ul>
+			<li>
+				Perfekte Bilddarstellung dank Full HD TV und HDR: 1080p Bildschirmauflösung für unglaubliche
+				Bilddetails und lebendige Farben
+			</li>
+			<li>
+				Mit Screen Share die schönsten Erinnerungen von Smartphone oder Tablet Fotos direkt auf dem
+				TV-Großbildschirm teilen
+			</li>
+			<li>
+				Smart TV mit beliebten Streaming-Apps wie Netflix, oder Prime Video als Standard eingebaut
+			</li>
+			<li>2x HDMI, 1x USB und Internal WLAN</li>
+			<li>Alexa Built-in und kompatibel mit Google</li>
+		</ul>
+	</div>
+
+	<div class="outer_box">
+		<h3>Deine Skyinhalte im Detail:</h3>
+		<ul>
+			<li>Filme, Serien und der beste Live-Sport</li>
+			<li>Sky Entertainment und Sky Q immer inklusive</li>
+			<li>Auf Wunsch auch inklusive Netflix</li>
+			<li>Mit der Sky Go App Sky auch von unterwegs erleben</li>
+		</ul>
+	</div>
+	<div class="outer_box">
+		<h3>
+			Du hast schon einen TV? Dann sichere dir alternativ einen Amazon Gutschein im Wert von € 150.
+		</h3>
+		<div class="amazon_alignment">
+			<ul>
+				<li>Filme, Serien und der beste Live-Sport</li>
+				<li>Sky Entertainment und Sky Q immer inklusive</li>
+				<li>Auf Wunsch auch inklusive Netflix</li>
+				<li>Mit der Sky Go App Sky auch von unterwegs erleben</li>
+				<li>Inklusive Amazon Gutschein im Wert von € 150</li>
+			</ul>
+			<img class="sub" src="/images/visuals/cyberweek/sky_21-11_amazon-karte_16-9_v2.webp" alt="" />
+		</div>
+	</div>
 </div>
 
 <style lang="scss">
@@ -62,19 +69,18 @@
 		width: 1000px;
 		padding: 20px 0px;
 	}
-    img.sub {
-        object-fit: cover;
-        max-width: 30%;
-    }
-    .amazon_alignment {
-        display: flex;
-        justify-content: center;
-        width: 1000px;
-		max-width: 80vw;
-		line-height: 160%;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+	img.sub {
+		max-width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		height: fit-content;
+	}
+	.amazon_alignment {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
 	.alignment {
 		display: flex;
 		flex-direction: column;
@@ -89,9 +95,8 @@
 		width: 1000px;
 		text-align: center;
 	}
-	ul {
-		width: fit-content;
-		max-width: 80vw;
-		line-height: 160%;
+	.outer_box {
+		width: 1000px;
+		max-width: 85vw;
 	}
 </style>
