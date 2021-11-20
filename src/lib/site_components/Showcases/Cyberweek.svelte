@@ -11,10 +11,10 @@
 	/>
 
 	<h2>
-		Hol dir alles von Sky für nur €&nbsp42,50 mtl. und Sky schenkt dir einen 32" Toshiba Full HD
+		Hol dir alles von Sky für nur €<span>&nbsp</span>42,50 mtl. und Sky schenkt dir einen 32" Toshiba Full HD
 		LED-TV.*
 	</h2>
-	<h2 class="bonus">+ €&nbsp20 Bonus zusätzlich </h2>
+	<h2 class="bonus">+ €<span>&nbsp</span>20 Bonus zusätzlich </h2>
 	<div class="outer_box">
 		<h3>32" Toshiba Full HD LED-TV 32L3163DAS geschenkt*:</h3>
 		<ul>
@@ -45,7 +45,7 @@
 	</div>
 	<div class="outer_box">
 		<h3>
-			Du hast schon einen TV? Dann sichere dir alternativ einen Amazon Gutschein im Wert von €&nbsp150.
+			Du hast schon einen TV? Dann sichere dir alternativ einen Amazon Gutschein im Wert von €<span>&nbsp</span>150.
 		</h3>
 		<div class="amazon_alignment">
 			<ul>
@@ -53,8 +53,8 @@
 				<li>Sky Entertainment und Sky Q immer inklusive</li>
 				<li>Auf Wunsch auch inklusive Netflix</li>
 				<li>Mit der Sky Go App Sky auch von unterwegs erleben</li>
-				<li>Inklusive Amazon Gutschein im Wert von €&nbsp150</li>
-				<li>€&nbsp20 Bonus zusätzlich</li>
+				<li>Inklusive Amazon Gutschein im Wert von €<span>&nbsp</span>150</li>
+				<li>€<span>&nbsp</span>20 Bonus zusätzlich</li>
 			</ul>
 			<img class="sub" src="/images/visuals/cyberweek/sky_21-11_amazon-karte_16-9_v2.webp" alt="" />
 		</div>
