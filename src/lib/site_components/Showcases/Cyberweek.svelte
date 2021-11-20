@@ -3,18 +3,20 @@
 </script>
 
 <div class="alignment">
-	<img class="main" src="/images/visuals/cyberweek/sky_21-11_cyberweek_home_text_s.webp" alt="" />
-	
+	<a href="https://fd10.formdesk.com/tagaromedienshopgbr/Sky-Bestellung-1">
+		<img class="main" src="/images/visuals/cyberweek/sky_21-11_cyberweek_home_text_s.webp" alt="" />
+
+	</a>
+	<h2>
+		Hol dir alles von Sky für nur €<span>&nbsp</span>42,50 mtl. und Sky schenkt dir einen 32" Toshiba Full HD
+		LED-TV. + €<span>&nbsp</span>20 Bonus zusätzlich von uns*
+	</h2>
 	<Button
 		text="Jetzt Bestellen"
 		route="https://fd10.formdesk.com/tagaromedienshopgbr/Sky-Bestellung-1"
 	/>
 
-	<h2>
-		Hol dir alles von Sky für nur €<span>&nbsp</span>42,50 mtl. und Sky schenkt dir einen 32" Toshiba Full HD
-		LED-TV.*
-	</h2>
-	<h2 class="bonus">+ €<span>&nbsp</span>20 Bonus zusätzlich </h2>
+	
 	<div class="outer_box">
 		<h3>32" Toshiba Full HD LED-TV 32L3163DAS geschenkt*:</h3>
 		<ul>
@@ -54,7 +56,7 @@
 				<li>Auf Wunsch auch inklusive Netflix</li>
 				<li>Mit der Sky Go App Sky auch von unterwegs erleben</li>
 				<li>Inklusive Amazon Gutschein im Wert von €<span>&nbsp</span>150</li>
-				<li>€<span>&nbsp</span>20 Bonus zusätzlich</li>
+				<li>€<span>&nbsp</span>20 Bonus zusätzlich von uns</li>
 			</ul>
 			<img class="sub" src="/images/visuals/cyberweek/sky_21-11_amazon-karte_16-9_v2.webp" alt="" />
 		</div>
@@ -72,9 +74,10 @@
 		max-width: 90vw;
 		width: 1000px;
 		padding: 20px 0px;
-	}
-	.bonus {
-		margin: 0px;
+		transition-duration: 200ms;
+		&:hover {
+			transform: scale(105%);
+		}
 	}
 	img.sub {
 		max-width: 50%;
