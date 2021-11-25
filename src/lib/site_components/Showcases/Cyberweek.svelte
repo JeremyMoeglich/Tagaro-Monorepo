@@ -4,7 +4,7 @@
 
 <div class="alignment">
 	<a href="https://fd10.formdesk.com/tagaromedienshopgbr/Sky-Bestellung-1">
-		<img class="main" src="/images/visuals/cyberweek/sky_21-11_cyberweek_home_text_s.webp" alt="" />
+		<img class="main" src="/images/visuals/cyberweek/sky_21-11_cyberweek_home_text_l_v3.webp" alt="" />
 
 	</a>
 	<h2>
