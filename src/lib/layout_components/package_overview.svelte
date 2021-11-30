@@ -22,7 +22,7 @@
 			</ul>
 			{#if detailed}
 				<slot />
-				<img class="badge" src="/images/badges/1monatgratis.png" alt="">
+				<!-- <img class="badge" src="/images/badges/1monatgratis.png" alt=""> -->
 			{/if}
 		</div>
 
