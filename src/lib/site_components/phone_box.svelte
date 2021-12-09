@@ -1,6 +1,6 @@
 <div class="alignment">
 	<img src="/images/icons/phone.svg" alt="Telefonnummer:" class="phone_icon" />
-	<p class="number"><a class="number" href="tel:06443-819427">06443 - 819 427</a></p>
+	<p class="number"><a class="number" href="tel:06443-9874699">06443-9874699</a></p>
 	<div class="hover_align_relative">
 		<img class="hover_show" src="/images/icons/clock.svg" alt="Öffnungzeiten" />
 		<div class="hover_container">
