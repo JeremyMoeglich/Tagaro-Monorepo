@@ -1,9 +1,8 @@
 <script>
 	import Button from '$lib/layout_components/button.svelte';
 	import * as urls from '$lib/vars/urls';
-	import { page } from '$app/stores';
 
-	const chosen_route = $page.path == '/' ? 'https://fd10.formdesk.com/tagaromedienshopgbr/Sky-Bestellung-1' : urls.aboformular 
+	const chosen_route = urls.aboformular 
 
 </script>
 

@@ -14,7 +14,7 @@
 
 		<p>
 			Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR,
-			Bachstr. 61, 35614 Aßlar, E-Mail info(at)tagaro.de, Telefon (06443) 819 427, Fax (0321) 2111
+			Bachstr. 61, 35614 Aßlar, E-Mail info(at)tagaro.de, Telefon (06443) 9874699, Fax (0321) 2111
 			6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax
 			oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können
 			dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.

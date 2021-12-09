@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
 	export let title: string;
 	export let points: Array<string>;
 	export let image: string = undefined;
@@ -43,10 +43,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-	.badge {
-		width: 150px;
-		max-width: 95vw;
-	}
+	
 	.title,
 	.description :global(h3) {
 		@include gradient-text;
