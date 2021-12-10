@@ -7,8 +7,8 @@
 
 <body>
 	<MainShowcase />
-	<AngeboteRotator /> -->
-	<SchnellSkyAbonnieren /> -->
+	<AngeboteRotator />
+	<SchnellSkyAbonnieren />
 	<Vertragsinfomationen />
 </body>
 

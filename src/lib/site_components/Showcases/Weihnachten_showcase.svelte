@@ -95,8 +95,8 @@
 
 
 	.showcased_image {
-		width: 95%;
-        max-width: 1000px;
+		width: 80%;
+        max-width: 900px;
         transition-duration: 1s;
         &:hover {
             transform: scale(103%);
