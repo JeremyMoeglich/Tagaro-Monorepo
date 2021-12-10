@@ -26,7 +26,7 @@
 			<p>
 				1.2 Verantwortlicher für die Datenverarbeitung auf dieser Website im Sinne der
 				Datenschutz-Grundverordnung (DSGVO) ist die TAGARO Medienshop - Möglich & Möglich GbR,
-				Bachstr. 61, 35614 Asslar-Werdorf, Deutschland, Tel.: 06443-9874699, Fax: 0321 21116558,
+				Bachstr. 61, 35614 Asslar-Werdorf, Deutschland, Tel.: 02381-9874699, Fax: 0321 21116558,
 				E-Mail: info@tagaro.de. Der für die Verarbeitung von personenbezogenen Daten Verantwortliche
 				ist diejenige natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
 				die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
