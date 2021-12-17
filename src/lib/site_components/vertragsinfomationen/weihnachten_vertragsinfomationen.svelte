@@ -12,45 +12,42 @@
 			</p>
 			<p>Sie Erhalten</p>
 			<ul>
-				<li>- Sky Entertainment für mtl. € 14,50 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 20,00</li>
+				<li>Sky Entertainment für € 14,50 mtl. im 12-Monats-Abo</li>
+				<b>in Kombination mit</b>
+				<li>Sky Sport € 20 mtl. im 12-Monats-Abo (+ € 50 Gutschrift von Sky)</li>
+				<li>Sky Cinema € 24,50 mtl. im 12-Monats-Abo (+ € 50 Gutschrift von Sky)</li>
+				<li>Sky Fußball-Bundesliga € 27 mtl. im 12-Monats-Abo (+ € 50 Gutschrift von Sky)</li>
+				<li>Sky Sport + Sky Cinema € 30 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von Sky)</li>
 				<li>
-					- Sky Fußball-Bundesliga mtl. € 27,00 (Aktion: Inklusive 6 Monate Sport-Paket gratis)
-				</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 30,00</li>
-				<li>
-					- Sky Sport + Sky Fußball-Bundesliga mtl. € 27 für die ersten 6 Monate, danach mtl. €
-					32,50 (Aktion: Die ersten 6 Monate Sport-Paket geschenkt)
-				</li>
-				<li>
-					- Sky Cinema + Sky Fußball-Bundesliga mtl. € 37,00 (Aktion: Inklusive 6 Monate Sport-Paket
-					gratis)
+					Sky Sport + Sky Fußball-Bundesliga € 32,50 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von
+					Sky)
 				</li>
 				<li>
-					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 37,00 (Aktion: Inklusive 12
-					Monate Sport-Paket gratis)
+					Sky Cinema + Sky Fußball-Bundesliga € 37 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von
+					Sky)
+				</li>
+				<li>
+					Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 42,50 mtl. im 12-Monats-Abo (+ € 100
+					Gutschrift von Sky)
 				</li>
 			</ul>
 			<ul>
-				<li>- Sky Ultimate TV mit Entertainment inkl. Netflix mtl. € 20,00 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 25,00</li>
-				<li>- Sky Cinema mtl. € 30,00</li>
+				<li>Sky Entertainment Plus für € 20 mtl. im 12-Monats-Abo (+ € 50 Gutschrift von Sky)</li>
+				<b>in Kombination mit</b>
+				<li>Sky Sport € 25,50 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von Sky)</li>
+				<li>Sky Cinema € 30 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von Sky)</li>
+				<li>Sky Fußball-Bundesliga € 32,50 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von Sky)</li>
+				<li>Sky Sport + Sky Cinema € 35,50 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von Sky)</li>
 				<li>
-					- Sky Fußball-Bundesliga mtl. € 32,50 (Aktion: Inklusive 6 Monate Sport-Paket gratis)
-				</li>
-				<li>- Sky Kids mtl. € 25,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 35,50</li>
-				<li>
-					- Sky Sport + Sky Fußball-Bundesliga mtl. € 32,50 für die ersten 6 Monate, danach mtl. €
-					38 (Aktion: Die ersten 6 Monate Sport-Paket geschenkt)
+					Sky Sport + Sky Fußball-Bundesliga € 38 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von Sky)
 				</li>
 				<li>
-					- Sky Cinema + Sky Fußball-Bundesliga mtl. € 42,50 (Aktion: Inklusive 12 Monate
-					Sport-Paket gratis)
+					Sky Cinema + Sky Fußball-Bundesliga € 42,50 mtl. im 12-Monats-Abo (+ € 100 Gutschrift von
+					Sky)
 				</li>
 				<li>
-					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 42,50 (Aktion: Inklusive 12
-					Monate Sport-Paket gratis)
+					Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 48 mtl. im 12-Monats-Abo (+ € 100
+					Gutschrift von Sky)
 				</li>
 			</ul>
 			<p>
@@ -116,6 +113,17 @@
 			</ul>
 		</div>
 		<div>
+			<h3>Bis zu € 100 Cashback von Sky:</h3>
+			<p>
+				Bei der Buchung von mindestens Sky Entertainment + 1 Paket oder Entertainment Plus wird eine
+				einmalige Gutschrift in Höhe von € 50 bzw. bei Buchung von mindestens Sky Entertainment + 2
+				Pakete oder Entertainment Plus + 1 Paket eine einmalige Gutschrift in Höhe von € 100 auf den
+				monatlichen Abonnement Preis während der Mindestvertragslaufzeit gewährt. Die Gutschrift
+				wird anteilig auf den monatlichen Abonnementpreis beginnend mit den ersten vollen Monat der
+				Mindestvertragslaufzeit verrechnet. Keine Barauszahlung möglich.
+			</p>
+		</div>
+		<!-- <div>
 			<h3>Sky Sport Paket inklusive:</h3>
 			<p>
 				Bei der Buchung von mindestens Sky Entertainment + Sky Fußball-Bundesliga ist das Sky Sport
@@ -133,7 +141,7 @@
 				auf den monatlichen Abonnementpreis beginnend mit dem ersten vollen Monat der
 				Mindestvertragslaufzeit.
 			</p>
-		</div>
+		</div> -->
 		<!-- <div>
 			<h3>Amazon Gutschein von Sky:</h3>
 			<p>

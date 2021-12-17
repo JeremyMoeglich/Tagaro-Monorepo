@@ -9,7 +9,8 @@
 		//'<b>+ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b>'
 		//'<b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b>'
 		//'<b>+ Bis 31.12.21 keine Abogebühren durch Sky</b>'
-		'<b>+ Sky Winteraktion: Bis zu 12 Monate Sky Sport gratis dazu</b>'
+		//'<b>+ Sky Winteraktion: Bis zu 12 Monate Sky Sport gratis dazu</b>',
+		'<b>+ Bis zu € 100 Gutschrift von Sky</b>'
 	];
 	const optional = 'Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte'
 	const components = [
