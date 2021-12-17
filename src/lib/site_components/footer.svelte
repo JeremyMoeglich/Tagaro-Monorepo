@@ -24,7 +24,7 @@
 			Per E-Mail 24 Stunden lang
 		</p>
 		<p>
-			<a href="tel:06443-9874699">Telefon: 06443-9874699</a> <br />
+			<a href="tel:02381-9874699">Telefon: 02381-9874699</a> <br />
 			Fax: 0321 - 2111 6558 <br />
 			<a href="mailto://info@tagaro.de">E-Mail: info@tagaro.de</a>
 		</p>
