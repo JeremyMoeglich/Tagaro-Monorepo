@@ -68,51 +68,6 @@
 			</ul>
 		</div>
 		<div>
-			<h3>Laufzeit und Preise bei Verlängerung:</h3>
-
-			<p>
-				Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
-				Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten
-				automatisch jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem
-				Monat zum Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende
-				Preise:
-			</p>
-			<ul>
-				<li>- Sky Entertainment für mtl. € 17 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 25,00</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 32,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 37,50</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 40,00</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 44,50</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 52,50</li>
-			</ul>
-
-			<ul>
-				<li>- Sky Ultimate TV mit Entertainment inkl. Netflix mtl. € 25,00 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 33,00</li>
-				<li>- Sky Cinema mtl. € 37,50</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 40,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 45,50</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 48,00;</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 52,50;</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 60,50</li>
-			</ul>
-
-			<p>Zzgl. bei Buchung von:</p>
-			<ul>
-				<li>- UHD mtl. € 5,00 (für Sat oder Kabel-Empfang)</li>
-				<li>- DAZN jährlich für € 12,50 mtl. oder DAZN monatlich für € 14,99 mtl.</li>
-				<li>
-					- Multiscreen für € 10,00 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver
-					für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
-				</li>
-				<li>- Netflix Standard-Abo, HD/2 Streams (+ € 5 mtl.)</li>
-				<li>- Netflix Premium-Abo, UHD/4 Streams (+ € 10 mtl.)</li>
-				<li>- trendSports mtl. € 5,99</li>
-				<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
-			</ul>
-		</div>
-		<div>
 			<h3>Bis zu € 100 Cashback von Sky:</h3>
 			<p>
 				Bei der Buchung von mindestens Sky Entertainment + 1 Paket oder Entertainment Plus wird eine
@@ -123,6 +78,28 @@
 				Mindestvertragslaufzeit verrechnet. Keine Barauszahlung möglich.
 			</p>
 		</div>
+		<div>
+			<h3>Laufzeit und Preise bei Verlängerung:</h3>
+
+			<p>
+				Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
+				Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten
+				automatisch jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem
+				Monat zum Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende
+				Preise:
+			</p>
+			<p>
+				Sky Entertainment für mtl. € 17 in Kombination mit Sky Sport mtl. € 25; Sky
+				Fußball-Bundesliga mtl. € 32; Sky Sport + Sky Cinema mtl. € 37,50; Sky Sport + Sky
+				Fußball-Bundesliga mtl. € 40; Sky Cinema + Sky Fußball-Bundesliga mtl. € 44,50; Sky Sport +
+				Sky Cinema + Sky Fußball-Bundesliga mtl. € <br/>br>52,50 Sky Ultimate TV mit Entertainment inkl.
+				Netflix mtl. € 25 in Kombination mit Sky Sport mtl. € 33; Sky Cinema mtl. € 37,50; Sky
+				Fußball-Bundesliga mtl. € 40; Sky Sport + Sky Cinema mtl. € 45,50; Sky Sport + Sky
+				Fußball-Bundesliga mtl. € 48; Sky Cinema + Sky Fußball-Bundesliga mtl. € 52,50; Sky Sport +
+				Sky Cinema + Sky Fußball-Bundesliga mtl. € 60,50
+			</p>
+		</div>
+		
 		<!-- <div>
 			<h3>Sky Sport Paket inklusive:</h3>
 			<p>

@@ -22,7 +22,7 @@
 			</ul>
 			{#if detailed}
 				<slot />
-				<!-- <img class="badge" src="/images/badges/1monatgratis.png" alt=""> -->
+				<img class="badge" src="/images/badges/sky_100_cashback.webp" alt="">
 			{/if}
 		</div>
 
@@ -43,7 +43,10 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-	
+	.badge {
+		width: 300px;
+		margin-top: 20px;
+	}
 	.title,
 	.description :global(h3) {
 		@include gradient-text;
