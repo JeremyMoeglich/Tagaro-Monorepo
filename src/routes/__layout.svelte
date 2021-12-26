@@ -53,15 +53,9 @@
 		},
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
-		Shops: (function () {
-			let shops_dict = { index: '/shops' };
-			urls.shops.forEach((shop) => {
-				shops_dict[shop.name + ' Shop'] = shop.route;
-			});
-			return shops_dict;
-		})(),
 		Kontakt: '/kontakt'
 	};
+	navbar_elements[urls.ebay.name + ' 🡆'] = urls.ebay.route
 
 	let y;
 
