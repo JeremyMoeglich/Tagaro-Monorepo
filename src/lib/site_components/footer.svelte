@@ -60,7 +60,7 @@
 		</div>
 	{/if}
 </div>
-<p class="copyright">© 2021 - TAGARO Medienshop Möglich & Möglich GbR</p>
+<p class="copyright">© 2022 - TAGARO Medienshop Möglich & Möglich GbR</p>
 
 <style lang="scss">
 	.side_alignment {
