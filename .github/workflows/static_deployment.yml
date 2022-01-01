@@ -13,14 +13,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: latest
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+              
+      - name: Use Node.js 17.x
         uses: actions/setup-node@v1
         with:
-          node-version: 16.x
+          node-version: 17.x
       
       - name: build
         run: |
-          npm install
           npm run build:static
         
       - name: copy
