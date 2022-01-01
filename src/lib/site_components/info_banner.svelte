@@ -4,7 +4,7 @@
 	import Cookies from 'js-cookie';
 	import lodash from 'lodash';
 	import * as cookie_keys from '$lib/vars/cookie_data';
-	import { page } from '$app/stores';
+	import { url } from '$app/stores';
 
 	function IsJsonString(str) {
 		try {
@@ -16,7 +16,8 @@
 	}
 
 	const disabled_routes = ['/service'];
-	$: banner_enabled = !disabled_routes.some((element) => $page.path.startsWith(element));
+	export let route;
+	$: banner_enabled = !disabled_routes.some((element) => route.startsWith(element));
 
 	function GetPrefrenceObj(): { [key: string]: boolean | undefined } {
 		const original_cookie_json = Cookies.get('preferences');
@@ -49,6 +50,8 @@
 	let accept_obj: { [key: string]: boolean } = GetPrefrenceObj();
 
 	export let preferences_object = accept_obj;
+	
+
 	$: preferences_object = lodash.cloneDeep(accept_obj);
 
 	$: banner_enabled

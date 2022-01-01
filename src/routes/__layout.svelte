@@ -1,7 +1,7 @@
 <script context="module">
-	export const load = async ({ page }) => ({
+	export const load = async ({ url }) => ({
 		props: {
-			key: page.path
+			route: url.pathname
 		}
 	});
 </script>
@@ -12,12 +12,13 @@
 	import Footer from '$lib/site_components/footer.svelte';
 	import SiteLogo from '$lib/site_components/site_logo.svelte';
 	import * as urls from '$lib/vars/urls';
-	import { page } from '$app/stores';
+	import { url } from '$app/stores';
 	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	import PhoneBox from '$lib/site_components/phone_box.svelte';
 	import { browser } from '$app/env';
 	import { fly } from 'svelte/transition';
 	import InfoBanner from '$lib/site_components/info_banner.svelte';
+	import { url } from '$app/stores'
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -65,7 +66,6 @@
 		if (mobile_slider_value === 0) {
 			mobile_slider_value = 80;
 			is_shown = true;
-			console.log('open');
 		}
 	}
 	function close_sidebar() {
@@ -74,15 +74,13 @@
 			setTimeout(function () {
 				is_shown = false;
 			}, 300);
-			console.log('close');
 		}
 	}
 	function deselect() {
 		selected = undefined;
-		console.log('deselected');
 	}
 
-	export let key;
+	export let route;
 </script>
 
 <svelte:head>
@@ -156,7 +154,7 @@
 										{#if 'index' in pair[1]}
 											<a
 												class={`nav_element nav_element_hover ${
-													$page.path === pair[1]['index'] ? 'current_route' : ''
+													route === pair[1]['index'] ? 'current_route' : ''
 												}`}
 												href={pair[1]['index']}
 												title={pair[0] + ' öffnen'}
@@ -172,7 +170,7 @@
 										<a
 											title={pair[0] + ' öffnen'}
 											class={`nav_element nav_element_hover ${
-												$page.path === pair[1] ? 'current_route' : ''
+												route === pair[1] ? 'current_route' : ''
 											}`}
 											href={pair[1]}
 										>
@@ -244,7 +242,7 @@
 			</div>
 
 			<div class="page">
-				<PageTransition refresh={key}>
+				<PageTransition refresh={route}>
 					<slot />
 				</PageTransition>
 			</div>
@@ -325,7 +323,7 @@
 			/>
 		{/if}
 	</div>
-	<InfoBanner bind:preferences_object />
+	<InfoBanner bind:preferences_object bind:route/>
 </body>
 
 <svelte:window bind:scrollY={y} />
