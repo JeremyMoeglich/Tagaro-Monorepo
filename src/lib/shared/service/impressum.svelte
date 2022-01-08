@@ -19,8 +19,8 @@
 		<p>
 			TAGARO Medienshop <br />
 			Möglich & Möglich GbR <br />
-			Bachstraße 61 <br />
-			D-35614 Asslar-Werdorf
+			Großer Sandweg 32 <br />
+			59065 Hamm, Deutschland
 		</p>
 
 		<h2>Finanzamt</h2>

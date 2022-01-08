@@ -188,7 +188,7 @@
 
 	<p>
 		Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop - Möglich & Möglich GbR,
-		Bachstr. 61, 35614 Asslar-Werdorf, E-Mail info@tagaro.de, Telefon (02381) 9874699, Fax (0321)
+		Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info@tagaro.de, Telefon (02381) 9874699, Fax (0321)
 		2111 6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax
 		oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür
 		das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
@@ -245,7 +245,7 @@
 
 	<p>
 		Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop - Möglich & Möglich GbR,
-		Bachstr. 61, 35614 Asslar-Werdorf, E-Mail info@tagaro.de, Telefon (02381) 9874699, Fax (0321)
+		Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info@tagaro.de, Telefon (02381) 9874699, Fax (0321)
 		2111 6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax
 		oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
 	</p>
@@ -655,8 +655,8 @@
 		Möglich und Möglich GbR <br />
 		Vertretungsberechtigte Gesellschafter: <br />
 		Jaco Möglich und Gertraud Möglich <br />
-		Bachstraße 61 <br />
-		D-35614 Asslar-Werdorf <br />
+		Großer Sandweg 32 <br />
+		59065 Hamm, Deutschland <br />
 		Telefon: 02381-9874699 <br />
 		Fax: 0321 - 2111 6558 <br />
 		E-Mail: info(at)tagaro.de <br />
