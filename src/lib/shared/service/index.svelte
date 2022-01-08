@@ -19,10 +19,9 @@
 					wir auch exklusive Sky-Abos mit Vorzugspreisen im Angebot, die es so nur bei uns gibt.
 				</p>
 				<p>
-					Im Herzen Hessens, im schönen Wetzlar liegt unsere Agentur, die sich ganz auf die
-					Vermittlung von Sky-Verträgen im Internet spezialisiert hat. Mit persönlicher Betreuung
-					und direkten Ansprechpartnern konnten wir bereits tausende Kunden über die Jahre von
-					unserem Service überzeugen. Schauen Sie sich gerne unsere Bewertungen u.a. bei eBay an.
+					Mit persönlicher Betreuung und direkten Ansprechpartnern konnten wir bereits tausende
+					Kunden über die Jahre von unserem Service überzeugen. Schauen Sie sich gerne unsere
+					Bewertungen u.a. bei eBay an.
 				</p>
 			</div>
 			<div>
