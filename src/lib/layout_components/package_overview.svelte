@@ -22,7 +22,7 @@
 			</ul>
 			{#if detailed}
 				<slot />
-				<img class="badge" src="/images/badges/sky_100_cashback.webp" alt="">
+				<img class="badge" src="/images/badges/50p.png" alt="">
 			{/if}
 		</div>
 
@@ -44,7 +44,7 @@
 		flex-wrap: wrap;
 	}
 	.badge {
-		width: 300px;
+		width: 200px;
 		margin-top: 20px;
 	}
 	.title,

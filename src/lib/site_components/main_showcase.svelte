@@ -5,7 +5,8 @@
 	//import Cyberweek from "./Showcases/Cyberweek.svelte";
 	//import DefaultShowcase from './Showcases/default_showcase.svelte';
 	//import WeihnachtenShowcase from './Showcases/Weihnachten_showcase.svelte';
-	import Euro100 from "./Showcases/Euro100.svelte";
+	//import Euro100 from "./Showcases/Euro100.svelte";
+	import JanuarShowcase from "./Showcases/50JanuarShowcase.svelte";
 </script>
 
-<Euro100 />
+<JanuarShowcase />

@@ -58,24 +58,44 @@
 				Preise:
 			</p>
 			<ul>
-				<li>- Sky Entertainment für mtl. € 17 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 25,00</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 32,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 37,50</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 40,00</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 44,50</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 52,50</li>
+				<li>Sky Entertainment für € 14,50 mtl. im 12-Monats-Abo</li>
+				<li>in Kombination mit</li>
+				<li>Sky Sport € 17,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
+				<li>Sky Cinema € 19,50 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
+				<li>Sky Fußball-Bundesliga € 20,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
+				<li>Sky Sport + Sky Cinema € 22,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
+				<li>
+					Sky Sport + Sky Fußball-Bundesliga € 23,50 mtl. im 12-Monats-Abo (Januar Sale 50%
+					rabattiert)
+				</li>
+				<li>
+					Sky Cinema + Sky Fußball-Bundesliga € 25,75 mtl. im 12-Monats-Abo (Januar Sale 50%
+					rabattiert)
+				</li>
+				<li>
+					Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 28,50 mtl. im 12-Monats-Abo (Januar Sale
+					50% rabattiert)
+				</li>
 			</ul>
 
 			<ul>
-				<li>- Sky Ultimate TV mit Entertainment inkl. Netflix mtl. € 25,00 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 33,00</li>
-				<li>- Sky Cinema mtl. € 37,50</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 40,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 45,50</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 48,00;</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 52,50;</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 60,50</li>
+				<li>Sky Entertainment Plus für € 20 mtl. im 12-Monats-Abo</li>
+				<li>in Kombination mit</li>
+				<li>Sky Sport € 22,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
+				<li>Sky Cinema € 25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
+				<li>Sky Fußball-Bundesliga € 26,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
+				<li>Sky Sport + Sky Cinema € 27,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
+				<li>
+					Sky Sport + Sky Fußball-Bundesliga € 29 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)
+				</li>
+				<li>
+					Sky Cinema + Sky Fußball-Bundesliga € 31,25 mtl. im 12-Monats-Abo (Januar Sale 50%
+					rabattiert)
+				</li>
+				<li>
+					Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 34 mtl. im 12-Monats-Abo (Januar Sale
+					50% rabattiert)
+				</li>
 			</ul>
 
 			<p>Zzgl. bei Buchung von:</p>
@@ -99,17 +119,7 @@
 				Die monatlichen Paketpreise, die das Cinema, Fußball Bundesliga und/oder das Sport Paket
 				enthalten, wurden reduziert. Sie erhalten auf das Cinema, Fußball Bundesliga und/oder das
 				Sport Paket einen Rabatt von 50% auf den monatlichen Betrag während des Jahres-Abos von Sky
-				gewährt. Die reduzierten Monatsbeträge finden Sie in unserem Angebot. Verlängerungspreise
-				sind identisch
-			</p>
-			<h4>Zusätzliche Informationen:</h4>
-			<p>
-				Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse zur
-				Bestellung erforderlich. Bestehende Geräte aus einem bisherigen Sky Vertrag, können in den
-				meisten Fällen nicht übernommen werden. Sie erhalten kostenlos neue Geräte zugesendet und
-				können bestehende Geräte einfach nach Ablauf Ihres Vertrags an Sky retournieren. Der
-				Abobeginn ist bei Sky nicht nach hinten verlegbar. Der Vertrag startet innerhalb von 7 Tagen
-				nach Erhalt der Ware.
+				gewährt. Die reduzierten Monatsbeträge finden Sie in unserem Angebot.
 			</p>
 		</div>
 		<!-- <div>
@@ -336,9 +346,12 @@
 		<div>
 			<h3>Zusätzliche Informationen:</h3>
 			<p>
-				Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse und
-				Bankverbindung zur Bestellung erforderlich. Der Abobeginn ist bei Sky nicht nach hinten
-				verlegbar. Der Vertrag startet innerhalb von 7 Tagen nach Erhalt der Ware.
+				Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse zur
+				Bestellung erforderlich. Bestehende Geräte aus einem bisherigen Sky Vertrag, können in den
+				meisten Fällen nicht übernommen werden. Sie erhalten kostenlos neue Geräte zugesendet und
+				können bestehende Geräte einfach nach Ablauf Ihres Vertrags an Sky retournieren. Der
+				Abobeginn ist bei Sky nicht nach hinten verlegbar. Der Vertrag startet innerhalb von 7 Tagen
+				nach Erhalt der Ware.
 			</p>
 		</div>
 		<div>
