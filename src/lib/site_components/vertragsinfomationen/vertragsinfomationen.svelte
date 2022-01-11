@@ -1,5 +1,5 @@
 <script>
-	import WeihnachtenVertragsinfomationen from './weihnachten_vertragsinfomationen.svelte';
+	import JanuarSale from "./50JanuarSale.svelte";
 </script>
 
-<WeihnachtenVertragsinfomationen />
+<JanuarSale />

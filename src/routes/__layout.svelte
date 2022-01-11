@@ -1,24 +1,25 @@
-<script context="module">
-	export const load = async ({ url }) => ({
-		props: {
-			route: url.pathname
-		}
-	});
+<script context="module" lang="ts">
+	import type { Load } from '@sveltejs/kit';
+	export const load: Load = async ({ url }) => {
+		return {
+			props: {
+				route: url.pathname
+			}
+		};
+	};
 </script>
 
 <script lang="ts">
 	// @ts-nocheck
-	import '../global.scss'
+	import '../global.scss';
 	import Footer from '$lib/site_components/footer.svelte';
 	import SiteLogo from '$lib/site_components/site_logo.svelte';
 	import * as urls from '$lib/vars/urls';
-	import { url } from '$app/stores';
 	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	import PhoneBox from '$lib/site_components/phone_box.svelte';
 	import { browser } from '$app/env';
 	import { fly } from 'svelte/transition';
 	import InfoBanner from '$lib/site_components/info_banner.svelte';
-	import { url } from '$app/stores'
 
 	function clickOutside(node) {
 		const handleClick = (event) => {
@@ -56,7 +57,7 @@
 		'Sky übers Internet': '/sky_q_internet',
 		Kontakt: '/kontakt'
 	};
-	navbar_elements[urls.ebay.name + ' 🡆'] = urls.ebay.route
+	navbar_elements[urls.ebay.name + ' 🡆'] = urls.ebay.route;
 
 	let y;
 
@@ -323,7 +324,7 @@
 			/>
 		{/if}
 	</div>
-	<InfoBanner bind:preferences_object bind:route/>
+	<InfoBanner bind:preferences_object bind:route />
 </body>
 
 <svelte:window bind:scrollY={y} />
