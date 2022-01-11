@@ -102,7 +102,7 @@
 		align-items: center;
 	}
 	.primary {
-		width: 1000px;
+		width: 700px;
 		max-width: 80%;
 	}
 	.primary_align {
