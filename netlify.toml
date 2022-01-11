@@ -1,7 +1,10 @@
 [build]
-  command = "npm run prebuild && pnpm build:netlify"
+  command = "pnpm build:netlify"
   publish = "build/"
 
 [functions]
   directory = "functions"
   node_bundler = "esbuild"
+
+[build.environment]
+    NPM_FLAGS="--prefix=/"
