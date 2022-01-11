@@ -28,7 +28,6 @@ specifiers:
   lodash: ^4.17.21
   mdsvex: ^0.9.8
   object-sizeof: ^1.6.1
-  pnpm: ^6.25.1
   prettier: ~2.2.1
   prettier-plugin-svelte: ^2.5.1
   redis: ^3.1.2
@@ -73,7 +72,6 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.3.0_eslint@7.32.0+svelte@3.45.0
-  pnpm: 6.25.1
   prettier: 2.2.1
   prettier-plugin-svelte: 2.5.1_prettier@2.2.1+svelte@3.45.0
   svelte: 3.45.0
@@ -3323,12 +3321,6 @@ packages:
     resolution: {integrity: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==}
     engines: {node: '>=4.0.0'}
     dev: false
-
-  /pnpm/6.25.1:
-    resolution: {integrity: sha512-/jvwDU8XJ3ntw1fJ5pYGN+nMqxHuXoarajc/95CrAB9+lVfjTJooiOc5BmxT7GrZzcEwdpJKMCdN3yR1ItGFMw==}
-    engines: {node: '>=12.17'}
-    hasBin: true
-    dev: true
 
   /posix-character-classes/0.1.1:
     resolution: {integrity: sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=}
