@@ -37,7 +37,7 @@
 			title: '3 Sky Pakete nach Wahl + € 20 Prämie',
 			image: '/images/wahl/wahl_3aus4.png',
 			points: atr,
-			subtitle: 'ab € 22,50 monatlich* ',
+			subtitle: 'ab € 22,25 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport) ' +
 				optional,

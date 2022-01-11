@@ -10,25 +10,25 @@
 				Angebote gelten mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
 				(anteilig) zzgl. 12 Monaten)
 			</p>
+			
 			<ul>
 				<li>- Sky Entertainment für mtl. € 14,50 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 20,00</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 27,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 30,00</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 32,50</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 37,00</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 42,50</li>
+				<li>- Sky Sport mtl. € 17,25</li>
+				<li>- Sky Fußball-Bundesliga mtl. € 20,75</li>
+				<li>- Sky Sport + Sky Cinema mtl. € 22,25</li>
+				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 25,75</li>
+				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 23,50</li>
+				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 28,50</li>
 			</ul>
 			<ul>
 				<li>- Sky Ultimate TV mit Entertainment inkl. Netflix mtl. € 20,00 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 25,00</li>
-				<li>- Sky Cinema mtl. € 30,00</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 32,50</li>
-				<li>- Sky Kids mtl. € 25,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 35,50</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 38,00</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 42,50</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 48,00</li>
+				<li>- Sky Sport mtl. € 22,75</li>
+				<li>- Sky Cinema mtl. € 25,00</li>
+				<li>- Sky Fußball-Bundesliga mtl. € 26,25</li>
+				<li>- Sky Sport + Sky Cinema mtl. € 27,50</li>
+				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 29,00</li>
+				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 31,25</li>
+				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 34,00</li>
 			</ul>
 			<p>
 				Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von € 29,00 durch Sky.
@@ -49,7 +49,25 @@
 		</div>
 		<div>
 			<h3>Laufzeit und Preise bei Verlängerung:</h3>
-
+			<p>Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
+				Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten automatisch
+				jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem Monat zum
+				Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende Preise: Sky
+				Entertainment für € 14,50 mtl. im 12-Monats-Abo in Kombination mit Sky Sport € 17,25 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema € 19,50 mtl. im 12-Monats-Abo (Januar
+				Sale 50% rabattiert) Sky Fußball-Bundesliga € 20,75 mtl. im 12-Monats-Abo (Januar Sale 50%
+				rabattiert) Sky Sport + Sky Cinema € 22,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)
+				Sky Sport + Sky Fußball-Bundesliga € 23,50 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)
+				Sky Cinema + Sky Fußball-Bundesliga € 25,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)
+				Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 28,50 mtl. im 12-Monats-Abo (Januar Sale 50%
+				rabattiert) Sky Entertainment Plus für € 20 mtl. im 12-Monats-Abo in Kombination mit Sky Sport
+				€ 22,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema € 25 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Fußball-Bundesliga € 26,25 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Cinema € 27,75 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Fußball-Bundesliga € 29 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema + Sky Fußball-Bundesliga € 31,25 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Cinema + Sky Fußball-Bundesliga €
+				34 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</p>
 			<p>
 				Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
 				Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten
@@ -57,60 +75,7 @@
 				Monat zum Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende
 				Preise:
 			</p>
-			<ul>
-				<li>Sky Entertainment für € 14,50 mtl. im 12-Monats-Abo</li>
-				<li>in Kombination mit</li>
-				<li>Sky Sport € 17,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
-				<li>Sky Cinema € 19,50 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
-				<li>Sky Fußball-Bundesliga € 20,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
-				<li>Sky Sport + Sky Cinema € 22,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
-				<li>
-					Sky Sport + Sky Fußball-Bundesliga € 23,50 mtl. im 12-Monats-Abo (Januar Sale 50%
-					rabattiert)
-				</li>
-				<li>
-					Sky Cinema + Sky Fußball-Bundesliga € 25,75 mtl. im 12-Monats-Abo (Januar Sale 50%
-					rabattiert)
-				</li>
-				<li>
-					Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 28,50 mtl. im 12-Monats-Abo (Januar Sale
-					50% rabattiert)
-				</li>
-			</ul>
 
-			<ul>
-				<li>Sky Entertainment Plus für € 20 mtl. im 12-Monats-Abo</li>
-				<li>in Kombination mit</li>
-				<li>Sky Sport € 22,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
-				<li>Sky Cinema € 25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
-				<li>Sky Fußball-Bundesliga € 26,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
-				<li>Sky Sport + Sky Cinema € 27,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</li>
-				<li>
-					Sky Sport + Sky Fußball-Bundesliga € 29 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)
-				</li>
-				<li>
-					Sky Cinema + Sky Fußball-Bundesliga € 31,25 mtl. im 12-Monats-Abo (Januar Sale 50%
-					rabattiert)
-				</li>
-				<li>
-					Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 34 mtl. im 12-Monats-Abo (Januar Sale
-					50% rabattiert)
-				</li>
-			</ul>
-
-			<p>Zzgl. bei Buchung von:</p>
-			<ul>
-				<li>- UHD mtl. € 5,00 (für Sat oder Kabel-Empfang)</li>
-				<li>- DAZN jährlich für € 12,50 mtl. oder DAZN monatlich für € 14,99 mtl.</li>
-				<li>
-					- Multiscreen für € 10,00 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver
-					für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
-				</li>
-				<li>- Netflix Standard-Abo, HD/2 Streams (+ € 5 mtl.)</li>
-				<li>- Netflix Premium-Abo, UHD/4 Streams (+ € 10 mtl.)</li>
-				<li>- trendSports mtl. € 5,99</li>
-				<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
-			</ul>
 		</div>
 		<div>
 			<h3>50% auf Cinema, Fußball Bundesliga und/oder Sport von Sky:</h3>

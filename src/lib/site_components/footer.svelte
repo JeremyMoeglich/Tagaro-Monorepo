@@ -108,9 +108,9 @@
 	}
 	.notice {
 		text-align: center;
-		margin-bottom: 90px;
+		margin-bottom: 10px;
 		font-size: small;
-		color: #949494;
+		color: #d8d8d8;
 		max-width: 80%;
 		width: 1300px;
 		margin-left: auto;
