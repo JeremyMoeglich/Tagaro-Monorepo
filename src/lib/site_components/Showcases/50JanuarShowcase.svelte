@@ -28,7 +28,6 @@
 		<div style="order: 3;" />
 	</div>
 
-	<div style="padding-top:max(1vw, 20px);" />
 	<div class="primary_align">
 		<img class="primary" src="/images/visuals/januar_sale.webp" alt="">
 	</div>
@@ -60,6 +59,7 @@
 		display: flex;
 		justify-content: center;
 		margin: 50px;
+		margin-top: 20px;
 	}
 	.top_header {
 		display: flex;
@@ -82,6 +82,7 @@
 		justify-content: center;
 		align-content: center;
 		align-items: center;
+		margin-top: 10px;
 	}
 
 	.bottom_things {
@@ -165,6 +166,7 @@
 		padding-bottom: 0px;
 		align-self: auto;
 		flex: 1 1 auto;
+		
 	}
 
 	.header_text {

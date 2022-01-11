@@ -110,9 +110,9 @@
 		text-align: center;
 		margin-bottom: 90px;
 		font-size: small;
-		color: #545454;
+		color: #949494;
 		max-width: 80%;
-		width: 500px;
+		width: 1300px;
 		margin-left: auto;
 		margin-right: auto;
 	}
