@@ -82,8 +82,8 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 27,50 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
-				<p>danach € 42,50 mtl. im Monats-Abo</p>
+				<p><b>€ 27,75 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
+				<p>danach € 45,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>

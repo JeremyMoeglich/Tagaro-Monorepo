@@ -19,7 +19,7 @@
 			title: '2 Sky Pakete nach Wahl + € 20 Prämie',
 			image: '/images/wahl/wahl_2aus4.png',
 			points: atr,
-			subtitle: 'ab € 17,50 monatlich* ',
+			subtitle: 'ab € 17,25 monatlich* ',
 			info_text:
 				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport) ' +
 				optional,
@@ -68,7 +68,7 @@
 			title: 'Sky Sport Paket + € 20 Prämie',
 			image: '/images/wahl/wahl_sport.png',
 			points: atr,
-			subtitle: '€ 17,50 monatlich* ',
+			subtitle: '€ 17,25 monatlich* ',
 			info_text: '(im Jahres-Abo, danach € 25 mtl. im Monats-Abo) ' + optional,
 			route: '/sky_angebote/sport'
 		},

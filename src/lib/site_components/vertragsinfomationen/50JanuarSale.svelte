@@ -25,7 +25,7 @@
 				<li>- Sky Sport mtl. € 22,75</li>
 				<li>- Sky Cinema mtl. € 25,00</li>
 				<li>- Sky Fußball-Bundesliga mtl. € 26,25</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 27,50</li>
+				<li>- Sky Sport + Sky Cinema mtl. € 27,75</li>
 				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 29,00</li>
 				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 31,25</li>
 				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 34,00</li>
