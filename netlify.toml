@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm build:netlify || ( npm install pnpm && pnpm build:netlify )"
+  command = "(pnpm install && build:netlify) || ( npm install pnpm && pnpm install && pnpm build:netlify )"
   publish = "build/"
 
 [functions]
