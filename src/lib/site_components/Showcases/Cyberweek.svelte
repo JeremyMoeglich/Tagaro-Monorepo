@@ -4,19 +4,21 @@
 
 <div class="alignment">
 	<a href="https://fd10.formdesk.com/tagaromedienshopgbr/Sky-Bestellung-1">
-		<img class="main" src="/images/visuals/cyberweek/sky_21-11_cyberweek_home_text_l_v3.webp" alt="" />
-
+		<img
+			class="main"
+			src="/images/visuals/cyberweek/sky_21-11_cyberweek_home_text_l_v3.webp"
+			alt=""
+		/>
 	</a>
 	<h2>
-		Hol dir alles von Sky für nur €<span>&nbsp</span>42,50 mtl. und Sky schenkt dir einen 32" Toshiba Full HD
-		LED-TV. + €<span>&nbsp</span>20 Bonus zusätzlich von uns*
+		Hol dir alles von Sky für nur €<span>&nbsp</span>42,50 mtl. und Sky schenkt dir einen 32"
+		Toshiba Full HD LED-TV. + €<span>&nbsp</span>20 Bonus zusätzlich von uns*
 	</h2>
 	<Button
 		text="Jetzt Bestellen"
 		route="https://fd10.formdesk.com/tagaromedienshopgbr/Sky-Bestellung-1"
 	/>
 
-	
 	<div class="outer_box">
 		<h3>32" Toshiba Full HD LED-TV 32L3163DAS geschenkt*:</h3>
 		<ul>
@@ -47,7 +49,9 @@
 	</div>
 	<div class="outer_box">
 		<h3>
-			Du hast schon einen TV? Dann sichere dir alternativ einen Amazon Gutschein im Wert von €<span>&nbsp</span>150.
+			Du hast schon einen TV? Dann sichere dir alternativ einen Amazon Gutschein im Wert von €<span
+				>&nbsp</span
+			>150.
 		</h3>
 		<div class="amazon_alignment">
 			<ul>

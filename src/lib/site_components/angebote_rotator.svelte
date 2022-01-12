@@ -50,7 +50,7 @@
 			points: atr,
 			subtitle: '€ 28,50 monatlich* ',
 			info_text:
-				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport + Bundesliga)  ' +
+				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport + Bundesliga)' +
 				optional,
 			route: '/sky_angebote/4_oder_mehr_pakete'
 		},
@@ -60,7 +60,9 @@
 			image: '/images/wahl/wahl_cinema.png',
 			points: atr,
 			subtitle: '€ 25,00 monatlich* ',
-			info_text: '(im Jahres-Abo, danach €&nbsp;37,50&nbsp;mtl. im Monats-Abo) ' + optional,
+			info_text:
+				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment-Plus + Cinema)' +
+				optional,
 			route: '/sky_angebote/cinema'
 		},
 
@@ -69,7 +71,9 @@
 			image: '/images/wahl/wahl_sport.png',
 			points: atr,
 			subtitle: '€ 17,25 monatlich* ',
-			info_text: '(im Jahres-Abo, danach € 25 mtl. im Monats-Abo) ' + optional,
+			info_text:
+				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport)' +
+				optional,
 			route: '/sky_angebote/sport'
 		},
 
@@ -78,7 +82,9 @@
 			image: '/images/wahl/wahl_bundesliga.png',
 			points: atr,
 			subtitle: '€ 20,75 monatlich* ',
-			info_text: '(im Jahres-Abo, danach € 32,00 mtl. im Monats-Abo) ' + optional,
+			info_text:
+				'(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Bundesliga)' +
+				optional,
 			route: '/sky_angebote/bundesliga'
 		}
 	];

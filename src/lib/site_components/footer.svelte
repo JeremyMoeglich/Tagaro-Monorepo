@@ -61,7 +61,13 @@
 	{/if}
 </div>
 <p class="copyright">© 2022 - TAGARO Medienshop Möglich & Möglich GbR</p>
-<p class="notice">Alle Sky Marken sind Eigentum der Sky International AG und werden von der Sky Deutschland Fernsehen GmbH & Co. KG in Lizenz genutzt. Alle hier verwendeten Namen, Begriffe, Zeichen, Logos und Grafiken können Marken- oder Warenzeichen im Besitze ihrer rechtlichen Eigentümer sein und werden von uns ausschließlich zu Vermittlungs- und Visualisierungszwecken der einzelnen Abonnement-Angebote verwendet.</p>
+<p class="notice">
+	Alle Sky Marken sind Eigentum der Sky International AG und werden von der Sky Deutschland
+	Fernsehen GmbH & Co. KG in Lizenz genutzt. Alle hier verwendeten Namen, Begriffe, Zeichen, Logos
+	und Grafiken können Marken- oder Warenzeichen im Besitze ihrer rechtlichen Eigentümer sein und
+	werden von uns ausschließlich zu Vermittlungs- und Visualisierungszwecken der einzelnen
+	Abonnement-Angebote verwendet.
+</p>
 
 <style lang="scss">
 	.side_alignment {

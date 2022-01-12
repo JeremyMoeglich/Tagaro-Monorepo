@@ -38,7 +38,7 @@ export async function post({ body }) {
 		}
 	});
 	if (is_spam) {
-		console.log('blocked spam')
+		console.log('blocked spam');
 		return {
 			status: 413,
 			body: 'Blocked because Spam'

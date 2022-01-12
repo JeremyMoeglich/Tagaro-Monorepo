@@ -13,9 +13,7 @@
 		</div>
 		<div class="val_break" style="width: 100%;" />
 		<div class="header_text">
-			<h1 class="main_title">
-				Jetzt Sky Wunschpakete buchen
-			</h1>
+			<h1 class="main_title">Jetzt Sky Wunschpakete buchen</h1>
 			<h2 class="subtitle1">Bei Vermittlung über TAGARO zusätzlich mit € 20 Bonus.</h2>
 			<h3 class="subtitle2 to_remove">
 				Wir sind autorisierter Sky Onlinehändler und stehen für eine schnelle & zuverlässige

@@ -18,6 +18,7 @@
 >
 	<h3>12 Monate ab € 30,00 mtl.</h3>
 	<p>
-		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport
+		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema
+		+ Sport
 	</p>
 </PackageOverview>

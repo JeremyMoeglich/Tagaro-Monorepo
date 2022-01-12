@@ -35,7 +35,6 @@
 <DaznOverview />
 <EmptySpacer />
 
-
 <style lang="scss">
 	@import '../../../shared/style/mixins.scss';
 	h1 {

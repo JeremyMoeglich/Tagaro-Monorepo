@@ -1,21 +1,5 @@
 <div style="display:none !important">
-	<input
-		type="checkbox"
-		name="sp_accept"
-		value="1"
-		tabindex="-1"
-		autocomplete="off"
-	/>
-	<input
-		type="email"
-		name="sp_email"
-		tabindex="-1"
-		autocomplete="off"
-	/>
-	<input
-		type="number"
-		name="sp_number"
-		tabindex="-1"
-		autocomplete="off"
-	/>
+	<input type="checkbox" name="sp_accept" value="1" tabindex="-1" autocomplete="off" />
+	<input type="email" name="sp_email" tabindex="-1" autocomplete="off" />
+	<input type="number" name="sp_number" tabindex="-1" autocomplete="off" />
 </div>

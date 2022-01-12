@@ -39,8 +39,8 @@
 	</p>
 
 	<p>
-		1.5 Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage ist,
-		haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke
+		1.5 Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage
+		ist, haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke
 		sämtliche Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.
 	</p>
 
@@ -188,10 +188,11 @@
 
 	<p>
 		Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop - Möglich & Möglich GbR,
-		Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info@tagaro.de, Telefon (02381) 9874699, Fax (0321)
-		2111 6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax
-		oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür
-		das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
+		Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info@tagaro.de, Telefon (02381) 9874699, Fax
+		(0321) 2111 6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief,
+		Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie
+		können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben
+		ist.
 	</p>
 
 	<p>
@@ -245,9 +246,9 @@
 
 	<p>
 		Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop - Möglich & Möglich GbR,
-		Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info@tagaro.de, Telefon (02381) 9874699, Fax (0321)
-		2111 6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax
-		oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
+		Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info@tagaro.de, Telefon (02381) 9874699, Fax
+		(0321) 2111 6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief,
+		Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
 	</p>
 
 	<p>
@@ -516,7 +517,9 @@
 		Deutschland Fernsehen GmbH & Co. KG“ und dient dem Zweck, allen interessierten Neu- und
 		Bestandskunden von Sky, Abonnements von Sky zu vermitteln. Informationen zur Vertragsaufnahme
 		und der Vermittlung, finden Sie im Abschnitt „5) Datenverarbeitung zur Bestellabwicklung“ im
-		Bereich Datenschutz unter: <a href='/service/datenschutz'>https://www.tagaro.de/service/datenschutz</a>
+		Bereich Datenschutz unter: <a href="/service/datenschutz"
+			>https://www.tagaro.de/service/datenschutz</a
+		>
 	</p>
 
 	<p>

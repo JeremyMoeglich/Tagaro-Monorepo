@@ -50,7 +50,6 @@
 	let accept_obj: { [key: string]: boolean } = GetPrefrenceObj();
 
 	export let preferences_object = accept_obj;
-	
 
 	$: preferences_object = lodash.cloneDeep(accept_obj);
 

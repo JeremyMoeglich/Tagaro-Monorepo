@@ -40,7 +40,7 @@
 				✓ Bei Buchung des Fußball Bundesliga Pakets das Sport Paket 6 Monate gratis*
 			</p>
 			<p>✓ Bei Buchung von Cinema und Fußball Bundesliga das Sport Paket 12 Monate gratis*</p>
-            <p>✓ € 20 Bonus und versandkostenfreie Vermittlung*</p>
+			<p>✓ € 20 Bonus und versandkostenfreie Vermittlung*</p>
 		</div>
 		<a href={urls.aboformular}
 			><img alt="" src="/images/badges/mtlkuendbar.png" class="bottom_icon" /></a
@@ -93,22 +93,20 @@
 		align-items: center;
 	}
 
-
 	.showcased_image {
 		width: 80%;
-        max-width: 900px;
-        transition-duration: 1s;
-        &:hover {
-            transform: scale(103%);
-        }
+		max-width: 900px;
+		transition-duration: 1s;
+		&:hover {
+			transform: scale(103%);
+		}
 	}
 	.showcase_alignment {
 		display: flex;
 		align-items: center;
-        padding: 20px 0px;
+		padding: 20px 0px;
 		flex-direction: column;
 	}
-
 
 	.subtitle1 {
 		color: #4a4a4a;
@@ -148,9 +146,6 @@
 	h1 {
 		font-size: 25pt;
 	}
-
-
-
 
 	@media only screen and (min-width: 900px) {
 		.val_break {

@@ -17,8 +17,8 @@
 			</p>
 			<p>
 				Sie möchten gerne persönlich mit uns sprechen? Wir sind Montag bis Freitag von 10:00 bis
-				18:00 Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne
-				mittels Rückruf, wenn sie uns Ihren Kontaktwunsch mitteilen.
+				18:00 Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne mittels Rückruf, wenn sie uns
+				Ihren Kontaktwunsch mitteilen.
 			</p>
 			<ul>
 				<li><b>Telefon: </b>02381-9874699</li>

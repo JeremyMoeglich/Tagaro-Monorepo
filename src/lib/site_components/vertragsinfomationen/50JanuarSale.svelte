@@ -10,7 +10,7 @@
 				Angebote gelten mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
 				(anteilig) zzgl. 12 Monaten)
 			</p>
-			
+
 			<ul>
 				<li>- Sky Entertainment für mtl. € 14,50 in Kombination mit</li>
 				<li>- Sky Sport mtl. € 17,25</li>
@@ -49,25 +49,28 @@
 		</div>
 		<div>
 			<h3>Laufzeit und Preise bei Verlängerung:</h3>
-			<p>Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
-				Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten automatisch
-				jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem Monat zum
-				Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende Preise: Sky
-				Entertainment für € 14,50 mtl. im 12-Monats-Abo in Kombination mit Sky Sport € 17,25 mtl. im
-				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema € 19,50 mtl. im 12-Monats-Abo (Januar
-				Sale 50% rabattiert) Sky Fußball-Bundesliga € 20,75 mtl. im 12-Monats-Abo (Januar Sale 50%
-				rabattiert) Sky Sport + Sky Cinema € 22,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)
-				Sky Sport + Sky Fußball-Bundesliga € 23,50 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)
-				Sky Cinema + Sky Fußball-Bundesliga € 25,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)
-				Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 28,50 mtl. im 12-Monats-Abo (Januar Sale 50%
-				rabattiert) Sky Entertainment Plus für € 20 mtl. im 12-Monats-Abo in Kombination mit Sky Sport
-				€ 22,75 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema € 25 mtl. im
-				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Fußball-Bundesliga € 26,25 mtl. im
-				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Cinema € 27,75 mtl. im
-				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Fußball-Bundesliga € 29 mtl. im
-				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema + Sky Fußball-Bundesliga € 31,25 mtl. im
-				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Cinema + Sky Fußball-Bundesliga €
-				34 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert)</p>
+			<p>
+				Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
+				Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten
+				automatisch jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem
+				Monat zum Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende
+				Preise: Sky Entertainment für € 14,50 mtl. im 12-Monats-Abo in Kombination mit Sky Sport €
+				17,25 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema € 19,50 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Fußball-Bundesliga € 20,75 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Cinema € 22,25 mtl. im
+				12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Fußball-Bundesliga € 23,50 mtl.
+				im 12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema + Sky Fußball-Bundesliga € 25,75
+				mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert) Sky Sport + Sky Cinema + Sky
+				Fußball-Bundesliga € 28,50 mtl. im 12-Monats-Abo (Januar Sale 50% rabattiert) Sky
+				Entertainment Plus für € 20 mtl. im 12-Monats-Abo in Kombination mit Sky Sport € 22,75 mtl.
+				im 12-Monats-Abo (Januar Sale 50% rabattiert) Sky Cinema € 25 mtl. im 12-Monats-Abo (Januar
+				Sale 50% rabattiert) Sky Fußball-Bundesliga € 26,25 mtl. im 12-Monats-Abo (Januar Sale 50%
+				rabattiert) Sky Sport + Sky Cinema € 27,75 mtl. im 12-Monats-Abo (Januar Sale 50%
+				rabattiert) Sky Sport + Sky Fußball-Bundesliga € 29 mtl. im 12-Monats-Abo (Januar Sale 50%
+				rabattiert) Sky Cinema + Sky Fußball-Bundesliga € 31,25 mtl. im 12-Monats-Abo (Januar Sale
+				50% rabattiert) Sky Sport + Sky Cinema + Sky Fußball-Bundesliga € 34 mtl. im 12-Monats-Abo
+				(Januar Sale 50% rabattiert)
+			</p>
 			<p>
 				Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
 				Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten
@@ -75,7 +78,6 @@
 				Monat zum Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende
 				Preise:
 			</p>
-
 		</div>
 		<div>
 			<h3>50% auf Cinema, Fußball Bundesliga und/oder Sport von Sky:</h3>
