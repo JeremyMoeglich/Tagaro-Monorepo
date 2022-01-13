@@ -4,7 +4,7 @@
 	import Cookies from 'js-cookie';
 	import lodash from 'lodash';
 	import * as cookie_keys from '$lib/vars/cookie_data';
-	import { url } from '$app/stores';
+	import type { JSONString } from '@sveltejs/kit/types/helper';
 
 	function IsJsonString(str) {
 		try {
@@ -21,9 +21,9 @@
 
 	function GetPrefrenceObj(): { [key: string]: boolean | undefined } {
 		const original_cookie_json = Cookies.get('preferences');
-		let return_object = { Essentiell: true };
+		let return_object: Record<string, boolean> = { Essentiell: true };
 		if (original_cookie_json && IsJsonString(original_cookie_json)) {
-			let object: any = JSON.parse(original_cookie_json);
+			let object: Record<string, boolean> = JSON.parse(original_cookie_json);
 			if (Object.values(object).every((key) => typeof key == 'boolean')) {
 				return_object = object;
 			}
@@ -50,7 +50,6 @@
 	let accept_obj: { [key: string]: boolean } = GetPrefrenceObj();
 
 	export let preferences_object = accept_obj;
-	
 
 	$: preferences_object = lodash.cloneDeep(accept_obj);
 
@@ -135,7 +134,7 @@
 				<b>Widerrufsrecht für Sky Verträge</b><br /><br /> 
 				Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Sky Vertrag zu widerrufen. <br/><br/>
 				Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses. <br/><br/>
-				Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR, Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info@tagaro.de, Telefon 02381-9874699, Fax 0321 21116558 mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. <br/><br/>
+				Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop - Möglich & Möglich GbR, Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info@tagaro.de, Telefon 02381-9874699, Fax 0321 21116558 mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. <br/><br/>
 				Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Sie können das Muster-Widerrufsformular oder eine andere eindeutige Erklärung auch auf unserer Webseite https://www.tagaro.de elektronisch ausfüllen und übermitteln. Machen Sie von dieser Möglichkeit Gebrauch, so werden wir Ihnen unverzüglich (z. B. per E-Mail) eine Bestätigung über den Eingang eines solchen Widerrufs übermitteln. <br/><br/>
 				Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden. <br/>
 				Folgen des Widerrufs <br/><br/>
@@ -223,10 +222,10 @@
 			<p>
 				Die TAGARO Medienshop - Möglich & Möglich GbR nimmt keine Schreiben von Kündigungen,
 				Streitigkeiten, Änderungen von Bankverbindungen oder vorzeitigen Vertragsauflösungen (im
-				Sterbefall) entgegen.
+				Sterbefall) entgegen.
 			</p>
 
-			<p>Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage ist, haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke sämtliche Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.</p>
+			<p>Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage ist, haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke sämtliche Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.</p>
 
 			<b>Post-Anschrift von Sky:</b><br />
 			<p>
@@ -237,7 +236,7 @@
 
 			<b>Kundenservice-Postanschrift (für Bestandskunden):</b><br />
 			<p>
-				Sky Deutschland Fernsehen GmbH & Co. KG <br />
+				Sky Deutschland Fernsehen GmbH & Co. KG <br />
 				22033 Hamburg
 			<p>
 			

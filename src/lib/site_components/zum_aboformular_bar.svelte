@@ -2,8 +2,7 @@
 	import Button from '$lib/layout_components/button.svelte';
 	import * as urls from '$lib/vars/urls';
 
-	const chosen_route = urls.aboformular 
-
+	const chosen_route = urls.aboformular;
 </script>
 
 <a href={urls.aboformular}>

@@ -10,14 +10,12 @@
 </script>
 
 <script lang="ts">
-	// @ts-nocheck
 	import '../global.scss';
 	import Footer from '$lib/site_components/footer.svelte';
 	import SiteLogo from '$lib/site_components/site_logo.svelte';
 	import * as urls from '$lib/vars/urls';
 	import PageTransition from '$lib/internal_components/PageTransition.svelte';
 	import PhoneBox from '$lib/site_components/phone_box.svelte';
-	import { browser } from '$app/env';
 	import { fly } from 'svelte/transition';
 	import InfoBanner from '$lib/site_components/info_banner.svelte';
 

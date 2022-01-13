@@ -17,7 +17,8 @@
 		<div class="val_break" style="width: 100%;" />
 		<div class="header_text">
 			<h1 class="main_title">
-				Jetzt Sky Wunschpakete buchen und im Januar Sale 50% auf Cinema, Bundesliga und Sport erhalten*
+				Jetzt Sky Wunschpakete buchen und im Januar Sale 50% auf Cinema, Bundesliga und Sport
+				erhalten*
 			</h1>
 			<h2 class="subtitle1">Bei Vermittlung über TAGARO zusätzlich mit € 20 Bonus.</h2>
 			<h3 class="subtitle2 to_remove">
@@ -52,9 +53,13 @@
 		>
 		<div class="to_remove">
 			<p style="margin-right:30px;">
-				✓ Entertainment + 1 Paket oder Entertainment Plus buchen und € 50 Gutschrift von Sky erhalten*
+				✓ Entertainment + 1 Paket oder Entertainment Plus buchen und € 50 Gutschrift von Sky
+				erhalten*
 			</p>
-			<p>✓ Entertainment + 2 Pakete oder Entertainment Plus + 1 Paket buchen und € 100 Gutschrift von Sky erhalten*</p>
+			<p>
+				✓ Entertainment + 2 Pakete oder Entertainment Plus + 1 Paket buchen und € 100 Gutschrift von
+				Sky erhalten*
+			</p>
 			<p>✓ On top € 20 Bonus von uns und versandkostenfreie Lieferung</p>
 		</div>
 		<a href={urls.aboformular}

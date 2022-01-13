@@ -26,7 +26,7 @@
 			<td> <img src="/images/square_packages/sky_cinema.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>€ 25 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 25 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 37,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -35,7 +35,7 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>€ 17,25 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 17,25 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 25 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -44,7 +44,7 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>€ 22,75 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 22,75 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 33 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -53,7 +53,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>€ 20,75 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 20,75 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 32 mtl. im Monats-Abo</p>
 			</td><td />
 		</tr>
@@ -62,7 +62,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td colspan="2" />
 			<td class="text_cell">
-				<p><b>€ 36,25 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 26,25 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 40 mtl. im Monats-Abo</p>
 			</td><td />
 		</tr>
@@ -72,7 +72,7 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 22,25 mtl. im Jahres-Abo (Januar Sale 50%)/*,</b></p>
+				<p><b>€ 22,25 mtl. im Jahres-Abo <br />(Januar Sale 50%)/*,</b></p>
 				<p>danach € 37,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -82,8 +82,8 @@
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 27,50 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
-				<p>danach € 42,50 mtl. im Monats-Abo</p>
+				<p><b>€ 27,75 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
+				<p>danach € 45,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
 		<tr>
@@ -92,7 +92,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 25,75 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 25,75 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 44,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -102,7 +102,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 31,25 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 31,25 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 52,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -112,7 +112,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 23,50 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 23,50 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 40 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -122,7 +122,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td />
 			<td class="text_cell">
-				<p><b>€ 29,00 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 29,00 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 48 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -132,7 +132,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td class="text_cell">
-				<p><b>€ 28,50 mtl. im Jahres-Abo (Januar Sale 50%),</b></p>
+				<p><b>€ 28,50 mtl. im Jahres-Abo <br />(Januar Sale 50%),</b></p>
 				<p>danach € 52,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>
@@ -142,7 +142,7 @@
 			<td> <img src="/images/square_packages/sky_bundesliga.png" alt="" /> </td>
 			<td> <img src="/images/square_packages/sky_sport.png" alt="" /> </td>
 			<td class="text_cell">
-				<p><b>€ 48 mtl. im Jahres-Abo,</b></p>
+				<p><b>€ 34 mtl. im Jahres-Abo,</b></p>
 				<p>danach € 60,50 mtl. im Monats-Abo</p>
 			</td>
 		</tr>

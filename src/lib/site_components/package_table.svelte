@@ -1,5 +1,6 @@
 <script>
-	import DefaultTable from "./tables/default_table.svelte";
+	//import DefaultTable from "./tables/default_table.svelte";
+	import JanuarSaleTable from './tables/JanuarSaleTable.svelte';
 </script>
 
-<DefaultTable></DefaultTable>
+<JanuarSaleTable />

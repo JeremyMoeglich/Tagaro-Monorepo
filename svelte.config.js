@@ -1,9 +1,9 @@
 import preprocess from 'svelte-preprocess';
 //import importAssets from 'svelte-preprocess-import-assets'
 //import seqPreprocessor from 'svelte-sequential-preprocessor'
-import staticAdapter from '@sveltejs/adapter-static'
-import nodeAdapter from '@sveltejs/adapter-node'
-import netlifyAdapter from '@sveltejs/adapter-netlify'
+import staticAdapter from '@sveltejs/adapter-static';
+import nodeAdapter from '@sveltejs/adapter-node';
+import netlifyAdapter from '@sveltejs/adapter-netlify';
 //import image from "svelte-image";
 
 //@ts-check
@@ -20,13 +20,12 @@ const getAdapters = (adapt) => {
 		case 'netlify':
 			return netlifyAdapter;
 		default:
-			console.log("unknown adapter, using node")
+			console.log('unknown adapter, using node');
 			return nodeAdapter;
 	}
 };
 
 const adapter = getAdapters(adapt);
-
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -40,13 +39,12 @@ const config = {
 			crawl: true,
 			enabled: true,
 			onError: 'fail',
-			entries: ['*'],
+			entries: ['*']
 		},
 		//adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
 		//adapter: staticAdapter({ pages: 'build',prerender: true }),
 		adapter: adapter()
 	}
 };
-
 
 export default config;

@@ -1,11 +1,8 @@
 import sizeof from 'object-sizeof';
 import { SMTPClient, Message } from 'emailjs';
+import type { RequestHandler } from '@sveltejs/kit';
 
 import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL, RECEIVER } from '$lib/Env';
-
-/**
- * @type {import('@sveltejs/kit').RequestHandler}
- */
 
 function getFormBody(body): { [key: string]: string } {
 	return [...body.entries()].reduce((data, [k, v]) => {
@@ -18,7 +15,7 @@ function getFormBody(body): { [key: string]: string } {
 	}, {});
 }
 
-export async function post({ body }) {
+export const post: RequestHandler<unknown, unknown, string> = async ({ body }) => {
 	const bodyobj = getFormBody(body);
 
 	if (sizeof(bodyobj) > 30000) {
@@ -38,7 +35,7 @@ export async function post({ body }) {
 		}
 	});
 	if (is_spam) {
-		console.log('blocked spam')
+		console.log('blocked spam');
 		return {
 			status: 413,
 			body: 'Blocked because Spam'
@@ -69,6 +66,7 @@ export async function post({ body }) {
 	}
 	return {
 		headers: { Location: '/kontakt/success' },
-		status: 302
+		status: 302,
+		body: 'Email sent'
 	};
-}
+};

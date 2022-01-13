@@ -14,10 +14,11 @@
 
 		<p>
 			Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR,
-			Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info(at)tagaro.de, Telefon (02381) 9874699, Fax (0321) 2111
-			6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief, Telefax
-			oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können
-			dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
+			Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info(at)tagaro.de, Telefon (02381) 9874699,
+			Fax (0321) 2111 6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter
+			Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
+			Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht
+			vorgeschrieben ist.
 		</p>
 
 		<p>
@@ -62,7 +63,9 @@
 			notwendigen Umgang mit ihnen zurückzuführen ist.
 		</p>
 		<p>
-			<a href="/downloads/Widerrufsformular.pdf" target="_blank">Widerrufsformular zum Download (PDF)</a>
+			<a href="/downloads/Widerrufsformular.pdf" target="_blank"
+				>Widerrufsformular zum Download (PDF)</a
+			>
 		</p>
 	</div>
 </body>

@@ -92,14 +92,14 @@
 				Sky Entertainment für mtl. € 17 in Kombination mit Sky Sport mtl. € 25; Sky
 				Fußball-Bundesliga mtl. € 32; Sky Sport + Sky Cinema mtl. € 37,50; Sky Sport + Sky
 				Fußball-Bundesliga mtl. € 40; Sky Cinema + Sky Fußball-Bundesliga mtl. € 44,50; Sky Sport +
-				Sky Cinema + Sky Fußball-Bundesliga mtl. € <br/>br>52,50 Sky Ultimate TV mit Entertainment inkl.
-				Netflix mtl. € 25 in Kombination mit Sky Sport mtl. € 33; Sky Cinema mtl. € 37,50; Sky
+				Sky Cinema + Sky Fußball-Bundesliga mtl. € <br />br>52,50 Sky Ultimate TV mit Entertainment
+				inkl. Netflix mtl. € 25 in Kombination mit Sky Sport mtl. € 33; Sky Cinema mtl. € 37,50; Sky
 				Fußball-Bundesliga mtl. € 40; Sky Sport + Sky Cinema mtl. € 45,50; Sky Sport + Sky
 				Fußball-Bundesliga mtl. € 48; Sky Cinema + Sky Fußball-Bundesliga mtl. € 52,50; Sky Sport +
 				Sky Cinema + Sky Fußball-Bundesliga mtl. € 60,50
 			</p>
 		</div>
-		
+
 		<!-- <div>
 			<h3>Sky Sport Paket inklusive:</h3>
 			<p>

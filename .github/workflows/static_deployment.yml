@@ -10,7 +10,6 @@ jobs:
     name: Deployment
     runs-on: ubuntu-latest
 
-
     steps:
       - uses: actions/checkout@v2
       - uses: pnpm/action-setup@v2.0.1
@@ -19,16 +18,16 @@ jobs:
           run_install: |
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
-              
+
       - name: Use Node.js 17.x
         uses: actions/setup-node@v1
         with:
           node-version: 17.x
-      
+
       - name: build
         run: |
           npm run build:static
-        
+
       - name: copy
         uses: appleboy/scp-action@master
         with:
@@ -37,9 +36,9 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           password: ${{ secrets.SSH_PASSWORD }}
           target: ${{ secrets.SSH_TARGET }}
-          source: "./build/*"
+          source: './build/*'
           strip_components: 1
-      
+
       - name: symlink
         uses: appleboy/ssh-action@master
         with:
@@ -53,4 +52,3 @@ jobs:
             ln -sf ../shop/ebay_3 ./ebay_3
             ln -sf ../shop/ebay_4 ./ebay_4
             ln -sf ../shop/skydd ./skydd
-          

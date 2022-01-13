@@ -1,6 +1,4 @@
 <script>
-	import { each } from 'svelte/internal';
-
 	const rotate_time = 500;
 	const delay = 4000;
 

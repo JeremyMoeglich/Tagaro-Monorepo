@@ -62,7 +62,8 @@
 		>
 		<div class="to_remove">
 			<p style="margin-right:30px;">
-				*Bei Buchung von Sky Entertainment + mind. 1 Paket oder Entertainment Plus ein € 50 Amazon Gutschein on top
+				*Bei Buchung von Sky Entertainment + mind. 1 Paket oder Entertainment Plus ein € 50 Amazon
+				Gutschein on top
 			</p>
 			<p>
 				*Bei Buchung von Sky Entertainment + mindestens 2 Pakete ein € 125 Amazon Gutschein on top
@@ -131,7 +132,6 @@
 		align-content: center;
 		align-items: center;
 	}
-
 
 	.main_images {
 		order: 0;

@@ -1,9 +1,9 @@
 <script lang="ts">
 	export let text: string;
-	export let padding_x: string = '30px';
-	export let padding_y: string = '20px';
-	export let route: string = undefined;
-	export let reversed: boolean = false;
+	export let padding_x = '30px';
+	export let padding_y = '20px';
+	export let route: string | undefined = undefined;
+	export let reversed = false;
 
 	$: style = `padding: ${padding_y} ${padding_x};`;
 </script>
