@@ -18,6 +18,7 @@
 	import PhoneBox from '$lib/site_components/phone_box.svelte';
 	import { fly } from 'svelte/transition';
 	import InfoBanner from '$lib/site_components/info_banner.svelte';
+import { toLower } from 'lodash';
 
 	function clickOutside(node) {
 		const handleClick = (event: MouseEvent) => {
@@ -172,6 +173,7 @@
 												route === pair[1] ? 'current_route' : ''
 											}`}
 											href={pair[1]}
+											target={toLower(pair[1]).includes('ebay') ? '_blank' : '_self'}
 										>
 											{pair[0]}
 										</a>
@@ -276,6 +278,7 @@
 							title={pair[0] + ' öffnen'}
 							on:click={close_sidebar}
 							href={pair[1]}
+							target={toLower(pair[1]).includes('ebay') ? '_blank' : '_self'}
 						>
 							<p class="no_margin small_start_margin">{pair[0]}</p>
 						</a>
