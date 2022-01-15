@@ -1,8 +1,8 @@
 <script>
-	import Button from '$lib/layout_components/button.svelte';
-	import AllOverviews from '$lib/site_components/packages/overviews/all_overviews.svelte';
-	import AlleBuchbar from '$lib/site_components/alle_buchbar.svelte';
-	import * as urls from '$lib/vars/urls';
+	import Button from '$lib/components/layout_components/button.svelte';
+	import AllOverviews from '$lib/components/site_components/packages/overviews/all_overviews.svelte';
+	import AlleBuchbar from '$lib/components/site_components/alle_buchbar.svelte';
+	import * as urls from '$lib/scripts/frontend/urls';
 </script>
 
 <div class="alignment">

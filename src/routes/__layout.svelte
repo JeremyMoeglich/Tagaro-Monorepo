@@ -11,29 +11,14 @@
 
 <script lang="ts">
 	import '../global.scss';
-	import Footer from '$lib/site_components/footer.svelte';
-	import SiteLogo from '$lib/site_components/site_logo.svelte';
-	import * as urls from '$lib/vars/urls';
-	import PageTransition from '$lib/internal_components/PageTransition.svelte';
-	import PhoneBox from '$lib/site_components/phone_box.svelte';
+	import Footer from '$lib/components/site_components/footer.svelte';
+	import SiteLogo from '$lib/components/site_components/site_logo.svelte';
+	import * as urls from '$lib/scripts/frontend/urls';
+	import PageTransition from '$lib/components/internal_components/PageTransition.svelte';
+	import PhoneBox from '$lib/components/site_components/phone_box.svelte';
 	import { fly } from 'svelte/transition';
-	import InfoBanner from '$lib/site_components/info_banner.svelte';
-
-	function clickOutside(node) {
-		const handleClick = (event: MouseEvent) => {
-			if (node && !node.contains(event.target) && !event.defaultPrevented) {
-				node.dispatchEvent(new CustomEvent('click_outside', node));
-			}
-		};
-
-		document.addEventListener('click', handleClick, true);
-
-		return {
-			destroy() {
-				document.removeEventListener('click', handleClick, true);
-			}
-		};
-	}
+	import InfoBanner from '$lib/components/site_components/info_banner.svelte';
+	import { clickOutside } from 'svelte-use-click-outside';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -42,14 +27,14 @@
 	let navbar_elements = {
 		Startseite: '/',
 		'Sky Angebote': {
-			index: '/sky_angebote',
-			'Sky Entertainment Plus': '/sky_angebote/entertainment-plus',
-			'Sky Sport': '/sky_angebote/sport',
-			'Sky Fußball-Bundesliga': '/sky_angebote/bundesliga',
-			'Sky Cinema': '/sky_angebote/cinema',
-			'2 Sky Wunschpakete': '/sky_angebote/2_pakete',
-			'3 Sky Wunschpakete': '/sky_angebote/3_pakete',
-			'4 Sky Pakete oder mehr': '/sky_angebote/4_oder_mehr_pakete'
+			index: '/angebote',
+			'Sky Entertainment Plus': '/angebote/entertainmentplus',
+			'Sky Sport': '/angebote/sport',
+			'Sky Fußball-Bundesliga': '/angebote/bundesliga',
+			'Sky Cinema': '/angebote/cinema',
+			'2 Sky Wunschpakete': '/angebote/2_pakete',
+			'3 Sky Wunschpakete': '/angebote/3_pakete',
+			'4 Sky Pakete oder mehr': '/angebote/4_oder_mehr_pakete'
 		},
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
@@ -204,8 +189,7 @@
 													<div
 														transition:fly={{ y: 60, duration: 200 }}
 														class="context_menu"
-														use:clickOutside
-														on:click_outside={deselect}
+														use:clickOutside={deselect}
 													>
 														<b>{pair[0]}</b>
 														{#each Object.entries(pair[1]) as subtab}

@@ -1,8 +1,8 @@
 <script>
-	import AngeboteRotator from '$lib/site_components/angebote_rotator.svelte';
-	import SchnellSkyAbonnieren from '$lib/site_components/schnell_sky_abonnieren.svelte';
-	import MainShowcase from '$lib/site_components/main_showcase.svelte';
-	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen/vertragsinfomationen.svelte';
+	import AngeboteRotator from '$lib/components/site_components/angebote_rotator.svelte';
+	import SchnellSkyAbonnieren from '$lib/components/site_components/schnell_sky_abonnieren.svelte';
+	import MainShowcase from '$lib/components/site_components/main_showcase.svelte';
+	import Vertragsinfomationen from '$lib/components/site_components/vertragsinfomationen/vertragsinfomationen.svelte';
 </script>
 
 <body>

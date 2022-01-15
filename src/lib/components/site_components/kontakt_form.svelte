@@ -1,0 +1,34 @@
+<script lang="ts">
+	import Button from '$lib/components/layout_components/button.svelte';
+	import InputField from '$lib/components/layout_components/input_field.svelte';
+	import SpamField from '$lib/components/layout_components/spam_field.svelte';
+	import { get_dynamic_host } from '$lib/scripts/frontend/get_dynamic_host';
+
+	export let url: URL;
+</script>
+
+<form class="contact_form" method="POST" action={get_dynamic_host(url) + '/data/recieve_form'}>
+	<SpamField />
+	<InputField text={'Name*'} box_height={45} name="name" type="text" autocomplete="name" />
+	<InputField text={'E-Mail Adresse*'} box_height={45} name="email" autocomplete="email" />
+	<InputField
+		text={'Telefonnummer'}
+		box_height={45}
+		name="number"
+		type="number"
+		required={false}
+		autocomplete="tel"
+	/>
+	<InputField text={'Nachricht*'} box_height={90} name="message" multiline={true} />
+	<Button text="Absenden" />
+</form>
+
+<style lang="scss">
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		min-width: 50%;
+	}
+</style>

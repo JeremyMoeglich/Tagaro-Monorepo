@@ -31,7 +31,9 @@ const adapter = getAdapters(adapt);
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: preprocess(),
+	preprocess: preprocess({
+		scss: { includePaths: ['src', 'node_modules'] }
+	}),
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
@@ -41,6 +43,7 @@ const config = {
 			onError: 'fail',
 			entries: ['*']
 		},
+
 		//adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
 		//adapter: staticAdapter({ pages: 'build',prerender: true }),
 		adapter: adapter()

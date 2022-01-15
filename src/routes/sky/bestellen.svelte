@@ -1,5 +1,5 @@
 <script>
-	import { aboformular } from '$lib/vars/urls';
+	import { aboformular } from '$lib/scripts/frontend/urls';
 </script>
 
 <svelte:head>

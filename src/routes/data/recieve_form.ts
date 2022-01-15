@@ -2,11 +2,12 @@ import sizeof from 'object-sizeof';
 import { SMTPClient, Message } from 'emailjs';
 import type { RequestHandler } from '@sveltejs/kit';
 
-import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL, RECEIVER } from '$lib/Env';
+import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL, RECEIVER } from '$lib/scripts/backend/Env';
+import type { ReadOnlyFormData } from '@sveltejs/kit/types/helper';
 
-function getFormBody(body): { [key: string]: string } {
+function getFormBody(body: ReadOnlyFormData | Uint8Array): { [key: string]: string } {
 	return [...body.entries()].reduce((data, [k, v]) => {
-		let value = v;
+		let value: string | boolean | number = v;
 		if (value === 'true') value = true;
 		if (value === 'false') value = false;
 		if (k in data) data[k] = Array.isArray(data[k]) ? [...data[k], value] : [data[k], value];
@@ -16,6 +17,12 @@ function getFormBody(body): { [key: string]: string } {
 }
 
 export const post: RequestHandler<unknown, unknown, string> = async ({ body }) => {
+	if (typeof body !== 'object') {
+		return {
+			status: 413,
+			body: 'Invalid body type'
+		};
+	}
 	const bodyobj = getFormBody(body);
 
 	if (sizeof(bodyobj) > 30000) {

@@ -1,5 +1,5 @@
 <script>
-	import Vertragsinfomationen from '$lib/site_components/vertragsinfomationen/vertragsinfomationen.svelte';
+	import Vertragsinfomationen from '$lib/components/site_components/vertragsinfomationen/vertragsinfomationen.svelte';
 </script>
 
 <div class="header-text-image-align">

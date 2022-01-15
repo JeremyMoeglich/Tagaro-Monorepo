@@ -87,7 +87,7 @@
 </body>
 
 <style lang="scss">
-	@import '../../shared/style/mixins.scss';
+	@import 'lib/shared/style/mixins.scss';
 	.alignment {
 		max-width: min(85%, 1000px);
 		margin-left: auto;

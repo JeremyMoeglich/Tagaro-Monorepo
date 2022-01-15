@@ -1,7 +1,20 @@
-<script>
-	//import InputField from '$lib/layout_components/input_field.svelte';
-	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
-	import KontaktForm from '$lib/site_components/kontakt_form.svelte';
+<script context="module" lang="ts">
+	import type { Load } from '@sveltejs/kit';
+	export const load: Load = async ({ url }) => {
+		return {
+			props: {
+				url: url
+			}
+		};
+	};
+</script>
+
+<script lang="ts">
+	//import InputField from '$lib/components/layout_components/input_field.svelte';
+	import EmptySpacer from '$lib/components/site_components/empty_spacer.svelte';
+	import KontaktForm from '$lib/components/site_components/kontakt_form.svelte';
+
+	export let url: URL;
 </script>
 
 <body>
@@ -27,7 +40,7 @@
 				<li><b>Internet: </b><a href="https://tagaro.de">www.tagaro.de</a></li>
 			</ul>
 		</div>
-		<KontaktForm />
+		<KontaktForm {url} />
 	</div>
 	<EmptySpacer />
 </body>

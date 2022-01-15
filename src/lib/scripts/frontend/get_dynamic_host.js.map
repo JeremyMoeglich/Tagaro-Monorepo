@@ -1,0 +1,1 @@
+{"version":3,"file":"get_dynamic_host.js","sourceRoot":"","sources":["get_dynamic_host.ts"],"names":[],"mappings":"AAAA,MAAM,UAAU,gBAAgB,CAAC,GAAQ;IACxC,IAAI,CAAC,WAAW,EAAE,kBAAkB,CAAC,CAAC,QAAQ,CAAC,GAAG,CAAC,IAAI,CAAC,EAAE;QACzD,OAAO,gBAAgB,CAAC;KACxB;SAAM;QACN,OAAO,EAAE,CAAC;KACV;AACF,CAAC"}

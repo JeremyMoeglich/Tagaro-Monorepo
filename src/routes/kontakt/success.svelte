@@ -1,5 +1,5 @@
 <script>
-	import EmptySpacer from '$lib/site_components/empty_spacer.svelte';
+	import EmptySpacer from '$lib/components/site_components/empty_spacer.svelte';
 </script>
 
 <body>
