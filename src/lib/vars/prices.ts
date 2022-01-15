@@ -1,4 +1,4 @@
-interface PackagePrice {
+export interface PackagePrice {
 	monat: number;
 	jahr: number;
 }
@@ -10,6 +10,7 @@ enum package_name_enum {
 	sport,
 	bundesliga
 }
+
 export type package_name = keyof typeof package_name_enum;
 
 const package_prices: Record<package_name, PackagePrice> = {
@@ -45,5 +46,22 @@ export function get_price(packages: Array<package_name>): PackagePrice {
 		monat: sum(packages.map((v) => package_prices[v].monat)) * factor_monat
 	};
 }
+export function get_price_string(packages: Array<package_name>, subscription_time: keyof PackagePrice): string {
+	const price = get_price(packages)
+	return '€ ' + price[subscription_time].toFixed(2).replace('.',',')
+}
 
-console.log(get_price(['entertainmentplus', 'sport', 'bundesliga']));
+//https://stackoverflow.com/questions/1885557/simplest-code-for-array-intersection-in-javascript
+function intersect(a: Array<any>, b: Array<any>): Array<any> {
+	var setA = new Set(a);
+	var setB = new Set(b);
+	var intersection = new Set([...setA].filter(x => setB.has(x)));
+	return Array.from(intersection);
+  }
+
+export function get_offer_note(packages: Array<package_name>): string {
+	if (intersect(packages, premiumpackages).length > 0) {
+		return 'Januar Sale 50%'
+	}
+}
+

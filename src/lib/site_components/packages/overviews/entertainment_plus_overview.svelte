@@ -1,4 +1,5 @@
 <script>
+	import { get_price_string } from '$lib/vars/prices';
 	import PackageOverview from '$lib/layout_components/package_overview.svelte';
 	export let detailed = false;
 </script>
@@ -14,9 +15,9 @@
 	image={'/images/packages/sky_entertainment-plus.jpg'}
 	{detailed}
 >
-	<h3>12 Monate nur € 20,00 mtl.*</h3>
+	<h3>12 Monate nur {get_price_string(['entertainmentplus'], 'jahr')} mtl.*</h3>
 	<p>
-		(im Jahres-Abo, danach € 25,00 mtl. im Monats-Abo) <br />
+		(im Jahres-Abo, danach {get_price_string(['entertainmentplus'], 'monat')} mtl. im Monats-Abo) <br />
 		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
 	</p>
 </PackageOverview>
