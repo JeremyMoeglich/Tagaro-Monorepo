@@ -17,7 +17,7 @@
 	]}
 	{detailed}
 >
-	<h3>12 Monate ab {get_price_string(['entertainment','cinema','sport'], 'jahr')} mtl.</h3>
+	<h3>12 Monate ab {get_price_string(['entertainment', 'cinema', 'sport'], 'jahr')} mtl.</h3>
 	<p>
 		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema
 		+ Sport
