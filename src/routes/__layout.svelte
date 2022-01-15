@@ -20,7 +20,7 @@
 	import InfoBanner from '$lib/site_components/info_banner.svelte';
 
 	function clickOutside(node) {
-		const handleClick = (event) => {
+		const handleClick = (event: MouseEvent) => {
 			if (node && !node.contains(event.target) && !event.defaultPrevented) {
 				node.dispatchEvent(new CustomEvent('click_outside', node));
 			}
@@ -37,7 +37,7 @@
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
-	let selected;
+	let selected: undefined | string;
 
 	let navbar_elements = {
 		Startseite: '/',
@@ -57,7 +57,7 @@
 	};
 	navbar_elements[urls.ebay.name + ' 🡆'] = urls.ebay.route;
 
-	let y;
+	let screen_y_position: number;
 
 	let preferences_object = {};
 
@@ -79,7 +79,7 @@
 		selected = undefined;
 	}
 
-	export let route;
+	export let route: string;
 </script>
 
 <svelte:head>
@@ -135,8 +135,8 @@
 				src="/images/icons/go_to_start.svg"
 				alt=""
 				class="go_to_start"
-				style={y > 0 ? 'bottom: 100px;' : ''}
-				on:click={() => (y = 0)}
+				style={screen_y_position > 0 ? 'bottom: 100px;' : ''}
+				on:click={() => (screen_y_position = 0)}
 			/>
 			<div class="header_blue_bar" />
 			<div class="top_header_container" id="nav_bar">
@@ -181,11 +181,11 @@
 										<div class="sub_selectable_container">
 											<button
 												title={`Mehr zu ${pair[0]} anzeigen`}
-												on:click={async function selector() {
+												on:click={() => {
 													if (selected !== pair[0]) {
 														selected = pair[0];
 													} else {
-														await deselect();
+														deselect();
 													}
 												}}
 												class="side_image_container nav_element nav_element_hover"
@@ -325,7 +325,7 @@
 	<InfoBanner bind:preferences_object bind:route />
 </body>
 
-<svelte:window bind:scrollY={y} />
+<svelte:window bind:scrollY={screen_y_position} />
 
 <style lang="scss">
 	$top_bar_size: max(min(230px - 11vw, 180px), 100px);
