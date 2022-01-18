@@ -175,9 +175,12 @@
 	}
 	h2 {
 		color: #4a4a4a;
+		margin-bottom: 10px;
 	}
 	h3 {
 		color: #868686;
+		margin-bottom: 48px;
+		margin-top: 0px;
 	}
 	h1,
 	h2,
