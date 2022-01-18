@@ -5,7 +5,7 @@
 </script>
 
 <PackageOverview
-	title={'Fußball Bundesliga Paket - Die Heimat der Bundesliga – garantiert bis 2025.'}
+	title={'Fußball Bundesliga Paket - Die Heimat der Bundesliga - garantiert bis 2025.'}
 	points={[
 		'Alle Samstagsspiele der Bundesliga live und exklusiv',
 		'Alle Spiele der 2. Bundesliga live',

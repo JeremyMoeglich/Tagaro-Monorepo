@@ -2,10 +2,10 @@
 	<div class="outer_container">
 		<h1>Datenschutz</h1>
 		<br />
-		<h2>Datenschutzhinweise von TAGARO Medienshop – Möglich & Möglich GbR</h2>
+		<h2>Datenschutzhinweise von TAGARO Medienshop - Möglich & Möglich GbR</h2>
 		<p>
 			Auf dieser Seite erhalten Sie eine umfassende Übersicht über die Verarbeitung Ihrer Daten bei
-			der TAGARO Medienshop – Möglich & Möglich GbR. <br />
+			der TAGARO Medienshop - Möglich & Möglich GbR. <br />
 
 			Über den folgenden Link gelangen Sie zu den Datenschutzhinweisen der Sky Deutschland Fernsehen
 			GmbH & Co. KG: <br />
@@ -181,7 +181,7 @@
 				widerrufen werden.
 			</p>
 			<p>
-				5.4. Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG <br
+				5.4. Weitergabe personenbezogener Daten an die Sky Deutschland Fernsehen GmbH & Co. KG <br
 				/>
 				Im Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden eingereichte
 				Abodaten eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift und
@@ -212,7 +212,7 @@
 				eingeschränkt.
 			</p>
 			<p>
-				5.5. Weitergabe personenbezogener Daten an die Innovero Software Solutions B.V. <br />
+				5.5. Weitergabe personenbezogener Daten an die Innovero Software Solutions B.V. <br />
 				<br />
 				Im Rahmen und zur Durchführung der Vertragserstellung eines Sky Abonnements, werden Abodaten
 				eines Kunden (Kaufgegenstand, Name, Postanschrift, E-Mail-Adresse, Lieferanschrift, Bezahlweise
@@ -441,7 +441,7 @@
 </body>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	h1 {
 		@include gradient-text;
 		text-align: center;

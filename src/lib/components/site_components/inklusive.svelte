@@ -31,7 +31,7 @@
 </div>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	.gradient_text {
 		@include gradient-text;
 	}

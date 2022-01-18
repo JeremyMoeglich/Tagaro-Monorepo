@@ -80,7 +80,7 @@
 </div>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 
 	.main_container {
 		background-color: #f2f2f2;

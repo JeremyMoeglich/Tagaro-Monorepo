@@ -12,7 +12,7 @@
 </body>
 
 <style lang="scss">
-	@import '../../lib/shared/style/mixins.scss';
+	@import '../../lib/style/mixins.scss';
 	.center_alignment {
 		display: flex;
 		flex-direction: column;

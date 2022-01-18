@@ -1,5 +1,5 @@
 <script>
-	import Agb from '$lib/shared/service/AGB.svelte';
+	import Agb from '$lib/components/site_components/service/AGB.svelte';
 </script>
 
 <Agb />

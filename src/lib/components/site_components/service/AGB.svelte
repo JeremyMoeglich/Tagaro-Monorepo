@@ -35,13 +35,13 @@
 	<p>
 		1.4 Die TAGARO Medienshop - Möglich & Möglich GbR nimmt keine Schreiben von Kündigungen,
 		Streitigkeiten, Änderungen von Bankverbindungen oder vorzeitigen Vertragsauflösungen (im
-		Sterbefall) entgegen.
+		Sterbefall) entgegen.
 	</p>
 
 	<p>
 		1.5 Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage
-		ist, haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke
-		sämtliche Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.
+		ist, haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke sämtliche
+		Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.
 	</p>
 
 	<p>
@@ -669,7 +669,7 @@
 </div>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	h1 {
 		@include gradient-text;
 		text-align: center;

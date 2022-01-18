@@ -32,6 +32,12 @@ function sum(values: Array<number>): number {
 const factor_jahr = 1;
 const factor_monat = 1;
 
+export const aktivierung = 29;
+export const aktivierung_string = `€ ${aktivierung.toFixed(2).replace('.', ',')}`;
+
+export const bonus = 20;
+export const bonus_string = `€ ${bonus.toFixed(2).replace('.', ',')}`;
+
 export function get_price(packages: Array<package_name>): PackagePrice {
 	return {
 		jahr: sum(packages.map((v) => package_prices[v].jahr)) * factor_jahr,

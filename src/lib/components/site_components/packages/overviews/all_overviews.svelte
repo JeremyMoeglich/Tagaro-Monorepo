@@ -33,7 +33,7 @@
 <EmptySpacer />
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	h1 {
 		@include gradient-text;
 		text-align: center;

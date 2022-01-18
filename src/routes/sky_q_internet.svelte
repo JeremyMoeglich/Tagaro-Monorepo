@@ -1,5 +1,5 @@
 <script>
-	import Vertragsinfomationen from '$lib/components/site_components/vertragsinfomationen/vertragsinfomationen.svelte';
+	import Vertragsinfomationen from '$lib/components/site_components/vertragsinfomationen.svelte';
 </script>
 
 <div class="header-text-image-align">
@@ -23,7 +23,7 @@
 <div class="vertragsinfo"><Vertragsinfomationen /></div>
 
 <style lang="scss">
-	@import '../lib/shared/style/mixins.scss';
+	@import '../lib/style/mixins.scss';
 	.main-title {
 		margin-top: 50px;
 		font-size: min(max(2vw, 35px), 4vw);

@@ -28,7 +28,7 @@
 </div>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	.gradient-text {
 		@include gradient-text;
 	}
@@ -73,5 +73,11 @@
 		@include gradient-text;
 		margin-top: 30px;
 		margin-bottom: 30px;
+	}
+	.main_text :global(.slot > h3) {
+		background: linear-gradient(to right, rgb(245, 0, 0) 0%, rgb(255, 0, 106) 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 </style>

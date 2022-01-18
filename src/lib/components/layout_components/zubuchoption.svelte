@@ -10,7 +10,7 @@
 </div>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	img {
 		width: min(100px, 33.33vw);
 	}

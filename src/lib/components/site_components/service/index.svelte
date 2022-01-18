@@ -14,7 +14,7 @@
 					Sky-Verträge bereits seit 2006.
 				</p>
 				<p>
-					Ihr Vorteil – Sie erhalten dazu bei den meisten Angeboten eine Abschlussprämie (Cashback)
+					Ihr Vorteil - Sie erhalten dazu bei den meisten Angeboten eine Abschlussprämie (Cashback)
 					und profitieren von einem schnellen und persönlichen Service bei allen Fragen. Oft haben
 					wir auch exklusive Sky-Abos mit Vorzugspreisen im Angebot, die es so nur bei uns gibt.
 				</p>

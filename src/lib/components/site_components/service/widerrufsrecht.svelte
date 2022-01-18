@@ -13,7 +13,7 @@
 		</p>
 
 		<p>
-			Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop – Möglich & Möglich GbR,
+			Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (TAGARO Medienshop - Möglich & Möglich GbR,
 			Großer Sandweg 32, 59065 Hamm, Deutschland, E-Mail info(at)tagaro.de, Telefon (02381) 9874699,
 			Fax (0321) 2111 6558) mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter
 			Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
@@ -71,7 +71,7 @@
 </body>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	.alignment {
 		max-width: min(85%, 1000px);
 		margin-left: auto;

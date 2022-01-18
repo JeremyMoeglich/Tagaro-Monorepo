@@ -1,5 +1,5 @@
 <script>
-	import Index from '$lib/shared/service/index.svelte';
+	import Index from '$lib/components/site_components/service/index.svelte';
 </script>
 
 <Index />

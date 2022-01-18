@@ -58,13 +58,13 @@
 		<p>
 			Die TAGARO Medienshop - Möglich & Möglich GbR nimmt keine Schreiben von Kündigungen,
 			Streitigkeiten, Änderungen von Bankverbindungen oder vorzeitigen Vertragsauflösungen (im
-			Sterbefall) entgegen.
+			Sterbefall) entgegen.
 		</p>
 
 		<p>
 			Sie möchten Sky kündigen, haben Fragen zu einem laufenden Vertrag, der älter als 14 Tage ist,
-			haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke
-			sämtliche Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.
+			haben Kritik oder möchten Ihr Abonnement ändern? Wir haben hier für alle Zwecke sämtliche
+			Kontaktmöglichkeiten zu Sky Deutschland aufgelistet.
 		</p>
 
 		<h2>Post-Anschrift von Sky:</h2>
@@ -76,7 +76,7 @@
 
 		<h2>Kundenservice-Postanschrift (für Bestandskunden):</h2>
 		<p>
-			Sky Deutschland Fernsehen GmbH & Co. KG <br />
+			Sky Deutschland Fernsehen GmbH & Co. KG <br />
 			22033 Hamburg
 		</p>
 		<p />
@@ -87,7 +87,7 @@
 </body>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	.alignment {
 		max-width: min(85%, 1000px);
 		margin-left: auto;

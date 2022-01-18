@@ -148,7 +148,7 @@
 </div>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	$background_height: calc((900px - 6vw) * 1.3);
 	$outer_padding: 70px;
 	$background_color: #f2f2f2;

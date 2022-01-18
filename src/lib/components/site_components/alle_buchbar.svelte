@@ -13,7 +13,7 @@
 <LineSpacer />
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	.gradient-text {
 		@include gradient-text;
 	}

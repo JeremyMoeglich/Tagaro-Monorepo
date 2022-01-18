@@ -1,5 +1,5 @@
 <script>
-	import Widerrufsrecht from '$lib/shared/service/widerrufsrecht.svelte';
+	import Widerrufsrecht from '$lib/components/site_components/service/widerrufsrecht.svelte';
 </script>
 
 <Widerrufsrecht />

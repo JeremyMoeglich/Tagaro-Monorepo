@@ -2,20 +2,21 @@
 	import * as urls from '$lib/scripts/frontend/urls';
 	import Button from '$lib/components/layout_components/button.svelte';
 	import { packages } from '$lib/scripts/universal/packages';
+	import { bonus_string } from '$lib/scripts/universal/prices';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
-	export let subtitle1 = 'Bei Vermittlung über TAGARO zusätzlich mit € 20 Bonus.';
+	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
 	export let subtitle2 =
 		'Wir sind autorisierter Sky Onlinehändler und stehen für eine schnelle & zuverlässige Bearbeitung.';
 	export let points = [
 		'Vertrag für Internet, Sat- oder Kabel-Anschluss mit Sky Q Receiver oder Sky Q IPTV Box*',
-		'€ 20 Bonus und versandkostenfreie Vermittlung*'
+		`${bonus_string} Bonus und versandkostenfreie Vermittlung*`
 	];
 	export let primary_image: undefined | string = undefined;
 	export let side_images = [];
 
 	const left_badges = ['/images/badges/praemie.png'];
-	const right_badges = ['/images/badges/mtlkuendbar.png', '/images/badges/payback.png'];
+	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.png'];
 </script>
 
 <div class="alignment">
@@ -72,7 +73,7 @@
 </div>
 
 <style lang="scss">
-	@import 'lib/shared/style/mixins.scss';
+	@import 'lib/style/mixins.scss';
 	.alignment {
 		display: flex;
 		flex-direction: column;

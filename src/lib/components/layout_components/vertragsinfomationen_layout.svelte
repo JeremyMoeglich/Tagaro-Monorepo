@@ -1,5 +1,6 @@
 <script>
 	import ExpandableBox from '$lib/components/layout_components/expandable_box.svelte';
+	import { aktivierung_string, get_price_string } from '$lib/scripts/universal/prices';
 </script>
 
 <ExpandableBox title={'*Vertragsinformationen'}>
@@ -11,30 +12,83 @@
 				(anteilig) zzgl. 12 Monaten)
 			</p>
 			<ul>
-				<li>- Sky Entertainment für mtl. € 14,50 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 20,00</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 27,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 30,00</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 32,50</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 37,00</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 42,50</li>
+				<li>
+					- Sky Entertainment für mtl. {get_price_string(['entertainment'], 'jahr')} <br />
+					<b>in Kombination mit</b>
+				</li>
+				<li>- Sky Sport mtl. {get_price_string(['entertainment', 'sport'], 'jahr')}</li>
+				<li>
+					- Sky Fußball-Bundesliga mtl. {get_price_string(['entertainment', 'bundesliga'], 'jahr')}
+				</li>
+				<li>
+					- Sky Sport + Sky Cinema mtl. {get_price_string(
+						['entertainment', 'cinema', 'sport'],
+						'jahr'
+					)}
+				</li>
+				<li>
+					- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainment', 'sport', 'bundesliga'],
+						'jahr'
+					)}
+				</li>
+				<li>
+					- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainment', 'cinema', 'bundesliga'],
+						'jahr'
+					)}
+				</li>
+				<li>
+					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainment', 'cinema', 'bundesliga', 'sport'],
+						'jahr'
+					)}
+				</li>
 			</ul>
 			<ul>
-				<li>- Sky Ultimate TV mit Entertainment inkl. Netflix mtl. € 20,00 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 25,00</li>
-				<li>- Sky Cinema mtl. € 30,00</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 32,50</li>
+				<li>
+					- Sky Ultimate TV mit Entertainment inkl. Netflix mtl. {get_price_string(
+						['entertainmentplus'],
+						'jahr'
+					)} <br /> <b> in Kombination mit</b>
+				</li>
+				<li>- Sky Sport mtl. {get_price_string(['entertainmentplus', 'sport'], 'jahr')}</li>
+				<li>- Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}</li>
+				<li>
+					- Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainmentplus', 'bundesliga'],
+						'jahr'
+					)}
+				</li>
 				<li>- Sky Kids mtl. € 25,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 35,50</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 38,00</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 42,50</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 48,00</li>
+				<li>
+					- Sky Sport + Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}
+				</li>
+				<li>
+					- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainmentplus', 'sport', 'bundesliga'],
+						'jahr'
+					)}
+				</li>
+				<li>
+					- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainmentplus', 'bundesliga', 'cinema'],
+						'jahr'
+					)}
+				</li>
+				<li>
+					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainmentplus', 'cinema', 'sport', 'bundesliga'],
+						'jahr'
+					)}
+				</li>
 			</ul>
 			<p>
-				Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von € 29,00 durch Sky.
+				Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
+				durch Sky.
 			</p>
 			<ul>
-				<li>Optional:</li>
+				<li><b>Optional:</b></li>
 				<li>- UHD mtl. € 5,00 (für Sat oder Kabel-Empfang)</li>
 				<li>- DAZN jährlich für € 12,50 mtl. oder DAZN monatlich für € 14,99 mtl.</li>
 				<li>
@@ -47,9 +101,11 @@
 				<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
 			</ul>
 		</div>
+		<div class="slot">
+			<slot />
+		</div>
 		<div>
 			<h3>Laufzeit und Preise bei Verlängerung:</h3>
-
 			<p>
 				Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
 				Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten
@@ -57,70 +113,49 @@
 				Monat zum Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende
 				Preise:
 			</p>
-			<ul>
-				<li>- Sky Entertainment für mtl. € 17 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 25,00</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 32,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 37,50</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 40,00</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 44,50</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 52,50</li>
-			</ul>
-
-			<ul>
-				<li>- Sky Ultimate TV mit Entertainment inkl. Netflix mtl. € 25,00 in Kombination mit</li>
-				<li>- Sky Sport mtl. € 33,00</li>
-				<li>- Sky Cinema mtl. € 37,50</li>
-				<li>- Sky Fußball-Bundesliga mtl. € 40,00</li>
-				<li>- Sky Sport + Sky Cinema mtl. € 45,50</li>
-				<li>- Sky Sport + Sky Fußball-Bundesliga mtl. € 48,00;</li>
-				<li>- Sky Cinema + Sky Fußball-Bundesliga mtl. € 52,50;</li>
-				<li>- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. € 60,50</li>
-			</ul>
-
-			<p>Zzgl. bei Buchung von:</p>
-			<ul>
-				<li>- UHD mtl. € 5,00 (für Sat oder Kabel-Empfang)</li>
-				<li>- DAZN jährlich für € 12,50 mtl. oder DAZN monatlich für € 14,99 mtl.</li>
-				<li>
-					- Multiscreen für € 10,00 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver
-					für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
-				</li>
-				<li>- Netflix Standard-Abo, HD/2 Streams (+ € 5 mtl.)</li>
-				<li>- Netflix Premium-Abo, UHD/4 Streams (+ € 10 mtl.)</li>
-				<li>- trendSports mtl. € 5,99</li>
-				<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
-			</ul>
+			<p>
+				Sky Entertainment für {get_price_string(['entertainment'], 'monat')} mtl. im 12-Monats-Abo in
+				Kombination mit Sky Sport {get_price_string(['entertainment', 'sport'], 'monat')}
+				mtl. im 12-Monats-Abo Sky Cinema {get_price_string(['entertainment', 'cinema'], 'monat')} mtl.
+				im 12-Monats-Abo Sky Fußball-Bundesliga {get_price_string(
+					['entertainment', 'bundesliga'],
+					'monat'
+				)} mtl. im 12-Monats-Abo Sky Sport + Sky Cinema
+				{get_price_string(['entertainment', 'sport', 'cinema'], 'monat')} mtl. im 12-Monats-Abo Sky Sport
+				+ Sky Fußball-Bundesliga {get_price_string(
+					['entertainment', 'sport', 'bundesliga'],
+					'monat'
+				)} mtl. im 12-Monats-Abo Sky Cinema + Sky Fußball-Bundesliga {get_price_string(
+					['entertainment', 'cinema', 'bundesliga'],
+					'monat'
+				)} mtl. im 12-Monats-Abo Sky Sport + Sky Cinema + Sky Fußball-Bundesliga {get_price_string(
+					['entertainment', 'sport', 'cinema', 'bundesliga'],
+					'monat'
+				)} mtl. im 12-Monats-Abo Sky Entertainment Plus für {get_price_string(
+					['entertainmentplus'],
+					'monat'
+				)} mtl. im 12-Monats-Abo in Kombination mit Sky Sport {get_price_string(
+					['entertainmentplus', 'sport'],
+					'monat'
+				)} mtl. im 12-Monats-Abo Sky Cinema {get_price_string(
+					['entertainmentplus', 'cinema'],
+					'monat'
+				)} mtl. im 12-Monats-Abo Sky Fußball-Bundesliga
+				{get_price_string(['entertainmentplus', 'bundesliga'], 'monat')} mtl. im 12-Monats-Abo Sky Sport
+				+ Sky Cinema {get_price_string(['entertainmentplus', 'sport', 'cinema'], 'monat')} mtl. im 12-Monats-Abo
+				Sky Sport + Sky Fußball-Bundesliga {get_price_string(
+					['entertainmentplus', 'sport', 'bundesliga'],
+					'monat'
+				)} mtl. im 12-Monats-Abo Sky Cinema + Sky Fußball-Bundesliga {get_price_string(
+					['entertainmentplus', 'cinema', 'bundesliga'],
+					'monat'
+				)}
+				mtl. im 12-Monats-Abo Sky Sport + Sky Cinema + Sky Fußball-Bundesliga {get_price_string(
+					['entertainmentplus', 'cinema', 'bundesliga'],
+					'monat'
+				)} mtl. im 12-Monats-Abo
+			</p>
 		</div>
-		<!-- <div>
-			<h3>Amazon Gutschein von Sky:</h3>
-			<p>
-				Bei der Buchung von Sky Entertainment und mindestens einem weiteren Sky Programmpaket
-				(Cinema, Sport und/oder Fußball-Bundesliga) oder Entertainment Plus ist ein €
-				50-Wertgutschein von Amazon, bei Buchung von Entertainment und mindestens zwei weiteren
-				Programmpaketen oder Sky Entertainment Plus und einem weiteren Sky Programmpaket (Cinema,
-				Sport und/oder Fußball-Bundesliga), ein € 125-Wertgutschein von Amazon inklusive. Der
-				Gutschein wird von Sky nach Ablauf der Widerrufsfrist und positiver Bonitätsprüfung sowie
-				des ersten positiven Zahlungseingangs bei Sky, per E-Mail in Form eines digitalen
-				Gutscheincodes ca. 6-8 Wochen nach Abonnementvertragsabschluss per E-Mail versendet. Die
-				Einlösung des Gutscheins ist bis 31.03.2022 nach Ausgabe des Gutscheins einlösbar.
-			</p>
-		</div> -->
-		<!-- <div>
-			<h3>TVNOW PREMIUM Gutschein:</h3>
-			<p>
-				Bei der Buchung von mindestens Sky Entertainment + 1 Sky Programmpaket (Cinema, Sport
-				und/oder Fußball-Bundesliga) ist ein Wertgutschein für ein 12 Monats-Abonnement von TVNOW
-				PREMIUM inklusive. Der Gutschein wird nach Ablauf der Widerrufsfrist und positiver
-				Bonitätsprüfung sowie des ersten positiven Zahlungseingangs bei Sky, in Form eines digitalen
-				Gutscheincodes ca. 6-8 Wochen nach Abonnementvertragsabschluss per E-Mail durch Sky
-				versendet. Die Einlösung des Gutscheins ist bis zum 31.03.2022 befristet. Im Falle der
-				Einlösung des TVNOW PREMIUM Gutscheins wird ein separates Abonnement unter Einbeziehung der
-				TVNOW AGB (<a href="https://www.tvnow.de/agb">https://www.tvnow.de/agb</a>) mit der RTL interactive GmbH geschlossen, welches nach
-				12 Monaten, soweit nicht gekündigt, sich automatisch jeweils um einen weiteren Monat zu €
-				4,99 mtl. verlängert. Jederzeit mit einer Frist von 30 Tagen kündbar. Laufzeit unbefristet.
-			</p>
-		</div> -->
 		<div>
 			<h3>Sky Entertainment Plus:</h3>
 			<p>
@@ -299,7 +334,7 @@
 		<div>
 			<h3>trendSports:</h3>
 			<p>
-				Nur für Sat-Empfang. Spektakulär – rund um die Uhr – live: Entdecke die Faszination von
+				Nur für Sat-Empfang. Spektakulär - rund um die Uhr - live: Entdecke die Faszination von
 				trendSports mit Sport1+, sportdigital fussball, EDGEsport, eSports1 und WAIDWERK. Über
 				3.000h live, dazu News, Magazine und Dokumentationen.
 			</p>
@@ -316,9 +351,12 @@
 		<div>
 			<h3>Zusätzliche Informationen:</h3>
 			<p>
-				Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse und
-				Bankverbindung zur Bestellung erforderlich. Der Abobeginn ist bei Sky nicht nach hinten
-				verlegbar. Der Vertrag startet innerhalb von 7 Tagen nach Erhalt der Ware.
+				Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse zur
+				Bestellung erforderlich. Bestehende Geräte aus einem bisherigen Sky Vertrag, können in den
+				meisten Fällen nicht übernommen werden. Sie erhalten kostenlos neue Geräte zugesendet und
+				können bestehende Geräte einfach nach Ablauf Ihres Vertrags an Sky retournieren. Der
+				Abobeginn ist bei Sky nicht nach hinten verlegbar. Der Vertrag startet innerhalb von 7 Tagen
+				nach Erhalt der Ware.
 			</p>
 		</div>
 		<div>
