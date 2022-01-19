@@ -2,8 +2,8 @@
 	import { browser } from '$app/env';
 	import Button from '$lib/components/layout_components/button.svelte';
 	import Cookies from 'js-cookie';
-	import lodash from 'lodash';
 	import * as cookie_keys from '$lib/scripts/frontend/cookie_data';
+	import cloneDeep from 'lodash.clonedeep';
 
 	function IsJsonString(str: string): boolean {
 		try {
@@ -47,13 +47,13 @@
 
 	export let preferences_object = accept_obj;
 
-	$: preferences_object = lodash.cloneDeep(accept_obj);
+	$: preferences_object = cloneDeep(accept_obj);
 
 	$: banner_enabled
 		? Cookies.set('preferences', JSON.stringify(accept_obj), { expires: 128 })
 		: undefined;
 
-	let edit_preferences = lodash.cloneDeep(accept_obj);
+	let edit_preferences = cloneDeep(accept_obj);
 	Object.entries(edit_preferences).forEach((element) => {
 		edit_preferences[element[0]] = Boolean(element[1]);
 	});
@@ -303,14 +303,14 @@
 		<div class="buttons">
 			<div
 				on:click={function () {
-					accept_obj = lodash.cloneDeep(edit_preferences);
+					accept_obj = cloneDeep(edit_preferences);
 				}}
 			>
 				<Button text="Einstellungen Speichern" reversed={true} />
 			</div>
 			<div
 				on:click={function () {
-					accept_obj = lodash.cloneDeep(edit_preferences);
+					accept_obj = cloneDeep(edit_preferences);
 					Object.keys(accept_obj).forEach((element) => {
 						accept_obj[element] = true;
 					});

@@ -1,4 +1,5 @@
-import { base_packages, package_name, premiumpackages } from '$lib/scripts/universal/packages';
+import { base_packages, premiumpackages } from '$lib/scripts/universal/packages';
+import type { package_name } from '$lib/scripts/universal/packages'
 
 export interface PackagePrice {
 	monat: number;

@@ -16,7 +16,7 @@ export const packages: Record<package_name, string> = {
 	entertainment: 'Entertainment'
 };
 
-export const package_names = Object.keys(packages)
+export const package_names = Object.keys(packages);
 
 export const base_packages: Array<package_name> = ['entertainment', 'entertainmentplus'];
 export const premiumpackages: Array<package_name> = ['cinema', 'sport', 'bundesliga'];
