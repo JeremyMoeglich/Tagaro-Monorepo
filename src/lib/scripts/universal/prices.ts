@@ -1,12 +1,11 @@
 import { base_packages, premiumpackages } from '$lib/scripts/universal/packages';
-import type { package_name } from '$lib/scripts/universal/packages'
+import type { package_name } from '$lib/scripts/universal/packages';
+import type { zubuchoption_id } from './zubuchoption_id';
+import { zubuchoptionen_price } from './zubuchoptionen';
+import { Dynamic_Priceable_Asset, Priceable_Asset } from './priceable_interface';
+import type { Price } from './priceable_interface';
 
-export interface PackagePrice {
-	monat: number;
-	jahr: number;
-}
-
-const package_prices: Record<package_name, PackagePrice> = {
+const packages: Record<package_name, Price> = {
 	entertainment: { jahr: 14.5, monat: 17 },
 	entertainmentplus: { jahr: 20, monat: 25 },
 	cinema: { jahr: 10, monat: 12.5 },
@@ -36,17 +35,22 @@ export const aktivierung_string = `€ ${aktivierung.toFixed(2).replace('.', ','
 export const bonus = 20;
 export const bonus_string = `€ ${bonus.toFixed(2).replace('.', ',')}`;
 
-export function get_price(packages: Array<package_name>): PackagePrice {
+export type priceable = package_name | zubuchoption_id;
+const price_table: Record<priceable, Price> = {
+	...package_prices,
+	...Object.fromEntries(
+		Object.entries(zubuchoptionen_price).map(([key, value]) => [key, { jahr: value, monat: value }])
+	)
+};
+
+export function get_price(assets: Array<priceable>): Price {
 	return {
-		jahr: sum(packages.map((v) => package_prices[v].jahr)) * factor_jahr,
-		monat: sum(packages.map((v) => package_prices[v].monat)) * factor_monat
+		jahr: sum(assets.map((v) => price_table[v].jahr)) * factor_jahr,
+		monat: sum(assets.map((v) => price_table[v].monat)) * factor_monat
 	};
 }
-export function get_price_string(
-	packages: Array<package_name>,
-	subscription_time: keyof PackagePrice
-): string {
-	const price = get_price(packages);
+export function get_price_string(assets: Array<priceable>, subscription_time: keyof Price): string {
+	const price = get_price(assets);
 	return '€ ' + price[subscription_time].toFixed(2).replace('.', ',');
 }
 

@@ -4,6 +4,7 @@
 	export let func: () => unknown;
 	export let selected: boolean;
 </script>
+
 <button on:click={func} class:selected>
 	<img src={image} alt={text} />
 	<p>{text}</p>

@@ -2,7 +2,7 @@
 	import ClickableBox from './clickable_box.svelte';
 
 	interface Box {
-		id: string
+		id: string;
 		image: string;
 		text: string;
 		disabled: boolean;
