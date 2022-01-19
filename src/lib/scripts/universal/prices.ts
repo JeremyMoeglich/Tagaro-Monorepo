@@ -1,4 +1,4 @@
-import type { package_name } from '$lib/scripts/universal/packages';
+import { base_packages, package_name, premiumpackages } from '$lib/scripts/universal/packages';
 
 export interface PackagePrice {
 	monat: number;
@@ -12,9 +12,6 @@ const package_prices: Record<package_name, PackagePrice> = {
 	sport: { jahr: 5.5, monat: 8 },
 	bundesliga: { jahr: 12.5, monat: 15 }
 };
-
-const base_packages: Array<package_name> = ['entertainment', 'entertainmentplus'];
-const premiumpackages: Array<package_name> = ['cinema', 'sport', 'bundesliga'];
 
 base_packages.forEach((v) => {
 	package_prices[v];

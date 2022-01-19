@@ -26,6 +26,7 @@
 
 	let navbar_elements = {
 		Startseite: '/',
+		Aboformular: '/aboformular',
 		'Sky Angebote': {
 			index: '/angebote',
 			'Sky Entertainment Plus': '/angebote/entertainmentplus',
