@@ -8,7 +8,7 @@
 	} from '$lib/scripts/universal/packages';
 	import { get_price_string } from '$lib/scripts/universal/prices';
 	import { receive_type, receive_types } from '$lib/scripts/universal/receive_type';
-import { zubuchoptionen } from '$lib/scripts/universal/zubuchoptionen';
+	import { zubuchoptionen } from '$lib/scripts/universal/zubuchoptionen';
 
 	let selected_base_packages: Array<package_name> = [base_packages[0]];
 	$: selected_base_package = selected_base_packages[0];
