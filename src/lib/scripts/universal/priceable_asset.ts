@@ -1,15 +1,11 @@
 import type { selector } from './selector';
-import type { asset_id, priceable_asset_id } from './asset_ids';
-import { packages } from './assets/packages';
-import { zubuchoptionen } from './assets/zubuchoptionen';
+import type { Asset, priceable_asset_id } from './asset_types';
+import { index_by_id } from './asset_types';
+import { packages_assets } from './assets/packages';
+import { zubuchoptionen_assets } from './assets/zubuchoptionen';
 export interface Price {
 	monat: number;
 	jahr: number;
-}
-
-export interface Asset<T extends asset_id> {
-	id: T;
-	text: string;
 }
 
 export interface Priceable_Asset<T extends priceable_asset_id> extends Asset<T> {
@@ -57,15 +53,8 @@ export function apply_to_price<T extends priceable_asset_id>(
 	return asset;
 }
 
-export function index_by<T extends priceable_asset_id, K extends keyof Priceable_Asset<T>>(
-	assets: Array<Priceable_Asset<T>>,
-	key: K
-): Record<K, Priceable_Asset<T>> {
-	return Object.fromEntries(
-		assets.map((asset) => {
-			return [asset[key], asset];
-		})
-	);
-}
-
-export const priceable_assets: Array<Priceable_Asset<priceable_asset_id>> = [...packages, ...zubuchoptionen]
+export const priceable_assets: Array<Priceable_Asset<priceable_asset_id>> = [
+	...packages_assets,
+	...zubuchoptionen_assets
+];
+export const indexed_priceable_assets = index_by_id(priceable_assets);

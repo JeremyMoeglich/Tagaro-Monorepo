@@ -1,7 +1,5 @@
-import {
-	Dynamic_Priceable_Asset,
-	dynamic_to_static_asset,
-} from '../priceable_asset';
+import { dynamic_to_static_asset } from '../priceable_asset';
+import type { Dynamic_Priceable_Asset } from '../priceable_asset';
 
 enum zubuchoption_id_enum {
 	uhd,
@@ -15,7 +13,7 @@ enum zubuchoption_id_enum {
 }
 export type zubuchoption_id = keyof typeof zubuchoption_id_enum;
 
-export const zubuchoptionen = (() => {
+export const zubuchoptionen_assets = (() => {
 	const dynamic_zubuchoptionen: Array<Dynamic_Priceable_Asset<zubuchoption_id>> = [
 		{
 			id: 'uhd',

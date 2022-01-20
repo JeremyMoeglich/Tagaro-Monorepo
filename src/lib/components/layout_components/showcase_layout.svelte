@@ -1,7 +1,7 @@
 <script lang="ts">
 	import * as urls from '$lib/scripts/frontend/urls';
 	import Button from '$lib/components/layout_components/button.svelte';
-	import { package_names } from '$lib/scripts/universal/packages';
+	import { packages_assets } from '$lib/scripts/universal/assets/packages';
 	import { bonus_string } from '$lib/scripts/universal/prices';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
@@ -44,9 +44,9 @@
 					<img src={primary_image} alt="" class="primary_image" />
 				{:else}
 					<div class="package_overview">
-						{#each package_names as package_name}
-							<a href={`/angebote/${package_name}`}>
-								<img src={`/images/packages/${package_name}.jpg`} alt={package_name} />
+						{#each packages_assets as asset}
+							<a href={`/angebote/${asset.id}`}>
+								<img src={`/images/packages/${asset.id}.jpg`} alt={asset.id} />
 							</a>
 						{/each}
 					</div>

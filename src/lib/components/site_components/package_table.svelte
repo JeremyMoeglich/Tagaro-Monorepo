@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Zubuchoption from '$lib/components/layout_components/zubuchoption.svelte';
 	import { get_offer_note, get_price_string } from '$lib/scripts/universal/prices';
-	import type { package_name } from '$lib/scripts/universal/packages';
+	import type { package_id } from '$lib/scripts/universal/assets/packages';
 
-	type table_layout = Array<Array<package_name>>;
+	type table_layout = Array<Array<package_id>>;
 
 	const table: table_layout = [
 		['entertainment'],

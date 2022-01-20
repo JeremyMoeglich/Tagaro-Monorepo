@@ -1,8 +1,9 @@
 <script lang="ts">
+	import type { asset_id } from '$lib/scripts/universal/asset_types';
 	import ClickableBox from './clickable_box.svelte';
 
 	interface Box {
-		id: string;
+		id: asset_id;
 		image: string;
 		text: string;
 		disabled: boolean;
@@ -10,7 +11,7 @@
 
 	export let boxes: Array<Box>;
 	export let multi_select = false;
-	export let selected: Array<string> = [];
+	export let selected: Array<asset_id> = [];
 </script>
 
 <div class="boxes">

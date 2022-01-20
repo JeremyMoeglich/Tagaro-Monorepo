@@ -1,8 +1,8 @@
-import { base_packages, premiumpackages } from '$lib/scripts/universal/assets/packages';
+import { premiumpackages } from '$lib/scripts/universal/assets/packages';
 import type { package_id } from '$lib/scripts/universal/assets/packages';
-import { Priceable_Asset, priceable_assets, index_by } from './priceable_asset';
+import { indexed_priceable_assets } from './priceable_asset';
 import type { Price } from './priceable_asset';
-import type { priceable_asset_id } from './asset_ids';
+import type { priceable_asset_id } from './asset_types';
 import { map_object, sum } from './util';
 
 const factor_jahr = 1;
@@ -14,8 +14,7 @@ export const aktivierung_string = `€ ${aktivierung.toFixed(2).replace('.', ','
 export const bonus = 20;
 export const bonus_string = `€ ${bonus.toFixed(2).replace('.', ',')}`;
 
-
-const price_table = map_object(index_by(priceable_assets, 'id'), (key: priceable_asset_id, value: Priceable_Asset<priceable_asset_id>) => ({
+const price_table = map_object(indexed_priceable_assets, (key, value) => ({
 	key: key,
 	value: value.price
 }));

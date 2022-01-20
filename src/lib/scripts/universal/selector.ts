@@ -1,7 +1,4 @@
-import type { package_id } from './assets/packages';
-import type { receive_id } from './assets/receive_type';
-import type { asset_id } from './asset_ids';
-
+import type { asset_id } from './asset_types';
 
 interface sub_selector_type {
 	required: boolean;

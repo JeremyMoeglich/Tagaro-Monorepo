@@ -1,8 +1,6 @@
-import {
-	Dynamic_Priceable_Asset,
-	dynamic_to_static_asset,
-	apply_to_price
-} from '../priceable_asset';
+import { index_by_id } from '../asset_types';
+import { dynamic_to_static_asset, apply_to_price } from '../priceable_asset';
+import type { Dynamic_Priceable_Asset } from '../priceable_asset';
 
 enum package_id_enum {
 	entertainment,
@@ -14,17 +12,17 @@ enum package_id_enum {
 
 export type package_id = keyof typeof package_id_enum;
 
-export const packages = (() => {
+export const packages_assets = (() => {
 	const dynamic_packages: Array<Dynamic_Priceable_Asset<package_id>> = [
 		{
 			id: 'entertainment',
 			price: { jahr: 14.5, monat: 17 },
-			text: 'Entertainment'
+			text: 'Entertainment',
 		},
 		{
 			id: 'entertainmentplus',
 			price: { jahr: 20, monat: 25 },
-			text: 'Entertainment-Plus'
+			text: 'Entertainment-Plus',
 		},
 		{
 			id: 'cinema',
@@ -48,11 +46,11 @@ export const packages = (() => {
 export const base_packages: Array<package_id> = ['entertainment', 'entertainmentplus'];
 export const premiumpackages: Array<package_id> = ['cinema', 'sport', 'bundesliga'];
 
-packages.map((v) => {
+packages_assets.map((v) => {
 	if (premiumpackages.includes(v.id)) {
 		v = apply_to_price(v, 'jahr', 0.5);
 	}
 	return v;
 });
 
-
+export const indexed_package_assets = index_by_id(packages_assets);
