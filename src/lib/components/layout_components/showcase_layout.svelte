@@ -15,7 +15,7 @@
 	export let primary_image: undefined | string = undefined;
 	export let side_images = [];
 
-	const left_badges = ['/images/badges/praemie.png'];
+	const left_badges = ['/images/badges/praemie.svg'];
 	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.png'];
 </script>
 
