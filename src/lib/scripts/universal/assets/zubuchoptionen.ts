@@ -24,42 +24,50 @@ export const zubuchoptionen_assets = (() => {
 					required: false,
 					word: 'internet'
 				}
-			]
+			],
+			note: '[TODO]'
 		},
 		{
 			id: 'dazn',
 			price: { jahr: 12.5, monat: 14.99 },
-			text: 'DAZN'
+			text: 'DAZN',
+			note: '[TODO]'
 		},
 		{
 			id: 'multiscreen',
 			price: 10,
-			text: 'Multiscreen'
+			text: 'Multiscreen',
+			note: '[TODO]'
 		},
 		{
 			id: 'kids',
 			price: 5,
-			text: 'Kids'
+			text: 'Kids',
+			note: '[TODO]'
 		},
 		{
 			id: 'trendsports',
 			price: 5.99,
-			text: 'trendSports'
+			text: 'trendSports',
+			note: '[TODO]'
 		},
 		{
 			id: 'plus18',
 			price: 0,
-			text: '18+ für Blue Movie'
+			text: '18+ für Blue Movie',
+			note: '[TODO]'
 		},
 		{
 			id: 'netflixstandard',
 			price: 5,
-			text: 'Netflix Standard-Abo'
+			text: 'Netflix Standard-Abo',
+			note: '[TODO]'
 		},
 		{
 			id: 'netflixpremium',
 			price: 10,
-			text: 'Netflix Premium-Abo'
+			text: 'Netflix Premium-Abo',
+			note: '[TODO]'
 		}
 	];
 	return dynamic_zubuchoptionen.map(dynamic_to_static_asset);

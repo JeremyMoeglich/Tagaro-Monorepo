@@ -18,26 +18,31 @@ export const packages_assets = (() => {
 			id: 'entertainment',
 			price: { jahr: 14.5, monat: 17 },
 			text: 'Entertainment',
+			note: '[TODO]'
 		},
 		{
 			id: 'entertainmentplus',
 			price: { jahr: 20, monat: 25 },
 			text: 'Entertainment-Plus',
+			note: '[TODO]'
 		},
 		{
 			id: 'cinema',
 			price: { jahr: 10, monat: 12.5 },
-			text: 'Cinema'
+			text: 'Cinema',
+			note: '[TODO]'
 		},
 		{
 			id: 'sport',
 			price: { jahr: 5.5, monat: 8 },
-			text: 'Sport'
+			text: 'Sport',
+			note: '[TODO]'
 		},
 		{
 			id: 'bundesliga',
 			price: { jahr: 12.5, monat: 15 },
-			text: 'Bundesliga'
+			text: 'Bundesliga',
+			note: '[TODO]'
 		}
 	];
 	return dynamic_packages.map(dynamic_to_static_asset);

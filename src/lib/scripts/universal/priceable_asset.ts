@@ -25,7 +25,8 @@ export function dynamic_to_static_asset<T extends priceable_asset_id>(
 		text: asset.text,
 		id: asset.id,
 		selector: asset.selector ? asset.selector : [],
-		price: typeof asset.price === 'number' ? { jahr: asset.price, monat: asset.price } : asset.price
+		price: typeof asset.price === 'number' ? { jahr: asset.price, monat: asset.price } : asset.price,
+		note: asset.note
 	};
 }
 
@@ -34,7 +35,8 @@ export function priceable_asset_to_asset<T extends priceable_asset_id>(
 ): Asset<T> {
 	return {
 		id: asset.id,
-		text: asset.text
+		text: asset.text,
+		note: asset.note
 	};
 }
 

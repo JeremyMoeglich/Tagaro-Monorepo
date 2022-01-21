@@ -11,14 +11,17 @@ export type receive_id = keyof typeof receive_type_enum;
 export const receive_assets: Array<Asset<receive_id>> = [
 	{
 		id: 'kabel',
-		text: 'Kabel'
+		text: 'Kabel',
+		note: '[TODO]'
 	},
 	{
 		id: 'satelit',
-		text: 'Satelit'
+		text: 'Satelit',
+		note: '[TODO]'
 	},
 	{
 		id: 'internet',
-		text: 'Internet'
+		text: 'Internet',
+		note: '[TODO]'
 	}
 ];
