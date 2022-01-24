@@ -1,5 +1,5 @@
 <script>
-	export let box_height;
+	export let box_height = 45;
 	export let text;
 	export let name;
 	export let required = true;

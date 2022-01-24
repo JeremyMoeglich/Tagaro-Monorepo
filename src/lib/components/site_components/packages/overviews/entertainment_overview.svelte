@@ -1,5 +1,5 @@
 <script>
-	import { get_price_string } from '$lib/scripts/universal/prices';
+	import { get_price_string } from '$lib/scripts/universal/asset_libary/prices';
 	import PackageOverview from '$lib/components/layout_components/package_overview.svelte';
 	export let detailed = false;
 </script>
@@ -14,7 +14,7 @@
 		'#Sky Q Receiver mit 1TB Festplatte, Ultra HD fähig und Sky On Demand Zugang',
 		'#Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!'
 	]}
-	image={'/images/packages/entertainment.jpg'}
+	image={'/images/assets/packages/normal/entertainment.jpg'}
 	{detailed}
 >
 	<h3>12 Monate nur {get_price_string(['entertainment'], 'jahr')} mtl.*</h3>

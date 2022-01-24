@@ -15,3 +15,28 @@ export function map_object<IK extends string, IV, K extends string, V>(
 		})
 	) as Record<K, V>;
 }
+
+export function final_join(
+	lst: Array<string>,
+	default_seperator: string,
+	final_seperator: string
+): string {
+	if (lst.length == 1) {
+		return lst[0];
+	} else if (lst.length == 0) {
+		return '';
+	} else {
+		return (
+			lst.slice(0, -2).join(default_seperator) +
+			default_seperator +
+			lst.slice(-2).join(final_seperator)
+		);
+	}
+}
+
+export function hasProperty<X extends unknown, Y extends PropertyKey>(
+	obj: X,
+	prop: Y
+): obj is X & Record<Y, unknown> {
+	return Object.prototype.hasOwnProperty.call(obj, prop);
+}

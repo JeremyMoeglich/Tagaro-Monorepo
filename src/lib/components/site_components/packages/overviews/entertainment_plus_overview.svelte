@@ -1,5 +1,5 @@
 <script>
-	import { get_price_string } from '$lib/scripts/universal/prices';
+	import { get_price_string } from '$lib/scripts/universal/asset_libary/prices';
 	import PackageOverview from '$lib/components/layout_components/package_overview.svelte';
 	export let detailed = false;
 </script>
@@ -12,7 +12,7 @@
 		'Alle Inhalte von Sky, Free TV, deinen Lieblingsapps und Mediatheken auf einen Blick vereint',
 		'Einfach. Alles mit einer Sprachfernbedienung'
 	]}
-	image={'/images/packages/entertainmentplus.jpg'}
+	image={'/images/assets/packages/normal/entertainmentplus.jpg'}
 	{detailed}
 >
 	<h3>12 Monate nur {get_price_string(['entertainmentplus'], 'jahr')} mtl.*</h3>

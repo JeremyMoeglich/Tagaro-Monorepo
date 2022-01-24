@@ -1,7 +1,10 @@
 <script lang="ts">
 	import Zubuchoption from '$lib/components/layout_components/zubuchoption.svelte';
-	import { get_offer_note, get_price_string } from '$lib/scripts/universal/prices';
-	import type { package_id } from '$lib/scripts/universal/assets/packages';
+	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_libary/prices';
+	import {
+		indexed_package_assets,
+		package_id
+	} from '$lib/scripts/universal/asset_libary/assets/packages';
 
 	type table_layout = Array<Array<package_id>>;
 
@@ -30,7 +33,7 @@
 		{#each table as row}
 			<tr>
 				{#each row as element}
-					<td> <img src="/images/square_packages/{element}.png" alt="" /> </td>
+					<td> <img src={indexed_package_assets[element].image} alt="" /> </td>
 				{/each}
 				{#if row.length < 4}
 					<td colspan={4 - row.length} />
@@ -53,28 +56,31 @@
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption
 			text="<b>UHD + € 5,00 mtl. (für Sat oder Kabel-Empfang)</b>"
-			image="/images/square_packages/uhd.png"
+			image="/images/assets/zubuchoptionen/uhd.png"
 		/>
 		<Zubuchoption
 			text="<b>DAZN jährlich + € 12,50 mtl. </b>oder<b> <br/> DAZN monatlich + € 14,99 mtl.</b>"
-			image="/images/external/dazn.svg"
+			image="/images/assets/zubuchoptionen/dazn.svg"
 		/>
 		<Zubuchoption
 			text="<b>Multiscreen + € 10,00 mtl. <br/></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br/> 2. Sky Q Receiver für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)"
-			image="/images/square_packages/multiscreen.png"
+			image="/images/assets/zubuchoptionen/multiscreen.png"
 		/>
-		<Zubuchoption text="<b>Sky Kids +  € 5,00 mtl.</b>" image="/images/square_packages/kids.png" />
+		<Zubuchoption
+			text="<b>Sky Kids +  € 5,00 mtl.</b>"
+			image="/images/assets/zubuchoptionen/kids.png"
+		/>
 		<Zubuchoption
 			text="<b>trendSports + € 5,99 mtl.</b>"
-			image="/images/external/trendsports.png"
+			image="/images/assets/zubuchoptionen/trendsports.png"
 		/>
 		<Zubuchoption
 			text="<b>18+ für Blue Movie € 0</b><br/> einmalige Versandpauschale 18+ PIN"
-			image="/images/external/18_plus.png"
+			image="/images/assets/zubuchoptionen/plus18.png"
 		/>
 		<Zubuchoption
 			text="<b>Netflix Standard-Abo, HD/2 Streams + € 5 mtl.</b> oder <br/> <b>Netflix Premium-Abo, UHD/4 Streams + € 10 mtl.</b>"
-			image="/images/badges/NetflixSDHD.png"
+			image="/images/assets/zubuchoptionen/NetflixSDHD.png"
 		/>
 	</div>
 </div>

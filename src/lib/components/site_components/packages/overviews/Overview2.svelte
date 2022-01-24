@@ -1,7 +1,7 @@
 <script>
 	import PackageOverview from '$lib/components/layout_components/package_overview.svelte';
 	export let detailed = false;
-	import { get_price_string } from '$lib/scripts/universal/prices';
+	import { get_price_string } from '$lib/scripts/universal/asset_libary/prices';
 </script>
 
 <PackageOverview

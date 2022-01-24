@@ -1,5 +1,5 @@
 <script>
-	import { get_price_string } from '$lib/scripts/universal/prices';
+	import { get_price_string } from '$lib/scripts/universal/asset_libary/prices';
 	import PackageOverview from '$lib/components/layout_components/package_overview.svelte';
 	export let detailed = false;
 </script>
@@ -12,7 +12,7 @@
 		'Alle Relegationsspiele und der Supercup live',
 		'Mit den Sky Konferenzen und Highlight-Videos kein Tor verpassen'
 	]}
-	image={'/images/packages/bundesliga.jpg'}
+	image={'/images/assets/packages/normal/bundesliga.jpg'}
 	{detailed}
 >
 	<h3>12 Monate nur {get_price_string(['entertainment', 'bundesliga'], 'jahr')} mtl.*</h3>

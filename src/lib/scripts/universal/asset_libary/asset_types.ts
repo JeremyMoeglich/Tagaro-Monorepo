@@ -5,10 +5,11 @@ import type { zubuchoption_id } from './assets/zubuchoptionen';
 export type priceable_asset_id = package_id | zubuchoption_id;
 export type asset_id = priceable_asset_id | receive_id;
 
-export interface Asset<T extends asset_id> {
+export interface Asset<T extends asset_id = asset_id> {
 	id: T;
 	text: string;
 	note: string;
+	image: string;
 }
 
 export function index_by_id<T extends asset_id, P extends Asset<T>>(

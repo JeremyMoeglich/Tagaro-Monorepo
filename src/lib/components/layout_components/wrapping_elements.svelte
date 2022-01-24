@@ -166,6 +166,9 @@
 			}
 			top: 550px;
 			z-index: 20;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.827);
+			}
 		}
 		.left_control {
 			transform: rotate(90deg);

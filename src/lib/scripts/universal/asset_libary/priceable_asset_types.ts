@@ -1,14 +1,13 @@
 import type { selector } from './selector';
 import type { Asset, priceable_asset_id } from './asset_types';
-import { index_by_id } from './asset_types';
-import { packages_assets } from './assets/packages';
-import { zubuchoptionen_assets } from './assets/zubuchoptionen';
+
 export interface Price {
 	monat: number;
 	jahr: number;
 }
 
-export interface Priceable_Asset<T extends priceable_asset_id> extends Asset<T> {
+export interface Priceable_Asset<T extends priceable_asset_id = priceable_asset_id>
+	extends Asset<T> {
 	price: Price;
 	selector: selector;
 }
@@ -24,20 +23,17 @@ export function dynamic_to_static_asset<T extends priceable_asset_id>(
 	return {
 		text: asset.text,
 		id: asset.id,
-		selector: asset.selector ? asset.selector : [],
-		price: typeof asset.price === 'number' ? { jahr: asset.price, monat: asset.price } : asset.price,
-		note: asset.note
+		selector: asset.selector ? asset.selector : { type: 'OR', descriptor: [] },
+		price:
+			typeof asset.price === 'number' ? { jahr: asset.price, monat: asset.price } : asset.price,
+		note: asset.note,
+		image: asset.image
 	};
 }
-
-export function priceable_asset_to_asset<T extends priceable_asset_id>(
-	asset: Priceable_Asset<T>
-): Asset<T> {
-	return {
-		id: asset.id,
-		text: asset.text,
-		note: asset.note
-	};
+export function dynamic_to_static_assets<T extends priceable_asset_id>(
+	assets: Array<Dynamic_Priceable_Asset<T>>
+): Array<Priceable_Asset<T>> {
+	return assets.map(dynamic_to_static_asset);
 }
 
 export function apply_to_price<T extends priceable_asset_id>(
@@ -54,9 +50,3 @@ export function apply_to_price<T extends priceable_asset_id>(
 	}
 	return asset;
 }
-
-export const priceable_assets: Array<Priceable_Asset<priceable_asset_id>> = [
-	...packages_assets,
-	...zubuchoptionen_assets
-];
-export const indexed_priceable_assets = index_by_id(priceable_assets);

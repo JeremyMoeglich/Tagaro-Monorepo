@@ -1,9 +1,17 @@
-<script>
+<script lang="ts">
+	import type { prefrences_obj } from '$lib/scripts/frontend/prefrences';
+
+	import { aboformular } from '$lib/scripts/frontend/urls';
+
 	import ZumAboformularBar from './zum_aboformular_bar.svelte';
-	export let preferences_object;
+
+	export let preferences_object: prefrences_obj;
+	export let route: string;
 </script>
 
-<ZumAboformularBar />
+{#if route !== aboformular}
+	<ZumAboformularBar />
+{/if}
 
 <div class="side_alignment">
 	<div class="infomationen">
@@ -45,11 +53,11 @@
 					alt="Trustami"
 				/></a
 			> -->
-		{#if preferences_object['Social Media']}
+		{#if preferences_object['social Media']}
 			{@html '<div class="widget_container_badge"></div>'}
 		{/if}
 	</div>
-	{#if preferences_object['Social Media']}
+	{#if preferences_object['social Media']}
 		<div class="social">
 			<h3>Social Media</h3>
 			<iframe

@@ -1,8 +1,13 @@
 <script lang="ts">
 	import { browser } from '$app/env';
 	import Button from '$lib/components/layout_components/button.svelte';
+	import {
+		prefrences_keys,
+		prefrences_keys_type,
+		prefrences_obj,
+		prefrences_keys_enum
+	} from '$lib/scripts/frontend/prefrences';
 	import Cookies from 'js-cookie';
-	import * as cookie_keys from '$lib/scripts/frontend/cookie_data';
 	import cloneDeep from 'lodash.clonedeep';
 
 	function IsJsonString(str: string): boolean {
@@ -18,34 +23,36 @@
 	export let route: string;
 	$: banner_enabled = !disabled_routes.some((element) => route.startsWith(element));
 
-	function GetPrefrenceObj(): { [key: string]: boolean } {
+	function GetPrefrenceObj(): prefrences_obj {
 		const original_cookie_json = Cookies.get('preferences');
-		let return_object: Record<string, boolean> = { Essentiell: true };
+		let return_object: Partial<prefrences_obj> = { essentiell: true };
 		if (original_cookie_json && IsJsonString(original_cookie_json)) {
-			let object: Record<string, boolean> = JSON.parse(original_cookie_json);
+			let object: Partial<prefrences_obj> = JSON.parse(original_cookie_json);
 			if (Object.values(object).every((key) => typeof key == 'boolean')) {
 				return_object = object;
 			}
 		}
 		const keys = Object.keys(return_object);
-		const difference = cookie_keys.required_keys.filter((x) => !keys.includes(x));
+		const difference: Array<prefrences_keys_type> = prefrences_keys.filter(
+			(x) => !keys.includes(x)
+		);
 		difference.forEach((element) => {
 			return_object[element] = undefined;
 		});
-		return return_object;
+		return return_object as prefrences_obj;
 	}
 
-	function AreCookiesAccepted(object: { [key: string]: boolean }): boolean {
+	function AreCookiesAccepted(object: prefrences_obj): boolean {
 		//return false;
 		return !Object.values(object).some((key) => key === undefined) || !browser;
 	}
-	function IsBannerShown(object: { [key: string]: boolean }, banner_enabled: boolean): boolean {
+	function IsBannerShown(object: prefrences_obj, banner_enabled: boolean): boolean {
 		return !AreCookiesAccepted(object) && banner_enabled;
 	}
 
-	let accept_obj: { [key: string]: boolean } = GetPrefrenceObj();
+	let accept_obj: prefrences_obj = GetPrefrenceObj();
 
-	export let preferences_object = accept_obj;
+	export let preferences_object: prefrences_obj = accept_obj;
 
 	$: preferences_object = cloneDeep(accept_obj);
 
@@ -253,12 +260,12 @@
 		<div class="options_top">
 			{#each Object.entries(edit_preferences) as pair}
 				<div class="option">
-					<p>{pair[0]}</p>
+					<p>{prefrences_keys_enum[pair[0]]}</p>
 					<label class="switch">
 						<input
 							type="checkbox"
 							bind:checked={edit_preferences[pair[0]]}
-							disabled={pair[0] === 'Essentiell'}
+							disabled={pair[0] === 'essentiell'}
 						/>
 						<span class="slider round" />
 					</label>
@@ -269,12 +276,12 @@
 			<div class="options_side">
 				{#each Object.entries(edit_preferences) as pair}
 					<div class="option">
-						<p>{pair[0]}</p>
+						<p>{prefrences_keys_enum[pair[0]]}</p>
 						<label class="switch">
 							<input
 								type="checkbox"
 								bind:checked={edit_preferences[pair[0]]}
-								disabled={pair[0] === 'Essentiell'}
+								disabled={pair[0] === 'essentiell'}
 							/>
 							<span class="slider round" />
 						</label>

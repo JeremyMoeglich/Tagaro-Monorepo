@@ -1,6 +1,6 @@
 <script>
 	import WrappingElements from '$lib/components/layout_components/wrapping_elements.svelte';
-	import { bonus_string, get_price_string } from '$lib/scripts/universal/prices';
+	import { bonus_string, get_price_string } from '$lib/scripts/universal/asset_libary/prices';
 
 	const atr = [
 		`+ Für Internet, Sat- oder Kabel`,
@@ -18,7 +18,7 @@
 	const components = [
 		{
 			title: `2 Sky Pakete nach Wahl + ${bonus_string} Prämie`,
-			image: `/images/wahl/wahl_2aus4.png`,
+			image: `/images/assets/packages/wahl/wahl_2aus4.png`,
 			points: atr,
 			subtitle: `ab ${get_price_string([`entertainment`, `sport`], `jahr`)} monatlich* `,
 			info_text:
@@ -28,7 +28,7 @@
 		},
 		{
 			title: `Sky Entertainment Paket + ${bonus_string} Prämie`,
-			image: `/images/wahl/wahl_entertainment.png`,
+			image: `/images/assets/packages/wahl/wahl_entertainment.png`,
 			points: atr,
 			subtitle: `ab ${get_price_string([`entertainment`], `jahr`)} monatlich* `,
 			info_text: `(im Jahres-Abo, danach ${get_price_string(
@@ -39,7 +39,7 @@
 		},
 		{
 			title: `3 Sky Pakete nach Wahl + ${bonus_string} Prämie`,
-			image: `/images/wahl/wahl_3aus4.png`,
+			image: `/images/assets/packages/wahl/wahl_3aus4.png`,
 			points: atr,
 			subtitle: `ab ${get_price_string([`entertainment`, `cinema`, `sport`], `jahr`)} monatlich* `,
 			info_text:
@@ -50,7 +50,7 @@
 
 		{
 			title: `Alle 4 Sky Pakete + ${bonus_string} Prämie`,
-			image: `/images/wahl/wahl_4.png`,
+			image: `/images/assets/packages/wahl/wahl_4.png`,
 			points: atr,
 			subtitle: `ab ${get_price_string(
 				[`entertainment`, `cinema`, `sport`, `bundesliga`],
@@ -64,7 +64,7 @@
 
 		{
 			title: `Sky Cinema Paket + ${bonus_string} Prämie`,
-			image: `/images/wahl/wahl_cinema.png`,
+			image: `/images/assets/packages/wahl/wahl_cinema.png`,
 			points: atr,
 			subtitle: `${get_price_string([`entertainmentplus`, `cinema`], `jahr`)} monatlich* `,
 			info_text:
@@ -75,7 +75,7 @@
 
 		{
 			title: `Sky Sport Paket + ${bonus_string} Prämie`,
-			image: `/images/wahl/wahl_sport.png`,
+			image: `/images/assets/packages/wahl/wahl_sport.png`,
 			points: atr,
 			subtitle: `${get_price_string([`entertainment`, `sport`], `jahr`)} monatlich* `,
 			info_text:
@@ -86,7 +86,7 @@
 
 		{
 			title: `Sky Fußball-Bundesliga Paket + ${bonus_string} Prämie`,
-			image: `/images/wahl/wahl_bundesliga.png`,
+			image: `/images/assets/packages/wahl/wahl_bundesliga.png`,
 			points: atr,
 			subtitle: `${get_price_string([`entertainment`, `bundesliga`], `jahr`)} monatlich* `,
 			info_text:

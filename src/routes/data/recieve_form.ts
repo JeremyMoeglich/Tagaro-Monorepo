@@ -2,33 +2,27 @@ import sizeof from 'object-sizeof';
 import { SMTPClient, Message } from 'emailjs';
 
 import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL, RECEIVER } from '$lib/scripts/backend/Env';
-import type { ReadOnlyFormData } from '@sveltejs/kit/types/helper';
 import type { RequestHandler } from '@sveltejs/kit';
 
-function getFormBody(body: ReadOnlyFormData | Uint8Array): { [key: string]: string } {
-	return [...body.entries()].reduce((data, [k, v]) => {
-		let value: string | boolean | number = v;
-		if (value === 'true') value = true;
-		if (value === 'false') value = false;
-		if (k in data) data[k] = Array.isArray(data[k]) ? [...data[k], value] : [data[k], value];
-		else data[k] = value;
-		return data;
-	}, {});
+function serializeForm(form: FormData) {
+	const obj = {};
+	for (const key of form.keys()) {
+		obj[key] = form.get(key);
+	}
+	return obj;
+}
+interface Kontakt_Form {
+	sp_email: string;
+	sp_number: string;
+	name: string;
+	email: string;
+	number: string;
+	message: string;
 }
 
-export const post: RequestHandler<
-	{},
-	Partial<{ email: string; password: string; ['repeat-password']: string }>
-> = async ({ request }) => {
-	const body = request.body
-	if (typeof body !== 'object') {
-		return {
-			status: 413,
-			body: 'Invalid body type'
-		};
-	}
-	const bodyobj = getFormBody();
-
+export const post: RequestHandler<FormData> = async ({ request }) => {
+	const form = await request.formData();
+	const bodyobj = serializeForm(form) as Kontakt_Form;
 	if (sizeof(bodyobj) > 30000) {
 		return {
 			status: 413,
@@ -37,12 +31,12 @@ export const post: RequestHandler<
 	}
 	let is_spam = false;
 	console.log(bodyobj);
-	Object.entries(bodyobj).forEach((element) => {
-		if (element[0].startsWith('sp_')) {
-			if (element[1].trim() !== '') {
+	Object.entries(bodyobj).forEach(([key, value]) => {
+		if (key.startsWith('sp_')) {
+			if (value.trim() !== '') {
 				is_spam = true;
 			}
-			delete bodyobj[element[0]];
+			delete bodyobj[key];
 		}
 	});
 	if (is_spam) {

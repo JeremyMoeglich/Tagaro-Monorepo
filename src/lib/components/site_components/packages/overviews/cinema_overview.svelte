@@ -1,5 +1,5 @@
 <script>
-	import { get_price_string } from '$lib/scripts/universal/prices';
+	import { get_price_string } from '$lib/scripts/universal/asset_libary/prices';
 	import PackageOverview from '$lib/components/layout_components/package_overview.svelte';
 	export let detailed = false;
 </script>
@@ -14,7 +14,7 @@
 		'#Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!',
 		'#UHD optional für € 5,00 mtl.'
 	]}
-	image={'/images/packages/cinema.jpg'}
+	image={'/images/assets/packages/normal/cinema.jpg'}
 	{detailed}
 >
 	<h3>12 Monate nur {get_price_string(['entertainmentplus', 'cinema'], 'jahr')} mtl.*</h3>

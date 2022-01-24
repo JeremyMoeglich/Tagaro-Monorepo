@@ -19,6 +19,11 @@
 	import { fly } from 'svelte/transition';
 	import InfoBanner from '$lib/components/site_components/info_banner.svelte';
 	import { clickOutside } from 'svelte-use-click-outside';
+	import {
+		prefrences_keys,
+		prefrences_keys_type,
+		prefrences_obj
+	} from '$lib/scripts/frontend/prefrences';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -45,7 +50,9 @@
 
 	let screen_y_position: number;
 
-	let preferences_object = {};
+	let preferences_object: prefrences_obj = Object.fromEntries(
+		prefrences_keys.map((v) => [v, false])
+	) as Record<prefrences_keys_type, boolean>;
 
 	function open_sidebar() {
 		if (mobile_slider_value === 0) {
@@ -69,7 +76,7 @@
 </script>
 
 <svelte:head>
-	{#if preferences_object['Analytics']}
+	{#if preferences_object['analytics']}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-70CD2JS6R8"></script>
 		<script>
@@ -82,7 +89,7 @@
 			gtag('config', 'G-70CD2JS6R8');
 		</script>
 	{/if}
-	{#if preferences_object['Social Media']}
+	{#if preferences_object['social Media']}
 		<script
 			id="trustamiwidget"
 			type="text/javascript"
@@ -111,7 +118,7 @@
 	<meta name="author" content="Jeremy Möglich" />
 </svelte:head>
 
-{#if preferences_object['Social Media']}
+{#if preferences_object['social Media']}
 	{@html '<div class="widget_container_overlay" />'}
 {/if}
 <body>
@@ -231,7 +238,7 @@
 					<slot />
 				</PageTransition>
 			</div>
-			<Footer {preferences_object} />
+			<Footer {preferences_object} {route} />
 		</div>
 		<div
 			class="mobile_sidebar"
@@ -341,6 +348,7 @@
 		margin-right: 0;
 		margin-left: 0;
 		overflow-x: hidden;
+		overflow-x: clip;
 	}
 	.top_header_container {
 		position: absolute;

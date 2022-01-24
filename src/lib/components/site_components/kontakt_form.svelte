@@ -9,11 +9,10 @@
 
 <form class="contact_form" method="POST" action={get_dynamic_host(url) + '/data/recieve_form'}>
 	<SpamField />
-	<InputField text={'Name*'} box_height={45} name="name" type="text" autocomplete="name" />
-	<InputField text={'E-Mail Adresse*'} box_height={45} name="email" autocomplete="email" />
+	<InputField text={'Name*'} name="name" type="text" autocomplete="name" />
+	<InputField text={'E-Mail Adresse*'} name="email" autocomplete="email" />
 	<InputField
 		text={'Telefonnummer'}
-		box_height={45}
 		name="number"
 		type="number"
 		required={false}

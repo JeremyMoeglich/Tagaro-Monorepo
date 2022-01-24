@@ -1,8 +1,8 @@
 <script lang="ts">
 	import * as urls from '$lib/scripts/frontend/urls';
 	import Button from '$lib/components/layout_components/button.svelte';
-	import { packages_assets } from '$lib/scripts/universal/assets/packages';
-	import { bonus_string } from '$lib/scripts/universal/prices';
+	import { packages_assets } from '$lib/scripts/universal/asset_libary/assets/packages';
+	import { bonus_string } from '$lib/scripts/universal/asset_libary/prices';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
@@ -16,7 +16,7 @@
 	export let side_images = [];
 
 	const left_badges = ['/images/badges/praemie.svg'];
-	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.png'];
+	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.svg'];
 </script>
 
 <div class="alignment">
@@ -46,7 +46,7 @@
 					<div class="package_overview">
 						{#each packages_assets as asset}
 							<a href={`/angebote/${asset.id}`}>
-								<img src={`/images/packages/${asset.id}.jpg`} alt={asset.id} />
+								<img src={asset.image} alt={asset.id} />
 							</a>
 						{/each}
 					</div>
