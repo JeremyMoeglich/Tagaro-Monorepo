@@ -62,6 +62,6 @@ function intersect(a: Array<unknown>, b: Array<unknown>): Array<unknown> {
 
 export function get_offer_note(packages: Array<package_name>): string {
 	if (intersect(packages, premiumpackages).length > 0) {
-		return 'Januar Sale 50%';
+		return 'Winter Sale 50%';
 	}
 }

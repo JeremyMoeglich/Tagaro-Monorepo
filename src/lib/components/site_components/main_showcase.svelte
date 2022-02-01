@@ -4,11 +4,11 @@
 </script>
 
 <ShowcaseLayout
-	title={'Jetzt Sky Wunschpakete buchen und im Januar Sale 50% auf Cinema, Bundesliga und Sport erhalten'}
+	title={'Jetzt Sky Wunschpakete buchen und im Winter Sale 50% auf Cinema, Bundesliga und Sport erhalten'}
 	points={[
 		'50% auf die Pakete Cinema, Fußball Bundesliga und/oder Sport erhalten*',
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`
 	]}
 	side_images={['/images/badges/50p.png']}
-	primary_image={'/images/visuals/januar_sale.webp'}
+	primary_image={'/images/visuals/winter_sale.webp'}
 />
