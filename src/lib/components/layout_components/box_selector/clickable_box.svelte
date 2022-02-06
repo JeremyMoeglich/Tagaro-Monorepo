@@ -1,18 +1,18 @@
 <script lang="ts">
-	import type { Asset, asset_id } from '$lib/scripts/universal/asset_libary/asset_types';
-	import type { Priceable_Asset } from '$lib/scripts/universal/asset_libary/priceable_asset_types';
-	import { get_price_string } from '$lib/scripts/universal/asset_libary/prices';
+	import type { Asset, asset_id } from '$lib/scripts/universal/asset_library/asset_types';
+	import type { Priceable_Asset } from '$lib/scripts/universal/asset_library/priceable_asset_types';
+	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import {
 		get_selector_error_strings,
 		matches_selector
-	} from '$lib/scripts/universal/asset_libary/selector';
+	} from '$lib/scripts/universal/asset_library/selector';
 	import { hasProperty } from '$lib/scripts/universal/util';
 
 	export let asset: Asset | Priceable_Asset;
 	export let func: () => unknown;
 	export let selected: boolean;
 	export let hoverable = true;
-	export let selector_assets: Array<asset_id>;
+	export let selector_assets: ReadonlyArray<asset_id>;
 
 	function click() {
 		if (!disabled) {
@@ -42,7 +42,7 @@
 	<img src={asset.image} alt={asset.text} on:dragstart|preventDefault />
 	<p>
 		{#if hasProperty(asset, 'price')}
-			<b>{get_price_string([asset.id], 'jahr')}</b> -
+			<b>+ {get_price_string([asset.id], 'jahr')}</b> -
 		{/if}{asset.text}
 	</p>
 </button>

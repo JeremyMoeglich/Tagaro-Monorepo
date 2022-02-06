@@ -14,10 +14,12 @@
 </script>
 
 <div class="main_container">
-	<p>{text}</p>
+	<p>
+		{text}{#if required}*{/if}
+	</p>
 	<div class="outer">
 		{#if type === 'select'}
-			<select {name} id={name}> <slot /></select>
+			<select {name} id={name} bind:value> <slot /></select>
 		{:else if multiline}
 			<textarea {name} {required} placeholder=" " {autocomplete} bind:value />
 		{:else if type == 'text'}

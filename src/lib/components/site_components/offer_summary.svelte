@@ -1,17 +1,17 @@
 <script lang="ts">
-	import type { priceable_asset_id } from '$lib/scripts/universal/asset_libary/asset_types';
-	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_libary/priceable_asset';
+	import type { priceable_asset_id } from '$lib/scripts/universal/asset_library/asset_types';
+	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_library/priceable_asset';
 
-	import { get_price_string } from '$lib/scripts/universal/asset_libary/prices';
+	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 
-	export let selected_priceable_assets: Array<priceable_asset_id>;
+	export let selected_priceable_assets: ReadonlyArray<priceable_asset_id>;
 </script>
 
 <div class="alignment">
 	<div class="prices">
-		Total: {get_price_string(selected_priceable_assets, 'jahr')} mlt.
+		Total: {get_price_string(selected_priceable_assets, 'jahr')} mtl.
 		<br />
-		Nach Verlängerung: {get_price_string(selected_priceable_assets, 'monat')} mlt.
+		Nach Verlängerung: {get_price_string(selected_priceable_assets, 'monat')} mtl.
 	</div>
 	<div class="asset_images">
 		{#each selected_priceable_assets as asset}

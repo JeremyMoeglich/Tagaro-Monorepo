@@ -1,4 +1,4 @@
-export function sum(values: Array<number>): number {
+export function sum(values: ReadonlyArray<number>): number {
 	let total = 0;
 	values.forEach((v) => (total += v));
 	return total;
@@ -16,8 +16,12 @@ export function map_object<IK extends string, IV, K extends string, V>(
 	) as Record<K, V>;
 }
 
+export function is_empty_string<T>(argument: T | ''): argument is T {
+	return argument !== '';
+}
+
 export function final_join(
-	lst: Array<string>,
+	lst: ReadonlyArray<string>,
 	default_seperator: string,
 	final_seperator: string
 ): string {

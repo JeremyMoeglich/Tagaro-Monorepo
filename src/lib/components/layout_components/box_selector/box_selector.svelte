@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { Asset, asset_id } from '$lib/scripts/universal/asset_libary/asset_types';
-	import type { Priceable_Asset } from '$lib/scripts/universal/asset_libary/priceable_asset_types';
+	import type { Asset, asset_id } from '$lib/scripts/universal/asset_library/asset_types';
+	import type { Priceable_Asset } from '$lib/scripts/universal/asset_library/priceable_asset_types';
 	import ClickableBox from './clickable_box.svelte';
 
 	interface Box {
@@ -8,10 +8,10 @@
 		disabled: boolean;
 	}
 	export let title: string;
-	export let boxes: Array<Box>;
-	export let selector_assets: Array<asset_id>;
+	export let boxes: ReadonlyArray<Box>;
+	export let selector_assets: ReadonlyArray<asset_id>;
 	export let selection_function: (v: asset_id) => void;
-	export let selected: Array<asset_id>;
+	export let selected: ReadonlyArray<asset_id>;
 </script>
 
 <div class="alignment">

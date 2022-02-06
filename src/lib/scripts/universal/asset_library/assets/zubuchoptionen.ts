@@ -9,13 +9,15 @@ enum zubuchoption_id_enum {
 	trendsports,
 	plus18,
 	netflixstandard,
-	netflixpremium
+	netflixpremium,
+	hdplus4monategratis,
+	hdplus
 }
 export type zubuchoption_id = keyof typeof zubuchoption_id_enum;
 
 const zubuchoption_image_location = '/images/assets/zubuchoptionen/';
 
-export const zubuchoptionen_assets: Array<
+export const zubuchoptionen_assets: ReadonlyArray<
 	Priceable_Asset<zubuchoption_id>
 > = dynamic_to_static_assets([
 	{
@@ -70,6 +72,20 @@ export const zubuchoptionen_assets: Array<
 		image: `${zubuchoption_image_location}plus18.png`
 	},
 	{
+		id: 'hdplus4monategratis',
+		price: 0,
+		text: 'HD+ 4 Monate gratis',
+		note: '[TODO]',
+		image: `${zubuchoption_image_location}hdplus.png`
+	},
+	{
+		id: 'hdplus',
+		price: 6,
+		text: 'HD+ 6 monate gratis',
+		note: '[TODO]',
+		image: `${zubuchoption_image_location}hdplus.png`
+	},
+	{
 		id: 'netflixstandard',
 		price: 5,
 		text: 'Netflix Standard-Abo',
@@ -80,6 +96,10 @@ export const zubuchoptionen_assets: Array<
 				{
 					required: false,
 					word: 'netflixpremium'
+				},
+				{
+					required: true,
+					word: 'entertainmentplus'
 				}
 			],
 			type: 'AND'
@@ -96,6 +116,10 @@ export const zubuchoptionen_assets: Array<
 				{
 					required: false,
 					word: 'netflixstandard'
+				},
+				{
+					required: true,
+					word: 'entertainmentplus'
 				}
 			],
 			type: 'AND'

@@ -1,8 +1,6 @@
 import sizeof from 'object-sizeof';
 import { SMTPClient, Message } from 'emailjs';
-
 import { SMTP_HOST, SMTP_PASSWORD, SMTP_MAIL, RECEIVER } from '$lib/scripts/backend/Env';
-import type { RequestHandler } from '@sveltejs/kit';
 
 function serializeForm(form: FormData) {
 	const obj = {};
@@ -20,7 +18,11 @@ interface Kontakt_Form {
 	message: string;
 }
 
-export const post: RequestHandler<FormData> = async ({ request }) => {
+export async function post({
+	request
+}: {
+	request: Request;
+}): Promise<{ status: number; body: string; headers?: Record<string, string> }> {
 	const form = await request.formData();
 	const bodyobj = serializeForm(form) as Kontakt_Form;
 	if (sizeof(bodyobj) > 30000) {
@@ -74,4 +76,4 @@ export const post: RequestHandler<FormData> = async ({ request }) => {
 		status: 302,
 		body: 'Email sent'
 	};
-};
+}

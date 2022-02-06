@@ -33,7 +33,7 @@
 			}
 		}
 		const keys = Object.keys(return_object);
-		const difference: Array<prefrences_keys_type> = prefrences_keys.filter(
+		const difference: ReadonlyArray<prefrences_keys_type> = prefrences_keys.filter(
 			(x) => !keys.includes(x)
 		);
 		difference.forEach((element) => {

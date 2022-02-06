@@ -7,11 +7,14 @@ interface sub_selector_type {
 	word: asset_id;
 }
 export interface selector {
-	descriptor: Array<sub_selector_type>;
+	descriptor: ReadonlyArray<sub_selector_type>;
 	type: 'AND' | 'OR';
 }
 
-export function matches_selector(words: Array<asset_id>, chosen_selector: selector): boolean {
+export function matches_selector(
+	words: ReadonlyArray<asset_id>,
+	chosen_selector: selector
+): boolean {
 	if (chosen_selector.descriptor.length == 0) {
 		return true;
 	}
@@ -34,9 +37,9 @@ export function matches_selector(words: Array<asset_id>, chosen_selector: select
 }
 
 export function get_selector_errors(
-	words: Array<asset_id>,
+	words: ReadonlyArray<asset_id>,
 	chosen_selector: selector
-): { missing: Array<asset_id>; conflicts: Array<asset_id> } {
+): { missing: ReadonlyArray<asset_id>; conflicts: ReadonlyArray<asset_id> } {
 	const missing: Array<asset_id> = [];
 	const conflicts: Array<asset_id> = [];
 	for (const sub_selector of chosen_selector.descriptor) {
@@ -60,9 +63,9 @@ export function get_selector_errors(
 }
 
 export function get_selector_error_strings(
-	words: Array<asset_id>,
+	words: ReadonlyArray<asset_id>,
 	chosen_selector: selector
-): Array<string> {
+): ReadonlyArray<string> {
 	const errors = get_selector_errors(words, chosen_selector);
 	const values: Array<string> = [];
 	if (chosen_selector.type == 'OR') {

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import * as urls from '$lib/scripts/frontend/urls';
 	import Button from '$lib/components/layout_components/button.svelte';
-	import { packages_assets } from '$lib/scripts/universal/asset_libary/assets/packages';
-	import { bonus_string } from '$lib/scripts/universal/asset_libary/prices';
+	import { packages_assets } from '$lib/scripts/universal/asset_library/assets/packages';
+	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;

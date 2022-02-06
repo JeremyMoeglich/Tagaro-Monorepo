@@ -1,6 +1,9 @@
 <script>
 	import ExpandableBox from '$lib/components/layout_components/expandable_box.svelte';
-	import { aktivierung_string, get_price_string } from '$lib/scripts/universal/asset_libary/prices';
+	import {
+		aktivierung_string,
+		get_price_string
+	} from '$lib/scripts/universal/asset_library/prices';
 </script>
 
 <ExpandableBox title={'*Vertragsinformationen'}>

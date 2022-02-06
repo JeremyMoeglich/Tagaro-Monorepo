@@ -1,8 +1,8 @@
 <script lang="ts">
 	export let text: string;
 	export let name: string;
-	export let values: Array<string>;
 	export let selected: string;
+	export let values: ReadonlyArray<typeof selected>;
 </script>
 
 <div>

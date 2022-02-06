@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let title: string;
-	export let points: Array<string>;
+	export let points: ReadonlyArray<string>;
 	export let image: string = undefined;
 	export let detailed: boolean;
 </script>

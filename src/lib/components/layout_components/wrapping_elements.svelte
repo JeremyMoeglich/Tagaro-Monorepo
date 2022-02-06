@@ -3,10 +3,10 @@
 	import Button from '../layout_components/button.svelte';
 
 	export let title: string;
-	export let components: Array<{
+	export let components: ReadonlyArray<{
 		title: string;
 		image: string;
-		points: Array<string>;
+		points: ReadonlyArray<string>;
 		subtitle: string;
 		info_text: string;
 		route: string;
@@ -14,7 +14,7 @@
 	let indexed_components: Array<{
 		title: string;
 		image: string;
-		points: Array<string>;
+		points: ReadonlyArray<string>;
 		subtitle: string;
 		info_text: string;
 		id: number;

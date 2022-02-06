@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let text: string;
-	export let content: Array<string>;
+	export let content: ReadonlyArray<string>;
 </script>
 
 <body>

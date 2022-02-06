@@ -31,8 +31,8 @@ export function dynamic_to_static_asset<T extends priceable_asset_id>(
 	};
 }
 export function dynamic_to_static_assets<T extends priceable_asset_id>(
-	assets: Array<Dynamic_Priceable_Asset<T>>
-): Array<Priceable_Asset<T>> {
+	assets: ReadonlyArray<Dynamic_Priceable_Asset<T>>
+): ReadonlyArray<Priceable_Asset<T>> {
 	return assets.map(dynamic_to_static_asset);
 }
 
