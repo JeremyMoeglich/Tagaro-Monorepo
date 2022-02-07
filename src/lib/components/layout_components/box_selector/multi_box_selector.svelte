@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Asset, asset_id } from '$lib/scripts/universal/asset_library/asset_types';
+	import type { category_id } from '$lib/scripts/universal/asset_library/categories';
 	import type { Priceable_Asset } from '$lib/scripts/universal/asset_library/priceable_asset_types';
 	import BoxSelector from './box_selector.svelte';
 
@@ -11,6 +12,7 @@
 	export let boxes: ReadonlyArray<Box>;
 	export let selected: Array<asset_id> = [];
 	export let selector_assets: ReadonlyArray<asset_id>;
+	export let id: category_id | '' = '';
 
 	function select_box(v: asset_id) {
 		if (selected.includes(v)) {
@@ -22,4 +24,4 @@
 	}
 </script>
 
-<BoxSelector {title} {selector_assets} {boxes} selection_function={select_box} {selected} />
+<BoxSelector {title} {selector_assets} {id} {boxes} selection_function={select_box} {selected} />

@@ -37,29 +37,19 @@
 	}
 </script>
 
-<button on:click={click} class:selected class:disabled class:hoverable>
-	{#if disabled}<div class="overlay"><p>{@html error_message}</p></div>{/if}
-	<img src={asset.image} alt={asset.text} on:dragstart|preventDefault />
-	<p>
-		{#if hasProperty(asset, 'price')}
-			<b>+ {get_price_string([asset.id], 'jahr')}</b> -
-		{/if}{asset.text}
-	</p>
-</button>
+{#if !disabled}
+	<button on:click={click} class:selected class:disabled class:hoverable={hoverable && !disabled}>
+		{#if disabled}<div class="overlay"><p>{@html error_message}</p></div>{/if}
+		<img src={asset.image} alt={asset.text} on:dragstart|preventDefault />
+		<p>
+			{#if hasProperty(asset, 'price')}
+				<b>+ {get_price_string([asset.id], 'jahr')}</b> -
+			{/if}{asset.text}
+		</p>
+	</button>
+{/if}
 
 <style lang="scss">
-	@use 'sass:math';
-
-	$d: 25px;
-	$angle: 135deg;
-	$sinus: math.sin($angle);
-
-	@keyframes moving-lines {
-		0% {
-			background-position: calc($d / $sinus) 0px;
-		}
-	}
-
 	button {
 		position: relative;
 		padding: 20px;
@@ -82,17 +72,8 @@
 			box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.582);
 		}
 		&.disabled {
-			background-color: #e5e5f7;
+			background-color: #ededf8;
 			opacity: 0.8;
-			background: repeating-linear-gradient(
-				$angle,
-				#4465f7,
-				#7444f7 calc($d/5),
-				#e5e5f7 calc($d/5),
-				#e5e5f7 $d
-			);
-			background-size: calc($d/$sinus) 100%;
-			animation: moving-lines 2s linear infinite reverse;
 		}
 		.overlay {
 			position: absolute;

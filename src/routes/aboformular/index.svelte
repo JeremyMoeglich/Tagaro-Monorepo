@@ -24,12 +24,13 @@
 	import type { aboformular_options } from '$lib/scripts/universal/aboformular';
 	import { sort_by_price } from '$lib/scripts/universal/asset_library/prices';
 	import { is_empty_string } from '$lib/scripts/universal/util';
+	import type { category_id } from '$lib/scripts/universal/asset_library/categories';
 	// #endregion
 
 	let options: aboformular_options = {
 		receive: {
 			receive_type: '',
-			cable_receiver: 'automatic'
+			cable_receiver: ''
 		},
 		personal_info: {
 			anrede: 'keine_angabe',
@@ -44,7 +45,7 @@
 			geburtsdatum: ''
 		},
 		choices: {
-			base_package: 'entertainment',
+			base_package: '',
 			premium_packages: [],
 			zubuchoptionen: []
 		},
@@ -79,48 +80,63 @@
 		options.choices.base_package,
 		...sort_by_price(options.choices.premium_packages),
 		...sort_by_price(options.choices.zubuchoptionen)
-	];
+	].filter(is_empty_string);
 	let selected_assets: ReadonlyArray<asset_id>;
 	$: selected_assets = [...selected_priceable_assets, options.receive.receive_type].filter(
 		is_empty_string
 	);
-	let current_page = 1;
+	let current_page = 0;
+	let verbose = false;
+	let pages: Array<Partial<Record<category_id, boolean>>> = [
+		{
+			receive_type: false,
+			cable_receiver: false,
+			base_package: false
+		}
+	];
 	//#endregion
 </script>
 
 <div class="alignment">
 	<h1>Aboformular</h1>
 
-	{#if current_page === 1}
+	{#if current_page === 0}
 		<div>
 			<!-- #region [c1] Page 1 Receive Type -->
 			<div>
 				<SingleBoxSelector
 					title="Empfangsart"
+					id="receive_type"
 					boxes={receive_assets.map((v) => ({
 						asset: v,
 						disabled: false
 					}))}
 					selector_assets={selected_assets}
 					bind:selected={options.receive.receive_type}
+					bind:status={pages[0]['receive_type']}
+					bind:verbose
 				/>
-				{#if options.receive.receive_type === 'kabel'}
-					<SingleBoxSelector
-						title="Ihr Kabelnetzbetreiber"
-						boxes={cable_receive_assets.map((v) => ({
-							asset: v,
-							disabled: false
-						}))}
-						selector_assets={selected_assets}
-						bind:selected={options.receive.cable_receiver}
-					/>
-				{/if}
+				<SingleBoxSelector
+					title="Ihr Kabelnetzbetreiber"
+					boxes={cable_receive_assets.map((v) => ({
+						asset: v,
+						disabled: false
+					}))}
+					selector_assets={selected_assets}
+					active={options.receive.receive_type === 'kabel'}
+					id="cable_receiver"
+					bind:selected={options.receive.cable_receiver}
+					bind:status={pages[0]['cable_receiver']}
+					bind:verbose
+				/>
 			</div>
 			<!-- #endregion -->
 			<!-- #region [c2] Page 1 Packages -->
 			<div>
 				<SingleBoxSelector
 					title="Basispakete"
+					id="base_package"
+					bind:status={pages[0]['base_package']}
 					boxes={base_packages.map((v) => ({
 						asset: indexed_assets[v],
 						selector_assets: selected_assets,
@@ -128,6 +144,7 @@
 					}))}
 					selector_assets={selected_assets}
 					bind:selected={options.choices.base_package}
+					bind:verbose
 				/>
 				<MultiBoxSelector
 					title="Premiumpakete"
@@ -143,7 +160,7 @@
 			<!-- #endregion -->
 		</div>{/if}
 
-	{#if current_page === 2}
+	{#if current_page === 1}
 		<div>
 			<!-- #region [c3] Page 2 Zubuchoptionen -->
 			<MultiBoxSelector
@@ -158,7 +175,7 @@
 			/>
 			<!-- #endregion -->
 		</div>{/if}
-	{#if current_page === 3}
+	{#if current_page === 2}
 		<form>
 			<!-- #region [c2] Page 3 Personal Info -->
 			<div>
@@ -385,7 +402,7 @@
 			<!-- #endregion -->
 		</form>{/if}
 	<div class="price_overview">
-		<OfferSummary {selected_priceable_assets} />
+		<OfferSummary {selected_priceable_assets} bind:current_page {pages} bind:verbose />
 	</div>
 </div>
 

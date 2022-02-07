@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Asset, asset_id } from '$lib/scripts/universal/asset_library/asset_types';
+	import type { category_id } from '$lib/scripts/universal/asset_library/categories';
 	import type { Priceable_Asset } from '$lib/scripts/universal/asset_library/priceable_asset_types';
 	import ClickableBox from './clickable_box.svelte';
 
@@ -12,9 +13,10 @@
 	export let selector_assets: ReadonlyArray<asset_id>;
 	export let selection_function: (v: asset_id) => void;
 	export let selected: ReadonlyArray<asset_id>;
+	export let id: category_id | '' = '';
 </script>
 
-<div class="alignment">
+<div class="alignment" {id}>
 	<h2>{title}</h2>
 	<div class="boxes">
 		{#each boxes as box}

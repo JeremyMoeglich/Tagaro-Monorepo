@@ -4,11 +4,11 @@ import type { zubuchoption_id } from './asset_library/assets/zubuchoptionen';
 
 interface receive_choice {
 	receive_type: receive_id | '';
-	cable_receiver?: cable_receive_types;
+	cable_receiver?: cable_receive_types | '';
 }
 
 interface choices {
-	base_package: package_id;
+	base_package: package_id | '';
 	premium_packages: Array<package_id>;
 	zubuchoptionen: Array<zubuchoption_id>;
 }
