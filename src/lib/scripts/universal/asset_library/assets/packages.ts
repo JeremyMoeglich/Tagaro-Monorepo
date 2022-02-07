@@ -18,35 +18,35 @@ export const packages_assets: ReadonlyArray<Priceable_Asset<package_id>> = dynam
 	[
 		{
 			id: 'entertainment',
-			price: { jahr: 14.5, monat: 17 },
+			price: { jahr: 14.5, monat: 17, singular: 0 },
 			text: 'Entertainment',
 			note: '[TODO]',
 			image: `${packages_image_location}entertainment.png`
 		},
 		{
 			id: 'entertainmentplus',
-			price: { jahr: 20, monat: 25 },
+			price: { jahr: 20, monat: 25, singular: 0 },
 			text: 'Entertainment-Plus',
 			note: '[TODO]',
 			image: `${packages_image_location}entertainmentplus.png`
 		},
 		{
 			id: 'cinema',
-			price: { jahr: 10, monat: 12.5 },
+			price: { jahr: 10, monat: 12.5, singular: 0 },
 			text: 'Cinema',
 			note: '[TODO]',
 			image: `${packages_image_location}cinema.png`
 		},
 		{
 			id: 'sport',
-			price: { jahr: 5.5, monat: 8 },
+			price: { jahr: 5.5, monat: 8, singular: 0 },
 			text: 'Sport',
 			note: '[TODO]',
 			image: `${packages_image_location}sport.png`
 		},
 		{
 			id: 'bundesliga',
-			price: { jahr: 12.5, monat: 15 },
+			price: { jahr: 12.5, monat: 15, singular: 0 },
 			text: 'Bundesliga',
 			note: '[TODO]',
 			image: `${packages_image_location}bundesliga.png`

@@ -38,7 +38,7 @@ export const zubuchoptionen_assets: ReadonlyArray<
 	},
 	{
 		id: 'dazn',
-		price: { jahr: 12.5, monat: 14.99 },
+		price: { jahr: 12.5, monat: 14.99, singular: 0 },
 		text: 'DAZN',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}dazn.svg`

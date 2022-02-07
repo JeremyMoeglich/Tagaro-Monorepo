@@ -30,7 +30,8 @@ const price_table = map_object(indexed_priceable_assets, (key, value) => ({
 export function get_price(assets: ReadonlyArray<priceable_asset_id>): Price {
 	return {
 		jahr: sum(assets.map((v) => price_table[v].jahr)) * factor_jahr,
-		monat: sum(assets.map((v) => price_table[v].monat)) * factor_monat
+		monat: sum(assets.map((v) => price_table[v].monat)) * factor_monat,
+		singular: sum(assets.map((v) => price_table[v].singular)) * factor_monat
 	};
 }
 export function get_price_string(

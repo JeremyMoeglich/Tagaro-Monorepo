@@ -2,6 +2,7 @@ import type { selector } from './selector';
 import type { Asset, priceable_asset_id } from './asset_types';
 
 export interface Price {
+	singular: number;
 	monat: number;
 	jahr: number;
 }
@@ -25,7 +26,9 @@ export function dynamic_to_static_asset<T extends priceable_asset_id>(
 		id: asset.id,
 		selector: asset.selector ? asset.selector : { type: 'OR', descriptor: [] },
 		price:
-			typeof asset.price === 'number' ? { jahr: asset.price, monat: asset.price } : asset.price,
+			typeof asset.price === 'number'
+				? { jahr: asset.price, monat: asset.price, singular: 0 }
+				: asset.price,
 		note: asset.note,
 		image: asset.image
 	};
