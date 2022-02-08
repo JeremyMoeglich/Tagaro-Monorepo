@@ -1,16 +1,20 @@
 import { temp_asset_image } from '../asset_types';
-import type { Dynamic_Priceable_Asset } from '../priceable_asset_types';
+import {
+	Dynamic_Priceable_Asset,
+	dynamic_to_static_assets,
+	Priceable_Asset
+} from '../priceable_asset_types';
 
 enum receiver_type_enum {
 	receiver1x,
-	receiver2x,
-	receiver1x_p_qmini,
-	receiver2x_p_qmini
+	receiver2x
 }
 
 export type receiver_id = keyof typeof receiver_type_enum;
 
-export const receiver_assets: ReadonlyArray<Dynamic_Priceable_Asset<receiver_id>> = [
+export const receiver_assets: ReadonlyArray<
+	Readonly<Priceable_Asset<receiver_id>>
+> = dynamic_to_static_assets([
 	{
 		id: 'receiver1x',
 		text: 'Sky Q Receiver + Smartcard',
@@ -24,22 +28,8 @@ export const receiver_assets: ReadonlyArray<Dynamic_Priceable_Asset<receiver_id>
 		note: '[TODO]',
 		image: temp_asset_image,
 		price: 99
-	},
-	{
-		id: 'receiver1x_p_qmini',
-		text: 'Sky Q Receiver + Sky Q Mini + Multiscreen + Sky Go Plus + Smartcard',
-		note: '[TODO]',
-		image: temp_asset_image,
-		price: { jahr: 10, monat: 10, singular: 29 }
-	},
-	{
-		id: 'receiver2x_p_qmini',
-		text: '2x Sky Q Receiver + Sky Q Mini + Multiscreen + Sky Go Plus + Smartcard',
-		note: '[TODO]',
-		image: temp_asset_image,
-		price: 99
 	}
-];
+]);
 
 enum iptv_type_enum {
 	iptv1x,
