@@ -13,14 +13,14 @@ const package_prices: Record<package_name, PackagePrice> = {
 	bundesliga: { jahr: 12.5, monat: 15 }
 };
 
-const base_packages: Array<package_name> = ['entertainment', 'entertainmentplus'];
-const premiumpackages: Array<package_name> = ['cinema', 'sport', 'bundesliga'];
+const base_packages: ReadonlyArray<package_name> = ['entertainment', 'entertainmentplus'];
+const premiumpackages: ReadonlyArray<package_name> = ['cinema', 'sport', 'bundesliga'];
 
 base_packages.forEach((v) => {
 	package_prices[v];
 });
 premiumpackages.forEach((v) => {
-	package_prices[v].jahr /= 2;
+	package_prices[v].jahr;
 });
 
 function sum(values: Array<number>): number {
@@ -53,15 +53,21 @@ export function get_price_string(
 }
 
 //https://stackoverflow.com/questions/1885557/simplest-code-for-array-intersection-in-javascript
-function intersect(a: Array<unknown>, b: Array<unknown>): Array<unknown> {
+function intersect(a: ReadonlyArray<unknown>, b: ReadonlyArray<unknown>): Array<unknown> {
 	const setA = new Set(a);
 	const setB = new Set(b);
 	const intersection = new Set([...setA].filter((x) => setB.has(x)));
 	return Array.from(intersection);
 }
 
-export function get_offer_note(packages: Array<package_name>): string {
-	if (intersect(packages, premiumpackages).length > 0) {
-		return 'Winter Sale 50%';
+export function get_offer_note(packages: ReadonlyArray<package_name>): string {
+	if (intersect(packages, premiumpackages).length === 3) {
+		return '+ € 125 Amazon Gutschein';
+	} else if (
+		packages.includes('entertainmentplus') &&
+		intersect(packages, premiumpackages).length > 0
+	) {
+		return '+ € 75 Amazon Gutschein';
 	}
+	return '';
 }
