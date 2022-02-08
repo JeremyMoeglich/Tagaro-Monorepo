@@ -60,7 +60,7 @@
 						'jahr'
 					)}
 				</li>
-				<li>- Sky Kids mtl. € 25,00</li>
+				<li>- Sky Kids mtl. € 25</li>
 				<li>
 					- Sky Sport + Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}
 				</li>
@@ -89,11 +89,11 @@
 			</p>
 			<ul>
 				<li><b>Optional:</b></li>
-				<li>- UHD mtl. € 5,00 (für Sat oder Kabel-Empfang)</li>
+				<li>- UHD mtl. € 5 (für Sat oder Kabel-Empfang)</li>
 				<li>- DAZN jährlich für € 12,50 mtl. oder DAZN monatlich für € 14,99 mtl.</li>
 				<li>
-					- Multiscreen für € 10,00 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver
-					für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
+					- Multiscreen für € 10 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für
+					einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
 				</li>
 				<li>- Netflix Standard-Abo, HD/2 Streams (+ € 5 mtl.)</li>
 				<li>- Netflix Premium-Abo, UHD/4 Streams (+ € 10 mtl.)</li>
@@ -114,46 +114,47 @@
 				Preise:
 			</p>
 			<p>
-				Sky Entertainment für {get_price_string(['entertainment'], 'monat')} mtl. im 12-Monats-Abo in
-				Kombination mit Sky Sport {get_price_string(['entertainment', 'sport'], 'monat')}
-				mtl. im 12-Monats-Abo Sky Cinema {get_price_string(['entertainment', 'cinema'], 'monat')} mtl.
-				im 12-Monats-Abo Sky Fußball-Bundesliga {get_price_string(
+				Sky Entertainment für mtl. {get_price_string(['entertainment'], 'monat')} in Kombination mit
+				Sky Sport
+				{get_price_string(['entertainment', 'sport'], 'monat')}; Sky Cinema mtl. {get_price_string(
+					['entertainment', 'cinema'],
+					'monat'
+				)}; Sky Fußball-Bundesliga mtl. {get_price_string(
 					['entertainment', 'bundesliga'],
 					'monat'
-				)} mtl. im 12-Monats-Abo Sky Sport + Sky Cinema
-				{get_price_string(['entertainment', 'sport', 'cinema'], 'monat')} mtl. im 12-Monats-Abo Sky Sport
-				+ Sky Fußball-Bundesliga {get_price_string(
+				)}; Sky Sport + Sky Cinema mtl. mtl. {get_price_string(
+					['entertainment', 'sport', 'cinema'],
+					'monat'
+				)}; Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
 					['entertainment', 'sport', 'bundesliga'],
 					'monat'
-				)} mtl. im 12-Monats-Abo Sky Cinema + Sky Fußball-Bundesliga {get_price_string(
+				)}; Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
 					['entertainment', 'cinema', 'bundesliga'],
 					'monat'
-				)} mtl. im 12-Monats-Abo Sky Sport + Sky Cinema + Sky Fußball-Bundesliga {get_price_string(
+				)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
 					['entertainment', 'sport', 'cinema', 'bundesliga'],
 					'monat'
-				)} mtl. im 12-Monats-Abo Sky Entertainment Plus für {get_price_string(
-					['entertainmentplus'],
-					'monat'
-				)} mtl. im 12-Monats-Abo in Kombination mit Sky Sport {get_price_string(
+				)}; <br />
+				Sky Entertainment Plus für mtl. {get_price_string(['entertainmentplus'], 'monat')}
+				in Kombination mit Sky Sport mtl. {get_price_string(
 					['entertainmentplus', 'sport'],
 					'monat'
-				)} mtl. im 12-Monats-Abo Sky Cinema {get_price_string(
-					['entertainmentplus', 'cinema'],
+				)}
+				Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'monat')}; Sky
+				Fußball-Bundesliga mtl. {get_price_string(['entertainmentplus', 'bundesliga'], 'monat')};
+				Sky Sport + Sky Cinema mtl. {get_price_string(
+					['entertainmentplus', 'sport', 'cinema'],
 					'monat'
-				)} mtl. im 12-Monats-Abo Sky Fußball-Bundesliga
-				{get_price_string(['entertainmentplus', 'bundesliga'], 'monat')} mtl. im 12-Monats-Abo Sky Sport
-				+ Sky Cinema {get_price_string(['entertainmentplus', 'sport', 'cinema'], 'monat')} mtl. im 12-Monats-Abo
-				Sky Sport + Sky Fußball-Bundesliga {get_price_string(
+				)}; Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
 					['entertainmentplus', 'sport', 'bundesliga'],
 					'monat'
-				)} mtl. im 12-Monats-Abo Sky Cinema + Sky Fußball-Bundesliga {get_price_string(
+				)}; Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
 					['entertainmentplus', 'cinema', 'bundesliga'],
 					'monat'
-				)}
-				mtl. im 12-Monats-Abo Sky Sport + Sky Cinema + Sky Fußball-Bundesliga {get_price_string(
+				)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
 					['entertainmentplus', 'cinema', 'bundesliga'],
 					'monat'
-				)} mtl. im 12-Monats-Abo
+				)};
 			</p>
 		</div>
 		<div>

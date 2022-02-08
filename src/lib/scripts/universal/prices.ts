@@ -32,11 +32,19 @@ function sum(values: Array<number>): number {
 const factor_jahr = 1;
 const factor_monat = 1;
 
+function to_price_string(v: number): string {
+	let str = '€ ' + v.toFixed(2).replace('.', ',');
+	if (str.endsWith(',00')) {
+		str = str.slice(0, -3);
+	}
+	return str;
+}
+
 export const aktivierung = 29;
-export const aktivierung_string = `€ ${aktivierung.toFixed(2).replace('.', ',')}`;
+export const aktivierung_string = to_price_string(aktivierung);
 
 export const bonus = 20;
-export const bonus_string = `€ ${bonus.toFixed(2).replace('.', ',')}`;
+export const bonus_string = to_price_string(bonus);
 
 export function get_price(packages: Array<package_name>): PackagePrice {
 	return {
@@ -49,7 +57,7 @@ export function get_price_string(
 	subscription_time: keyof PackagePrice
 ): string {
 	const price = get_price(packages);
-	return '€ ' + price[subscription_time].toFixed(2).replace('.', ',');
+	return to_price_string(price[subscription_time]);
 }
 
 //https://stackoverflow.com/questions/1885557/simplest-code-for-array-intersection-in-javascript

@@ -52,7 +52,7 @@
 	<div class="zubuchoptionen" id="zubuchoptionen">
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption
-			text="<b>UHD + € 5,00 mtl. (für Sat oder Kabel-Empfang)</b>"
+			text="<b>UHD + € 5 mtl. (für Sat oder Kabel-Empfang)</b>"
 			image="/images/square_packages/uhd.png"
 		/>
 		<Zubuchoption
@@ -60,10 +60,10 @@
 			image="/images/external/dazn.svg"
 		/>
 		<Zubuchoption
-			text="<b>Multiscreen + € 10,00 mtl. <br/></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br/> 2. Sky Q Receiver für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)"
+			text="<b>Multiscreen + € 10 mtl. <br/></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br/> 2. Sky Q Receiver für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)"
 			image="/images/square_packages/multiscreen.png"
 		/>
-		<Zubuchoption text="<b>Sky Kids +  € 5,00 mtl.</b>" image="/images/square_packages/kids.png" />
+		<Zubuchoption text="<b>Sky Kids +  € 5 mtl.</b>" image="/images/square_packages/kids.png" />
 		<Zubuchoption
 			text="<b>trendSports + € 5,99 mtl.</b>"
 			image="/images/external/trendsports.png"
