@@ -22,7 +22,7 @@
 			</ul>
 			{#if detailed}
 				<slot />
-				<img class="badge" src="/images/badges/50p.png" alt="" />
+				<img src="/images/external/125amazon.webp" class="image" alt="" />
 			{/if}
 		</div>
 

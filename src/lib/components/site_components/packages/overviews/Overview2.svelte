@@ -13,7 +13,7 @@
 		'2 Pakete wahlweise aus Cinema, Sport und/oder Fußball-Bundesliga und Kids inkl. HD',
 		'Sky Q Receiver mit 1TB Festplatte, Ultra HD fähig und Sky On Demand',
 		'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!',
-		'UHD optional für € 5,00 mtl.'
+		'UHD optional für € 5 mtl.'
 	]}
 	{detailed}
 >

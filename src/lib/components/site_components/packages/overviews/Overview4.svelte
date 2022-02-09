@@ -12,8 +12,8 @@
 		'Sky Entertainment + Cinema + Sport + Bundesliga inkl. HD',
 		'Sky Q Receiver mit 1TB Festplatte, Ultra HD fähig und Sky On Demand Zugang',
 		'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!',
-		'UHD optional für € 5,00 mtl.',
-		'Sky Kids optional für € 5,00 mtl.'
+		'UHD optional für € 5 mtl.',
+		'Sky Kids optional für € 5 mtl.'
 	]}
 	{detailed}
 >

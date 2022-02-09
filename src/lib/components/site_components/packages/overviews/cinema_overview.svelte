@@ -12,7 +12,7 @@
 		'Alle Filme ohne Werbeunterbrechung',
 		'#Sky Q Receiver mit 1TB Festplatte, Ultra HD fähig und Sky On Demand Zugang',
 		'#Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!',
-		'#UHD optional für € 5,00 mtl.'
+		'#UHD optional für € 5 mtl.'
 	]}
 	image={'/images/assets/packages/normal/cinema.jpg'}
 	{detailed}

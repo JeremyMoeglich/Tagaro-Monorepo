@@ -55,19 +55,19 @@
 	<div class="zubuchoptionen" id="zubuchoptionen">
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption
-			text="<b>UHD + € 5,00 mtl. (für Sat oder Kabel-Empfang)</b>"
-			image="/images/assets/zubuchoptionen/uhd.png"
+			text="<b>UHD + € 5 mtl. (für Sat oder Kabel-Empfang)</b>"
+			image="/images/square_packages/uhd.png"
 		/>
 		<Zubuchoption
 			text="<b>DAZN jährlich + € 12,50 mtl. </b>oder<b> <br/> DAZN monatlich + € 14,99 mtl.</b>"
 			image="/images/assets/zubuchoptionen/dazn.svg"
 		/>
 		<Zubuchoption
-			text="<b>Multiscreen + € 10,00 mtl. <br/></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br/> 2. Sky Q Receiver für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)"
+			text="<b>Multiscreen + € 10 mtl. <br/></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br/> 2. Sky Q Receiver für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)"
 			image="/images/assets/zubuchoptionen/multiscreen.png"
 		/>
 		<Zubuchoption
-			text="<b>Sky Kids +  € 5,00 mtl.</b>"
+			text="<b>Sky Kids +  € 5 mtl.</b>"
 			image="/images/assets/zubuchoptionen/kids.png"
 		/>
 		<Zubuchoption
