@@ -22,6 +22,7 @@
 			</ul>
 			{#if detailed}
 				<slot />
+				<img src="/images/external/125amazon.webp" class="image" alt="" />
 			{/if}
 		</div>
 

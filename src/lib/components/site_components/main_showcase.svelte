@@ -20,5 +20,5 @@
 		'Bei Buchung von Sky Entertainment + mind. 3 Pakete ein € 125 Amazon Gutschein on top*',
 		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
 	]}
-	side_images={['/images/external/amazongiftcard.png']}
+	side_images={['/images/external/amazon.webp']}
 />
