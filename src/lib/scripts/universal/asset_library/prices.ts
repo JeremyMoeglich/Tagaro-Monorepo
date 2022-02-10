@@ -48,7 +48,7 @@ export function sort_by_price(lst: Array<priceable_asset_id>): Array<priceable_a
 }
 
 //https://stackoverflow.com/questions/1885557/simplest-code-for-array-intersection-in-javascript
-function intersect(a: ReadonlyArray<unknown>, b: ReadonlyArray<unknown>): ReadonlyArray<unknown> {
+function intersect<T>(a: ReadonlyArray<T>, b: ReadonlyArray<T>): ReadonlyArray<T> {
 	const setA = new Set(a);
 	const setB = new Set(b);
 	const intersection = new Set([...setA].filter((x) => setB.has(x)));
@@ -56,7 +56,13 @@ function intersect(a: ReadonlyArray<unknown>, b: ReadonlyArray<unknown>): Readon
 }
 
 export function get_offer_note(packages: ReadonlyArray<package_id>): string {
-	if (intersect(packages, premiumpackages).length > 0) {
-		return 'Januar Sale 50%';
+	const intersection = intersect(packages, premiumpackages);
+	if (intersection.length === 3) {
+		return '+ € 125 Amazon Gutschein';
+	} else if (packages.includes('entertainmentplus') && intersection.length > 0) {
+		return '+ € 75 Amazon Gutschein';
+	} else if (intersection.length > 1) {
+		return '+ € 75 Amazon Gutschein';
 	}
+	return '';
 }

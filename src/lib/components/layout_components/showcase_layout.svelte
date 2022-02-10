@@ -46,7 +46,7 @@
 					<div class="package_overview">
 						{#each packages_assets as asset}
 							<a href={`/angebote/${asset.id}`}>
-								<img src={asset.image} alt={asset.id} />
+								<img src={`/images/assets/packages/normal/${asset.id}.jpg`} alt={asset.id} />
 							</a>
 						{/each}
 					</div>

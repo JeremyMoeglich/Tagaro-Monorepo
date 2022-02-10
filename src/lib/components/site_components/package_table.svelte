@@ -1,10 +1,7 @@
 <script lang="ts">
 	import Zubuchoption from '$lib/components/layout_components/zubuchoption.svelte';
 	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
-	import {
-		indexed_package_assets,
-		package_id
-	} from '$lib/scripts/universal/asset_library/assets/packages';
+	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
 
 	type table_layout = ReadonlyArray<Array<package_id>>;
 
@@ -33,7 +30,7 @@
 		{#each table as row}
 			<tr>
 				{#each row as element}
-					<td> <img src={indexed_package_assets[element].image} alt="" /> </td>
+					<td> <img src={`/images/assets/packages/square/${element}.png`} alt="" /> </td>
 				{/each}
 				{#if row.length < 4}
 					<td colspan={4 - row.length} />
@@ -56,7 +53,7 @@
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption
 			text="<b>UHD + € 5 mtl. (für Sat oder Kabel-Empfang)</b>"
-			image="/images/square_packages/uhd.png"
+			image="/images/assets/zubuchoptionen/uhd.png"
 		/>
 		<Zubuchoption
 			text="<b>DAZN jährlich + € 12,50 mtl. </b>oder<b> <br/> DAZN monatlich + € 14,99 mtl.</b>"

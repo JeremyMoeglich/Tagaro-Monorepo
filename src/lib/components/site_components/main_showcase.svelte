@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ShowcaseLayout from '$lib/components/layout_components/showcase_layout.svelte';
-	//import { bonus_string } from '$lib/scripts/universal/prices';
+	//import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 </script>
 
 <!-- <ShowcaseLayout

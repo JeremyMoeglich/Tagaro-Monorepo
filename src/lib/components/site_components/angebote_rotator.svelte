@@ -1,6 +1,6 @@
 <script>
 	import WrappingElements from '$lib/components/layout_components/wrapping_elements.svelte';
-	import { bonus_string, get_offer_note, get_price_string } from '$lib/scripts/universal/prices';
+	import { bonus_string, get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
 
 	const atr = [
 		`+ Für Internet, Sat- oder Kabel`,

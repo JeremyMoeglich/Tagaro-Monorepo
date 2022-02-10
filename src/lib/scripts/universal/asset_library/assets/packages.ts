@@ -66,7 +66,7 @@ export const premiumpackages: ReadonlyArray<package_id> = [
 
 packages_assets.map((v) => {
 	if (premiumpackages.includes(v.id)) {
-		v = apply_to_price(v, 'jahr', 0.5);
+		v = apply_to_price(v, 'jahr', 1);
 	}
 	return v;
 });
