@@ -68,13 +68,13 @@ function intersect(a: ReadonlyArray<unknown>, b: ReadonlyArray<unknown>): Array<
 	return Array.from(intersection);
 }
 
-export function get_offer_note(packages: ReadonlyArray<package_id>): string {
+export function get_offer_note(packages: ReadonlyArray<package_name>): string {
 	const intersection = intersect(packages, premiumpackages);
-	if (intersection.length === 3) {
+	if (packages.includes('entertainmentplus') && intersection.length > 0) {
 		return '+ € 125 Amazon Gutschein';
-	} else if (packages.includes('entertainmentplus') && intersection.length > 0) {
+	} else if (packages.includes('entertainmentplus')) {
 		return '+ € 75 Amazon Gutschein';
-	} else if (intersection.length > 1) {
+	} else if (intersection.length > 0) {
 		return '+ € 75 Amazon Gutschein';
 	}
 	return '';
