@@ -16,8 +16,8 @@
 <ShowcaseLayout
 	title={'Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis zu € 125* erhalten.'}
 	points={[
-		'Bei Buchung von Sky Entertainment + mind. 1 Pakete oder Entertainment Plus ein € 50 Amazon Gutschein on top*',
-		'Bei Buchung von Sky Entertainment Plus + mind. 1 Pakete ein € 125 Amazon Gutschein on top*',
+		'Bei Buchung von Sky Entertainment + mind. 1 Paket oder Entertainment Plus ein € 50 Amazon Gutschein on top*',
+		'Bei Buchung von Sky Entertainment Plus + mind. 1 Paket ein € 125 Amazon Gutschein on top*',
 		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
 	]}
 	side_images={['/images/external/amazon.webp']}
