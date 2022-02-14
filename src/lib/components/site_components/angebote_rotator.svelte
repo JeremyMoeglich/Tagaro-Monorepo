@@ -60,7 +60,7 @@
 				`jahr`
 			)} monatlich* `,
 			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport + Bundesliga)` +
+				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport + Bundesliga) ` +
 				optional,
 			route: `/angebote/4_oder_mehr_pakete`
 		},
@@ -71,7 +71,7 @@
 			points: [...atr, `<b>${get_offer_note([`entertainmentplus`, `cinema`])}</b>`],
 			subtitle: `${get_price_string([`entertainmentplus`, `cinema`], `jahr`)} monatlich* `,
 			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment-Plus + Cinema)` +
+				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment-Plus + Cinema) ` +
 				optional,
 			route: `/angebote/cinema`
 		},
@@ -82,7 +82,7 @@
 			points: [...atr, `<b>${get_offer_note([`entertainment`, `sport`])}</b>`],
 			subtitle: `${get_price_string([`entertainment`, `sport`], `jahr`)} monatlich* `,
 			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport)` +
+				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport) ` +
 				optional,
 			route: `/angebote/sport`
 		},
@@ -93,7 +93,7 @@
 			points: [...atr, `<b>${get_offer_note([`entertainment`, `bundesliga`])}</b>`],
 			subtitle: `${get_price_string([`entertainment`, `bundesliga`], `jahr`)} monatlich* `,
 			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Bundesliga)` +
+				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Bundesliga) ` +
 				optional,
 			route: `/angebote/bundesliga`
 		}
