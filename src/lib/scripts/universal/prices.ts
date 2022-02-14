@@ -73,9 +73,9 @@ export function get_offer_note(packages: ReadonlyArray<package_name>): string {
 	if (packages.includes('entertainmentplus') && intersection.length > 0) {
 		return '+ € 125 Amazon Gutschein';
 	} else if (packages.includes('entertainmentplus')) {
-		return '+ € 75 Amazon Gutschein';
+		return '+ € 50 Amazon Gutschein';
 	} else if (intersection.length > 0) {
-		return '+ € 75 Amazon Gutschein';
+		return '+ € 50 Amazon Gutschein';
 	}
 	return '';
 }
