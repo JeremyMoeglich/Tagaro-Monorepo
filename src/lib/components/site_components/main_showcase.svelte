@@ -24,11 +24,10 @@
 
 <ShowcaseLayout
 	title={'Buche zwei Sky Programmpakete und erhalte ein gratis* Samsung Tab A8 im Wert von € 229'}
-	primary_image={'/images/free_tablet_offer_image1'}
+	primary_image={'/images/visuals/free_tablet_offer_image1.png'}
 	points={[
-		'Bei Buchung von Sky Entertainment + mind. 1 Paket oder Entertainment Plus ein € 50 Amazon Gutschein on top*',
-		'Bei Buchung von Sky Entertainment Plus + mind. 1 Paket ein € 125 Amazon Gutschein on top*',
+		'Bei Buchung von mindestens 2 Premiumpaketen Samsung A8 Tablet von Sky on top*',
 		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
 	]}
-	side_images={['/images/external/amazon.webp']}
+	side_images={['/images/badges/keine_aktivierung.webp']}
 />

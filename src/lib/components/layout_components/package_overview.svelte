@@ -1,4 +1,6 @@
 <script lang="ts">
+	import GradientBadge from '../site_components/gradient_badge.svelte';
+
 	export let title: string;
 	export let points: Array<string>;
 	export let image: string = undefined;
@@ -22,7 +24,7 @@
 			</ul>
 			{#if detailed}
 				<slot />
-				<img src="/images/external/125amazon.webp" class="image" alt="" />
+				<GradientBadge>Inkl. Samsung <br /> Tablet.*</GradientBadge>
 			{/if}
 		</div>
 
