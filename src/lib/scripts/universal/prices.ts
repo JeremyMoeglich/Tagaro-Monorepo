@@ -70,14 +70,8 @@ function intersect(a: ReadonlyArray<unknown>, b: ReadonlyArray<unknown>): Array<
 
 export function get_offer_note(packages: ReadonlyArray<package_name>): string {
 	const intersection = intersect(packages, premiumpackages);
-	if (packages.includes('entertainmentplus') && intersection.length >= 1) {
-		return '+ € 125 Amazon Gutschein';
-	} else if (packages.includes('entertainmentplus')) {
-		return '+ € 50 Amazon Gutschein';
-	} else if (intersection.length >= 2) {
-		return '+ € 125 Amazon Gutschein';
-	} else if (intersection.length >= 1) {
-		return '+ € 50 Amazon Gutschein';
+	if (intersection.length >= 2) {
+		return '+ Samsung Tab A8';
 	}
 	return '';
 }

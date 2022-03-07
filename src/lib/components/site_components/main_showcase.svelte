@@ -12,9 +12,19 @@
 	side_images={['/images/badges/50p.png']}
 	primary_image={'/images/visuals/winter_sale.webp'}
 /> -->
+<!-- <ShowcaseLayout
+	title={'Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis zu € 125* erhalten.'}
+	points={[
+		'Bei Buchung von Sky Entertainment + mind. 1 Paket oder Entertainment Plus ein € 50 Amazon Gutschein on top*',
+		'Bei Buchung von Sky Entertainment Plus + mind. 1 Paket ein € 125 Amazon Gutschein on top*',
+		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
+	]}
+	side_images={['/images/external/amazon.webp']}
+/> -->
 
 <ShowcaseLayout
-	title={'Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis zu € 125* erhalten.'}
+	title={'Buche zwei Sky Programmpakete und erhalte ein gratis* Samsung Tab A8 im Wert von € 229'}
+	primary_image={'/images/free_tablet_offer_image1'}
 	points={[
 		'Bei Buchung von Sky Entertainment + mind. 1 Paket oder Entertainment Plus ein € 50 Amazon Gutschein on top*',
 		'Bei Buchung von Sky Entertainment Plus + mind. 1 Paket ein € 125 Amazon Gutschein on top*',

@@ -1,6 +1,6 @@
 <script>
 	import ExpandableBox from '$lib/components/layout_components/expandable_box.svelte';
-	import { aktivierung_string, get_price_string } from '$lib/scripts/universal/prices';
+	import { aktivierung, aktivierung_string, get_price_string } from '$lib/scripts/universal/prices';
 </script>
 
 <ExpandableBox title={'*Vertragsinformationen'}>
@@ -83,10 +83,14 @@
 					)}
 				</li>
 			</ul>
-			<p>
-				Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
-				durch Sky.
-			</p>
+			{#if aktivierung <= 0}
+				<p>Bei diesem Angebot entfällt die Aktivierungsgebühr durch Sky</p>
+			{:else}
+				<p>
+					Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
+					durch Sky.
+				</p>
+			{/if}
 			<ul>
 				<li><b>Optional:</b></li>
 				<li>- UHD mtl. € 5 (für Sat oder Kabel-Empfang)</li>
