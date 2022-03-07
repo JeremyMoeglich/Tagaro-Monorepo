@@ -1,6 +1,4 @@
 <script lang="ts">
-	import GradientBadge from '../site_components/gradient_badge.svelte';
-
 	export let title: string;
 	export let points: Array<string>;
 	export let image: string = undefined;
@@ -24,7 +22,6 @@
 			</ul>
 			{#if detailed}
 				<slot />
-				<GradientBadge>Inkl. Samsung <br /> Tablet.*</GradientBadge>
 			{/if}
 		</div>
 
@@ -44,10 +41,6 @@
 		gap: calc(5vw + 50px);
 		justify-content: center;
 		flex-wrap: wrap;
-	}
-	.badge {
-		width: 200px;
-		margin-top: 20px;
 	}
 	.title,
 	.description :global(h3) {

@@ -23,8 +23,8 @@
 /> -->
 
 <ShowcaseLayout
-	title={'Buche zwei Sky Programmpakete und erhalte ein gratis* Samsung Tab A8 im Wert von € 229'}
-	primary_image={'/images/visuals/free_tablet_offer_image1.png'}
+	title={'Spring Special: Buche zwei Sky Programmpakete und erhalte ein gratis* Samsung Tab A8 im Wert von € 229'}
+	primary_image={'/images/visuals/free_tablet_offer_image1.webp'}
 	points={[
 		'Bei Buchung von mindestens 2 Premiumpaketen Samsung A8 Tablet von Sky on top*',
 		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'

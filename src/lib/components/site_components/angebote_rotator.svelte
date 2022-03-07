@@ -66,7 +66,7 @@
 		},
 
 		{
-			title: `Sky Cinema Paket + ${bonus_string} Prämie`,
+			title: `Entertainment-Plus + Sky Cinema Paket + ${bonus_string} Prämie`,
 			image: `/images/wahl/wahl_cinema.png`,
 			points: [...atr, `<b>${get_offer_note([`entertainmentplus`, `cinema`])}</b>`],
 			subtitle: `${get_price_string([`entertainmentplus`, `cinema`], `jahr`)} monatlich* `,
@@ -77,7 +77,7 @@
 		},
 
 		{
-			title: `Sky Sport Paket + ${bonus_string} Prämie`,
+			title: `Entertainment + Sky Sport Paket + ${bonus_string} Prämie`,
 			image: `/images/wahl/wahl_sport.png`,
 			points: [...atr, `<b>${get_offer_note([`entertainment`, `sport`])}</b>`],
 			subtitle: `${get_price_string([`entertainment`, `sport`], `jahr`)} monatlich* `,
@@ -88,7 +88,7 @@
 		},
 
 		{
-			title: `Sky Fußball-Bundesliga Paket + ${bonus_string} Prämie`,
+			title: `Entertainment + Sky Fußball-Bundesliga Paket + ${bonus_string} Prämie`,
 			image: `/images/wahl/wahl_bundesliga.png`,
 			points: [...atr, `<b>${get_offer_note([`entertainment`, `bundesliga`])}</b>`],
 			subtitle: `${get_price_string([`entertainment`, `bundesliga`], `jahr`)} monatlich* `,

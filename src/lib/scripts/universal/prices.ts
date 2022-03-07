@@ -68,10 +68,14 @@ function intersect(a: ReadonlyArray<unknown>, b: ReadonlyArray<unknown>): Array<
 	return Array.from(intersection);
 }
 
-export function get_offer_note(packages: ReadonlyArray<package_name>): string {
+export function get_offer_note(packages: ReadonlyArray<package_name>, long = false): string {
 	const intersection = intersect(packages, premiumpackages);
 	if (intersection.length >= 2) {
-		return '+ Samsung Tab A8';
+		if (long) {
+			return '+ Samsung Galaxy Tab A8 on top (UVP € 229)';
+		} else {
+			return '+ Samsung Tab A8';
+		}
 	}
 	return '';
 }

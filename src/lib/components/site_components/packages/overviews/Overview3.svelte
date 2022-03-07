@@ -2,6 +2,7 @@
 	import PackageOverview from '$lib/components/layout_components/package_overview.svelte';
 	export let detailed = false;
 	import { get_price_string } from '$lib/scripts/universal/prices';
+import GradientBadge from '../../gradient_badge.svelte';
 </script>
 
 <PackageOverview
@@ -22,4 +23,5 @@
 		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema
 		+ Sport
 	</p>
+	<GradientBadge>Inkl. Samsung <br /> Tablet.*</GradientBadge>
 </PackageOverview>

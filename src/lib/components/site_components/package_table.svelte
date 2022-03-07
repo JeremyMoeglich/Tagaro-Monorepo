@@ -8,6 +8,7 @@
 	const table: table_layout = [
 		['entertainment'],
 		['entertainmentplus'],
+		['entertainment', 'cinema'],
 		['entertainmentplus', 'cinema'],
 		['entertainment', 'sport'],
 		['entertainmentplus', 'sport'],

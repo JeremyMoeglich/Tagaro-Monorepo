@@ -84,7 +84,7 @@
 				</li>
 			</ul>
 			{#if aktivierung <= 0}
-				<p>Bei diesem Angebot entfällt die Aktivierungsgebühr durch Sky</p>
+				<p>Es fällt <b>keine Aktivierungsgebühr</b> durch Sky an. Sie sparen € 29.</p>
 			{:else}
 				<p>
 					Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
