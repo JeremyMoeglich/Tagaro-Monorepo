@@ -57,7 +57,7 @@
 			image="/images/square_packages/uhd.png"
 		/>
 		<Zubuchoption
-			text="<b>DAZN jährlich + € 12,50 mtl. </b>oder<b> <br/> DAZN monatlich + € 14,99 mtl.</b>"
+			text="<b>DAZN jährlich + € 24,99 mtl. </b>oder<b> <br/> DAZN monatlich + € 29,99 mtl.</b>"
 			image="/images/external/dazn.svg"
 		/>
 		<Zubuchoption
