@@ -3,7 +3,8 @@ import type { package_id } from '$lib/scripts/universal/asset_library/assets/pac
 import { indexed_priceable_assets } from './priceable_asset';
 import type { Price } from './priceable_asset_types';
 import type { priceable_asset_id } from './asset_types';
-import { map_object, sum } from '../util';
+import { map_entries } from 'functional-utilities';
+import { sum } from 'lodash-es';
 
 const factor_jahr = 1;
 const factor_monat = 1;
@@ -16,16 +17,13 @@ function to_price_string(v: number): string {
 	return str;
 }
 
-export const aktivierung = 29;
+export const aktivierung = 0;
 export const aktivierung_string = to_price_string(aktivierung);
 
 export const bonus = 20;
 export const bonus_string = to_price_string(bonus);
 
-const price_table = map_object(indexed_priceable_assets, (key, value) => ({
-	key: key,
-	value: value.price
-}));
+const price_table = map_entries(indexed_priceable_assets, ([key, value]) => [key, value.price]);
 
 export function get_price(assets: ReadonlyArray<priceable_asset_id>): Price {
 	return {
@@ -55,14 +53,14 @@ function intersect<T>(a: ReadonlyArray<T>, b: ReadonlyArray<T>): ReadonlyArray<T
 	return Array.from(intersection);
 }
 
-export function get_offer_note(packages: ReadonlyArray<package_id>): string {
+export function get_offer_note(packages: ReadonlyArray<package_id>, long = false): string {
 	const intersection = intersect(packages, premiumpackages);
-	if (intersection.length === 3) {
-		return '+ € 125 Amazon Gutschein';
-	} else if (packages.includes('entertainmentplus') && intersection.length > 0) {
-		return '+ € 75 Amazon Gutschein';
-	} else if (intersection.length > 1) {
-		return '+ € 75 Amazon Gutschein';
+	if (intersection.length >= 2) {
+		if (long) {
+			return '+ Samsung Galaxy Tab A8 on top (UVP € 229)';
+		} else {
+			return '+ Samsung Tab A8';
+		}
 	}
 	return '';
 }

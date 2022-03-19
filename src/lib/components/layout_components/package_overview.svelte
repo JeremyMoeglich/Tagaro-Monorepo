@@ -22,7 +22,6 @@
 			</ul>
 			{#if detailed}
 				<slot />
-				<img src="/images/external/125amazon.webp" class="badge" alt="" />
 			{/if}
 		</div>
 
@@ -42,10 +41,6 @@
 		gap: calc(5vw + 50px);
 		justify-content: center;
 		flex-wrap: wrap;
-	}
-	.badge {
-		width: 200px;
-		margin-top: 20px;
 	}
 	.title,
 	.description :global(h3) {

@@ -19,11 +19,8 @@
 	import { fly } from 'svelte/transition';
 	import InfoBanner from '$lib/components/site_components/info_banner.svelte';
 	import { clickOutside } from 'svelte-use-click-outside';
-	import {
-		prefrences_keys,
-		prefrences_keys_type,
-		prefrences_obj
-	} from '$lib/scripts/frontend/prefrences';
+	import type { prefrences_keys_type, prefrences_obj } from '$lib/scripts/frontend/prefrences';
+	import { prefrences_keys } from '$lib/scripts/frontend/prefrences';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -31,7 +28,7 @@
 
 	let navbar_elements = {
 		Startseite: '/',
-		Aboformular: '/aboformular',
+		//Aboformular: '/aboformular',
 		'Sky Angebote': {
 			index: '/angebote',
 			'Sky Entertainment Plus': '/angebote/entertainmentplus',

@@ -58,6 +58,7 @@ export const base_packages: ReadonlyArray<package_id> = [
 	'entertainment',
 	'entertainmentplus'
 ] as const;
+
 export const premiumpackages: ReadonlyArray<package_id> = [
 	'cinema',
 	'sport',

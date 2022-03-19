@@ -8,6 +8,7 @@
 	const table: table_layout = [
 		['entertainment'],
 		['entertainmentplus'],
+		['entertainment', 'cinema'],
 		['entertainmentplus', 'cinema'],
 		['entertainment', 'sport'],
 		['entertainmentplus', 'sport'],
@@ -56,8 +57,8 @@
 			image="/images/assets/zubuchoptionen/uhd.png"
 		/>
 		<Zubuchoption
-			text="<b>DAZN jährlich + € 12,50 mtl. </b>oder<b> <br/> DAZN monatlich + € 14,99 mtl.</b>"
-			image="/images/assets/zubuchoptionen/dazn.svg"
+			text="<b>DAZN jährlich + € 24,99 mtl. </b>oder<b> <br/> DAZN monatlich + € 29,99 mtl.</b>"
+			image="/images/external/dazn.svg"
 		/>
 		<Zubuchoption
 			text="<b>Multiscreen + € 10 mtl. <br/></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br/> 2. Sky Q Receiver für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)"

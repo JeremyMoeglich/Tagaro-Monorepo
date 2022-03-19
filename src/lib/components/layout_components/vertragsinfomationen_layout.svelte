@@ -1,6 +1,7 @@
 <script>
 	import ExpandableBox from '$lib/components/layout_components/expandable_box.svelte';
 	import {
+		aktivierung,
 		aktivierung_string,
 		get_price_string
 	} from '$lib/scripts/universal/asset_library/prices';
@@ -86,14 +87,18 @@
 					)}
 				</li>
 			</ul>
-			<p>
-				Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
-				durch Sky.
-			</p>
+			{#if aktivierung <= 0}
+				<p>Es fällt <b>keine Aktivierungsgebühr</b> durch Sky an. Sie sparen € 29.</p>
+			{:else}
+				<p>
+					Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
+					durch Sky.
+				</p>
+			{/if}
 			<ul>
 				<li><b>Optional:</b></li>
 				<li>- UHD mtl. € 5 (für Sat oder Kabel-Empfang)</li>
-				<li>- DAZN jährlich für € 12,50 mtl. oder DAZN monatlich für € 14,99 mtl.</li>
+				<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
 				<li>
 					- Multiscreen für € 10 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für
 					einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)

@@ -23,7 +23,6 @@
 	import { bic_validator } from '$lib/scripts/universal/validators/bic';
 	import type { aboformular_options } from '$lib/scripts/universal/aboformular';
 	import { sort_by_price } from '$lib/scripts/universal/asset_library/prices';
-	import { is_empty_string } from '$lib/scripts/universal/util';
 	import type { category_id } from '$lib/scripts/universal/asset_library/categories';
 	// #endregion
 
@@ -75,16 +74,21 @@
 		}
 	};
 	// #region [c6] Asset Variables
-	let selected_priceable_assets: ReadonlyArray<priceable_asset_id>;
-	$: selected_priceable_assets = [
+	let selected_priceable_assets: Array<priceable_asset_id>;
+	function filter_empty_string<T extends unknown | ''>(argument: T[]): Exclude<T, ''>[] {
+		return argument.filter((v): v is Exclude<T, ''> => v !== '');
+	}
+
+	$: selected_priceable_assets = filter_empty_string([
 		options.choices.base_package,
 		...sort_by_price(options.choices.premium_packages),
 		...sort_by_price(options.choices.zubuchoptionen)
-	].filter(is_empty_string);
-	let selected_assets: ReadonlyArray<asset_id>;
-	$: selected_assets = [...selected_priceable_assets, options.receive.receive_type].filter(
-		is_empty_string
-	);
+	]);
+	let selected_assets: Array<asset_id>;
+	$: selected_assets = filter_empty_string([
+		...selected_priceable_assets,
+		options.receive.receive_type
+	]);
 	let current_page = 0;
 	let verbose = false;
 	let pages: Array<Partial<Record<category_id, boolean>>> = [

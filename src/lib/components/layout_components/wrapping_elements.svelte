@@ -74,7 +74,7 @@
 		}
 	}
 	let slide_timeout_id: ReturnType<typeof setTimeout>;
-	const delay = 5000;
+	const delay = 9000;
 	let focused = true;
 	function slide(amount = 1) {
 		if (focused) {

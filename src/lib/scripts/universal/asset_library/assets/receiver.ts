@@ -1,9 +1,7 @@
 import { temp_asset_image } from '../asset_types';
-import {
-	Dynamic_Priceable_Asset,
-	dynamic_to_static_assets,
-	Priceable_Asset
-} from '../priceable_asset_types';
+import type { Dynamic_Priceable_Asset, Priceable_Asset } from '../priceable_asset_types';
+
+import { dynamic_to_static_assets } from '../priceable_asset_types';
 
 enum receiver_type_enum {
 	receiver1x,

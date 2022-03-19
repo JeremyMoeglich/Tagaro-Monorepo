@@ -1,4 +1,4 @@
-import { final_join } from '../util';
+import { final_join } from 'functional-utilities';
 import { indexed_assets } from './all_assets';
 import type { asset_id } from './asset_types';
 

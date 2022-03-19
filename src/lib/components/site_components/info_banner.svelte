@@ -1,14 +1,10 @@
 <script lang="ts">
 	import { browser } from '$app/env';
 	import Button from '$lib/components/layout_components/button.svelte';
-	import {
-		prefrences_keys,
-		prefrences_keys_type,
-		prefrences_obj,
-		prefrences_keys_enum
-	} from '$lib/scripts/frontend/prefrences';
+	import { prefrences_keys, prefrences_keys_enum } from '$lib/scripts/frontend/prefrences';
+	import type { prefrences_keys_type, prefrences_obj } from '$lib/scripts/frontend/prefrences';
 	import Cookies from 'js-cookie';
-	import cloneDeep from 'lodash.clonedeep';
+	import { cloneDeep } from 'lodash-es';
 
 	function IsJsonString(str: string): boolean {
 		try {

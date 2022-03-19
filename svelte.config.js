@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import preprocess from 'svelte-preprocess';
 //import importAssets from 'svelte-preprocess-import-assets'
 //import seqPreprocessor from 'svelte-sequential-preprocessor'
@@ -40,7 +41,11 @@ const config = {
 			crawl: true,
 			enabled: true,
 			onError: 'fail',
-			entries: ['*']
+			entries: ['*'],
+			default: true
+		},
+		routes: (filepath) => {
+			return ![/.aboformular\/index.svelte$/].some((regex) => regex.test(filepath));
 		},
 
 		//adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
