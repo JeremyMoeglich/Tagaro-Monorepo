@@ -58,7 +58,7 @@
 		/>
 		<Zubuchoption
 			text="<b>DAZN jährlich + € 24,99 mtl. </b>oder<b> <br/> DAZN monatlich + € 29,99 mtl.</b>"
-			image="/images/external/dazn.svg"
+			image="/images/assets/zubuchoptionen/dazn.svg"
 		/>
 		<Zubuchoption
 			text="<b>Multiscreen + € 10 mtl. <br/></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br/> 2. Sky Q Receiver für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)"
