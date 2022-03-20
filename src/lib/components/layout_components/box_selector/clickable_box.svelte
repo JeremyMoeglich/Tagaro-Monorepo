@@ -6,7 +6,7 @@
 		get_selector_error_strings,
 		matches_selector
 	} from '$lib/scripts/universal/asset_library/selector';
-	import { hasProperty } from '$lib/scripts/universal/util';
+	import { hasProperty } from 'functional-utilities';
 
 	export let asset: Asset | Priceable_Asset;
 	export let func: () => unknown;

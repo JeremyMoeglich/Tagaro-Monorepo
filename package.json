@@ -56,7 +56,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"functional-utilities": "^1.7.1",
+		"functional-utilities": "^1.8.0",
 		"ibantools": "^4.1.5",
 		"js-cookie": "^3.0.1",
 		"lodash-es": "^4.17.21"
