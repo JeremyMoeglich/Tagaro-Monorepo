@@ -22,11 +22,20 @@
 	side_images={['/images/external/amazon.webp']}
 /> -->
 
-<ShowcaseLayout
+<!-- <ShowcaseLayout
 	title={'Spring Special: Buche zwei Sky Programmpakete und erhalte ein gratis* Samsung Tab A8 im Wert von € 229'}
 	primary_image={'/images/visuals/free_tablet_offer_image1.webp'}
 	points={[
 		'Bei Buchung von mindestens 2 Premiumpaketen Samsung A8 Tablet von Sky on top*',
+		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
+	]}
+	side_images={['/images/badges/keine_aktivierung.webp']}
+/> -->
+
+<ShowcaseLayout
+	title={'Jetzt Entertainment Plus + 1 Paket buchen und 20% Rabatt bekommen*'}
+	points={[
+		'Bei Buchung von Entertainment Plus + 1 Paket 20% Rabatt*',
 		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
 	]}
 	side_images={['/images/badges/keine_aktivierung.webp']}

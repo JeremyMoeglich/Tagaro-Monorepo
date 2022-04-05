@@ -17,44 +17,8 @@
 			</p>
 			<ul>
 				<li>
-					- Sky Entertainment für mtl. {get_price_string(['entertainment'], 'jahr')} <br />
-					<b>in Kombination mit</b>
-				</li>
-				<li>- Sky Sport mtl. {get_price_string(['entertainment', 'sport'], 'jahr')}</li>
-				<li>
-					- Sky Fußball-Bundesliga mtl. {get_price_string(['entertainment', 'bundesliga'], 'jahr')}
-				</li>
-				<li>
-					- Sky Sport + Sky Cinema mtl. {get_price_string(
-						['entertainment', 'cinema', 'sport'],
-						'jahr'
-					)}
-				</li>
-				<li>
-					- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainment', 'sport', 'bundesliga'],
-						'jahr'
-					)}
-				</li>
-				<li>
-					- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainment', 'cinema', 'bundesliga'],
-						'jahr'
-					)}
-				</li>
-				<li>
-					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainment', 'cinema', 'bundesliga', 'sport'],
-						'jahr'
-					)}
-				</li>
-			</ul>
-			<ul>
-				<li>
-					- Sky Ultimate TV mit Entertainment inkl. Netflix mtl. {get_price_string(
-						['entertainmentplus'],
-						'jahr'
-					)} <br /> <b> in Kombination mit</b>
+					- Entertainment Plus inkl. Netflix mtl. {get_price_string(['entertainmentplus'], 'jahr')}
+					<br /> <b> in Kombination mit</b>
 				</li>
 				<li>- Sky Sport mtl. {get_price_string(['entertainmentplus', 'sport'], 'jahr')}</li>
 				<li>- Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}</li>
@@ -83,6 +47,40 @@
 				<li>
 					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
 						['entertainmentplus', 'cinema', 'sport', 'bundesliga'],
+						'jahr'
+					)}
+				</li>
+			</ul>
+			<ul>
+				<li>
+					- Sky Entertainment für mtl. {get_price_string(['entertainment'], 'jahr')} <br />
+					<b>in Kombination mit</b>
+				</li>
+				<li>- Sky Sport mtl. {get_price_string(['entertainment', 'sport'], 'jahr')}</li>
+				<li>
+					- Sky Fußball-Bundesliga mtl. {get_price_string(['entertainment', 'bundesliga'], 'jahr')}
+				</li>
+				<li>
+					- Sky Sport + Sky Cinema mtl. {get_price_string(
+						['entertainment', 'cinema', 'sport'],
+						'jahr'
+					)}
+				</li>
+				<li>
+					- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainment', 'sport', 'bundesliga'],
+						'jahr'
+					)}
+				</li>
+				<li>
+					- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainment', 'cinema', 'bundesliga'],
+						'jahr'
+					)}
+				</li>
+				<li>
+					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+						['entertainment', 'cinema', 'bundesliga', 'sport'],
 						'jahr'
 					)}
 				</li>
@@ -123,14 +121,14 @@
 			</p>
 			<p>
 				Sky Entertainment für mtl. {get_price_string(['entertainment'], 'monat')} in Kombination mit
-				Sky Sport
+				Sky Sport mtl.
 				{get_price_string(['entertainment', 'sport'], 'monat')}; Sky Cinema mtl. {get_price_string(
 					['entertainment', 'cinema'],
 					'monat'
 				)}; Sky Fußball-Bundesliga mtl. {get_price_string(
 					['entertainment', 'bundesliga'],
 					'monat'
-				)}; Sky Sport + Sky Cinema mtl. mtl. {get_price_string(
+				)}; Sky Sport + Sky Cinema mtl. {get_price_string(
 					['entertainment', 'sport', 'cinema'],
 					'monat'
 				)}; Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
@@ -143,12 +141,14 @@
 					['entertainment', 'sport', 'cinema', 'bundesliga'],
 					'monat'
 				)}; <br />
-				Sky Entertainment Plus für mtl. {get_price_string(['entertainmentplus'], 'monat')}
+				Sky Ultimate TV mit Entertainment inkl. Netflix mtl. {get_price_string(
+					['entertainmentplus'],
+					'monat'
+				)}
 				in Kombination mit Sky Sport mtl. {get_price_string(
 					['entertainmentplus', 'sport'],
 					'monat'
-				)}
-				Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'monat')}; Sky
+				)}; Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'monat')}; Sky
 				Fußball-Bundesliga mtl. {get_price_string(['entertainmentplus', 'bundesliga'], 'monat')};
 				Sky Sport + Sky Cinema mtl. {get_price_string(
 					['entertainmentplus', 'sport', 'cinema'],
@@ -160,9 +160,16 @@
 					['entertainmentplus', 'cinema', 'bundesliga'],
 					'monat'
 				)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-					['entertainmentplus', 'cinema', 'bundesliga'],
+					['entertainmentplus', 'cinema', 'bundesliga', 'sport'],
 					'monat'
-				)};
+				)}; <br /> Mit UHD zzgl. {get_price_string(['uhd'], 'monat')}; Multiscreen {get_price_string(
+					['multiscreen'],
+					'monat'
+				)}; Netflix Standard-Abo {get_price_string(['netflixstandard'], 'monat')}; Netflix
+				Premium-Abo {get_price_string(['netflixpremium'], 'monat')}, Sky Kids {get_price_string(
+					['kids'],
+					'monat'
+				)}
 			</p>
 		</div>
 		<div>
@@ -194,14 +201,14 @@
 			<h3>Sky Entertainment Plus Upgrade auf Netflix Standard/Premium:</h3>
 			<p>
 				Gegen Aufpreis kann jederzeit ein Upgrade des Entertainment Plus Pakets von Netflix Basis
-				auf Netflix Standard (€ 5 mtl.) oder Premium (€ 10 mtl.) vorgenommen werden. Netflix
-				Standard beinhaltet aktuell HD und die gleichzeitige Nutzung von Netflix auf bis zu zwei
-				Geräten. Netflix Premium beinhaltet aktuell UHD und die gleichzeitige Nutzung von Netflix
-				auf bis zu vier Geräten. Das Sky Entertainment Plus Upgrade kann vom Kunden jederzeit sowohl
-				mittels Erklärung gegenüber Sky als auch gegenüber Netflix beendet werden. Im letzteren Fall
-				(Erklärung der Kündigung gegenüber Netflix) handelt Netflix als Empfangsbote für Sky. Das
-				Entertainment Plus Paket enthält ab dem Wirksamwerden dieser Kündigung wiederum nur noch
-				Netflix Basis oder Netflix Standard.
+				auf Netflix Standard oder Premium vorgenommen werden. Netflix Standard beinhaltet aktuell HD
+				und die gleichzeitige Nutzung von Netflix auf bis zu zwei Geräten. Netflix Premium
+				beinhaltet aktuell UHD und die gleichzeitige Nutzung von Netflix auf bis zu vier Geräten.
+				Das Sky Entertainment Plus Upgrade kann vom Kunden jederzeit sowohl mittels Erklärung
+				gegenüber Sky als auch gegenüber Netflix beendet werden. Im letzteren Fall (Erklärung der
+				Kündigung gegenüber Netflix) handelt Netflix als Empfangsbote für Sky. Das Entertainment
+				Plus Paket enthält ab dem Wirksamwerden dieser Kündigung wiederum nur noch Netflix Basis
+				oder Netflix Standard.
 			</p>
 		</div>
 		<div>
@@ -277,7 +284,8 @@
 				Huawei) möglich. Über die Sky Q IPTV Box und Sky Q-Mini sind UHD-Inhalte nicht verfügbar.
 				Pro Sky Q Abonnement über SAT oder Kabel sind maximal 2 Sky Q Receiver (je € 49 durch Sky)
 				zzgl. maximal 2 Sky Q-Mini (je € 29 durch Sky) oder bei einem Sky Q Abonnement über das
-				Internet maximal 3 Sky Q IPTV Boxen (je € 29 durch Sky) buchbar.
+				Internet maximal 3 Sky Q IPTV Boxen (je € 29 durch Sky) buchbar. Eine Buchung von
+				Multiscreen ohne zusätzliches Gerät ist ebenso möglich.
 			</p>
 		</div>
 		<div>

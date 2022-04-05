@@ -42,7 +42,7 @@
 	</p>
 </VertragsinfomationenLayout> -->
 
-<VertragsinfomationenLayout>
+<!-- <VertragsinfomationenLayout>
 	<h3>Tablet Samsung A8:</h3>
 	<p>
 		Bei der Buchung von mindestens Sky Entertainment + 2 Programmpaketen gibt es ein Gutschein für
@@ -55,5 +55,15 @@
 		6-8 Wochen nach Abonnementvertragsabschluß an den Kunden versendet. Der Versand des Gutscheins
 		erfolgt durch Sky. Die Einlösung des Gutscheins ist bis zum 31.07.2022 befristet. Nur solange
 		der Vorrat reicht.
+	</p>
+</VertragsinfomationenLayout> -->
+
+<VertragsinfomationenLayout>
+	<h3>20% Preisnachlass auf Entertainment Plus Paketkombinationen:</h3>
+	<p>
+		Bei der Buchung von Entertainment Plus + mindestens 1 oder mehr Programmpakete, erhalten Sie
+		einen 20% Preisnachlass auf den gesamten Paketpreis. Der 20% Rabatt gilt auch für Zubuchoptionen
+		wie Netflix Upgrades, UHD, Multiscreen, Sky Go Plus und Sky Kids. Ausgenommen vom Rabatt sind
+		HD+, DAZN und trendSports. Der Rabatt gilt über 12 Monate des Jahres-Abos.
 	</p>
 </VertragsinfomationenLayout>

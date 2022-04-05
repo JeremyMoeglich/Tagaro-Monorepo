@@ -26,12 +26,15 @@ export const bonus_string = to_price_string(bonus);
 const price_table = map_entries(indexed_priceable_assets, ([key, value]) => [key, value.price]);
 
 export function get_price(assets: ReadonlyArray<priceable_asset_id>): Price {
+	const intersection = intersect(assets, premiumpackages);
+	const f = intersection.length > 0 && assets.includes('entertainmentplus') ? 0.8 : 1;
 	return {
-		jahr: sum(assets.map((v) => price_table[v].jahr)) * factor_jahr,
+		jahr: sum(assets.map((v) => price_table[v].jahr)) * factor_jahr * f,
 		monat: sum(assets.map((v) => price_table[v].monat)) * factor_monat,
 		singular: sum(assets.map((v) => price_table[v].singular)) * factor_monat
 	};
 }
+
 export function get_price_string(
 	assets: ReadonlyArray<priceable_asset_id>,
 	subscription_time: keyof Price
@@ -55,11 +58,11 @@ function intersect<T>(a: ReadonlyArray<T>, b: ReadonlyArray<T>): ReadonlyArray<T
 
 export function get_offer_note(packages: ReadonlyArray<package_id>, long = false): string {
 	const intersection = intersect(packages, premiumpackages);
-	if (intersection.length >= 2) {
+	if (intersection.length > 0 && packages.includes('entertainmentplus')) {
 		if (long) {
-			return '+ Samsung Galaxy Tab A8 on top (UVP € 229)';
+			return '20% Rabatt';
 		} else {
-			return '+ Samsung Tab A8';
+			return '20% Rabatt';
 		}
 	}
 	return '';

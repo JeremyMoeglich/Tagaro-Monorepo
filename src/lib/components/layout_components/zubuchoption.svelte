@@ -19,8 +19,9 @@
 		align-items: center;
 		gap: 50px;
 		background-color: rgb(231, 229, 229);
-		max-width: fit-content;
-		min-width: min(800px, 90vw);
+		--width: min(800px, 90vw);
+		max-width: var(--width);
+		min-width: var(--width);
 		padding: 20px 40px;
 		border-radius: 8px;
 	}
