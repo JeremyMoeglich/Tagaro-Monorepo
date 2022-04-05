@@ -1,12 +1,13 @@
 <script>
 	export let image;
 	//export let title;
-	export let text;
 </script>
 
 <div class="main_alignment">
 	<img src={image} alt="" />
-	<p>{@html text}</p>
+	<p>
+		<slot />
+	</p>
 </div>
 
 <style lang="scss">
