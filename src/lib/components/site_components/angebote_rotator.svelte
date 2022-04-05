@@ -23,7 +23,7 @@
 		{
 			title: `2 Sky Pakete nach Wahl + ${bonus_string} Prämie`,
 			image: `/images/assets/packages/wahl/wahl_2aus4.png`,
-			points: [...atr, `<b>${get_offer_note([`entertainment`, `sport`], true)}</b>`],
+			points: [...atr, `<mark>${get_offer_note([`entertainment`, `sport`], true)}</mark>`],
 			subtitle: `ab ${get_price_string([`entertainment`, `sport`], `jahr`)} monatlich* `,
 			info_text:
 				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport) ` +
@@ -33,7 +33,7 @@
 		{
 			title: `Sky Entertainment Paket + ${bonus_string} Prämie`,
 			image: `/images/assets/packages/wahl/wahl_entertainment.png`,
-			points: [...atr, `<b>${get_offer_note([`entertainment`], true)}</b>`],
+			points: [...atr, `<mark>${get_offer_note([`entertainment`], true)}</mark>`],
 			subtitle: `ab ${get_price_string([`entertainment`], `jahr`)} monatlich* `,
 			info_text: `(im Jahres-Abo, danach ${get_price_string(
 				[`entertainment`],
@@ -44,7 +44,10 @@
 		{
 			title: `3 Sky Pakete nach Wahl + ${bonus_string} Prämie`,
 			image: `/images/assets/packages/wahl/wahl_3aus4.png`,
-			points: [...atr, `<b>${get_offer_note([`entertainment`, `sport`, `cinema`], true)}</b>`],
+			points: [
+				...atr,
+				`<mark>${get_offer_note([`entertainment`, `sport`, `cinema`], true)}</mark>`
+			],
 			subtitle: `ab ${get_price_string([`entertainment`, `cinema`, `sport`], `jahr`)} monatlich* `,
 			info_text:
 				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport) ` +
@@ -57,7 +60,7 @@
 			image: `/images/assets/packages/wahl/wahl_4.png`,
 			points: [
 				...atr,
-				`<b>${get_offer_note([`entertainment`, `cinema`, `sport`, `bundesliga`], true)}</b>`
+				`<mark>${get_offer_note([`entertainment`, `cinema`, `sport`, `bundesliga`], true)}</mark>`
 			],
 			subtitle: `ab ${get_price_string(
 				[`entertainment`, `cinema`, `sport`, `bundesliga`],
@@ -72,7 +75,7 @@
 		{
 			title: `Entertainment Plus + Cinema Paket + ${bonus_string} Prämie`,
 			image: `/images/assets/packages/wahl/wahl_cinema.png`,
-			points: [...atr, `<b>${get_offer_note([`entertainmentplus`, `cinema`], true)}</b>`],
+			points: [...atr, `<mark>${get_offer_note([`entertainmentplus`, `cinema`], true)}</mark>`],
 			subtitle: `${get_price_string([`entertainmentplus`, `cinema`], `jahr`)} monatlich* `,
 			info_text:
 				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment-Plus + Cinema) ` +
@@ -83,7 +86,7 @@
 		{
 			title: `Entertainment + Sport Paket + ${bonus_string} Prämie`,
 			image: `/images/assets/packages/wahl/wahl_sport.png`,
-			points: [...atr, `<b>${get_offer_note([`entertainment`, `sport`], true)}</b>`],
+			points: [...atr, `<mark>${get_offer_note([`entertainment`, `sport`], true)}</mark>`],
 			subtitle: `${get_price_string([`entertainment`, `sport`], `jahr`)} monatlich* `,
 			info_text:
 				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport) ` +
@@ -94,7 +97,7 @@
 		{
 			title: `Entertainment + Fußball Bundesliga Paket + ${bonus_string} Prämie`,
 			image: `/images/assets/packages/wahl/wahl_bundesliga.png`,
-			points: [...atr, `<b>${get_offer_note([`entertainment`, `bundesliga`], true)}</b>`],
+			points: [...atr, `<mark>${get_offer_note([`entertainment`, `bundesliga`], true)}</mark>`],
 			subtitle: `${get_price_string([`entertainment`, `bundesliga`], `jahr`)} monatlich* `,
 			info_text:
 				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Bundesliga) ` +

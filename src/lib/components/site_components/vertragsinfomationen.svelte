@@ -77,8 +77,10 @@
 			(anteilig) zzgl. 12 Monaten)
 		</p>
 		<p>
-			Wählbare Pakete mit Entertainment Plus (Abo mit Netflix / 20% Rabatt ab Entertainment Plus + 1
-			Paket) 12 Monate Laufzeit, danach monatlich kündbar:
+			<b>
+				Wählbare Pakete mit Entertainment Plus (Abo mit Netflix / 20% Rabatt ab Entertainment Plus +
+				1 Paket) 12 Monate Laufzeit, danach monatlich kündbar:</b
+			>
 		</p>
 
 		<ul>
@@ -120,8 +122,10 @@
 		</ul>
 
 		<p>
-			Wählbare Pakete mit Sky Entertainment (Abo ohne Netflix / kein zusätzlicher Rabatt) 12 Monate
-			Laufzeit, danach monatlich kündbar:
+			<b>
+				Wählbare Pakete mit Sky Entertainment (Abo ohne Netflix / kein zusätzlicher Rabatt) 12
+				Monate Laufzeit, danach monatlich kündbar:
+			</b>
 		</p>
 
 		<ul>
@@ -137,30 +141,33 @@
 			</li>
 		</ul>
 
-		<p>Es fällt keine Aktivierungsgebühr durch Sky an. Sie sparen € 29. Optional hinzubuchbar:</p>
+		<p>Es fällt keine Aktivierungsgebühr durch Sky an. Sie sparen € 29.</p>
+		<p><b>Optional hinzubuchbar:</b></p>
 
 		<ul>
 			<li>
-				- UHD für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 5 mtl. mit Entertainment (für
-				Sat oder Kabel-Empfang)
+				- UHD für € 4 mtl. ab Entertainment Plus + 1 Paket <mark>(20% Rabatt)</mark> oder € 5 mtl. mit
+				Entertainment (für Sat oder Kabel-Empfang)
 			</li>
 			<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
 			<li>
-				- Multiscreen für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 10 mtl. mit
-				Entertainment (Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1
-				Sky Q Mini für einmalig € 29 oder OHNE zusätzliche Hardware)
+				- Multiscreen für € 8 mtl. ab Entertainment Plus + 1 Paket <mark>(20% Rabatt)</mark> oder € 10
+				mtl. mit Entertainment (Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig
+				€ 49, 1 Sky Q Mini für einmalig € 29 oder OHNE zusätzliche Hardware)
 			</li>
 			<li>
-				- Netflix Standard-Abo, HD/2 Streams für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €
-				5 mtl. mit Entertainment
+				- Netflix Standard-Abo, HD/2 Streams für € 4 mtl. ab Entertainment Plus + 1 Paket <mark
+					>(20% Rabatt)</mark
+				> oder € 5 mtl. mit Entertainment
 			</li>
 			<li>
-				- Netflix Premium-Abo, UHD/4 Streams für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €
-				10 mtl. mit Entertainment
+				- Netflix Premium-Abo, UHD/4 Streams für € 8 mtl. ab Entertainment Plus + 1 Paket <mark
+					>(20% Rabatt)</mark
+				> oder € 10 mtl. mit Entertainment
 			</li>
 			<li>
-				- Sky Kids Zubuchung für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 5 mtl. mit
-				Entertainment
+				- Sky Kids Zubuchung für € 4 mtl. ab Entertainment Plus + 1 Paket <mark>(20% Rabatt)</mark> oder
+				€ 5 mtl. mit Entertainment
 			</li>
 			<li>- trendSports für € 5,99 mtl.</li>
 			<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>

@@ -121,21 +121,25 @@
 					</li>
 					<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
 					<li>
-						- Multiscreen für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 10 mtl. mit
-						Entertainment (Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €
-						49, 1 Sky Q Mini für einmalig € 29 oder OHNE zusätzliche Hardware)
+						- Multiscreen für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 10 mtl.
+						mit Entertainment (Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig
+						€ 49, 1 Sky Q Mini für einmalig € 29 oder OHNE zusätzliche Hardware)
 					</li>
 					<li>
-						- Netflix Standard-Abo, HD/2 Streams für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark>
+						- Netflix Standard-Abo, HD/2 Streams für € 4 mtl. mit Entertainment Plus <mark
+							>(20% Rabatt)</mark
+						>
 						oder € 5 mtl. mit Entertainment
 					</li>
 					<li>
-						- Netflix Premium-Abo, UHD/4 Streams für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark>
+						- Netflix Premium-Abo, UHD/4 Streams für € 8 mtl. mit Entertainment Plus <mark
+							>(20% Rabatt)</mark
+						>
 						oder € 10 mtl. mit Entertainment
 					</li>
 					<li>
-						- Sky Kids Zubuchung für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 5 mtl. mit
-						Entertainment
+						- Sky Kids Zubuchung für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €
+						5 mtl. mit Entertainment
 					</li>
 					<li>- trendSports für € 5,99 mtl.</li>
 					<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
@@ -251,7 +255,7 @@
 			<p>
 				Die Laufzeit entspricht 1 Monat oder 12 Monate, jeweils mit anschließender automatischer
 				Verlängerung jeweils um einen Monat. Im Falle der Verlängerung fällt bei der 12-Monats
-				Option ein monatlicher Preis von € 14,99 an. Im deutschen Kabelnetz von Vodafone/Unitymedia
+				Option ein monatlicher Preis von € 24,99 an. Im deutschen Kabelnetz von Vodafone/Unitymedia
 				sind die beiden Sender aus lizenzrechtlichen Gründen derzeit nicht verfügbar. Kunden, die
 				Sky über dieses Netz empfangen, können ebenfalls wie Kunden anderer Netze, die DAZN Inhalte
 				über Sky Q in der DAZN App empfangen. Zum Empfang über die DAZN App ist eine dauerhafte
