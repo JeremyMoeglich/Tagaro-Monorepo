@@ -1,6 +1,7 @@
 <script>
 	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import PackageOverview from '$lib/components/layout_components/package_overview.svelte';
+import GradientBadge from '../../gradient_badge.svelte';
 	export let detailed = false;
 </script>
 
@@ -23,4 +24,5 @@
 		<br />
 		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
 	</p>
+	<GradientBadge>20% Rabatt sichern</GradientBadge>
 </PackageOverview>

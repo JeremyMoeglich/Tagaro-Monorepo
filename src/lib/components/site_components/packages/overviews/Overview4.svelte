@@ -25,5 +25,4 @@
 		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema
 		+ Sport + Bundesliga
 	</p>
-	<GradientBadge>Inkl. Samsung <br /> Tablet.*</GradientBadge>
 </PackageOverview>

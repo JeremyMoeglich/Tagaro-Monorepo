@@ -60,7 +60,7 @@ export function get_offer_note(packages: ReadonlyArray<package_id>, long = false
 	const intersection = intersect(packages, premiumpackages);
 	if (intersection.length > 0 && packages.includes('entertainmentplus')) {
 		if (long) {
-			return '+ 20% Rabatt';
+			return '+ 20% Rabatt ab Entertainment Plus + 1 Paket (Rabatt auch für Zubuchoptionen)';
 		} else {
 			return '+ 20% Rabatt';
 		}

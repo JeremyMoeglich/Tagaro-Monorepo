@@ -33,9 +33,9 @@
 /> -->
 
 <ShowcaseLayout
-	title={'Jetzt Entertainment Plus + 1 Paket buchen und 20% Rabatt bekommen*'}
+	title={'Jetzt Sky bestellen und 20% Rabatt sichern bei Buchung von Entertainment Plus + mindestens 1 Programmpaket*'}
 	points={[
-		'Bei Buchung von Entertainment Plus + 1 Paket 20% Rabatt*',
+		'Ab Buchung von Entertainment Plus + 1 Paket <mark>20% Rabatt</mark>*',
 		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
 	]}
 	side_images={['/images/badges/keine_aktivierung.webp']}

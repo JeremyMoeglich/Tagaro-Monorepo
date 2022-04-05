@@ -22,5 +22,4 @@
 	<p>
 		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport
 	</p>
-	<GradientBadge>Inkl. Samsung <br /> Tablet.*</GradientBadge>
 </PackageOverview>

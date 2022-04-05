@@ -552,4 +552,10 @@
 			justify-content: center;
 		}
 	}
+
+	:global(mark) {
+		background-color: transparent;
+		color: red;
+		font-weight: bold;
+	}
 </style>

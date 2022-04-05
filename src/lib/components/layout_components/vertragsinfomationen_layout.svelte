@@ -10,126 +10,137 @@
 <ExpandableBox title={'*Vertragsinformationen'}>
 	<span slot="main_text">
 		<div>
-			<h3>Wählbare Pakete und Kombinationen:</h3>
-			<p>
-				Angebote gelten mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
-				(anteilig) zzgl. 12 Monaten)
-			</p>
-			<ul>
-				<li>
-					- Entertainment Plus inkl. Netflix mtl. {get_price_string(['entertainmentplus'], 'jahr')}
-					<br /> <b> in Kombination mit</b>
-				</li>
-				<li>- Sky Sport mtl. {get_price_string(['entertainmentplus', 'sport'], 'jahr')}</li>
-				<li>- Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}</li>
-				<li>
-					- Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainmentplus', 'bundesliga'],
-						'jahr'
-					)}
-				</li>
-				<li>- Sky Kids mtl. € 25</li>
-				<li>
-					- Sky Sport + Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}
-				</li>
-				<li>
-					- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainmentplus', 'sport', 'bundesliga'],
-						'jahr'
-					)}
-				</li>
-				<li>
-					- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainmentplus', 'bundesliga', 'cinema'],
-						'jahr'
-					)}
-				</li>
-				<li>
-					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainmentplus', 'cinema', 'sport', 'bundesliga'],
-						'jahr'
-					)}
-				</li>
-			</ul>
-			<ul>
-				<li>
-					- Sky Entertainment für mtl. {get_price_string(['entertainment'], 'jahr')} <br />
-					<b>in Kombination mit</b>
-				</li>
-				<li>- Sky Sport mtl. {get_price_string(['entertainment', 'sport'], 'jahr')}</li>
-				<li>
-					- Sky Fußball-Bundesliga mtl. {get_price_string(['entertainment', 'bundesliga'], 'jahr')}
-				</li>
-				<li>
-					- Sky Sport + Sky Cinema mtl. {get_price_string(
-						['entertainment', 'cinema', 'sport'],
-						'jahr'
-					)}
-				</li>
-				<li>
-					- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainment', 'sport', 'bundesliga'],
-						'jahr'
-					)}
-				</li>
-				<li>
-					- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainment', 'cinema', 'bundesliga'],
-						'jahr'
-					)}
-				</li>
-				<li>
-					- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-						['entertainment', 'cinema', 'bundesliga', 'sport'],
-						'jahr'
-					)}
-				</li>
-			</ul>
-			{#if aktivierung <= 0}
-				<p>Es fällt <b>keine Aktivierungsgebühr</b> durch Sky an. Sie sparen € 29.</p>
-			{:else}
+			<slot name="wählbare_pakete">
+				<h3>Wählbare Pakete und Kombinationen:</h3>
 				<p>
-					Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
-					durch Sky.
+					Angebote gelten mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
+					(anteilig) zzgl. 12 Monaten)
 				</p>
-			{/if}
-			<ul>
-				<!-- <li><b>Optional:</b></li>
-				<li>- UHD mtl. € 5 (für Sat oder Kabel-Empfang)</li>
-				<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
-				<li>
-					- Multiscreen für € 10 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für
-					einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
-				</li>
-				<li>- Netflix Standard-Abo, HD/2 Streams (+ € 5 mtl.)</li>
-				<li>- Netflix Premium-Abo, UHD/4 Streams (+ € 10 mtl.)</li>
-				<li>- trendSports mtl. € 5,99</li>
-				<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li> -->
-				<li>
-					- UHD für € 4 mtl. mit Entertainment Plus (20% Rabatt) oder € 5 mtl. mit Entertainment
-					(für Sat oder Kabel-Empfang)
-				</li>
-				<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
-				<li>
-					- Multiscreen für € 8 mtl. mit Entertainment Plus (20% Rabatt) oder € 10 mtl. mit
-					Entertainment (Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49,
-					1 Sky Q Mini für einmalig € 29 oder OHNE zusätzliche Hardware)
-				</li>
-				<li>
-					- Netflix Standard-Abo, HD/2 Streams für € 4 mtl. mit Entertainment Plus (20% Rabatt) oder
-					€ 5 mtl. mit Entertainment
-				</li>
-				<li>
-					- Netflix Premium-Abo, UHD/4 Streams für € 8 mtl. mit Entertainment Plus (20% Rabatt) oder
-					€ 10 mtl. mit Entertainment
-				</li>
-				<li>
-					- Sky Kids Zubuchung für € 4 mtl. mit Entertainment Plus (20% Rabatt) oder € 5 mtl. mit
-					Entertainment
-				</li>
-				<li>- trendSports für € 5,99 mtl.</li>
-				<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
-			</ul>
+				<ul>
+					<li>
+						- Entertainment Plus inkl. Netflix mtl. {get_price_string(
+							['entertainmentplus'],
+							'jahr'
+						)}
+						<br /> <b> in Kombination mit</b>
+					</li>
+					<li>- Sky Sport mtl. {get_price_string(['entertainmentplus', 'sport'], 'jahr')}</li>
+					<li>- Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}</li>
+					<li>
+						- Sky Fußball-Bundesliga mtl. {get_price_string(
+							['entertainmentplus', 'bundesliga'],
+							'jahr'
+						)}
+					</li>
+					<li>- Sky Kids mtl. € 25</li>
+					<li>
+						- Sky Sport + Sky Cinema mtl. {get_price_string(
+							['entertainmentplus', 'cinema'],
+							'jahr'
+						)}
+					</li>
+					<li>
+						- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
+							['entertainmentplus', 'sport', 'bundesliga'],
+							'jahr'
+						)}
+					</li>
+					<li>
+						- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+							['entertainmentplus', 'bundesliga', 'cinema'],
+							'jahr'
+						)}
+					</li>
+					<li>
+						- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+							['entertainmentplus', 'cinema', 'sport', 'bundesliga'],
+							'jahr'
+						)}
+					</li>
+				</ul>
+				<ul>
+					<li>
+						- Sky Entertainment für mtl. {get_price_string(['entertainment'], 'jahr')} <br />
+						<b>in Kombination mit</b>
+					</li>
+					<li>- Sky Sport mtl. {get_price_string(['entertainment', 'sport'], 'jahr')}</li>
+					<li>
+						- Sky Fußball-Bundesliga mtl. {get_price_string(
+							['entertainment', 'bundesliga'],
+							'jahr'
+						)}
+					</li>
+					<li>
+						- Sky Sport + Sky Cinema mtl. {get_price_string(
+							['entertainment', 'cinema', 'sport'],
+							'jahr'
+						)}
+					</li>
+					<li>
+						- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
+							['entertainment', 'sport', 'bundesliga'],
+							'jahr'
+						)}
+					</li>
+					<li>
+						- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+							['entertainment', 'cinema', 'bundesliga'],
+							'jahr'
+						)}
+					</li>
+					<li>
+						- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+							['entertainment', 'cinema', 'bundesliga', 'sport'],
+							'jahr'
+						)}
+					</li>
+				</ul>
+				{#if aktivierung <= 0}
+					<p>Es fällt <b>keine Aktivierungsgebühr</b> durch Sky an. Sie sparen € 29.</p>
+				{:else}
+					<p>
+						Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
+						durch Sky.
+					</p>
+				{/if}
+				<ul>
+					<!-- <li><b>Optional:</b></li>
+					<li>- UHD mtl. € 5 (für Sat oder Kabel-Empfang)</li>
+					<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
+					<li>
+						- Multiscreen für € 10 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für
+						einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
+					</li>
+					<li>- Netflix Standard-Abo, HD/2 Streams (+ € 5 mtl.)</li>
+					<li>- Netflix Premium-Abo, UHD/4 Streams (+ € 10 mtl.)</li>
+					<li>- trendSports mtl. € 5,99</li>
+					<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li> -->
+					<li>
+						- UHD für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 5 mtl. mit Entertainment
+						(für Sat oder Kabel-Empfang)
+					</li>
+					<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
+					<li>
+						- Multiscreen für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 10 mtl. mit
+						Entertainment (Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €
+						49, 1 Sky Q Mini für einmalig € 29 oder OHNE zusätzliche Hardware)
+					</li>
+					<li>
+						- Netflix Standard-Abo, HD/2 Streams für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark>
+						oder € 5 mtl. mit Entertainment
+					</li>
+					<li>
+						- Netflix Premium-Abo, UHD/4 Streams für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark>
+						oder € 10 mtl. mit Entertainment
+					</li>
+					<li>
+						- Sky Kids Zubuchung für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 5 mtl. mit
+						Entertainment
+					</li>
+					<li>- trendSports für € 5,99 mtl.</li>
+					<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
+				</ul>
+			</slot>
 		</div>
 		<div class="slot">
 			<slot />

@@ -53,19 +53,19 @@
 	<div class="zubuchoptionen" id="zubuchoptionen">
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption image="/images/assets/zubuchoptionen/uhd.png">
-			<b>UHD für € 4 mtl. mit Entertainment Plus (20% Rabatt)</b> oder<br />
+			<b>UHD für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark></b> oder<br />
 			<b> € 5 mtl. mit Entertainment (für Sat oder Kabel-Empfang)</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/dazn.svg">
 			<b>DAZN jährlich + € 24,99 mtl. </b>oder<b> <br /> DAZN monatlich + € 29,99 mtl.</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/multiscreen.png">
-			<b>Multiscreen für € 8 mtl. mit Entertainment Plus (20% Rabatt)</b><br /> oder € 10 mtl. mit Entertainment
+			<b>Multiscreen für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark></b><br /> oder € 10 mtl. mit Entertainment
 			(Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1 Sky Q Mini für einmalig
 			€ 29 oder OHNE zusätzliche Hardware)
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/kids.png">
-			<b>Sky Kids Zubuchung für € 4 mtl. mit Entertainment Plus (20% Rabatt)</b><br /> oder € 5 mtl.
+			<b>Sky Kids Zubuchung für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark></b><br /> oder € 5 mtl.
 			mit Entertainment
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/trendsports.png">
@@ -75,9 +75,9 @@
 			<b>18+ für Blue Movie € 0</b><br /> einmalige Versandpauschale 18+ PIN
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/NetflixSDHD.png">
-			<b>Netflix Standard-Abo, HD/2 Streams für € 4 mtl.</b> ab Entertainment Plus + 1 Paket (20%
-			Rabatt) oder € 5 mtl. mit Entertainment <br />
-			<b>Netflix Premium-Abo, UHD/4 Streams für € 8 mtl.</b> ab Entertainment Plus + 1 Paket (20% Rabatt)
+			<b>Netflix Standard-Abo, HD/2 Streams für € 4 mtl.</b> ab Entertainment Plus + 1 Paket <mark>(20%
+			Rabatt)</mark> oder € 5 mtl. mit Entertainment <br />
+			<b>Netflix Premium-Abo, UHD/4 Streams für € 8 mtl.</b> ab Entertainment Plus + 1 Paket <mark>(20% Rabatt)</mark>
 			oder € 10 mtl. mit Entertainment
 		</Zubuchoption>
 	</div>
