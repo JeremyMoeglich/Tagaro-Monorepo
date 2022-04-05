@@ -2,6 +2,7 @@
 	import PackageOverview from '$lib/components/layout_components/package_overview.svelte';
 	export let detailed = false;
 	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
+	import GradientBadge from '../../gradient_badge.svelte';
 </script>
 
 <PackageOverview
@@ -17,9 +18,10 @@
 	]}
 	{detailed}
 >
-	<h3>12 Monate ab {get_price_string(['entertainment', 'cinema', 'sport'], 'jahr')} mtl.</h3>
+	<h3>12 Monate ab {get_price_string(['entertainmentplus', 'cinema', 'sport'], 'jahr')} mtl.</h3>
 	<p>
 		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema
 		+ Sport
 	</p>
+	<GradientBadge>20% Rabatt sichern</GradientBadge>
 </PackageOverview>

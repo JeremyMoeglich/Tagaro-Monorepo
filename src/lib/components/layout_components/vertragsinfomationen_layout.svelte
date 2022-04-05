@@ -422,5 +422,6 @@
 				Betrag innerhalb von 6-8 Wochen nach Abobeginn gutgeschrieben.
 			</p>
 		</div>
+		<br />
 	</span>
 </ExpandableBox>
