@@ -57,5 +57,5 @@ export async function load_form(source: string): Promise<void> {
 		console.log(e);
 	}
 	console.log(`Redirecting to ${aboformular}`);
-	//await goto(aboformular);
+	await goto(aboformular);
 }
