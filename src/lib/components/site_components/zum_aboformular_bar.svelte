@@ -21,6 +21,7 @@
 	}
 	.inner_container {
 		overflow: hidden;
+		width: 100vw;
 	}
 	.main_container {
 		display: flex;
