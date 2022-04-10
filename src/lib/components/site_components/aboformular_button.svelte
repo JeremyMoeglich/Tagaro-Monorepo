@@ -1,6 +1,12 @@
-<script>
-	import { aboformular } from '$lib/scripts/frontend/urls';
+<script lang="ts">
+	import FormButton from '../internal_components/form_button.svelte';
 	import Button from '../layout_components/button.svelte';
+
+	export let source: string;
+	export let text: string = 'Jetzt Bestellen';
+	export let reversed: boolean = false;
 </script>
 
-<Button text="Jetzt Bestellen" route={aboformular} />
+<FormButton {source}>
+	<Button {text} {reversed} />
+</FormButton>

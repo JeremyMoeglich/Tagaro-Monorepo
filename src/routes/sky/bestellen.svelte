@@ -1,8 +1,11 @@
-<script>
-	import { aboformular } from '$lib/scripts/frontend/urls';
+<script lang="ts">
+	import { load_form } from '$lib/scripts/frontend/load_aboformular';
+
+	async () => {
+		await load_form('external');
+	};
 </script>
 
 <svelte:head>
 	<title>Weiterleitung</title>
-	<meta http-equiv="refresh" content="0;URL={aboformular}" />
 </svelte:head>

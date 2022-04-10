@@ -1,8 +1,8 @@
 <script lang="ts">
-	import * as urls from '$lib/scripts/frontend/urls';
-	import Button from '$lib/components/layout_components/button.svelte';
 	import { packages_assets } from '$lib/scripts/universal/asset_library/assets/packages';
 	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
+	import { load_form } from '$lib/scripts/frontend/load_aboformular';
+	import AboformularButton from '../site_components/aboformular_button.svelte';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
@@ -21,7 +21,7 @@
 
 <div class="alignment">
 	<div class="side_alignment">
-		<a class="left_side" href={urls.aboformular}>
+		<button class="left_side" on:click={async () => load_form('Showcase_images')}>
 			{#each left_badges as badge}
 				<img src={badge} alt="" class="wrap_add" />
 			{/each}
@@ -33,13 +33,13 @@
 			{/each}
 
 			<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
-		</a>
+		</button>
 		<div class="right_side">
 			<h1>{title}</h1>
 			<h2>{subtitle1}</h2>
 			<h3>{subtitle2}</h3>
 
-			<a href={urls.aboformular}>
+			<button on:click={async () => load_form('Showcase_images')}>
 				{#if primary_image}
 					<img src={primary_image} alt="" class="primary_image" />
 				{:else}
@@ -51,10 +51,10 @@
 						{/each}
 					</div>
 				{/if}
-			</a>
+			</button>
 		</div>
 	</div>
-	<a class="side_bottom_images" href={urls.aboformular}>
+	<button class="side_bottom_images" on:click={async () => load_form('Showcase_points')}>
 		{#each left_badges as badge}
 			<img src={badge} alt="" class="wrap_remove" />
 		{/each}
@@ -66,9 +66,9 @@
 		{#each right_badges as badge}
 			<img src={badge} alt="" class="wrap_remove" />
 		{/each}
-	</a>
+	</button>
 	<div class="btn">
-		<Button text="Jetzt Bestellen" route={urls.aboformular} />
+		<AboformularButton source={'Showcase_button'} />
 	</div>
 </div>
 

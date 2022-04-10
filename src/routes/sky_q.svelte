@@ -3,6 +3,7 @@
 	import AllOverviews from '$lib/components/site_components/packages/overviews/all_overviews.svelte';
 	import AlleBuchbar from '$lib/components/site_components/alle_buchbar.svelte';
 	import * as urls from '$lib/scripts/frontend/urls';
+	import AboformularButton from '$lib/components/site_components/aboformular_button.svelte';
 </script>
 
 <div class="alignment">
@@ -70,7 +71,10 @@
 		<img src="/images/visuals/skyq_vorteile_3.png" alt="" />
 	</div>
 	<div class="btn">
-		<Button text="Jetzt Ihr Sky Wunschabo mit Sky Q zusammenstellen" route={urls.aboformular} />
+		<AboformularButton
+			text={'Jetzt Ihr Sky Wunschabo mit Sky Q zusammenstellen'}
+			source={'Sky_Q_button'}
+		/>
 	</div>
 </div>
 <AlleBuchbar />

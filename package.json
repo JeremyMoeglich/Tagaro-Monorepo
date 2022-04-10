@@ -56,6 +56,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"firebase": "^9.6.10",
 		"functional-utilities": "^1.11.1",
 		"ibantools": "^4.1.5",
 		"js-cookie": "^3.0.1",

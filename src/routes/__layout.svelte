@@ -331,6 +331,7 @@
 		border: none;
 		font-size: medium;
 		padding: 0px;
+		cursor: pointer;
 	}
 	:global(p) {
 		line-height: 170%;

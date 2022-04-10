@@ -1,18 +1,16 @@
 <script>
-	import Button from '$lib/components/layout_components/button.svelte';
-	import * as urls from '$lib/scripts/frontend/urls';
-
-	const chosen_route = urls.aboformular;
+	import FormButton from '../internal_components/form_button.svelte';
+	import Button from '../layout_components/button.svelte';
 </script>
 
-<a href={urls.aboformular}>
+<FormButton source={'Footer_bar'}>
 	<div class="inner_container">
 		<div class="main_container">
 			<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
-			<Button text="Zum Aboformular" route={chosen_route} reversed />
+			<Button text="Zum Aboformular" reversed={true} />
 		</div>
 	</div>
-</a>
+</FormButton>
 
 <style lang="scss">
 	.main_text {
@@ -23,9 +21,6 @@
 	}
 	.inner_container {
 		overflow: hidden;
-	}
-	a {
-		text-decoration: none;
 	}
 	.main_container {
 		display: flex;
