@@ -1,7 +1,6 @@
 import { goto } from '$app/navigation';
 import { aboformular } from '$lib/scripts/frontend/urls';
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInAnonymously } from 'firebase/auth';
 import { getFirestore, collection, addDoc, Timestamp } from 'firebase/firestore';
 
 function timeout<T>(promise: Promise<T>, ms: number): Promise<T> {
@@ -41,9 +40,7 @@ export async function load_form(source: string): Promise<void> {
 		if (typeof ip === 'string') {
 			const firebase_app = initializeApp(firebaseConfig);
 			const firestore = getFirestore(firebase_app);
-			const auth = getAuth();
 
-			await signInAnonymously(auth);
 			const log_collection = collection(firestore, 'Ip_log');
 			await addDoc(log_collection, {
 				ip: ip,
