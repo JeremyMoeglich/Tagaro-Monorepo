@@ -18,25 +18,25 @@ export type cable_receive_types =
 export const cable_receive_assets: ReadonlyArray<Asset<cable_receive_types>> = [
 	{
 		id: 'automatic',
-		text: 'Automatische Ermittlung (Sky Adressdatenbank)',
+		name: 'Automatische Ermittlung (Sky Adressdatenbank)',
 		note: '[TODO]',
 		image: temp_asset_image
 	},
 	{
 		id: 'vodafone_kabel_deutschland',
-		text: 'Vodafone (vormals Kabel Deutschland) ',
+		name: 'Vodafone (vormals Kabel Deutschland) ',
 		note: '[TODO]',
 		image: temp_asset_image
 	},
 	{
 		id: 'Vodafone_unitymedia',
-		text: 'Vodafone (vormals Unitymedia)',
+		name: 'Vodafone (vormals Unitymedia)',
 		note: '[TODO]',
 		image: temp_asset_image
 	},
 	{
 		id: 'other',
-		text: 'Anderer privater Anbieter ',
+		name: 'Anderer privater Anbieter ',
 		note: '[TODO]',
 		image: temp_asset_image
 	}
@@ -47,19 +47,19 @@ const receiver_image_location = '/images/assets/receivers/';
 export const receive_assets: ReadonlyArray<Asset<receive_id>> = [
 	{
 		id: 'kabel',
-		text: 'Kabel',
+		name: 'Kabel',
 		note: '[TODO]',
 		image: `${receiver_image_location}kabel.webp`
 	},
 	{
 		id: 'satelit',
-		text: 'Satelit',
+		name: 'Satelit',
 		note: '[TODO]',
 		image: `${receiver_image_location}satelit.webp`
 	},
 	{
 		id: 'internet',
-		text: 'Internet',
+		name: 'Internet',
 		note: '[TODO]',
 		image: `${receiver_image_location}internet.webp`
 	}

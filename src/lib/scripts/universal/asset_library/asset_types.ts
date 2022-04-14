@@ -8,7 +8,7 @@ export type asset_id = priceable_asset_id | receive_id | cable_receive_types;
 
 export interface Asset<T extends asset_id = asset_id> {
 	id: T;
-	text: string;
+	name: string;
 	note: string;
 	image: string;
 }

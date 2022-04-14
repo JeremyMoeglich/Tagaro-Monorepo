@@ -38,7 +38,7 @@
 			{#each selected_priceable_assets as asset}
 				<img
 					src={indexed_priceable_assets[asset].image}
-					alt={indexed_priceable_assets[asset].text}
+					alt={indexed_priceable_assets[asset].name}
 				/>
 			{/each}
 		</div>

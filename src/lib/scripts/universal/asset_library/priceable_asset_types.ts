@@ -22,7 +22,7 @@ export function dynamic_to_static_asset<T extends priceable_asset_id>(
 	asset: Dynamic_Priceable_Asset<T>
 ): Priceable_Asset<T> {
 	return {
-		text: asset.text,
+		name: asset.name,
 		id: asset.id,
 		selector: asset.selector ? asset.selector : { type: 'OR', descriptor: [] },
 		price:

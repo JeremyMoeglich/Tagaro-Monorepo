@@ -3,8 +3,8 @@
 	import Button from '../layout_components/button.svelte';
 
 	export let source: string;
-	export let text: string = 'Jetzt Bestellen';
-	export let reversed: boolean = false;
+	export let text = 'Jetzt Bestellen';
+	export let reversed = false;
 </script>
 
 <FormButton {source}>
