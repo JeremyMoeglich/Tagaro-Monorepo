@@ -23,7 +23,7 @@ export const zubuchoptionen_assets: ReadonlyArray<
 	{
 		id: 'uhd',
 		price: 5,
-		text: `UHD`,
+		name: `UHD`,
 		selector: {
 			descriptor: [
 				{
@@ -39,56 +39,56 @@ export const zubuchoptionen_assets: ReadonlyArray<
 	{
 		id: 'dazn',
 		price: { jahr: 12.5, monat: 14.99, singular: 0 },
-		text: 'DAZN',
+		name: 'DAZN',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}dazn.svg`
 	},
 	{
 		id: 'multiscreen',
 		price: 10,
-		text: 'Multiscreen',
+		name: 'Multiscreen',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}multiscreen.png`
 	},
 	{
 		id: 'kids',
 		price: 5,
-		text: 'Kids',
+		name: 'Kids',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}kids.png`
 	},
 	{
 		id: 'trendsports',
 		price: 5.99,
-		text: 'trendSports',
+		name: 'trendSports',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}trendsports.png`
 	},
 	{
 		id: 'plus18',
 		price: 0,
-		text: '18+ für Blue Movie',
+		name: '18+ für Blue Movie',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}plus18.png`
 	},
 	{
 		id: 'hdplus4monategratis',
 		price: 0,
-		text: 'HD+ 4 Monate gratis',
+		name: 'HD+ 4 Monate gratis',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}hdplus.png`
 	},
 	{
 		id: 'hdplus',
 		price: 6,
-		text: 'HD+ 6 monate gratis',
+		name: 'HD+ 6 monate gratis',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}hdplus.png`
 	},
 	{
 		id: 'netflixstandard',
 		price: 5,
-		text: 'Netflix Standard-Abo',
+		name: 'Netflix Standard-Abo',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}NetflixSDHD.png`,
 		selector: {
@@ -108,7 +108,7 @@ export const zubuchoptionen_assets: ReadonlyArray<
 	{
 		id: 'netflixpremium',
 		price: 10,
-		text: 'Netflix Premium-Abo',
+		name: 'Netflix Premium-Abo',
 		note: '[TODO]',
 		image: `${zubuchoption_image_location}NetflixSDHD.png`,
 		selector: {

@@ -8,7 +8,7 @@
 		<p>
 			Mit unserem Sky Angebot können Sie Ihr Wunschprogramm über die gesamte Laufzeit von 12 Monaten
 			zu Neukunden-Preisen genießen. Der Sky Vertrag hat eine Laufzeit von 12 Monaten und ist nach 1
-			Jahr monatlich kündbar. Immer inklusive - Das Entertainment Paket oder das Entertainment-Plus
+			Jahr monatlich kündbar. Immer inklusive - Das Entertainment Paket oder das Entertainment Plus
 			Paket, der Sky Q Receiver, Sky Go und das Programm in HD-Qualität! Das Fußball Bundesliga
 			Paket, das Sport Paket, das Sky Cinema Paket und das Sky Kids Paket ist zubuchbar. Ebenso
 			können Sie Ultra HD hinzubuchen oder die Multiscreen Option mit Sky Go Plus für noch mehr

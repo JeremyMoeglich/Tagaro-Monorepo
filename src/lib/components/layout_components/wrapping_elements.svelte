@@ -1,32 +1,24 @@
 <script lang="ts">
 	import { browser } from '$app/env';
+	import { indexed_package_assets } from '$lib/scripts/universal/asset_library/assets/packages';
+	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
+
+	import {
+		bonus_string,
+		get_offer_note,
+		get_price_string
+	} from '$lib/scripts/universal/asset_library/prices';
 	import Button from '../layout_components/button.svelte';
+	import MultiImageOverlay from './multi_image_overlay.svelte';
 
 	export let title: string;
 	export let components: ReadonlyArray<{
 		title: string;
-		image: string;
-		points: ReadonlyArray<string>;
-		subtitle: string;
-		info_text: string;
+		package_ids: package_id[];
 		route: string;
 	}>;
-	let indexed_components: Array<{
-		title: string;
-		image: string;
-		points: ReadonlyArray<string>;
-		subtitle: string;
-		info_text: string;
-		id: number;
-		route: string;
-	}> = [];
-	for (const [index, element] of components.entries()) {
-		indexed_components.push({
-			...element,
-			id: index
-		});
-	}
-	let center_index = Math.floor(indexed_components.length * (0.5 + 0 ** 10));
+
+	let center_index = Math.floor(components.length * (0.5 + 0 ** 10));
 	let current_x_pos = center_index;
 	export let css_vars: {
 		element_spacing: string;
@@ -40,10 +32,10 @@
 		actual_width: 'calc(var(--box_width) + var(--x_padding) * 2)'
 	};
 	function wrap(index: number): number {
-		return mod_floor(index, indexed_components.length);
+		return mod_floor(index, components.length);
 	}
 	function element_wrap(index: number): number {
-		const l = indexed_components.length;
+		const l = components.length;
 		const hl = Math.floor(l / 2);
 		return ((((index + hl) % l) - hl * 2) % l) + hl;
 	}
@@ -110,21 +102,37 @@
 	<div class="main_container">
 		<h2 class="gradient-text" style="text-align: center;">{title}</h2>
 		<div class="alignment">
-			{#each indexed_components as item}
+			{#each components as item, id}
 				<a
-					class="package_alignment {item.id == wrap(center_index) ? 'middle_element' : ''}"
-					style={get_x_pos(item.id, current_x_pos)}
+					class="package_alignment {id == wrap(center_index) ? 'middle_element' : ''}"
+					style={get_x_pos(id, current_x_pos)}
 					href={item.route}
 				>
 					<h3>{@html item.title}</h3>
-					<img src={item.image} alt="" />
+					<MultiImageOverlay packages={item.package_ids} />
 					<ul>
-						{#each item.points as point}
-							<li>{@html point}</li>
-						{/each}
+						<li>+ Für Internet, Sat- oder Kabel,</li>
+						<li>+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu,</li>
+						<li>+ 12 Monatsabo, danach mtl. kündbar,</li>
+						<li>+ {bonus_string} Bonus on top</li>
+						<!-- 
+							<li><b>+ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
+							<li><b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
+							<li><b>+ Bis 31.12.21 keine Abogebühren durch Sky</b></li>
+							<li><b>+ Sky Winteraktion: Bis zu 12 Monate Sky Sport gratis dazu</b></li>
+							<li><b>+ Bis zu € 100 Gutschrift von Sky</b>`</li>
+							<li><b>+ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b></li>
+						-->
+						<li><mark>{get_offer_note(item.package_ids, true)}</mark></li>
 					</ul>
-					<h3>{@html item.subtitle}</h3>
-					<p>{@html item.info_text}</p>
+					<h3>
+						ab {@html get_price_string(item.package_ids, `jahr`)} monatlich*
+					</h3>
+					<p>
+						(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf {item.package_ids
+							.map((id) => indexed_package_assets[id].name)
+							.join(' + ')}) Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte
+					</p>
 					<div class="btn">
 						<Button text={'Mehr erfahren'} route={item.route} />
 					</div>

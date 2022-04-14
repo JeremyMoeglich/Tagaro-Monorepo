@@ -1,8 +1,6 @@
 <script>
-	import Button from '$lib/components/layout_components/button.svelte';
 	import AllOverviews from '$lib/components/site_components/packages/overviews/all_overviews.svelte';
 	import AlleBuchbar from '$lib/components/site_components/alle_buchbar.svelte';
-	import * as urls from '$lib/scripts/frontend/urls';
 	import AboformularButton from '$lib/components/site_components/aboformular_button.svelte';
 </script>
 

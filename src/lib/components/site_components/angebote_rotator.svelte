@@ -1,107 +1,50 @@
-<script>
+<script lang="ts">
 	import WrappingElements from '$lib/components/layout_components/wrapping_elements.svelte';
-	import {
-		bonus_string,
-		get_offer_note,
-		get_price_string
-	} from '$lib/scripts/universal/asset_library/prices';
+	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
+	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 
-	const atr = [
-		`+ Für Internet, Sat- oder Kabel`,
-		`+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu`,
-		`+ 12 Monatsabo, danach mtl. kündbar`,
-		`+ ${bonus_string} Bonus on top`
-		//`<b>+ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b>`
-		//`<b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b>`
-		//`<b>+ Bis 31.12.21 keine Abogebühren durch Sky</b>`
-		//`<b>+ Sky Winteraktion: Bis zu 12 Monate Sky Sport gratis dazu</b>`,
-		//`<b>+ Bis zu € 100 Gutschrift von Sky</b>`
-		//`<b>+ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b>`
-	];
-	const optional = `Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte`;
-	const components = [
+	const components: ReadonlyArray<{
+		title: string;
+		package_ids: package_id[];
+		route: string;
+	}> = [
 		{
 			title: `2 Sky Pakete nach Wahl + ${bonus_string} Prämie`,
-			image: `/images/assets/packages/wahl/wahl_2aus4.png`,
-			points: [...atr, `<mark>${get_offer_note([`entertainment`, `sport`], true)}</mark>`],
-			subtitle: `ab ${get_price_string([`entertainment`, `sport`], `jahr`)} monatlich* `,
-			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport) ` +
-				optional,
+			package_ids: [`entertainment`, `sport`],
 			route: `/angebote/2_pakete`
 		},
 		{
 			title: `Sky Entertainment Paket + ${bonus_string} Prämie`,
-			image: `/images/assets/packages/wahl/wahl_entertainment.png`,
-			points: [...atr, `<mark>${get_offer_note([`entertainment`], true)}</mark>`],
-			subtitle: `ab ${get_price_string([`entertainment`], `jahr`)} monatlich* `,
-			info_text: `(im Jahres-Abo, danach ${get_price_string(
-				[`entertainment`],
-				`monat`
-			)} mtl. im Monats-Abo) ${optional}`,
+			package_ids: [`entertainment`],
 			route: `/angebote/entertainmentplus`
 		},
 		{
 			title: `3 Sky Pakete nach Wahl + ${bonus_string} Prämie`,
-			image: `/images/assets/packages/wahl/wahl_3aus4.png`,
-			points: [
-				...atr,
-				`<mark>${get_offer_note([`entertainment`, `sport`, `cinema`], true)}</mark>`
-			],
-			subtitle: `ab ${get_price_string([`entertainment`, `cinema`, `sport`], `jahr`)} monatlich* `,
-			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport) ` +
-				optional,
+			package_ids: [`entertainment`, `sport`, `cinema`],
 			route: `/angebote/3_pakete`
 		},
 
 		{
 			title: `Alle 4 Sky Pakete + ${bonus_string} Prämie`,
-			image: `/images/assets/packages/wahl/wahl_4.png`,
-			points: [
-				...atr,
-				`<mark>${get_offer_note([`entertainment`, `cinema`, `sport`, `bundesliga`], true)}</mark>`
-			],
-			subtitle: `ab ${get_price_string(
-				[`entertainment`, `cinema`, `sport`, `bundesliga`],
-				`jahr`
-			)} monatlich* `,
-			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema + Sport + Bundesliga) ` +
-				optional,
+			package_ids: [`entertainment`, `cinema`, `sport`, `bundesliga`],
 			route: `/angebote/4_oder_mehr_pakete`
 		},
 
 		{
 			title: `Entertainment Plus + Cinema Paket + ${bonus_string} Prämie`,
-			image: `/images/assets/packages/wahl/wahl_cinema.png`,
-			points: [...atr, `<mark>${get_offer_note([`entertainmentplus`, `cinema`], true)}</mark>`],
-			subtitle: `${get_price_string([`entertainmentplus`, `cinema`], `jahr`)} monatlich* `,
-			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment-Plus + Cinema) ` +
-				optional,
+			package_ids: [`entertainmentplus`, `cinema`],
 			route: `/angebote/cinema`
 		},
 
 		{
 			title: `Entertainment + Sport Paket + ${bonus_string} Prämie`,
-			image: `/images/assets/packages/wahl/wahl_sport.png`,
-			points: [...atr, `<mark>${get_offer_note([`entertainment`, `sport`], true)}</mark>`],
-			subtitle: `${get_price_string([`entertainment`, `sport`], `jahr`)} monatlich* `,
-			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Sport) ` +
-				optional,
+			package_ids: [`entertainment`, `sport`],
 			route: `/angebote/sport`
 		},
 
 		{
 			title: `Entertainment + Fußball Bundesliga Paket + ${bonus_string} Prämie`,
-			image: `/images/assets/packages/wahl/wahl_bundesliga.png`,
-			points: [...atr, `<mark>${get_offer_note([`entertainment`, `bundesliga`], true)}</mark>`],
-			subtitle: `${get_price_string([`entertainment`, `bundesliga`], `jahr`)} monatlich* `,
-			info_text:
-				`(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Bundesliga) ` +
-				optional,
+			package_ids: [`entertainment`, `bundesliga`],
 			route: `/angebote/bundesliga`
 		}
 	];

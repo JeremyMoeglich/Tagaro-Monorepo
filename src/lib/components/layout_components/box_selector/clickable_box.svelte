@@ -40,11 +40,11 @@
 {#if !disabled}
 	<button on:click={click} class:selected class:disabled class:hoverable={hoverable && !disabled}>
 		{#if disabled}<div class="overlay"><p>{@html error_message}</p></div>{/if}
-		<img src={asset.image} alt={asset.text} on:dragstart|preventDefault />
+		<img src={asset.image} alt={asset.name} on:dragstart|preventDefault />
 		<p>
 			{#if hasProperty(asset, 'price')}
 				<b>+ {get_price_string([asset.id], 'jahr')}</b> -
-			{/if}{asset.text}
+			{/if}{asset.name}
 		</p>
 	</button>
 {/if}
