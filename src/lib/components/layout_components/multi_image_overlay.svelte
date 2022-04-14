@@ -3,7 +3,7 @@
 	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
 
 	export let packages: package_id[];
-	export let offset_multiplier: number = 1;
+	export let offset_multiplier = 1;
 	const image_width_percentage = 0.4;
 
 	function get_scale(index: number): number {
