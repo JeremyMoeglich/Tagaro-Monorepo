@@ -15,15 +15,14 @@
 	<p>Source - {source}</p>
 </div>
 
-
 <style>
-    div {
-        border: 1px solid rgb(168, 168, 168);
+	div {
+		border: 1px solid rgb(168, 168, 168);
 		background-color: rgb(255, 255, 255);
-        padding: 10px 20px;
-    }
-    p {
-        margin: 0;
+		padding: 10px 20px;
+	}
+	p {
+		margin: 0;
 		line-height: 100%;
-    }
+	}
 </style>

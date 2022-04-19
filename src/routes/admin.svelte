@@ -1,17 +1,24 @@
 <script lang="ts">
-	import { getAuth, setPersistence, signInWithEmailAndPassword, type User, browserLocalPersistence, onAuthStateChanged } from 'firebase/auth';
+	import {
+		getAuth,
+		setPersistence,
+		signInWithEmailAndPassword,
+		browserLocalPersistence,
+		onAuthStateChanged
+	} from 'firebase/auth';
+	import type { User } from 'firebase/auth';
 	import { getFirestore } from 'firebase/firestore';
 	import { initializeApp } from 'firebase/app';
 	import IpLogOverview from '$lib/components/admin/Ip_log_overview.svelte';
-import Button from '$lib/components/layout_components/button.svelte';
-import PackageRenderer from '$lib/components/admin/package_renderer.svelte';
+	import Button from '$lib/components/layout_components/button.svelte';
+	import PackageRenderer from '$lib/components/admin/package_renderer.svelte';
 
 	const admin_email = 'info@tagaro.de';
 
 	let password: string;
 
 	let user: User;
-	let error_message: string = '';
+	let error_message = '';
 
 	const firebaseConfig = {
 		apiKey: 'AIzaSyBxa3QjcGlcfzictoQpiT7iuIxf99ViVpM',
@@ -29,8 +36,7 @@ import PackageRenderer from '$lib/components/admin/package_renderer.svelte';
 	const auth = getAuth();
 	async function login() {
 		setPersistence(auth, browserLocalPersistence).then(() => {
-			signInWithEmailAndPassword(auth, admin_email, password)
-			.catch((error) => {
+			signInWithEmailAndPassword(auth, admin_email, password).catch((error) => {
 				error_message = error.message;
 			});
 		});
