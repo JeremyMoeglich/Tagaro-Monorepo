@@ -13,42 +13,44 @@
 	$: assets = packages.map((package_id) => indexed_package_assets[package_id]);
 	$: offset = (0.603 / packages.length) * offset_multiplier;
 
-	$: back_scale = get_scale(0);
+	let back_scale = 1;
+	$: packages.length, (back_scale = get_scale(0));
 	$: total_width =
 		offset * (packages.length - 1) + image_width_percentage * (1 + (1 - back_scale) / 2);
 </script>
 
-<div
-	class="outer"
-	style:--img_width={`${image_width_percentage * 100}%`}
-	style:transform={`translateX(${50 - (total_width * 100) / 2}%)`}
->
-	<img
-		src={`/images/assets/packages/normal/${assets[0].id}.jpg`}
-		alt={assets[0].id}
-		class="size_image"
-		style:transform={`scale(${back_scale})`}
-	/>
-	<div>
-		{#each assets.slice(1) as asset, i}
-			{@const index = i + 1}
-			<img
-				src={`/images/assets/packages/normal/${asset.id}.jpg`}
-				alt={asset.id}
-				class="positioned_images"
-				style:transform={`translateX(${
-					(offset * 100 * index) / image_width_percentage
-				}%) scale(${get_scale(index)})`}
-			/>
-		{/each}
+{#if packages.length > 0}
+	<div
+		class="outer"
+		style:--img_width={`${image_width_percentage * 100}%`}
+		style:transform={`translateX(${50 - (total_width * 100) / 2}%)`}
+	>
+		<img
+			src={`/images/assets/packages/normal/${assets[0].id}.jpg`}
+			alt={assets[0].id}
+			class="size_image"
+			style:transform={`scale(${back_scale})`}
+		/>
+		<div>
+			{#each assets.slice(1) as asset, i}
+				{@const index = i + 1}
+				<img
+					src={`/images/assets/packages/normal/${asset.id}.jpg`}
+					alt={asset.id}
+					class="positioned_images"
+					style:transform={`translateX(${
+						(offset * 100 * index) / image_width_percentage
+					}%) scale(${get_scale(index)})`}
+				/>
+			{/each}
+		</div>
 	</div>
-</div>
+{/if}
 
 <style>
 	.outer {
 		position: relative;
 		width: 100%;
-		filter: drop-shadow(0 5px 7px rgba(0, 0, 0, 0.623));
 	}
 	.positioned_images {
 		position: absolute;
@@ -58,5 +60,8 @@
 	}
 	.size_image {
 		width: var(--img_width);
+	}
+	img {
+		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.637);
 	}
 </style>
