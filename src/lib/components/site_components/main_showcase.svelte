@@ -38,5 +38,5 @@
 		'Ab Buchung von Entertainment Plus + 1 Paket <mark>20% Rabatt</mark>*',
 		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
 	]}
-	side_images={['/images/badges/keine_aktivierung.webp']}
+	side_images={['/images/badges/keine_aktivierung.svg']}
 />
