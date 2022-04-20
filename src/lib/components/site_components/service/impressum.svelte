@@ -26,7 +26,7 @@
 		<h2>Finanzamt</h2>
 		<p>
 			Finanzamt Wetzlar <br />
-			Steuer-Nummer: 039 347 00053 <br />
+			Steuer-Nummer: 322/5990/1202 <br />
 			USt-IdNr.: DE 248966903
 		</p>
 		<h2>Markenerwähnung „Sky“:</h2>

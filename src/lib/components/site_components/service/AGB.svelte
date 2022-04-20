@@ -650,8 +650,6 @@
 		besten entspricht. Das Gleiche gilt im Fall einer Luecke des Vertrages.
 	</p>
 
-	<p>Stand: Juli 2018</p>
-
 	<p>
 		Anbieterkennzeichnung: <br />
 		TAGARO Medienshop <br />
@@ -662,7 +660,7 @@
 		59065 Hamm, Deutschland <br />
 		Telefon: 02381-9874699 <br />
 		Fax: 0321 - 2111 6558 <br />
-		E-Mail: info(at)tagaro.de <br />
+		E-Mail: info@tagaro.de <br />
 		Rechtsform: GbR <br />
 		Bereich: Fachhandel für Unterhaltungsmedien und digitales Fernsehen
 	</p>

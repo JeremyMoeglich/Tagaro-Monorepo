@@ -1,17 +1,14 @@
 <script lang="ts">
 	import {
-		getAuth,
 		setPersistence,
 		signInWithEmailAndPassword,
 		browserLocalPersistence,
 		onAuthStateChanged
 	} from 'firebase/auth';
 	import type { User } from 'firebase/auth';
-	import { getFirestore } from 'firebase/firestore';
-	import { initializeApp } from 'firebase/app';
-	import IpLogOverview from '$lib/components/admin/Ip_log_overview.svelte';
 	import Button from '$lib/components/layout_components/button.svelte';
-	import PackageRenderer from '$lib/components/admin/package_renderer.svelte';
+	import { auth } from '$lib/firebase_vars';
+	import { typed_entries } from 'functional-utilities';
 
 	const admin_email = 'info@tagaro.de';
 
@@ -20,20 +17,6 @@
 	let user: User;
 	let error_message = '';
 
-	const firebaseConfig = {
-		apiKey: 'AIzaSyBxa3QjcGlcfzictoQpiT7iuIxf99ViVpM',
-		authDomain: 'tagaro-346715.firebaseapp.com',
-		projectId: 'tagaro-346715',
-		storageBucket: 'tagaro-346715.appspot.com',
-		messagingSenderId: '162148161041',
-		appId: '1:162148161041:web:e4acb74e3b23b03b4c43b0',
-		measurementId: 'G-SBNZSQV2MZ'
-	} as const;
-
-	const firebase_app = initializeApp(firebaseConfig);
-	const firestore = getFirestore(firebase_app);
-
-	const auth = getAuth();
 	async function login() {
 		setPersistence(auth, browserLocalPersistence).then(() => {
 			signInWithEmailAndPassword(auth, admin_email, password).catch((error) => {
@@ -47,6 +30,13 @@
 			user = u;
 		}
 	});
+
+	const panels = {
+		'IP Log': 'ip_log',
+		'Paket Bild Generator': 'package_renderer'
+	} as const;
+
+	const layout_route = '/admin';
 </script>
 
 {#if !user}
@@ -60,8 +50,17 @@
 	</form>
 {:else}
 	<div class="main">
-		<IpLogOverview {firestore} />
-		<PackageRenderer />
+		<div class="sidebar">
+			{#each typed_entries(panels) as panel}
+				{@const name = panel[0]}
+				{@const relative_route = panel[1]}
+				{@const route = `${layout_route}/${relative_route}`}
+				<a href={route} class="sidebar_element">{name}</a>
+			{/each}
+		</div>
+		<div class="content">
+			<slot />
+		</div>
 	</div>
 {/if}
 
@@ -78,12 +77,24 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.main {
-		display: flex;
-		margin: 50px 20px;
-		gap: 20px;
-	}
 	p {
 		margin: 0px;
+	}
+	.sidebar_element {
+		padding: 20px;
+		background-color: rgb(232, 232, 240);
+	}
+	.sidebar {
+		display: flex;
+		flex-direction: column;
+		width: fit-content;
+		height: 100%;
+	}
+	.main {
+		display: flex;
+		align-items: center;		
+	}
+	.content {
+		padding: 50px;
 	}
 </style>
