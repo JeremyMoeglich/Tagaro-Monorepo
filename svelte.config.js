@@ -50,7 +50,8 @@ const config = {
 
 		//adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
 		//adapter: staticAdapter({ pages: 'build',prerender: true }),
-		adapter: adapter()
+		adapter: adapter(),
+		trailingSlash: 'always'
 	}
 };
 
