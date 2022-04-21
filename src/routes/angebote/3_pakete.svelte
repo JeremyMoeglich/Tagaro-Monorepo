@@ -1,7 +1,7 @@
 <script>
-	import Inklusive from '$lib/components/site_components/inklusive.svelte';
-	import AllOverviews from '$lib/components/site_components/packages/overviews/all_overviews.svelte';
-	import Overview3 from '$lib/components/site_components/packages/overviews/Overview3.svelte';
+	import Inklusive from '$lib/components/site/inklusive.svelte';
+	import AllOverviews from '$lib/components/site/packages/overviews/all_overviews.svelte';
+	import Overview3 from '$lib/components/site/packages/overviews/Overview3.svelte';
 </script>
 
 <div class="alignment">

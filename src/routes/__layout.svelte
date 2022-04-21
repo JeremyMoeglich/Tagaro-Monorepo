@@ -11,16 +11,16 @@
 
 <script lang="ts">
 	import '../global.scss';
-	import Footer from '$lib/components/site_components/footer.svelte';
-	import SiteLogo from '$lib/components/site_components/site_logo.svelte';
+	import Footer from '$lib/components/site/footer/footer.svelte';
+	import SiteLogo from '$lib/components/site/header/site_logo.svelte';
 	import * as urls from '$lib/scripts/frontend/urls';
-	import PageTransition from '$lib/components/internal_components/PageTransition.svelte';
-	import PhoneBox from '$lib/components/site_components/phone_box.svelte';
+	import PageTransition from '$lib/components/internal/PageTransition.svelte';
+	import PhoneBox from '$lib/components/site/header/phone_box.svelte';
 	import { fly } from 'svelte/transition';
-	import InfoBanner from '$lib/components/site_components/info_banner.svelte';
+	import InfoBanner from '$lib/components/site/overlays/info_banner.svelte';
 	import { clickOutside } from 'svelte-use-click-outside';
-	import type { prefrences_keys_type, prefrences_obj } from '$lib/scripts/frontend/prefrences';
-	import { prefrences_keys } from '$lib/scripts/frontend/prefrences';
+	import type { preferences_keys_type, preferences_obj } from '$lib/scripts/frontend/preferences';
+	import { preferences_keys } from '$lib/scripts/frontend/preferences';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -47,9 +47,9 @@
 
 	let screen_y_position: number;
 
-	let preferences_object: prefrences_obj = Object.fromEntries(
-		prefrences_keys.map((v) => [v, false])
-	) as Record<prefrences_keys_type, boolean>;
+	let preferences_object: preferences_obj = Object.fromEntries(
+		preferences_keys.map((v) => [v, false])
+	) as Record<preferences_keys_type, boolean>;
 
 	function open_sidebar() {
 		if (mobile_slider_value === 0) {

@@ -6,9 +6,9 @@
 		onAuthStateChanged
 	} from 'firebase/auth';
 	import type { User } from 'firebase/auth';
-	import Button from '$lib/components/layout_components/button.svelte';
 	import { auth } from '$lib/firebase_vars';
 	import { typed_entries } from 'functional-utilities';
+	import Button from '$lib/components/elements/interactive/buttons/button.svelte';
 
 	const admin_email = 'info@tagaro.de';
 
@@ -92,7 +92,7 @@
 	}
 	.main {
 		display: flex;
-		align-items: center;		
+		align-items: center;
 	}
 	.content {
 		padding: 50px;

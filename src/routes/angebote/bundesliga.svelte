@@ -1,8 +1,8 @@
 <script>
-	import Inklusive from '$lib/components/site_components/inklusive.svelte';
-	import BundesligaOverview from '$lib/components/site_components/packages/overviews/bundesliga_overview.svelte';
-	import BundesligaSenders from '$lib/components/site_components/packages/senders/bundesliga_senders.svelte';
-	import EntertainmentSenders from '$lib/components/site_components/packages/senders/entertainment_senders.svelte';
+	import Inklusive from '$lib/components/site/inklusive.svelte';
+	import BundesligaOverview from '$lib/components/site/packages/overviews/bundesliga_overview.svelte';
+	import BundesligaSenders from '$lib/components/site/packages/senders/bundesliga_senders.svelte';
+	import EntertainmentSenders from '$lib/components/site/packages/senders/entertainment_senders.svelte';
 </script>
 
 <body>

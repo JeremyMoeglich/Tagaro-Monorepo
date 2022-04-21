@@ -1,7 +1,7 @@
 <script>
-	import AllOverviews from '$lib/components/site_components/packages/overviews/all_overviews.svelte';
-	import AlleBuchbar from '$lib/components/site_components/alle_buchbar.svelte';
-	import AboformularButton from '$lib/components/site_components/aboformular_button.svelte';
+	import AllOverviews from '$lib/components/site/packages/overviews/all_overviews.svelte';
+	import AlleBuchbar from '$lib/components/site/alle_buchbar.svelte';
+	import AboformularButton from '$lib/components/elements/interactive/buttons/aboformular_button.svelte';
 </script>
 
 <div class="alignment">
@@ -79,7 +79,7 @@
 <AllOverviews />
 
 <style lang="scss">
-	@import '../lib/style/mixins.scss';
+	@import '../lib/style/gradient_text.scss';
 	.btn {
 		width: 500px;
 		margin-left: auto;

@@ -10,20 +10,20 @@
 	} from '$lib/scripts/universal/asset_library/assets/receive_type';
 	import { zubuchoptionen_assets } from '$lib/scripts/universal/asset_library/assets/zubuchoptionen';
 	import { indexed_assets } from '$lib/scripts/universal/asset_library/all_assets';
-	import OfferSummary from '$lib/components/site_components/offer_summary.svelte';
-	import SimpleInputField from '$lib/components/layout_components/simple_input_field.svelte';
-	import RadioButton from '$lib/components/layout_components/radio_button.svelte';
-	import SingleBoxSelector from '$lib/components/layout_components/box_selector/single_box_selector.svelte';
+	import OfferSummary from '$lib/components/site/routes/aboformular/offer_summary.svelte';
 	import type {
 		asset_id,
 		priceable_asset_id
 	} from '$lib/scripts/universal/asset_library/asset_types';
-	import MultiBoxSelector from '$lib/components/layout_components/box_selector/multi_box_selector.svelte';
 	import { iban_validator } from '$lib/scripts/universal/validators/iban';
 	import { bic_validator } from '$lib/scripts/universal/validators/bic';
 	import type { aboformular_options } from '$lib/scripts/universal/aboformular';
 	import { sort_by_price } from '$lib/scripts/universal/asset_library/prices';
 	import type { category_id } from '$lib/scripts/universal/asset_library/categories';
+	import SingleBoxSelector from '$lib/components/elements/interactive/box_selector/single_box_selector.svelte';
+	import MultiBoxSelector from '$lib/components/elements/interactive/box_selector/multi_box_selector.svelte';
+	import SimpleInputField from '$lib/components/elements/interactive/inputs/simple_input_field.svelte';
+	import RadioButton from '$lib/components/elements/interactive/radio_button.svelte';
 	// #endregion
 
 	let options: aboformular_options = {
