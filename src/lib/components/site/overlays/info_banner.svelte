@@ -8,7 +8,6 @@
 		set_preferences
 	} from '$lib/scripts/frontend/preferences';
 	import type { preferences_obj } from '$lib/scripts/frontend/preferences';
-	import Cookies from 'js-cookie';
 	import { cloneDeep } from 'lodash-es';
 	import Datenschutz from '../service/datenschutz.svelte';
 	import Widerrufsrecht from '../service/widerrufsrecht.svelte';

@@ -1,7 +1,5 @@
 <script lang="ts">
-import ShowcaseTemplate from "$lib/components/templates/subsection/showcase_template.svelte";
-
-
+	import ShowcaseTemplate from '$lib/components/templates/routes/index/showcase_template.svelte';
 	//import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 </script>
 

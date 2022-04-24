@@ -1,10 +1,4 @@
-import {
-	hasProperty,
-	is_json,
-	typed_entries,
-	typed_from_entries,
-	typed_keys
-} from 'functional-utilities';
+import { hasProperty, is_json, typed_from_entries, typed_keys } from 'functional-utilities';
 import Cookies from 'js-cookie';
 
 export enum preferences_keys_enum {

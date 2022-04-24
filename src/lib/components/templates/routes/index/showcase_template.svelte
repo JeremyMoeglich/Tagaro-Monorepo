@@ -2,7 +2,7 @@
 	import { packages_assets } from '$lib/scripts/universal/asset_library/assets/packages';
 	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 	import { load_form } from '$lib/scripts/frontend/load_aboformular';
-import AboformularButton from '$lib/components/elements/interactive/buttons/aboformular_button.svelte';
+	import AboformularButton from '$lib/components/elements/interactive/buttons/aboformular_button.svelte';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
@@ -39,19 +39,17 @@ import AboformularButton from '$lib/components/elements/interactive/buttons/abof
 			<h2>{subtitle1}</h2>
 			<h3>{subtitle2}</h3>
 
-			<button on:click={async () => load_form('Showcase_images')}>
-				{#if primary_image}
-					<img src={primary_image} alt="" class="primary_image" />
-				{:else}
-					<div class="package_overview">
-						{#each packages_assets as asset}
-							<a href={`/angebote/${asset.id}`}>
-								<img src={`/images/assets/packages/normal/${asset.id}.jpg`} alt={asset.id} />
-							</a>
-						{/each}
-					</div>
-				{/if}
-			</button>
+			{#if primary_image}
+				<img src={primary_image} alt="" class="primary_image" />
+			{:else}
+				<div class="package_overview">
+					{#each packages_assets as asset}
+						<a href={`/angebote/${asset.id}`}>
+							<img src={`/images/assets/packages/normal/${asset.id}.jpg`} alt={asset.id} />
+						</a>
+					{/each}
+				</div>
+			{/if}
 		</div>
 	</div>
 	<button class="side_bottom_images" on:click={async () => load_form('Showcase_points')}>

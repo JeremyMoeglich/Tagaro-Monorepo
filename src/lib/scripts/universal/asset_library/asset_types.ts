@@ -13,14 +13,4 @@ export interface Asset<T extends asset_id = asset_id> {
 	image: string;
 }
 
-export function index_by_id<T extends asset_id, P extends Asset<T>>(
-	assets: ReadonlyArray<P>
-): Record<T, P> {
-	return Object.fromEntries(
-		assets.map((asset) => {
-			return [asset['id'], asset];
-		})
-	) as Record<T, P>;
-}
-
 export const temp_asset_image = '/images/assets/temp.png';
