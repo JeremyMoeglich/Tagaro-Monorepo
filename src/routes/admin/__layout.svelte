@@ -33,7 +33,8 @@
 
 	const panels = {
 		'IP Log': 'ip_log',
-		'Paket Bild Generator': 'package_renderer'
+		'Paket Bild Generator': 'package_renderer',
+		'Preis Liste': 'price'
 	} as const;
 
 	const layout_route = '/admin';

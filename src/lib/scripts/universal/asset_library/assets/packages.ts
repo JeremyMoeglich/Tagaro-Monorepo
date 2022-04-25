@@ -54,4 +54,23 @@ export const packages_assets: ReadonlyArray<Priceable_Asset<package_id>> = dynam
 	]
 );
 
+export const package_combinations: ReadonlyArray<ReadonlyArray<package_id>> = [
+	['entertainment'],
+	['entertainmentplus'],
+	['entertainment', 'cinema'],
+	['entertainmentplus', 'cinema'],
+	['entertainment', 'sport'],
+	['entertainmentplus', 'sport'],
+	['entertainment', 'bundesliga'],
+	['entertainmentplus', 'bundesliga'],
+	['entertainment', 'cinema', 'sport'],
+	['entertainmentplus', 'cinema', 'sport'],
+	['entertainment', 'cinema', 'bundesliga'],
+	['entertainmentplus', 'cinema', 'bundesliga'],
+	['entertainment', 'sport', 'bundesliga'],
+	['entertainmentplus', 'sport', 'bundesliga'],
+	['entertainment', 'sport', 'bundesliga', 'cinema'],
+	['entertainmentplus', 'sport', 'bundesliga', 'cinema']
+] as const;
+
 export const indexed_package_assets = index_by(packages_assets, 'id');

@@ -31,7 +31,7 @@ const firebaseConfig = {
 	measurementId: 'G-SBNZSQV2MZ'
 } as const;
 
-export async function load_form(source: string): Promise<void> {
+export async function load_form(source: string, route: string = aboformular): Promise<void> {
 	try {
 		const ip: unknown = await (await timeout(fetch('https://ip.moeglich.dev/'), 2000))
 			.json()
@@ -53,6 +53,6 @@ export async function load_form(source: string): Promise<void> {
 	} catch (e) {
 		console.log(e);
 	}
-	console.log(`Redirecting to ${aboformular}`);
-	await goto(aboformular);
+	console.log(`Redirecting to ${route}`);
+	await goto(route);
 }

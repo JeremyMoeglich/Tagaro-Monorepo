@@ -3,6 +3,7 @@
 	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 	import { load_form } from '$lib/scripts/frontend/load_aboformular';
 	import AboformularButton from '$lib/components/elements/interactive/buttons/aboformular_button.svelte';
+	import { aboformular } from '$lib/scripts/frontend/urls';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
@@ -14,6 +15,16 @@
 	];
 	export let primary_image: undefined | string = undefined;
 	export let side_images = [];
+
+	export let buttons: {
+		text: string;
+		route: string;
+	}[] = [
+		{
+			text: 'Jetzt Bestellen',
+			route: aboformular
+		}
+	];
 
 	const left_badges = ['/images/badges/praemie.svg'];
 	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.svg'];
@@ -66,7 +77,9 @@
 		{/each}
 	</button>
 	<div class="btn">
-		<AboformularButton source={'Showcase_button'} />
+		{#each buttons as button}
+			<AboformularButton source={'Showcase_button'} text={button.text} route={button.route} />
+		{/each}
 	</div>
 </div>
 

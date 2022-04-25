@@ -1,34 +1,13 @@
 <script lang="ts">
 	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
-	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
+	import { package_combinations, type package_id } from '$lib/scripts/universal/asset_library/assets/packages';
 	import Zubuchoption from '$lib/components/templates/element/zubuchoption.svelte';
-
-	type table_layout = ReadonlyArray<Array<package_id>>;
-
-	const table: table_layout = [
-		['entertainment'],
-		['entertainmentplus'],
-		['entertainment', 'cinema'],
-		['entertainmentplus', 'cinema'],
-		['entertainment', 'sport'],
-		['entertainmentplus', 'sport'],
-		['entertainment', 'bundesliga'],
-		['entertainmentplus', 'bundesliga'],
-		['entertainment', 'cinema', 'sport'],
-		['entertainmentplus', 'cinema', 'sport'],
-		['entertainment', 'cinema', 'bundesliga'],
-		['entertainmentplus', 'cinema', 'bundesliga'],
-		['entertainment', 'sport', 'bundesliga'],
-		['entertainmentplus', 'sport', 'bundesliga'],
-		['entertainment', 'sport', 'bundesliga', 'cinema'],
-		['entertainmentplus', 'sport', 'bundesliga', 'cinema']
-	];
 </script>
 
 <div class="main_container">
 	<h2 class="title">Pakete & Preise in der Übersicht</h2>
 	<table>
-		{#each table as row}
+		{#each package_combinations as row}
 			<tr>
 				{#each row as element}
 					<td> <img src={`/images/assets/packages/square/${element}.png`} alt="" /> </td>

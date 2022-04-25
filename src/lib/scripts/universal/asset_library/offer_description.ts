@@ -1,3 +1,4 @@
+import { aboformular } from '$lib/scripts/frontend/urls';
 import { index_by } from 'functional-utilities';
 import { intersection as intersect } from 'lodash-es';
 import type { package_id } from './assets/packages';
@@ -19,14 +20,15 @@ interface action {
 	absolute: boolean;
 }
 
-interface offer_description_type {
-	id: offer_id;
+export interface offer_description_type {
+	id: offer_id | '';
 	aktivierung: number;
 	conditions: ReadonlyArray<conditions_type>;
 	bonus: number;
 	short_text: string;
 	long_text: string;
 	actions: ReadonlyArray<action>;
+	route: string;
 }
 
 export type offer_descriptions_type = ReadonlyArray<offer_description_type>;
@@ -52,8 +54,9 @@ export const offer_descriptions: offer_descriptions_type = [
 			}
 		],
 		bonus: 20,
-		short_text: '+ 20% Rabatt',
-		long_text: '+ 20% Rabatt ab Entertainment Plus + 1 Paket (Rabatt auch für Zubuchoptionen)',
+		short_text: '+ 20% auf Abopreis ',
+		long_text:
+			'+ 20% auf Abopreis ab Entertainment Plus + 1 Paket (Rabatt auch für Zubuchoptionen)',
 		actions: [
 			{
 				set: 'all',
@@ -64,7 +67,8 @@ export const offer_descriptions: offer_descriptions_type = [
 				},
 				absolute: false
 			}
-		]
+		],
+		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
 	},
 	{
 		id: '50premium',
@@ -77,8 +81,8 @@ export const offer_descriptions: offer_descriptions_type = [
 			}
 		],
 		bonus: 0,
-		short_text: '+ 50% Rabatt auf Premiumpakete',
-		long_text: '+ 50% Rabatt auf Premiumpakete',
+		short_text: '+ 50% auf Premium-Pakete',
+		long_text: '+ 50% auf Premium-Pakete',
 		actions: [
 			{
 				set: 'premium',
@@ -89,18 +93,20 @@ export const offer_descriptions: offer_descriptions_type = [
 				},
 				absolute: false
 			}
-		]
+		],
+		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-50prozent'
 	}
 ] as const;
 
-export const empty_offer = {
+export const empty_offer: offer_description_type = {
 	id: '',
 	aktivierung: 0,
 	conditions: [],
 	bonus: 20,
 	short_text: '',
 	long_text: '',
-	actions: []
+	actions: [],
+	route: aboformular
 };
 
 export const indexed_offers = index_by(offer_descriptions, 'id');
