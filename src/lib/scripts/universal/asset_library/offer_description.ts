@@ -33,7 +33,7 @@ export interface offer_description_type {
 
 export type offer_descriptions_type = ReadonlyArray<offer_description_type>;
 
-export const offer_ids = ['20alles', '50premium'] as const;
+export const offer_ids = ['20alles'] as const;
 
 export type offer_id = typeof offer_ids[number];
 
@@ -69,8 +69,8 @@ export const offer_descriptions: offer_descriptions_type = [
 			}
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
-	},
-	{
+	}
+	/*{
 		id: '50premium',
 		aktivierung: 0,
 		conditions: [
@@ -95,7 +95,7 @@ export const offer_descriptions: offer_descriptions_type = [
 			}
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-50prozent'
-	}
+	}*/
 ] as const;
 
 export const empty_offer: offer_description_type = {

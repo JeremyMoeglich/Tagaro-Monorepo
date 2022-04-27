@@ -50,8 +50,7 @@
 		justify-content: center;
 		gap: 30px;
 		max-width: min(90%, 1000px);
-		margin-left: auto;
-		margin-right: auto;
+		margin: 60px auto;
 	}
 	.main_title {
 		text-align: center;

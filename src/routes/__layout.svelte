@@ -124,7 +124,7 @@
 				style={screen_y_position > 0 ? 'bottom: 100px;' : ''}
 				on:click={() => (screen_y_position = 0)}
 			/>
-			<div>
+			<div class="header">
 				<Header {route} {navbar_elements} />
 			</div>
 			<div class="page">
@@ -330,5 +330,9 @@
 		background-color: transparent;
 		color: red;
 		font-weight: bold;
+	}
+	.header {
+		position: relative;
+		z-index: 100;
 	}
 </style>
