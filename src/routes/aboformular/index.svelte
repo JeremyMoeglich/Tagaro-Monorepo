@@ -1,10 +1,6 @@
 <script lang="ts">
 	// #region [c3] Imports
 	import {
-		base_packages,
-		premiumpackages
-	} from '$lib/scripts/universal/asset_library/assets/packages';
-	import {
 		cable_receive_assets,
 		receive_assets
 	} from '$lib/scripts/universal/asset_library/assets/receive_type';
@@ -24,6 +20,7 @@
 	import MultiBoxSelector from '$lib/components/elements/interactive/box_selector/multi_box_selector.svelte';
 	import SimpleInputField from '$lib/components/elements/interactive/inputs/simple_input_field.svelte';
 	import RadioButton from '$lib/components/elements/interactive/radio_button.svelte';
+import { asset_sets } from '$lib/scripts/universal/asset_library/sets';
 	// #endregion
 
 	let options: aboformular_options = {
@@ -141,7 +138,7 @@
 					title="Basispakete"
 					id="base_package"
 					bind:status={pages[0]['base_package']}
-					boxes={base_packages.map((v) => ({
+					boxes={asset_sets.base.map((v) => ({
 						asset: indexed_assets[v],
 						selector_assets: selected_assets,
 						disabled: false
@@ -152,7 +149,7 @@
 				/>
 				<MultiBoxSelector
 					title="Premiumpakete"
-					boxes={premiumpackages.map((v) => ({
+					boxes={asset_sets.premium.map((v) => ({
 						asset: indexed_assets[v],
 						selector_assets: selected_assets,
 						disabled: false

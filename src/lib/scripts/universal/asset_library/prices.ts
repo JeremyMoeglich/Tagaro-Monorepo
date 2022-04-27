@@ -4,8 +4,8 @@ import type { Price } from './priceable_asset_types';
 import type { priceable_asset_id } from './asset_types';
 import { map_entries, typed_entries, typed_from_entries } from 'functional-utilities';
 import { cloneDeep, intersection as intersect, minBy, sum } from 'lodash-es';
-import { empty_offer, indexed_offers, offer_applicable, offer_ids, type offer_descriptions_type, type offer_description_type } from './offer_description';
-import type { offer_id } from './offer_description';
+import { empty_offer, indexed_offers, offer_applicable, offer_ids } from './offer_description';
+import type { offer_id, offer_description_type } from './offer_description';
 import { asset_sets } from './sets';
 
 function to_price_string(v: number): string {
@@ -59,7 +59,13 @@ function chose_offer(assets: ReadonlyArray<priceable_asset_id>): offer_id | unde
 	if (offers.length === 0) {
 		return undefined;
 	}
-	const prices = offers.map((offer_id) => [offer_id, get_offer_price(offer_id ? indexed_offers[offer_id] : empty_offer, assets)] as const);
+	const prices = offers.map(
+		(offer_id) =>
+			[
+				offer_id,
+				get_offer_price(offer_id ? indexed_offers[offer_id] : empty_offer, assets)
+			] as const
+	);
 	return minBy(prices, ([, price]) => price.jahr)[0];
 }
 

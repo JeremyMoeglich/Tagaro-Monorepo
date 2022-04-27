@@ -1,9 +1,14 @@
 <script lang="ts">
-import { package_combinations } from "$lib/scripts/universal/asset_library/assets/packages";
+	import { package_combinations } from '$lib/scripts/universal/asset_library/assets/packages';
 
-    import { indexed_offers, offer_descriptions, type offer_id } from "$lib/scripts/universal/asset_library/offer_description";
-import { get_offer_price } from "$lib/scripts/universal/asset_library/prices";
-    let offer_id: offer_id | undefined = undefined
+	import {
+		indexed_offers,
+		offer_descriptions
+	} from '$lib/scripts/universal/asset_library/offer_description';
+	import type { offer_id } from '$lib/scripts/universal/asset_library/offer_description';
+
+	import { get_offer_price } from '$lib/scripts/universal/asset_library/prices';
+	let offer_id: offer_id | undefined = undefined;
 </script>
 
 <div>
