@@ -20,7 +20,7 @@
 	import MultiBoxSelector from '$lib/components/elements/interactive/box_selector/multi_box_selector.svelte';
 	import SimpleInputField from '$lib/components/elements/interactive/inputs/simple_input_field.svelte';
 	import RadioButton from '$lib/components/elements/interactive/radio_button.svelte';
-import { asset_sets } from '$lib/scripts/universal/asset_library/sets';
+	import { asset_sets } from '$lib/scripts/universal/asset_library/sets';
 	// #endregion
 
 	let options: aboformular_options = {

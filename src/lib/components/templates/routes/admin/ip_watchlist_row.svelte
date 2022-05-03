@@ -5,7 +5,6 @@
 
 	export let ip: string;
 
-
 	function disable() {
 		const document = doc(firestore, 'ip_log_watchlist', ip);
 		deleteDoc(document);
@@ -46,9 +45,9 @@
 		height: var(--size);
 		background-color: rgb(224, 224, 224);
 	}
-    .disable:hover {
-        background-color: rgb(198, 187, 211);
-    }
+	.disable:hover {
+		background-color: rgb(198, 187, 211);
+	}
 	.disable p {
 		padding-bottom: 10px;
 	}

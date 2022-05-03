@@ -23,5 +23,5 @@
 		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema
 		+ Sport
 	</p>
-	<GradientBadge>20% Rabatt sichern</GradientBadge>
+	<GradientBadge>50% Rabatt auf Premiumpakete</GradientBadge>
 </PackageTemplate>

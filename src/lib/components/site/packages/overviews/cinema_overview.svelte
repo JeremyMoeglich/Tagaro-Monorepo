@@ -25,5 +25,5 @@
 		<br />
 		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
 	</p>
-	<GradientBadge>20% Rabatt sichern</GradientBadge>
+	<GradientBadge>50% Rabatt auf Premiumpakete</GradientBadge>
 </PackageTemplate>

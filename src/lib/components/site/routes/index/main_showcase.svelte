@@ -1,17 +1,16 @@
 <script lang="ts">
 	import ShowcaseTemplate from '$lib/components/templates/routes/index/showcase_template.svelte';
-	//import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
+	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 </script>
 
-<!-- <ShowcaseLayout
-	title={'Jetzt Sky Wunschpakete buchen und im Winter Sale 50% auf Cinema, Bundesliga und Sport erhalten'}
+<ShowcaseTemplate
+	title={'Jetzt Sky Wunschpakete buchen und 50% auf Cinema, Bundesliga und Sport erhalten'}
 	points={[
 		'50% auf die Pakete Cinema, Fußball Bundesliga und/oder Sport erhalten*',
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`
 	]}
-	side_images={['/images/badges/50p.png']}
-	primary_image={'/images/visuals/winter_sale.webp'}
-/> -->
+	side_images={['/images/badges/50p.svg']}
+/>
 <!-- <ShowcaseLayout
 	title={'Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis zu € 125* erhalten.'}
 	points={[
@@ -32,11 +31,11 @@
 	side_images={['/images/badges/keine_aktivierung.webp']}
 /> -->
 
-<ShowcaseTemplate
+<!-- <ShowcaseTemplate
 	title={'Jetzt Sky bestellen und 20% Rabatt sichern bei Buchung von Entertainment Plus + mindestens 1 Programmpaket*'}
 	points={[
 		'Ab Buchung von Entertainment Plus + 1 Paket <mark>20% Rabatt</mark>*',
 		'Zusätzlich € 20 Bonus von uns und versandkostenfreie Lieferung*'
 	]}
 	side_images={['/images/badges/keine_aktivierung.svg']}
-/>
+/> -->

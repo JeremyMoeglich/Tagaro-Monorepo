@@ -6,7 +6,6 @@
 	<Senders
 		text="Sender im Cinema Paket:"
 		content={[
-			'/images/assets/packages/senders/cinema/sky_logo_kinowelt_w.png',
 			'/images/assets/packages/senders/cinema/sky_logo_sky-cinema-action_w.png',
 			'/images/assets/packages/senders/cinema/sky_logo_sky-cinema-best-of_w.png',
 			'/images/assets/packages/senders/cinema/sky_logo_sky-cinema-classics_w.png',

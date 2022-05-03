@@ -2,7 +2,7 @@
 	import VertragsinfomationenTemplate from '../templates/section/vertragsinfomationen_template.svelte';
 </script>
 
-<!-- <VertragsinfomationenLayout>
+<VertragsinfomationenTemplate>
 	<h3>50% auf Cinema, Fußball Bundesliga und/oder Sport von Sky:</h3>
 	<p>
 		Die monatlichen Paketpreise, die das Cinema, Fußball Bundesliga und/oder das Sport Paket
@@ -10,7 +10,7 @@
 		Paket einen Rabatt von 50% auf den monatlichen Betrag während des Jahres-Abos von Sky gewährt.
 		Die reduzierten Monatsbeträge finden Sie in unserem Angebot.
 	</p>
-</VertragsinfomationenLayout> -->
+</VertragsinfomationenTemplate>
 
 <!-- <VertragsinfomationenLayout>
 	<h3>Amazon Gutschein von Sky:</h3>
@@ -58,7 +58,7 @@
 	</p>
 </VertragsinfomationenLayout> -->
 
-<VertragsinfomationenTemplate>
+<!-- <VertragsinfomationenTemplate>
 	<span>
 		<h3>20% Preisnachlass auf Entertainment Plus Paketkombinationen:</h3>
 		<p>
@@ -173,4 +173,4 @@
 			<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
 		</ul>
 	</span>
-</VertragsinfomationenTemplate>
+</VertragsinfomationenTemplate> -->

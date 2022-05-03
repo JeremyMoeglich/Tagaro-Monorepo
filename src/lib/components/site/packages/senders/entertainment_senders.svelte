@@ -18,7 +18,6 @@
 			'/images/assets/packages/senders/entertainment/86_sky_logo_historyhd_w.png',
 			'/images/assets/packages/senders/entertainment/94_sky_logo_boomerang.png',
 			'/images/assets/packages/senders/entertainment/95_sky_logo_cartoonnetwork_w.png',
-			'/images/assets/packages/senders/entertainment/99_sky_logo_classica.png',
 			'/images/assets/packages/senders/entertainment/sky_logo_beateuhse-hd.png',
 			'/images/assets/packages/senders/entertainment/sky_logo_crime-investigation_w.png',
 			'/images/assets/packages/senders/entertainment/sky_logo_natgeowild-hd_w.png',
