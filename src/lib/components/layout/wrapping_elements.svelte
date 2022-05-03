@@ -131,7 +131,7 @@
 					<p>
 						(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf {item.package_ids
 							.map((id) => indexed_package_assets[id].name)
-							.join(' + ')}) Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte
+							.join(' + ')}) <br /> Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte
 					</p>
 					<div class="btn">
 						<Button text={'Mehr erfahren'} route={item.route} />

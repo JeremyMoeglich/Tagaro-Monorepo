@@ -7,8 +7,8 @@
 	<p>
 		Die monatlichen Paketpreise, die das Cinema, Fußball Bundesliga und/oder das Sport Paket
 		enthalten, wurden reduziert. Sie erhalten auf das Cinema, Fußball Bundesliga und/oder das Sport
-		Paket einen Rabatt von 50% auf den monatlichen Betrag während des Jahres-Abos von Sky gewährt.
-		Die reduzierten Monatsbeträge finden Sie in unserem Angebot.
+		Paket einen Rabatt von 50% auf den monatlichen Betrag während der Mindestvertragslaufzeit von
+		Sky gewährt. Die reduzierten Monatsbeträge finden Sie in unserem Angebot.
 	</p>
 </VertragsinfomationenTemplate>
 

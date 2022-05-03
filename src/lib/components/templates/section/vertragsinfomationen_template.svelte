@@ -109,7 +109,7 @@
 					<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
 					<li>
 						- Multiscreen für € 10 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver
-						für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
+						für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 29 (zur Leihe)
 					</li>
 					<li>- Netflix Standard-Abo, HD/2 Streams (+ € 5 mtl.)</li>
 					<li>- Netflix Premium-Abo, UHD/4 Streams (+ € 10 mtl.)</li>
@@ -325,15 +325,6 @@
 				zzgl. maximal 2 Sky Q-Mini (je € 29 durch Sky) oder bei einem Sky Q Abonnement über das
 				Internet maximal 3 Sky Q IPTV Boxen (je € 29 durch Sky) buchbar. Eine Buchung von
 				Multiscreen ohne zusätzliches Gerät ist ebenso möglich.
-			</p>
-		</div>
-		<div>
-			<h3>Aufnahmekapazität:</h3>
-			<p>
-				Entspricht einer Aufnahmequalität in SD von einem Sky Sender (bspw. Sky Cinema Fun, Sky
-				Sport Bundesliga 1, Sky Sport 3 usw.). <br />
-				Apps: Nicht enthalten ist die Nutzung von kostenpflichtigen Apps/Mediatheken wie z. B. Prime
-				Video, Netflix, DAZN etc. Hierfür ist ein separates Abonnement des jeweiligen Anbieters nötig.
 			</p>
 		</div>
 		<div>
