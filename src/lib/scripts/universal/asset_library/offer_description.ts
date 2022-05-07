@@ -94,7 +94,7 @@ export const offer_descriptions: offer_descriptions_type = [
 				absolute: false
 			}
 		],
-		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-50prozent'
+		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
 	}
 ] as const;
 
