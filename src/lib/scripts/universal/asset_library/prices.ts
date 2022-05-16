@@ -3,7 +3,7 @@ import { indexed_priceable_assets } from './priceable_asset';
 import type { Price } from './priceable_asset_types';
 import type { priceable_asset_id } from './asset_types';
 import { map_entries, typed_entries, typed_from_entries } from 'functional-utilities';
-import { cloneDeep, intersection as intersect, minBy, sum } from 'lodash-es';
+import { intersection as intersect, minBy, sum } from 'lodash-es';
 import { empty_offer, indexed_offers, offer_applicable, offer_ids } from './offer_description';
 import type { offer_id, offer_description_type } from './offer_description';
 import { asset_sets } from './sets';
@@ -28,7 +28,7 @@ export function get_offer_price(
 	offer: offer_description_type,
 	assets: ReadonlyArray<priceable_asset_id>
 ): Price | undefined {
-	const current_price_table = cloneDeep(price_table);
+	const current_price_table = structuredClone(price_table);
 
 	offer.actions.forEach((action) => {
 		const set = asset_sets[action.set];

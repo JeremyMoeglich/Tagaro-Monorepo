@@ -8,7 +8,6 @@
 		set_preferences
 	} from '$lib/scripts/frontend/preferences';
 	import type { preferences_obj } from '$lib/scripts/frontend/preferences';
-	import { cloneDeep } from 'lodash-es';
 	import Datenschutz from '../service/datenschutz.svelte';
 	import Widerrufsrecht from '../service/widerrufsrecht.svelte';
 	import Impressum from '../service/impressum.svelte';
@@ -28,15 +27,15 @@
 
 	export let preferences_object: preferences_obj = accept_obj;
 
-	$: preferences_object = cloneDeep(accept_obj);
+	$: preferences_object = structuredClone(accept_obj);
 
-	let edit_preferences = cloneDeep(accept_obj);
+	let edit_preferences = structuredClone(accept_obj);
 	preferences_keys.forEach((key) => {
 		edit_preferences[key] = Boolean(edit_preferences[key]);
 	});
 
 	function save_current_preferences() {
-		accept_obj = cloneDeep(edit_preferences);
+		accept_obj = structuredClone(edit_preferences);
 		set_preferences(accept_obj);
 	}
 
@@ -44,7 +43,7 @@
 		preferences_keys.forEach((key) => {
 			edit_preferences[key] = true;
 		});
-		accept_obj = cloneDeep(edit_preferences);
+		accept_obj = structuredClone(edit_preferences);
 		set_preferences(accept_obj);
 	}
 
