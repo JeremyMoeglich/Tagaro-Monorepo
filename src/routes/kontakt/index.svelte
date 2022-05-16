@@ -11,42 +11,37 @@
 
 <script lang="ts">
 	//import InputField from '$lib/components/layout_components/input_field.svelte';
-	import EmptySpacer from '$lib/components/site_components/empty_spacer.svelte';
-	import KontaktForm from '$lib/components/site_components/kontakt_form.svelte';
+	import KontaktForm from '$lib/components/site/routes/kontakt/kontakt_form.svelte';
 
 	export let url: URL;
 </script>
 
-<body>
-	<EmptySpacer />
-	<h1 class="main_title">Kontakt</h1>
-	<div class="side_alignment">
-		<div class="side_text_container">
-			<p>
-				<b>
-					Wir helfen Ihnen gerne weiter - sowohl per E-Mail und Kontaktformular rund um die Uhr als
-					auch per Telefon zum Festnetzpreis.
-				</b>
-			</p>
-			<p>
-				Sie möchten gerne persönlich mit uns sprechen? Wir sind Montag bis Freitag von 10:00 bis
-				18:00 Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne mittels Rückruf, wenn sie uns
-				Ihren Kontaktwunsch mitteilen.
-			</p>
-			<ul>
-				<li><b>Telefon: </b>02381-9874699</li>
-				<li><b>Fax: </b>0321 - 2111 6558</li>
-				<li><b>E-Mail: </b><a href="mailto://info@tagaro.de">info@tagaro.de</a></li>
-				<li><b>Internet: </b><a href="https://tagaro.de">www.tagaro.de</a></li>
-			</ul>
-		</div>
-		<KontaktForm {url} />
+<h1 class="main_title">Kontakt</h1>
+<div class="side_alignment">
+	<div class="side_text_container">
+		<p>
+			<b>
+				Wir helfen Ihnen gerne weiter - sowohl per E-Mail und Kontaktformular rund um die Uhr als
+				auch per Telefon zum Festnetzpreis.
+			</b>
+		</p>
+		<p>
+			Sie möchten gerne persönlich mit uns sprechen? Wir sind Montag bis Freitag von 10:00 bis 18:00
+			Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne mittels Rückruf, wenn sie uns Ihren
+			Kontaktwunsch mitteilen.
+		</p>
+		<ul>
+			<li><b>Telefon: </b>02381-9874699</li>
+			<li><b>Fax: </b>0321 - 2111 6558</li>
+			<li><b>E-Mail: </b><a href="mailto://info@tagaro.de">info@tagaro.de</a></li>
+			<li><b>Internet: </b><a href="https://tagaro.de">www.tagaro.de</a></li>
+		</ul>
 	</div>
-	<EmptySpacer />
-</body>
+	<KontaktForm {url} />
+</div>
 
 <style lang="scss">
-	@import '../../lib/style/mixins.scss';
+	@import '../../lib/style/gradient_text.scss';
 	.side_text_container {
 		min-width: 50%;
 	}
@@ -55,8 +50,7 @@
 		justify-content: center;
 		gap: 30px;
 		max-width: min(90%, 1000px);
-		margin-left: auto;
-		margin-right: auto;
+		margin: 60px auto;
 	}
 	.main_title {
 		text-align: center;

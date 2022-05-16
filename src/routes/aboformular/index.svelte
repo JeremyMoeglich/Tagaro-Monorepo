@@ -1,29 +1,26 @@
 <script lang="ts">
 	// #region [c3] Imports
 	import {
-		base_packages,
-		premiumpackages
-	} from '$lib/scripts/universal/asset_library/assets/packages';
-	import {
 		cable_receive_assets,
 		receive_assets
 	} from '$lib/scripts/universal/asset_library/assets/receive_type';
 	import { zubuchoptionen_assets } from '$lib/scripts/universal/asset_library/assets/zubuchoptionen';
 	import { indexed_assets } from '$lib/scripts/universal/asset_library/all_assets';
-	import OfferSummary from '$lib/components/site_components/offer_summary.svelte';
-	import SimpleInputField from '$lib/components/layout_components/simple_input_field.svelte';
-	import RadioButton from '$lib/components/layout_components/radio_button.svelte';
-	import SingleBoxSelector from '$lib/components/layout_components/box_selector/single_box_selector.svelte';
+	import OfferSummary from '$lib/components/site/routes/aboformular/offer_summary.svelte';
 	import type {
 		asset_id,
 		priceable_asset_id
 	} from '$lib/scripts/universal/asset_library/asset_types';
-	import MultiBoxSelector from '$lib/components/layout_components/box_selector/multi_box_selector.svelte';
 	import { iban_validator } from '$lib/scripts/universal/validators/iban';
 	import { bic_validator } from '$lib/scripts/universal/validators/bic';
 	import type { aboformular_options } from '$lib/scripts/universal/aboformular';
 	import { sort_by_price } from '$lib/scripts/universal/asset_library/prices';
 	import type { category_id } from '$lib/scripts/universal/asset_library/categories';
+	import SingleBoxSelector from '$lib/components/elements/interactive/box_selector/single_box_selector.svelte';
+	import MultiBoxSelector from '$lib/components/elements/interactive/box_selector/multi_box_selector.svelte';
+	import SimpleInputField from '$lib/components/elements/interactive/inputs/simple_input_field.svelte';
+	import RadioButton from '$lib/components/elements/interactive/radio_button.svelte';
+	import { asset_sets } from '$lib/scripts/universal/asset_library/sets';
 	// #endregion
 
 	let options: aboformular_options = {
@@ -141,7 +138,7 @@
 					title="Basispakete"
 					id="base_package"
 					bind:status={pages[0]['base_package']}
-					boxes={base_packages.map((v) => ({
+					boxes={asset_sets.base.map((v) => ({
 						asset: indexed_assets[v],
 						selector_assets: selected_assets,
 						disabled: false
@@ -152,7 +149,7 @@
 				/>
 				<MultiBoxSelector
 					title="Premiumpakete"
-					boxes={premiumpackages.map((v) => ({
+					boxes={asset_sets.premium.map((v) => ({
 						asset: indexed_assets[v],
 						selector_assets: selected_assets,
 						disabled: false

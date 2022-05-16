@@ -45,12 +45,13 @@ const config = {
 			default: true
 		},
 		routes: (filepath) => {
-			return ![/.aboformular\/index.svelte$/, /.dev.svelte$/].some((regex) => regex.test(filepath));
+			return ![/.aboformular\/index.svelte$/].some((regex) => regex.test(filepath));
 		},
 
 		//adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
 		//adapter: staticAdapter({ pages: 'build',prerender: true }),
-		adapter: adapter()
+		adapter: adapter(),
+		trailingSlash: 'always'
 	}
 };
 

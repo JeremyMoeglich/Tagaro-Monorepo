@@ -38,6 +38,7 @@ jobs:
           target: ${{ secrets.SSH_TARGET }}
           source: './build/*'
           strip_components: 1
+          rm: true
 
       - name: symlink
         uses: appleboy/ssh-action@master

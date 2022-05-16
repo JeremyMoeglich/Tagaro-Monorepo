@@ -1,7 +1,7 @@
 <script>
-	import Inklusive from '$lib/components/site_components/inklusive.svelte';
-	import EntertainmentSenders from '$lib/components/site_components/packages/senders/entertainment_senders.svelte';
-	import EntertainmentPlusOverview from '$lib/components/site_components/packages/overviews/entertainment_plus_overview.svelte';
+	import Inklusive from '$lib/components/site/inklusive.svelte';
+	import EntertainmentSenders from '$lib/components/site/packages/senders/entertainment_senders.svelte';
+	import EntertainmentPlusOverview from '$lib/components/site/packages/overviews/entertainment_plus_overview.svelte';
 </script>
 
 <body>
