@@ -12,6 +12,7 @@
 	import Widerrufsrecht from '../service/widerrufsrecht.svelte';
 	import Impressum from '../service/impressum.svelte';
 	import Button from '$lib/components/elements/interactive/buttons/button.svelte';
+import { cloneDeep } from 'lodash-es';
 
 	const disabled_routes = ['/service'];
 
@@ -27,15 +28,15 @@
 
 	export let preferences_object: preferences_obj = accept_obj;
 
-	$: preferences_object = structuredClone(accept_obj);
+	$: preferences_object = cloneDeep(accept_obj);
 
-	let edit_preferences = structuredClone(accept_obj);
+	let edit_preferences = cloneDeep(accept_obj);
 	preferences_keys.forEach((key) => {
 		edit_preferences[key] = Boolean(edit_preferences[key]);
 	});
 
 	function save_current_preferences() {
-		accept_obj = structuredClone(edit_preferences);
+		accept_obj = cloneDeep(edit_preferences);
 		set_preferences(accept_obj);
 	}
 
@@ -43,7 +44,7 @@
 		preferences_keys.forEach((key) => {
 			edit_preferences[key] = true;
 		});
-		accept_obj = structuredClone(edit_preferences);
+		accept_obj = cloneDeep(edit_preferences);
 		set_preferences(accept_obj);
 	}
 
