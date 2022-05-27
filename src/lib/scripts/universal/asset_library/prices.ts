@@ -93,15 +93,18 @@ export function sort_by_price(lst: Array<priceable_asset_id>): Array<priceable_a
 	);
 }
 
+function get_savings_string(offer: offer_description_type, packages: ReadonlyArray<package_id>) {
+	return to_price_string(
+		(get_offer_price(empty_offer, packages).jahr - get_offer_price(offer, packages).jahr) * 12
+	);
+}
+
 export function get_offer_note(packages: ReadonlyArray<package_id>, long = false): string {
 	const chosen_offer = chose_offer(packages);
 	if (chosen_offer === undefined) {
 		return '';
 	}
 	const offer = indexed_offers[chosen_offer];
-	if (long) {
-		return offer.long_text;
-	} else {
-		return offer.short_text;
-	}
+	const text = long ? offer.long_text : offer.short_text;
+	return text.replaceAll('{savings}', get_savings_string(offer, packages));
 }

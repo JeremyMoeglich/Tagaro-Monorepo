@@ -33,9 +33,11 @@ export interface offer_description_type {
 
 export type offer_descriptions_type = ReadonlyArray<offer_description_type>;
 
-export const offer_ids = ['50premium'] as const;
+export const offer_ids = ['50premium', 'entertainmentplus15'] as const;
 
 export type offer_id = typeof offer_ids[number];
+
+const text_descriptions = '+ {savings} Preisvorteil';
 
 export const offer_descriptions: offer_descriptions_type = [
 	/*{
@@ -81,8 +83,8 @@ export const offer_descriptions: offer_descriptions_type = [
 			}
 		],
 		bonus: 20,
-		short_text: '+ 50% auf Premium-Pakete',
-		long_text: '+ 50% auf Premium-Pakete',
+		short_text: text_descriptions,
+		long_text: text_descriptions,
 		actions: [
 			{
 				set: 'premium',
@@ -92,6 +94,42 @@ export const offer_descriptions: offer_descriptions_type = [
 					jahr: 0.5
 				},
 				absolute: false
+			}
+		],
+		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
+	},
+	{
+		id: 'entertainmentplus15',
+		aktivierung: 0,
+		conditions: [
+			{
+				set: 'entertainmentplus',
+				min_amount: 1,
+				inverted: false
+			},
+			{
+				set: 'premium',
+				min_amount: 1,
+				inverted: true
+			},
+			{
+				set: 'entertainment',
+				min_amount: 1,
+				inverted: true
+			}
+		],
+		bonus: 20,
+		short_text: text_descriptions,
+		long_text: text_descriptions,
+		actions: [
+			{
+				set: 'entertainmentplus',
+				value: {
+					jahr: -5,
+					monat: 0,
+					singular: 0
+				},
+				absolute: true
 			}
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
