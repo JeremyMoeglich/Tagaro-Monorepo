@@ -93,10 +93,20 @@ export function sort_by_price(lst: Array<priceable_asset_id>): Array<priceable_a
 	);
 }
 
-function get_savings_string(offer: offer_description_type, packages: ReadonlyArray<package_id>) {
+function get_offer_savings_string(
+	offer: offer_description_type,
+	packages: ReadonlyArray<package_id>
+): string {
 	return to_price_string(
 		(get_offer_price(empty_offer, packages).jahr - get_offer_price(offer, packages).jahr) * 12
 	);
+}
+export function get_savings_string(packages: ReadonlyArray<package_id>): string {
+	const chosen_offer = chose_offer(packages);
+	if (chosen_offer === undefined) {
+		return to_price_string(0);
+	}
+	return get_offer_savings_string(indexed_offers[chosen_offer], packages);
 }
 
 export function get_offer_note(packages: ReadonlyArray<package_id>, long = false): string {
@@ -106,5 +116,5 @@ export function get_offer_note(packages: ReadonlyArray<package_id>, long = false
 	}
 	const offer = indexed_offers[chosen_offer];
 	const text = long ? offer.long_text : offer.short_text;
-	return text.replaceAll('{savings}', get_savings_string(offer, packages));
+	return text.replaceAll('{savings}', get_offer_savings_string(offer, packages));
 }
