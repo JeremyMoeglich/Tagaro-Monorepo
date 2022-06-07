@@ -6,9 +6,10 @@
 		onAuthStateChanged
 	} from 'firebase/auth';
 	import type { User } from 'firebase/auth';
-	import { auth } from '$lib/firebase_vars';
-	import { typed_entries } from 'functional-utilities';
+	import { auth, firestore } from '$lib/firebase_vars';
+	import { typed_entries, typed_from_entries } from 'functional-utilities';
 	import Button from '$lib/components/elements/interactive/buttons/button.svelte';
+	import { collection, onSnapshot, query } from 'firebase/firestore';
 
 	const admin_email = 'info@tagaro.de';
 
@@ -25,16 +26,28 @@
 		});
 	}
 
+	let listening_for_status = false;
+	let activity: Record<string, boolean> = {};
 	onAuthStateChanged(auth, (u) => {
 		if (u) {
 			user = u;
+			if (!listening_for_status) {
+				listening_for_status = true;
+				const activity_collection = collection(firestore, 'activity');
+				onSnapshot(activity_collection, (snapshot) => {
+					activity = typed_from_entries(
+						snapshot.docs.map((doc) => [doc.id, doc.data().active as boolean])
+					);
+				});
+			}
 		}
 	});
 
 	const panels = {
 		'IP Log': 'ip_log',
 		'Paket Bild Generator': 'package_renderer',
-		'Preis Liste': 'price'
+		'Preis Liste': 'price',
+		'Email Log': 'email_log'
 	} as const;
 
 	const layout_route = '/admin';
@@ -52,12 +65,22 @@
 {:else}
 	<div class="main">
 		<div class="sidebar">
-			{#each typed_entries(panels) as panel}
-				{@const name = panel[0]}
-				{@const relative_route = panel[1]}
-				{@const route = `${layout_route}/${relative_route}`}
-				<a href={route} class="sidebar_element">{name}</a>
-			{/each}
+			<div class="sidebar_choices">
+				{#each typed_entries(panels) as panel}
+					{@const name = panel[0]}
+					{@const relative_route = panel[1]}
+					{@const route = `${layout_route}/${relative_route}`}
+					<a href={route} class="sidebar_element">{name}</a>
+				{/each}
+			</div>
+			<div class="activity">
+				{#each typed_entries(activity) as [name, value]}
+					<div class="activity_element" class:inactive={!value}>
+						<p>{name}</p>
+						<p>{value ? 'active' : 'inactive'}</p>
+					</div>
+				{/each}
+			</div>
 		</div>
 		<div class="content">
 			<slot />
@@ -65,7 +88,7 @@
 	</div>
 {/if}
 
-<style>
+<style lang="scss">
 	.login {
 		display: flex;
 		flex-direction: column;
@@ -90,6 +113,27 @@
 		flex-direction: column;
 		width: fit-content;
 		height: 100%;
+		gap: 30px;
+	}
+	.activity {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	.inactive {
+		background-color: red !important;
+		color: white;
+	}
+	.activity_element {
+		display: flex;
+		gap: 10px;
+		padding: 10px;
+		background-color: lightgreen;
+	}
+	.sidebar_choices {
+		display: flex;
+		flex-direction: column;
+		width: fit-content;
 	}
 	.main {
 		display: flex;
