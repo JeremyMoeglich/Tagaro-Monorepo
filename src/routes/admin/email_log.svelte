@@ -1,14 +1,10 @@
 <script lang="ts">
 	import { firestore } from '$lib/firebase_vars';
-
 	import { collection } from 'firebase/firestore';
 	import { orderBy } from 'firebase/firestore';
 	import { limit } from 'firebase/firestore';
-
 	import { query } from 'firebase/firestore';
-
 	import { onSnapshot } from 'firebase/firestore';
-	import { pass_back } from 'functional-utilities';
 	import { sortBy } from 'lodash-es';
 
 	interface email_log_type {

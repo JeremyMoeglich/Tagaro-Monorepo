@@ -33,9 +33,9 @@
 			Per E-Mail 24 Stunden lang
 		</p>
 		<p>
-			<a href={`tel:${phone_number}`}>Telefon: {phone_number}</a> <br />
+			<a sveltekit:prefetch href={`tel:${phone_number}`}>Telefon: {phone_number}</a> <br />
 			Fax: 0321 - 2111 6558 <br />
-			<a href={`mailto://${email}`}>E-Mail: {email}</a>
+			<a sveltekit:prefetch href={`mailto://${email}`}>E-Mail: {email}</a>
 		</p>
 	</div>
 	<div class="einkaufen">

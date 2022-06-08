@@ -2,7 +2,7 @@
 	import Button from '../elements/interactive/buttons/button.svelte';
 </script>
 
-<a href="/angebote">
+<a href="/angebote" sveltekit:prefetch>
 	<div class="alignment">
 		<h2>Schnell und einfach Sky abonnieren!</h2>
 		<p>
