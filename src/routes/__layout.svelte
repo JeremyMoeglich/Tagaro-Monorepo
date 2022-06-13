@@ -1,14 +1,3 @@
-<script context="module" lang="ts">
-	import type { Load } from '@sveltejs/kit';
-	export const load: Load = async ({ url }) => {
-		return {
-			props: {
-				route: url.pathname
-			}
-		};
-	};
-</script>
-
 <script lang="ts">
 	import '../global.scss';
 	import Footer from '$lib/components/site/routes/layout/footer/footer.svelte';
@@ -21,6 +10,7 @@
 	import { preferences_keys } from '$lib/scripts/frontend/preferences';
 	import { typed_entries } from 'functional-utilities';
 	import Header from '$lib/components/site/routes/layout/header/header.svelte';
+	import { page } from '$app/stores';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -65,7 +55,8 @@
 		}
 	}
 
-	export let route: string;
+	let route = $page.url.pathname;
+	$: route = $page.url.pathname;
 </script>
 
 <svelte:head>
