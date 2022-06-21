@@ -1,5 +1,5 @@
 <script>
-import GradientBadge from '$lib/components/elements/gradient_badge.svelte';
+	import GradientBadge from '$lib/components/elements/gradient_badge.svelte';
 
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
 	export let detailed = false;

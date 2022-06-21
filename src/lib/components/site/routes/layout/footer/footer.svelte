@@ -54,11 +54,11 @@
 					alt="Trustami"
 				/></a
 			> -->
-		{#if preferences_object['social Media']}
+		{#if preferences_object.socialmedia}
 			{@html '<div class="widget_container_badge"></div>'}
 		{/if}
 	</div>
-	{#if preferences_object['social Media']}
+	{#if preferences_object.socialmedia}
 		<div class="social">
 			<h3>Social Media</h3>
 			<iframe

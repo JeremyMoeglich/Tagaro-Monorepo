@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
-	import { package_combinations, type package_id } from '$lib/scripts/universal/asset_library/assets/packages';
+	import { package_combinations } from '$lib/scripts/universal/asset_library/assets/packages';
 	import Zubuchoption from '$lib/components/templates/element/zubuchoption.svelte';
 </script>
 

@@ -4,7 +4,7 @@
 	import * as urls from '$lib/scripts/frontend/urls';
 	import PageTransition from '$lib/components/internal/PageTransition.svelte';
 
-	import InfoBanner from '$lib/components/site/overlays/info_banner.svelte';
+	import InfoBanner from '$lib/components/site/routes/layout/info_banner.svelte';
 
 	import type { preferences_keys_type, preferences_obj } from '$lib/scripts/frontend/preferences';
 	import { preferences_keys } from '$lib/scripts/frontend/preferences';
@@ -60,7 +60,7 @@
 </script>
 
 <svelte:head>
-	{#if preferences_object['analytics']}
+	{#if preferences_object.analytics}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-70CD2JS6R8"></script>
 		<script>
@@ -73,7 +73,7 @@
 			gtag('config', 'G-70CD2JS6R8');
 		</script>
 	{/if}
-	{#if preferences_object['social Media']}
+	{#if preferences_object.socialmedia}
 		<script
 			id="trustamiwidget"
 			type="text/javascript"
@@ -102,7 +102,7 @@
 	<meta name="author" content="Jeremy Möglich" />
 </svelte:head>
 
-{#if preferences_object['social Media']}
+{#if preferences_object.socialmedia}
 	{@html '<div class="widget_container_overlay" />'}
 {/if}
 <body>

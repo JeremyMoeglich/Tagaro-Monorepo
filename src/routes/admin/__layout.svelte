@@ -9,7 +9,7 @@
 	import { auth, firestore } from '$lib/firebase_vars';
 	import { typed_entries, typed_from_entries } from 'functional-utilities';
 	import Button from '$lib/components/elements/interactive/buttons/button.svelte';
-	import { collection, onSnapshot, query } from 'firebase/firestore';
+	import { collection, onSnapshot } from 'firebase/firestore';
 	import { browser } from '$app/env';
 
 	const admin_email = 'info@tagaro.de';

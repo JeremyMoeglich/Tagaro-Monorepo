@@ -6,6 +6,7 @@
 	import { aboformular } from '$lib/scripts/frontend/urls';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
+	export let subtitle0 = '';
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
 	export let subtitle2 =
 		'Wir sind autorisierter Sky Onlinehändler und stehen für eine schnelle & zuverlässige Bearbeitung.';
@@ -46,7 +47,8 @@
 			<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
 		</button>
 		<div class="right_side">
-			<h1>{title}</h1>
+			<h1>{title}*</h1>
+			<h2>{subtitle0}</h2>
 			<h2>{subtitle1}</h2>
 			<h3>{subtitle2}</h3>
 
@@ -97,6 +99,7 @@
 		align-items: center;
 		text-decoration: none;
 		color: black;
+		gap: 10px;
 		img {
 			width: 150px;
 			height: 150px;
@@ -184,10 +187,12 @@
 	}
 	h1 {
 		@include gradient-text;
+		margin-bottom: 5px;
 	}
 	h2 {
 		color: #4a4a4a;
 		margin-bottom: 10px;
+		margin-top: 0px;
 	}
 	h3 {
 		color: #868686;
@@ -198,6 +203,6 @@
 	h2,
 	h3 {
 		text-align: center;
-		max-width: min(90vw, 1000px);
+		max-width: min(90vw, 1100px);
 	}
 </style>

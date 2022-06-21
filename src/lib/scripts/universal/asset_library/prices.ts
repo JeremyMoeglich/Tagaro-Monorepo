@@ -40,7 +40,7 @@ export function get_offer_price(
 			current_price_table[asset_id] = typed_from_entries(
 				typed_entries(current_price_table[asset_id]).map(([key, value]) => [
 					key,
-					key === 'jahr' ? operation(action.value[key], value) : value
+					key === 'jahr' ? operation(action.value[key], value as number) : value
 				])
 			);
 		});
