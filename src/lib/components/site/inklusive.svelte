@@ -35,34 +35,46 @@
 </SideBySide>
 <SideBySide primary="right">
 	<span slot="right">
-		<div >
-			<h3 class="gradient_text">Peacock auf Sky</h3>
-			<ul>
-				<li>
-					<b>Exklusive Peacock Originals,</b> darunter die aktuellen Serien "Saved by the Bell", "Rutherford
-					Falls" und "Girls5eva"; und zusätzlich die kommenden Serien "The Girl in the Woods", "MacGruber",
-					"Joe vs. Carole", "Bel-Air" und "The Resort".
-				</li>
-				<li>
-					<b>Alle Staffeln der beliebtesten Drama und Comedy-Serien</b> wie "The Office", "Monk", "30
-					Rock", "Psych" und "Will & Grace"; unverzichtbare Serien wie "Downton Abbey", "Dr. House",
-					"Battlestar Galactica", "Bates Motel" und "Heroes"; die beliebten Franchise Hits "Chicago Fire",
-					"Chicago P.D." und "Chicago Med"; und Reality-TV-Shows wie "Keeping Up With the Kardashians",
-					"Below Deck" und "Botched".
-				</li>
-				<li>
-					<b>Filme der letzten Jahre</b> wie "American Pie 2", "Back to the Future Part III", "Brüno",
-					"Bulletproof", "Children of Men", "Erin Brockovich", "The Game", "Gladiator", "The Green Mile",
-					"The Holiday", "Jason Bourne", "Identity Thief", "Lucy", "MacGruber", "Mamma Mia!", "Meet Joe
-					Black", "Notting Hill", "Pitch Perfect", "The Purge", "The Secret Life of Pets", "Shaun of
-					the Dead", "Snow White and the Huntsman", "Out of Sight", "Tower Heist", "Tremors" und "Van
-					Helsing".
-				</li>
-			</ul>
-		</div>
+		<h3 class="gradient_text">Peacock auf Sky</h3>
+		<ul>
+			<li>
+				<b>Exklusive Peacock Originals,</b> darunter die aktuellen Serien "Saved by the Bell", "Rutherford
+				Falls" und "Girls5eva"; und zusätzlich die kommenden Serien "The Girl in the Woods", "MacGruber",
+				"Joe vs. Carole", "Bel-Air" und "The Resort".
+			</li>
+			<li>
+				<b>Alle Staffeln der beliebtesten Drama und Comedy-Serien</b> wie "The Office", "Monk", "30 Rock",
+				"Psych" und "Will & Grace"; unverzichtbare Serien wie "Downton Abbey", "Dr. House", "Battlestar
+				Galactica", "Bates Motel" und "Heroes"; die beliebten Franchise Hits "Chicago Fire", "Chicago
+				P.D." und "Chicago Med"; und Reality-TV-Shows wie "Keeping Up With the Kardashians", "Below Deck"
+				und "Botched".
+			</li>
+			<li>
+				<b>Filme der letzten Jahre</b> wie "American Pie 2", "Back to the Future Part III", "Brüno",
+				"Bulletproof", "Children of Men", "Erin Brockovich", "The Game", "Gladiator", "The Green Mile",
+				"The Holiday", "Jason Bourne", "Identity Thief", "Lucy", "MacGruber", "Mamma Mia!", "Meet Joe
+				Black", "Notting Hill", "Pitch Perfect", "The Purge", "The Secret Life of Pets", "Shaun of the
+				Dead", "Snow White and the Huntsman", "Out of Sight", "Tower Heist", "Tremors" und "Van Helsing".
+			</li>
+		</ul>
 	</span>
 	<span slot="left">
 		<img src="/images/visuals/sky_22-01_hilfecenter_peacock_1360x706.jpg" alt="" />
+	</span>
+</SideBySide>
+<SideBySide primary="left">
+	<span slot="left">
+		<h3 class="gradient_text">Discovery+ auf Sky Q</h3>
+		<ul>
+			<li>Der Streaming Dienst für großartige Real-Life Unterhaltung die du lieben wirst</li>
+			<li>Mehr als 10.000 Inhalte aller Discovery Sender jederzeit auf Abruf verfügbar</li>
+			<li>
+				Premium Inhalte wie BBC Dokus, discovery+ Originals, Eurosport HD und viele mehr inklusive
+			</li>
+		</ul>
+	</span>
+	<span slot="right">
+		<img src="/images/visuals/sky_22-06_discovery-plus_teaser.webp" alt="" />
 	</span>
 </SideBySide>
 
