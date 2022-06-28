@@ -14,11 +14,5 @@
 	]}
 	image={'/images/assets/packages/normal/entertainmentplus.jpg'}
 	{detailed}
->
-	<h3>12 Monate nur {get_price_string(['entertainmentplus'], 'jahr')} mtl.*</h3>
-	<p>
-		(im Jahres-Abo, danach {get_price_string(['entertainmentplus'], 'monat')} mtl. im Monats-Abo)
-		<br />
-		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
-	</p>
-</PackageTemplate>
+	price_asset_ids={['entertainmentplus']}
+/>

@@ -1,5 +1,4 @@
 <script>
-	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
 	export let detailed = false;
 </script>
@@ -16,11 +15,5 @@
 	]}
 	image={'/images/assets/packages/normal/entertainment.jpg'}
 	{detailed}
->
-	<h3>12 Monate nur {get_price_string(['entertainment'], 'jahr')} mtl.*</h3>
-	<p>
-		(im Jahres-Abo, danach {get_price_string(['entertainment'], 'monat')} mtl. im Monats-Abo) <br />
-		Optional mit Netflix im Entertainment Plus Paket für zzgl. € 7,50 mtl. <br />
-		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
-	</p>
-</PackageTemplate>
+	price_asset_ids={['entertainment']}
+/>

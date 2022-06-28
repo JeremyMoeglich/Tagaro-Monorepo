@@ -18,12 +18,5 @@
 	]}
 	image={'/images/assets/packages/normal/cinema.jpg'}
 	{detailed}
->
-	<h3>12 Monate nur {get_price_string(['entertainmentplus', 'cinema'], 'jahr')} mtl.*</h3>
-	<p>
-		(im Jahres-Abo, danach {get_price_string(['entertainmentplus', 'cinema'], 'monat')} mtl. im Monats-Abo)
-		<br />
-		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
-	</p>
-	<GradientBadge>50% Rabatt auf Premiumpakete</GradientBadge>
-</PackageTemplate>
+	price_asset_ids={['entertainmentplus', 'cinema']}
+/>
