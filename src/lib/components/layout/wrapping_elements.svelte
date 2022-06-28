@@ -10,6 +10,7 @@
 	} from '$lib/scripts/universal/asset_library/prices';
 	import MultiImageOverlay from '../generators/multi_image_overlay.svelte';
 	import Button from '../elements/interactive/buttons/button.svelte';
+	import { onMount } from 'svelte';
 
 	export let title: string;
 	export let components: ReadonlyArray<{
@@ -20,6 +21,7 @@
 
 	let center_index = Math.floor(components.length * (0.5 + 0 ** 10));
 	let current_x_pos = center_index;
+
 	export let css_vars: {
 		element_spacing: string;
 		box_width: string;
@@ -78,7 +80,7 @@
 		clearTimeout(slide_timeout_id);
 		slide_timeout_id = setTimeout(slide, delay);
 	}
-	if (browser) {
+	onMount(() => {
 		setTimeout(slide, delay);
 		onfocus = function () {
 			focused = true;
@@ -88,7 +90,7 @@
 		onblur = function () {
 			focused = false;
 		};
-	}
+	});
 	$: css_vars_style = (function () {
 		let combined_style = '';
 		for (const [key, value] of Object.entries(css_vars)) {
@@ -98,24 +100,25 @@
 	})();
 </script>
 
-<div style={css_vars_style}>
-	<div class="main_container">
-		<h2 class="gradient-text" style="text-align: center;">{title}</h2>
-		<div class="alignment">
-			{#each components as item, id}
-				<a
-					class="package_alignment {id == wrap(center_index) ? 'middle_element' : ''}"
-					style={get_x_pos(id, current_x_pos)}
-					href={item.route}
-				>
-					<h3>{@html item.title}</h3>
-					<MultiImageOverlay packages={item.package_ids} />
-					<ul>
-						<li>+ Für Internet, Sat- oder Kabel,</li>
-						<li>+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu,</li>
-						<li>+ 12 Monatsabo, danach mtl. kündbar,</li>
-						<li>+ {bonus_string} Bonus on top</li>
-						<!-- 
+{#if browser}
+	<div style={css_vars_style}>
+		<div class="main_container">
+			<h2 class="gradient-text" style="text-align: center;">{title}</h2>
+			<div class="alignment">
+				{#each components as item, id}
+					<a
+						class="package_alignment {id == wrap(center_index) ? 'middle_element' : ''}"
+						style={get_x_pos(id, current_x_pos)}
+						href={item.route}
+					>
+						<h3>{@html item.title}</h3>
+						<MultiImageOverlay packages={item.package_ids} />
+						<ul>
+							<li>+ Für Internet, Sat- oder Kabel,</li>
+							<li>+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu,</li>
+							<li>+ 12 Monatsabo, danach mtl. kündbar,</li>
+							<li>+ {bonus_string} Bonus on top</li>
+							<!-- 
 							<li><b>+ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
 							<li><b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
 							<li><b>+ Bis 31.12.21 keine Abogebühren durch Sky</b></li>
@@ -123,37 +126,38 @@
 							<li><b>+ Bis zu € 100 Gutschrift von Sky</b>`</li>
 							<li><b>+ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b></li>
 						-->
-						<li><mark>{get_offer_note(item.package_ids, true)}</mark></li>
-					</ul>
-					<h3>
-						ab {@html get_price_string(item.package_ids, `jahr`)} monatlich*
-					</h3>
-					<p>
-						(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf {item.package_ids
-							.map((id) => indexed_package_assets[id].name)
-							.join(' + ')}) <br /> Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte
-					</p>
-					<div class="btn">
-						<Button text={'Mehr erfahren'} route={item.route} />
-					</div>
-				</a>
-			{/each}
-		</div>
-		<div class="cover_elements">
-			<div class="cover cover_element" />
-			<div class="t cover_element" />
-			<div class="cover cover_element" />
-		</div>
-		<div class="controls">
-			<div class="left_control" on:click={() => slide(-1)}>
-				<img src="/images/icons/arrow.svg" alt="" />
+							<li><mark>{get_offer_note(item.package_ids, true)}</mark></li>
+						</ul>
+						<h3>
+							ab {@html get_price_string(item.package_ids, `jahr`)} monatlich*
+						</h3>
+						<p>
+							(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf {item.package_ids
+								.map((id) => indexed_package_assets[id].name)
+								.join(' + ')}) <br /> Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte
+						</p>
+						<div class="btn">
+							<Button text={'Mehr erfahren'} route={item.route} />
+						</div>
+					</a>
+				{/each}
 			</div>
-			<div class="right_control" on:click={() => slide(1)}>
-				<img src="/images/icons/arrow.svg" alt="" />
+			<div class="cover_elements">
+				<div class="cover cover_element" />
+				<div class="t cover_element" />
+				<div class="cover cover_element" />
+			</div>
+			<div class="controls">
+				<div class="left_control" on:click={() => slide(-1)}>
+					<img src="/images/icons/arrow.svg" alt="" />
+				</div>
+				<div class="right_control" on:click={() => slide(1)}>
+					<img src="/images/icons/arrow.svg" alt="" />
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+{/if}
 
 <style lang="scss">
 	@import 'lib/style/gradient_text.scss';

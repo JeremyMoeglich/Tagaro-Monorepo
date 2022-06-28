@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '../app.css';
 	import '../global.scss';
 	import Footer from '$lib/components/site/routes/layout/footer/footer.svelte';
 	import * as urls from '$lib/scripts/frontend/urls';
@@ -105,6 +106,7 @@
 {#if preferences_object.socialmedia}
 	{@html '<div class="widget_container_overlay" />'}
 {/if}
+
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>

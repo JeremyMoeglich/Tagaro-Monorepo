@@ -3,18 +3,20 @@
 	export let content: ReadonlyArray<string>;
 </script>
 
-<body>
-	<div class="top_margin">
-		<h2>{text}</h2>
-		<div class="main_alignment">
-			{#each content as element}
-				<div class="sender_box">
-					<img src={element} alt="" />
-				</div>
-			{/each}
-		</div>
+<div class="top_margin">
+	<h2>{text}</h2>
+	<div class="main_alignment">
+		{#each content as element}
+			<div class="sender_box">
+				<img src={element} alt="" />
+			</div>
+		{/each}
 	</div>
-</body>
+	<p>
+		Bei Kabelempfang hängt die Verfügbarkeit und Anzahl der enthaltenen Sender vom jeweiligen
+		Netzbetreiber ab.
+	</p>
+</div>
 
 <style lang="scss">
 	@import 'lib/style/gradient_text.scss';
@@ -52,5 +54,9 @@
 		object-fit: contain;
 		text-align: center;
 		gap: 20px;
+	}
+	p {
+		text-align: center;
+		margin-top: 30px;
 	}
 </style>
