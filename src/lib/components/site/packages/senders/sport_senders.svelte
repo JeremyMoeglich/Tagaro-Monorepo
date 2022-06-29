@@ -22,8 +22,7 @@
 			'sky_logo_sky-sport-9.png',
 			'sky_logo_sky-sport-10.png',
 			'sky_logo_sky-sport-11.png',
-			'sky_logo_sky-sport-austria.png',
-			
+			'sky_logo_sky-sport-austria.png'
 		].map((img) => start + img)}
 	/>
 </body>

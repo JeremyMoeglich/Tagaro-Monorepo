@@ -1,7 +1,5 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
-	export let detailed = false;
-	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 </script>
 
 <PackageTemplate
@@ -15,6 +13,5 @@
 		'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!',
 		'UHD optional für € 5 mtl.'
 	]}
-	{detailed}
 	price_asset_ids={['entertainment', 'sport']}
 />

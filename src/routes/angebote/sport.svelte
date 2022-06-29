@@ -7,7 +7,7 @@
 
 <body>
 	<div class="alignment">
-		<SportOverview detailed={true} />
+		<SportOverview />
 		<SportSenders />
 		<EntertainmentSenders />
 		<Inklusive />

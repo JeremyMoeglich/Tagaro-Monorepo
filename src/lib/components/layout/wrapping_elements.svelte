@@ -4,6 +4,7 @@
 	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
 
 	import {
+bonus,
 		bonus_string,
 		get_offer_note,
 		get_price_string
@@ -114,17 +115,20 @@
 						<h3>{@html item.title}</h3>
 						<MultiImageOverlay packages={item.package_ids} />
 						<ul>
-							<li>+ Für Internet, Sat- oder Kabel,</li>
-							<li>+ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu,</li>
-							<li>+ 12 Monatsabo, danach mtl. kündbar,</li>
-							<li>+ {bonus_string} Bonus on top</li>
+							<li>✓ Für Internet, Sat- oder Kabel,</li>
+							<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu,</li>
+							<li>✓ 12 Monatsabo, danach mtl. kündbar,</li>
+							{#if bonus !== 0}
+								<li>✓ {bonus_string} Bonus on top</li>
+							{/if}
+							<li>✓ 500 PAYBACK Basis Punkte</li>
 							<!-- 
-							<li><b>+ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
-							<li><b>+ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
-							<li><b>+ Bis 31.12.21 keine Abogebühren durch Sky</b></li>
-							<li><b>+ Sky Winteraktion: Bis zu 12 Monate Sky Sport gratis dazu</b></li>
-							<li><b>+ Bis zu € 100 Gutschrift von Sky</b>`</li>
-							<li><b>+ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b></li>
+							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
+							<li><b>✓ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
+							<li><b>✓ Bis 31.12.21 keine Abogebühren durch Sky</b></li>
+							<li><b>✓ Sky Winteraktion: Bis zu 12 Monate Sky Sport gratis dazu</b></li>
+							<li><b>✓ Bis zu € 100 Gutschrift von Sky</b>`</li>
+							<li><b>✓ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b></li>
 						-->
 							<li><mark>{get_offer_note(item.package_ids, true)}</mark></li>
 						</ul>
@@ -161,7 +165,7 @@
 
 <style lang="scss">
 	@import 'lib/style/gradient_text.scss';
-	$background_height: calc((900px - 6vw) * 1.3);
+	$background_height: calc((900px - 6vw) * 1.4);
 	$outer_padding: 70px;
 	$background_color: #f2f2f2;
 	$side_distance: max(25px, calc(15vw - 100px));

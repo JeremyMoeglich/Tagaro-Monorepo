@@ -70,7 +70,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
-		margin-top: 50px
+		margin-top: 50px;
 	}
 	.title {
 		@include gradient-text;

@@ -8,7 +8,7 @@
 
 <body>
 	<div class="alignment">
-		<CinemaOverview detailed={true} />
+		<CinemaOverview />
 		<CinemaSenders />
 		<EntertainmentSenders />
 		<Inklusive />

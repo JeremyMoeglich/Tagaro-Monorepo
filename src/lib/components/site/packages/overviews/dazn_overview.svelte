@@ -1,6 +1,5 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
-	export let detailed = false;
 </script>
 
 <PackageTemplate
@@ -15,6 +14,5 @@
 		'Abrechnung und Kundenservice aus einer Hand. Sky ist dein Ansprechpartner.'
 	]}
 	image={'/images/external/dazn_double.jpg'}
-	{detailed}
 	price_asset_ids={['dazn']}
 />

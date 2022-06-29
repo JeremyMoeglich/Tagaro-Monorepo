@@ -5,7 +5,7 @@
 </script>
 
 <div class="alignment">
-	<Overview4 detailed />
+	<Overview4 />
 	<Inklusive />
 	<AllOverviews />
 </div>

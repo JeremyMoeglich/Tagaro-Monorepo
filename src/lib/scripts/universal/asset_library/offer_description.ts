@@ -37,7 +37,7 @@ export const offer_ids = ['50premium', 'entertainmentplus15'] as const;
 
 export type offer_id = typeof offer_ids[number];
 
-const text_descriptions = '+ {savings} Preisvorteil';
+const text_descriptions = '✓ {savings} Preisvorteil';
 
 export const offer_descriptions: offer_descriptions_type = [
 	/*{

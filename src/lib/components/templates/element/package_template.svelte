@@ -1,20 +1,22 @@
 <script lang="ts">
-import GradientBadge from '$lib/components/elements/gradient_badge.svelte';
-import { indexed_package_assets, type package_id } from '$lib/scripts/universal/asset_library/assets/packages';
+	import GradientBadge from '$lib/components/elements/gradient_badge.svelte';
+	import { indexed_package_assets } from '$lib/scripts/universal/asset_library/assets/packages';
+	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
 
 	import type { priceable_asset_id } from '$lib/scripts/universal/asset_library/asset_types';
-import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
-import { typed_keys } from 'functional-utilities';
+	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
+	import { typed_keys } from 'functional-utilities';
 
 	export let title: string;
 	export let points: ReadonlyArray<string>;
 	export let image: string = undefined;
-	export let detailed: boolean;
 	export let price_asset_ids: priceable_asset_id[];
 
-	$: offer_string = price_asset_ids.every((id) => typed_keys(indexed_package_assets).includes(id as package_id)) ?
-		get_offer_note(price_asset_ids as package_id[]) :
-		'';
+	$: offer_string = price_asset_ids.every((id) =>
+		typed_keys(indexed_package_assets).includes(id as package_id)
+	)
+		? get_offer_note(price_asset_ids as package_id[])
+		: '';
 </script>
 
 <div class="package_overview">
@@ -23,25 +25,17 @@ import { typed_keys } from 'functional-utilities';
 			<h2 class="title">{title}</h2>
 			<ul class="points">
 				{#each points as point}
-					{#if point[0] === '#'}
-						{#if detailed}
-							<li>{point.slice(1)}</li>
-						{/if}
-					{:else}
-						<li>{point}</li>
-					{/if}
+					<li>{point}</li>
 				{/each}
 			</ul>
-			{#if detailed}
-				<h3>12 Monate nur {get_price_string(price_asset_ids, 'jahr')} mtl.*</h3>
-				<p>
-					(im Jahres-Abo, danach {get_price_string(price_asset_ids, 'monat')} mtl. im Monats-Abo)
-					<br />
-					Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
-				</p>
-				{#if offer_string}
-					<GradientBadge>{offer_string}</GradientBadge>
-				{/if}
+			<h3>12 Monate nur {get_price_string(price_asset_ids, 'jahr')} mtl.*</h3>
+			<p>
+				(im Jahres-Abo, danach {get_price_string(price_asset_ids, 'monat')} mtl. im Monats-Abo)
+				<br />
+				Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
+			</p>
+			{#if offer_string}
+				<GradientBadge>{offer_string}</GradientBadge>
 			{/if}
 		</div>
 

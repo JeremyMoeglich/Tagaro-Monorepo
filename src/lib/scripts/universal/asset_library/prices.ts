@@ -19,7 +19,7 @@ function to_price_string(v: number): string {
 export const aktivierung = 0;
 export const aktivierung_string = to_price_string(aktivierung);
 
-export const bonus = 20;
+export const bonus = 20 as number;
 export const bonus_string = to_price_string(bonus);
 
 const price_table = map_entries(indexed_priceable_assets, ([key, value]) => [key, value.price]);

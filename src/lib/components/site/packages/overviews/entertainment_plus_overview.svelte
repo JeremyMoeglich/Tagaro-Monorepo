@@ -1,7 +1,5 @@
 <script>
-	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
-	export let detailed = false;
 </script>
 
 <PackageTemplate
@@ -13,6 +11,5 @@
 		'Einfach. Alles mit einer Sprachfernbedienung'
 	]}
 	image={'/images/assets/packages/normal/entertainmentplus.jpg'}
-	{detailed}
 	price_asset_ids={['entertainmentplus']}
 />

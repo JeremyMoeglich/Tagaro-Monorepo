@@ -35,7 +35,7 @@
 </SideBySide>
 <SideBySide primary="right">
 	<span slot="right">
-		<h3 class="gradient_text">Peacock auf Sky</h3>
+		<h3 class="gradient_text">Peacock für alle Sky Q Kunden</h3>
 		<ul>
 			<li>
 				<b>Exklusive Peacock Originals,</b> darunter die aktuellen Serien "Saved by the Bell", "Rutherford
@@ -64,7 +64,7 @@
 </SideBySide>
 <SideBySide primary="left">
 	<span slot="left">
-		<h3 class="gradient_text">Discovery+ auf Sky Q</h3>
+		<h3 class="gradient_text">discovery+ 1 Jahr geschenkt als Extra für alle Sky Q Kunden</h3>
 		<ul>
 			<li>Der Streaming Dienst für großartige Real-Life Unterhaltung die du lieben wirst</li>
 			<li>Mehr als 10.000 Inhalte aller Discovery Sender jederzeit auf Abruf verfügbar</li>
@@ -72,6 +72,10 @@
 				Premium Inhalte wie BBC Dokus, discovery+ Originals, Eurosport HD und viele mehr inklusive
 			</li>
 		</ul>
+		<p>
+			1 Jahr lang gratis für alle Sky Q Kunden. Sky Abo abschließen und Gutschein sichern.
+			Aktivierung der App auf dem Sky Q Receiver mit Anmeldung bei discovery+ mittels QR-Code.
+		</p>
 	</span>
 	<span slot="right">
 		<img src="/images/visuals/sky_22-06_discovery-plus_teaser.webp" alt="" />

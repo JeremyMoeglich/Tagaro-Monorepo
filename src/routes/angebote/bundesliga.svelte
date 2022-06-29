@@ -7,7 +7,7 @@
 
 <body>
 	<div class="alignment">
-		<BundesligaOverview detailed={true} />
+		<BundesligaOverview />
 		<BundesligaSenders />
 		<EntertainmentSenders />
 		<Inklusive />
