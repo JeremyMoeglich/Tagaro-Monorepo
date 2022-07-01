@@ -10,7 +10,7 @@
 		'sport',
 		'bundesliga'
 	])} Sparvorteil erhalten.`}
-	subtitle0={'Bis zum 30.6 verlängert durch Sky.'}
+	
 	points={[
 		'50% auf die Pakete Cinema, Fußball Bundesliga und/oder Sport erhalten*',
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`
