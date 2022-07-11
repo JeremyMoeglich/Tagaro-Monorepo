@@ -5,7 +5,7 @@
 
 <body>
 	<Senders
-		text="Sender im Bundesliga Paket:"
+		text="Sender im Kids Paket:"
 		content={[
 			'94_sky_logo_boomerang.png',
 			'95_sky_logo_cartoonnetwork_w.png',
