@@ -10,7 +10,6 @@
 		'sport',
 		'bundesliga'
 	])} Sparvorteil erhalten.`}
-	
 	points={[
 		'50% auf die Pakete Cinema, Fußball Bundesliga und/oder Sport erhalten*',
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`

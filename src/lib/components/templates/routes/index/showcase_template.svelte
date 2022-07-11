@@ -4,9 +4,18 @@
 	import { load_form } from '$lib/scripts/frontend/load_aboformular';
 	import AboformularButton from '$lib/components/elements/interactive/buttons/aboformular_button.svelte';
 	import { aboformular } from '$lib/scripts/frontend/urls';
+	import Enddate from '$lib/components/generators/enddate.svelte';
+	import type { asset_id } from '$lib/scripts/universal/asset_library/asset_types';
+	import type { normal_package_id } from '$lib/scripts/universal/asset_library/normal_assets';
+	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_library/priceable_asset';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
-	export let subtitle0 = '';
+	export let enddate:
+		| {
+				date: Date;
+				format: string;
+		  }
+		| undefined = undefined;
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
 	export let subtitle2 =
 		'Wir sind autorisierter Sky Onlinehändler und stehen für eine schnelle & zuverlässige Bearbeitung.';
@@ -27,8 +36,15 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/praemie.svg'];
-	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.svg'];
+	const left_badges = ['/images/badges/praemie.svg'] as const;
+	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.svg'] as const;
+	const showcase_assets: readonly normal_package_id[] = [
+		'entertainmentplus',
+		'cinema',
+		'sport',
+		'bundesliga',
+		'kids'
+	] as const;
 </script>
 
 <div class="alignment">
@@ -48,7 +64,11 @@
 		</button>
 		<div class="right_side">
 			<h1>{title}*</h1>
-			<h2>{subtitle0}</h2>
+			{#if enddate}
+				<h2>
+					<Enddate enddate={enddate.date} format={enddate.format} />
+				</h2>
+			{/if}
 			<h2>{subtitle1}</h2>
 			<h3>{subtitle2}</h3>
 
@@ -56,7 +76,7 @@
 				<img src={primary_image} alt="" class="primary_image" />
 			{:else}
 				<div class="package_overview">
-					{#each packages_assets as asset}
+					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
 						<a href={`/angebote/${asset.id}`}>
 							<img src={`/images/assets/packages/normal/${asset.id}.jpg`} alt={asset.id} />
 						</a>
