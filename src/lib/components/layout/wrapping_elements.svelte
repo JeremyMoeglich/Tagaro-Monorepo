@@ -4,7 +4,7 @@
 	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
 
 	import {
-bonus,
+		bonus,
 		bonus_string,
 		get_offer_note,
 		get_price_string

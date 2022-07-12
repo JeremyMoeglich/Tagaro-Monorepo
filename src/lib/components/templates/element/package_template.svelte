@@ -7,7 +7,8 @@
 	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import { typed_keys } from 'functional-utilities';
 	import SquarePackageList from '$lib/components/generators/square_package_list.svelte';
-	import { imaged_package_ids, type imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
+	import type { imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
+	import { imaged_package_ids } from '$lib/scripts/universal/asset_library/imaged_packages';
 
 	export let title: string;
 	export let points: ReadonlyArray<string>;

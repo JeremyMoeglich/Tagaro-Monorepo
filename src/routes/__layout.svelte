@@ -28,7 +28,7 @@
 			'2 Sky Wunschpakete': '/angebote/2_pakete',
 			'3 Sky Wunschpakete': '/angebote/3_pakete',
 			'4 Sky Pakete oder mehr': '/angebote/4_oder_mehr_pakete',
-			'Sky Entertainment': '/angebote/entertainment',
+			'Sky Entertainment': '/angebote/entertainment'
 		},
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',

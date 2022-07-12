@@ -1,6 +1,6 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
-import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
+	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 </script>
 
 <PackageTemplate

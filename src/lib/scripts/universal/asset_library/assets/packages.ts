@@ -2,7 +2,13 @@ import { dynamic_to_static_assets } from '../priceable_asset_types';
 import type { Priceable_Asset } from '../priceable_asset_types';
 import { index_by } from 'functional-utilities';
 
-export const package_ids = ['entertainment', 'entertainmentplus', 'sport', 'cinema', 'bundesliga'] as const;
+export const package_ids = [
+	'entertainment',
+	'entertainmentplus',
+	'sport',
+	'cinema',
+	'bundesliga'
+] as const;
 
 export type package_id = typeof package_ids[number];
 

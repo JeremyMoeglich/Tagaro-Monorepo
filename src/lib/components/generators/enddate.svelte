@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/env';
-    import dateFormat from 'dateformat';
+	import dateFormat from 'dateformat';
 
 	const currentdate = new Date();
 
@@ -20,8 +20,5 @@
 </script>
 
 {#if !hidden}
-	{format.replaceAll(
-		'%',
-		dateFormat(enddate, 'd.m')
-	)}
+	{format.replaceAll('%', dateFormat(enddate, 'd.m'))}
 {/if}

@@ -10,17 +10,14 @@
 		sp_number: ''
 	};
 
-	$: fields, () => {
-		if (
-			fields.sp_accept ||
-			fields.sp_email === '' ||
-			fields.sp_number === ''
-		) {
-			is_spam = true;
-		} else {
-			is_spam = false;
-		}
-	}
+	$: fields,
+		() => {
+			if (fields.sp_accept || fields.sp_email === '' || fields.sp_number === '') {
+				is_spam = true;
+			} else {
+				is_spam = false;
+			}
+		};
 </script>
 
 <div style="display:none !important;">

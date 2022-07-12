@@ -3,14 +3,7 @@ import { indexed_priceable_assets } from './priceable_asset';
 import type { Price } from './priceable_asset_types';
 import type { priceable_asset_id } from './asset_types';
 import { map_entries, typed_entries, typed_from_entries } from 'functional-utilities';
-import {
-	cloneDeep,
-	intersection as intersect,
-	isEqual,
-	minBy,
-	sortBy,
-	sum
-} from 'lodash-es';
+import { cloneDeep, intersection as intersect, isEqual, minBy, sortBy, sum } from 'lodash-es';
 import { empty_offer, indexed_offers, offer_applicable, offer_ids } from './offer_description';
 import type { offer_id, offer_description_type } from './offer_description';
 import { asset_sets } from './sets';
@@ -50,7 +43,7 @@ export function get_offer_price(
 	offer.actions.forEach((action) => {
 		const set = asset_sets[action.set];
 		const intersection = intersect(assets, set);
-		intersection.forEach((asset_id) => {
+		intersection.forEach((asset_id: priceable_asset_id) => {
 			const operation = action.absolute
 				? (a: number, b: number) => a + b
 				: (a: number, b: number) => a * b;

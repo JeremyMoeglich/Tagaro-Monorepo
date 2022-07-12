@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { hasProperty } from 'functional-utilities'
+	import { hasProperty } from 'functional-utilities';
 
 	export let box_height = 45;
-	export let text;
-	export let name;
+	export let text: string;
+	export let name: string;
 	export let required = true;
 	export let type = 'text';
 	export let multiline = false;

@@ -1,5 +1,5 @@
 <script lang="ts">
-import { goto } from '$app/navigation';
+	import { goto } from '$app/navigation';
 
 	import Button from '$lib/components/elements/interactive/buttons/button.svelte';
 
@@ -35,9 +35,20 @@ import { goto } from '$app/navigation';
 </script>
 
 <form class="contact_form" method="POST" on:submit|preventDefault={submit_form}>
-	<SpamField bind:is_spam={form_values.is_spam}/>
-	<InputField text={'Name*'} name="name" type="text" autocomplete="name" bind:value={form_values.name} />
-	<InputField text={'E-Mail Adresse*'} name="email" autocomplete="email" bind:value={form_values.email} />
+	<SpamField bind:is_spam={form_values.is_spam} />
+	<InputField
+		text={'Name*'}
+		name="name"
+		type="text"
+		autocomplete="name"
+		bind:value={form_values.name}
+	/>
+	<InputField
+		text={'E-Mail Adresse*'}
+		name="email"
+		autocomplete="email"
+		bind:value={form_values.email}
+	/>
 	<InputField
 		text={'Telefonnummer'}
 		name="number"
@@ -46,7 +57,13 @@ import { goto } from '$app/navigation';
 		autocomplete="tel"
 		bind:value={form_values.number}
 	/>
-	<InputField text={'Nachricht*'} box_height={90} name="message" multiline={true} bind:value={form_values.message}/>
+	<InputField
+		text={'Nachricht*'}
+		box_height={90}
+		name="message"
+		multiline={true}
+		bind:value={form_values.message}
+	/>
 	<Button text="Absenden" />
 </form>
 

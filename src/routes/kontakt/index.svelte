@@ -1,4 +1,3 @@
-
 <script lang="ts">
 	//import InputField from '$lib/components/layout_components/input_field.svelte';
 	import KontaktForm from '$lib/components/site/routes/kontakt/contact_form.svelte';
