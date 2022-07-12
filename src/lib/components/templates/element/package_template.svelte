@@ -67,7 +67,7 @@
 		flex-wrap: wrap;
 	}
 	.title,
-	.description :global(h3) {
+	:global(.description h3) {
 		@include gradient-text;
 	}
 	.points {

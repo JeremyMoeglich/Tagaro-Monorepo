@@ -65,17 +65,17 @@
 	.main_text {
 		max-width: 90%;
 	}
-	.main_text :global(ul) {
+	:global(.main_text ul) {
 		list-style: none;
 		line-height: 150%;
 		padding-left: 0px;
 	}
-	.main_text :global(h3) {
+	:global(.main_text h3) {
 		@include gradient-text;
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
-	.main_text :global(.slot > h3) {
+	:global(.main_text .slot > h3) {
 		background: linear-gradient(to right, rgb(245, 0, 0) 0%, rgb(255, 0, 106) 100%);
 		-webkit-background-clip: text;
 		background-clip: text;
