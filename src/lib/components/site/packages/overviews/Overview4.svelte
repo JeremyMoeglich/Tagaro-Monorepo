@@ -1,5 +1,6 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
+import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 </script>
 
 <PackageTemplate
@@ -10,8 +11,8 @@
 		'Sky Entertainment + Cinema + Sport + Bundesliga inkl. HD',
 		'Sky Q Receiver mit 1TB Festplatte, Ultra HD fähig und Sky On Demand Zugang',
 		'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!',
-		'UHD optional für € 5 mtl.',
-		'Sky Kids optional für € 5 mtl.'
+		`UHD optional für ${get_price_string(['uhd'], 'jahr')} mtl.`,
+		`Sky Kids optional für ${get_price_string(['kids'], 'jahr')} mtl.`
 	]}
 	price_asset_ids={['entertainmentplus', 'cinema', 'sport', 'bundesliga']}
 />

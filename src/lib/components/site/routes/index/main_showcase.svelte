@@ -11,10 +11,11 @@
 		'bundesliga'
 	])} Sparvorteil`}
 	points={[
-		'50% auf die Pakete Cinema, Fußball Bundesliga und/oder Sport erhalten*',
+		'Bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo erhalten*',
+		'Zusätzlich 500 PAYBACK Punkte, wenn Sie sammeln*',
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`
 	]}
-	side_images={['/images/external/dazn.svg']}
+	side_images={['/images/badges/dazn.svg']}
 />
 <!-- <ShowcaseLayout
 	title={'Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis zu € 125* erhalten.'}

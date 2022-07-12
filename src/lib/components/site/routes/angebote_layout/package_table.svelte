@@ -19,7 +19,7 @@
 					<p>
 						<b
 							>{get_price_string(row, 'jahr')} mtl. im Jahres-Abo{#if get_offer_note(row)}<br
-								/><mark>({get_offer_note(row)})</mark>,
+								/><mark>{get_offer_note(row)}</mark>,
 							{:else},
 							{/if}</b
 						>
@@ -32,27 +32,27 @@
 	<div class="zubuchoptionen" id="zubuchoptionen">
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption image="/images/assets/zubuchoptionen/uhd.png">
-			<b>+UHD € 5 mtl. (für Sat oder Kabel-Empfang)</b>
+			<b>+UHD {get_price_string(['uhd'], 'jahr')} mtl. (für Sat oder Kabel-Empfang)</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/dazn.svg">
 			<b>DAZN jährlich + {get_price_string(['dazn'], 'jahr')} mtl. </b>oder<b> <br /> DAZN monatlich + {get_price_string(['dazn'], 'monat')} mtl.</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/multiscreen.png">
-			<b>Multiscreen + € 10 mtl. <br /></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br /> 2. Sky Q Receiver
+			<b>Multiscreen + {get_price_string(['multiscreen'], 'jahr')} mtl. <br /></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br /> 2. Sky Q Receiver
 			für einmalig € 49 oder 1 Sky Q Mini für einmalig € 29 (zur Leihe)
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/kids.png">
-			<b>Sky Kids + € 5 mtl.</b>
+			<b>Sky Kids + {get_price_string(['kids'], 'jahr')} mtl.</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/trendsports.png">
-			<b>trendSports + € 5,99 mtl.</b>
+			<b>trendSports + {get_price_string(['trendsports'], 'jahr')} mtl.</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/plus18.png">
 			<b>18+ für Blue Movie € 0</b><br /> einmalige Versandpauschale 18+ PIN
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/NetflixSDHD.png">
-			<b>Netflix Standard-Abo, HD/2 Streams + € 5 mtl.</b> oder <br />
-			<b>Netflix Premium-Abo, UHD/4 Streams + € 10 mtl.</b>
+			<b>Netflix Standard-Abo, HD/2 Streams + {get_price_string(['netflixstandard'], 'jahr')} mtl.</b> oder <br />
+			<b>Netflix Premium-Abo, UHD/4 Streams + {get_price_string(['netflixpremium'], 'jahr')} mtl.</b>
 		</Zubuchoption>
 	</div>
 </div>

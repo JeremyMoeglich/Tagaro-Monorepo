@@ -22,7 +22,7 @@
 							['entertainmentplus'],
 							'jahr'
 						)}
-						<br /> <b> in Kombination mit</b>
+						<br /> <b class="combine"> in Kombination mit</b>
 					</li>
 					<li>- Sky Sport mtl. {get_price_string(['entertainmentplus', 'sport'], 'jahr')}</li>
 					<li>- Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}</li>
@@ -32,7 +32,7 @@
 							'jahr'
 						)}
 					</li>
-					<li>- Sky Kids mtl. € 25</li>
+					<li>- Sky Kids mtl. {get_price_string(['entertainmentplus', 'kids'], 'jahr')}</li>
 					<li>
 						- Sky Sport + Sky Cinema mtl. {get_price_string(
 							['entertainmentplus', 'cinema', 'sport'],
@@ -61,7 +61,7 @@
 				<ul>
 					<li>
 						- Sky Entertainment für mtl. {get_price_string(['entertainment'], 'jahr')} <br />
-						<b>in Kombination mit</b>
+						<b class="combine">in Kombination mit</b>
 					</li>
 					<li>- Sky Sport mtl. {get_price_string(['entertainment', 'sport'], 'jahr')}</li>
 					<li>
@@ -105,15 +105,25 @@
 				{/if}
 				<ul>
 					<li><b>Optional:</b></li>
-					<li>- UHD mtl. € 5 (für Sat oder Kabel-Empfang)</li>
-					<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
+					<li>- UHD mtl. {get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
 					<li>
-						- Multiscreen für € 10 mtl. - Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver
-						für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 29 (zur Leihe)
+						- DAZN jährlich für {get_price_string(['dazn'], 'jahr')} mtl. oder DAZN monatlich für {get_price_string(
+							['dazn'],
+							'monat'
+						)} mtl.
 					</li>
-					<li>- Netflix Standard-Abo, HD/2 Streams (+ € 5 mtl.)</li>
-					<li>- Netflix Premium-Abo, UHD/4 Streams (+ € 10 mtl.)</li>
-					<li>- trendSports mtl. € 5,99</li>
+					<li>
+						- Multiscreen für {get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus für
+						3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 29
+						(zur Leihe)
+					</li>
+					<li>
+						- Netflix Standard-Abo, HD/2 Streams (+ {get_price_string(['netflixstandard'], 'jahr')} mtl.)
+					</li>
+					<li>
+						- Netflix Premium-Abo, UHD/4 Streams (+ {get_price_string(['netflixpremium'], 'jahr')} mtl.)
+					</li>
+					<li>- trendSports mtl. {get_price_string(['trendsports'], 'jahr')}</li>
 					<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
 					<!-- <li>
 						- UHD für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 5 mtl. mit Entertainment

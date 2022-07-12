@@ -157,12 +157,6 @@ export const offer_descriptions: offer_descriptions_type = [
 				}
 			],
 			[
-				['entertainment', 'sport', 'cinema'],
-				{
-					jahr: 30
-				}
-			],
-			[
 				['entertainment', 'sport', 'bundesliga'],
 				{
 					jahr: 25
