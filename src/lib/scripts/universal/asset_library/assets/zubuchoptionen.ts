@@ -1,19 +1,20 @@
 import { dynamic_to_static_assets } from '../priceable_asset_types';
 import type { Priceable_Asset } from '../priceable_asset_types';
 
-enum zubuchoption_id_enum {
-	uhd,
-	dazn,
-	multiscreen,
-	kids,
-	trendsports,
-	plus18,
-	netflixstandard,
-	netflixpremium,
-	hdplus4monategratis,
-	hdplus
-}
-export type zubuchoption_id = keyof typeof zubuchoption_id_enum;
+export const zubuchoption_ids = [
+	'uhd',
+	'dazn',
+	'multiscreen',
+	'kids',
+	'trendsports',
+	'plus18',
+	'netflixstandard',
+	'netflixpremium',
+	'hdplus4monategratis',
+	'hdplus'
+] as const;
+
+export type zubuchoption_id = typeof zubuchoption_ids[number];
 
 const zubuchoption_image_location = '/images/assets/zubuchoptionen/';
 

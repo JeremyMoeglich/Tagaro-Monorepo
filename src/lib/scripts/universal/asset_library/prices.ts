@@ -7,6 +7,8 @@ import { cloneDeep, intersection as intersect, isEqual, minBy, sortBy, sum } fro
 import { empty_offer, indexed_offers, offer_applicable, offer_ids } from './offer_description';
 import type { offer_id, offer_description_type } from './offer_description';
 import { asset_sets } from './sets';
+import { zubuchoption_ids } from './assets/zubuchoptionen';
+import type { zubuchoption_id } from './assets/zubuchoptionen';
 
 function to_price_string(v: number): string {
 	let str = '€ ' + v.toFixed(2).replace('.', ',');
@@ -31,10 +33,15 @@ export function get_offer_price(
 	const current_price_table = cloneDeep(price_table);
 
 	for (const overwrite of offer.overwrites) {
-		if (isEqual(sortBy(overwrite[0]), sortBy(assets))) {
+		const filtered_zubuchoptionen = assets.filter((id) =>
+			zubuchoption_ids.includes(id as zubuchoption_id)
+		);
+		const other_assets = assets.filter((id) => !zubuchoption_ids.includes(id as zubuchoption_id));
+		if (isEqual(sortBy(overwrite[0]), sortBy(other_assets))) {
 			const price = get_offer_price(empty_offer, assets);
+			const zubuchoptionen_price = get_offer_price(empty_offer, filtered_zubuchoptionen);
 			for (const [timeframe, value] of typed_entries(overwrite[1])) {
-				price[timeframe] = value;
+				price[timeframe] = value + zubuchoptionen_price[timeframe];
 			}
 			return price;
 		}

@@ -2,6 +2,8 @@ import { aboformular } from '$lib/scripts/frontend/urls';
 import { index_by } from 'functional-utilities';
 import { intersection as intersect, isEqual, sortBy } from 'lodash-es';
 import type { package_id } from './assets/packages';
+import { zubuchoption_ids } from './assets/zubuchoptionen';
+import type { zubuchoption_id } from './assets/zubuchoptionen';
 import type { asset_id, priceable_asset_id } from './asset_types';
 import type { Price } from './priceable_asset_types';
 import { asset_sets } from './sets';
@@ -229,6 +231,7 @@ export function offer_applicable(offer_id: offer_id, asset_ids: ReadonlyArray<as
 		throw new Error('Invalid offer_id');
 	}
 	const offer = indexed_offers[offer_id];
+	asset_ids = asset_ids.filter((id) => !zubuchoption_ids.includes(id as zubuchoption_id));
 
 	for (const overwrite of offer.overwrites) {
 		if (isEqual(sortBy(overwrite[0]), sortBy(asset_ids))) {

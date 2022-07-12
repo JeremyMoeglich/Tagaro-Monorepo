@@ -11,5 +11,5 @@
 		'Mit den Sky Konferenzen und Highlight-Videos kein Tor verpassen'
 	]}
 	image={'/images/assets/packages/normal/bundesliga.jpg'}
-	price_asset_ids={['entertainmentplus', 'bundesliga']}
+	price_asset_ids={['entertainment', 'bundesliga']}
 />

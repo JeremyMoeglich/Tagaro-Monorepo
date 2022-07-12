@@ -427,3 +427,11 @@
 		<br />
 	</span>
 </ExpandableBox>
+
+<style>
+	.combine {
+		display: inline-block;
+		margin-top: 7px;
+		margin-bottom: 10px;
+	}
+</style>
