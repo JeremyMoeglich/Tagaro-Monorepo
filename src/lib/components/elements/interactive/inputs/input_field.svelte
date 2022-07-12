@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+	import { hasProperty } from 'functional-utilities'
+
 	export let box_height = 45;
 	export let text;
 	export let name;
@@ -6,6 +8,19 @@
 	export let type = 'text';
 	export let multiline = false;
 	export let autocomplete = 'on';
+	export let value = '';
+
+	function onInput(target: EventTarget) {
+		if (!hasProperty(target, 'value')) {
+			console.error('input_field: onInput: target.value is undefined');
+			return;
+		}
+		if (typeof target.value !== 'string') {
+			console.error('input_field: onInput: target.value is not a string');
+			return;
+		}
+		value = target.value;
+	}
 </script>
 
 <div class="main_container">
@@ -23,6 +38,7 @@
 			{required}
 			placeholder=" "
 			{autocomplete}
+			on:change={(e) => onInput(e.target)}
 		/>
 	{:else}
 		<input

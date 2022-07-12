@@ -1,11 +1,19 @@
 <script lang="ts">
-	import { packages_assets } from '$lib/scripts/universal/asset_library/assets/packages';
 	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 	import { load_form } from '$lib/scripts/frontend/load_aboformular';
 	import AboformularButton from '$lib/components/elements/interactive/buttons/aboformular_button.svelte';
 	import { aboformular } from '$lib/scripts/frontend/urls';
+	import Enddate from '$lib/components/generators/enddate.svelte';
+	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_library/priceable_asset';
+	import type { imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
+	export let enddate:
+		| {
+				date: Date;
+				format: string;
+		  }
+		| undefined = undefined;
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
 	export let subtitle2 =
 		'Wir sind autorisierter Sky Onlinehändler und stehen für eine schnelle & zuverlässige Bearbeitung.';
@@ -26,8 +34,15 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/praemie.svg'];
-	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.svg'];
+	const left_badges = ['/images/badges/praemie.svg'] as const;
+	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.svg'] as const;
+	const showcase_assets: readonly imaged_package_id[] = [
+		'entertainmentplus',
+		'cinema',
+		'sport',
+		'bundesliga',
+		'kids'
+	] as const;
 </script>
 
 <div class="alignment">
@@ -46,7 +61,12 @@
 			<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
 		</button>
 		<div class="right_side">
-			<h1>{title}</h1>
+			<h1>{title}*</h1>
+			{#if enddate}
+				<h2>
+					<Enddate enddate={enddate.date} format={enddate.format} />
+				</h2>
+			{/if}
 			<h2>{subtitle1}</h2>
 			<h3>{subtitle2}</h3>
 
@@ -54,7 +74,7 @@
 				<img src={primary_image} alt="" class="primary_image" />
 			{:else}
 				<div class="package_overview">
-					{#each packages_assets as asset}
+					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
 						<a href={`/angebote/${asset.id}`}>
 							<img src={`/images/assets/packages/normal/${asset.id}.jpg`} alt={asset.id} />
 						</a>
@@ -97,6 +117,7 @@
 		align-items: center;
 		text-decoration: none;
 		color: black;
+		gap: 10px;
 		img {
 			width: 150px;
 			height: 150px;
@@ -184,10 +205,12 @@
 	}
 	h1 {
 		@include gradient-text;
+		margin-bottom: 5px;
 	}
 	h2 {
 		color: #4a4a4a;
 		margin-bottom: 10px;
+		margin-top: 0px;
 	}
 	h3 {
 		color: #868686;
@@ -198,6 +221,6 @@
 	h2,
 	h3 {
 		text-align: center;
-		max-width: min(90vw, 1000px);
+		max-width: min(90vw, 1100px);
 	}
 </style>

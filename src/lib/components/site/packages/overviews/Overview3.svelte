@@ -1,8 +1,5 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
-	export let detailed = false;
-	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
-	import GradientBadge from '../../../elements/gradient_badge.svelte';
 </script>
 
 <PackageTemplate
@@ -16,12 +13,5 @@
 		'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!',
 		'UHD optional für € 5 mtl.'
 	]}
-	{detailed}
->
-	<h3>12 Monate ab {get_price_string(['entertainmentplus', 'cinema', 'sport'], 'jahr')} mtl.</h3>
-	<p>
-		im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf Entertainment + Cinema
-		+ Sport
-	</p>
-	<GradientBadge>50% Rabatt auf Premiumpakete</GradientBadge>
-</PackageTemplate>
+	price_asset_ids={['entertainmentplus', 'cinema', 'sport']}
+/>

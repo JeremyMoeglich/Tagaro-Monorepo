@@ -5,10 +5,10 @@
 		indexed_offers,
 		offer_descriptions
 	} from '$lib/scripts/universal/asset_library/offer_description';
-	import type { offer_id } from '$lib/scripts/universal/asset_library/offer_description';
+	import type { offer_id as offer_id_type } from '$lib/scripts/universal/asset_library/offer_description';
 
 	import { get_offer_price } from '$lib/scripts/universal/asset_library/prices';
-	let offer_id: offer_id | undefined =
+	let offer_id: offer_id_type | undefined =
 		offer_descriptions.length === 1
 			? offer_descriptions[0].id
 				? offer_descriptions[0].id

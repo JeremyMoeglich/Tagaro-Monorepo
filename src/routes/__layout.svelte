@@ -1,26 +1,17 @@
-<script context="module" lang="ts">
-	import type { Load } from '@sveltejs/kit';
-	export const load: Load = async ({ url }) => {
-		return {
-			props: {
-				route: url.pathname
-			}
-		};
-	};
-</script>
-
 <script lang="ts">
+	import '../app.css';
 	import '../global.scss';
 	import Footer from '$lib/components/site/routes/layout/footer/footer.svelte';
 	import * as urls from '$lib/scripts/frontend/urls';
 	import PageTransition from '$lib/components/internal/PageTransition.svelte';
 
-	import InfoBanner from '$lib/components/site/overlays/info_banner.svelte';
+	import InfoBanner from '$lib/components/site/routes/layout/info_banner.svelte';
 
 	import type { preferences_keys_type, preferences_obj } from '$lib/scripts/frontend/preferences';
 	import { preferences_keys } from '$lib/scripts/frontend/preferences';
 	import { typed_entries } from 'functional-utilities';
 	import Header from '$lib/components/site/routes/layout/header/header.svelte';
+	import { page } from '$app/stores';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -36,7 +27,8 @@
 			'Sky Cinema': '/angebote/cinema',
 			'2 Sky Wunschpakete': '/angebote/2_pakete',
 			'3 Sky Wunschpakete': '/angebote/3_pakete',
-			'4 Sky Pakete oder mehr': '/angebote/4_oder_mehr_pakete'
+			'4 Sky Pakete oder mehr': '/angebote/4_oder_mehr_pakete',
+			'Sky Entertainment': '/angebote/entertainment',
 		},
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
@@ -65,11 +57,12 @@
 		}
 	}
 
-	export let route: string;
+	let route = $page.url.pathname;
+	$: route = $page.url.pathname;
 </script>
 
 <svelte:head>
-	{#if preferences_object['analytics']}
+	{#if preferences_object.analytics}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-70CD2JS6R8"></script>
 		<script>
@@ -82,7 +75,7 @@
 			gtag('config', 'G-70CD2JS6R8');
 		</script>
 	{/if}
-	{#if preferences_object['social Media']}
+	{#if preferences_object.socialmedia}
 		<script
 			id="trustamiwidget"
 			type="text/javascript"
@@ -111,9 +104,10 @@
 	<meta name="author" content="Jeremy Möglich" />
 </svelte:head>
 
-{#if preferences_object['social Media']}
+{#if preferences_object.socialmedia}
 	{@html '<div class="widget_container_overlay" />'}
 {/if}
+
 <body>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
@@ -150,6 +144,7 @@
 					{#if pair[1] instanceof Object}
 						{#if 'index' in pair[1]}
 							<a
+								sveltekit:prefetch
 								class="nav_element_mobile nav_element_hover_mobile no_margin"
 								on:click={close_sidebar}
 								href={pair[1]['index']}
@@ -159,6 +154,7 @@
 						{/if}
 					{:else}
 						<a
+							sveltekit:prefetch
 							class="nav_element_mobile nav_element_hover_mobile"
 							title={pair[0] + ' öffnen'}
 							on:click={close_sidebar}
@@ -179,6 +175,7 @@
 						{#each typed_entries(pair[1]) as subpair}
 							{#if subpair[0] !== 'index'}
 								<a
+									sveltekit:prefetch
 									class="nav_element_mobile nav_element_hover_mobile"
 									on:click={close_sidebar}
 									href={subpair[1]}

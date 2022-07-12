@@ -1,10 +1,15 @@
 <script lang="ts">
 	import ShowcaseTemplate from '$lib/components/templates/routes/index/showcase_template.svelte';
-	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
+	import { bonus_string, get_savings_string } from '$lib/scripts/universal/asset_library/prices';
 </script>
 
 <ShowcaseTemplate
-	title={'Jetzt Sky Wunschpakete buchen und 50% auf Cinema, Bundesliga und Sport erhalten'}
+	title={`Jetzt Sky Wunschpakete buchen und bis zu ${get_savings_string([
+		'entertainmentplus',
+		'cinema',
+		'sport',
+		'bundesliga'
+	])} Sparvorteil erhalten.`}
 	points={[
 		'50% auf die Pakete Cinema, Fußball Bundesliga und/oder Sport erhalten*',
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`

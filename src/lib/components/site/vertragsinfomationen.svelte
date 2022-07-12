@@ -3,12 +3,11 @@
 </script>
 
 <VertragsinfomationenTemplate>
-	<h3>50% auf Cinema, Fußball Bundesliga und/oder Sport von Sky:</h3>
+	<h3>Ersparnis:</h3>
 	<p>
-		Die monatlichen Paketpreise, die das Cinema, Fußball Bundesliga und/oder das Sport Paket
-		enthalten, wurden reduziert. Sie erhalten auf das Cinema, Fußball Bundesliga und/oder das Sport
-		Paket einen Rabatt von 50% auf den monatlichen Betrag während der Mindestvertragslaufzeit von
-		Sky gewährt. Die reduzierten Monatsbeträge finden Sie in unserem Angebot.
+		Die Ersparnis bis zu € 156 ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im
+		Vergleich zum Sky Standard-Jahresabonnementspreis sowie aus dem rabattierten DAZN
+		Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis.
 	</p>
 </VertragsinfomationenTemplate>
 

@@ -35,7 +35,7 @@
 					<li>- Sky Kids mtl. € 25</li>
 					<li>
 						- Sky Sport + Sky Cinema mtl. {get_price_string(
-							['entertainmentplus', 'cinema'],
+							['entertainmentplus', 'cinema', 'sport'],
 							'jahr'
 						)}
 					</li>

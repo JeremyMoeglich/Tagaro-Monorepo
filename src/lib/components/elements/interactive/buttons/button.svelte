@@ -1,16 +1,19 @@
 <script lang="ts">
+	import type { MaybePromise } from '@sveltejs/kit/types/internal';
+	import { noop } from 'svelte/internal';
+
 	export let text: string;
 	export let padding_x = '30px';
 	export let padding_y = '20px';
-	export let route: string | undefined = undefined;
+	export let on_click: string | undefined | (() => MaybePromise<unknown | void>) = undefined;
 	export let reversed = false;
 
 	$: style = `padding: ${padding_y} ${padding_x};`;
 </script>
 
-<button class="outer">
-	{#if route}
-		<a href={route} {style} class={reversed ? 'white' : 'blue'}>
+<button class="outer" on:click={on_click && typeof on_click === 'function' ? on_click : noop}>
+	{#if on_click && typeof on_click === 'string'}
+		<a href={on_click} {style} class={reversed ? 'white' : 'blue'}>
 			{text}
 		</a>
 	{:else}

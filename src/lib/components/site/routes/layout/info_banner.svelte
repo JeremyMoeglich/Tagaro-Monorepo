@@ -8,11 +8,11 @@
 		set_preferences
 	} from '$lib/scripts/frontend/preferences';
 	import type { preferences_obj } from '$lib/scripts/frontend/preferences';
-	import { cloneDeep } from 'lodash-es';
-	import Datenschutz from '../service/datenschutz.svelte';
-	import Widerrufsrecht from '../service/widerrufsrecht.svelte';
-	import Impressum from '../service/impressum.svelte';
+	import Datenschutz from '../../service/datenschutz.svelte';
+	import Widerrufsrecht from '../../service/widerrufsrecht.svelte';
+	import Impressum from '../../service/impressum.svelte';
 	import Button from '$lib/components/elements/interactive/buttons/button.svelte';
+	import { cloneDeep } from 'lodash-es';
 
 	const disabled_routes = ['/service'];
 

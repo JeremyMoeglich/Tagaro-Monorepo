@@ -7,7 +7,7 @@
 
 <body>
 	<div class="alignment">
-		<EntertainmentOverview detailed={true} />
+		<EntertainmentOverview />
 		<EntertainmentSenders />
 		<Inklusive />
 	</div>

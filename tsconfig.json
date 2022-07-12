@@ -2,8 +2,8 @@
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
 		"moduleResolution": "node",
-		"module": "es2020",
-		"lib": ["es2020", "DOM", "dom.iterable"],
+		"module": "ESNext",
+		"lib": ["ESNext", "DOM", "dom.iterable"],
 		"target": "es2017",
 		/**
 			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript

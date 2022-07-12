@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
-	import { package_combinations, type package_id } from '$lib/scripts/universal/asset_library/assets/packages';
+	import { package_combinations } from '$lib/scripts/universal/asset_library/assets/packages';
 	import Zubuchoption from '$lib/components/templates/element/zubuchoption.svelte';
 </script>
 
@@ -10,7 +10,7 @@
 		{#each package_combinations as row}
 			<tr>
 				{#each row as element}
-					<td> <img src={`/images/assets/packages/square/${element}.png`} alt="" /> </td>
+					<td> <img src={`/images/assets/packages/square/${element}.webp`} alt="" /> </td>
 				{/each}
 				{#if row.length < 4}
 					<td colspan={4 - row.length} />
@@ -35,7 +35,7 @@
 			<b>+UHD € 5 mtl. (für Sat oder Kabel-Empfang)</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/dazn.svg">
-			<b>DAZN jährlich + € 24,99 mtl. </b>oder<b> <br /> DAZN monatlich + € 29,99 mtl.</b>
+			<b>DAZN jährlich + € 18,99 mtl. </b>oder<b> <br /> DAZN monatlich + € 29,99 mtl.</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/multiscreen.png">
 			<b>Multiscreen + € 10 mtl. <br /></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br /> 2. Sky Q Receiver
@@ -70,6 +70,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
+		margin-top: 50px;
 	}
 	.title {
 		@include gradient-text;

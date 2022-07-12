@@ -1,8 +1,8 @@
 import { aboformular } from '$lib/scripts/frontend/urls';
 import { index_by } from 'functional-utilities';
-import { intersection as intersect } from 'lodash-es';
+import { intersection as intersect, isEqual, sortBy } from 'lodash-es';
 import type { package_id } from './assets/packages';
-import type { asset_id } from './asset_types';
+import type { asset_id, priceable_asset_id } from './asset_types';
 import type { Price } from './priceable_asset_types';
 import { asset_sets } from './sets';
 
@@ -28,14 +28,17 @@ export interface offer_description_type {
 	short_text: string;
 	long_text: string;
 	actions: ReadonlyArray<action>;
+	overwrites: readonly (readonly [readonly priceable_asset_id[], Partial<Price>])[];
 	route: string;
 }
 
 export type offer_descriptions_type = ReadonlyArray<offer_description_type>;
 
-export const offer_ids = ['50premium'] as const;
+export const offer_ids = ['opt1'] as const;
 
 export type offer_id = typeof offer_ids[number];
+
+const text_descriptions = '✓ {savings} Preisvorteil';
 
 export const offer_descriptions: offer_descriptions_type = [
 	/*{
@@ -70,7 +73,7 @@ export const offer_descriptions: offer_descriptions_type = [
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
 	}*/
-	{
+	/*{
 		id: '50premium',
 		aktivierung: 0,
 		conditions: [
@@ -81,8 +84,8 @@ export const offer_descriptions: offer_descriptions_type = [
 			}
 		],
 		bonus: 20,
-		short_text: '+ 50% auf Premium-Pakete',
-		long_text: '+ 50% auf Premium-Pakete',
+		short_text: text_descriptions,
+		long_text: text_descriptions,
 		actions: [
 			{
 				set: 'premium',
@@ -93,6 +96,114 @@ export const offer_descriptions: offer_descriptions_type = [
 				},
 				absolute: false
 			}
+		],
+		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
+	},
+	{
+		id: 'entertainmentplus15',
+		aktivierung: 0,
+		conditions: [
+			{
+				set: 'entertainmentplus',
+				min_amount: 1,
+				inverted: false
+			},
+			{
+				set: 'premium',
+				min_amount: 1,
+				inverted: true
+			},
+			{
+				set: 'entertainment',
+				min_amount: 1,
+				inverted: true
+			}
+		],
+		bonus: 20,
+		short_text: text_descriptions,
+		long_text: text_descriptions,
+		actions: [
+			{
+				set: 'entertainmentplus',
+				value: {
+					jahr: -5,
+					monat: 0,
+					singular: 0
+				},
+				absolute: true
+			}
+		],
+		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
+	}*/
+	{
+		id: 'opt1',
+		aktivierung: 0,
+		conditions: [
+			{
+				set: 'all',
+				min_amount: 1,
+				inverted: true
+			}
+		],
+		bonus: 20,
+		short_text: text_descriptions,
+		long_text: text_descriptions,
+		actions: [],
+		overwrites: [
+			[
+				['entertainment', 'bundesliga'],
+				{
+					jahr: 20
+				}
+			],
+			[
+				['entertainment', 'sport', 'cinema'],
+				{
+					jahr: 30
+				}
+			],
+			[
+				['entertainment', 'sport', 'bundesliga'],
+				{
+					jahr: 25
+				}
+			],
+			[
+				['entertainment', 'sport', 'cinema', 'bundesliga'],
+				{
+					jahr: 30
+				}
+			],
+			[
+				['entertainmentplus'],
+				{
+					jahr: 15
+				}
+			],
+			[
+				['entertainmentplus', 'cinema'],
+				{
+					jahr: 25
+				}
+			],
+			[
+				['entertainmentplus', 'bundesliga'],
+				{
+					jahr: 25
+				}
+			],
+			[
+				['entertainmentplus', 'sport', 'bundesliga'],
+				{
+					jahr: 30
+				}
+			],
+			[
+				['entertainmentplus', 'sport', 'cinema', 'bundesliga'],
+				{
+					jahr: 35
+				}
+			]
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
 	}
@@ -106,7 +217,8 @@ export const empty_offer: offer_description_type = {
 	short_text: '',
 	long_text: '',
 	actions: [],
-	route: aboformular
+	route: aboformular,
+	overwrites: []
 };
 
 export const indexed_offers = index_by(offer_descriptions, 'id');
@@ -116,6 +228,12 @@ export function offer_applicable(offer_id: offer_id, asset_ids: ReadonlyArray<as
 		throw new Error('Invalid offer_id');
 	}
 	const offer = indexed_offers[offer_id];
+
+	for (const overwrite of offer.overwrites) {
+		if (isEqual(sortBy(overwrite[0]), sortBy(asset_ids))) {
+			return true;
+		}
+	}
 
 	for (const condition of offer.conditions) {
 		const set = asset_sets[condition.set];

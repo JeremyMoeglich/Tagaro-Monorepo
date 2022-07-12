@@ -8,22 +8,22 @@
 </script>
 
 <h1>Programmpakete bei Sky</h1>
-<a href="/angebote/entertainmentplus">
+<a href="/angebote/entertainmentplus" sveltekit:prefetch>
 	<EntertainmentPlusOverview />
 </a>
 <!-- <a href="/angebote/entertainment">
 	<EntertainmentOverview />
 </a> -->
 <LineSpacer />
-<a href="/angebote/cinema">
+<a href="/angebote/cinema" sveltekit:prefetch>
 	<CinemaOverview />
 </a>
 <LineSpacer />
-<a href="/angebote/sport">
+<a href="/angebote/sport" sveltekit:prefetch>
 	<SportOverview />
 </a>
 <LineSpacer />
-<a href="/angebote/bundesliga">
+<a href="/angebote/bundesliga" sveltekit:prefetch>
 	<BundesligaOverview />
 </a>
 

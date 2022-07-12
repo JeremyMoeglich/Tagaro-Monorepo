@@ -1,9 +1,5 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
-
-	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
-	import GradientBadge from '../../../elements/gradient_badge.svelte';
-	export let detailed = false;
 </script>
 
 <PackageTemplate
@@ -15,13 +11,5 @@
 		'Mit den Sky Konferenzen und Highlight-Videos kein Tor verpassen'
 	]}
 	image={'/images/assets/packages/normal/bundesliga.jpg'}
-	{detailed}
->
-	<h3>12 Monate nur {get_price_string(['entertainmentplus', 'bundesliga'], 'jahr')} mtl.*</h3>
-	<p>
-		(im Jahres-Abo, danach {get_price_string(['entertainmentplus', 'bundesliga'], 'monat')} im Monats-Abo)
-		<br />
-		Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
-	</p>
-	<GradientBadge>50% Rabatt auf Premiumpakete</GradientBadge>
-	</PackageTemplate>
+	price_asset_ids={['entertainmentplus', 'bundesliga']}
+/>
