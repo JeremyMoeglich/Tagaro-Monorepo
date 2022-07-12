@@ -5,7 +5,7 @@
 
 <ShowcaseTemplate
 	title={`Jetzt Sky Wunschpakete buchen und bis zu ${get_savings_string([
-		'entertainment',
+		'entertainmentplus',
 		'cinema',
 		'sport',
 		'bundesliga'

@@ -1,13 +1,11 @@
 <script lang="ts">
-	import { packages_assets } from '$lib/scripts/universal/asset_library/assets/packages';
 	import { bonus_string } from '$lib/scripts/universal/asset_library/prices';
 	import { load_form } from '$lib/scripts/frontend/load_aboformular';
 	import AboformularButton from '$lib/components/elements/interactive/buttons/aboformular_button.svelte';
 	import { aboformular } from '$lib/scripts/frontend/urls';
 	import Enddate from '$lib/components/generators/enddate.svelte';
-	import type { asset_id } from '$lib/scripts/universal/asset_library/asset_types';
-	import type { normal_package_id } from '$lib/scripts/universal/asset_library/normal_assets';
 	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_library/priceable_asset';
+	import type { imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let enddate:
@@ -38,7 +36,7 @@
 
 	const left_badges = ['/images/badges/praemie.svg'] as const;
 	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.svg'] as const;
-	const showcase_assets: readonly normal_package_id[] = [
+	const showcase_assets: readonly imaged_package_id[] = [
 		'entertainmentplus',
 		'cinema',
 		'sport',

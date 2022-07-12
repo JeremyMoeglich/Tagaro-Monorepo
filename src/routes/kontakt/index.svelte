@@ -1,19 +1,7 @@
-<script context="module" lang="ts">
-	import type { Load } from '@sveltejs/kit';
-	export const load: Load = async ({ url }) => {
-		return {
-			props: {
-				url: url
-			}
-		};
-	};
-</script>
 
 <script lang="ts">
 	//import InputField from '$lib/components/layout_components/input_field.svelte';
-	import KontaktForm from '$lib/components/site/routes/kontakt/kontakt_form.svelte';
-
-	export let url: URL;
+	import KontaktForm from '$lib/components/site/routes/kontakt/contact_form.svelte';
 </script>
 
 <h1 class="main_title">Kontakt</h1>
@@ -37,7 +25,7 @@
 			<li><b>Internet: </b><a sveltekit:prefetch href="https://tagaro.de">www.tagaro.de</a></li>
 		</ul>
 	</div>
-	<KontaktForm {url} />
+	<KontaktForm />
 </div>
 
 <style lang="scss">

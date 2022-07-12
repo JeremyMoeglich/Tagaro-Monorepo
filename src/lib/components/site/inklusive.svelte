@@ -26,7 +26,7 @@
 			> an.
 		</p>
 		<div class="btn">
-			<Button text="Alle Infomationen zu Sky Q" route="/sky_q" />
+			<Button text="Alle Infomationen zu Sky Q" on_click="/sky_q" />
 		</div>
 	</span>
 	<span slot="right">

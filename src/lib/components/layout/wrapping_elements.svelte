@@ -141,7 +141,7 @@ bonus,
 								.join(' + ')}) <br /> Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte
 						</p>
 						<div class="btn">
-							<Button text={'Mehr erfahren'} route={item.route} />
+							<Button text={'Mehr erfahren'} on_click={item.route} />
 						</div>
 					</a>
 				{/each}

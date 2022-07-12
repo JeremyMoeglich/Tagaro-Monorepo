@@ -10,7 +10,7 @@
 			TAGARO genau richtig. Wir vermitteln Ihnen als autorisierter Sky-Onlinehändler Sky-Verträge
 			bereits seit 2006. Viele Angebote gibt es exklusiv und mit Abschlussprämie.
 		</p>
-		<Button text={'Angebote & Pakete'} route={'/angebote'} />
+		<Button text={'Angebote & Pakete'} on_click={'/angebote'} />
 	</div>
 </a>
 
