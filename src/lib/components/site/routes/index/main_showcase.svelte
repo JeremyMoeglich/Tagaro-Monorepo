@@ -4,17 +4,17 @@
 </script>
 
 <ShowcaseTemplate
-	title={`Jetzt Sky Wunschpakete buchen und bis zu ${get_savings_string([
+	title={`Die beliebtesten Paketkombis mit bis zu ${get_savings_string([
 		'entertainmentplus',
 		'cinema',
 		'sport',
 		'bundesliga'
-	])} Sparvorteil erhalten.`}
+	])} Sparvorteil`}
 	points={[
 		'50% auf die Pakete Cinema, Fußball Bundesliga und/oder Sport erhalten*',
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`
 	]}
-	side_images={['/images/badges/50p.svg']}
+	side_images={['/images/external/dazn.svg']}
 />
 <!-- <ShowcaseLayout
 	title={'Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis zu € 125* erhalten.'}

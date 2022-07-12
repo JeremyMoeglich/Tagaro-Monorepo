@@ -1,6 +1,4 @@
-import { packages_assets } from './assets/packages';
-import type { package_id } from './assets/packages';
-import { indexed_priceable_assets } from './priceable_asset';
+import { package_ids } from './assets/packages';
 
-export type imaged_package_id = package_id | 'kids';
-export const imaged_package_ids = [...packages_assets, indexed_priceable_assets.kids] as const;
+export const imaged_package_ids = [...package_ids, 'kids'] as const;
+export type imaged_package_id = typeof imaged_package_ids[number];

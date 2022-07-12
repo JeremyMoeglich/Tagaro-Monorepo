@@ -2,15 +2,9 @@ import { dynamic_to_static_assets } from '../priceable_asset_types';
 import type { Priceable_Asset } from '../priceable_asset_types';
 import { index_by } from 'functional-utilities';
 
-enum package_id_enum {
-	entertainment,
-	entertainmentplus,
-	cinema,
-	sport,
-	bundesliga
-}
+export const package_ids = ['entertainment', 'entertainmentplus', 'sport', 'cinema', 'bundesliga'] as const;
 
-export type package_id = keyof typeof package_id_enum;
+export type package_id = typeof package_ids[number];
 
 const packages_image_location = '/images/assets/packages/square/';
 

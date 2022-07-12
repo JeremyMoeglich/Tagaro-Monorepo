@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
+	import { get_offer_note, get_price, get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import { package_combinations } from '$lib/scripts/universal/asset_library/assets/packages';
 	import Zubuchoption from '$lib/components/templates/element/zubuchoption.svelte';
 </script>
@@ -35,7 +35,7 @@
 			<b>+UHD € 5 mtl. (für Sat oder Kabel-Empfang)</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/dazn.svg">
-			<b>DAZN jährlich + € 18,99 mtl. </b>oder<b> <br /> DAZN monatlich + € 29,99 mtl.</b>
+			<b>DAZN jährlich + {get_price_string(['dazn'], 'jahr')} mtl. </b>oder<b> <br /> DAZN monatlich + {get_price_string(['dazn'], 'monat')} mtl.</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/multiscreen.png">
 			<b>Multiscreen + € 10 mtl. <br /></b>Inkl. Sky Go Plus für 3 mobile Geräte,<br /> 2. Sky Q Receiver

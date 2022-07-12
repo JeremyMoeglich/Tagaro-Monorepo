@@ -22,7 +22,7 @@
 		`${bonus_string} Bonus und versandkostenfreie Vermittlung*`
 	];
 	export let primary_image: undefined | string = undefined;
-	export let side_images = [];
+	export let side_images: string[] = [];
 
 	export let buttons: {
 		text: string;

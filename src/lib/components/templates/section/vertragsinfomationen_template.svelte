@@ -276,17 +276,18 @@
 		<div>
 			<h3>Sky Go inkl. Download:</h3>
 			<p>
-				Mit Sky Go können einzelne Inhalte des Sky Abonnements (ausgenommen gewerbliche und Sky
-				Ticket Abonnements) über das Internet (ausgeschlossen ist die Verbindung über einen
-				VPN-Zugang) mit einem mobilen Endgerät (Smartphones/Tablets ab iOS 9.0, Android 4.2, Windows
-				7, MacOS 10.9) empfangen und abgerufen werden. Die verfügbaren Inhalte sind abhängig von den
-				gebuchten Sky Programmpaketen. Empfohlene Bandbreite 1 Mbit/s für SD-Qualität, 6 Mbit/s für
-				HD-Qualität. Kunden können Sky Go gemäß EU-Portabilitätsverordnung auch während eines
-				vorübergehenden Aufenthalts in einem anderen EU-Mitgliedstaat als Österreich oder
-				Deutschland nutzen. Mit der Download-Funktion können bis zu 25 Titel (max. 5 Spielfilme)
-				gleichzeitig und jeder Titel kann nur zweimal im Kalenderjahr heruntergeladen werden. Die
-				heruntergeladenen Titel bleiben jeweils 30 Tage verfügbar. Nach Beginn der Wiedergabe stehen
-				die Titel 48 Stunden lang zur Verfügung und werden anschließend gesperrt.
+				Sky Go für 1 Stream gleichzeitig ist kostenlos im Abonnement enthalten. Mit Sky Go können
+				einzelne Inhalte des Sky Abonnements (ausgenommen gewerbliche und Sky Ticket Abonnements)
+				über das Internet (ausgeschlossen ist die Verbindung über einen VPN-Zugang) mit einem
+				mobilen Endgerät (Smartphones/Tablets ab iOS 9.0, Android 4.2, Windows 7, MacOS 10.9)
+				empfangen und abgerufen werden. Die verfügbaren Inhalte sind abhängig von den gebuchten Sky
+				Programmpaketen. Empfohlene Bandbreite 1 Mbit/s für SD-Qualität, 6 Mbit/s für HD-Qualität.
+				Kunden können Sky Go gemäß EU-Portabilitätsverordnung auch während eines vorübergehenden
+				Aufenthalts in einem anderen EU-Mitgliedstaat als Österreich oder Deutschland nutzen. Mit
+				der Download-Funktion können bis zu 25 Titel (max. 5 Spielfilme) gleichzeitig und jeder
+				Titel kann nur zweimal im Kalenderjahr heruntergeladen werden. Die heruntergeladenen Titel
+				bleiben jeweils 30 Tage verfügbar. Nach Beginn der Wiedergabe stehen die Titel 48 Stunden
+				lang zur Verfügung und werden anschließend gesperrt.
 			</p>
 		</div>
 		<div>

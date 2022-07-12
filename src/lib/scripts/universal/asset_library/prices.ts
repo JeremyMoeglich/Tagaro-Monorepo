@@ -135,4 +135,3 @@ export function get_offer_note(packages: ReadonlyArray<package_id>, long = false
 	const text = long ? offer.long_text : offer.short_text;
 	return text.replaceAll('{savings}', get_offer_savings_string(offer, packages));
 }
-

@@ -25,7 +25,7 @@ import { goto } from '$app/navigation';
 	};
 
 	async function submit_form() {
-		const contact_form_collection = collection(firestore, 'contact_form');
+		const contact_form_collection = collection(firestore, 'contact_forms');
 		if (form_values.is_spam) {
 			return;
 		}

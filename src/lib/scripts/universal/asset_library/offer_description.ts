@@ -203,6 +203,13 @@ export const offer_descriptions: offer_descriptions_type = [
 				{
 					jahr: 35
 				}
+			],
+			[
+				['dazn'],
+				{
+					jahr: 18.99,
+					monat: 29.99
+				}
 			]
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'

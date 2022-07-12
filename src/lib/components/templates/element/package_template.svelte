@@ -6,6 +6,8 @@
 	import type { priceable_asset_id } from '$lib/scripts/universal/asset_library/asset_types';
 	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import { typed_keys } from 'functional-utilities';
+	import SquarePackageList from '$lib/components/generators/square_package_list.svelte';
+	import { imaged_package_ids, type imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
 
 	export let title: string;
 	export let points: ReadonlyArray<string>;
@@ -17,6 +19,10 @@
 	)
 		? get_offer_note(price_asset_ids as package_id[])
 		: '';
+
+	function is_imaged_package(id: priceable_asset_id): id is imaged_package_id {
+		return imaged_package_ids.includes(id as imaged_package_id);
+	}
 </script>
 
 <div class="package_overview">
@@ -28,6 +34,9 @@
 					<li>{point}</li>
 				{/each}
 			</ul>
+			{#if price_asset_ids.every(is_imaged_package)}
+				<SquarePackageList package_ids={price_asset_ids} />
+			{/if}
 			<h3>12 Monate nur {get_price_string(price_asset_ids, 'jahr')} mtl.*</h3>
 			<p>
 				(im Jahres-Abo, danach {get_price_string(price_asset_ids, 'monat')} mtl. im Monats-Abo)
