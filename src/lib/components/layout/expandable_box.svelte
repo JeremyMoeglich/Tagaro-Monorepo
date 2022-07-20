@@ -1,8 +1,9 @@
 <script>
 	import GradientText from '../style/gradient_text.svelte';
+	import { dev } from '$app/env';
 
 	export let title;
-	let opened = false;
+	let opened = dev ? true : false;
 
 	function toggle_box() {
 		opened = !opened;

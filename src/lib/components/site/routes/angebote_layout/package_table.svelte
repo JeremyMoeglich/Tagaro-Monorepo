@@ -32,7 +32,7 @@
 	<div class="zubuchoptionen" id="zubuchoptionen">
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption image="/images/assets/zubuchoptionen/uhd.png">
-			<b>+UHD {get_price_string(['uhd'], 'jahr')} mtl. (für Sat oder Kabel-Empfang)</b>
+			<b>UHD + {get_price_string(['uhd'], 'jahr')} mtl. (für Sat oder Kabel-Empfang)</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/dazn.svg">
 			<b>DAZN jährlich + {get_price_string(['dazn'], 'jahr')} mtl. </b>oder<b>

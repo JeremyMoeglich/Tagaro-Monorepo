@@ -10,7 +10,7 @@
 			'sky_logo_sky-sport-uhd.png',
 			'sky_logo_sky-sport-f1.png',
 			'sky_logo_eurosport2-hd_w.png',
-			'sky_logo_eurosport360-hd_w.webp',
+			//'sky_logo_eurosport360-hd_w.webp',
 			'sky_logo_sky-sport-1.png',
 			'sky_logo_sky-sport-2.png',
 			'sky_logo_sky-sport-3.png',
@@ -22,7 +22,10 @@
 			'sky_logo_sky-sport-9.png',
 			'sky_logo_sky-sport-10.png',
 			'sky_logo_sky-sport-11.png',
-			'sky_logo_sky-sport-austria.png'
+			'sky_logo_sky-sport-austria.png',
+			'sky_logo_sky-sport-mix-hd.png',
+			'sky_logo_sky-sport-tennis.png',
+			'sky_logo_sky-sport-top-event.png',
 		].map((img) => start + img)}
 	/>
 </body>

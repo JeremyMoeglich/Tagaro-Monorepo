@@ -1,10 +1,34 @@
-<script>
+<script lang="ts">
+	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
+	import type { priceable_asset_id } from '$lib/scripts/universal/asset_library/asset_types';
+	import type { base_package_set } from '$lib/scripts/universal/asset_library/offer_description';
+	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_library/priceable_asset';
+
 	import {
 		aktivierung,
 		aktivierung_string,
 		get_price_string
 	} from '$lib/scripts/universal/asset_library/prices';
+	import { typed_entries } from 'functional-utilities';
 	import ExpandableBox from '../../layout./../layout/expandable_box.svelte';
+
+	const combinations: Record<base_package_set, ReadonlyArray<ReadonlyArray<priceable_asset_id>>> = {
+		entertainmentplus: [
+			['bundesliga'],
+			['cinema'],
+			['cinema', 'sport'],
+			['sport', 'bundesliga'],
+			['cinema', 'bundesliga'],
+			['cinema', 'sport', 'bundesliga']
+		],
+		entertainment: [
+			['bundesliga'],
+			['cinema', 'sport'],
+			['sport', 'bundesliga'],
+			['cinema', 'bundesliga'],
+			['cinema', 'sport', 'bundesliga']
+		]
+	} as const;
 </script>
 
 <ExpandableBox title={'*Vertragsinformationen'}>
@@ -16,85 +40,27 @@
 					Angebote gelten mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
 					(anteilig) zzgl. 12 Monaten)
 				</p>
-				<ul>
-					<li>
-						- Entertainment Plus inkl. Netflix mtl. {get_price_string(
-							['entertainmentplus'],
-							'jahr'
-						)}
-						<br /> <b class="combine"> in Kombination mit</b>
-					</li>
-					<li>- Sky Sport mtl. {get_price_string(['entertainmentplus', 'sport'], 'jahr')}</li>
-					<li>- Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'jahr')}</li>
-					<li>
-						- Sky Fußball-Bundesliga mtl. {get_price_string(
-							['entertainmentplus', 'bundesliga'],
-							'jahr'
-						)}
-					</li>
-					<li>- Sky Kids mtl. {get_price_string(['entertainmentplus', 'kids'], 'jahr')}</li>
-					<li>
-						- Sky Sport + Sky Cinema mtl. {get_price_string(
-							['entertainmentplus', 'cinema', 'sport'],
-							'jahr'
-						)}
-					</li>
-					<li>
-						- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
-							['entertainmentplus', 'sport', 'bundesliga'],
-							'jahr'
-						)}
-					</li>
-					<li>
-						- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-							['entertainmentplus', 'bundesliga', 'cinema'],
-							'jahr'
-						)}
-					</li>
-					<li>
-						- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-							['entertainmentplus', 'cinema', 'sport', 'bundesliga'],
-							'jahr'
-						)}
-					</li>
-				</ul>
-				<ul>
-					<li>
-						- Sky Entertainment für mtl. {get_price_string(['entertainment'], 'jahr')} <br />
-						<b class="combine">in Kombination mit</b>
-					</li>
-					<li>- Sky Sport mtl. {get_price_string(['entertainment', 'sport'], 'jahr')}</li>
-					<li>
-						- Sky Fußball-Bundesliga mtl. {get_price_string(
-							['entertainment', 'bundesliga'],
-							'jahr'
-						)}
-					</li>
-					<li>
-						- Sky Sport + Sky Cinema mtl. {get_price_string(
-							['entertainment', 'cinema', 'sport'],
-							'jahr'
-						)}
-					</li>
-					<li>
-						- Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
-							['entertainment', 'sport', 'bundesliga'],
-							'jahr'
-						)}
-					</li>
-					<li>
-						- Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-							['entertainment', 'cinema', 'bundesliga'],
-							'jahr'
-						)}
-					</li>
-					<li>
-						- Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
-							['entertainment', 'cinema', 'bundesliga', 'sport'],
-							'jahr'
-						)}
-					</li>
-				</ul>
+				{#each typed_entries(combinations) as combination}
+					{@const combination_base = combination[0]}
+					{@const combination_base_combinations = combination[1]}
+					<ul>
+						<li>
+							- {indexed_priceable_assets[combination_base].name} für mtl. {get_price_string(
+								[combination_base],
+								'jahr'
+							)}
+							<br /> <b class="combine"> in Kombination mit</b>
+						</li>
+						{#each combination_base_combinations as combination_packages}
+							<li>
+								- {combination_packages
+									.map((v) => `Sky ${indexed_priceable_assets[v].name}`)
+									.join(' + ')} mtl.
+								{get_price_string(combination_packages.concat([combination_base]), 'jahr')}
+							</li>
+						{/each}
+					</ul>
+				{/each}
 				{#if aktivierung <= 0}
 					<p>Es fällt <b>keine Aktivierungsgebühr</b> durch Sky an. Sie sparen € 29.</p>
 				{:else}

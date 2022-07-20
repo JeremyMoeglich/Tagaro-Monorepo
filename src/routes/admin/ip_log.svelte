@@ -7,13 +7,19 @@
 	import { onSnapshot, collection, limit, orderBy, query } from 'firebase/firestore';
 	import { sortBy } from 'lodash-es';
 
-	let ip_logs: Record<string, any>[];
+	interface ip_log_type {
+		createdAt: { seconds: number; nanoseconds: number };
+		ip: string;
+		source: string;
+	}
+
+	let ip_logs: ip_log_type[];
 
 	onSnapshot(
 		query(collection(firestore, 'Ip_log'), orderBy('createdAt', 'desc'), limit(30)),
 		(snapshot) => {
 			ip_logs = sortBy(
-				snapshot.docs.map((doc) => doc.data()),
+				snapshot.docs.map((doc) => doc.data() as ip_log_type),
 				(item) => item.createdAt.seconds
 			);
 		}

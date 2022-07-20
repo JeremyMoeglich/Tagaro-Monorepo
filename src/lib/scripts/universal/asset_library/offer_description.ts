@@ -8,16 +8,18 @@ import type { asset_id, priceable_asset_id } from './asset_types';
 import type { Price } from './priceable_asset_types';
 import { asset_sets } from './sets';
 
-export type offer_set = 'all' | 'premium' | 'base' | package_id;
+export type package_set_id = 'all' | 'premium' | 'base' | package_id;
+export type base_package_set = 'entertainment' | 'entertainmentplus';
+export type premium_package_set = 'cinema' | 'sport' | 'bundesliga';
 
 interface conditions_type {
-	set: offer_set;
+	set: package_set_id;
 	min_amount: number;
 	inverted: boolean;
 }
 
 interface action {
-	set: offer_set;
+	set: package_set_id;
 	value: Price;
 	absolute: boolean;
 }

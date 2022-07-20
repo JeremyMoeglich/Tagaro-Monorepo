@@ -10,24 +10,23 @@ enum receiver_type_enum {
 
 export type receiver_id = keyof typeof receiver_type_enum;
 
-export const receiver_assets: ReadonlyArray<
-	Readonly<Priceable_Asset<receiver_id>>
-> = dynamic_to_static_assets([
-	{
-		id: 'receiver1x',
-		name: 'Sky Q Receiver + Smartcard',
-		note: '[TODO]',
-		image: temp_asset_image,
-		price: 0
-	},
-	{
-		id: 'receiver2x',
-		name: '2x Sky Q Receiver + Multiscreen + Sky Go Plus + Smartcard',
-		note: '[TODO]',
-		image: temp_asset_image,
-		price: 99
-	}
-]);
+export const receiver_assets: ReadonlyArray<Readonly<Priceable_Asset<receiver_id>>> =
+	dynamic_to_static_assets([
+		{
+			id: 'receiver1x',
+			name: 'Sky Q Receiver + Smartcard',
+			note: '[TODO]',
+			image: temp_asset_image,
+			price: 0
+		},
+		{
+			id: 'receiver2x',
+			name: '2x Sky Q Receiver + Multiscreen + Sky Go Plus + Smartcard',
+			note: '[TODO]',
+			image: temp_asset_image,
+			price: 99
+		}
+	]);
 
 enum iptv_type_enum {
 	iptv1x,
