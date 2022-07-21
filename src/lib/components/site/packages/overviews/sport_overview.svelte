@@ -1,8 +1,10 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
+	export let animated = false;
 </script>
 
 <PackageTemplate
+	{animated}
 	title={'Sport Paket - Der beste Live-Sport.'}
 	points={[
 		'Alle Rennen der Formel 1 live - exklusiv auf Sky',

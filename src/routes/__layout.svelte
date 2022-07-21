@@ -108,7 +108,7 @@
 	{@html '<div class="widget_container_overlay" />'}
 {/if}
 
-<body>
+<div>
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
 			<img
@@ -121,10 +121,8 @@
 			<div class="header">
 				<Header {route} {navbar_elements} />
 			</div>
-			<div class="page">
-				<PageTransition refresh={route}>
-					<slot />
-				</PageTransition>
+			<div class="full_page">
+				<slot />
 			</div>
 			<Footer {preferences_object} {route} />
 		</div>
@@ -208,7 +206,7 @@
 		{/if}
 	</div>
 	<InfoBanner bind:preferences_object bind:route />
-</body>
+</div>
 
 <svelte:window bind:scrollY={screen_y_position} />
 
@@ -331,5 +329,17 @@
 	.header {
 		position: relative;
 		z-index: 100;
+	}
+
+	.full_page {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin-bottom: 60px;
+	}
+	:global(.full_page > *) {
+		grid-row-start: 1;
+		grid-column-start: 1;
+		width: 100%;
+		background-color: white;
 	}
 </style>

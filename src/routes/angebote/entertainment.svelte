@@ -5,13 +5,13 @@
 	//import Vertragsinfomationen from '$lib/components/site_components/vertragsinfomationen/vertragsinfomationen.svelte';
 </script>
 
-<body>
+<div>
 	<div class="alignment">
-		<EntertainmentOverview />
+		<EntertainmentOverview animated />
 		<EntertainmentSenders />
 		<Inklusive />
 	</div>
-</body>
+</div>
 
 <style lang="scss">
 	.alignment {

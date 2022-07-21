@@ -4,13 +4,13 @@
 	import EntertainmentPlusOverview from '$lib/components/site/packages/overviews/entertainment_plus_overview.svelte';
 </script>
 
-<body>
+<div>
 	<div class="alignment">
-		<EntertainmentPlusOverview />
+		<EntertainmentPlusOverview animated />
 		<EntertainmentSenders />
 		<Inklusive />
 	</div>
-</body>
+</div>
 
 <style lang="scss">
 	.alignment {

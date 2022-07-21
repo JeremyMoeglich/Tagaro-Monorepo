@@ -3,14 +3,18 @@
 	import Vertragsinfomationen from '$lib/components/site/vertragsinfomationen.svelte';
 </script>
 
-<slot />
-
-<div class="bottom">
+<div>
 	<div>
-		<PackageTable />
+		<slot />
 	</div>
-	<div>
-		<Vertragsinfomationen />
+
+	<div class="bottom">
+		<div>
+			<PackageTable />
+		</div>
+		<div>
+			<Vertragsinfomationen />
+		</div>
 	</div>
 </div>
 

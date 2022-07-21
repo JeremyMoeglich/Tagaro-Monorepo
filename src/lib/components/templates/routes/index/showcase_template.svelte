@@ -6,6 +6,9 @@
 	import Enddate from '$lib/components/generators/enddate.svelte';
 	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_library/priceable_asset';
 	import type { imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
+	import { crossfade } from '$lib/scripts/frontend/crossfade';
+
+	const [send, receive] = crossfade;
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let enddate:
@@ -75,8 +78,9 @@
 			{:else}
 				<div class="package_overview">
 					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
-						<a href={`/angebote/${asset.id}`}>
-							<img src={`/images/assets/packages/normal/${asset.id}.jpg`} alt={asset.id} />
+						{@const path = `/images/assets/packages/normal/${asset.id}.jpg`}
+						<a href={`/angebote/${asset.id}`} sveltekit:prefetch>
+							<img src={path} alt={asset.id} out:send={{ key: path }} in:send={{ key: path }} />
 						</a>
 					{/each}
 				</div>

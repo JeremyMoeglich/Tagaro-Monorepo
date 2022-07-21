@@ -3,5 +3,7 @@
 	import Impressum from '$lib/components/site/service/impressum.svelte';
 </script>
 
-<GradientTitle>Datenschutz</GradientTitle>
-<Impressum />
+<div>
+	<GradientTitle>Datenschutz</GradientTitle>
+	<Impressum />
+</div>

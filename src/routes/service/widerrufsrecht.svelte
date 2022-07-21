@@ -3,5 +3,7 @@
 	import Widerrufsrecht from '$lib/components/site/service/widerrufsrecht.svelte';
 </script>
 
-<GradientTitle>Widerrufsbelehrung</GradientTitle>
-<Widerrufsrecht />
+<div>
+	<GradientTitle>Widerrufsbelehrung</GradientTitle>
+	<Widerrufsrecht />
+</div>

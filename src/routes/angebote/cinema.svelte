@@ -6,14 +6,14 @@
 	import EntertainmentSenders from '$lib/components/site/packages/senders/entertainment_senders.svelte';
 </script>
 
-<body>
+<div>
 	<div class="alignment">
-		<CinemaOverview />
+		<CinemaOverview animated />
 		<CinemaSenders />
 		<EntertainmentSenders />
 		<Inklusive />
 	</div>
-</body>
+</div>
 
 <style lang="scss">
 	.alignment {

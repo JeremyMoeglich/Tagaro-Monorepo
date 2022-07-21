@@ -5,14 +5,14 @@
 	import EntertainmentSenders from '$lib/components/site/packages/senders/entertainment_senders.svelte';
 </script>
 
-<body>
+<div>
 	<div class="alignment">
-		<BundesligaOverview />
+		<BundesligaOverview animated />
 		<BundesligaSenders />
 		<EntertainmentSenders />
 		<Inklusive />
 	</div>
-</body>
+</div>
 
 <style lang="scss">
 	.alignment {

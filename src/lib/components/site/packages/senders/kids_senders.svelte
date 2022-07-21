@@ -3,7 +3,7 @@
 	const start = '/images/assets/packages/senders/kids/';
 </script>
 
-<body>
+<div>
 	<Senders
 		text="Sender im Kids Paket:"
 		content={[
@@ -14,4 +14,4 @@
 			'sky_logo_nicktoons_w.png'
 		].map((img) => start + img)}
 	/>
-</body>
+</div>

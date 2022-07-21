@@ -2,7 +2,7 @@
 	import { city } from '$lib/info';
 </script>
 
-<body>
+<div>
 	<div class="alignment">
 		<h2>Widerrufsrecht</h2>
 		<p>
@@ -70,7 +70,7 @@
 			</a>
 		</p>
 	</div>
-</body>
+</div>
 
 <style lang="scss">
 	@import 'lib/style/gradient_text.scss';

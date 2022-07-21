@@ -2,25 +2,27 @@
 	import Vertragsinfomationen from '$lib/components/site/vertragsinfomationen.svelte';
 </script>
 
-<div class="header-text-image-align">
-	<h1 class="main-title">
-		Das Sky Q Erlebnis einfach übers Internet.<br />Jetzt über uns ganz ohne Sat- oder
-		Kabel-TV-Anschluss buchbar
-	</h1>
-	<img class="main-image" src="/images/visuals/1627910170_sky-q-iptv-box.jpg" alt="" />
+<div>
+	<div class="header-text-image-align">
+		<h1 class="main-title">
+			Das Sky Q Erlebnis einfach übers Internet.<br />Jetzt über uns ganz ohne Sat- oder
+			Kabel-TV-Anschluss buchbar
+		</h1>
+		<img class="main-image" src="/images/visuals/1627910170_sky-q-iptv-box.jpg" alt="" />
+	</div>
+	<div class="alignment">
+		<ul>
+			<li>Mit der Sky Q IPTV Box - Nur 11 x 11 Zentimeter groß</li>
+			<li>Empfohlen ab 6 MBit schneller Verbindung</li>
+			<li>Selber Sky Q Komfort</li>
+			<li>Apps wie Netflix, DAZN oder Prime Video verfügbar (seperates Abonnement erforderlich)</li>
+			<li>Über 50 Free-TV-Sender inkl. Sender von RTL und ProSiebenSat.1</li>
+			<li>Zum Start ohne UHD-Inhalte</li>
+			<li>Ohne Aufnahmefunktion</li>
+		</ul>
+	</div>
+	<div class="vertragsinfo"><Vertragsinfomationen /></div>
 </div>
-<div class="alignment">
-	<ul>
-		<li>Mit der Sky Q IPTV Box - Nur 11 x 11 Zentimeter groß</li>
-		<li>Empfohlen ab 6 MBit schneller Verbindung</li>
-		<li>Selber Sky Q Komfort</li>
-		<li>Apps wie Netflix, DAZN oder Prime Video verfügbar (seperates Abonnement erforderlich)</li>
-		<li>Über 50 Free-TV-Sender inkl. Sender von RTL und ProSiebenSat.1</li>
-		<li>Zum Start ohne UHD-Inhalte</li>
-		<li>Ohne Aufnahmefunktion</li>
-	</ul>
-</div>
-<div class="vertragsinfo"><Vertragsinfomationen /></div>
 
 <style lang="scss">
 	@import '../lib/style/gradient_text.scss';

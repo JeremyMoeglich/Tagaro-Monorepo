@@ -1,9 +1,11 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
 	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
+	export let animated = false;
 </script>
 
 <PackageTemplate
+	{animated}
 	title={'Cinema Paket - Jeden Tag ein neuer Film.'}
 	points={[
 		'Exklusive Top-Filme kurz nach dem Kino',

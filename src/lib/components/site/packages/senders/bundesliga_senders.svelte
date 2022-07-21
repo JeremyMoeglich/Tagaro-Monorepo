@@ -3,7 +3,7 @@
 	const start = '/images/assets/packages/senders/bundesliga/';
 </script>
 
-<body>
+<div>
 	<Senders
 		text="Sender im Bundesliga Paket:"
 		content={[
@@ -24,4 +24,4 @@
 			'sky_logo_sky-sport-bundesliga-9.png'
 		].map((img) => start + img)}
 	/>
-</body>
+</div>

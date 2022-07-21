@@ -1,8 +1,10 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
+	export let animated = false;
 </script>
 
 <PackageTemplate
+	{animated}
 	title={'Kids Paket - Große Unterhaltung für alle Kleinen.'}
 	points={[
 		'5 beliebte Kindersender und mehr als 4.500 Inhalte',

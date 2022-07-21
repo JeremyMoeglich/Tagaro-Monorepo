@@ -1,8 +1,10 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
+	export let animated = false;
 </script>
 
 <PackageTemplate
+	{animated}
 	title={'Entertainment Paket - Exklusives Entertainment ohne Ende.'}
 	points={[
 		'Exklusive Top-Serien von Sky und HBO',

@@ -1,4 +1,4 @@
-<body>
+<div>
 	<div class="back">
 		<div class="tb">
 			<h1>Service</h1>
@@ -46,7 +46,7 @@
 			</div>
 		</div>
 	</div>
-</body>
+</div>
 
 <style lang="scss">
 	body {

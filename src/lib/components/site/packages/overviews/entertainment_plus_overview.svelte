@@ -1,8 +1,10 @@
 <script>
 	import PackageTemplate from '$lib/components/templates/element/package_template.svelte';
+	export let animated = false;
 </script>
 
 <PackageTemplate
+	{animated}
 	title={'Entertainment Plus Paket - Alle Sky Serien und Netflix.'}
 	points={[
 		'Hunderte  Serien, Dokus und Show mit exklusiven Top-Inhalten von Sky und HBO',

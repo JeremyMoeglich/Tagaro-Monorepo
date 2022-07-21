@@ -75,50 +75,52 @@
 	}
 </script>
 
-{#if !user}
-	<form on:submit|preventDefault={login} class="login">
-		<p>Password:</p>
-		<input type="password" bind:value={password} />
-		{#if error_message}
-			<p style="color: red;">{error_message}</p>
-		{/if}
-		<Button text={'Login'} padding_y={'10px'} />
-	</form>
-{:else}
-	<div class="main">
-		<div class="sidebar">
-			<div class="sidebar_choices">
-				{#each typed_entries(panels) as panel}
-					{@const name = panel[0]}
-					{@const relative_route = panel[1]}
-					{@const route = `${layout_route}/${relative_route}`}
-					<a href={route} class="sidebar_element">{name}</a>
-				{/each}
-			</div>
-			<div class="activity">
-				{#each typed_entries(activity) as [name, value]}
-					{@const till_next = Math.round(
-						value.delay * 60 - (current_time.getTime() - value.last.getTime()) / 1000
-					)}
-					<div class="activity_element" class:inactive={!value}>
-						<p>{name}</p>
-						<div>
-							<p>
-								{value.active ? (till_next > 0 ? 'active' : 'no response') : 'inactive'}
-							</p>
-							<p>
-								{Math.max(till_next, 0)}s
-							</p>
+<div>
+	{#if !user}
+		<form on:submit|preventDefault={login} class="login">
+			<p>Password:</p>
+			<input type="password" bind:value={password} />
+			{#if error_message}
+				<p style="color: red;">{error_message}</p>
+			{/if}
+			<Button text={'Login'} padding_y={'10px'} />
+		</form>
+	{:else}
+		<div class="main">
+			<div class="sidebar">
+				<div class="sidebar_choices">
+					{#each typed_entries(panels) as panel}
+						{@const name = panel[0]}
+						{@const relative_route = panel[1]}
+						{@const route = `${layout_route}/${relative_route}`}
+						<a href={route} class="sidebar_element">{name}</a>
+					{/each}
+				</div>
+				<div class="activity">
+					{#each typed_entries(activity) as [name, value]}
+						{@const till_next = Math.round(
+							value.delay * 60 - (current_time.getTime() - value.last.getTime()) / 1000
+						)}
+						<div class="activity_element" class:inactive={!value}>
+							<p>{name}</p>
+							<div>
+								<p>
+									{value.active ? (till_next > 0 ? 'active' : 'no response') : 'inactive'}
+								</p>
+								<p>
+									{Math.max(till_next, 0)}s
+								</p>
+							</div>
 						</div>
-					</div>
-				{/each}
+					{/each}
+				</div>
+			</div>
+			<div class="content">
+				<slot />
 			</div>
 		</div>
-		<div class="content">
-			<slot />
-		</div>
-	</div>
-{/if}
+	{/if}
+</div>
 
 <style lang="scss">
 	.login {

@@ -3,7 +3,7 @@
 	const start = '/images/assets/packages/senders/cinema/';
 </script>
 
-<body>
+<div>
 	<Senders
 		text="Sender im Cinema Paket:"
 		content={[
@@ -18,4 +18,4 @@
 			'sky_logo_wb-film-hd_b.png'
 		].map((img) => start + img)}
 	/>
-</body>
+</div>

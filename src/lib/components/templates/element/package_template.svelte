@@ -10,10 +10,14 @@
 	import type { imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
 	import { imaged_package_ids } from '$lib/scripts/universal/asset_library/imaged_packages';
 
+	import { crossfade } from '$lib/scripts/frontend/crossfade';
+	const [send, receive] = crossfade;
+
 	export let title: string;
 	export let points: ReadonlyArray<string>;
 	export let image: string = undefined;
 	export let price_asset_ids: priceable_asset_id[];
+	export let animated = false;
 
 	$: offer_string = price_asset_ids.every((id) =>
 		typed_keys(indexed_package_assets).includes(id as package_id)
@@ -50,7 +54,17 @@
 		</div>
 
 		{#if image}
-			<img src={image} alt="" class="image" />
+			{#if animated}
+				<img
+					src={image}
+					alt=""
+					class="image"
+					out:send={{ key: image }}
+					in:receive={{ key: image }}
+				/>
+			{:else}
+				<img src={image} alt="" class="image" />
+			{/if}
 		{/if}
 	</div>
 </div>

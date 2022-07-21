@@ -3,7 +3,7 @@
 	const start = '/images/assets/packages/senders/sport/';
 </script>
 
-<body>
+<div>
 	<Senders
 		text="Sender im Sport Paket:"
 		content={[
@@ -28,4 +28,4 @@
 			'sky_logo_sky-sport-top-event.png',
 		].map((img) => start + img)}
 	/>
-</body>
+</div>

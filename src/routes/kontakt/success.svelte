@@ -1,9 +1,9 @@
-<body>
+<div>
 	<div class="center_alignment">
 		<h1 class="title">Kontaktformular erfolgreich abgesendet</h1>
 		<p><b>Wir melden uns bei Ihnen so schnell wie möglich!</b></p>
 	</div>
-</body>
+</div>
 
 <style lang="scss">
 	@import '../../lib/style/gradient_text.scss';

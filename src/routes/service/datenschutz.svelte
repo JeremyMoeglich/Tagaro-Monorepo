@@ -3,5 +3,7 @@
 	import GradientTitle from '$lib/components/style/gradient_title.svelte';
 </script>
 
-<GradientTitle>Datenschutz</GradientTitle>
-<Datenschutz />
+<div>
+	<GradientTitle>Datenschutz</GradientTitle>
+	<Datenschutz />
+</div>

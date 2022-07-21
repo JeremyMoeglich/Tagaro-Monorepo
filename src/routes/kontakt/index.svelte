@@ -3,28 +3,30 @@
 	import KontaktForm from '$lib/components/site/routes/kontakt/contact_form.svelte';
 </script>
 
-<h1 class="main_title">Kontakt</h1>
-<div class="side_alignment">
-	<div class="side_text_container">
-		<p>
-			<b>
-				Wir helfen Ihnen gerne weiter - sowohl per E-Mail und Kontaktformular rund um die Uhr als
-				auch per Telefon zum Festnetzpreis.
-			</b>
-		</p>
-		<p>
-			Sie möchten gerne persönlich mit uns sprechen? Wir sind Montag bis Freitag von 10:00 bis 18:00
-			Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne mittels Rückruf, wenn sie uns Ihren
-			Kontaktwunsch mitteilen.
-		</p>
-		<ul>
-			<li><b>Telefon: </b>02381-9874699</li>
-			<li><b>Fax: </b>0321 - 2111 6558</li>
-			<li><b>E-Mail: </b><a href="mailto://info@tagaro.de">info@tagaro.de</a></li>
-			<li><b>Internet: </b><a sveltekit:prefetch href="https://tagaro.de">www.tagaro.de</a></li>
-		</ul>
+<div>
+	<h1 class="main_title">Kontakt</h1>
+	<div class="side_alignment">
+		<div class="side_text_container">
+			<p>
+				<b>
+					Wir helfen Ihnen gerne weiter - sowohl per E-Mail und Kontaktformular rund um die Uhr als
+					auch per Telefon zum Festnetzpreis.
+				</b>
+			</p>
+			<p>
+				Sie möchten gerne persönlich mit uns sprechen? Wir sind Montag bis Freitag von 10:00 bis
+				18:00 Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne mittels Rückruf, wenn sie uns
+				Ihren Kontaktwunsch mitteilen.
+			</p>
+			<ul>
+				<li><b>Telefon: </b>02381-9874699</li>
+				<li><b>Fax: </b>0321 - 2111 6558</li>
+				<li><b>E-Mail: </b><a href="mailto://info@tagaro.de">info@tagaro.de</a></li>
+				<li><b>Internet: </b><a sveltekit:prefetch href="https://tagaro.de">www.tagaro.de</a></li>
+			</ul>
+		</div>
+		<KontaktForm />
 	</div>
-	<KontaktForm />
 </div>
 
 <style lang="scss">

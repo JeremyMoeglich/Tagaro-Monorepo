@@ -27,6 +27,7 @@
 						{#if pair[1] instanceof Object}
 							{#if 'index' in pair[1]}
 								<a
+									sveltekit:prefetch
 									class={`nav_element nav_element_hover ${
 										route === pair[1]['index'] ? 'current_route' : ''
 									}`}
@@ -42,6 +43,7 @@
 							{/if}
 						{:else}
 							<a
+								sveltekit:prefetch
 								title={pair[0] + ' öffnen'}
 								class={`nav_element nav_element_hover ${route === pair[1] ? 'current_route' : ''}`}
 								href={pair[1]}
@@ -74,16 +76,13 @@
 								</button>
 								<div>
 									{#if selected == pair[0]}
-										<div
-											transition:fly={{ y: 60, duration: 200 }}
-											class="context_menu"
-											use:clickOutside={deselect}
-										>
+										<div class="context_menu" use:clickOutside={deselect}>
 											<b>{pair[0]}</b>
 											{#each Object.entries(pair[1]) as subtab}
 												{#if subtab[0] != 'index'}
 													<button class="selectable_element" on:click={deselect}>
 														<a
+															sveltekit:prefetch
 															class="context_menu_element nav_element_hover"
 															href={subtab[1]}
 															title={subtab[0] + ' öffnen'}

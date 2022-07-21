@@ -6,14 +6,14 @@
 	import KidsSenders from '$lib/components/site/packages/senders/kids_senders.svelte';
 </script>
 
-<body>
+<div>
 	<div class="alignment">
-		<KidsOverview />
+		<KidsOverview animated />
 		<KidsSenders />
 		<EntertainmentSenders />
 		<Inklusive />
 	</div>
-</body>
+</div>
 
 <style lang="scss">
 	.alignment {

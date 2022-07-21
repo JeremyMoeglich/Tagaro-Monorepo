@@ -5,7 +5,9 @@
 	import Inklusive from '$lib/components/site/inklusive.svelte';
 </script>
 
-<AngeboteRotator />
-<AlleBuchbar />
-<AllOverviews />
-<Inklusive />
+<div>
+	<AngeboteRotator />
+	<AlleBuchbar />
+	<AllOverviews />
+	<Inklusive />
+</div>

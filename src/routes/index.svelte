@@ -5,12 +5,12 @@
 	import Vertragsinfomationen from '$lib/components/site/vertragsinfomationen.svelte';
 </script>
 
-<body>
+<div>
 	<MainShowcase />
 	<AngeboteRotator />
 	<SchnellSkyAbonnieren />
 	<Vertragsinfomationen />
-</body>
+</div>
 
 <style>
 	body {

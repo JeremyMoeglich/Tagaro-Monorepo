@@ -3,7 +3,7 @@
 	const start = '/images/assets/packages/senders/entertainment/';
 </script>
 
-<body>
+<div>
 	<Senders
 		text="Sender im Entertainment Paket:"
 		content={[
@@ -36,4 +36,4 @@
 			'sky_logo_wb-serie-hd_b.png'
 		].map((img) => start + img)}
 	/>
-</body>
+</div>
