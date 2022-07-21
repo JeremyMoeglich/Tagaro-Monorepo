@@ -108,7 +108,7 @@
 	{@html '<div class="widget_container_overlay" />'}
 {/if}
 
-<div>
+<div class="outer">
 	<div class="mobile_slider" style={'right: ' + mobile_slider_value + 'vw'}>
 		<div class="main_content" on:click={close_sidebar}>
 			<img
@@ -231,7 +231,7 @@
 		margin: 0px;
 	}
 
-	body {
+	.outer {
 		margin-top: 0;
 		margin-bottom: 0;
 		margin-right: 0;
@@ -334,12 +334,11 @@
 	.full_page {
 		display: grid;
 		grid-template-columns: 1fr;
-		margin-bottom: 60px;
 	}
 	:global(.full_page > *) {
 		grid-row-start: 1;
 		grid-column-start: 1;
-		width: 100%;
+		width: 100vw;
 		background-color: white;
 	}
 </style>

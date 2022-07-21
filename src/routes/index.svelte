@@ -13,7 +13,7 @@
 </div>
 
 <style>
-	body {
+	div {
 		margin-bottom: 50px;
 	}
 </style>

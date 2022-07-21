@@ -1,4 +1,6 @@
-<div>
+
+
+<div class="outer">
 	<div class="back">
 		<div class="tb">
 			<h1>Service</h1>
@@ -49,14 +51,16 @@
 </div>
 
 <style lang="scss">
-	body {
+	.outer {
 		position: relative;
+		z-index: 0;
 	}
 	p {
 		color: white;
 	}
 	.back {
 		padding-top: 40px;
+		
 	}
 	.back::before {
 		content: '';
