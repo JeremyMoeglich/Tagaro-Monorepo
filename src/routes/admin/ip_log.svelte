@@ -11,6 +11,7 @@
 		createdAt: { seconds: number; nanoseconds: number };
 		ip: string;
 		source: string;
+		uuid?: string;
 	}
 
 	let ip_logs: ip_log_type[];
@@ -58,6 +59,7 @@
 									createdAt={item.createdAt}
 									source={item.source}
 									checked={ip_log_watchlist.includes(item.ip)}
+									uuid={item?.uuid}
 								/>
 							{/key}
 						{/each}

@@ -1,10 +1,9 @@
 <script lang="ts">
 	import SiteLogo from './site_logo.svelte';
-	import { fly } from 'svelte/transition';
 	import { clickOutside } from 'svelte-use-click-outside';
 	import PhoneBox from './phone_box.svelte';
+	import { page } from '$app/stores';
 
-	export let route: string;
 	export let navbar_elements: Record<string, string | Record<string, string>>;
 	let selected: undefined | string = undefined;
 
@@ -29,7 +28,7 @@
 								<a
 									sveltekit:prefetch
 									class={`nav_element nav_element_hover ${
-										route === pair[1]['index'] ? 'current_route' : ''
+										$page.url.pathname === pair[1]['index'] ? 'current_route' : ''
 									}`}
 									href={pair[1]['index']}
 									title={pair[0] + ' öffnen'}
@@ -45,7 +44,7 @@
 							<a
 								sveltekit:prefetch
 								title={pair[0] + ' öffnen'}
-								class={`nav_element nav_element_hover ${route === pair[1] ? 'current_route' : ''}`}
+								class={`nav_element nav_element_hover ${$page.url.pathname === pair[1] ? 'current_route' : ''}`}
 								href={pair[1]}
 								target={pair[1].includes('ebay') ? '_blank' : '_self'}
 							>

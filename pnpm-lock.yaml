@@ -10,6 +10,7 @@ specifiers:
   '@types/dateformat': ^5.0.0
   '@types/js-cookie': ^3.0.2
   '@types/lodash-es': ^4.17.6
+  '@types/uuid': ^8.3.4
   '@typescript-eslint/eslint-plugin': ^5.30.7
   '@typescript-eslint/parser': ^5.30.7
   autoprefixer: ^10.4.7
@@ -47,9 +48,11 @@ specifiers:
   tailwindcss: ^3.1.6
   tslib: ^2.4.0
   typescript: ^4.7.4
+  uuid: ^8.3.2
   vite: ^3.0.2
 
 dependencies:
+  '@types/uuid': 8.3.4
   dateformat: 5.0.3
   firebase: 9.9.0
   functional-utilities: 1.15.1
@@ -58,6 +61,7 @@ dependencies:
   js-cookie: 3.0.1
   lodash-es: 4.17.21
   svelte-checkbox: 1.0.1
+  uuid: 8.3.2
 
 devDependencies:
   '@babel/core': 7.18.9
@@ -1467,6 +1471,10 @@ packages:
     dependencies:
       '@types/node': 18.0.6
     dev: true
+
+  /@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
+    dev: false
 
   /@typescript-eslint/eslint-plugin/5.30.7_6wltbjakwuqm7awqswigmiuhd4:
     resolution: {integrity: sha512-l4L6Do+tfeM2OK0GJsU7TUcM/1oN/N25xHm3Jb4z3OiDU4Lj8dIuxX9LpVMS9riSXQs42D1ieX7b85/r16H9Fw==}
@@ -5838,6 +5846,11 @@ packages:
     resolution: {integrity: sha512-1MLa5ouZiOmQzUbjbu9VmjLzn1QLXBhwpUa7kdLUQK+KQ5KA9I1vk5U4YHe/X2Ch7PYnJfWuWT+VbuxbGwljhw==}
     dependencies:
       base64-arraybuffer: 1.0.2
+    dev: false
+
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
     dev: false
 
   /v8-compile-cache/2.3.0:

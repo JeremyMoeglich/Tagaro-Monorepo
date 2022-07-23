@@ -5,7 +5,8 @@
 		preferences_accepted,
 		preferences_keys,
 		preferences_keys_enum,
-		set_preferences
+		set_preferences,
+		preferences_store
 	} from '$lib/scripts/frontend/preferences';
 	import type { preferences_obj } from '$lib/scripts/frontend/preferences';
 	import Datenschutz from '../../service/datenschutz.svelte';
@@ -13,39 +14,31 @@
 	import Impressum from '../../service/impressum.svelte';
 	import Button from '$lib/components/elements/interactive/buttons/button.svelte';
 	import { cloneDeep } from 'lodash-es';
+	import { page } from '$app/stores'
+	
 
 	const disabled_routes = ['/service'];
 
-	export let route: string;
-
-	$: banner_enabled = !disabled_routes.some((element) => route.startsWith(element));
+	$: banner_enabled = !disabled_routes.some((element) => $page.url.pathname.startsWith(element));
 
 	function is_banner_shown(object: preferences_obj, banner_enabled: boolean): boolean {
 		return !preferences_accepted(object) && banner_enabled && browser;
 	}
 
-	let accept_obj: preferences_obj = get_preferences();
-
-	export let preferences_object: preferences_obj = accept_obj;
-
-	$: preferences_object = cloneDeep(accept_obj);
-
-	let edit_preferences = cloneDeep(accept_obj);
+	let edit_preferences = cloneDeep(get_preferences());
 	preferences_keys.forEach((key) => {
 		edit_preferences[key] = Boolean(edit_preferences[key]);
 	});
 
 	function save_current_preferences() {
-		accept_obj = cloneDeep(edit_preferences);
-		set_preferences(accept_obj);
+		set_preferences(edit_preferences);
 	}
 
 	function save_accept_all_preferences() {
 		preferences_keys.forEach((key) => {
 			edit_preferences[key] = true;
 		});
-		accept_obj = cloneDeep(edit_preferences);
-		set_preferences(accept_obj);
+		set_preferences(edit_preferences);
 	}
 
 	const tabs = {
@@ -110,7 +103,7 @@
 	let current_tab = 'Datenschutz';
 </script>
 
-{#if is_banner_shown(accept_obj, banner_enabled)}
+{#if is_banner_shown($preferences_store, banner_enabled)}
 	<div class="grey_out" />
 	<div class="outer">
 		<div class="top_bar">

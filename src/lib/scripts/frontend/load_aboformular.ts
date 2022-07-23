@@ -2,6 +2,8 @@ import { goto } from '$app/navigation';
 import { aboformular } from '$lib/scripts/frontend/urls';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc, Timestamp } from 'firebase/firestore';
+import { get } from 'svelte/store';
+import { user_id_store } from './user_id';
 
 function timeout<T>(promise: Promise<T>, ms: number): Promise<T> {
 	return new Promise((resolve, reject) => {
@@ -45,7 +47,8 @@ export async function load_form(source: string, route: string = aboformular): Pr
 			await addDoc(log_collection, {
 				ip: ip,
 				createdAt: Timestamp.fromDate(new Date()),
-				source: source
+				source: source,
+				uuid: get(user_id_store)
 			});
 		} else {
 			console.log('Failed to get IP');

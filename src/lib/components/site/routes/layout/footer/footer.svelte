@@ -1,16 +1,14 @@
 <script lang="ts">
 	import { email, phone_number } from '$lib/info';
 
-	import type { preferences_obj } from '$lib/scripts/frontend/preferences';
+	import { preferences_store } from '$lib/scripts/frontend/preferences';
+	import { page } from '$app/stores';
 
 	import { aboformular } from '$lib/scripts/frontend/urls';
 	import ZumAboformularBar from './zum_aboformular_bar.svelte';
-
-	export let preferences_object: preferences_obj;
-	export let route: string;
 </script>
 
-{#if route !== aboformular}
+{#if $page.url.pathname !== aboformular}
 	<ZumAboformularBar />
 {/if}
 
@@ -54,11 +52,11 @@
 					alt="Trustami"
 				/></a
 			> -->
-		{#if preferences_object.socialmedia}
+		{#if $preferences_store.socialmedia}
 			{@html '<div class="widget_container_badge"></div>'}
 		{/if}
 	</div>
-	{#if preferences_object.socialmedia}
+	{#if $preferences_store.socialmedia}
 		<div class="social">
 			<h3>Social Media</h3>
 			<iframe

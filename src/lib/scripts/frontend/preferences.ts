@@ -1,5 +1,6 @@
 import { hasProperty, is_json, typed_from_entries, typed_keys } from 'functional-utilities';
 import Cookies from 'js-cookie';
+import { writable, type Writable } from 'svelte/store';
 
 export enum preferences_keys_enum {
 	essentiell = 'Essentiell',
@@ -60,10 +61,13 @@ export function get_preferences(): preferences_obj {
 	return parsed;
 }
 
-export function set_preferences(preferences: preferences_obj): void {
-	Cookies.set('preferences', JSON.stringify(preferences));
-}
-
 export function preferences_accepted(preferences: preferences_obj): boolean {
 	return preferences_keys.every((key) => preferences[key] !== undefined);
+}
+
+export const preferences_store: Writable<preferences_obj> = writable(get_preferences());
+
+export function set_preferences(preferences: preferences_obj): void {
+	Cookies.set('preferences', JSON.stringify(preferences));
+	preferences_store.set(preferences);
 }

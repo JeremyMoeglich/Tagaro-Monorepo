@@ -56,6 +56,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/uuid": "^8.3.4",
 		"dateformat": "^5.0.3",
 		"firebase": "^9.9.0",
 		"functional-utilities": "^1.15.1",
@@ -63,6 +64,7 @@
 		"ibantools": "^4.1.6",
 		"js-cookie": "^3.0.1",
 		"lodash-es": "^4.17.21",
-		"svelte-checkbox": "^1.0.1"
+		"svelte-checkbox": "^1.0.1",
+		"uuid": "^8.3.2"
 	}
 }

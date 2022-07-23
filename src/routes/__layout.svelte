@@ -3,15 +3,11 @@
 	import '../global.scss';
 	import Footer from '$lib/components/site/routes/layout/footer/footer.svelte';
 	import * as urls from '$lib/scripts/frontend/urls';
-	import PageTransition from '$lib/components/internal/PageTransition.svelte';
-
 	import InfoBanner from '$lib/components/site/routes/layout/info_banner.svelte';
 
-	import type { preferences_keys_type, preferences_obj } from '$lib/scripts/frontend/preferences';
-	import { preferences_keys } from '$lib/scripts/frontend/preferences';
+	import { preferences_store } from '$lib/scripts/frontend/preferences';
 	import { typed_entries } from 'functional-utilities';
 	import Header from '$lib/components/site/routes/layout/header/header.svelte';
-	import { page } from '$app/stores';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -38,10 +34,6 @@
 
 	let screen_y_position: number;
 
-	let preferences_object: preferences_obj = Object.fromEntries(
-		preferences_keys.map((v) => [v, false])
-	) as Record<preferences_keys_type, boolean>;
-
 	function open_sidebar() {
 		if (mobile_slider_value === 0) {
 			mobile_slider_value = 80;
@@ -56,13 +48,10 @@
 			}, 300);
 		}
 	}
-
-	let route = $page.url.pathname;
-	$: route = $page.url.pathname;
 </script>
 
 <svelte:head>
-	{#if preferences_object.analytics}
+	{#if $preferences_store.analytics}
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-70CD2JS6R8"></script>
 		<script>
@@ -75,7 +64,7 @@
 			gtag('config', 'G-70CD2JS6R8');
 		</script>
 	{/if}
-	{#if preferences_object.socialmedia}
+	{#if $preferences_store.socialmedia}
 		<script
 			id="trustamiwidget"
 			type="text/javascript"
@@ -104,7 +93,7 @@
 	<meta name="author" content="Jeremy Möglich" />
 </svelte:head>
 
-{#if preferences_object.socialmedia}
+{#if $preferences_store.socialmedia}
 	{@html '<div class="widget_container_overlay" />'}
 {/if}
 
@@ -119,12 +108,12 @@
 				on:click={() => (screen_y_position = 0)}
 			/>
 			<div class="header">
-				<Header {route} {navbar_elements} />
+				<Header {navbar_elements} />
 			</div>
 			<div class="full_page">
 				<slot />
 			</div>
-			<Footer {preferences_object} {route} />
+			<Footer />
 		</div>
 		<div
 			class="mobile_sidebar"
@@ -205,7 +194,7 @@
 			/>
 		{/if}
 	</div>
-	<InfoBanner bind:preferences_object bind:route />
+	<InfoBanner />
 </div>
 
 <svelte:window bind:scrollY={screen_y_position} />
