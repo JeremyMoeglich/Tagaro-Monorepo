@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import preprocess from 'svelte-preprocess';
+import { optimizeImports } from "carbon-preprocess-svelte";
 //import importAssets from 'svelte-preprocess-import-assets'
 //import seqPreprocessor from 'svelte-sequential-preprocessor'
 import staticAdapter from '@sveltejs/adapter-static';
@@ -36,7 +37,8 @@ const config = {
 		preprocess({
 			scss: { includePaths: ['src'] },
 			postcss: true
-		})
+		}),
+		optimizeImports()
 	],
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html

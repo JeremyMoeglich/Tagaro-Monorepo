@@ -153,6 +153,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+		min-width: 220px;
 	}
 	.inactive {
 		background-color: red !important;

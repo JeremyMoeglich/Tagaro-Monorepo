@@ -15,6 +15,8 @@ specifiers:
   '@typescript-eslint/parser': ^5.30.7
   autoprefixer: ^10.4.7
   babel-cli: ^6.26.0
+  carbon-icons-svelte: ^11.2.0
+  carbon-preprocess-svelte: ^0.9.1
   cross-env: ^7.0.3
   daisyui: ^2.19.0
   dateformat: ^5.0.3
@@ -77,6 +79,8 @@ devDependencies:
   '@typescript-eslint/parser': 5.30.7_he2ccbldppg44uulnyq4rwocfa
   autoprefixer: 10.4.7_postcss@8.4.14
   babel-cli: 6.26.0
+  carbon-icons-svelte: 11.2.0
+  carbon-preprocess-svelte: 0.9.1_cjgxgimkkwa2dvpaybep6oz6iq
   cross-env: 7.0.3
   daisyui: 2.19.0_ugi4xkrfysqkt4c4y6hkyfj344
   dotenv: 16.0.1
@@ -2130,6 +2134,30 @@ packages:
     resolution: {integrity: sha512-XDgbeOHfifWV3GEES2B8rtsrADx4Jf+juKX2SICJcaUhjYBO3bR96kvEIHa15VU6ohtOhBZuPGGYGbXMRn0NCw==}
     dev: true
 
+  /carbon-icons-svelte/11.2.0:
+    resolution: {integrity: sha512-nbqCEKoZA5EzT2Lr8vNYnfWcDl5GnFFLnbD861U32g9cNe7D7nmQKx4T+goFp5AoY60OyAgKUNJov8LwNEkhbg==}
+    dev: true
+
+  /carbon-preprocess-svelte/0.9.1_cjgxgimkkwa2dvpaybep6oz6iq:
+    resolution: {integrity: sha512-i0hj5JrpSeu1F6q5Hehn4Qe3mpb1oXi57ybbsTF2TexFBGtzaBDQ3/mmXBKRNuk4PVQCtTIXQe4vk1A6Uyso6g==}
+    dependencies:
+      purgecss: 4.1.3
+      svelte-preprocess: 4.10.7_5alfec2aulnpkckkpd3xw57eki
+      typescript: 4.7.4
+    transitivePeerDependencies:
+      - '@babel/core'
+      - coffeescript
+      - less
+      - node-sass
+      - postcss
+      - postcss-load-config
+      - pug
+      - sass
+      - stylus
+      - sugarss
+      - svelte
+    dev: true
+
   /chalk/1.1.3:
     resolution: {integrity: sha512-U3lRVLMSlsCfjqYPbLyVv11M9CPW4I728d6TCKMAOJueEeB9/8o+eSsMnxPJD+Q+K909sdESg7C+tIkoH6on1A==}
     engines: {node: '>=0.10.0'}
@@ -2270,6 +2298,11 @@ packages:
 
   /commander/2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
+    dev: true
+
+  /commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
     dev: true
 
   /component-emitter/1.3.0:
@@ -4848,6 +4881,16 @@ packages:
   /punycode/2.1.1:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
     engines: {node: '>=6'}
+    dev: true
+
+  /purgecss/4.1.3:
+    resolution: {integrity: sha512-99cKy4s+VZoXnPxaoM23e5ABcP851nC2y2GROkkjS8eJaJtlciGavd7iYAw2V84WeBqggZ12l8ef44G99HmTaw==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
+      glob: 7.2.3
+      postcss: 8.4.14
+      postcss-selector-parser: 6.0.10
     dev: true
 
   /q/1.5.1:
