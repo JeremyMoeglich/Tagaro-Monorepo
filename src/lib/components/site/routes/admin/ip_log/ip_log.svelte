@@ -1,5 +1,4 @@
 <script lang="ts">
-	import SideBySide from '$lib/components/layout/side_by_side.svelte';
 	import { firestore } from '$lib/firebase_vars';
 	import {
 		onSnapshot,

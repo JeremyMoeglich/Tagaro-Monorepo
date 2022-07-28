@@ -10,10 +10,6 @@
 	export let uuid: string | undefined;
 	export let watchlist: watchlist_type[];
 
-    if (ip === '5.147.131.245') {
-        debugger;
-    }
-
 	function is_checked(ip: string, watchlist: watchlist_type[]): boolean {
 		return watchlist.some((entry) => entry.ip === ip);
 	}
@@ -21,10 +17,9 @@
 	async function change({ detail }: CustomEvent<boolean>): Promise<void> {
 		const document = doc(firestore, 'ip_log_watchlist', ip);
 		if (detail) {
-			await setDoc(document, {
-				ip,
-				uuid
-			});
+			let obj: watchlist_type = { ip };
+			if (uuid) obj.uuid = uuid;
+			await setDoc(document, obj);
 			checked = true;
 		} else {
 			await deleteDoc(document);
@@ -34,7 +29,7 @@
 
 	let checked = is_checked(ip, watchlist);
 
-    $: checked = is_checked(ip, watchlist);
+	$: checked = is_checked(ip, watchlist);
 </script>
 
 <div class="checkbox">
