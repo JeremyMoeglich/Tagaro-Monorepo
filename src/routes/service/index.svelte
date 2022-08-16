@@ -1,5 +1,3 @@
-
-
 <div class="outer">
 	<div class="back">
 		<div class="tb">
@@ -60,7 +58,6 @@
 	}
 	.back {
 		padding-top: 40px;
-		
 	}
 	.back::before {
 		content: '';

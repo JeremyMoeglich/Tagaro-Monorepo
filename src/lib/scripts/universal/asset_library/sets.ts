@@ -10,4 +10,3 @@ export const asset_sets: Record<package_set_id, ReadonlyArray<package_id>> = {
 	premium: ['cinema', 'sport', 'bundesliga'],
 	...typed_from_entries(packages_assets.map((v) => [v.id, [v.id]]))
 } as const;
-

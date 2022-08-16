@@ -14,8 +14,7 @@
 	import Impressum from '../../service/impressum.svelte';
 	import Button from '$lib/components/elements/interactive/buttons/button.svelte';
 	import { cloneDeep } from 'lodash-es';
-	import { page } from '$app/stores'
-	
+	import { page } from '$app/stores';
 
 	const disabled_routes = ['/service'];
 

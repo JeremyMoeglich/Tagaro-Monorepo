@@ -9,7 +9,7 @@
 		where,
 		getDocs
 	} from 'firebase/firestore';
-import { isEqual } from 'lodash-es';
+	import { isEqual } from 'lodash-es';
 	import { sortBy } from 'lodash-es';
 	import LogNote from './log_note.svelte';
 	import type { note_type, watchlist_type } from './types';

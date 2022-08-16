@@ -25,7 +25,7 @@
 			'sky_logo_sky-sport-austria.png',
 			'sky_logo_sky-sport-mix-hd.png',
 			'sky_logo_sky-sport-tennis.png',
-			'sky_logo_sky-sport-top-event.png',
+			'sky_logo_sky-sport-top-event.png'
 		].map((img) => start + img)}
 	/>
 </div>

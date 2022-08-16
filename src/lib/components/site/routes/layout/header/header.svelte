@@ -44,7 +44,9 @@
 							<a
 								sveltekit:prefetch
 								title={pair[0] + ' öffnen'}
-								class={`nav_element nav_element_hover ${$page.url.pathname === pair[1] ? 'current_route' : ''}`}
+								class={`nav_element nav_element_hover ${
+									$page.url.pathname === pair[1] ? 'current_route' : ''
+								}`}
 								href={pair[1]}
 								target={pair[1].includes('ebay') ? '_blank' : '_self'}
 							>
