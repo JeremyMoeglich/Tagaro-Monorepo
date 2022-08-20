@@ -26,7 +26,7 @@
 					data.timestamp = new Date(data.timestamp.seconds * 1000);
 					return data as email_log_type;
 				}),
-				(item) => item.timestamp
+				(item: { timestamp: Date }) => item.timestamp
 			);
 		}
 	);

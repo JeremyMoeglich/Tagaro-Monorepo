@@ -52,7 +52,7 @@
 		(snapshot) => {
 			ip_logs = sortBy(
 				snapshot.docs.map((doc) => doc.data() as log_type),
-				(item) => item.createdAt.seconds
+				(item: { createdAt: { seconds: number } }) => item.createdAt.seconds
 			);
 		}
 	);
@@ -82,7 +82,7 @@
 				});
 				if (log?.developement_flag ?? false) {
 					processed_ip_logs[index].note = 'dev';
-					return
+					return;
 				}
 				for (const watchlist_item of log_watchlist) {
 					if (watchlist_item.ip === log.ip || (watchlist_item.uuid === log.uuid && log.uuid)) {

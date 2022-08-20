@@ -8,7 +8,7 @@
 	import type { imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
 	import { crossfade } from '$lib/scripts/frontend/crossfade';
 
-	const [send, receive] = crossfade;
+	const [send] = crossfade;
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let enddate:

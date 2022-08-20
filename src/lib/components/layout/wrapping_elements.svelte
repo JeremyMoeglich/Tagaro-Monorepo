@@ -2,7 +2,6 @@
 	import { browser } from '$app/env';
 	import { indexed_package_assets } from '$lib/scripts/universal/asset_library/assets/packages';
 	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
-	import { fly } from 'svelte/transition';
 
 	import {
 		bonus,

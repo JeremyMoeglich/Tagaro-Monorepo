@@ -37,7 +37,7 @@ const firebaseConfig = {
 
 export async function load_form(source: string, route: string = aboformular): Promise<void> {
 	try {
-		const developement_flag = (cookies.get('developement_flag') === 'true') || dev
+		const developement_flag = cookies.get('developement_flag') === 'true' || dev;
 		const ip: unknown = await (await timeout(fetch('https://ip.moeglich.dev/'), 2000))
 			.json()
 			.then((v) => v.ip);

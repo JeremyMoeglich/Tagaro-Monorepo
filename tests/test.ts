@@ -18,7 +18,7 @@ test('test', async ({ page }) => {
 	await page.goto('/');
 	await allow_cookies(page);
 	await set_developement_flag(page);
-	await expect(await page.textContent('h2:near(h1)')).toBe(
+	expect(await page.textContent('h2:near(h1)')).toBe(
 		'Bei Vermittlung über TAGARO zusätzlich mit € 20 Bonus.'
 	);
 	await page.click('button[title="*Vertragsinformationen aufklappen"]');

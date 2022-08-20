@@ -13,7 +13,6 @@
 		"lint": "prettier --ignore-path .gitignore  --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
 		"test": "playwright test"
-
 	},
 	"devDependencies": {
 		"@babel/core": "^7.18.10",
@@ -62,7 +61,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		
 		"dateformat": "^5.0.3",
 		"firebase": "^9.9.3",
 		"functional-utilities": "^1.15.1",

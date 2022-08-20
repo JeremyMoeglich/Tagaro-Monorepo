@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { package_id } from '$lib/scripts/universal/asset_library/assets/packages';
 	import type { priceable_asset_id } from '$lib/scripts/universal/asset_library/asset_types';
 	import type { base_package_set } from '$lib/scripts/universal/asset_library/offer_description';
 	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_library/priceable_asset';

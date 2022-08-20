@@ -30,7 +30,7 @@
 			alt={assets[0].id}
 			class="size_image"
 			style:transform={`scale(${back_scale})`}
-			transition:fly={{ duration: 300, y: -50, delay: 400 }}
+			in:fly={{ duration: 300, y: -50, delay: 400 }}
 		/>
 		<div>
 			{#each assets.slice(1) as asset, i}
@@ -42,7 +42,7 @@
 					style:transform={`translateX(${
 						(offset * 100 * index) / image_width_percentage
 					}%) scale(${get_scale(index)})`}
-					transition:fly={{ duration: 300, y: -50, delay: index * 100 + 400 }}
+					in:fly={{ duration: 300, y: -50, delay: index * 100 + 400 }}
 				/>
 			{/each}
 		</div>
