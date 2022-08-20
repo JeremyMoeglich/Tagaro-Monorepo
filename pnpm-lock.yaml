@@ -32,7 +32,6 @@ specifiers:
   js-cookie: ^3.0.1
   lodash-es: ^4.17.21
   object-sizeof: ^1.6.3
-  playwright: ^1.25.0
   postcss: ^8.4.16
   postcss-html: ^1.5.0
   postcss-load-config: ^4.0.1
@@ -56,8 +55,6 @@ specifiers:
   vite: ^3.0.9
 
 dependencies:
-  '@playwright/test': 1.25.0
-  '@types/uuid': 8.3.4
   dateformat: 5.0.3
   firebase: 9.9.3
   functional-utilities: 1.15.1
@@ -65,12 +62,12 @@ dependencies:
   ibantools: 4.1.6
   js-cookie: 3.0.1
   lodash-es: 4.17.21
-  playwright: 1.25.0
   svelte-checkbox: 1.0.1
   uuid: 8.3.2
 
 devDependencies:
   '@babel/core': 7.18.10
+  '@playwright/test': 1.25.0
   '@sveltejs/adapter-netlify': 1.0.0-next.71
   '@sveltejs/adapter-node': 1.0.0-next.86
   '@sveltejs/adapter-static': 1.0.0-next.39
@@ -79,6 +76,7 @@ devDependencies:
   '@types/dateformat': 5.0.0
   '@types/js-cookie': 3.0.2
   '@types/lodash-es': 4.17.6
+  '@types/uuid': 8.3.4
   '@typescript-eslint/eslint-plugin': 5.33.1_vsoshirnpb7xw6mr7xomgfas2i
   '@typescript-eslint/parser': 5.33.1_4rv7y5c6xz3vfxwhbrcxxi73bq
   autoprefixer: 10.4.8_postcss@8.4.16
@@ -1311,7 +1309,7 @@ packages:
     dependencies:
       '@types/node': 18.7.8
       playwright-core: 1.25.0
-    dev: false
+    dev: true
 
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
@@ -1524,7 +1522,7 @@ packages:
 
   /@types/uuid/8.3.4:
     resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
-    dev: false
+    dev: true
 
   /@typescript-eslint/eslint-plugin/5.33.1_vsoshirnpb7xw6mr7xomgfas2i:
     resolution: {integrity: sha512-S1iZIxrTvKkU3+m63YUOxYPKaP+yWDQrdhxTglVDVEVBf+aCSw85+BmJnyUaQQsk5TXFG/LpBu9fa+LrAQ91fQ==}
@@ -4800,16 +4798,7 @@ packages:
     resolution: {integrity: sha512-kZ3Jwaf3wlu0GgU0nB8UMQ+mXFTqBIFz9h1svTlNduNKjnbPXFxw7mJanLVjqxHJRn62uBfmgBj93YHidk2N5Q==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: false
-
-  /playwright/1.25.0:
-    resolution: {integrity: sha512-Z+pQNWI17Qx/tHhnmgMmPsptsisXpKgAnUvYv98kctlHUJaqMt2400P8kTw9vEPoC0xdxqu0JhxO7pDTmaaIKw==}
-    engines: {node: '>=14'}
-    hasBin: true
-    requiresBuild: true
-    dependencies:
-      playwright-core: 1.25.0
-    dev: false
+    dev: true
 
   /pngjs/3.4.0:
     resolution: {integrity: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==}
