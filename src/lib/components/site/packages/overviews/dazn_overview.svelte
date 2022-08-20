@@ -16,5 +16,5 @@
 		'Abrechnung und Kundenservice aus einer Hand. Sky ist dein Ansprechpartner.'
 	]}
 	image={'/images/external/dazn_double.jpg'}
-	price_asset_ids={['dazn']}
+	price_asset_ids={['dazn_generic']}
 />

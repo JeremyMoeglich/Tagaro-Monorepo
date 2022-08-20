@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { indexed_package_assets } from '$lib/scripts/universal/asset_library/assets/packages';
 	import type { imaged_package_id } from '$lib/scripts/universal/asset_library/imaged_packages';
-	import { fly } from 'svelte/transition';
 	export let packages: imaged_package_id[];
 	export let offset_multiplier = 1;
 	const image_width_percentage = 0.4;
@@ -30,7 +29,6 @@
 			alt={assets[0].id}
 			class="size_image"
 			style:transform={`scale(${back_scale})`}
-			in:fly={{ duration: 300, y: -50, delay: 400 }}
 		/>
 		<div>
 			{#each assets.slice(1) as asset, i}
@@ -42,7 +40,6 @@
 					style:transform={`translateX(${
 						(offset * 100 * index) / image_width_percentage
 					}%) scale(${get_scale(index)})`}
-					in:fly={{ duration: 300, y: -50, delay: index * 100 + 400 }}
 				/>
 			{/each}
 		</div>

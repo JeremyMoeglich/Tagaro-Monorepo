@@ -35,8 +35,8 @@
 			<b>UHD + {get_price_string(['uhd'], 'jahr')} mtl. (für Sat oder Kabel-Empfang)</b>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/dazn.svg">
-			<b>DAZN jährlich + {get_price_string(['dazn'], 'jahr')} mtl. </b>oder<b>
-				<br /> DAZN monatlich + {get_price_string(['dazn'], 'monat')} mtl.</b
+			<b>DAZN jährlich + {get_price_string(['dazn_yearly'], 'jahr')} mtl. </b>oder<b>
+				<br /> DAZN monatlich + {get_price_string(['dazn_monthly'], 'monat')} mtl.</b
 			>
 		</Zubuchoption>
 		<Zubuchoption image="/images/assets/zubuchoptionen/multiscreen.png">

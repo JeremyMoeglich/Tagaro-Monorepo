@@ -1,9 +1,11 @@
-import { dynamic_to_static_assets } from '../priceable_asset_types';
+import { dynamic_to_static_assets, type Price } from '../priceable_asset_types';
 import type { Priceable_Asset } from '../priceable_asset_types';
 
 export const zubuchoption_ids = [
 	'uhd',
-	'dazn',
+	'dazn_monthly',
+	'dazn_yearly',
+	'dazn_generic',
 	'multiscreen',
 	'kids',
 	'trendsports',
@@ -15,6 +17,8 @@ export const zubuchoption_ids = [
 ] as const;
 
 export type zubuchoption_id = typeof zubuchoption_ids[number];
+
+const dazn_price: Price = { jahr: 18.99, monat: 29.99, singular: 0 };
 
 const zubuchoption_image_location = '/images/assets/zubuchoptionen/';
 
@@ -37,8 +41,22 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 			image: `${zubuchoption_image_location}uhd.png`
 		},
 		{
-			id: 'dazn',
-			price: { jahr: 18.99, monat: 29.99, singular: 0 },
+			id: 'dazn_monthly',
+			price: { jahr: dazn_price.monat, monat: dazn_price.monat, singular: 0 },
+			name: 'DAZN',
+			note: '[TODO]',
+			image: `${zubuchoption_image_location}dazn.svg`
+		},
+		{
+			id: 'dazn_yearly',
+			price: { jahr: dazn_price.jahr, monat: dazn_price.jahr, singular: 0 },
+			name: 'DAZN',
+			note: '[TODO]',
+			image: `${zubuchoption_image_location}dazn.svg`
+		},
+		{
+			id: 'dazn_generic',
+			price: dazn_price,
 			name: 'DAZN',
 			note: '[TODO]',
 			image: `${zubuchoption_image_location}dazn.svg`
