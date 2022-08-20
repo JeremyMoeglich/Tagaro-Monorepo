@@ -72,10 +72,8 @@
 					<li><b>Optional:</b></li>
 					<li>- UHD mtl. {get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
 					<li>
-						- DAZN jährlich für {get_price_string(['dazn_yearly'], 'jahr')} mtl. oder DAZN monatlich für {get_price_string(
-							['dazn_monthly'],
-							'monat'
-						)} mtl.
+						- DAZN jährlich für {get_price_string(['dazn_yearly'], 'jahr')} mtl. oder DAZN monatlich
+						für {get_price_string(['dazn_monthly'], 'monat')} mtl.
 					</li>
 					<li>
 						- Multiscreen für {get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus für
