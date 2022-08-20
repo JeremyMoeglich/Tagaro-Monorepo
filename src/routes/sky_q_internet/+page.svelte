@@ -25,7 +25,7 @@
 </div>
 
 <style lang="scss">
-	@import '../lib/style/gradient_text.scss';
+	@import '../../lib/style/gradient_text.scss';
 	.main-title {
 		margin-top: 50px;
 		font-size: min(max(2vw, 35px), 4vw);

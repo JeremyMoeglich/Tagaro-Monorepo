@@ -49,9 +49,6 @@ const config = {
 			entries: ['*'],
 			default: true
 		},
-		routes: (filepath) => {
-			return ![/.aboformular\/index.svelte$/].some((regex) => regex.test(filepath));
-		},
 
 		//adapter: nodeAdapter({ out: 'build',precompress: true,target: 'node16' }),
 		//adapter: staticAdapter({ pages: 'build',prerender: true }),

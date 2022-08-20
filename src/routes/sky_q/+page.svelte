@@ -83,7 +83,7 @@
 </div>
 
 <style lang="scss">
-	@import '../lib/style/gradient_text.scss';
+	@import '../../lib/style/gradient_text.scss';
 	.btn {
 		width: 500px;
 		margin-left: auto;

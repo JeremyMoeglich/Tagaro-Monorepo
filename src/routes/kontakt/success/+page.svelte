@@ -6,7 +6,7 @@
 </div>
 
 <style lang="scss">
-	@import '../../lib/style/gradient_text.scss';
+	@import '../../../lib/style/gradient_text.scss';
 	.center_alignment {
 		display: flex;
 		flex-direction: column;
