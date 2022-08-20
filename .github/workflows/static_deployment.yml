@@ -27,6 +27,7 @@ jobs:
       - name: lint, check, build
         run: |
           npm run lint
+          npx playwright install
           npm run check
 
       - name: copy
