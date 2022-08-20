@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.18.10
+  '@playwright/test': ^1.25.0
   '@sveltejs/adapter-netlify': 1.0.0-next.71
   '@sveltejs/adapter-node': 1.0.0-next.86
   '@sveltejs/adapter-static': 1.0.0-next.39
@@ -31,6 +32,7 @@ specifiers:
   js-cookie: ^3.0.1
   lodash-es: ^4.17.21
   object-sizeof: ^1.6.3
+  playwright: ^1.25.0
   postcss: ^8.4.16
   postcss-html: ^1.5.0
   postcss-load-config: ^4.0.1
@@ -54,6 +56,7 @@ specifiers:
   vite: ^3.0.9
 
 dependencies:
+  '@playwright/test': 1.25.0
   '@types/uuid': 8.3.4
   dateformat: 5.0.3
   firebase: 9.9.3
@@ -62,6 +65,7 @@ dependencies:
   ibantools: 4.1.6
   js-cookie: 3.0.1
   lodash-es: 4.17.21
+  playwright: 1.25.0
   svelte-checkbox: 1.0.1
   uuid: 8.3.2
 
@@ -1299,6 +1303,15 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
     dev: true
+
+  /@playwright/test/1.25.0:
+    resolution: {integrity: sha512-j4EZhTTQI3dBeWblE21EV//swwmBtOpIrLdOIJIRv4uqsLdHgBg1z+JtTg+AeC5o2bAXIE26kDNW5A0TimG8Bg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@types/node': 18.7.8
+      playwright-core: 1.25.0
+    dev: false
 
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
@@ -4782,6 +4795,21 @@ packages:
     dependencies:
       pngjs: 3.4.0
     dev: true
+
+  /playwright-core/1.25.0:
+    resolution: {integrity: sha512-kZ3Jwaf3wlu0GgU0nB8UMQ+mXFTqBIFz9h1svTlNduNKjnbPXFxw7mJanLVjqxHJRn62uBfmgBj93YHidk2N5Q==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
+
+  /playwright/1.25.0:
+    resolution: {integrity: sha512-Z+pQNWI17Qx/tHhnmgMmPsptsisXpKgAnUvYv98kctlHUJaqMt2400P8kTw9vEPoC0xdxqu0JhxO7pDTmaaIKw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      playwright-core: 1.25.0
+    dev: false
 
   /pngjs/3.4.0:
     resolution: {integrity: sha512-NCrCHhWmnQklfH4MtJMRjZ2a8c80qXeMlQMv2uVp9ISJMTt562SbGd6n2oq0PaPgKm7Z6pL9E2UlLIhC+SHL3w==}

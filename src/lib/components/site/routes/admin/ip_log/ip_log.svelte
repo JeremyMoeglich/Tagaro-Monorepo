@@ -25,6 +25,7 @@
 		ip: string;
 		source: string;
 		uuid?: string;
+		developement_flag?: boolean;
 	}
 
 	interface processed_log_type extends log_type {
@@ -79,6 +80,10 @@
 					...log,
 					note: 'loading'
 				});
+				if (log?.developement_flag ?? false) {
+					processed_ip_logs[index].note = 'dev';
+					return
+				}
 				for (const watchlist_item of log_watchlist) {
 					if (watchlist_item.ip === log.ip || (watchlist_item.uuid === log.uuid && log.uuid)) {
 						processed_ip_logs[index].note = 'ban';

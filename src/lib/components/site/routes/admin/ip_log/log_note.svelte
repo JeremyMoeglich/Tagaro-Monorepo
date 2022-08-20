@@ -12,7 +12,7 @@
 
 	const color_table: Record<note_type, string> = {
 		ban: 'red',
-		debug: 'blue',
+		dev: 'blue',
 		loading: 'gray',
 		warn: 'orange',
 		unknown: 'green'
@@ -22,7 +22,7 @@
 <div class="outer" style:color={color_table[note]}>
 	{#if note === 'ban'}
 		<ErrorFilled />
-	{:else if note === 'debug'}
+	{:else if note === 'dev'}
 		<Debug />
 	{:else if note === 'loading'}
 		<HelpFilled />
