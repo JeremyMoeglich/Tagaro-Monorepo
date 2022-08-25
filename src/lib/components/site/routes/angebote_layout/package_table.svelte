@@ -2,6 +2,7 @@
 	import { get_offer_note, get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import { package_combinations } from '$lib/scripts/universal/asset_library/assets/packages';
 	import Zubuchoption from '$lib/components/templates/element/zubuchoption.svelte';
+	import AktivierungSentence from '../../aktivierung_sentence.svelte';
 </script>
 
 <div class="main_container">
@@ -29,6 +30,7 @@
 			</tr>
 		{/each}
 	</table>
+	<AktivierungSentence always_show={false}/>
 	<div class="zubuchoptionen" id="zubuchoptionen">
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption image="/images/assets/zubuchoptionen/uhd.png">
@@ -68,9 +70,12 @@
 	@import 'lib/style/gradient_text.scss';
 
 	.main_container {
+		display: flex;
 		background-color: #f2f2f2;
 		padding-top: 50px;
 		padding-bottom: 50px;
+		flex-direction: column;
+		align-items: center;
 	}
 	.zubuchoptionen {
 		display: flex;

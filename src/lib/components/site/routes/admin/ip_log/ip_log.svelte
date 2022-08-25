@@ -52,7 +52,7 @@
 		(snapshot) => {
 			ip_logs = sortBy(
 				snapshot.docs.map((doc) => doc.data() as log_type),
-				(item: { createdAt: { seconds: number } }) => item.createdAt.seconds
+				(item) => item.createdAt.seconds
 			);
 		}
 	);

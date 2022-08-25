@@ -1,13 +1,10 @@
 <script lang="ts">
+	import AktivierungSentence from '$lib/components/site/aktivierung_sentence.svelte';
 	import type { priceable_asset_id } from '$lib/scripts/universal/asset_library/asset_types';
 	import type { base_package_set } from '$lib/scripts/universal/asset_library/offer_description';
 	import { indexed_priceable_assets } from '$lib/scripts/universal/asset_library/priceable_asset';
 
-	import {
-		aktivierung,
-		aktivierung_string,
-		get_price_string
-	} from '$lib/scripts/universal/asset_library/prices';
+	import { get_price_string } from '$lib/scripts/universal/asset_library/prices';
 	import { typed_entries } from 'functional-utilities';
 	import ExpandableBox from '../../layout./../layout/expandable_box.svelte';
 
@@ -60,14 +57,7 @@
 						{/each}
 					</ul>
 				{/each}
-				{#if aktivierung <= 0}
-					<p>Es fällt <b>keine Aktivierungsgebühr</b> durch Sky an. Sie sparen € 29.</p>
-				{:else}
-					<p>
-						Alle Paketkombinationen zzgl. einmaliger Aktivierungsgebühr in Höhe von {aktivierung_string}
-						durch Sky.
-					</p>
-				{/if}
+				<AktivierungSentence />
 				<ul>
 					<li><b>Optional:</b></li>
 					<li>- UHD mtl. {get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
