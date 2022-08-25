@@ -28,6 +28,7 @@ jobs:
         run: |
           npm run lint
           npx playwright install
+          npx playwright install-deps
           npm run check
 
       - name: copy
