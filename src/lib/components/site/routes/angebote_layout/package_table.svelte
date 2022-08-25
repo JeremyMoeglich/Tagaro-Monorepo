@@ -30,7 +30,7 @@
 			</tr>
 		{/each}
 	</table>
-	<AktivierungSentence always_show={false}/>
+	<AktivierungSentence always_show={false} />
 	<div class="zubuchoptionen" id="zubuchoptionen">
 		<h2 class="title">Zubuchoptionen</h2>
 		<Zubuchoption image="/images/assets/zubuchoptionen/uhd.png">
