@@ -93,7 +93,9 @@
 		{/each}
 		<ul class="points">
 			{#each points as point}
-				<li>✓ {@html point}</li>
+				<li>
+					✓ {@html point}
+				</li>
 			{/each}
 		</ul>
 		{#each right_badges as badge}

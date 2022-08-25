@@ -13,7 +13,8 @@
 	points={[
 		'Bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo erhalten*',
 		'Zusätzlich 500 PAYBACK Punkte, wenn Sie sammeln*',
-		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`
+		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
+		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	side_images={['/images/badges/dazn.svg']}
 />

@@ -2,17 +2,26 @@
 	import Button from '../elements/interactive/buttons/button.svelte';
 </script>
 
-<a href="/angebote" sveltekit:prefetch>
-	<div class="alignment">
-		<h2>Schnell und einfach Sky abonnieren!</h2>
+<div class="outer_alignment">
+	<a href="/angebote" sveltekit:prefetch>
+		<div class="alignment">
+			<h2>Schnell und einfach Sky abonnieren!</h2>
+			<p>
+				Sie möchten gerne Sky bestellen und das bessere Fernsehen kennenlernen? Dann sind Sie bei
+				TAGARO genau richtig. Wir vermitteln Ihnen als autorisierter Sky-Onlinehändler Sky-Verträge
+				bereits seit 2006. Viele Angebote gibt es exklusiv und mit Abschlussprämie.
+			</p>
+			<Button text={'Angebote & Pakete'} on_click={'/angebote'} />
+		</div>
+	</a>
+	<div class="payback">
+		<img src="/images/external/paybackinfo.png" alt="Payback extrapunkte" />
 		<p>
-			Sie möchten gerne Sky bestellen und das bessere Fernsehen kennenlernen? Dann sind Sie bei
-			TAGARO genau richtig. Wir vermitteln Ihnen als autorisierter Sky-Onlinehändler Sky-Verträge
-			bereits seit 2006. Viele Angebote gibt es exklusiv und mit Abschlussprämie.
+			Ihre PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne für Sie ein. Über die PAYBACK App
+			oder online sind weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren.
 		</p>
-		<Button text={'Angebote & Pakete'} on_click={'/angebote'} />
 	</div>
-</a>
+</div>
 
 <style lang="scss">
 	@import 'lib/style/gradient_text.scss';
@@ -38,5 +47,23 @@
 	h2 {
 		font-size: 35px;
 		@include gradient-text;
+	}
+	.outer_alignment {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 20px;
+		gap: 20px;
+	}
+	.payback {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 400px;
+		& > img {
+			width: 84%;
+		}
 	}
 </style>
