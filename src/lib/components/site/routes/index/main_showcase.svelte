@@ -1,6 +1,10 @@
 <script lang="ts">
 	import ShowcaseTemplate from '$lib/components/templates/routes/index/showcase_template.svelte';
-	import { bonus_string, get_savings_string } from '$lib/scripts/universal/asset_library/prices';
+	import {
+		aktivierung,
+		bonus_string,
+		get_savings_string
+	} from '$lib/scripts/universal/asset_library/prices';
 </script>
 
 <ShowcaseTemplate
@@ -16,7 +20,9 @@
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
-	side_images={['/images/badges/dazn.svg']}
+	side_images={['/images/badges/dazn.svg'].concat(
+		aktivierung === 0 ? ['/images/badges/keine_aktivierung.svg'] : []
+	)}
 />
 <!-- <ShowcaseLayout
 	title={'Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis zu € 125* erhalten.'}

@@ -57,11 +57,13 @@
 			{#each side_images as image}
 				<img src={image} alt="" />
 			{/each}
-			{#each right_badges as badge}
+			{#each right_badges.slice(Math.max(side_images.length - 1, 0)) as badge}
 				<img src={badge} alt="" class="wrap_add" />
 			{/each}
 
-			<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
+			{#if side_images.length < 2}
+				<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
+			{/if}
 		</button>
 		<div class="right_side">
 			<h1>{title}*</h1>
