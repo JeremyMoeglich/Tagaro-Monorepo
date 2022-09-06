@@ -19,9 +19,7 @@
 		}
 	}
 
-	$: disabled = 'selector' in asset
-		? !matches_selector(selector_assets, asset.selector)
-		: false;
+	$: disabled = 'selector' in asset ? !matches_selector(selector_assets, asset.selector) : false;
 
 	$: {
 		if (disabled && selected) {
