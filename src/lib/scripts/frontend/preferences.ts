@@ -1,4 +1,4 @@
-import { hasProperty, is_json, typed_from_entries, typed_keys } from 'functional-utilities';
+import { is_json, typed_from_entries, typed_keys } from 'functional-utilities';
 import Cookies from 'js-cookie';
 import { writable, type Writable } from 'svelte/store';
 
@@ -21,7 +21,7 @@ export function is_preferences_obj(value: unknown, log = true): value is prefere
 		return false;
 	}
 	preferences_keys.forEach((key) => {
-		if (!hasProperty(value, key)) {
+		if (!(key in value)) {
 			if (log) {
 				console.error(`${key} is missing from preferences object`);
 			}

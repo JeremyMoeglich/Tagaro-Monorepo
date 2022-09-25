@@ -6,7 +6,6 @@
 		get_selector_error_strings,
 		matches_selector
 	} from '$lib/scripts/universal/asset_library/selector';
-	import { hasProperty } from 'functional-utilities';
 
 	export let asset: Asset | Priceable_Asset;
 	export let func: () => unknown;
@@ -20,9 +19,7 @@
 		}
 	}
 
-	$: disabled = hasProperty(asset, 'selector')
-		? !matches_selector(selector_assets, asset.selector)
-		: false;
+	$: disabled = 'selector' in asset ? !matches_selector(selector_assets, asset.selector) : false;
 
 	$: {
 		if (disabled && selected) {
@@ -31,7 +28,7 @@
 	}
 	let error_message = '';
 	$: {
-		if (disabled && hasProperty(asset, 'selector')) {
+		if (disabled && 'selector' in asset) {
 			error_message = get_selector_error_strings(selector_assets, asset.selector).join('<br/>');
 		}
 	}
@@ -42,7 +39,7 @@
 		{#if disabled}<div class="overlay"><p>{@html error_message}</p></div>{/if}
 		<img src={asset.image} alt={asset.name} on:dragstart|preventDefault />
 		<p>
-			{#if hasProperty(asset, 'price')}
+			{#if 'price' in asset}
 				<b>+ {get_price_string([asset.id], 'jahr')}</b> -
 			{/if}{asset.name}
 		</p>
