@@ -28,6 +28,6 @@ test('test', async ({ page }) => {
 	await page.click('a:has(img[alt="sport"])');
 	await expect(page.locator('h2:has-text("Sport Paket - Der beste Live-Sport.")')).toHaveCount(1);
 	await page.click('a[title="Startseite öffnen"]');
-	await page.click('button:has(p:has-text("Jetzt Bestellen"))');
+	await page.click('button:has(p:has-text("Jetzt Bestellen"))'), { timeout: 40000 };
 	await expect(page.locator('h1:has-text("Einfach ausfüllen")')).toHaveCount(1, { timeout: 15000 });
 });
