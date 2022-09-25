@@ -14,13 +14,6 @@
 			<Button text={'Angebote & Pakete'} on_click={'/angebote'} />
 		</div>
 	</a>
-	<div class="payback">
-		<img src="/images/external/paybackinfo.png" alt="Payback extrapunkte" />
-		<p>
-			Ihre PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne für Sie ein. Über die PAYBACK App
-			oder online sind weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren.
-		</p>
-	</div>
 </div>
 
 <style lang="scss">
@@ -56,14 +49,5 @@
 		flex-wrap: wrap;
 		margin: 20px;
 		gap: 20px;
-	}
-	.payback {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 400px;
-		& > img {
-			width: 84%;
-		}
 	}
 </style>
