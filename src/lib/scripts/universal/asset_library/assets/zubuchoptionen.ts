@@ -14,7 +14,7 @@ export const zubuchoption_ids = [
 	'netflixpremium',
 	'hdplus4monategratis',
 	'hdplus',
-	'skygoplus',
+	'skygoplus'
 ] as const;
 
 export type zubuchoption_id = typeof zubuchoption_ids[number];
