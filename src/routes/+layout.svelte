@@ -75,6 +75,7 @@
 			async>
 		</script>
 	{/if}
+	<meta name="robots" content="noindex, nofollow" />
 	<meta property="og:title" content="TAGARO Medienshop" />
 	<meta property="og:image" content="/share_preview.png" />
 	<meta
