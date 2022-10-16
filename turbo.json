@@ -18,7 +18,7 @@
 			"outputs": []
 		},
 		"check": {
-			"dependsOn": ["^check"],
+			"dependsOn": ["^check", "build:static"],
 			"outputs": []
 		},
 		"test": {
