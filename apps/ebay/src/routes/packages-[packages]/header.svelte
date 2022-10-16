@@ -26,13 +26,14 @@
 			<li>Viele Angebote mit einer zusätzlichen Prämie on top</li>
 		</ul>
 	</div>
-	<img class="ml-auto right_image" src={make_url('/images/visuals/header_ebay.png', dev)} alt="" />
+	<img class="right_image" src={make_url('/images/visuals/header_ebay.png', dev)} alt="" />
 </div>
 
 <style>
 	.outer {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		padding-left: 20px;
 		width: 100%;
 		border-bottom-left-radius: 20px;
@@ -60,19 +61,20 @@
 	.title {
 		display: flex;
 		gap: 5px;
-		font-size: 1.5em;
+		font-size: 1.7em;
 		font-weight: bold;
 	}
 	.text_sky {
-		height: calc(1.5em - 10px);
-		margin-top: 7px;
+		height: calc(1.7em - 17px);
+		margin-top: 9px;
 		margin-left: 2px;
 	}
 	ul {
 		list-style: none;
 		margin: 0;
 		padding: 7px;
-		font-size: 0.8em;
+		padding-top: 0px;
+		font-size: 1em;
 	}
 	li {
 		padding-left: 1em;
@@ -81,5 +83,6 @@
 
 	li::before {
 		content: '✓';
+		margin-right: 10px;
 	}
 </style>

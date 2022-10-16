@@ -1,9 +1,11 @@
 <script lang="ts">
 	import PackageTemplate from '../../../templates/element/package_template.svelte';
 	export let animated = false;
+	export let show_price: boolean;
 </script>
 
 <PackageTemplate
+	{show_price}
 	{animated}
 	title={'DAZN über Sky. Live-Sport, Dokus und vieles mehr per App und TV-Sender.'}
 	points={[

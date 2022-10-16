@@ -7,7 +7,7 @@
 <div class="alignment">
 	<Overview3 />
 	<Inklusive />
-	<AllOverviews />
+	<AllOverviews ebay_version={false} />
 </div>
 
 <style lang="scss">

@@ -8,6 +8,6 @@
 <div>
 	<AngeboteRotator />
 	<AlleBuchbar />
-	<AllOverviews />
+	<AllOverviews ebay_version={false} />
 	<Inklusive />
 </div>

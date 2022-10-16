@@ -79,7 +79,7 @@
 		</div>
 	</div>
 	<AlleBuchbar />
-	<AllOverviews />
+	<AllOverviews ebay_version={false} />
 </div>
 
 <style lang="scss">

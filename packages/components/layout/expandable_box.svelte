@@ -62,5 +62,4 @@
 	.main_text {
 		max-width: 90%;
 	}
-	
 </style>

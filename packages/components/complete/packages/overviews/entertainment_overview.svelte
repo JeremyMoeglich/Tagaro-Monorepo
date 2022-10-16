@@ -3,9 +3,11 @@
 	import EntertainmentSenders from '../senders/entertainment_senders.svelte';
 	export let animated = false;
 	export let show_senders = false;
+	export let show_price: boolean;
 </script>
 
 <PackageTemplate
+	{show_price}
 	{animated}
 	title={'Entertainment Paket - Exklusives Entertainment ohne Ende.'}
 	points={[

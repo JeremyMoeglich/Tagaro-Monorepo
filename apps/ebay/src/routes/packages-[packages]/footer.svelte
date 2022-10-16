@@ -10,13 +10,20 @@
 	<img class="sky" src={make_url('/images/badges/sky_signature.svg', dev)} alt="" />
 	<div style:color={text_color}>
 		<p class="title">Abonnieren Sie schnell und einfach Ihr Wunschprogramm.</p>
-		<p>TAGARO ist autorisierter Sky Onlinehändler seit 2006</p>
+		<p>TAGARO vermittelt Sky Verträge bereits seit 2006</p>
 		<p>2006-2022 TAGARO Medienshop Möglich & Möglich GbR</p>
 	</div>
 	<div class="ml-auto">
 		<SiteLogo />
 	</div>
 </div>
+<p class="text-center">
+	Alle Sky Marken sind Eigentum der Sky International AG und werden von der Sky Deutschland
+	Fernsehen GmbH & Co. KG in Lizenz genutzt. Alle hier verwendeten Namen, Begriffe, Zeichen, Logos
+	und Grafiken können Marken- oder Warenzeichen im Besitze ihrer rechtlichen Eigentümer sein und
+	werden von uns ausschließlich zu Vermittlungs- und Visualisierungszwecken der einzelnen
+	Abonnement-Angebote verwendet.
+</p>
 
 <style>
 	.outer {

@@ -4,9 +4,11 @@
 	import CinemaSenders from '../senders/cinema_senders.svelte';
 	export let animated = false;
 	export let show_senders = false;
+	export let show_price: boolean;
 </script>
 
 <PackageTemplate
+	{show_price}
 	{animated}
 	title={'Cinema Paket - Jeden Tag ein neuer Film.'}
 	points={[

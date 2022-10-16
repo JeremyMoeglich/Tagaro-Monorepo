@@ -20,6 +20,7 @@
 	export let image: string = undefined;
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
+	export let show_price: boolean;
 
 	$: offer_string = price_asset_ids.every((id) =>
 		typed_keys(indexed_package_assets).includes(id as package_id)
@@ -41,18 +42,22 @@
 					<li>{point}</li>
 				{/each}
 			</ul>
-			{#if price_asset_ids.every(is_imaged_package)}
-				<SquarePackageList package_ids={price_asset_ids} />
+			{#if show_price}
+				{#if price_asset_ids.every(is_imaged_package)}
+					<SquarePackageList package_ids={price_asset_ids} />
+				{/if}
+				<h3 class="gradient_text">
+					12 Monate nur {get_price_string(price_asset_ids, 'jahr')} mtl.*
+				</h3>
+				<p>
+					(im Jahres-Abo, danach {get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)
+					<br />
+					Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
+				</p>
 			{/if}
-			<h3 class="gradient_text">12 Monate nur {get_price_string(price_asset_ids, 'jahr')} mtl.*</h3>
-			<p>
-				(im Jahres-Abo, danach {get_price_string(price_asset_ids, 'monat')} mtl. im Monats-Abo)
-				<br />
-				Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
-			</p>
-			{#if offer_string}
-				<GradientBadge>{offer_string}</GradientBadge>
-			{/if}
+			<!-- {#if offer_string}
+					<GradientBadge>{offer_string}</GradientBadge>
+			{/if} -->
 		</div>
 		<div>
 			<slot />

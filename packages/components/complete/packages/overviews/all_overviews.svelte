@@ -7,40 +7,44 @@
 	import LineSpacer from '../../../elements/line.svelte';
 	import ConditionalHref from '../../../layout/conditional_href.svelte';
 
-	export let show_senders = false;
 	export let clickable = true;
+	export let ebay_version: boolean;
 </script>
 
 <div class="outer">
-	<h1 class="gradient_text text-3xl">Programmpakete bei Sky</h1>
+	<h1 class="gradient_text">Programmpakete bei Sky</h1>
 
 	<ConditionalHref href="/angebote/entertainmentplus" active={clickable}>
-		<EntertainmentPlusOverview {show_senders} />
+		<EntertainmentPlusOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
 	<!-- <a href="/angebote/entertainment">
 		<EntertainmentOverview />
 	</a> -->
 	<LineSpacer />
 	<ConditionalHref href="/angebote/cinema" active={clickable}>
-		<CinemaOverview {show_senders} />
+		<CinemaOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
 	<LineSpacer />
 	<ConditionalHref href="/angebote/sport" active={clickable}>
-		<SportOverview {show_senders} />
+		<SportOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
 	<LineSpacer />
 	<ConditionalHref href="/angebote/bundesliga" active={clickable}>
-		<BundesligaOverview {show_senders} />
+		<BundesligaOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
 
 	<LineSpacer />
-	<DaznOverview />
+	{#if !ebay_version}
+		<DaznOverview show_price={!ebay_version} />
+	{/if}
 </div>
 
 <style lang="scss">
 	h1 {
 		text-align: center;
 		margin: 70px;
+		font-size: 1.875rem;
+		font-weight: bold;
 	}
 	.outer {
 		padding: 40px;

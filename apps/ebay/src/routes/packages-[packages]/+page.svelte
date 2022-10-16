@@ -31,18 +31,21 @@
 	<div class="text-center align flex flex-col gap-2 mb-10">
 		<h1 class="gradient_text title font-bold text-3xl">{get_title(packages)}</h1>
 		<ul class="text-red-600 text-xl">
-			<li>+ Sky Sale: Wunschabo zusammenstellen & 50% auf Cinema, Bundesliga und Sport*</li>
+			<li>+ Sky Paketkombis mit bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo</li>
 			{#if bonus > 0}
 				<li>+ Bonus von TAGARO: {bonus_string} Bonus on top bei erfolgreichem Vertragsabschluss</li>
 			{/if}
 		</ul>
 		<p class="max-w-6xl mt-2">
-			Bei unserem neuen Angebot erhalten alle Besteller von Sky einen 50% Rabatt auf die Pakete
-			Cinema, Fußball Bundesliga und/oder Sport von Sky auf den monatlichen Betrag während des
-			Jahres-Abos gewährt. Die Vermittlung ist versandkostfrei. Sie erhalten einen Bonus von € 20.
-			Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche
-			Zubuchoptionen zu ihrem Vertrag wie Multiscreen, Netflix, DAZN und UHD an. Sie profitieren bei
-			TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung seit 2006.
+			Bei unserem neuen Angebot erhalten alle Besteller von Sky die beliebtesten Paketkombis mit
+			Sparvorteil. Insgesamt ist eine Ersparnis von bis zu € 156 möglich (siehe unsere
+			Monatspreise). Die Vermittlung erfolgt versandkostfrei. Zusätzlich überweisen wir Ihnen einen
+			Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso
+			sämtliche Zubuchoptionen zu ihrem Vertrag wie Multiscreen, Netflix, DAZN (jetzt € 18,99 mtl.
+			im Jahresabo) und UHD an. Ihre PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne für Sie
+			ein. Über die PAYBACK App oder online sind weitere Punkte möglich, wenn Sie vor Aboaufnahme
+			einen eCoupon aktivieren. Sie profitieren bei TAGARO von einer schnellen und zuverlässigen
+			Betreuung sowie jahrelanger Erfahrung seit 2006.
 		</p>
 	</div>
 	<img
@@ -50,7 +53,9 @@
 		src={make_url('/images/visuals/sky0522_teaser_12mbasic.png', dev)}
 		alt=""
 	/>
-	<PackageTable blank_background={true} />
+	<div class="w-[894px]">
+		<PackageTable simple={true} />
+	</div>
 	<Block title="Abovermittlung mit TAGARO">
 		<p>
 			Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur
@@ -58,7 +63,7 @@
 			erhalten Sie eine € 20 Prämie auf Ihr Konto überwiesen.
 		</p>
 		<p>
-			Wir sind autorisierter Sky Onlinehändler seit 2006 und stehen für eine einfache und zügige
+			Wir vermitteln Sky Verträge bereits seit 2006 und stehen für eine einfache und zügige
 			Abwicklung mit tausenden zufriedenen Kunden (siehe Bewertungen).
 		</p>
 		<p>
@@ -66,7 +71,7 @@
 			Nachrichten-System ihre Fragen. Wir antworten innerhalb von kurzer Zeit!
 		</p>
 	</Block>
-	<AllOverviews show_senders={true} clickable={false} />
+	<AllOverviews clickable={false} ebay_version={true} />
 	<div class="mt-10 max-w-6xl ml-auto mr-auto flex flex-col gap-7 items-center">
 		<h2 class="gradient_text text-2xl font-bold text-center">
 			Sky Q als Receiver oder IPTV Box Neue flexible Empfangsmöglichkeiten auch übers Internet
@@ -86,11 +91,12 @@
 	</div>
 	<Line />
 	<div class="max-w-7xl w-full p-5">
-		<h2 class="gradient_text text-2xl font-bold text-center">Vertragsinfomationen</h2>
+		<h2 class="gradient_text text-3xl font-bold text-center">*Angebotsdetails für Neukunden</h2>
 		<Vertragsinfomationen />
 	</div>
+	<Line />
 	<div
-		class="text-center flex flex-col gap-4 rounded-xl shadow-2xl w-full border-slate-300 max-w-4xl border-[1px] p-8"
+		class="text-center flex flex-col gap-4 rounded-xl shadow-2xl w-full border-slate-300 max-w-4xl border-[1px] p-8 pb-11"
 	>
 		<h3 class="text-2xl gradient_text m-0">So einfach erhalten Sie Sky:</h3>
 		<ul class="">
@@ -138,7 +144,7 @@
 
 		<p>
 			Sie bestellen bei TAGARO -
-			<mark>Autorisierter Sky Onlinehändler seit 2006.</mark>
+			<mark>Wir vermitteln Sky Verträge bereits seit 2006.</mark>
 			<br />
 			Wir stehen für eine einfache und zügige Abwicklung mit tausenden zufriedenen Kunden (siehe Bewertungen).
 		</p>
@@ -155,12 +161,7 @@
 				width="107px"
 				height="130px"
 			/>
-			<img
-				src="http://static.tagaro.de/ebay_4/skyhaendler_siegel.gif"
-				alt=""
-				width="113px"
-				height="103px"
-			/>
+
 			<img
 				src="http://static.tagaro.de/ebay_4/versandkostenfrei.gif"
 				alt=""
