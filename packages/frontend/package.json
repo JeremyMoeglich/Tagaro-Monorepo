@@ -1,0 +1,14 @@
+{
+	"name": "frontend",
+	"version": "0.1.0",
+	"dependencies": {
+		"@types/js-cookie": "^3.0.2",
+		"@types/uuid": "^8.3.4",
+		"firebase": "^9.12.1",
+		"functional-utilities": "^1.18.0",
+		"js-cookie": "^3.0.1",
+		"open_constants": "workspace:0.1.0",
+		"svelte": "^3.52.0",
+		"uuid": "^9.0.0"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"name": "ebay",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev --port 3001",
+		"build:static": "cross-env ADAPTER=static vite build",
+		"preview": "vite preview --port 3001",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"lint": "eslint -c .eslintrc.cjs ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "1.0.0-next.44",
+		"@sveltejs/kit": "1.0.0-next.516",
+		"@typescript-eslint/eslint-plugin": "^5.40.0",
+		"@typescript-eslint/parser": "^5.40.0",
+		"autoprefixer": "^10.4.12",
+		"cross-env": "^7.0.3",
+		"daisyui": "^2.31.0",
+		"eslint": "^8.25.0",
+		"eslint-config-custom": "workspace:*",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"postcss": "^8.4.18",
+		"prettier": "^2.7.1",
+		"prettier-plugin-svelte": "^2.8.0",
+		"svelte": "^3.52.0",
+		"svelte-check": "^2.9.2",
+		"svelte-preprocess": "^4.10.7",
+		"tailwindcss": "^3.1.8",
+		"tslib": "^2.4.0",
+		"typescript": "^4.8.4",
+		"vite": "^3.1.8"
+	},
+	"dependencies": {
+		"asset_library": "workspace:*",
+		"components": "workspace:*",
+		"frontend": "workspace:*",
+		"open_constants": "workspace:*",
+		"postcss-nested": "^6.0.0",
+		"postcss-scss": "^4.0.5",
+		"utils": "workspace:*"
+	},
+	"type": "module"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "asset_library",
+	"dependencies": {
+		"@types/lodash-es": "^4.17.6",
+		"functional-utilities": "^1.18.0",
+		"lodash-es": "^4.17.21",
+		"open_constants": "workspace:0.1.0"
+	}
+}

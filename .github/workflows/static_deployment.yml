@@ -26,10 +26,9 @@ jobs:
 
       - name: lint, check, build
         run: |
-          npm run lint
           npx playwright install
           npx playwright install-deps
-          npm run check
+          npm run test
 
       - name: copy
         uses: appleboy/scp-action@master
@@ -39,7 +38,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           password: ${{ secrets.SSH_PASSWORD }}
           target: ${{ secrets.SSH_TARGET }}
-          source: './build/*'
+          source: './apps/web/build/*'
           strip_components: 1
           rm: true
 

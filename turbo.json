@@ -1,0 +1,42 @@
+{
+	"$schema": "https://turborepo.org/schema.json",
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": [".svelte-kit/**", ".build/**"]
+		},
+		"build:static": {
+			"dependsOn": ["build", "^build:static"],
+			"outputs": [".svelte-kit/**", ".build/**"]
+		},
+		"build:netlify": {
+			"dependsOn": ["build", "^build:netlify"],
+			"outputs": [".svelte-kit/**", ".build/**"]
+		},
+		"lint": {
+			"dependsOn": ["^lint"],
+			"outputs": []
+		},
+		"check": {
+			"dependsOn": ["^check"],
+			"outputs": []
+		},
+		"test": {
+			"dependsOn": ["build:static", "lint", "check"],
+			"outputs": []
+		},
+		"dev": {
+			"dependsOn": ["^dev"],
+			"cache": false
+		},
+		"preview": {
+			"dependsOn": ["^preview"],
+			"cache": false
+		},
+		"package": {
+			"dependsOn": ["^package"],
+			"outputs": ["package"]
+		}
+	},
+	"globalEnv": ["ADAPTER"]
+}

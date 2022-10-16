@@ -1,0 +1,6 @@
+{
+	"name": "open_constants",
+	"version": "0.1.0",
+	"main": "index.ts",
+	"svelte": "index.ts"
+}

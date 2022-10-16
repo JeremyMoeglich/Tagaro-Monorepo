@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"module": "ESNext",
+		"lib": ["ESNext", "DOM", "dom.iterable"],
+		"target": "es2017",
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowJs": true,
+		"checkJs": true
+	},
+	"include": ["*"],
+	"exclude": ["node_modules/**/*"]
+}

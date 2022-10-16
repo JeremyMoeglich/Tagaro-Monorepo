@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'Sky Text';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/sky_med-webfont.woff') format('woff');
+}
+
+body {
+	background-color: white;
+}
+
+.gradient_text {
+	background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text_block {
+	max-width: min(85%, 1000px);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@extend .gradient_text;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	p {
+		line-height: 150%;
+	}
+}
