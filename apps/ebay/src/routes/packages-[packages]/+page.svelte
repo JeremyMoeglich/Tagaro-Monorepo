@@ -39,9 +39,9 @@
 		<p class="max-w-6xl mt-2">
 			Bei unserem neuen Angebot erhalten alle Besteller von Sky die beliebtesten Paketkombis mit
 			Sparvorteil. Insgesamt ist eine Ersparnis von bis zu € 156 möglich (siehe unsere
-			Monatspreise). Die Vermittlung erfolgt versandkostfrei. Zusätzlich überweisen wir Ihnen einen
+			Preistabelle). Die Vermittlung erfolgt versandkostfrei. Zusätzlich überweisen wir Ihnen einen
 			Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso
-			sämtliche Zubuchoptionen zu ihrem Vertrag wie Multiscreen, Netflix, DAZN (jetzt € 18,99 mtl.
+			sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen, Netflix, DAZN (jetzt € 18,99 mtl.
 			im Jahresabo) und UHD an. Ihre PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne für Sie
 			ein. Über die PAYBACK App oder online sind weitere Punkte möglich, wenn Sie vor Aboaufnahme
 			einen eCoupon aktivieren. Sie profitieren bei TAGARO von einer schnellen und zuverlässigen
@@ -60,7 +60,7 @@
 		<p>
 			Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur
 			Aboabwicklung zugesandt. Die Anmeldung erfolgt durch uns im Anschluss umgehend. Als Dankeschön
-			erhalten Sie eine € 20 Prämie auf Ihr Konto überwiesen.
+			erhalten Sie nach 6-8 Wochen eine € 20 Prämie auf Ihr Konto überwiesen.
 		</p>
 		<p>
 			Wir vermitteln Sky Verträge bereits seit 2006 und stehen für eine einfache und zügige
