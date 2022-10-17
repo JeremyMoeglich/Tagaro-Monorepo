@@ -1,148 +1,129 @@
 <script lang="ts">
 	import { get_offer_note, get_price_string } from 'asset_library/prices';
 	import { package_combinations } from 'asset_library/assets/packages';
-	import Zubuchoption from '../templates/element/zubuchoption.svelte';
+	import Zubuchoptionen from './zubuchoptionen.svelte';
 	import AktivierungSentence from './aktivierung_sentence.svelte';
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
 
-	export let simple = false;
+	const max_combination = package_combinations.reduce((a, b) => {
+		return a > b.length ? a : b.length;
+	}, 0);
+	const col_amount = max_combination + 1;
+
+	const titles = {
+		0: 'Wählbare Pakete mit Sky Entertainment - 12 Monate Laufzeit, danach monatlich kündbar',
+		5: 'Wählbare Pakete mit Entertainment inklusive Netflix (Sky Ultimate TV) - 12 Mon. Laufzeit, danach monatlich kündbar'
+	};
+
+	let rows: (string | typeof package_combinations[number])[];
+	$: rows = (() => {
+		const sorted_titles: [number, string][] = Object.entries(titles)
+			.map(([key, value]) => [parseInt(key), value] as [number, string])
+			.sort((a, b) => a[0] - b[0]);
+		const rows: (string | typeof package_combinations[number])[] = [];
+		const remaining_combinations = [...package_combinations];
+		let current_row = 0;
+		while (remaining_combinations.length > 0) {
+			if (sorted_titles.length === 0) {
+				rows.push(remaining_combinations.shift());
+				continue;
+			}
+			if (current_row === sorted_titles[0][0]) {
+				rows.push(sorted_titles.shift()[1]);
+			} else {
+				rows.push(remaining_combinations.shift());
+			}
+			current_row++;
+		}
+		return rows;
+	})();
 </script>
 
-<div class="main_container" style:background-color={simple ? 'transparent' : '#f2f2f2'}>
-	<h2 class="title gradient_text">Pakete & Preise in der Übersicht</h2>
-	<div class="table_outer">
-		<table>
-			{#each package_combinations as row}
-				<tr>
-					{#each row as element}
-						<td>
-							<img src={make_url(`/images/assets/packages/square/${element}.webp`, dev)} alt="" />
-						</td>
-					{/each}
-					{#if row.length < 4}
-						<td colspan={4 - row.length} />
-					{/if}
-					<td class="text_cell">
-						<p>
-							<b>
-								{#if get_offer_note(row)}
-									<mark class="nowrap">{get_offer_note(row)}</mark> <br />
-								{/if}
-								{get_price_string(row, 'jahr')}&nbsp;mtl.*
-							</b>
-						</p>
-						<p class="small">
-							im Jahres-Abo danach {get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
-						</p>
-					</td>
-				</tr>
-			{/each}
-		</table>
+<div>
+	<!-- <h2 class="title gradient_text">Pakete & Preise in der Übersicht</h2> -->
+	<div class="grid shadow-lg" style:--col_amount={col_amount}>
+		{#each rows as row, row_index}
+			{#if typeof row === 'string'}
+				<div style:--row={row_index + 1} class="title_row">
+					<h3>{row}</h3>
+				</div>
+			{:else}
+				{#each row as element, col_index}
+					<div style:--col={col_index + 1} style:--row={row_index + 1} class="cell">
+						<img src={make_url(`/images/assets/packages/square/${element}.webp`, dev)} alt="" />
+					</div>
+				{/each}
+				<div class="cell text-cell" style:--row={row_index + 1} style:--col={col_amount}>
+					<p>
+						<b>
+							{#if get_offer_note(row)}
+								<mark class="nowrap">{get_offer_note(row)}</mark> <br />
+							{/if}
+							{get_price_string(row, 'jahr')}&nbsp;mtl.*
+						</b>
+					</p>
+					<p class="small">
+						im Jahres-Abo danach {get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
+					</p>
+				</div>
+				<div class="background_box" style:--row={row_index + 1} />
+			{/if}
+		{/each}
 	</div>
 	<AktivierungSentence always_show={false} />
-	<div class="spacer" />
-	<h2 class="title gradient_text">Zubuchoptionen</h2>
-	<div class="zubuchoptionen" id="zubuchoptionen">
-		<Zubuchoption image="/images/assets/zubuchoptionen/uhd.png">
-			<b>UHD + {get_price_string(['uhd'], 'jahr')} mtl. (für Sat oder Kabel-Empfang)</b>
-		</Zubuchoption>
-		<Zubuchoption image="/images/assets/zubuchoptionen/dazn.svg">
-			<b>DAZN jährlich + {get_price_string(['dazn_yearly'], 'jahr')} mtl. </b>oder<b>
-				<br /> DAZN monatlich + {get_price_string(['dazn_monthly'], 'monat')} mtl.</b
-			>
-		</Zubuchoption>
-		<Zubuchoption image="/images/assets/zubuchoptionen/multiscreen.png">
-			<b>Multiscreen + {get_price_string(['multiscreen'], 'jahr')} mtl. <br /></b> Inkl. Sky Go Plus
-			für 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 29 (zur
-			Leihe oder OHNE zusätzliche Hardware)
-		</Zubuchoption>
-		<Zubuchoption image="/images/assets/zubuchoptionen/NetflixSDHD.png">
-			<b
-				>Netflix Standard-Abo, HD/2 Streams + {get_price_string(['netflixstandard'], 'jahr')} mtl.</b
-			>
-			oder <br />
-			<b>Netflix Premium-Abo, UHD/4 Streams + {get_price_string(['netflixpremium'], 'jahr')} mtl.</b
-			>
-		</Zubuchoption>
-		<Zubuchoption image="/images/assets/zubuchoptionen/kids.png">
-			<b>Sky Kids + {get_price_string(['kids'], 'jahr')} mtl.</b>
-		</Zubuchoption>
-		<Zubuchoption image="/images/assets/zubuchoptionen/trendsports.png">
-			<b>trendSports + {get_price_string(['trendsports'], 'jahr')} mtl.</b>
-		</Zubuchoption>
-		<Zubuchoption image="/images/assets/zubuchoptionen/plus18.png">
-			<b>18+ für Blue Movie € 0</b><br /> einmalige Versandpauschale 18+ PIN
-		</Zubuchoption>
-	</div>
+	<Zubuchoptionen />
 </div>
 
 <style lang="scss">
-	.small {
-		font-size: 15px;
-		line-height: 19px;
-	}
-	.main_container {
+	.cell {
 		display: flex;
-		padding-top: 50px;
-		padding-bottom: 50px;
-		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-	}
-	.spacer {
-		height: 80px;
-	}
-	.zubuchoptionen {
-		display: flex;
+		grid-column: var(--col);
+		grid-row: var(--row);
 		width: 100%;
-		flex-wrap: wrap;
-		gap: 20px;
-		margin-top: 50px;
+		max-height: 150px;
+		padding: min(calc(30% - 30px), 7px);
+		z-index: 2;
 	}
-	:global(.zubuchoptionen > *) {
-		width: 50%;
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(var(--col_amount), 1fr);
+		grid-template-rows: repeat(auto);
+		padding: 1rem;
+		grid-gap: 1rem;
+		border: 1px solid #ccc;
+		border-radius: 15px;
 	}
-	.nowrap {
-		white-space: nowrap;
-	}
-	.title {
-		text-align: center;
-		font-size: 1.875rem;
-		font-weight: bold;
-		margin-bottom: 20px;
+	.background_box {
+		grid-column: 1 / var(--col_amount);
+		grid-row: var(--row);
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		z-index: 1;
+		background: rgb(255, 255, 255);
+		background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(236, 238, 238) 100%);
 	}
 	img {
-		width: min(100%, 100px);
-		padding: 5px;
+		max-width: 100%;
+		max-height: 100%;
+		aspect-ratio: 1 / 1;
 	}
-
-	td {
-		padding: 20px;
-		$pad: max(min(34px, 7vw - 90px), 0px);
-		padding-left: $pad;
-		padding-right: $pad;
-	}
-	tr {
-		border-bottom: 1px solid #ccc;
-	}
-	table {
-		border-collapse: collapse;
-		width: min(100%, 1300px);
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.text_cell {
-		border-left: 1px solid #ccc;
+	.text-cell {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		text-align: center;
-		line-height: 25px;
-		min-width: min(170px, 30vw);
-		max-width: 10vw;
-		padding: 20px;
+		background-color: rgb(226, 242, 255);
+		border-radius: 10px;
+		border: 1px solid #ccc;
 	}
-	.table_outer {
-		border: 1px solid rgb(201, 201, 201);
-		border-radius: 0.75rem;
-		overflow: hidden;
-		box-shadow: 0px 15px 40px rgb(206, 206, 206);
+	.title_row {
+		grid-column: 1 / calc(var(--col_amount) + 1);
+		grid-row: var(--row);
+		font-size: large;
+		margin: 0px;
+		text-align: center;
 	}
 </style>

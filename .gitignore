@@ -11,3 +11,4 @@ logs
 .turbo
 
 *.timestamp-*js
+.netlify

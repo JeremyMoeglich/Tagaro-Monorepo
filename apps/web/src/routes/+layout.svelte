@@ -1,6 +1,7 @@
 <script lang="ts">
-	import '../app.css';
-	import '../global.scss';
+	import 'styles/app.css';
+	import 'styles/global.scss';
+
 	import Footer from './footer/footer.svelte';
 	import * as open_constants from 'open_constants';
 	import InfoBanner from './info_banner.svelte';
@@ -254,6 +255,7 @@
 		min-width: 100vw;
 		max-width: 100vw;
 		min-height: 100vh;
+		background-color: white;
 	}
 	.small_start_margin {
 		padding-left: 20px;

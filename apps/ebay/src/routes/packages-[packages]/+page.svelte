@@ -27,8 +27,8 @@
 </script>
 
 <Header />
-<div class="p-12 flex flex-col items-center">
-	<div class="text-center align flex flex-col gap-2 mb-10">
+<div class="p-12 flex flex-col items-center max-w-6xl ml-auto mr-auto w-full">
+	<div class="text-center flex flex-col gap-2 mb-10">
 		<h1 class="gradient_text title font-bold text-3xl">{get_title(packages)}</h1>
 		<ul class="text-red-600 text-xl">
 			<li>+ Sky Paketkombis mit bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo</li>
@@ -49,12 +49,12 @@
 		</p>
 	</div>
 	<img
-		class="rounded-xl shadow-2xl w-full border-slate-300 border-[1px] max-w-4xl"
+		class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
 		src={make_url('/images/visuals/sky0522_teaser_12mbasic.png', dev)}
 		alt=""
 	/>
-	<div class="w-[894px]">
-		<PackageTable simple={true} />
+	<div class="max-w-4xl">
+		<PackageTable />
 	</div>
 	<Block title="Abovermittlung mit TAGARO">
 		<p>
@@ -84,7 +84,7 @@
 			aufnehmen, haben Zugang auf Sky On Demand und können UHD-Inhalte genießen.
 		</p>
 		<img
-			class="rounded-xl shadow-2xl w-full border-slate-300 max-w-4xl border-[1px] p-4"
+			class="rounded-xl shadow-lg w-full border-slate-300 max-w-4xl border-[1px] p-4"
 			src={make_url('/images/visuals/skyq_geraete.png', dev)}
 			alt=""
 		/>
@@ -96,7 +96,7 @@
 	</div>
 	<Line />
 	<div
-		class="text-center flex flex-col gap-4 rounded-xl shadow-2xl w-full border-slate-300 max-w-4xl border-[1px] p-8 pb-11"
+		class="text-center flex flex-col gap-4 rounded-xl shadow-lg w-full border-slate-300 max-w-4xl border-[1px] p-8 pb-11"
 	>
 		<h3 class="text-2xl gradient_text m-0">So einfach erhalten Sie Sky:</h3>
 		<ul class="">

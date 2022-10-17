@@ -18,7 +18,7 @@
 		"cross-env": "^7.0.3",
 		"daisyui": "^2.31.0",
 		"eslint": "^8.25.0",
-		"eslint-config-custom": "workspace:*",
+		"eslint-config-custom": "workspace:1.0.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"postcss": "^8.4.18",
@@ -34,12 +34,13 @@
 	},
 	"dependencies": {
 		"asset_library": "workspace:*",
-		"components": "workspace:*",
-		"frontend": "workspace:*",
-		"open_constants": "workspace:*",
+		"components": "workspace:0.1.0",
+		"frontend": "workspace:0.1.0",
+		"open_constants": "workspace:0.1.0",
 		"postcss-nested": "^6.0.0",
 		"postcss-scss": "^4.0.5",
-		"utils": "workspace:*"
+		"styles": "workspace:1.0.0",
+		"utils": "workspace:0.1.0"
 	},
 	"type": "module"
 }

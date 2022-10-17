@@ -8,7 +8,7 @@
 
 <div>
 	<div class="alignment">
-		<CinemaOverview animated />
+		<CinemaOverview animated show_price />
 		<CinemaSenders />
 		<EntertainmentSenders />
 		<Inklusive />
