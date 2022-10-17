@@ -19,6 +19,8 @@
 	let center_index = Math.floor(components.length * (0.5 + 0 ** 10));
 	let current_x_pos = center_index;
 
+	const x_padding = '50px';
+
 	export let css_vars: {
 		element_spacing: string;
 		box_width: string;
@@ -26,9 +28,9 @@
 		actual_width: string;
 	} = {
 		element_spacing: '10px',
-		box_width: 'calc(5vw + 200px)',
+		box_width: `calc(calc(5vw + 200px) + calc(2 * ${x_padding}))`,
 		x_padding: '50px',
-		actual_width: 'calc(var(--box_width) + var(--x_padding) * 2)'
+		actual_width: 'var(--box_width)'
 	};
 	function wrap(index: number): number {
 		return mod_floor(index, components.length);
@@ -144,7 +146,7 @@
 								.map((id) => indexed_package_assets[id].name)
 								.join(' + ')}) <br /> Optional Netflix, DAZN und UHD, + 500 PAYBACK Punkte
 						</p>
-						<div class="btn">
+						<div class="button">
 							<Button text={'Mehr erfahren'} on_click={item.route} />
 						</div>
 					</a>
@@ -198,7 +200,7 @@
 			right: $side_distance;
 		}
 	}
-	.btn {
+	.button {
 		margin-top: 30px;
 	}
 

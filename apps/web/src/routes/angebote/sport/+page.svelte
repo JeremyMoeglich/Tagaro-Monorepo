@@ -7,7 +7,7 @@
 
 <div>
 	<div class="alignment">
-		<SportOverview animated />
+		<SportOverview animated show_price />
 		<SportSenders />
 		<EntertainmentSenders />
 		<Inklusive />

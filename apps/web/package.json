@@ -31,7 +31,6 @@
 		"carbon-icons-svelte": "^11.4.0",
 		"carbon-preprocess-svelte": "^0.9.1",
 		"cross-env": "^7.0.3",
-		"daisyui": "^2.31.0",
 		"dotenv": "^16.0.3",
 		"eslint": "^8.25.0",
 		"eslint-config-custom": "workspace:1.0.0",
@@ -52,7 +51,6 @@
 		"svelte-preprocess-import-assets": "^0.2.2",
 		"svelte-sequential-preprocessor": "^0.0.7",
 		"svelte-use-click-outside": "^1.0.0",
-		"tailwindcss": "^3.1.8",
 		"tslib": "^2.4.0",
 		"typescript": "^4.8.4",
 		"vite": "^3.1.8"
@@ -69,6 +67,7 @@
 		"locally-unique-id-generator": "^0.1.5",
 		"lodash-es": "^4.17.21",
 		"open_constants": "workspace:0.1.0",
+		"styles": "workspace:1.0.0",
 		"svelte-checkbox": "^1.0.1",
 		"ts-key-enum": "^2.0.12",
 		"utils": "workspace:0.1.0",

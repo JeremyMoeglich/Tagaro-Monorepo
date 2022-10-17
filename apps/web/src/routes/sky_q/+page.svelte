@@ -71,7 +71,7 @@
 			</div>
 			<img src="/images/visuals/skyq_vorteile_3.png" alt="" />
 		</div>
-		<div class="btn">
+		<div class="button">
 			<AboformularButton
 				text={'Jetzt Ihr Sky Wunschabo mit Sky Q zusammenstellen'}
 				source={'Sky_Q_button'}
@@ -83,7 +83,7 @@
 </div>
 
 <style lang="scss">
-	.btn {
+	.button {
 		width: 500px;
 		margin-left: auto;
 		margin-right: auto;

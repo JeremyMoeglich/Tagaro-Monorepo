@@ -6,7 +6,7 @@
 
 <div>
 	<div class="alignment">
-		<EntertainmentPlusOverview animated />
+		<EntertainmentPlusOverview animated show_price />
 		<EntertainmentSenders />
 		<Inklusive />
 	</div>

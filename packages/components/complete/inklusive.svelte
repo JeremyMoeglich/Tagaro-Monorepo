@@ -27,7 +27,7 @@
 				target="_blank">Trustami</a
 			> an.
 		</p>
-		<div class="btn">
+		<div class="button">
 			<Button text="Alle Infomationen zu Sky Q" on_click="/sky_q" />
 		</div>
 	</span>
@@ -89,7 +89,7 @@
 		text-align: center;
 		font-size: 38px;
 	}
-	.btn {
+	.button {
 		max-width: fit-content;
 		margin-left: auto;
 		margin-right: auto;

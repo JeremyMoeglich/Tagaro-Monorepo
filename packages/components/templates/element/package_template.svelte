@@ -1,11 +1,11 @@
 <script lang="ts">
-	import GradientBadge from '../../elements/gradient_badge.svelte';
-	import { indexed_package_assets } from 'asset_library/assets/packages';
-	import type { package_id } from 'asset_library/assets/packages';
+	//import GradientBadge from '../../elements/gradient_badge.svelte';
+	//import { indexed_package_assets } from 'asset_library/assets/packages';
+	//import type { package_id } from 'asset_library/assets/packages';
 
 	import type { priceable_asset_id } from 'asset_library/asset_types';
-	import { get_offer_note, get_price_string } from 'asset_library/prices';
-	import { typed_keys } from 'functional-utilities';
+	import { get_price_string } from 'asset_library/prices';
+	//import { typed_keys } from 'functional-utilities';
 	import SquarePackageList from '../../generators/square_package_list.svelte';
 	import type { imaged_package_id } from 'asset_library/imaged_packages';
 	import { imaged_package_ids } from 'asset_library/imaged_packages';
@@ -22,11 +22,11 @@
 	export let animated = false;
 	export let show_price: boolean;
 
-	$: offer_string = price_asset_ids.every((id) =>
-		typed_keys(indexed_package_assets).includes(id as package_id)
-	)
-		? get_offer_note(price_asset_ids as package_id[])
-		: '';
+	// $: offer_string = price_asset_ids.every((id) =>
+	// 	typed_keys(indexed_package_assets).includes(id as package_id)
+	// )
+	// 	? get_offer_note(price_asset_ids as package_id[])
+	// 	: '';
 
 	function is_imaged_package(id: priceable_asset_id): id is imaged_package_id {
 		return imaged_package_ids.includes(id as imaged_package_id);
@@ -113,9 +113,6 @@
 		height: 10px;
 		border-radius: 50%;
 		background-color: var(--color-primary);
-	}
-	:global(h3) {
-		margin-top: 40px;
 	}
 
 	.image {

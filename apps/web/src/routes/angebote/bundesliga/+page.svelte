@@ -7,7 +7,7 @@
 
 <div>
 	<div class="alignment">
-		<BundesligaOverview animated />
+		<BundesligaOverview animated show_price />
 		<BundesligaSenders />
 		<EntertainmentSenders />
 		<Inklusive />

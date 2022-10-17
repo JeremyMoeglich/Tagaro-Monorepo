@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+body {
+	background-color: white;
+	margin: 0;
+	font-family: 'Oxygen', sans-serif;
+	min-height: 100vh;
+	color: #333;
+	border: rgb(207, 207, 207) 1px solid;
+}
+
+$gradient-safezone: 5px;
+
+.gradient_text {
+	background: linear-gradient(to right, rgb(0, 15, 245) 0%, rgb(0, 150, 255) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-bottom: $gradient-safezone;
+}
+
+.text_block {
+	max-width: min(85%, 1000px);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@extend .gradient_text;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	p {
+		line-height: 150%;
+	}
+}
+
+h1 {
+	@extend .gradient_text;
+	font-size: 1.75rem;
+	font-weight: bold;
+	margin-bottom: calc(0.5rem - $gradient-safezone);
+	margin-top: 0.5rem;
+}
+
+h2 {
+	@extend .gradient_text;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: calc(0.5rem - $gradient-safezone);
+	margin-top: 0.5rem;
+}
+
+h3 {
+	@extend .gradient_text;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-bottom: calc(0.5rem - $gradient-safezone);
+	margin-top: 0.5rem;
+}
+
+mark {
+	background-color: transparent;
+	color: rgb(255, 47, 47);
+	font-weight: bold;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.center {
+	text-align: center;
+}
+
+.shadow-sm {
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.shadow-md {
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.shadow-lg {
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}

@@ -104,7 +104,7 @@
 			<img src={badge} alt="" class="wrap_remove" />
 		{/each}
 	</button>
-	<div class="btn">
+	<div class="button">
 		{#each buttons as button}
 			<AboformularButton source={'Showcase_button'} text={button.text} route={button.route} />
 		{/each}
