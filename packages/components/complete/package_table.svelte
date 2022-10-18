@@ -58,7 +58,7 @@
 					<p>
 						<b>
 							{#if get_offer_note(row)}
-								<mark class="nowrap">{get_offer_note(row)}</mark> <br />
+								<mark class="nowrap">{get_offer_note(row)}</mark>
 							{/if}
 							{get_price_string(row, 'jahr')}&nbsp;mtl.*
 						</b>

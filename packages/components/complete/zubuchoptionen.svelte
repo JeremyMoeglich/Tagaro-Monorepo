@@ -71,3 +71,10 @@
 		{/each}
 	</div>
 </div>
+
+<style>
+	.outer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+</style>

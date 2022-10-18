@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { type package_id, indexed_package_assets } from 'asset_library/assets/packages';
+	import type { package_id } from 'asset_library/assets/packages';
 	import { bonus, bonus_string } from 'asset_library/prices';
 	import { make_url } from 'frontend/url';
 	import Header from './header.svelte';
@@ -16,18 +16,32 @@
 	$: packages = $page.params.packages.split(',') as package_id[];
 
 	function get_title(packages: package_id[]): string {
-		const base_package = packages.includes('entertainmentplus')
-			? 'entertainmentplus'
-			: 'entertainment';
-		const premium_packages = packages.filter((p) => p !== base_package);
-		return `Sky Abo z.B. ${indexed_package_assets[base_package].name} ${
-			base_package === 'entertainmentplus' ? 'inkl. Netflix' : ''
-		} + ${premium_packages.map((p) => indexed_package_assets[p].name).join(' + ')}`;
+		const titles: [package_id[], string][] = [
+			[['entertainment'], 'Titel'],
+			[['entertainment', 'sport'], 'Titel'],
+			[['entertainment', 'cinema'], 'Titel'],
+			[['entertainment', 'bundesliga'], 'Titel'],
+			[['entertainment', 'sport', 'bundesliga'], 'Titel'],
+			[['entertainment', 'cinema', 'sport'], 'Titel'],
+			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
+			[['entertainment', 'sport', 'bundesliga', 'cinema'], 'Titel'],
+			[['entertainmentplus'], 'Titel'],
+			[['entertainmentplus', 'sport'], 'Titel'],
+			[['entertainmentplus', 'cinema'], 'Titel'],
+			[['entertainmentplus', 'bundesliga'], 'Titel'],
+			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
+			[['entertainmentplus', 'cinema', 'sport'], 'Titel'],
+			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
+			[['entertainmentplus', 'sport', 'bundesliga', 'cinema'], 'Titel']
+		];
+		const title = titles.find(([p, _]) => p.sort().join(',') === packages.sort().join(','));
+		if (title) return title[1];
+		return 'Kein Titel gefunden';
 	}
 </script>
 
 <Header />
-<div class="p-12 flex flex-col items-center max-w-6xl ml-auto mr-auto w-full">
+<div class="p-12 flex flex-col items-center max-w-6xl ml-auto mr-auto w-full gap-16">
 	<div class="text-center flex flex-col gap-2 mb-10">
 		<h1 class="gradient_text title font-bold text-3xl">{get_title(packages)}</h1>
 		<ul class="text-red-600 text-xl">
