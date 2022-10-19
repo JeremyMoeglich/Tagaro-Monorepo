@@ -16,7 +16,7 @@
 		'Alle Spiele der Premier League exklusiv, davon 232 Spiele live',
 		'Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
 	]}
-	image={'/images/assets/packages/normal/sport.jpg'}
+	image={'/images/assets/packages/normal/sport.png'}
 	price_asset_ids={['entertainment', 'sport']}
 >
 	{#if show_senders}

@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { type package_id, indexed_package_assets } from 'asset_library/assets/packages';
+	import type { package_id } from 'asset_library/assets/packages';
 	import { bonus, bonus_string } from 'asset_library/prices';
 	import { make_url } from 'frontend/url';
 	import Header from './header.svelte';
 	import { dev } from '$app/environment';
 	import PackageTable from 'components/complete/package_table.svelte';
+	import Inklusive from 'components/complete/inklusive.svelte';
 	import AllOverviews from 'components/complete/packages/overviews/all_overviews.svelte';
 	import Vertragsinfomationen from 'components/complete/vertragsinfomationen.svelte';
 	import Line from 'components/elements/line.svelte';
@@ -16,19 +17,33 @@
 	$: packages = $page.params.packages.split(',') as package_id[];
 
 	function get_title(packages: package_id[]): string {
-		const base_package = packages.includes('entertainmentplus')
-			? 'entertainmentplus'
-			: 'entertainment';
-		const premium_packages = packages.filter((p) => p !== base_package);
-		return `Sky Abo z.B. ${indexed_package_assets[base_package].name} ${
-			base_package === 'entertainmentplus' ? 'inkl. Netflix' : ''
-		} + ${premium_packages.map((p) => indexed_package_assets[p].name).join(' + ')}`;
+		const titles: [package_id[], string][] = [
+			[['entertainment'], 'Titel'],
+			[['entertainment', 'sport'], 'Titel'],
+			[['entertainment', 'cinema'], 'Titel'],
+			[['entertainment', 'bundesliga'], 'Titel'],
+			[['entertainment', 'sport', 'bundesliga'], 'Titel'],
+			[['entertainment', 'cinema', 'sport'], 'Titel'],
+			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
+			[['entertainment', 'sport', 'bundesliga', 'cinema'], 'Titel'],
+			[['entertainmentplus'], 'Titel'],
+			[['entertainmentplus', 'sport'], 'Titel'],
+			[['entertainmentplus', 'cinema'], 'Titel'],
+			[['entertainmentplus', 'bundesliga'], 'Titel'],
+			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
+			[['entertainmentplus', 'cinema', 'sport'], 'Titel'],
+			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
+			[['entertainmentplus', 'sport', 'bundesliga', 'cinema'], 'Titel']
+		];
+		const title = titles.find(([p, _]) => p.sort().join(',') === packages.sort().join(','));
+		if (title) return title[1];
+		return 'Kein Titel gefunden';
 	}
 </script>
 
 <Header />
-<div class="p-12 flex flex-col items-center max-w-6xl ml-auto mr-auto w-full">
-	<div class="text-center flex flex-col gap-2 mb-10">
+<div class="p-12 flex flex-col items-center max-w-6xl ml-auto mr-auto w-full gap-16">
+	<div class="text-center flex flex-col gap-2">
 		<h1 class="gradient_text title font-bold text-3xl">{get_title(packages)}</h1>
 		<ul class="text-red-600 text-xl">
 			<li>+ Sky Paketkombis mit bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo</li>
@@ -72,6 +87,8 @@
 		</p>
 	</Block>
 	<AllOverviews clickable={false} ebay_version={true} />
+	<Line />
+	<Inklusive sky_q={false} />
 	<div class="mt-10 max-w-6xl ml-auto mr-auto flex flex-col gap-7 items-center">
 		<h2 class="gradient_text text-2xl font-bold text-center">
 			Sky Q als Receiver oder IPTV Box Neue flexible Empfangsmöglichkeiten auch übers Internet
