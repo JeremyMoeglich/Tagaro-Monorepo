@@ -13,7 +13,7 @@
 
 	const titles = {
 		0: 'Wählbare Pakete mit Sky Entertainment - 12 Monate Laufzeit, danach monatlich kündbar',
-		5: 'Wählbare Pakete mit Entertainment inklusive Netflix (Sky Ultimate TV) - 12 Mon. Laufzeit, danach monatlich kündbar'
+		7: 'Wählbare Pakete mit Entertainment inklusive Netflix (Sky Ultimate TV) - 12 Mon. Laufzeit, danach monatlich kündbar'
 	};
 
 	let rows: (string | typeof package_combinations[number])[];

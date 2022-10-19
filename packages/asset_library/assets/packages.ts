@@ -60,8 +60,6 @@ export const package_combinations: ReadonlyArray<ReadonlyArray<package_id>> = [
 	['entertainment', 'cinema'],
 	['entertainment', 'bundesliga'],
 	['entertainment', 'sport', 'bundesliga'],
-	['entertainment', 'cinema', 'sport'],
-	['entertainment', 'cinema', 'bundesliga'],
 	['entertainment', 'sport', 'bundesliga', 'cinema'],
 	['entertainmentplus'],
 	['entertainmentplus', 'sport'],
