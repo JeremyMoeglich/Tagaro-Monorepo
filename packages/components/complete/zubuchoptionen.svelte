@@ -54,8 +54,7 @@
 		{
 			image: '/images/assets/zubuchoptionen/plus18.png',
 			html: /*html*/ `<b>18+ für Blue Movie € 0</b><br /> einmalige Versandpauschale 18+ PIN`
-		},
-		'empty'
+		}
 	];
 </script>
 

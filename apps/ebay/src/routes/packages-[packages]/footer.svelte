@@ -13,7 +13,7 @@
 		<p>TAGARO vermittelt Sky Verträge bereits seit 2006</p>
 		<p>2006-2022 TAGARO Medienshop Möglich & Möglich GbR</p>
 	</div>
-	<div class="ml-auto">
+	<div class="ml-auto logo">
 		<SiteLogo />
 	</div>
 </div>
@@ -49,6 +49,11 @@
 		.sky {
 			display: none;
 		}
+	}
+	.logo {
+		padding: 20px;
+		border-radius: 15px;
+		overflow: hidden;
 	}
 	.title {
 		display: flex;
