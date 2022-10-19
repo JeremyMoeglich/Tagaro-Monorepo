@@ -1,43 +1,25 @@
 <script lang="ts">
 	import { get_offer_note, get_price_string } from 'asset_library/prices';
-	import { package_combinations } from 'asset_library/assets/packages';
+	import {
+		max_combination_length,
+		base_premium_package_combinations,
+		package_id
+	} from 'asset_library/assets/packages';
 	import Zubuchoptionen from './zubuchoptionen.svelte';
 	import AktivierungSentence from './aktivierung_sentence.svelte';
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
+	import { typed_entries } from 'functional-utilities';
 
-	const max_combination = package_combinations.reduce((a, b) => {
-		return a > b.length ? a : b.length;
-	}, 0);
-	const col_amount = max_combination + 1;
+	const col_amount = max_combination_length + 1;
 
-	const titles = {
-		0: 'Wählbare Pakete mit Sky Entertainment - 12 Monate Laufzeit, danach monatlich kündbar',
-		5: 'Wählbare Pakete mit Entertainment inklusive Netflix (Sky Ultimate TV) - 12 Mon. Laufzeit, danach monatlich kündbar'
-	};
-
-	let rows: (string | typeof package_combinations[number])[];
-	$: rows = (() => {
-		const sorted_titles: [number, string][] = Object.entries(titles)
-			.map(([key, value]) => [parseInt(key), value] as [number, string])
-			.sort((a, b) => a[0] - b[0]);
-		const rows: (string | typeof package_combinations[number])[] = [];
-		const remaining_combinations = [...package_combinations];
-		let current_row = 0;
-		while (remaining_combinations.length > 0) {
-			if (sorted_titles.length === 0) {
-				rows.push(remaining_combinations.shift());
-				continue;
-			}
-			if (current_row === sorted_titles[0][0]) {
-				rows.push(sorted_titles.shift()[1]);
-			} else {
-				rows.push(remaining_combinations.shift());
-			}
-			current_row++;
-		}
-		return rows;
-	})();
+	let rows: (string | readonly package_id[])[];
+	$: rows = typed_entries(base_premium_package_combinations).flatMap(
+		([base, { title, combinations }]) => [
+			title,
+			...combinations.map((combination) => [base, ...combination])
+		]
+	);
 </script>
 
 <div class="alignment">
@@ -46,7 +28,7 @@
 		{#each rows as row, row_index}
 			{#if typeof row === 'string'}
 				<div style:--row={row_index + 1} class="title_row">
-					<h3>{row}</h3>
+					<h3 class="gray">{row}</h3>
 				</div>
 			{:else}
 				{#each row as element, col_index}

@@ -328,11 +328,6 @@
 <br />
 
 <style>
-	.combine {
-		display: inline-block;
-		margin-top: 7px;
-		margin-bottom: 10px;
-	}
 	ul {
 		list-style: none;
 		line-height: 150%;

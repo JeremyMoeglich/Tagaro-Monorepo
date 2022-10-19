@@ -42,6 +42,9 @@ $gradient-safezone: 5px;
 
 $bottom_margin: 0.5rem;
 
+$light-blue: #0072c9;
+$gray: #4a4a4a;
+
 h1,
 h2.large,
 h3.large {
@@ -65,10 +68,22 @@ h3 {
 	margin-top: 0.5rem;
 }
 
-h1:not(.no_gradient),
-h2:not(.no_gradient),
-h3:not(.no_gradient) {
+h1:not(.no_gradient):not(.gray):not(.light-blue),
+h2:not(.no_gradient):not(.gray):not(.light-blue),
+h2:not(.no_gradient):not(.gray):not(.light-blue) {
 	@extend .gradient_text;
+}
+
+h1.gray,
+h2.gray,
+h3.gray {
+	color: $gray;
+}
+
+h1.light-blue,
+h2.light-blue,
+h3.light-blue {
+	color: $light-blue;
 }
 
 mark {
