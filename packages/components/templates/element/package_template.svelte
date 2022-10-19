@@ -35,6 +35,20 @@
 
 <div class="package_overview">
 	<div class="alignment">
+		{#if image}
+			{#if animated}
+				<img
+					src={make_url(image, dev)}
+					alt=""
+					class="image"
+					out:send={{ key: image }}
+					in:receive={{ key: image }}
+				/>
+			{:else}
+				<img src={make_url(image, dev)} alt="" class="image" />
+			{/if}
+		{/if}
+		
 		<div class="description">
 			<h2 class="title gradient_text">{title}</h2>
 			<ul class="points">
@@ -62,20 +76,6 @@
 		<div>
 			<slot />
 		</div>
-
-		{#if image}
-			{#if animated}
-				<img
-					src={make_url(image, dev)}
-					alt=""
-					class="image"
-					out:send={{ key: image }}
-					in:receive={{ key: image }}
-				/>
-			{:else}
-				<img src={make_url(image, dev)} alt="" class="image" />
-			{/if}
-		{/if}
 	</div>
 </div>
 

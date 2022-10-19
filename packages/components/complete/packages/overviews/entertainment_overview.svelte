@@ -18,7 +18,7 @@
 		'Sky Q Receiver mit 1TB Festplatte, Ultra HD fähig und Sky On Demand Zugang',
 		'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!'
 	]}
-	image={'/images/assets/packages/normal/entertainment.jpg'}
+	image={'/images/assets/packages/normal/entertainment.png'}
 	price_asset_ids={['entertainment']}
 >
 	{#if show_senders}

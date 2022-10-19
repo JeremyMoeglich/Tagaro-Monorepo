@@ -80,7 +80,7 @@
 			{:else}
 				<div class="package_overview">
 					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
-						{@const path = `/images/assets/packages/normal/${asset.id}.jpg`}
+						{@const path = `/images/assets/packages/normal/${asset.id}.png`}
 						<a href={`/angebote/${asset.id}`} sveltekit:prefetch>
 							<img src={path} alt={asset.id} out:send={{ key: path }} in:send={{ key: path }} />
 						</a>

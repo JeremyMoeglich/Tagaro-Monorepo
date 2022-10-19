@@ -1,8 +1,10 @@
-<script lang="ts"></script>
+<script lang="ts">
+	export let space = '10px';
+</script>
 
-<div class="spacer" />
+<div class="spacer" style:--space={space} />
 
-<style lang="scss">
+<style>
 	.spacer {
 		height: 1px;
 		background: rgb(255, 255, 255);
@@ -12,12 +14,11 @@
 			rgba(172, 172, 172, 1) 50%,
 			rgba(255, 255, 255, 0) 100%
 		);
-		$space: 100px;
 		width: 100%;
 		max-width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: $space;
-		margin-bottom: $space;
+		margin-top: var(--space);
+		margin-bottom: var(--space);
 	}
 </style>

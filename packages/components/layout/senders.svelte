@@ -2,8 +2,14 @@
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
 
-	export let text: string;
-	export let content: ReadonlyArray<string>;
+	export let title: string;
+
+	interface Sender {
+		image: string;
+		text: string;
+	}
+
+	export let content: ReadonlyArray<Sender>;
 	export let tiny_title: boolean = false;
 </script>
 
@@ -13,16 +19,17 @@
 		style:font-size={tiny_title ? '25px' : '35px'}
 		style:margin-bottom={tiny_title ? '30px' : '15px'}
 	>
-		{text}
+		{title}
 	</h2>
 	<div class="main_alignment">
 		{#each content as element}
 			<div class="sender_box">
-				<img src={make_url(element, dev)} alt="" />
+				<img src={make_url(element.image, dev)} alt="" />
+				<p>{element.text}</p>
 			</div>
 		{/each}
 	</div>
-	<p>
+	<p class="subtitle">
 		Bei Kabelempfang hängt die Verfügbarkeit und Anzahl der enthaltenen Sender vom jeweiligen
 		Netzbetreiber ab.
 	</p>
@@ -30,8 +37,8 @@
 
 <style lang="scss">
 	.main_alignment {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		justify-content: center;
 		width: 100%;
 		max-width: 1100px;
@@ -45,7 +52,8 @@
 		align-items: center;
 		max-width: 250px;
 		width: 7%;
-		min-width: 125px;
+		min-width: 150px;
+		font-size: small;
 	}
 	h2 {
 		text-align: center;
@@ -57,8 +65,10 @@
 		text-align: center;
 		gap: 20px;
 	}
+	.subtitle {
+		margin-top: 30px;
+	}
 	p {
 		text-align: center;
-		margin-top: 30px;
 	}
 </style>

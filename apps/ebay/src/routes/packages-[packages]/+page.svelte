@@ -6,6 +6,7 @@
 	import Header from './header.svelte';
 	import { dev } from '$app/environment';
 	import PackageTable from 'components/complete/package_table.svelte';
+	import Inklusive from 'components/complete/inklusive.svelte';
 	import AllOverviews from 'components/complete/packages/overviews/all_overviews.svelte';
 	import Vertragsinfomationen from 'components/complete/vertragsinfomationen.svelte';
 	import Line from 'components/elements/line.svelte';
@@ -42,7 +43,7 @@
 
 <Header />
 <div class="p-12 flex flex-col items-center max-w-6xl ml-auto mr-auto w-full gap-16">
-	<div class="text-center flex flex-col gap-2 mb-10">
+	<div class="text-center flex flex-col gap-2">
 		<h1 class="gradient_text title font-bold text-3xl">{get_title(packages)}</h1>
 		<ul class="text-red-600 text-xl">
 			<li>+ Sky Paketkombis mit bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo</li>
@@ -86,6 +87,8 @@
 		</p>
 	</Block>
 	<AllOverviews clickable={false} ebay_version={true} />
+	<Line />
+	<Inklusive sky_q={false} />
 	<div class="mt-10 max-w-6xl ml-auto mr-auto flex flex-col gap-7 items-center">
 		<h2 class="gradient_text text-2xl font-bold text-center">
 			Sky Q als Receiver oder IPTV Box Neue flexible Empfangsmöglichkeiten auch übers Internet

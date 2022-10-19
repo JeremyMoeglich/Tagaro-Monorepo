@@ -14,6 +14,6 @@
 		'Alles auf Abruf ohne Werbung',
 		'Mit Download-Funktion'
 	]}
-	image={'/images/assets/packages/normal/kids.jpg'}
+	image={'/images/assets/packages/normal/kids.png'}
 	price_asset_ids={['entertainmentplus', 'kids']}
 />

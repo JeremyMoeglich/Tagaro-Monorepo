@@ -1,29 +1,9 @@
 <script lang="ts">
 	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
-	import type { priceable_asset_id } from 'asset_library/asset_types';
-	import type { base_package_set } from 'asset_library/offer_description';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
 	import { get_price_string } from 'asset_library/prices';
 	import { typed_entries } from 'functional-utilities';
-
-	const combinations: Record<base_package_set, ReadonlyArray<ReadonlyArray<priceable_asset_id>>> = {
-		entertainmentplus: [
-			['bundesliga'],
-			['cinema'],
-			['cinema', 'sport'],
-			['sport', 'bundesliga'],
-			['cinema', 'bundesliga'],
-			['cinema', 'sport', 'bundesliga']
-		],
-		entertainment: [
-			['bundesliga'],
-			['cinema', 'sport'],
-			['sport', 'bundesliga'],
-			['cinema', 'bundesliga'],
-			['cinema', 'sport', 'bundesliga']
-		]
-	} as const;
 </script>
 
 <div>

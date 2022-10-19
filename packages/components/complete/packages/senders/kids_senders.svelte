@@ -7,13 +7,31 @@
 <div>
 	<Senders
 		{tiny_title}
-		text="Sender im Kids Paket:"
+		title="Sender im Kids Paket:"
 		content={[
-			'94_sky_logo_boomerang.png',
-			'95_sky_logo_cartoonnetwork_w.png',
-			'96_sky_logo_junior.png',
-			'sky_logo_nickjr_b.png',
-			'sky_logo_nicktoons_w.png'
-		].map((img) => start + img)}
+			{
+				image: '95_sky_logo_cartoonnetwork_w.png',
+				text: 'Kinderunterhaltung voller Abenteuer und Action.'
+			},
+			{
+				image: '94_sky_logo_boomerang.png',
+				text: 'Die größten Cartoonstars aller Zeiten in Filmen und Serien.'
+			},
+			{
+				image: '96_sky_logo_junior.png',
+				text: 'Klassiker des Kinderfernsehens für die ganze Familie.'
+			},
+			{
+				image: 'sky_logo_nickjr_b.png',
+				text: 'Altersgerechte Unterhaltung für Vorschulkinder in brillantem HD.'
+			},
+			{
+				image: 'sky_logo_nicktoons_w.png',
+				text: 'Hochwertige Vorschul-, Cartoon- und Teenie-Serien für Kinder jeden Alters.'
+			}
+		].map((e) => ({
+			...e,
+			image: start + e.image
+		}))}
 	/>
 </div>

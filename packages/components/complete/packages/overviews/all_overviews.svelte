@@ -9,6 +9,8 @@
 
 	export let clickable = true;
 	export let ebay_version: boolean;
+
+	const space = '100px';
 </script>
 
 <div class="outer">
@@ -20,21 +22,21 @@
 	<!-- <a href="/angebote/entertainment">
 		<EntertainmentOverview />
 	</a> -->
-	<LineSpacer />
+	<LineSpacer {space} />
 	<ConditionalHref href="/angebote/cinema" active={clickable}>
 		<CinemaOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
-	<LineSpacer />
+	<LineSpacer {space} />
 	<ConditionalHref href="/angebote/sport" active={clickable}>
 		<SportOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
-	<LineSpacer />
+	<LineSpacer {space} />
 	<ConditionalHref href="/angebote/bundesliga" active={clickable}>
 		<BundesligaOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
 
-	<LineSpacer />
 	{#if !ebay_version}
+		<LineSpacer {space} />
 		<DaznOverview show_price={!ebay_version} />
 	{/if}
 </div>
@@ -47,7 +49,6 @@
 		font-weight: bold;
 	}
 	.outer {
-		padding: 40px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;

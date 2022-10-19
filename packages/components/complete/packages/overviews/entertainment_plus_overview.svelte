@@ -16,7 +16,7 @@
 		'Alle Inhalte von Sky, Free TV, deinen Lieblingsapps und Mediatheken auf einen Blick vereint',
 		'Einfach. Alles mit einer Sprachfernbedienung'
 	]}
-	image={'/images/assets/packages/normal/entertainmentplus.jpg'}
+	image={'/images/assets/packages/normal/entertainmentplus.png'}
 	price_asset_ids={['entertainmentplus']}
 >
 	{#if show_senders}

@@ -40,7 +40,7 @@
 	})();
 </script>
 
-<div>
+<div class="alignment">
 	<!-- <h2 class="title gradient_text">Pakete & Preise in der Übersicht</h2> -->
 	<div class="grid shadow-lg" style:--col_amount={col_amount}>
 		{#each rows as row, row_index}
@@ -125,5 +125,14 @@
 		font-size: large;
 		margin: 0px;
 		text-align: center;
+	}
+	.alignment {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4rem;
+	}
+	h3 {
+		margin-bottom: 0px;
 	}
 </style>

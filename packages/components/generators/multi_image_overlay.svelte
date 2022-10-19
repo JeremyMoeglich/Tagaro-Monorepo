@@ -25,7 +25,7 @@
 		style:transform={`translateX(${50 - (total_width * 100) / 2}%)`}
 	>
 		<img
-			src={`/images/assets/packages/normal/${assets[0].id}.jpg`}
+			src={`/images/assets/packages/normal/${assets[0].id}.png`}
 			alt={assets[0].id}
 			class="size_image"
 			style:transform={`scale(${back_scale})`}
@@ -34,7 +34,7 @@
 			{#each assets.slice(1) as asset, i}
 				{@const index = i + 1}
 				<img
-					src={`/images/assets/packages/normal/${asset.id}.jpg`}
+					src={`/images/assets/packages/normal/${asset.id}.png`}
 					alt={asset.id}
 					class="positioned_images"
 					style:transform={`translateX(${

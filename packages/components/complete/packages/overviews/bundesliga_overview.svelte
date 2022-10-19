@@ -16,7 +16,7 @@
 		'Alle Relegationsspiele und der Supercup live',
 		'Mit den Sky Konferenzen und Highlight-Videos kein Tor verpassen'
 	]}
-	image={'/images/assets/packages/normal/bundesliga.jpg'}
+	image={'/images/assets/packages/normal/bundesliga.png'}
 	price_asset_ids={['entertainment', 'bundesliga']}
 >
 	{#if show_senders}

@@ -8,7 +8,7 @@
 		image: string;
 	}
 
-	const zubuchoptionen: Zubuchoption[] = [
+	const zubuchoptionen: (Zubuchoption | 'empty')[] = [
 		{
 			html: /*html*/ `<b>UHD + ${get_price_string(
 				['uhd'],
@@ -54,19 +54,24 @@
 		{
 			image: '/images/assets/zubuchoptionen/plus18.png',
 			html: /*html*/ `<b>18+ für Blue Movie € 0</b><br /> einmalige Versandpauschale 18+ PIN`
-		}
+		},
+		'empty'
 	];
 </script>
 
 <div>
-	<h2 class="title gradient_text">Zubuchoptionen</h2>
+	<h2 class="title large center">Zubuchoptionen</h2>
 	<div class="outer">
 		{#each zubuchoptionen as zubuchoption}
 			<div class="zubuchoption">
-				<img src={make_url(zubuchoption.image, dev)} alt="" />
-				<div class="text">
-					{@html zubuchoption.html}
-				</div>
+				{#if zubuchoption === 'empty'}
+					<div class="empty" />
+				{:else}
+					<img src={make_url(zubuchoption.image, dev)} alt="" />
+					<div class="text">
+						{@html zubuchoption.html}
+					</div>
+				{/if}
 			</div>
 		{/each}
 	</div>
@@ -76,5 +81,21 @@
 	.outer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: 1fr;
+		gap: 1rem;
+	}
+	img {
+		width: 100px;
+		max-width: 100%;
+	}
+	.zubuchoption {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+		padding: 1rem;
+	}
+	h2 {
+		margin-bottom: 30px;
 	}
 </style>
