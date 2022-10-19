@@ -35,9 +35,9 @@
 				</div>
 			</div>{/if}
 		<div class="prices">
-			Total: {get_price_string(selected_priceable_assets, 'jahr')} mtl.
+			Total: {@html get_price_string(selected_priceable_assets, 'jahr')} mtl.
 			<br />
-			Nach Verlängerung: {get_price_string(selected_priceable_assets, 'monat')} mtl.
+			Nach Verlängerung: {@html get_price_string(selected_priceable_assets, 'monat')} mtl.
 		</div>
 		<div class="asset_images">
 			{#each selected_priceable_assets as asset}

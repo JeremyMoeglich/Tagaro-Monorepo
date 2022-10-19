@@ -13,7 +13,7 @@
 
 	const titles = {
 		0: 'Wählbare Pakete mit Sky Entertainment - 12 Monate Laufzeit, danach monatlich kündbar',
-		7: 'Wählbare Pakete mit Entertainment inklusive Netflix (Sky Ultimate TV) - 12 Mon. Laufzeit, danach monatlich kündbar'
+		7: 'Wählbare Pakete mit Entertainment inklusive Netflix (Sky Ultimate TV)<br>12 Monate Laufzeit, danach monatlich kündbar'
 	};
 
 	let rows: (string | typeof package_combinations[number])[];
@@ -46,7 +46,7 @@
 		{#each rows as row, row_index}
 			{#if typeof row === 'string'}
 				<div style:--row={row_index + 1} class="title_row">
-					<h3>{row}</h3>
+					<h3>{@html row}</h3>
 				</div>
 			{:else}
 				{#each row as element, col_index}
@@ -60,11 +60,11 @@
 							{#if get_offer_note(row)}
 								<mark class="nowrap">{get_offer_note(row)}</mark>
 							{/if}
-							{get_price_string(row, 'jahr')}&nbsp;mtl.*
+							{@html get_price_string(row, 'jahr')}&nbsp;mtl.*
 						</b>
 					</p>
 					<p class="small">
-						im Jahres-Abo danach {get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
+						im Jahres-Abo danach {@html get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
 					</p>
 				</div>
 				<div class="background_box" style:--row={row_index + 1} />

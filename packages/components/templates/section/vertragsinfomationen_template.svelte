@@ -16,33 +16,33 @@
 		<ul>
 			{#each package_combinations as combination}
 				<li>
-					{combination.map((id) => indexed_priceable_assets[id].name).join(' + ')} - {get_price_string(
+					- {combination.map((id) => indexed_priceable_assets[id].name).join(' + ')} für {@html get_price_string(
 						combination,
 						'jahr'
-					)}
+					)}&nbsp;mtl. im 12-Monats-Abo*
 				</li>
 			{/each}
 		</ul>
 		<AktivierungSentence />
 		<ul>
 			<li><b>Optional:</b></li>
-			<li>- UHD mtl. {get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
+			<li>- UHD mtl. {@html get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
 			<li>
-				- DAZN jährlich für {get_price_string(['dazn_yearly'], 'jahr')} mtl. oder DAZN monatlich für
-				{get_price_string(['dazn_monthly'], 'monat')} mtl.
+				- DAZN jährlich für {@html get_price_string(['dazn_yearly'], 'jahr')} mtl. oder DAZN monatlich für
+				{@html get_price_string(['dazn_monthly'], 'monat')} mtl.
 			</li>
 			<li>
-				- Multiscreen für {get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus für 3
+				- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus für 3
 				mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 29 (zur
 				Leihe)
 			</li>
 			<li>
-				- Netflix Standard-Abo, HD/2 Streams (+ {get_price_string(['netflixstandard'], 'jahr')} mtl.)
+				- Netflix Standard-Abo, HD/2 Streams (+ {@html get_price_string(['netflixstandard'], 'jahr')} mtl.)
 			</li>
 			<li>
-				- Netflix Premium-Abo, UHD/4 Streams (+ {get_price_string(['netflixpremium'], 'jahr')} mtl.)
+				- Netflix Premium-Abo, UHD/4 Streams (+ {@html get_price_string(['netflixpremium'], 'jahr')} mtl.)
 			</li>
-			<li>- trendSports mtl. {get_price_string(['trendsports'], 'jahr')}</li>
+			<li>- trendSports mtl. {@html get_price_string(['trendsports'], 'jahr')}</li>
 			<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
 			<!-- <li>
 						- UHD für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 5 mtl. mit Entertainment
@@ -87,47 +87,47 @@
 		Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende Preise:
 	</p>
 	<p>
-		Sky Entertainment für mtl. {get_price_string(['entertainment'], 'monat')} in Kombination mit Sky
+		Sky Entertainment für mtl. {@html get_price_string(['entertainment'], 'monat')} in Kombination mit Sky
 		Sport mtl.
-		{get_price_string(['entertainment', 'sport'], 'monat')}; Sky Cinema mtl. {get_price_string(
+		{@html get_price_string(['entertainment', 'sport'], 'monat')}; Sky Cinema mtl. {@html get_price_string(
 			['entertainment', 'cinema'],
 			'monat'
-		)}; Sky Fußball-Bundesliga mtl. {get_price_string(['entertainment', 'bundesliga'], 'monat')};
-		Sky Sport + Sky Cinema mtl. {get_price_string(['entertainment', 'sport', 'cinema'], 'monat')};
-		Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
+		)}; Sky Fußball-Bundesliga mtl. {@html get_price_string(['entertainment', 'bundesliga'], 'monat')};
+		Sky Sport + Sky Cinema mtl. {@html get_price_string(['entertainment', 'sport', 'cinema'], 'monat')};
+		Sky Sport + Sky Fußball-Bundesliga mtl. {@html get_price_string(
 			['entertainment', 'sport', 'bundesliga'],
 			'monat'
-		)}; Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+		)}; Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
 			['entertainment', 'cinema', 'bundesliga'],
 			'monat'
-		)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+		)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
 			['entertainment', 'sport', 'cinema', 'bundesliga'],
 			'monat'
 		)}; <br />
-		Sky Ultimate TV mit Entertainment inkl. Netflix mtl. {get_price_string(
+		Sky Ultimate TV mit Entertainment inkl. Netflix mtl. {@html get_price_string(
 			['entertainmentplus'],
 			'monat'
 		)}
-		in Kombination mit Sky Sport mtl. {get_price_string(['entertainmentplus', 'sport'], 'monat')};
-		Sky Cinema mtl. {get_price_string(['entertainmentplus', 'cinema'], 'monat')}; Sky
-		Fußball-Bundesliga mtl. {get_price_string(['entertainmentplus', 'bundesliga'], 'monat')}; Sky
-		Sport + Sky Cinema mtl. {get_price_string(['entertainmentplus', 'sport', 'cinema'], 'monat')};
-		Sky Sport + Sky Fußball-Bundesliga mtl. {get_price_string(
+		in Kombination mit Sky Sport mtl. {@html get_price_string(['entertainmentplus', 'sport'], 'monat')};
+		Sky Cinema mtl. {@html get_price_string(['entertainmentplus', 'cinema'], 'monat')}; Sky
+		Fußball-Bundesliga mtl. {@html get_price_string(['entertainmentplus', 'bundesliga'], 'monat')}; Sky
+		Sport + Sky Cinema mtl. {@html get_price_string(['entertainmentplus', 'sport', 'cinema'], 'monat')};
+		Sky Sport + Sky Fußball-Bundesliga mtl. {@html get_price_string(
 			['entertainmentplus', 'sport', 'bundesliga'],
 			'monat'
-		)}; Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+		)}; Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
 			['entertainmentplus', 'cinema', 'bundesliga'],
 			'monat'
-		)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {get_price_string(
+		)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
 			['entertainmentplus', 'cinema', 'bundesliga', 'sport'],
 			'monat'
-		)}; <br /> Mit UHD zzgl. {get_price_string(['uhd'], 'monat')}; Multiscreen {get_price_string(
+		)}; <br /> Mit UHD zzgl. {@html get_price_string(['uhd'], 'monat')}; Multiscreen {@html get_price_string(
 			['multiscreen'],
 			'monat'
-		)}; Netflix Standard-Abo {get_price_string(['netflixstandard'], 'monat')}; Netflix Premium-Abo {get_price_string(
+		)}; Netflix Standard-Abo {@html get_price_string(['netflixstandard'], 'monat')}; Netflix Premium-Abo {@html get_price_string(
 			['netflixpremium'],
 			'monat'
-		)}, Sky Kids {get_price_string(['kids'], 'monat')}
+		)}, Sky Kids {@html get_price_string(['kids'], 'monat')}
 	</p>
 </div>
 <div>
@@ -328,11 +328,6 @@
 <br />
 
 <style>
-	.combine {
-		display: inline-block;
-		margin-top: 7px;
-		margin-bottom: 10px;
-	}
 	ul {
 		list-style: none;
 		line-height: 150%;

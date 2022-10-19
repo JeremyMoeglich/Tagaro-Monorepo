@@ -109,8 +109,8 @@
 		</div>
 	</div>
 	<p>
-		Monat: {get_price_string(valid_packages, 'monat')} <br />
-		Jahr: {get_price_string(valid_packages, 'jahr')}
+		Monat: {@html get_price_string(valid_packages, 'monat')} <br />
+		Jahr: {@html get_price_string(valid_packages, 'jahr')}
 		{#if offser_note}
 			<br />
 			Angebot: {offser_note}

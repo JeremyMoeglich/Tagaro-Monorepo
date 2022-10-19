@@ -37,7 +37,7 @@
 		<img src={asset.image} alt={asset.name} on:dragstart|preventDefault />
 		<p>
 			{#if 'price' in asset}
-				<b>+ {get_price_string([asset.id], 'jahr')}</b> -
+				<b>+ {@html get_price_string([asset.id], 'jahr')}</b> -
 			{/if}{asset.name}
 		</p>
 	</button>
