@@ -66,7 +66,7 @@
 			{/if}
 		</button>
 		<div class="right_side">
-			<h1 class="gradient_text">{title}*</h1>
+			<h1>{title}*</h1>
 			{#if enddate}
 				<h2>
 					<Enddate enddate={enddate.date} format={enddate.format} />

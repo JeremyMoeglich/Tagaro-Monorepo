@@ -15,7 +15,6 @@
 
 <div>
 	<h2
-		class="gradient_text"
 		style:font-size={tiny_title ? '25px' : '35px'}
 		style:margin-bottom={tiny_title ? '30px' : '15px'}
 	>

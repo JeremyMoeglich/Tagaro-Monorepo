@@ -3,7 +3,7 @@
 </script>
 
 <div>
-	<h1 class="gradient_text">Allgemeine Geschäftsbedingungen</h1>
+	<h1>Allgemeine Geschäftsbedingungen</h1>
 	<Agb />
 </div>
 

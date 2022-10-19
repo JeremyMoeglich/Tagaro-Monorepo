@@ -12,6 +12,6 @@
 		align-items: center;
 	}
 	.title {
-		@extend .gradient_text !optional;
+		@extend . !optional;
 	}
 </style>

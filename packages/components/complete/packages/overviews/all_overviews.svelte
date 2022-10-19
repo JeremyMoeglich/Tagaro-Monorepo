@@ -14,7 +14,7 @@
 </script>
 
 <div class="outer">
-	<h1 class="gradient_text">Programmpakete bei Sky</h1>
+	<h1>Programmpakete bei Sky</h1>
 
 	<ConditionalHref href="/angebote/entertainmentplus" active={clickable}>
 		<EntertainmentPlusOverview show_senders={ebay_version} show_price={!ebay_version} />

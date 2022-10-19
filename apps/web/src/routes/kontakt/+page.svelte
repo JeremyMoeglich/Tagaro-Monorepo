@@ -4,7 +4,7 @@
 </script>
 
 <div>
-	<h1 class="main_title gradient_text">Kontakt</h1>
+	<h1 class="main_title ">Kontakt</h1>
 	<div class="side_alignment">
 		<div class="side_text_container">
 			<p>
@@ -59,7 +59,7 @@
 	}
 
 	h1 {
-		@extend .gradient_text !optional;
+		@extend . !optional;
 		padding-bottom: 10px;
 	}
 </style>

@@ -110,7 +110,7 @@
 {#if browser}
 	<div style={css_vars_style}>
 		<div class="main_container">
-			<h2 class="gradient_text" style="text-align: center;">{title}</h2>
+			<h2 style="text-align: center;">{title}</h2>
 			<div class="alignment">
 				{#each components as item, id}
 					<a
@@ -118,14 +118,14 @@
 						style={get_x_pos(id, current_x_pos)}
 						href={item.route}
 					>
-						<h3 class="gradient_text">{@html item.title}</h3>
+						<h3>{@html item.title}</h3>
 						<MultiImageOverlay packages={item.package_ids} />
 						<ul>
 							<li>✓ Für Internet, Sat- oder Kabel,</li>
 							<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu,</li>
 							<li>✓ 12 Monatsabo, danach mtl. kündbar,</li>
 							{#if bonus !== 0}
-								<li>✓ {bonus_string} Bonus on top</li>
+								<li>✓ {@html bonus_string} Bonus on top</li>
 							{/if}
 							<li>✓ 500 PAYBACK Basis Punkte</li>
 							<!-- 
@@ -136,9 +136,9 @@
 							<li><b>✓ Bis zu € 100 Gutschrift von Sky</b>`</li>
 							<li><b>✓ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b></li>
 						-->
-							<li><mark>{get_offer_note(item.package_ids, true)}</mark></li>
+							<li><mark>{@html get_offer_note(item.package_ids, true)}</mark></li>
 						</ul>
-						<h3 class="gradient_text">
+						<h3>
 							ab {@html get_price_string(item.package_ids, `jahr`)} monatlich*
 						</h3>
 						<p>

@@ -77,16 +77,51 @@
 			{
 				image: '388_sky_logo_spiegelgeschichtehd_w.png',
 				text: 'Weltgeschichte mit packenden Dokumentationen über Ereignisse, Menschen und Momente des 20. Jahrhunderts'
+			},
+			{
+				image: 'sky_logo_beateuhse-hd.png',
+				text: 'Schärfer fernsehen mit prickelnder Erotik.'
+			},
+			{
+				image: '117_sky_logo_entertainment_w.png',
+				text: 'Entertainment täglich aus der Welt des Showbiz'
+			},
+			{
+				image: 'sky_logo_sky-sport-news.png',
+				text: '24 Stunden Sportnachrichten aus aller Welt live.'
+			},
+			{
+				image: '16_sky_logo_romancetv_w.png',
+				text: 'Zeit für Gefühle mit romantischen TV-Movies und Serien.'
+			},
+			{
+				image: '72_sky_logo_heimatkanal.png',
+				text: 'Fernsehen mit Herz - beliebte deutschsprachige Heimatfilme und Serien'
+			},
+			{
+				image: 'sky_logo_spiegel-wissen-curiosity.png',
+				text: 'Echte, lebensnahe, spannende und journalistische Reportagen und Dokus'
+			},
+			{
+				image: 'sky_logo_crime-investigation_w.png',
+				text: 'Packende True-Crime-Formate rund um die Uhr.'
+			},
+			{
+				image: '94_sky_logo_boomerang.png',
+				text: 'Die größten Cartoonstars aller Zeiten in Filmen und Serien.'
+			},
+			{
+				image: '95_sky_logo_cartoonnetwork_w.png',
+				text: 'Kinderunterhaltung voller Abenteuer und Action.'
+			},
+			{
+				image: '452_sky_logo_jukebox.png',
+				text: 'Aktuelle Musik-Hits und Klassiker in einem unverwechselbaren Mix.'
+			},
+			{
+				image: '52_sky_logo_motorvision_w.png',
+				text: 'Live Motorsport und unterhaltsame Reportagen für alle Fans von Autos und Fahrspaß'
 			}
-			//{image:'117_sky_logo_entertainment_w.png'},
-			//{image:'16_sky_logo_romancetv_w.png'},
-			//{image:'452_sky_logo_jukebox.png'},
-			//{image:'52_sky_logo_motorvision_w.png'},
-			//{image:'72_sky_logo_heimatkanal.png'},
-			//{image:'94_sky_logo_boomerang.png'},
-			//{image:'95_sky_logo_cartoonnetwork_w.png'},
-			//{ image: 'sky_logo_beateuhse-hd.png' }
-			//{image:'sky_logo_crime-investigation_w.png'},
 			//{image:'sky_logo_spiegel-wissen.png'},
 		].map((e) => ({
 			...e,

@@ -44,7 +44,7 @@
 
 <style lang="scss">
 	@use 'sass:math';
-	$logo_size: 128px;
+	$logo_size: 100%;
 
 	.main_container {
 		position: relative;
@@ -54,13 +54,14 @@
 		height: $logo_size;
 		background-size: $logo_size;
 		filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.61));
+		aspect-ratio: 1 / 1;
 	}
 	.back-image {
 		position: absolute;
 		width: 100%;
 	}
 	.circle {
-		$circle_size: 63px;
+		$circle_size: 55%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -76,7 +77,7 @@
 		visibility: hidden;
 	}
 	.icon {
-		width: 0px;
+		width: 0%;
 	}
 	.visible {
 		width: 68%;

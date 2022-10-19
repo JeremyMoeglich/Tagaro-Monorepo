@@ -6,8 +6,8 @@
 
 <div>
 	<div class="alignment">
-		<h1 class="gradient_text">Sky Q ist da - Alles in einem auf allen Geräten</h1>
-		<h2 class="gradient_text">Schauen Sie ihr Sky Programm auf bis zu 5 Geräten gleichzeitig</h2>
+		<h1>Sky Q ist da - Alles in einem auf allen Geräten</h1>
+		<h2>Schauen Sie ihr Sky Programm auf bis zu 5 Geräten gleichzeitig</h2>
 
 		<p>
 			Mit Ihrem Sky Abonnement erhalten Sie auch Zugang zu Sky Q. Damit schauen Sie Ihr Programm
@@ -87,12 +87,6 @@
 		width: 500px;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	h1,
-	h2,
-	h3,
-	h4 {
-		@extend .gradient_text !optional;
 	}
 	h1,
 	h2 {

@@ -44,19 +44,21 @@
 <Header />
 <div class="p-12 flex flex-col items-center max-w-6xl ml-auto mr-auto w-full gap-16">
 	<div class="text-center flex flex-col gap-2">
-		<h1 class="gradient_text title font-bold text-3xl">{get_title(packages)}</h1>
+		<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 		<ul class="text-red-600 text-xl">
 			<li>+ Sky Paketkombis mit bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo</li>
 			{#if bonus > 0}
-				<li>+ Bonus von TAGARO: {bonus_string} Bonus on top bei erfolgreichem Vertragsabschluss</li>
+				<li>
+					+ Bonus von TAGARO: {@html bonus_string} Bonus on top bei erfolgreichem Vertragsabschluss
+				</li>
 			{/if}
 		</ul>
 		<p class="max-w-6xl mt-2">
 			Bei unserem neuen Angebot erhalten alle Besteller von Sky die beliebtesten Paketkombis mit
 			Sparvorteil. Insgesamt ist eine Ersparnis von bis zu € 156 möglich (siehe unsere
-			Monatspreise). Die Vermittlung erfolgt versandkostfrei. Zusätzlich überweisen wir Ihnen einen
+			Preistabelle). Die Vermittlung erfolgt versandkostfrei. Zusätzlich überweisen wir Ihnen einen
 			Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso
-			sämtliche Zubuchoptionen zu ihrem Vertrag wie Multiscreen, Netflix, DAZN (jetzt € 18,99 mtl.
+			sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen, Netflix, DAZN (jetzt € 18,99 mtl.
 			im Jahresabo) und UHD an. Ihre PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne für Sie
 			ein. Über die PAYBACK App oder online sind weitere Punkte möglich, wenn Sie vor Aboaufnahme
 			einen eCoupon aktivieren. Sie profitieren bei TAGARO von einer schnellen und zuverlässigen
@@ -75,7 +77,7 @@
 		<p>
 			Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur
 			Aboabwicklung zugesandt. Die Anmeldung erfolgt durch uns im Anschluss umgehend. Als Dankeschön
-			erhalten Sie eine € 20 Prämie auf Ihr Konto überwiesen.
+			erhalten Sie nach 6-8 Wochen eine € 20 Prämie auf Ihr Konto überwiesen.
 		</p>
 		<p>
 			Wir vermitteln Sky Verträge bereits seit 2006 und stehen für eine einfache und zügige
@@ -89,8 +91,9 @@
 	<AllOverviews clickable={false} ebay_version={true} />
 	<Line />
 	<Inklusive sky_q={false} />
+	<Line />
 	<div class="mt-10 max-w-6xl ml-auto mr-auto flex flex-col gap-7 items-center">
-		<h2 class="gradient_text text-2xl font-bold text-center">
+		<h2 class="text-2xl font-bold text-center">
 			Sky Q als Receiver oder IPTV Box Neue flexible Empfangsmöglichkeiten auch übers Internet
 		</h2>
 		<p class="text-center">
@@ -108,15 +111,15 @@
 	</div>
 	<Line />
 	<div class="max-w-7xl w-full p-5">
-		<h2 class="gradient_text text-3xl font-bold text-center">*Angebotsdetails für Neukunden</h2>
+		<h2 class="text-3xl font-bold text-center">*Angebotsdetails für Neukunden</h2>
 		<Vertragsinfomationen />
 	</div>
 	<Line />
 	<div
 		class="text-center flex flex-col gap-4 rounded-xl shadow-lg w-full border-slate-300 max-w-4xl border-[1px] p-8 pb-11"
 	>
-		<h3 class="text-2xl gradient_text m-0">So einfach erhalten Sie Sky:</h3>
-		<ul class="">
+		<h3 class="text-2xl m-0">So einfach erhalten Sie Sky:</h3>
+		<ul>
 			<li>1. Bei eBay auf Sofort-Kaufen klicken.</li>
 			<li>
 				2. Auf unsere Nachricht warten.<br />
@@ -128,7 +131,7 @@
 				Eine Freischaltung auf eine Karte oder ein Gerät ist ebenso möglich.
 			</li>
 		</ul>
-		<h3 class="text-2xl gradient_text mt-4">Benötigte Anmeldedaten nach dem eBay Sofort-Kauf:</h3>
+		<h3 class="text-2xl mt-4">Benötigte Anmeldedaten nach dem eBay Sofort-Kauf:</h3>
 		<ul class="centered_list spaced_paragraphs">
 			<li>Vorname / Name: ...</li>
 			<li>Straße / Hausnummer: ...</li>

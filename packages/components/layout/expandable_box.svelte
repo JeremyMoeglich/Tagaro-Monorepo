@@ -14,7 +14,7 @@
 		<p class="aufklappen">
 			{opened ? title : `${title} aufklappen`}
 		</p>
-		<p class="pm gradient_text">
+		<p class="pm ">
 			{#if opened}
 				-
 			{:else}

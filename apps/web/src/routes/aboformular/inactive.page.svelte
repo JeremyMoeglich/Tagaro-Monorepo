@@ -93,7 +93,7 @@
 </script>
 
 <div class="alignment">
-	<h1 class="gradient_text">Aboformular</h1>
+	<h1>Aboformular</h1>
 
 	{#if current_page === 0}
 		<div>

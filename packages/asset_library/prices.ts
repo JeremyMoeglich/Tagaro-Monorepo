@@ -11,7 +11,7 @@ import { zubuchoption_ids } from './assets/zubuchoptionen';
 import type { zubuchoption_id } from './assets/zubuchoptionen';
 
 function to_price_string(v: number): string {
-	let str = '€ ' + v.toFixed(2).replace('.', ',');
+	let str = '€&nbsp' + v.toFixed(2).replace('.', ',');
 	if (str.endsWith(',00')) {
 		str = str.slice(0, -3);
 	}

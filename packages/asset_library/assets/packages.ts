@@ -94,7 +94,7 @@ export const base_premium_package_combinations: Readonly<
 	},
 	entertainmentplus: {
 		title:
-			'Wählbare Pakete mit Entertainment inklusive Netflix (Sky Ultimate TV) - 12 Mon. Laufzeit, danach monatlich kündbar',
+			'Wählbare Pakete mit Entertainment inklusive Netflix (Sky Ultimate TV)<br>12 Monate Laufzeit, danach monatlich kündbar',
 		combinations: [[], ...premium_combinations]
 	}
 } as const;

@@ -48,23 +48,23 @@
 				<img src={make_url(image, dev)} alt="" class="image" />
 			{/if}
 		{/if}
-		
+
 		<div class="description">
-			<h2 class="title gradient_text">{title}</h2>
+			<h2 class="title ">{title}</h2>
 			<ul class="points">
 				{#each points as point}
-					<li>{point}</li>
+					<li>{@html point}</li>
 				{/each}
 			</ul>
 			{#if show_price}
 				{#if price_asset_ids.every(is_imaged_package)}
 					<SquarePackageList package_ids={price_asset_ids} />
 				{/if}
-				<h3 class="gradient_text">
-					12 Monate nur {get_price_string(price_asset_ids, 'jahr')} mtl.*
+				<h3>
+					12 Monate nur {@html get_price_string(price_asset_ids, 'jahr')} mtl.*
 				</h3>
 				<p>
-					(im Jahres-Abo, danach {get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)
+					(im Jahres-Abo, danach {@html get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)
 					<br />
 					Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
 				</p>
@@ -91,6 +91,7 @@
 	.title,
 	:global(.description h3) {
 		font-size: 25px;
+		margin-bottom: 20px;
 	}
 	.points {
 		list-style: none;

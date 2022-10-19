@@ -29,7 +29,7 @@
 		margin-top: 50px;
 		font-size: min(max(2vw, 35px), 4vw);
 		text-align: center;
-		@extend .gradient_text !optional;
+		@extend . !optional;
 		flex: 1 0 max(4vw, 80px);
 	}
 	.header-text-image-align {

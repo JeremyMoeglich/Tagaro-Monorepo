@@ -23,12 +23,12 @@
 </script>
 
 <div class="alignment">
-	<!-- <h2 class="title gradient_text">Pakete & Preise in der Übersicht</h2> -->
+	<!-- <h2 class="title ">Pakete & Preise in der Übersicht</h2> -->
 	<div class="grid shadow-lg" style:--col_amount={col_amount}>
 		{#each rows as row, row_index}
 			{#if typeof row === 'string'}
 				<div style:--row={row_index + 1} class="title_row">
-					<h3 class="gray">{row}</h3>
+					<h3 class="gray">{@html row}</h3>
 				</div>
 			{:else}
 				{#each row as element, col_index}
@@ -40,13 +40,13 @@
 					<p>
 						<b>
 							{#if get_offer_note(row)}
-								<mark class="nowrap">{get_offer_note(row)}</mark>
+								<mark class="nowrap">{@html get_offer_note(row)}</mark>
 							{/if}
-							{get_price_string(row, 'jahr')}&nbsp;mtl.*
+							{@html get_price_string(row, 'jahr')}&nbsp;mtl.*
 						</b>
 					</p>
 					<p class="small">
-						im Jahres-Abo danach {get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
+						im Jahres-Abo danach {@html get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
 					</p>
 				</div>
 				<div class="background_box" style:--row={row_index + 1} />

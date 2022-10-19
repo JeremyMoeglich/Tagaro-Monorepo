@@ -2,17 +2,20 @@
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
 	import Button from '../elements/interactive/buttons/button.svelte';
+	import Line from '../elements/line.svelte';
 	import SideBySide from '../layout/side_by_side.svelte';
 	export let sky_q = true;
 	export let peacock = true;
 	export let discovery = true;
+
+	const title_class = 'light'
 </script>
 
-<h2 class="gradient_text large">Im Angebot inklusive</h2>
+<h2 class=" large">Im Angebot inklusive</h2>
 {#if sky_q}
 	<SideBySide primary="left">
 		<span slot="left">
-			<h3 class="gradient_text">Sky Q</h3>
+			<h3 class={title_class}>Sky Q</h3>
 			<p>
 				Mit unserem Sky Angebot können Sie Ihr Wunschprogramm über die gesamte Laufzeit von 12
 				Monaten zu Neukunden-Preisen genießen. Der Sky Vertrag hat eine Laufzeit von 12 Monaten und
@@ -43,10 +46,13 @@
 		</span>
 	</SideBySide>
 {/if}
+{#if sky_q && peacock}
+	<Line />
+{/if}
 {#if peacock}
 	<SideBySide primary="right">
 		<span slot="right">
-			<h3 class="gradient_text">Peacock für alle Sky Q Kunden</h3>
+			<h3 class={title_class}>Peacock für alle Sky Q Kunden</h3>
 			<ul>
 				<li>
 					<b>Exklusive Peacock Originals,</b> darunter die aktuellen Serien "Saved by the Bell", "Rutherford
@@ -78,10 +84,13 @@
 		</span>
 	</SideBySide>
 {/if}
+{#if peacock && discovery}
+	<Line />
+{/if}
 {#if discovery}
 	<SideBySide primary="left">
 		<span slot="left">
-			<h3 class="gradient_text">discovery+ 1 Jahr geschenkt als Extra für alle Sky Q Kunden</h3>
+			<h3 class={title_class}>discovery+ 1 Jahr geschenkt als Extra für alle Sky Q Kunden</h3>
 			<ul>
 				<li>Der Streaming Dienst für großartige Real-Life Unterhaltung die du lieben wirst</li>
 				<li>Mehr als 10.000 Inhalte aller Discovery Sender jederzeit auf Abruf verfügbar</li>

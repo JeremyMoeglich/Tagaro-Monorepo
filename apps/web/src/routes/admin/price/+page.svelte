@@ -34,7 +34,7 @@
 		{#each package_combinations as package_combination}
 			<div>
 				<div>
-					{package_combination.join(', ')} = {get_offer_price(
+					{package_combination.join(', ')} = {@html get_offer_price(
 						indexed_offers[offer_id],
 						package_combination
 					).jahr.toFixed(2)}

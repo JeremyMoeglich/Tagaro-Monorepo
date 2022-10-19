@@ -9,7 +9,7 @@
 
 <div class="outer">
 	<img class="sky" src={make_url('/images/badges/sky_signature.svg', dev)} alt="" />
-	<div style:color={text_color}>
+	<div style:color={text_color} class="text">
 		<div class="title min-w-max">
 			<p class="nowrap">Hier können Sie</p>
 			<img
@@ -26,10 +26,23 @@
 			<li>Viele Angebote mit einer zusätzlichen Prämie on top</li>
 		</ul>
 	</div>
-	<img class="right_image" src={make_url('/images/visuals/header_ebay.png', dev)} alt="" />
+	<img class="limage" src={make_url('/images/badges/ssl.png', dev)} alt="" />
+	<img class="rimage" src={make_url('/images/specific/header-2018.jpg', dev)} alt="" />
 </div>
 
 <style>
+	.rimage {
+		height: 160px;
+		mask-image: linear-gradient(to right, transparent, black 90px);
+	}
+	.text {
+		margin-left: auto;
+	}
+	.limage {
+		height: 100px;
+		margin-left: auto;
+		margin-right: 20px;
+	}
 	.outer {
 		display: flex;
 		align-items: center;

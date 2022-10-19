@@ -68,22 +68,39 @@ h3 {
 	margin-top: 0.5rem;
 }
 
-h1:not(.no_gradient):not(.gray):not(.light-blue),
-h2:not(.no_gradient):not(.gray):not(.light-blue),
-h2:not(.no_gradient):not(.gray):not(.light-blue) {
+h4 {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: calc($bottom_margin - $gradient-safezone);
+	margin-top: 0.5rem;
+}
+
+h1:not(.no_gradient):not(.gray):not(.light):not(.marked),
+h2:not(.no_gradient):not(.gray):not(.light):not(.marked),
+h3:not(.no_gradient):not(.gray):not(.light):not(.marked),
+h4:not(.no_gradient):not(.gray):not(.light):not(.marked) {
 	@extend .gradient_text;
 }
 
 h1.gray,
 h2.gray,
-h3.gray {
+h3.gray,
+h4.gray {
 	color: $gray;
 }
 
-h1.light-blue,
-h2.light-blue,
-h3.light-blue {
+h1.light,
+h2.light,
+h3.light,
+h4.light {
 	color: $light-blue;
+}
+
+h1.marked,
+h2.marked,
+h3.marked,
+h4.marked {
+	color: red;
 }
 
 mark {
