@@ -3,7 +3,7 @@
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
 	import { get_price_string } from 'asset_library/prices';
-	import { typed_entries } from 'functional-utilities';
+	import { package_combinations } from 'asset_library/assets/packages';
 </script>
 
 <div>
@@ -13,27 +13,16 @@
 			Angebote gelten mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
 			(anteilig) zzgl. 12 Monaten)
 		</p>
-		{#each typed_entries(combinations) as combination}
-			{@const combination_base = combination[0]}
-			{@const combination_base_combinations = combination[1]}
-			<ul>
+		<ul>
+			{#each package_combinations as combination}
 				<li>
-					- {indexed_priceable_assets[combination_base].name} für mtl. {get_price_string(
-						[combination_base],
+					{combination.map((id) => indexed_priceable_assets[id].name).join(' + ')} - {get_price_string(
+						combination,
 						'jahr'
 					)}
-					<br /> <b class="combine"> in Kombination mit</b>
 				</li>
-				{#each combination_base_combinations as combination_packages}
-					<li>
-						- {combination_packages
-							.map((v) => `Sky ${indexed_priceable_assets[v].name}`)
-							.join(' + ')} mtl.
-						{get_price_string(combination_packages.concat([combination_base]), 'jahr')}
-					</li>
-				{/each}
-			</ul>
-		{/each}
+			{/each}
+		</ul>
 		<AktivierungSentence />
 		<ul>
 			<li><b>Optional:</b></li>
