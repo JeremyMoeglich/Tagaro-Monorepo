@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Line from '../../../../../packages/components/elements/line.svelte';
+	import Line from 'components/elements/line.svelte';
 
 	export let title: string;
 </script>

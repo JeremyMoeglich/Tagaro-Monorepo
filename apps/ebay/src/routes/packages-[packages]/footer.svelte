@@ -7,8 +7,8 @@
 	const text_color = '#3442be';
 </script>
 
-<div class="outer">
-	<div class="side">
+<div class="off">
+	<div class="outer">
 		<img class="sky" src={make_url('/images/badges/sky_signature.svg', dev)} alt="" />
 		<div style:color={text_color}>
 			<p class="title">Abonnieren Sie schnell und einfach Ihr Wunschprogramm.</p>
@@ -19,24 +19,27 @@
 			<SiteLogo />
 		</div>
 	</div>
-	<Copyright />
+
 </div>
 
 <style>
-	.side {
-		display: flex;
-		align-items: center;
-		gap: 20px;
-	}
 	.outer {
 		background-color: #ffffff;
 		padding: 20px;
-		padding-top: 0px;
+		padding-top: 20px;
+		padding-right: 0px;
+		padding-bottom: 0px;
 		width: 100%;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
-		filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
 		overflow: hidden;
+		display: flex;
+		align-items: center;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		gap: 20px;
+	}
+	.off {
+		position: relative;
+		bottom: 40px;
 	}
 	p {
 		margin: 0;
@@ -52,6 +55,7 @@
 	}
 	.logo {
 		margin: 20px;
+		margin-bottom: 0px;
 		margin-left: auto;
 		border-radius: 15px;
 		width: 100px;

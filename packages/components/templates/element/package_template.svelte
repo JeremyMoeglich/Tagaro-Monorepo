@@ -86,7 +86,7 @@
 		gap: calc(5% + 50px);
 		justify-content: center;
 		flex-wrap: wrap;
-		align-items: center;
+		
 	}
 	.title,
 	:global(.description h3) {
@@ -125,6 +125,7 @@
 		min-width: max(340px, 25%);
 		max-width: 700px;
 		flex: 1 1 0;
+		margin-top: 40px;
 	}
 	.package_overview {
 		transition-duration: 300ms;

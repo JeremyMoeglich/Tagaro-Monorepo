@@ -13,8 +13,7 @@
 	points={[
 		'Alle Samstagsspiele der Bundesliga live und exklusiv',
 		'Alle Spiele der 2. Bundesliga live',
-		'Alle Relegationsspiele und der Supercup live',
-		'Mit den Sky Konferenzen und Highlight-Videos kein Tor verpassen'
+		'Alle Relegationsspiele und der Supercup live'
 	]}
 	image={'/images/assets/packages/normal/bundesliga.png'}
 	price_asset_ids={['entertainment', 'bundesliga']}

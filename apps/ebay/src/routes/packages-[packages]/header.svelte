@@ -8,8 +8,8 @@
 </script>
 
 <div class="outer">
-	<img class="sky" src={make_url('/images/badges/sky_signature.svg', dev)} alt="" />
-	<div style:color={text_color} class="text">
+	<img class="sky off" src={make_url('/images/badges/sky_signature.svg', dev)} alt="" />
+	<div style:color={text_color} class="text off">
 		<div class="title min-w-max">
 			<p class="nowrap">Hier können Sie</p>
 			<img
@@ -26,7 +26,7 @@
 			<li>Viele Angebote mit einer zusätzlichen Prämie on top</li>
 		</ul>
 	</div>
-	<img class="limage" src={make_url('/images/badges/ssl.png', dev)} alt="" />
+	<img class="limage off" src={make_url('/images/badges/ssl.png', dev)} alt="" />
 	<img class="rimage" src={make_url('/images/specific/header-2018.jpg', dev)} alt="" />
 </div>
 
@@ -35,13 +35,17 @@
 		height: 160px;
 		mask-image: linear-gradient(to right, transparent, black 90px);
 	}
+	.off {
+		margin-bottom: 20px;
+	}
 	.text {
 		margin-left: auto;
 	}
 	.limage {
-		height: 100px;
+		height: 75px;
 		margin-left: auto;
 		margin-right: 20px;
+		filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
 	}
 	.outer {
 		display: flex;
@@ -49,8 +53,6 @@
 		justify-content: space-between;
 		padding-left: 20px;
 		width: 100%;
-		border-bottom-left-radius: 20px;
-		border-bottom-right-radius: 20px;
 		filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
 		overflow: hidden;
 		background-color: #ffffff;

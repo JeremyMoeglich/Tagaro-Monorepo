@@ -13,8 +13,8 @@
 	points={[
 		'Alle Rennen der Formel 1 live - exklusiv auf Sky',
 		'Alle Spiele des DFB Pokals einzeln und in der Original Sky Konferenz live',
-		'Alle Spiele der Premier League exklusiv, davon 232 Spiele live',
-		'Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
+		'Alle Spiele der Premier League exklusiv, davon über 250 Spiele live und erstmals ausgewählte Spiele der FA Women`s Super League exklusiv',
+		'NHL, Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
 	]}
 	image={'/images/assets/packages/normal/sport.png'}
 	price_asset_ids={['entertainment', 'sport']}

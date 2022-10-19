@@ -22,6 +22,7 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 50px;
+		gap: 30px;
 	}
 	.reversed {
 		flex-wrap: wrap-reverse;

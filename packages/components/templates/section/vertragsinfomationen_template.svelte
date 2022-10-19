@@ -18,17 +18,18 @@
 					Angebote gelten mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
 					(anteilig) zzgl. 12 Monaten)
 				</p>
-				<div>
+				<div class="base_package_combinations">
 					{#each typed_entries(base_premium_package_combinations) as [base, { title, combinations }]}
 						<div>
 							<h4 class={title_classes}>{@html title}</h4>
 							<ul>
 								{#each combinations as combination}
+									{@const comb = [base, ...combination]}
 									<li>
-										- {[base, ...combination]
-											.map((id) => indexed_priceable_assets[id].name)
-											.join(' + ')} für {@html get_price_string(combination, 'jahr')}&nbsp;mtl. im
-										12-Monats-Abo*
+										- {comb.map((id) => indexed_priceable_assets[id].name).join(' + ')} für {@html get_price_string(
+											comb,
+											'jahr'
+										)}&nbsp;mtl. im 12-Monats-Abo*
 									</li>
 								{/each}
 							</ul>
@@ -382,5 +383,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+	}
+	.base_package_combinations {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
 	}
 </style>

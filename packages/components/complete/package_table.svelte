@@ -20,6 +20,13 @@
 			...combinations.map((combination) => [base, ...combination])
 		]
 	);
+
+	// let tables: Record<string, readonly (readonly package_id[])[]>;
+	// $: tables = typed_from_entries(
+	// 	typed_entries(base_premium_package_combinations).map(([base, { title, combinations }]) => {
+	// 		[title, combinations.map((combination) => [base, ...combination])];
+	// 	})
+	// );
 </script>
 
 <div class="alignment">
@@ -69,6 +76,9 @@
 		padding: min(calc(30% - 30px), 7px);
 		z-index: 2;
 	}
+	.title_row:nth-child(1) {
+		margin: 0px;
+	}
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(var(--col_amount), 1fr);
@@ -81,7 +91,7 @@
 	.background_box {
 		grid-column: 1 / var(--col_amount);
 		grid-row: var(--row);
-		border: 1px solid #ccc;
+		//border: 1px solid #ccc;
 		border-radius: 10px;
 		z-index: 1;
 		background: rgb(255, 255, 255);
@@ -99,13 +109,13 @@
 		text-align: center;
 		background-color: rgb(226, 242, 255);
 		border-radius: 10px;
-		border: 1px solid #ccc;
+		//border: 1px solid #ccc;
 	}
 	.title_row {
 		grid-column: 1 / calc(var(--col_amount) + 1);
 		grid-row: var(--row);
-		font-size: large;
 		margin: 0px;
+		margin-top: 20px;
 		text-align: center;
 	}
 	.alignment {
@@ -115,6 +125,7 @@
 		gap: 4rem;
 	}
 	h3 {
-		margin-bottom: 0px;
+		font-size: 17px;
+		margin: 0px;
 	}
 </style>
