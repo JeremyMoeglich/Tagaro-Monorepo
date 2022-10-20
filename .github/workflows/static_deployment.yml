@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           target: ${{ secrets.SSH_TARGET }}
           source: 'apps/web/build/*'
-          strip_components: 1
+          strip_components: 2
           rm: true
 
       - name: symlink
