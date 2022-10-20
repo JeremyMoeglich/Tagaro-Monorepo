@@ -3,7 +3,7 @@
 	import {
 		max_combination_length,
 		base_premium_package_combinations,
-		package_id
+		type package_id
 	} from 'asset_library/assets/packages';
 	import Zubuchoptionen from './zubuchoptionen.svelte';
 	import AktivierungSentence from './aktivierung_sentence.svelte';

@@ -59,7 +59,6 @@
 	}
 
 	h1 {
-		@extend . !optional;
 		padding-bottom: 10px;
 	}
 </style>

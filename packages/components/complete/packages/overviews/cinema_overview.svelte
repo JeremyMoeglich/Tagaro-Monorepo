@@ -1,6 +1,5 @@
 <script lang="ts">
 	import PackageTemplate from '../../../templates/element/package_template.svelte';
-	import { get_price_string } from 'asset_library/prices';
 	import CinemaSenders from '../senders/cinema_senders.svelte';
 	export let animated = false;
 	export let show_senders = false;

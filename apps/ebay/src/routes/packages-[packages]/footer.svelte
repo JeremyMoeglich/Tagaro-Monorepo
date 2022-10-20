@@ -2,7 +2,6 @@
 	import { make_url } from 'frontend/url';
 	import { dev } from '$app/environment';
 	import SiteLogo from 'components/complete/site_logo.svelte';
-	import Copyright from 'components/complete/copyright.svelte';
 
 	const text_color = '#3442be';
 </script>
@@ -19,15 +18,12 @@
 			<SiteLogo />
 		</div>
 	</div>
-
 </div>
 
 <style>
 	.outer {
 		background-color: #ffffff;
 		padding: 20px;
-		padding-top: 20px;
-		padding-right: 0px;
 		padding-bottom: 0px;
 		width: 100%;
 		overflow: hidden;
@@ -39,7 +35,7 @@
 	}
 	.off {
 		position: relative;
-		bottom: 40px;
+		bottom: 20px;
 	}
 	p {
 		margin: 0;
@@ -54,7 +50,6 @@
 		}
 	}
 	.logo {
-		margin: 20px;
 		margin-bottom: 0px;
 		margin-left: auto;
 		border-radius: 15px;

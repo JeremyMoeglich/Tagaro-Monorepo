@@ -1,3 +1,5 @@
+<script lang="ts"></script>
+
 <div>
 	<p class="copyright">© 2022 - TAGARO Medienshop Möglich & Möglich GbR</p>
 	<p class="notice">

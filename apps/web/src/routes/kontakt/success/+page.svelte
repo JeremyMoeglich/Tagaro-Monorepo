@@ -1,6 +1,6 @@
 <div>
 	<div class="center_alignment">
-		<h1 class="title">Kontaktformular erfolgreich abgesendet</h1>
+		<h1>Kontaktformular erfolgreich abgesendet</h1>
 		<p><b>Wir melden uns bei Ihnen so schnell wie möglich!</b></p>
 	</div>
 </div>
@@ -10,8 +10,5 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-	.title {
-		@extend . !optional;
 	}
 </style>

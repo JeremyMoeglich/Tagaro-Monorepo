@@ -39,7 +39,7 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'sport', 'bundesliga', 'cinema'], 'Titel']
 		];
-		const title = titles.find(([p, _]) => p.sort().join(',') === packages.sort().join(','));
+		const title = titles.find(([p]) => p.sort().join(',') === packages.sort().join(','));
 		if (title) return title[1];
 		return 'Kein Titel gefunden';
 	}
@@ -47,7 +47,7 @@
 
 <div class="outer">
 	<Header />
-	<div class="p-12 flex flex-col items-center max-w-6xl ml-auto mr-auto w-full gap-16 content">
+	<div class="p-12 flex flex-col items-center w-full gap-16 content">
 		<div class="text-center flex flex-col gap-2">
 			<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 			<ul class="text-red-600 text-xl">
@@ -212,7 +212,6 @@
 	<Footer />
 </div>
 
-
 <Copyright />
 
 <style>
@@ -226,13 +225,14 @@
 		bottom: 20px;
 		background-color: white;
 		border-radius: 20px;
-		box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.116);
+		width: 100%;
+		box-shadow: inset 0px 0px 14px rgba(0, 0, 0, 0.192);
 		z-index: 2;
 	}
 	.outer {
 		border-radius: 20px;
 		overflow: hidden;
 		border: 1px solid rgba(128, 128, 128, 0.514);
-		padding-bottom: -40px;
+		width: 100%;
 	}
 </style>
