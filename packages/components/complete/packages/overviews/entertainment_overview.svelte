@@ -9,6 +9,7 @@
 <PackageTemplate
 	{show_price}
 	{animated}
+	show_slot={show_senders}
 	title={'Entertainment Paket - Exklusives Entertainment ohne Ende.'}
 	points={[
 		'Exklusive Top-Serien von Sky und HBO',

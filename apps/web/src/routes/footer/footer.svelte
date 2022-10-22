@@ -15,7 +15,7 @@
 
 <div class="side_alignment">
 	<div class="infomationen">
-		<h3>Infomationen</h3>
+		<h3 class="no_gradient">Infomationen</h3>
 		<ul class="nopoint">
 			<li><a href="/service/datenschutz">- Datenschutz -</a></li>
 			<li><a href="/service/AGB">- AGB -</a></li>
@@ -25,20 +25,20 @@
 		</ul>
 	</div>
 	<div class="sofortkontakt">
-		<h3>Ihr Sofortkontakt</h3>
+		<h3 class="no_gradient">Ihr Sofortkontakt</h3>
 		<p>
 			Montag - Freitag <br />
 			10:00 - 18:00 Uhr <br />
 			Per E-Mail 24 Stunden lang
 		</p>
 		<p>
-			<a sveltekit:prefetch href={`tel:${phone_number}`}>Telefon: {phone_number}</a> <br />
+			<a data-sveltekit-prefetch href={`tel:${phone_number}`}>Telefon: {phone_number}</a> <br />
 			Fax: 0321 - 2111 6558 <br />
-			<a sveltekit:prefetch href={`mailto://${email}`}>E-Mail: {email}</a>
+			<a data-sveltekit-prefetch href={`mailto://${email}`}>E-Mail: {email}</a>
 		</p>
 	</div>
 	<div class="einkaufen">
-		<h3>Sicher Einkaufen</h3>
+		<h3 class="no_gradient">Sicher Einkaufen</h3>
 		<img src="/images/badges/autorisiert.svg" alt="" />
 		<img src="/images/badges/ssl.png" alt="" />
 		<!-- <a
@@ -59,7 +59,7 @@
 	</div>
 	{#if $preferences_store.socialmedia}
 		<div class="social">
-			<h3>Social Media</h3>
+			<h3 class="no_gradient">Social Media</h3>
 			<iframe
 				src="/raw_components/page_plugin.html"
 				frameborder="0"

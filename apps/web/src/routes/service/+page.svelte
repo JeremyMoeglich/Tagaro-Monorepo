@@ -1,10 +1,10 @@
 <div class="outer">
 	<div class="back">
 		<div class="tb">
-			<h1>Service</h1>
+			<h1 class="no_gradient">Service</h1>
 		</div>
 		<div class="tb">
-			<h2>Holen Sie sich Sky mit exklusivem Preisvorteil nach Hause!</h2>
+			<h2 class="no_gradient">Holen Sie sich Sky mit exklusivem Preisvorteil nach Hause!</h2>
 		</div>
 		<div class="side_alignment">
 			<div>

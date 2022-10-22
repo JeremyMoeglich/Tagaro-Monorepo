@@ -5,6 +5,7 @@
 
 <PackageTemplate
 	show_price
+	show_slot={false}
 	title={'4 Sky Pakete oder mehr - Großartige Unterhaltung aus allen Bereichen'}
 	points={[
 		'Programmvielfalt mit zahlreichen hochwertigen deutschen Pay-TV Sendern im Entertainment Paket',

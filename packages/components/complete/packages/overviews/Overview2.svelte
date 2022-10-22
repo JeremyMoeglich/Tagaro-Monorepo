@@ -5,6 +5,7 @@
 
 <PackageTemplate
 	show_price
+	show_slot={false}
 	title={'2 Sky Pakete nach Wahl - Individuell zusammenstellbar für ihre Bedürfnisse'}
 	points={[
 		'Programmvielfalt mit zahlreichen hochwertigen deutschen Pay-TV Sendern im Entertainment Paket',

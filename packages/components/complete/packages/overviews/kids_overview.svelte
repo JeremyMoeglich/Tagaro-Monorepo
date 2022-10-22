@@ -7,6 +7,7 @@
 <PackageTemplate
 	{show_price}
 	{animated}
+	show_slot={false}
 	title={'Kids Paket - Große Unterhaltung für alle Kleinen.'}
 	points={[
 		'5 beliebte Kindersender und mehr als 4.500 Inhalte',

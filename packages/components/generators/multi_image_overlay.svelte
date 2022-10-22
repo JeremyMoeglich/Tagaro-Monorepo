@@ -61,6 +61,6 @@
 		width: var(--img_width);
 	}
 	img {
-		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.637);
+		filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.637));
 	}
 </style>

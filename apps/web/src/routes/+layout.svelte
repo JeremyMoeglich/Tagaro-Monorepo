@@ -136,7 +136,7 @@
 					{#if pair[1] instanceof Object}
 						{#if 'index' in pair[1]}
 							<a
-								sveltekit:prefetch
+								data-sveltekit-prefetch
 								class="nav_element_mobile nav_element_hover_mobile no_margin"
 								on:click={close_sidebar}
 								href={pair[1]['index']}
@@ -146,7 +146,7 @@
 						{/if}
 					{:else}
 						<a
-							sveltekit:prefetch
+							data-sveltekit-prefetch
 							class="nav_element_mobile nav_element_hover_mobile"
 							title={pair[0] + ' öffnen'}
 							on:click={close_sidebar}
@@ -167,7 +167,7 @@
 						{#each typed_entries(pair[1]) as subpair}
 							{#if subpair[0] !== 'index'}
 								<a
-									sveltekit:prefetch
+									data-sveltekit-prefetch
 									class="nav_element_mobile nav_element_hover_mobile"
 									on:click={close_sidebar}
 									href={subpair[1]}

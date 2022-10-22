@@ -7,7 +7,7 @@
 <FormButton source={'Footer_bar'}>
 	<div class="inner_container">
 		<div class="main_container">
-			<h2 class="main_text">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
+			<h2 class="main_text no_gradient">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
 			<Button text="Zum Aboformular" reversed={true} />
 		</div>
 	</div>

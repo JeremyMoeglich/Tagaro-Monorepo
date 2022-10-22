@@ -8,6 +8,10 @@ body {
 	color: #333;
 }
 
+:root {
+	--block-width: min(1000px, calc(100vw - 70px));
+}
+
 $gradient-safezone: 5px;
 
 .gradient_text {

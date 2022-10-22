@@ -9,6 +9,7 @@
 <PackageTemplate
 	{show_price}
 	{animated}
+	show_slot={show_senders}
 	title={'Fußball Bundesliga Paket - Die Heimat der Bundesliga - garantiert bis 2025.'}
 	points={[
 		'Alle Samstagsspiele der Bundesliga live und exklusiv',

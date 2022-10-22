@@ -1,17 +1,14 @@
 <script lang="ts">
 	import ShowcaseTemplate from './showcase_template.svelte';
 	import { aktivierung, bonus_string, get_savings_string } from 'asset_library/prices';
+
+	const savings = get_savings_string(['entertainmentplus', 'cinema', 'sport', 'bundesliga']);
 </script>
 
 <ShowcaseTemplate
-	title={`Die beliebtesten Paketkombis mit bis zu ${get_savings_string([
-		'entertainmentplus',
-		'cinema',
-		'sport',
-		'bundesliga'
-	])} Sparvorteil`}
+	title={`Die beliebtesten Paketkombis mit bis zu ${savings} Sparvorteil`}
 	points={[
-		'Bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo erhalten*',
+		`Bis zu ${savings} Sparvorteil und Vorteilspreis für DAZN Jahresabo erhalten*`,
 		'Zusätzlich 500 PAYBACK Punkte, wenn Sie sammeln*',
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'

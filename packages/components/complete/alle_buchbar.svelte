@@ -1,16 +1,17 @@
 <script lang="ts">
 	import LineSpacer from '../elements/line.svelte';
+	const space = '50px';
 </script>
 
-<LineSpacer />
+<LineSpacer {space} />
 <div>
-	<h1 class=" centered_text">Alle Sky Pakete flexibel buchbar</h1>
+	<h1 class="centered_text">Alle Sky Pakete flexibel buchbar</h1>
 	<p class="styled_p centered_text">
 		Erhalten Sie hier Ihr Sky Abonnement mit versandkostenfreier Lieferung. <br />
 		Wählen Sie Ihre Wunschpakete individuell aus Sky Entertainment, Cinema, Sport und/oder Fußball-Bundesliga.
 	</p>
 </div>
-<LineSpacer />
+<LineSpacer {space} />
 
 <style lang="scss">
 	.centered_text {

@@ -9,6 +9,7 @@
 <PackageTemplate
 	{show_price}
 	{animated}
+	show_slot={show_senders}
 	title={'Cinema Paket - Jeden Tag ein neuer Film.'}
 	points={[
 		'Exklusive Top-Filme kurz nach dem Kino',

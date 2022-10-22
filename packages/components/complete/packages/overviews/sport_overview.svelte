@@ -9,6 +9,7 @@
 <PackageTemplate
 	{show_price}
 	{animated}
+	show_slot={show_senders}
 	title={'Sport Paket - Der beste Live-Sport.'}
 	points={[
 		'Alle Rennen der Formel 1 live - exklusiv auf Sky',

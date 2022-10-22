@@ -26,7 +26,7 @@
 						{#if pair[1] instanceof Object}
 							{#if 'index' in pair[1]}
 								<a
-									sveltekit:prefetch
+									data-sveltekit-prefetch
 									class={`nav_element nav_element_hover ${
 										$page.url.pathname === pair[1]['index'] ? 'current_route' : ''
 									}`}
@@ -42,7 +42,7 @@
 							{/if}
 						{:else}
 							<a
-								sveltekit:prefetch
+								data-sveltekit-prefetch
 								title={pair[0] + ' öffnen'}
 								class={`nav_element nav_element_hover ${
 									$page.url.pathname === pair[1] ? 'current_route' : ''
@@ -83,7 +83,7 @@
 												{#if subtab[0] != 'index'}
 													<button class="selectable_element" on:click={deselect}>
 														<a
-															sveltekit:prefetch
+															data-sveltekit-prefetch
 															class="context_menu_element nav_element_hover"
 															href={subtab[1]}
 															title={subtab[0] + ' öffnen'}
@@ -124,11 +124,11 @@
 		justify-content: left;
 	}
 	.header_center_alignment {
-		padding-top: 15px;
-		padding-top: $top_bar_size / 2 - 35px;
+		padding-top: calc($top_bar_size / 2 - 35px);
 		display: flex;
 		align-items: center;
 		height: 70px;
+		box-sizing: content-box;
 	}
 	.header_blue_bar {
 		background: linear-gradient(to right, #49358d, #027fc7);
@@ -140,6 +140,7 @@
 		align-self: flex-start;
 		margin-left: 20px;
 		margin-right: 20px;
+		width: 128px;
 	}
 	.desktop {
 		visibility: hidden;
@@ -150,16 +151,15 @@
 		flex-direction: row;
 		justify-content: left;
 		margin: 0;
+		gap: 20px;
 	}
-	$side_margin: 10px;
 	.selectable_element {
 		display: flex;
 		position: relative;
-		justify-items: center;
 		align-items: center;
 		text-align: center;
-		margin-right: $side_margin;
-		margin-left: $side_margin;
+		min-width: max-content;
+		width: 100%;
 	}
 	.selectable_element_vert {
 		display: flex;
@@ -184,7 +184,8 @@
 	.context_menu {
 		position: absolute;
 		background-color: white;
-		left: -$side_margin - $context-padding + $nav_pad;
+		left: 50%;
+		transform: translateX(-50%);
 		top: 40px;
 		border-radius: 10px;
 		box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.39);
@@ -194,6 +195,7 @@
 		padding: $context-padding;
 		min-width: max-content;
 		border: 1px solid transparent;
+		width: 100%;
 	}
 
 	a:link {

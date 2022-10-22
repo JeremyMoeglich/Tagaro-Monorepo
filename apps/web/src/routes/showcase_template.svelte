@@ -66,14 +66,14 @@
 			{/if}
 		</button>
 		<div class="right_side">
-			<h1>{title}*</h1>
+			<h1>{@html title}*</h1>
 			{#if enddate}
 				<h2>
 					<Enddate enddate={enddate.date} format={enddate.format} />
 				</h2>
 			{/if}
-			<h2>{subtitle1}</h2>
-			<h3>{subtitle2}</h3>
+			<h2 class="gray">{@html subtitle1}</h2>
+			<h3 class="no_gradient">{@html subtitle2}</h3>
 
 			{#if primary_image}
 				<img src={primary_image} alt="" class="primary_image" />
@@ -81,7 +81,7 @@
 				<div class="package_overview">
 					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
 						{@const path = `/images/assets/packages/normal/${asset.id}.png`}
-						<a href={`/angebote/${asset.id}`} sveltekit:prefetch>
+						<a href={`/angebote/${asset.id}`} data-sveltekit-prefetch>
 							<img src={path} alt={asset.id} out:send={{ key: path }} in:send={{ key: path }} />
 						</a>
 					{/each}
@@ -214,7 +214,6 @@
 		margin-bottom: 5px;
 	}
 	h2 {
-		color: #4a4a4a;
 		margin-bottom: 10px;
 		margin-top: 0px;
 	}

@@ -9,6 +9,7 @@
 <PackageTemplate
 	{show_price}
 	{animated}
+	show_slot={show_senders}
 	title={'Entertainment Plus Paket - Alle Sky Serien und Netflix.'}
 	points={[
 		'Hunderte  Serien, Dokus und Show mit exklusiven Top-Inhalten von Sky und HBO',

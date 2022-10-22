@@ -21,6 +21,7 @@
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
 	export let show_price: boolean;
+	export let show_slot: boolean;
 
 	// $: offer_string = price_asset_ids.every((id) =>
 	// 	typed_keys(indexed_package_assets).includes(id as package_id)
@@ -73,9 +74,11 @@
 					<GradientBadge>{offer_string}</GradientBadge>
 			{/if} -->
 		</div>
-		<div>
-			<slot />
-		</div>
+		{#if show_slot}
+			<div class="senders">
+				<slot />
+			</div>
+		{/if}
 	</div>
 </div>
 
@@ -86,7 +89,6 @@
 		gap: calc(5% + 50px);
 		justify-content: center;
 		flex-wrap: wrap;
-		
 	}
 	.title,
 	:global(.description h3) {

@@ -22,7 +22,7 @@
 				<li><b>Telefon: </b>02381-9874699</li>
 				<li><b>Fax: </b>0321 - 2111 6558</li>
 				<li><b>E-Mail: </b><a href="mailto://info@tagaro.de">info@tagaro.de</a></li>
-				<li><b>Internet: </b><a sveltekit:prefetch href="https://tagaro.de">www.tagaro.de</a></li>
+				<li><b>Internet: </b><a data-sveltekit-prefetch href="https://tagaro.de">www.tagaro.de</a></li>
 			</ul>
 		</div>
 		<KontaktForm />
