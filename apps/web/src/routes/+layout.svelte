@@ -207,8 +207,6 @@
 <svelte:window bind:scrollY={screen_y_position} />
 
 <style lang="scss">
-	@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-
 	* {
 		font-family: 'Oxygen', sans-serif;
 		z-index: 100;
