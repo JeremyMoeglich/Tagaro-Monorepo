@@ -116,7 +116,7 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 			price: 5,
 			name: 'Netflix Standard-Abo',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}NetflixSDHD.png`,
+			image: `${zubuchoption_image_location}Netflix_standard.png`,
 			selector: {
 				descriptor: [
 					{
@@ -136,7 +136,7 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 			price: 10,
 			name: 'Netflix Premium-Abo',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}NetflixSDHD.png`,
+			image: `${zubuchoption_image_location}Netflix_premium.png`,
 			selector: {
 				descriptor: [
 					{

@@ -72,7 +72,7 @@
 		</div>
 		<img
 			class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-			src={make_url('/images/visuals/sky0522_teaser_12mbasic.png', dev)}
+			src={make_url('/images/visuals/sky1122_teaser1_12mbasic.png', dev)}
 			alt=""
 		/>
 		<div class="max-w-4xl">

@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { aktivierung, aktivierung_string } from 'asset_library/prices';
+	//import { aktivierung, aktivierung_string } from 'asset_library/prices';
 
 	export let always_show = true;
 </script>
 
-{#if aktivierung <= 0}
+<!-- {#if aktivierung <= 0}
 	{#if always_show}
 		<p>Es fällt <b>keine Aktivierungsgebühr</b> durch Sky an. Sie sparen € 29.</p>
 	{/if}
@@ -15,4 +15,4 @@
 		>
 		hinzu. Diese wird zusammen mit der ersten monatlichen Programmgebühr abgebucht.
 	</p>
-{/if}
+{/if} -->

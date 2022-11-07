@@ -51,13 +51,13 @@
 						€ 29 (zur Leihe)
 					</li>
 					<li>
-						- Netflix Standard-Abo, HD/2 Streams (+ {@html get_price_string(
+						- Netflix Standard-Abo, HD/2 Geräte (+ {@html get_price_string(
 							['netflixstandard'],
 							'jahr'
 						)} mtl.)
 					</li>
 					<li>
-						- Netflix Premium-Abo, UHD/4 Streams (+ {@html get_price_string(
+						- Netflix Premium-Abo, UHD/4 Geräte (+ {@html get_price_string(
 							['netflixpremium'],
 							'jahr'
 						)}
@@ -167,7 +167,7 @@
 		<h3 class={title_classes}>Sky Entertainment Plus:</h3>
 		<p>
 			Das Sky Entertainment Plus Paket umfasst zusätzlich den Zugang zu Netflix Basis (beinhaltet
-			aktuell SD und die gleichzeitige Nutzung von Netflix auf einem Gerät) des Anbieters Netflix
+			aktuell HD und die gleichzeitige Nutzung von Netflix auf einem Gerät) des Anbieters Netflix
 			International B.V. Voraussetzung für die Nutzung des Netflix Dienstes über die Sky Q Plattform
 			im Rahmen des Pakets Sky Entertainment Plus ist ein Sky Q Receiver oder eine Sky Q IPTV Box,
 			welcher mit dem Internet verbunden ist. Für die Internetverbindung anfallende Kosten sind kein
@@ -207,7 +207,7 @@
 		<p>
 			Die Laufzeit entspricht 1 Monat oder 12 Monate, jeweils mit anschließender automatischer
 			Verlängerung jeweils um einen Monat. Im Falle der Verlängerung fällt bei der 12-Monats Option
-			ein monatlicher Preis von € 24,99 an. Im deutschen Kabelnetz von Vodafone/Unitymedia sind die
+			ein monatlicher Preis von {@html get_price_string(["dazn_monthly"], "jahr")} an. Im deutschen Kabelnetz von Vodafone/Unitymedia sind die
 			beiden Sender aus lizenzrechtlichen Gründen derzeit nicht verfügbar. Kunden, die Sky über
 			dieses Netz empfangen, können ebenfalls wie Kunden anderer Netze, die DAZN Inhalte über Sky Q
 			in der DAZN App empfangen. Zum Empfang über die DAZN App ist eine dauerhafte
