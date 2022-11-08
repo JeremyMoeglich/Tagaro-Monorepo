@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
+	//import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
 	import { get_price_string } from 'asset_library/prices';
@@ -36,7 +36,7 @@
 						</div>
 					{/each}
 				</div>
-				<AktivierungSentence />
+				<!-- <AktivierungSentence /> -->
 				<ul>
 					<li><b>Optional:</b></li>
 					<li>- UHD mtl. {@html get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
@@ -207,21 +207,21 @@
 		<p>
 			Die Laufzeit entspricht 1 Monat oder 12 Monate, jeweils mit anschließender automatischer
 			Verlängerung jeweils um einen Monat. Im Falle der Verlängerung fällt bei der 12-Monats Option
-			ein monatlicher Preis von {@html get_price_string(["dazn_monthly"], "jahr")} an. Im deutschen Kabelnetz von Vodafone/Unitymedia sind die
-			beiden Sender aus lizenzrechtlichen Gründen derzeit nicht verfügbar. Kunden, die Sky über
-			dieses Netz empfangen, können ebenfalls wie Kunden anderer Netze, die DAZN Inhalte über Sky Q
-			in der DAZN App empfangen. Zum Empfang über die DAZN App ist eine dauerhafte
+			ein monatlicher Preis von {@html get_price_string(['dazn_monthly'], 'jahr')} an. Im deutschen Kabelnetz
+			von Vodafone/Unitymedia sind die beiden Sender aus lizenzrechtlichen Gründen derzeit nicht verfügbar.
+			Kunden, die Sky über dieses Netz empfangen, können ebenfalls wie Kunden anderer Netze, die DAZN
+			Inhalte über Sky Q in der DAZN App empfangen. Zum Empfang über die DAZN App ist eine dauerhafte
 			Internetverbindung nötig. Empfohlene Übertragungsrate von mindestens 8 Mbit/s für HD-Qualität.
-			Durch eine parallele Nutzung von Inhalten erhöht sich die benötigte Mindestbandbreite. Erst
-			mit Aktivierung des DAZN-Abonnements beginnt dessen zahlungspflichtige Laufzeit. Sky
-			übersendet per E-Mail einen DAZN-Aktivierungslink. Über diesen kann das DAZN-Abonnement direkt
-			bei DAZN aktiviert werden. Die Aktivierung ist bis 7 Tage ab Versand des Aktivierungslinks
-			möglich. Falls das DAZN-Abonnement nicht innerhalb dieser Frist aktiviert wird, wird die
-			Buchung automatisch nach 7 Tagen storniert. Vertragspartner ist die DAZN Limited, Hanover
-			House, Plane Tree Crescent, Feltham, Vereinigtes Königreich, TW137BZ. Voraussetzung für die
-			Nutzung der linearen Kanäle im DAZN-Abonnement über Sky, ist ein aktives nicht-gewerbliches
-			Sky Abonnement, dem steht ein Mietverhältnis eines Sky Receiver gleich. Das DAZN-Abonnement
-			kann jederzeit mit Wirkung zum Ende der jeweiligen Laufzeit gekündigt.
+			Durch eine parallele Nutzung von Inhalten erhöht sich die benötigte Mindestbandbreite. Erst mit
+			Aktivierung des DAZN-Abonnements beginnt dessen zahlungspflichtige Laufzeit. Sky übersendet per
+			E-Mail einen DAZN-Aktivierungslink. Über diesen kann das DAZN-Abonnement direkt bei DAZN aktiviert
+			werden. Die Aktivierung ist bis 7 Tage ab Versand des Aktivierungslinks möglich. Falls das DAZN-Abonnement
+			nicht innerhalb dieser Frist aktiviert wird, wird die Buchung automatisch nach 7 Tagen storniert.
+			Vertragspartner ist die DAZN Limited, Hanover House, Plane Tree Crescent, Feltham, Vereinigtes
+			Königreich, TW137BZ. Voraussetzung für die Nutzung der linearen Kanäle im DAZN-Abonnement über
+			Sky, ist ein aktives nicht-gewerbliches Sky Abonnement, dem steht ein Mietverhältnis eines Sky
+			Receiver gleich. Das DAZN-Abonnement kann jederzeit mit Wirkung zum Ende der jeweiligen Laufzeit
+			gekündigt.
 		</p>
 	</div>
 	<div>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ShowcaseTemplate from './showcase_template.svelte';
-	import { aktivierung, bonus_string, get_savings_string } from 'asset_library/prices';
+	import { bonus_string, get_savings_string } from 'asset_library/prices';
 
 	const savings = get_savings_string(['entertainmentplus', 'cinema', 'sport', 'bundesliga']);
 </script>

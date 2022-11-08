@@ -3,11 +3,7 @@
 	"compilerOptions": {
 		"moduleResolution": "node",
 		"module": "ESNext",
-		"lib": [
-			"ESNext",
-			"DOM",
-			"dom.iterable"
-		],
+		"lib": ["ESNext", "DOM", "dom.iterable"],
 		"target": "es2017",
 		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
@@ -20,12 +16,8 @@
 		"allowJs": true,
 		"checkJs": true,
 		"paths": {
-			"$lib": [
-				"src/lib"
-			],
-			"$lib/*": [
-				"src/lib/*"
-			]
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"]
 		}
 	},
 	"include": [
@@ -37,7 +29,5 @@
 		".svelte-kit/ambient.d.ts",
 		"./html_inline_external.d.ts"
 	],
-	"exclude": [
-		"node_modules/**/*"
-	]
+	"exclude": ["node_modules/**/*"]
 }

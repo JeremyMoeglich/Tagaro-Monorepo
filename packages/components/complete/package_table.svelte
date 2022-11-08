@@ -6,7 +6,7 @@
 		type package_id
 	} from 'asset_library/assets/packages';
 	import Zubuchoptionen from './zubuchoptionen.svelte';
-	import AktivierungSentence from './aktivierung_sentence.svelte';
+	//import AktivierungSentence from './aktivierung_sentence.svelte';
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
 	import { typed_entries } from 'functional-utilities';
@@ -60,7 +60,7 @@
 			{/if}
 		{/each}
 	</div>
-	<AktivierungSentence always_show={false} />
+	<!-- <AktivierungSentence always_show={false} /> -->
 	<Zubuchoptionen />
 </div>
 
