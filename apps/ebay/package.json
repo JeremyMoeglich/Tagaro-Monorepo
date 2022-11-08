@@ -41,6 +41,7 @@
 		"open_constants": "workspace:0.1.0",
 		"postcss-nested": "^6.0.0",
 		"postcss-scss": "^4.0.5",
+		"string-strip-html": "^11.6.20",
 		"styles": "workspace:1.0.0",
 		"utils": "workspace:0.1.0"
 	},
