@@ -14,11 +14,14 @@
 	import Footer from './footer.svelte';
 	import Copyright from 'components/complete/copyright.svelte';
 
-	let packages: package_id[] = [];
-	$: packages = $page.params.packages.split(',') as package_id[];
+	let packages: package_id[] | 'allgemein' = [];
+	$: packages =
+		$page.params.packages === 'allgemein'
+			? 'allgemein'
+			: ($page.params.packages.split(',') as package_id[]);
 
-	function get_title(packages: package_id[]): string {
-		const titles: [package_id[], string][] = [
+	function get_title(packages: package_id[] | 'allgemein'): string {
+		const titles: [package_id[] | 'allgemein', string][] = [
 			[['entertainment'], 'Titel'],
 			[['entertainment', 'sport'], 'Titel'],
 			[['entertainment', 'cinema'], 'Titel'],
@@ -28,7 +31,7 @@
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				'Sky Abo mit 4 Paketen inklusive HD für € 30 mtl. + € 20 Bonus'
+				'Sky Abo nach Wahl mit 12 Monaten Laufzeit + € 20 Bonus on top'
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
@@ -37,9 +40,15 @@
 			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'cinema', 'sport'], 'Titel'],
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
-			[['entertainmentplus', 'sport', 'bundesliga', 'cinema'], 'Titel']
+			[['entertainmentplus', 'sport', 'bundesliga', 'cinema'], 'Titel'],
+			['allgemein', 'Sky Abo nach Wahl mit 12 Monaten Laufzeit + € 20 Bonus on top']
 		];
-		const title = titles.find(([p]) => p.sort().join(',') === packages.sort().join(','));
+		const title = titles.find(([p]) =>
+			typeof p === 'string'
+				? p
+				: p.sort().join(',') ===
+				  (typeof packages === 'string' ? packages : packages.sort().join(','))
+		);
 		if (title) return title[1];
 		return 'Kein Titel gefunden';
 	}
@@ -188,14 +197,14 @@
 
 			<div class="flex justify-center items-center gap-4">
 				<img
-					src={make_url("/images/external/landbell_logo.gif", dev)}
+					src={make_url('/images/external/landbell_logo.gif', dev)}
 					alt=""
 					width="107px"
 					height="130px"
 				/>
 
 				<img
-					src={make_url("/images/external/versandkostenfrei.gif", dev)}
+					src={make_url('/images/external/versandkostenfrei.gif', dev)}
 					alt=""
 					width="198px"
 					height="79px"

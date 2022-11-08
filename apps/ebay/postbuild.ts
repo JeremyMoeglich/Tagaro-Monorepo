@@ -4,10 +4,16 @@ import { join } from 'path';
 import { stripHtml } from 'string-strip-html';
 
 const build_folder = 'build';
-const build_path = join(import.meta.url, '..', build_folder).replace('file:', '');
+const build_path = (() => {
+	let text = join(import.meta.url, '..', build_folder).replace('file:', '').replaceAll("%C3%B6", "ö")
+	if (text.startsWith("\\")) {
+		text = text.slice(1)
+	}
+	return text
+})();
 
 (async () => {
-	console.log(`Inlining external resources in ${build_folder} folder...`);
+	console.log(`Inlining external resources in ${build_path} folder...`);
 
 	for (const file of await fs.readdir(build_path)) {
 		if (file.endsWith('.html')) {

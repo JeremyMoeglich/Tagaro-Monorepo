@@ -6,6 +6,7 @@
 	{#each package_combinations as combination}
 		<a href={`/packages-${combination.join(',')}`}>{combination.join(',')}</a>
 	{/each}
+	<a href={`/packages-allgemein`}>Allgemein</a>
 </div>
 
 <style>
