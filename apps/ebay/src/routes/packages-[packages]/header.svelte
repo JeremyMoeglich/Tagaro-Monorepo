@@ -81,7 +81,7 @@
 	}
 	.text_sky {
 		height: calc(1.7em - 17px);
-		margin-top: 9px;
+		margin-top: 5.75px;
 		margin-left: 2px;
 	}
 	ul {
