@@ -85,7 +85,7 @@
 		property="og:description"
 		content="TAGARO ist ein autorisierter Sky-Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an."
 	/>
-	<meta property="og:url" content="node.tagaro.de" />
+	<meta property="og:url" content="tagaro.de" />
 	<meta property="og:image:width" content="2209" />
 	<meta property="og:image:height" content="2209" />
 	<meta property="og:type" content="website" />

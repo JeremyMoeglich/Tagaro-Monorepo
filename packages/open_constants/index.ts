@@ -13,4 +13,4 @@ export const email = 'info@tagaro.de';
 export const fax = '0321 21116558';
 
 export const dev_url = 'http://localhost:3000';
-export const prod_url = 'http://static.tagaro.de';
+export const prod_url = 'https://node.tagaro.de';

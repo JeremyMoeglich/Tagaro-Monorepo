@@ -188,14 +188,14 @@
 
 			<div class="flex justify-center items-center gap-4">
 				<img
-					src="http://static.tagaro.de/ebay_2/landbell_logo.gif"
+					src={make_url("/images/external/landbell_logo.gif", dev)}
 					alt=""
 					width="107px"
 					height="130px"
 				/>
 
 				<img
-					src="http://static.tagaro.de/ebay_4/versandkostenfrei.gif"
+					src={make_url("/images/external/versandkostenfrei.gif", dev)}
 					alt=""
 					width="198px"
 					height="79px"
