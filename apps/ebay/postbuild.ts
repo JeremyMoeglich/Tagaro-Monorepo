@@ -5,11 +5,13 @@ import { stripHtml } from 'string-strip-html';
 
 const build_folder = 'build';
 const build_path = (() => {
-	let text = join(import.meta.url, '..', build_folder).replace('file:', '').replaceAll("%C3%B6", "ö")
-	if (text.startsWith("\\")) {
-		text = text.slice(1)
+	let text = join(import.meta.url, '..', build_folder)
+		.replace('file:', '')
+		.replaceAll('%C3%B6', 'ö');
+	if (text.startsWith('\\')) {
+		text = text.slice(1);
 	}
-	return text
+	return text;
 })();
 
 (async () => {
