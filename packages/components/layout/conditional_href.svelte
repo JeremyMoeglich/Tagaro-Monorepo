@@ -4,11 +4,11 @@
 </script>
 
 {#if active}
-	<a {href} class="active">
+	<a {href} class="active wrapper">
 		<slot />
 	</a>
 {:else}
-	<span>
+	<span class="wrapper">
 		<slot />
 	</span>
 {/if}
@@ -17,5 +17,8 @@
 	a {
 		text-decoration: none;
 		color: inherit;
+	}
+	.wrapper {
+		width: 100%;
 	}
 </style>

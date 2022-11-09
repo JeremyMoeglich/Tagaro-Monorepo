@@ -131,5 +131,9 @@
 	}
 	.package_overview {
 		transition-duration: 300ms;
+		width: 100%;
+	}
+	.senders {
+		width: 100%;
 	}
 </style>

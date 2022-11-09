@@ -13,7 +13,7 @@
 	export let tiny_title: boolean = false;
 </script>
 
-<div>
+<div class="outer">
 	<h2
 		style:font-size={tiny_title ? '25px' : '35px'}
 		style:margin-bottom={tiny_title ? '30px' : '15px'}
@@ -44,6 +44,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		gap: 25px;
+		justify-items: center;
 	}
 	.sender_box {
 		display: flex;
@@ -53,6 +54,9 @@
 		width: 7%;
 		min-width: 150px;
 		font-size: small;
+	}
+	.outer {
+		width: 100%;
 	}
 	h2 {
 		text-align: center;

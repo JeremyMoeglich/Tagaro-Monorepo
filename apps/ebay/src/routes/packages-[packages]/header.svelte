@@ -68,9 +68,17 @@
 		width: 100px;
 		padding-top: 5px;
 	}
-	@media (max-width: 500px) {
+	@media (max-width: 570px) {
 		.sky {
 			display: none;
+		}
+	}
+	@media (max-width: 650px) {
+		.limage {
+			display: none;
+		}
+		.rimage {
+			visibility: hidden;
 		}
 	}
 	.title {

@@ -54,5 +54,6 @@
 		align-items: center;
 		max-width: var(--block-width);
 		margin: 0 auto;
+		width: 100%;
 	}
 </style>

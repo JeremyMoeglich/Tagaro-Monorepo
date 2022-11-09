@@ -22,7 +22,7 @@
 		font-size: small;
 		color: #afafaf;
 		max-width: 80%;
-		width: 1300px;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
