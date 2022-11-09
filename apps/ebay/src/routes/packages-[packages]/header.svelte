@@ -69,7 +69,14 @@
 		padding-top: 5px;
 	}
 	@media (max-width: 570px) {
-		.sky {
+		.outer {
+			flex-direction: column;
+		}
+		.text {
+			margin-left: 0px;
+			margin-bottom: 29px;
+		}
+		.rimage {
 			display: none;
 		}
 	}
