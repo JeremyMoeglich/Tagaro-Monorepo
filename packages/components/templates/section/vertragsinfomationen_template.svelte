@@ -350,11 +350,8 @@
 		<h3 class={title_classes}>Zusätzliche Informationen:</h3>
 		<p>
 			Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse zur
-			Bestellung erforderlich. Bestehende Geräte aus einem bisherigen Sky Vertrag, können in den
-			meisten Fällen nicht übernommen werden. Sie erhalten kostenlos neue Geräte zugesendet und
-			können bestehende Geräte einfach nach Ablauf Ihres Vertrags an Sky retournieren. Der Abobeginn
-			ist bei Sky nicht nach hinten verlegbar. Der Vertrag startet innerhalb von 7 Tagen nach Erhalt
-			der Ware.
+			Bestellung erforderlich. Der Abobeginn ist bei Sky nicht nach hinten verlegbar. Der Vertrag
+			startet innerhalb von 7 Tagen nach Erhalt der Ware.
 		</p>
 	</div>
 	<div>

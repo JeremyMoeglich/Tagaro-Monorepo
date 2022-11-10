@@ -40,7 +40,10 @@
 			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'cinema', 'sport'], 'Titel'],
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
-			[['entertainmentplus', 'sport', 'bundesliga', 'cinema'], 'Sky Komplett Abo inkl. Netflix für € 35 mtl. + € 20 Bonus on top'],
+			[
+				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
+				'Sky Komplett Abo inkl. Netflix für € 35 mtl. + € 20 Bonus on top'
+			],
 			['allgemein', 'Sky Abo nach Wahl mit 12 Monaten Laufzeit + € 20 Bonus on top']
 		];
 		const title = titles.find(([p]) =>
@@ -148,7 +151,6 @@
 				<li>
 					3. Bestätigung erhalten und Sky schauen<br />
 					Wir und Sky bestätigen Ihnen den Auftrag und Sie werden beliefert<br />
-					Eine Freischaltung auf eine Karte oder ein Gerät ist ebenso möglich.
 				</li>
 			</ul>
 			<h3 class="text-2xl mt-4">Benötigte Anmeldedaten nach dem eBay Sofort-Kauf:</h3>
