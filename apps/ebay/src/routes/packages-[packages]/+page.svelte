@@ -31,7 +31,7 @@
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				'Sky Abo nach Wahl mit 12 Monaten Laufzeit + € 20 Bonus on top'
+				'Sky Komplett Abo inkl. HD für € 30 mtl. + € 20 Bonus on top'
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
@@ -40,7 +40,7 @@
 			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'cinema', 'sport'], 'Titel'],
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
-			[['entertainmentplus', 'sport', 'bundesliga', 'cinema'], 'Titel'],
+			[['entertainmentplus', 'sport', 'bundesliga', 'cinema'], 'Sky Komplett Abo inkl. Netflix für € 35 mtl. + € 20 Bonus on top'],
 			['allgemein', 'Sky Abo nach Wahl mit 12 Monaten Laufzeit + € 20 Bonus on top']
 		];
 		const title = titles.find(([p]) =>
