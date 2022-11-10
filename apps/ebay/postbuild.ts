@@ -37,4 +37,15 @@ const build_path = (() => {
 			console.log(`Stripped JS from ${file}`);
 		}
 	}
+
+	console.log('removing unneeded files and directories');
+
+	const unneeded = ['_app', 'index.html', 'vite-manifest.json', 'favicon.png'];
+
+	for (const filename of unneeded) {
+		const file_path = join(build_path, filename);
+		await fs.rm(file_path, {
+			recursive: true
+		});
+	}
 })();
