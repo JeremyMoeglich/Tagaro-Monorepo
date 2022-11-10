@@ -245,5 +245,9 @@
 		overflow: hidden;
 		border: 1px solid rgba(128, 128, 128, 0.514);
 		width: 100%;
+		max-width: 1150px;
+		max-width: min(100vw, 1150px);
+		margin-left: auto;
+		margin-right: auto;
 	}
 </style>
