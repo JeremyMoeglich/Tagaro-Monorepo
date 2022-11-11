@@ -79,14 +79,18 @@
 	.title_row:nth-child(1) {
 		margin: 0px;
 	}
+
+	$gap: 1rem;
+	$col-gap: 1rem;
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(var(--col_amount), 1fr);
-		grid-template-rows: repeat(auto);
 		padding: 1rem;
-		grid-gap: 1rem;
+		row-gap: 1rem;
+		column-gap: $col-gap;
 		border: 1px solid #ccc;
 		border-radius: 15px;
+		width: 100%;
 	}
 	.background_box {
 		grid-column: 1 / var(--col_amount);
@@ -109,6 +113,8 @@
 		text-align: center;
 		background-color: rgb(226, 242, 255);
 		border-radius: 10px;
+		margin-left: 0px;
+		margin-left: calc($gap - $col-gap);
 		//border: 1px solid #ccc;
 	}
 	.title_row {
@@ -123,6 +129,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 4rem;
+		width: 100%;
 	}
 	h3 {
 		font-size: 17px;
