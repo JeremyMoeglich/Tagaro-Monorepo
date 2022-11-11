@@ -40,7 +40,7 @@ const build_path = (() => {
 
 	console.log('removing unneeded files and directories');
 
-	const unneeded = ['_app', 'index.html', 'vite-manifest.json', 'favicon.png'];
+	const unneeded = ['_app', 'index.html', 'vite-manifest.json', 'favicon.png', 'favicon.svg'];
 
 	for (const filename of unneeded) {
 		const file_path = join(build_path, filename);

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100mm" height="100mm" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+   xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <defs>
+      <linearGradient id="linearGradient865" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+         <stop stop-color="#f5a200" stop-opacity=".98598" offset="0" />
+         <stop stop-color="#eb6811" offset=".15168" />
+         <stop stop-color="#e40f0f" offset=".34678" />
+         <stop stop-color="#df0144" offset=".5018" />
+         <stop stop-color="#b52680" offset=".64679" />
+         <stop stop-color="#3c3e94" offset=".85393" />
+         <stop stop-color="#017cc5" offset="1" />
+      </linearGradient>
+   </defs>
+   <metadata>
+      <rdf:RDF>
+         <cc:Work rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <g>
+      <rect width="100" height="100" fill="url(#linearGradient865)" stroke-width="0"
+         style="paint-order:markers fill stroke" />
+      <path transform="scale(.26458)"
+         d="m188.98 56.693a132.28 132.28 0 0 0-132.28 132.28 132.28 132.28 0 0 0 132.28 132.28 132.28 132.28 0 0 0 132.28-132.28 132.28 132.28 0 0 0-132.28-132.28zm-0.49609 28.199a104.08 104.08 0 0 1 0.49609 0 104.08 104.08 0 0 1 104.08 104.08 104.08 104.08 0 0 1-104.08 104.08 104.08 104.08 0 0 1-104.08-104.08 104.08 104.08 0 0 1 103.59-104.08z"
+         fill="#fff" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width=".75591"
+         style="paint-order:markers fill stroke" />
+      <path
+         d="m50.166 26.988-5.4492 14.376-6.8943-3.3946 3.3946 6.8735-14.292 5.4699 14.209 5.3441-3.2274 6.9371 6.8107-3.2695 5.4699 14.229 5.3442-14.334 7.1465 3.5418-3.6883-7.2094 14.628-5.2391-14.418-5.4699 3.1223-6.8528-6.9364 3.311zm-0.09012 8.6474 2.5784 7.024-2.5784 4.4456zm-7.6386 12.084 4.4456 2.5784h-11.47zm10.832 2.5784h11.47l-7.0246 2.5784zm-3.193 3.193v11.47l-2.5784-7.024z"
+         fill="#fefefe" stroke-width="0" />
+   </g>
+</svg>
