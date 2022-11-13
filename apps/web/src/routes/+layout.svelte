@@ -83,7 +83,7 @@
 	<meta property="og:image" content="/share_preview.png" />
 	<meta
 		property="og:description"
-		content="TAGARO ist ein autorisierter Sky-Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an."
+		content="TAGARO ist Sky Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an."
 	/>
 	<meta property="og:url" content="tagaro.de" />
 	<meta property="og:image:width" content="2209" />
@@ -91,7 +91,7 @@
 	<meta property="og:type" content="website" />
 	<meta
 		name="description"
-		content="TAGARO ist ein autorisierter Sky-Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an."
+		content="TAGARO ist Sky Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an."
 	/>
 	<meta name="keywords" content="Sky, Abo, Tagaro" />
 	<meta name="author" content="Jeremy Möglich" />

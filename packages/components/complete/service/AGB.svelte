@@ -515,7 +515,7 @@
 		Liste funktionsfaehiger Receiver finden Sie im Internet beim Betreiber.
 	</p>
 	<p>
-		11.4 Die TAGARO Medienshop - Möglich & Möglich GbR ist ein autorisierter Onlinehändler der „Sky
+		11.4 Die TAGARO Medienshop - Möglich & Möglich GbR ist ein von Sky autorisierter Onlinehändler der „Sky
 		Deutschland Fernsehen GmbH & Co. KG“ und dient dem Zweck, allen interessierten Neu- und
 		Bestandskunden von Sky, Abonnements von Sky zu vermitteln. Informationen zur Vertragsaufnahme
 		und der Vermittlung, finden Sie im Abschnitt „5) Datenverarbeitung zur Bestellabwicklung“ im

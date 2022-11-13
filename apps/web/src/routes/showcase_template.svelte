@@ -19,7 +19,7 @@
 		| undefined = undefined;
 	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
 	export let subtitle2 =
-		'Wir sind autorisierter Sky Onlinehändler und stehen für eine schnelle & zuverlässige Bearbeitung.';
+		'Wir sind Sky Onlinehändler und stehen für eine schnelle & zuverlässige Bearbeitung.';
 	export let points = [
 		'Vertrag für Internet, Sat- oder Kabel-Anschluss mit Sky Q Receiver oder Sky Q IPTV Box*',
 		`${bonus_string} Bonus und versandkostenfreie Vermittlung*`

@@ -62,7 +62,7 @@
 	<div>
 		<h2>Zweck:</h2>
 		<p>
-			Die TAGARO Medienshop - Möglich & Möglich GbR ist ein autorisierter Onlinehändler der „Sky
+			Die TAGARO Medienshop - Möglich & Möglich GbR ist ein von Sky autorisierter Onlinehändler der „Sky
 			Deutschland Fernsehen GmbH & Co. KG“ und dient dem Zweck, allen interessierten Neu- und
 			Bestandskunden von Sky, Abonnements von Sky zu vermitteln. Informationen zur Vertragsaufnahme
 			und der Vermittlung, finden Sie im Abschnitt „5) Datenverarbeitung zur Bestellabwicklung“ im

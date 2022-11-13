@@ -8,8 +8,8 @@
 			<h2>Schnell und einfach Sky abonnieren!</h2>
 			<p>
 				Sie möchten gerne Sky bestellen und das bessere Fernsehen kennenlernen? Dann sind Sie bei
-				TAGARO genau richtig. Wir vermitteln Ihnen als autorisierter Sky-Onlinehändler Sky-Verträge
-				bereits seit 2006. Viele Angebote gibt es exklusiv und mit Abschlussprämie.
+				TAGARO genau richtig. Wir vermitteln Ihnen als Sky Onlinehändler Sky Verträge
+				bereits seit 2006. Viele Angebote gibt es zusätzlich mit einer Abschlussprämie.
 			</p>
 			<Button text={'Angebote & Pakete'} on_click={'/angebote'} />
 		</div>

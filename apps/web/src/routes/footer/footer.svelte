@@ -39,7 +39,6 @@
 	</div>
 	<div class="einkaufen">
 		<h3 class="no_gradient">Sicher Einkaufen</h3>
-		<img src="/images/badges/autorisiert.svg" alt="" />
 		<img src="/images/badges/ssl.png" alt="" />
 		<!-- <a
 				href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung"
@@ -57,7 +56,7 @@
 			{@html '<div class="widget_container_badge"></div>'}
 		{/if}
 	</div>
-	{#if $preferences_store.socialmedia}
+	<!-- {#if $preferences_store.socialmedia}
 		<div class="social">
 			<h3 class="no_gradient">Social Media</h3>
 			<iframe
@@ -66,7 +65,7 @@
 				title="Tagaro Medienshop Facebook"
 			/>
 		</div>
-	{/if}
+	{/if} -->
 </div>
 <Copyright />
 
@@ -108,5 +107,10 @@
 	}
 	h3 {
 		font-size: 21px;
+	}
+	.einkaufen {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 </style>
