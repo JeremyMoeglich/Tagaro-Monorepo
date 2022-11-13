@@ -20,6 +20,6 @@
 	price_asset_ids={['entertainmentplus', 'cinema']}
 >
 	{#if show_senders}
-		<CinemaSenders tiny_title={true} />
+		<CinemaSenders  />
 	{/if}
 </PackageTemplate>

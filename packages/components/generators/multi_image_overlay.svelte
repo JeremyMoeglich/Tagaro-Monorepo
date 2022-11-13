@@ -50,6 +50,7 @@
 	.outer {
 		position: relative;
 		width: 100%;
+		margin: 10px 0px;
 	}
 	.positioned_images {
 		position: absolute;

@@ -2,9 +2,10 @@
 	import AllOverviews from 'components/complete/packages/overviews/all_overviews.svelte';
 	import AlleBuchbar from 'components/complete/alle_buchbar.svelte';
 	import AboformularButton from 'components/elements/interactive/buttons/aboformular_button.svelte';
+	import VertragsinfomationenBox from '../../../../../packages/components/complete/vertragsinfomationen_box.svelte';
 </script>
 
-<div>
+<div class="outer">
 	<div class="alignment">
 		<h1>Sky Q ist da - Alles in einem auf allen Geräten</h1>
 		<h2>Schauen Sie ihr Sky Programm auf bis zu 5 Geräten gleichzeitig</h2>
@@ -80,6 +81,9 @@
 	</div>
 	<AlleBuchbar />
 	<AllOverviews ebay_version={false} />
+	<div class="box">
+		<VertragsinfomationenBox />
+	</div>
 </div>
 
 <style lang="scss">
@@ -87,6 +91,9 @@
 		width: 500px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.box {
+		margin: 50px 0;
 	}
 	h1,
 	h2 {

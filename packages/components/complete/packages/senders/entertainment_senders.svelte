@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Senders from '../../../layout/senders.svelte';
 	const start = '/images/assets/packages/senders/entertainment/';
-	export let tiny_title = false;
+	
 </script>
 
 <Senders
-	{tiny_title}
+	
 	title="Sender im Entertainment Paket:"
 	content={[
 		{ image: 'sky_logo_sky-one_w.png', text: 'Serien und Shows für beste Unterhaltung' },

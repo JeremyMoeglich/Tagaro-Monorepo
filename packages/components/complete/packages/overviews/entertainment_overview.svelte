@@ -23,6 +23,6 @@
 	price_asset_ids={['entertainment']}
 >
 	{#if show_senders}
-		<EntertainmentSenders tiny_title={true} />
+		<EntertainmentSenders  />
 	{/if}
 </PackageTemplate>

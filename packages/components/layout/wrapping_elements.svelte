@@ -170,7 +170,7 @@
 {/if}
 
 <style lang="scss">
-	$background_height: calc((900px - 6vw) * 1.4);
+	$background_height: calc((900px - 6vw) * 1.5);
 	$outer_padding: 70px;
 	$background_color: #f2f2f2;
 	$side_distance: max(25px, calc(15vw - 100px));

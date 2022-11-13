@@ -10,14 +10,10 @@
 	}
 
 	export let content: ReadonlyArray<Sender>;
-	export let tiny_title: boolean = false;
 </script>
 
 <div class="outer">
-	<h2
-		style:font-size={tiny_title ? '25px' : '35px'}
-		style:margin-bottom={tiny_title ? '30px' : '15px'}
-	>
+	<h2>
 		{title}
 	</h2>
 	<div class="main_alignment">
@@ -60,6 +56,8 @@
 	}
 	h2 {
 		text-align: center;
+		font-size: 25px;
+		margin-bottom: 30px;
 	}
 	img {
 		width: 100px;

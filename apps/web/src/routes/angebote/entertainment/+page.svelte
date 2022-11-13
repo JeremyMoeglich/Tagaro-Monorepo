@@ -15,6 +15,9 @@
 
 <style lang="scss">
 	.alignment {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
 		margin-top: 90px;
 		margin-bottom: 90px;
 		padding: 40px;

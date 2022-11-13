@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Senders from '../../../layout/senders.svelte';
 	const start = '/images/assets/packages/senders/kids/';
-	export let tiny_title = false;
+	
 </script>
 
 <Senders
-	{tiny_title}
+	
 	title="Sender im Kids Paket:"
 	content={[
 		{

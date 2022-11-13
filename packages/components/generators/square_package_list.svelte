@@ -22,6 +22,7 @@
 	.alignment {
 		display: flex;
 		align-items: center;
+		margin-top: 10px;
 	}
 	.element {
 		width: 50px;
