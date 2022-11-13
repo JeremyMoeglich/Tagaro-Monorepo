@@ -242,13 +242,9 @@
 		.top_header_container_items {
 			justify-content: center;
 		}
-	}
-	@media screen and (min-width: 1300px) {
-		.desktop {
-			visibility: visible;
-		}
-		.top_header_container_items {
-			justify-content: center;
+		.header_logo {
+			position: relative;
+			right: 50px;
 		}
 	}
 </style>

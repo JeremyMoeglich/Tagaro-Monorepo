@@ -37,8 +37,8 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/praemie.svg'] as const;
-	const right_badges = ['/images/badges/mtlkuendbar.svg', '/images/badges/payback.svg'] as const;
+	const left_badges = [] as const;
+	const right_badges = ['/images/badges/mtlkuendbar.svg'] as const;
 	const showcase_assets: readonly imaged_package_id[] = [
 		'entertainmentplus',
 		'cinema',
