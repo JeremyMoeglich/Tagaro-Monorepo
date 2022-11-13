@@ -87,7 +87,7 @@
 			src={make_url('/images/visuals/sky1122_teaser1_12mbasic.png', dev)}
 			alt=""
 		/>
-		<div class="max-w-4xl">
+		<div class="max-w-4xl w-full">
 			<PackageTable />
 		</div>
 		<Block title="Abovermittlung mit TAGARO">

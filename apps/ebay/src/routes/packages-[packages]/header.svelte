@@ -8,7 +8,7 @@
 </script>
 
 <div class="outer">
-	<img class="sky off" src={make_url('/images/badges/sky_signature.svg', dev)} alt="" />
+	<img class="sky" src={make_url('/images/badges/sky_signature.svg', dev)} alt="" />
 	<div style:color={text_color} class="text off">
 		<div class="title min-w-max">
 			<p class="nowrap">Hier können Sie</p>
@@ -67,10 +67,12 @@
 	.sky {
 		width: 100px;
 		padding-top: 5px;
+		margin-bottom: 20px;
 	}
 	@media (max-width: 570px) {
 		.outer {
 			flex-direction: column;
+			padding-left: 0px;
 		}
 		.text {
 			margin-left: 0px;
@@ -78,6 +80,10 @@
 		}
 		.rimage {
 			display: none;
+		}
+		.sky {
+			margin-bottom: 0px;
+			margin-top: 20px;
 		}
 	}
 	@media (max-width: 650px) {

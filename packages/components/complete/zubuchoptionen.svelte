@@ -6,9 +6,10 @@
 	interface Zubuchoption {
 		html: string;
 		image: string;
+		mobile_order?: number;
 	}
 
-	const zubuchoptionen: (Zubuchoption | 'empty')[] = [
+	const zubuchoptionen: Zubuchoption[] = [
 		{
 			html: /*html*/ `<b>UHD + ${get_price_string(
 				['uhd'],
@@ -33,16 +34,17 @@
 				'jahr'
 			)} mtl. <br /></b> Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 29 (zur Leihe oder OHNE zusätzliche Hardware)`
 		},
+
+		{
+			image: '/images/assets/zubuchoptionen/kids.png',
+			html: /*html*/ `<b>Sky Kids + ${get_price_string(['kids'], 'jahr')} mtl.</b>`
+		},
 		{
 			image: '/images/assets/zubuchoptionen/netflix_standard.png',
 			html: /*html*/ `<b>Netflix Standard-Abo (HD) <br> + ${get_price_string(
 				['netflixstandard'],
 				'jahr'
 			)} mtl.</b> <br> 2 Geräte`
-		},
-		{
-			image: '/images/assets/zubuchoptionen/kids.png',
-			html: /*html*/ `<b>Sky Kids + ${get_price_string(['kids'], 'jahr')} mtl.</b>`
 		},
 		{
 			image: '/images/assets/zubuchoptionen/netflix_premium.png',
@@ -63,19 +65,15 @@
 	];
 </script>
 
-<div>
+<div class="outer">
 	<h2 class="title large center">Zubuchoptionen</h2>
-	<div class="outer">
+	<div class="grid">
 		{#each zubuchoptionen as zubuchoption}
-			<div class="zubuchoption">
-				{#if zubuchoption === 'empty'}
-					<div class="empty" />
-				{:else}
-					<img src={make_url(zubuchoption.image, dev)} alt="" />
-					<div class="text">
-						{@html zubuchoption.html}
-					</div>
-				{/if}
+			<div class="zubuchoption" style:--order={zubuchoption.mobile_order}>
+				<img src={make_url(zubuchoption.image, dev)} alt="" />
+				<div class="text">
+					{@html zubuchoption.html}
+				</div>
 			</div>
 		{/each}
 	</div>
@@ -83,9 +81,13 @@
 
 <style>
 	.outer {
+		width: 100%;
+	}
+	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		grid-auto-rows: 1fr;
+		width: 100%;
 		gap: 1rem;
 	}
 	img {
