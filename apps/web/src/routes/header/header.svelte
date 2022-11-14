@@ -244,7 +244,7 @@
 		}
 		.header_logo {
 			position: relative;
-			right: 50px;
+			right: 100px;
 		}
 	}
 </style>

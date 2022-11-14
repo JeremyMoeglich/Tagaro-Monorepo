@@ -19,7 +19,7 @@ export const zubuchoption_ids = [
 
 export type zubuchoption_id = typeof zubuchoption_ids[number];
 
-const dazn_price: Price = { jahr: 18.99, monat: 29.99, singular: 0 };
+const dazn_price: Price = { jahr: 24.99, monat: 29.99, singular: 0 };
 
 const zubuchoption_image_location = '/images/assets/zubuchoptionen/';
 

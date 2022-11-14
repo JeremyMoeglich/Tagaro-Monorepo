@@ -9,7 +9,7 @@
 	</div>
 
 	<div class="bottom">
-		<div>
+		<div class="table">
 			<PackageTable />
 		</div>
 		<div>
@@ -24,5 +24,11 @@
 		flex-direction: column;
 		gap: 50px;
 		margin: 50px 0px;
+	}
+	.table {
+		max-width: 1300px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 </style>

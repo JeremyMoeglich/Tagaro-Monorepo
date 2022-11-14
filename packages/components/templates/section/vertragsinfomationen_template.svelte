@@ -108,7 +108,7 @@
 			jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem Monat zum
 			Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende Preise:
 		</p>
-		<p>
+		<p class="laufzeit">
 			Sky Entertainment für mtl. {@html get_price_string(['entertainment'], 'monat')} in Kombination
 			mit Sky Sport mtl.
 			{@html get_price_string(['entertainment', 'sport'], 'monat')}; Sky Cinema mtl. {@html get_price_string(
@@ -129,7 +129,9 @@
 			)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
 				['entertainment', 'sport', 'cinema', 'bundesliga'],
 				'monat'
-			)}; <br />
+			)}
+		</p>
+		<p class="laufzeit">
 			Sky Ultimate TV mit Entertainment inkl. Netflix mtl. {@html get_price_string(
 				['entertainmentplus'],
 				'monat'
@@ -153,7 +155,10 @@
 			)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
 				['entertainmentplus', 'cinema', 'bundesliga', 'sport'],
 				'monat'
-			)}; <br /> Mit UHD zzgl. {@html get_price_string(['uhd'], 'monat')}; Multiscreen {@html get_price_string(
+			)}
+		</p>
+		<p class="laufzeit">
+			Mit UHD zzgl. {@html get_price_string(['uhd'], 'monat')}; Multiscreen {@html get_price_string(
 				['multiscreen'],
 				'monat'
 			)}; Netflix Standard-Abo {@html get_price_string(['netflixstandard'], 'monat')}; Netflix
@@ -385,5 +390,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+	}
+	.laufzeit {
+		margin-top: 8px;
 	}
 </style>

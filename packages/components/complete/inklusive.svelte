@@ -28,7 +28,7 @@
 					Formel 1 und die größten Sport-Events live. Immer dabei Sky On Demand.
 				</p>
 				<p>
-					Als Sky Onlinehändler seit 2006, stehen wir für eine einfache und zügige
+					Als Sky Onlinehändler seit 2006 stehen wir für eine einfache und zügige
 					Abwicklung mit persönlichem Service. Schauen Sie sich unsere tausenden zufriedenen Kunden
 					über
 					<a

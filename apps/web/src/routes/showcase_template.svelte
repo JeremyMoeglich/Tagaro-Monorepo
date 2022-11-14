@@ -228,4 +228,7 @@
 		text-align: center;
 		max-width: min(90vw, 1100px);
 	}
+	.button {
+		margin-top: 20px;
+	}
 </style>
