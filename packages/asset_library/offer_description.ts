@@ -42,7 +42,7 @@ export const offer_ids = ['opt1'] as const;
 
 export type offer_id = typeof offer_ids[number];
 
-const text_descriptions = '✓ {savings} Preisvorteil';
+const text_descriptions = '✓ € 100 Amazon Gutschein';
 
 export const offer_descriptions: offer_descriptions_type = [
 	/*{
@@ -144,65 +144,16 @@ export const offer_descriptions: offer_descriptions_type = [
 		aktivierung: 0,
 		conditions: [
 			{
-				set: 'all',
-				min_amount: 1,
-				inverted: true
+				set: 'premium',
+				min_amount: 3,
+				inverted: false
 			}
 		],
 		bonus: 20,
 		short_text: text_descriptions,
 		long_text: text_descriptions,
 		actions: [],
-		overwrites: [
-			[
-				['entertainment', 'bundesliga'],
-				{
-					jahr: 20
-				}
-			],
-			[
-				['entertainment', 'sport', 'bundesliga'],
-				{
-					jahr: 25
-				}
-			],
-			[
-				['entertainment', 'sport', 'cinema', 'bundesliga'],
-				{
-					jahr: 30
-				}
-			],
-			[
-				['entertainmentplus'],
-				{
-					jahr: 15
-				}
-			],
-			[
-				['entertainmentplus', 'cinema'],
-				{
-					jahr: 25
-				}
-			],
-			[
-				['entertainmentplus', 'bundesliga'],
-				{
-					jahr: 25
-				}
-			],
-			[
-				['entertainmentplus', 'sport', 'bundesliga'],
-				{
-					jahr: 30
-				}
-			],
-			[
-				['entertainmentplus', 'sport', 'cinema', 'bundesliga'],
-				{
-					jahr: 35
-				}
-			]
-		],
+		overwrites: [],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
 	}
 ] as const;
@@ -216,7 +167,56 @@ export const empty_offer: offer_description_type = {
 	long_text: '',
 	actions: [],
 	route: aboformular,
-	overwrites: []
+	overwrites: [
+		[
+			['entertainment', 'bundesliga'],
+			{
+				jahr: 25
+			}
+		],
+		[
+			['entertainment', 'sport', 'bundesliga'],
+			{
+				jahr: 30
+			}
+		],
+		[
+			['entertainment', 'sport', 'cinema', 'bundesliga'],
+			{
+				jahr: 30
+			}
+		],
+		[
+			['entertainmentplus'],
+			{
+				jahr: 15
+			}
+		],
+		[
+			['entertainmentplus', 'cinema'],
+			{
+				jahr: 25
+			}
+		],
+		[
+			['entertainmentplus', 'bundesliga'],
+			{
+				jahr: 25
+			}
+		],
+		[
+			['entertainmentplus', 'sport', 'bundesliga'],
+			{
+				jahr: 30
+			}
+		],
+		[
+			['entertainmentplus', 'sport', 'cinema', 'bundesliga'],
+			{
+				jahr: 35
+			}
+		]
+	]
 };
 
 export const indexed_offers = index_by(offer_descriptions, 'id');
@@ -233,7 +233,6 @@ export function offer_applicable(offer_id: offer_id, asset_ids: ReadonlyArray<as
 			return true;
 		}
 	}
-
 	for (const condition of offer.conditions) {
 		const set = asset_sets[condition.set];
 		const intersection = intersect(set, asset_ids);

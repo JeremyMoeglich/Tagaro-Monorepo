@@ -6,6 +6,18 @@
 </script>
 
 <ShowcaseTemplate
+	title={`Das Beste von Sky für nur € 30 mtl. inkl. € 100 Amazon Gutschein von Sky*`}
+	primary_image={'/images/visuals/sky_22-11_cyberweek_text_l_v2.webp'}
+	points={[
+		`€ 100 Amazon Gutschein bei Buchung von mindestens Entertainment + 3 Pakete*`,
+		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
+		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
+	]}
+	side_images={['/images/badges/dazn.svg']}
+	
+/>
+
+<!-- <ShowcaseTemplate
 	title={`Die beliebtesten Paketkombis mit bis zu ${savings} Sparvorteil`}
 	points={[
 		`Bis zu ${savings} Sparvorteil und Vorteilspreis für DAZN Jahresabo erhalten*`,
@@ -14,7 +26,7 @@
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	side_images={['/images/badges/dazn.svg']}
-/>
+/> -->
 
 <!-- <ShowcaseLayout
 	title={'Nur für kurze Zeit: Jetzt Sky Wunschpakete buchen und einen Amazon Gutschein im Wert von bis zu € 125* erhalten.'}

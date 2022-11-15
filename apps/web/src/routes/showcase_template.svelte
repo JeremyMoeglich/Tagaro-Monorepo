@@ -50,21 +50,23 @@
 
 <div class="alignment">
 	<div class="side_alignment">
-		<button class="left_side" on:click={async () => load_form('Showcase_images')}>
-			{#each left_badges as badge}
-				<img src={badge} alt="" class="wrap_add" />
-			{/each}
-			{#each side_images as image}
-				<img src={image} alt="" />
-			{/each}
-			{#each right_badges.slice(Math.max(side_images.length - 1, 0)) as badge}
-				<img src={badge} alt="" class="wrap_add" />
-			{/each}
+		{#if !primary_image}
+			<button class="left_side" on:click={async () => load_form('Showcase_images')}>
+				{#each left_badges as badge}
+					<img src={badge} alt="" class="wrap_add" />
+				{/each}
+				{#each side_images as image}
+					<img src={image} alt="" />
+				{/each}
+				{#each right_badges.slice(Math.max(side_images.length - 1, 0)) as badge}
+					<img src={badge} alt="" class="wrap_add" />
+				{/each}
 
-			{#if side_images.length < 2}
-				<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
-			{/if}
-		</button>
+				{#if side_images.length < 2}
+					<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
+				{/if}
+			</button>
+		{/if}
 		<div class="right_side">
 			<h1>{@html title}*</h1>
 			{#if enddate}
@@ -74,10 +76,12 @@
 			{/if}
 			<h2 class="gray">{@html subtitle1}</h2>
 			<h3 class="no_gradient">{@html subtitle2}</h3>
-
 			{#if primary_image}
 				<img src={primary_image} alt="" class="primary_image" />
-			{:else}
+			{/if}
+			
+
+			{#if !primary_image}
 				<div class="package_overview">
 					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
 						{@const path = `/images/assets/packages/normal/${asset.id}.png`}
@@ -140,7 +144,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
-		margin: 30px 20px;
+		margin-top: 40px;
 		.left_side {
 			display: flex;
 			flex-direction: column-reverse;
@@ -158,8 +162,9 @@
 			align-items: center;
 			min-width: 500px;
 			.primary_image {
-				max-width: 100vw;
-				width: calc(500px + 14vw);
+				max-width: 100%;
+				width: 100%;
+				max-height: 400px;
 				transition-duration: 500ms;
 				&:hover {
 					transform: scale(1.05);
@@ -219,7 +224,6 @@
 	}
 	h3 {
 		color: #868686;
-		margin-bottom: 48px;
 		margin-top: 0px;
 	}
 	h1,

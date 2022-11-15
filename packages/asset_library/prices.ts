@@ -3,7 +3,7 @@ import { indexed_priceable_assets } from './priceable_asset';
 import type { Price } from './priceable_asset_types';
 import type { priceable_asset_id } from './asset_types';
 import { map_entries, typed_entries, typed_from_entries } from 'functional-utilities';
-import { cloneDeep, intersection as intersect, isEqual, minBy, sortBy, sum } from 'lodash-es';
+import { clone, intersection as intersect, isEqual, minBy, sortBy, sum } from 'lodash-es';
 import { empty_offer, indexed_offers, offer_applicable, offer_ids } from './offer_description';
 import type { offer_id, offer_description_type } from './offer_description';
 import { asset_sets } from './sets';
@@ -28,17 +28,24 @@ const price_table = map_entries(indexed_priceable_assets, ([key, value]) => [key
 
 export function get_offer_price(
 	offer: offer_description_type,
-	assets: ReadonlyArray<priceable_asset_id>
+	assets: ReadonlyArray<priceable_asset_id>,
+	exclude_overwrite?: boolean
 ): Price | undefined {
-	const current_price_table = cloneDeep(price_table);
+	const current_price_table = clone(price_table);
 
 	for (const overwrite of offer.overwrites) {
 		const filtered_zubuchoptionen = assets.filter((id) =>
 			zubuchoption_ids.includes(id as zubuchoption_id)
 		);
 		const other_assets = assets.filter((id) => !zubuchoption_ids.includes(id as zubuchoption_id));
-		if (isEqual(sortBy(overwrite[0]), sortBy(other_assets))) {
-			const price = get_offer_price(empty_offer, assets);
+		if (isEqual(sortBy(overwrite[0]), sortBy(other_assets)) && !exclude_overwrite) {
+			const price = (() => {
+				if (isEqual(empty_offer, offer)) {
+					return get_offer_price(empty_offer, assets, true);
+				} else {
+					return get_offer_price(empty_offer, assets, false);
+				}
+			})();
 			const zubuchoptionen_price = get_offer_price(empty_offer, filtered_zubuchoptionen);
 			for (const [timeframe, value] of typed_entries(overwrite[1])) {
 				price[timeframe] = value + zubuchoptionen_price[timeframe];

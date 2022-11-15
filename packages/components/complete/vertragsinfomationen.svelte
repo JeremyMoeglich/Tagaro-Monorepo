@@ -2,29 +2,26 @@
 	import VertragsinfomationenTemplate from '../templates/section/vertragsinfomationen_template.svelte';
 </script>
 
-<VertragsinfomationenTemplate>
+<!-- <VertragsinfomationenTemplate>
 	<h3 class="marked">Ersparnis:</h3>
 	<p>
 		Die Ersparnis bis zu € 156 ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im
 		Vergleich zum Sky Standard-Jahresabonnementspreis sowie aus dem rabattierten DAZN
 		Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis.
 	</p>
-</VertragsinfomationenTemplate>
+</VertragsinfomationenTemplate> -->
 
-<!-- <VertragsinfomationenLayout>
-	<h3>Amazon Gutschein von Sky:</h3>
+<VertragsinfomationenTemplate>
+	<h3 class="marked">Amazon Gutschein von Sky:</h3>
 	<p>
-		Bei der Buchung von Sky Entertainment und mindestens zwei weiteren Premiumpaketen oder Sky
-		Entertainment Plus und einem weiteren Premiumpaket (Cinema, Sport und/oder Fußball-Bundesliga)
-		ist ein € 75-Wertgutschein von Amazon inklusive. Bei Buchung von Sky Entertainment und allen 3
-		Premiumpaketen (Cinema, Sport und/oder Fußball-Bundesliga) ist ein € 125-Wertgutschein von
-		Amazon inklusive. <br />
-		Der Gutschein wird von Sky nach Ablauf der Widerrufsfrist und positiver Bonitätsprüfung sowie des
-		ersten positiven Zahlungseingangs bei Sky, per E-Mail in Form eines digitalen Gutscheincodes ca.
-		6-8 Wochen nach Abonnementvertragsabschluss per E-Mail versendet. Die Einlösung des Gutscheins ist
-		nach Ausgabe durch Sky 10 Jahre lang bei Amazon möglich.
+		Bei der Buchung von mindestens Sky Entertainment, Sky Cinema, Sky Sport und Sky
+		Fußball-Bundesliga ist ein € 100-Wertgutschein von Amazon inklusive. Der Gutschein wird nach
+		Ablauf der Widerrufsfrist und positiver Bonitätsprüfung sowie des ersten positiven
+		Zahlungseingangs bei Sky, in Form eines digitalen Gutscheincodes ca. 6 - 8 Wochen nach
+		Abonnementvertragsabschluss von Sky elektronisch versendet. Die Einlösung des Gutscheins ist bis
+		zum 31.1.2023 befristet. Es gelten die Amazon-Gutscheinbedingungen.
 	</p>
-</VertragsinfomationenLayout> -->
+</VertragsinfomationenTemplate>
 
 <!-- <VertragsinfomationenLayout>
 	<h3>Amazon Gutschein von Sky:</h3>
