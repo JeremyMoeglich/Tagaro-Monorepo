@@ -106,8 +106,7 @@
 			</p>
 		</Block>
 		<AllOverviews clickable={false} ebay_version={true} />
-		<Line />
-		<Inklusive sky_q={false} />
+		<Inklusive sky_q={false} space={'0px'} />
 		<div>
 			<Line />
 			<div class="max-w-6xl mt-12 ml-auto mr-auto flex flex-col gap-7 items-center">

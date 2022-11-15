@@ -1,15 +1,19 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
+	import Line from '../elements/line.svelte';
 	import Button from '../elements/interactive/buttons/button.svelte';
 	import SideBySide from '../layout/side_by_side.svelte';
+	
 	export let sky_q = true;
 	export let peacock = true;
 	export let discovery = true;
+	export let space = '70px';
 
 	const title_class = 'light';
 </script>
 
+<Line {space} />
 <div>
 	<h2 class="large title">Im Angebot inklusive</h2>
 	{#if sky_q}
@@ -28,9 +32,8 @@
 					Formel 1 und die größten Sport-Events live. Immer dabei Sky On Demand.
 				</p>
 				<p>
-					Als Sky Onlinehändler seit 2006 stehen wir für eine einfache und zügige
-					Abwicklung mit persönlichem Service. Schauen Sie sich unsere tausenden zufriedenen Kunden
-					über
+					Als Sky Onlinehändler seit 2006 stehen wir für eine einfache und zügige Abwicklung mit
+					persönlichem Service. Schauen Sie sich unsere tausenden zufriedenen Kunden über
 					<a
 						rel="noreferrer"
 						href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung"
