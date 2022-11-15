@@ -13,9 +13,9 @@
 		<p>
 			Mit Ihrem Sky Abonnement erhalten Sie auch Zugang zu Sky Q. Damit schauen Sie Ihr Programm
 			zuhause und unterwegs mit Sky Go und können bis zu 5 Geräte gleichzeitig nutzen (3 TVs und 3
-			mobile Geräte). Voraussetzung ist die Multiscreen Option für zzgl. € 10 mtl. zu ihrem
+			mobile Geräte). Voraussetzung ist die Multiscreen Option für zzgl. €&nbsp;10 mtl. zu ihrem
 			Wunschabonnement. Zusätzlich mit Multiscreen erhalten Sie einen Sky Q Mini Receiver für
-			einmalig € 29 oder einen 2. Sky Q Receiver für einmalig € 49.
+			einmalig €&nbsp;29 oder einen 2. Sky Q Receiver für einmalig €&nbsp;49.
 		</p>
 
 		<img src="/images/visuals/skyq_header_4.png" alt="" />

@@ -2,7 +2,7 @@
 	//import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
-	import { get_price_string } from 'asset_library/prices';
+	import { get_offer_note, get_price_string } from 'asset_library/prices';
 	import { base_premium_package_combinations } from 'asset_library/assets/packages';
 	import { typed_entries } from 'functional-utilities';
 
@@ -25,11 +25,14 @@
 							<ul>
 								{#each combinations as combination}
 									{@const comb = [base, ...combination]}
+									{@const offer_note = get_offer_note(comb)}
 									<li>
 										- {comb.map((id) => indexed_priceable_assets[id].name).join(' + ')} für {@html get_price_string(
 											comb,
 											'jahr'
-										)}&nbsp;mtl. im 12-Monats-Abo*
+										)}&nbsp;mtl. im 12-Monats-Abo* {#if offer_note}
+											<mark>({@html offer_note})</mark>
+										{/if}
 									</li>
 								{/each}
 							</ul>
@@ -47,8 +50,8 @@
 					</li>
 					<li>
 						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
-						für 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1-2 Sky Q Mini für je einmalig
-						€ 29 (zur Leihe)
+						für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €&nbsp;49, 1-2 Sky Q Mini für je einmalig
+						€&nbsp;29 (zur Leihe)
 					</li>
 					<li>
 						- Netflix Standard-Abo, HD/2 Geräte (+ {@html get_price_string(
@@ -64,35 +67,35 @@
 						mtl.)
 					</li>
 					<li>- trendSports mtl. {@html get_price_string(['trendsports'], 'jahr')}</li>
-					<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li>
+					<li>- 18+ für Blue Movie €&nbsp;0, einmalige Versandpauschale 18+ PIN</li>
 					<!-- <li>
-						- UHD für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 5 mtl. mit Entertainment
+						- UHD für €&nbsp;4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €&nbsp;5 mtl. mit Entertainment
 						(für Sat oder Kabel-Empfang)
 					</li>
-					<li>- DAZN jährlich für € 24,99 mtl. oder DAZN monatlich für € 29,99 mtl.</li>
+					<li>- DAZN jährlich für €&nbsp;24,99 mtl. oder DAZN monatlich für €&nbsp;29,99 mtl.</li>
 					<li>
-						- Multiscreen für € 8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder € 10 mtl.
+						- Multiscreen für €&nbsp;8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €&nbsp;10 mtl.
 						mit Entertainment (Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig
-						€ 49, 1 Sky Q Mini für einmalig € 29 oder OHNE zusätzliche Hardware)
+						€&nbsp;49, 1 Sky Q Mini für einmalig €&nbsp;29 oder OHNE zusätzliche Hardware)
 					</li>
 					<li>
-						- Netflix Standard-Abo, HD/2 Streams für € 4 mtl. mit Entertainment Plus <mark
+						- Netflix Standard-Abo, HD/2 Streams für €&nbsp;4 mtl. mit Entertainment Plus <mark
 							>(20% Rabatt)</mark
 						>
-						oder € 5 mtl. mit Entertainment
+						oder €&nbsp;5 mtl. mit Entertainment
 					</li>
 					<li>
-						- Netflix Premium-Abo, UHD/4 Streams für € 8 mtl. mit Entertainment Plus <mark
+						- Netflix Premium-Abo, UHD/4 Streams für €&nbsp;8 mtl. mit Entertainment Plus <mark
 							>(20% Rabatt)</mark
 						>
-						oder € 10 mtl. mit Entertainment
+						oder €&nbsp;10 mtl. mit Entertainment
 					</li>
 					<li>
-						- Sky Kids Zubuchung für € 4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €
+						- Sky Kids Zubuchung für €&nbsp;4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €
 						5 mtl. mit Entertainment
 					</li>
-					<li>- trendSports für € 5,99 mtl.</li>
-					<li>- 18+ für Blue Movie € 0, einmalige Versandpauschale 18+ PIN</li> -->
+					<li>- trendSports für €&nbsp;5,99 mtl.</li>
+					<li>- 18+ für Blue Movie €&nbsp;0, einmalige Versandpauschale 18+ PIN</li> -->
 				</ul>
 			</div>
 		</slot>
@@ -278,10 +281,10 @@
 			Modelljahr 2015 mit Tizen Betriebssystem oder einer Playstation 4 Konsole) und mit der Sky Go
 			App auf mobilen Endgeräten (Betriebssysteme: Android, iOS, Windows; Hersteller: Mac, Huawei)
 			möglich. Über die Sky Q IPTV Box und Sky Q-Mini sind UHD-Inhalte nicht verfügbar. Pro Sky Q
-			Abonnement über SAT oder Kabel sind maximal 2 Sky Q Receiver (je € 49 durch Sky) zzgl. maximal
-			2 Sky Q-Mini (je € 29 durch Sky) oder bei einem Sky Q Abonnement über das Internet maximal 3
-			Sky Q IPTV Boxen (je € 29 durch Sky) buchbar. Eine Buchung von Multiscreen ohne zusätzliches
-			Gerät ist ebenso möglich.
+			Abonnement über SAT oder Kabel sind maximal 2 Sky Q Receiver (je €&nbsp;49 durch Sky) zzgl.
+			maximal 2 Sky Q-Mini (je €&nbsp;29 durch Sky) oder bei einem Sky Q Abonnement über das
+			Internet maximal 3 Sky Q IPTV Boxen (je €&nbsp;29 durch Sky) buchbar. Eine Buchung von
+			Multiscreen ohne zusätzliches Gerät ist ebenso möglich.
 		</p>
 	</div>
 	<div>
@@ -302,15 +305,15 @@
 			Laufzeitmonate kostenlos und es gilt eine Mindestvertragslaufzeit von einem Monat. Das
 			Abonnement verlängert sich nach Ablauf der Mindestlaufzeit um jeweils einen weiteren Monat,
 			wenn es nicht mit einer Frist von 1 Monat auf den Ablauf der Laufzeit gekündigt wird. Danach
-			beträgt die Abonnementgebühr € 6 mtl. Vertragspartner des HD+ Abonnements ist die HD PLUS
+			beträgt die Abonnementgebühr €&nbsp;6 mtl. Vertragspartner des HD+ Abonnements ist die HD PLUS
 			GmbH. Die HD PLUS GmbH ermächtigt Sky, die Abonnementgebühren einzuziehen.
 		</p>
 	</div>
 	<div>
 		<h3 class={title_classes}>Sky Q Receiver:</h3>
 		<p>
-			Sky stellt einen Sky Q Receiver leihweise zur Verfügung (die Servicepauschale i. H. v. € 149
-			entfällt).
+			Sky stellt einen Sky Q Receiver leihweise zur Verfügung (die Servicepauschale i. H. v.
+			€&nbsp;149 entfällt).
 		</p>
 	</div>
 	<div>
@@ -360,10 +363,10 @@
 		</p>
 	</div>
 	<div>
-		<h3 class={title_classes}>€ 20 Prämie von uns:</h3>
+		<h3 class={title_classes}>€&nbsp;20 Prämie von uns:</h3>
 		<p>
-			Als Dankeschön erhalten Sie eine Prämie von € 20 auf Ihr Konto überwiesen. Sie erhalten den
-			Betrag innerhalb von 6-8 Wochen nach Abobeginn gutgeschrieben.
+			Als Dankeschön erhalten Sie eine Prämie von €&nbsp;20 auf Ihr Konto überwiesen. Sie erhalten
+			den Betrag innerhalb von 6-8 Wochen nach Abobeginn gutgeschrieben.
 		</p>
 	</div>
 	<br />

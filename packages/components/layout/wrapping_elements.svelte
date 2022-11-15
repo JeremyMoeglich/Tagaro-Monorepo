@@ -130,10 +130,10 @@
 							<li>✓ 500 PAYBACK Basis Punkte</li>
 							<!-- 
 							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
-							<li><b>✓ € 50 Amazon Gutschein bei Ent+1 Paket oder € 125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
+							<li><b>✓ €&nbsp;50 Amazon Gutschein bei Ent+1 Paket oder €&nbsp;125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
 							<li><b>✓ Bis 31.12.21 keine Abogebühren durch Sky</b></li>
 							<li><b>✓ Sky Winteraktion: Bis zu 12 Monate Sky Sport gratis dazu</b></li>
-							<li><b>✓ Bis zu € 100 Gutschrift von Sky</b>`</li>
+							<li><b>✓ Bis zu €&nbsp;100 Gutschrift von Sky</b>`</li>
 							<li><b>✓ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b></li>
 						-->
 							<li><mark>{@html get_offer_note(item.package_ids, true)}</mark></li>

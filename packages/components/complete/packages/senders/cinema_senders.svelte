@@ -1,11 +1,9 @@
 <script lang="ts">
 	import Senders from '../../../layout/senders.svelte';
 	const start = '/images/assets/packages/senders/cinema/';
-	
 </script>
 
 <Senders
-	
 	title="Sender im Cinema Paket:"
 	content={[
 		{

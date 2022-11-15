@@ -70,7 +70,11 @@
 				</p>
 			{/if}
 			{#if offer_string}
-				<img src={make_url('/images/external/amazongiftcard.png', dev)} alt="" class="amazon_badge"/>
+				<img
+					src={make_url('/images/external/amazongiftcard.png', dev)}
+					alt=""
+					class="amazon_badge"
+				/>
 			{/if}
 			<!-- {#if offer_string}
 					<GradientBadge>{offer_string}</GradientBadge>

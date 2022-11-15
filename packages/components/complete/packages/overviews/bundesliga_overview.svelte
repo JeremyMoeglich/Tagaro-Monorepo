@@ -20,6 +20,6 @@
 	price_asset_ids={['entertainment', 'bundesliga']}
 >
 	{#if show_senders}
-		<BundesligaSenders  />
+		<BundesligaSenders />
 	{/if}
 </PackageTemplate>

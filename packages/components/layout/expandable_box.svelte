@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
+	import { blur } from 'svelte/transition';
 
 	export let title: string;
 	let opened = dev ? true : false;
@@ -23,7 +24,7 @@
 		</p>
 	</button>
 	{#if opened}
-		<div class="main_text">
+		<div class="main_text" transition:blur>
 			<slot>This is empty</slot>
 		</div>
 	{/if}

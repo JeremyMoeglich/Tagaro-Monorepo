@@ -79,7 +79,6 @@
 			{#if primary_image}
 				<img src={primary_image} alt="" class="primary_image" />
 			{/if}
-			
 
 			{#if !primary_image}
 				<div class="package_overview">

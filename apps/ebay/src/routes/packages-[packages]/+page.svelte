@@ -31,7 +31,7 @@
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo inkl. HD für € 30 mtl. + € 20 Bonus on top'
+				'Sky Komplett Abo inkl. HD für €&nbsp;30 mtl. + €&nbsp;20 Bonus on top'
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
@@ -42,9 +42,9 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo inkl. Netflix für € 35 mtl. + € 20 Bonus on top'
+				'Sky Komplett Abo inkl. Netflix für €&nbsp;35 mtl. + €&nbsp;20 Bonus on top'
 			],
-			['allgemein', 'Sky Abo nach Wahl mit 12 Monaten Laufzeit + € 20 Bonus on top']
+			['allgemein', 'Sky Abo nach Wahl mit 12 Monaten Laufzeit + €&nbsp;20 Bonus on top']
 		];
 		const title = titles.find(([p]) =>
 			typeof p === 'string'
@@ -63,7 +63,10 @@
 		<div class="text-center flex flex-col gap-2">
 			<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 			<ul class="text-red-600 text-xl">
-				<li>+ Sky Paketkombis mit bis zu € 156 Sparvorteil und Vorteilspreis für DAZN Jahresabo</li>
+				<li>
+					+ Sky Cyberweek Aktion: Bei Buchung von mind. Entertainment + 3 Paketen ein €&nbsp;100
+					Amazon Gutschein
+				</li>
 				{#if bonus > 0}
 					<li>
 						+ Bonus von TAGARO: {@html bonus_string} Bonus on top bei erfolgreichem Vertragsabschluss
@@ -71,20 +74,20 @@
 				{/if}
 			</ul>
 			<p class="max-w-6xl mt-2">
-				Bei unserem neuen Angebot erhalten alle Besteller von Sky die beliebtesten Paketkombis mit
-				Sparvorteil. Insgesamt ist eine Ersparnis von bis zu € 156 möglich (siehe unsere
-				Preistabelle). Die Vermittlung erfolgt versandkostfrei. Zusätzlich überweisen wir Ihnen
-				einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
-				ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen, Netflix, DAZN (jetzt €
-				18,99 mtl. im Jahresabo) und UHD an. Ihre PAYBACK Nummer für 500 Basis-Punkte tragen wir
-				gerne für Sie ein. Über die PAYBACK App oder online sind weitere Punkte möglich, wenn Sie
-				vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren bei TAGARO von einer schnellen und
-				zuverlässigen Betreuung sowie jahrelanger Erfahrung seit 2006.
+				Bei unserem Cyberweek Angebot erhalten alle Besteller von Sky bei Wahl von Entertainment +
+				mindestens 3 Paketen (Cinema, Sport und Fußball Bundesliga) zusätzlich einen €&nbsp;100
+				Amazon Gutschein von Sky. Zusätzlich überweisen wir Ihnen einen Bonus von €&nbsp;20. Der
+				Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche
+				Zubuchoptionen zu Ihrem Vertrag wie Multiscreen, Netflix, DAZN und UHD an. Ihre PAYBACK
+				Nummer für 500 Basis-Punkte tragen wir gerne für Sie ein. Über die PAYBACK App oder online
+				sind weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie
+				profitieren bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger
+				Erfahrung seit 2006.
 			</p>
 		</div>
 		<img
 			class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-			src={make_url('/images/visuals/sky1122_teaser1_12mbasic.png', dev)}
+			src={make_url('/images/visuals/sky1122_teaser_cyberweek.png', dev)}
 			alt=""
 		/>
 		<div class="max-w-4xl w-full">
@@ -94,7 +97,7 @@
 			<p>
 				Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur
 				Aboabwicklung zugesandt. Die Anmeldung erfolgt durch uns im Anschluss umgehend. Als
-				Dankeschön erhalten Sie nach 6-8 Wochen eine € 20 Prämie auf Ihr Konto überwiesen.
+				Dankeschön erhalten Sie nach 6-8 Wochen eine €&nbsp;20 Prämie auf Ihr Konto überwiesen.
 			</p>
 			<p>
 				Wir vermitteln Sky Verträge bereits seit 2006 und stehen für eine einfache und zügige

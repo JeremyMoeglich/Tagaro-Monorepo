@@ -10,8 +10,8 @@
 			<div>
 				<p>
 					Sie möchten gerne Sky bestellen und das bessere Fernsehen kennenlernen? Dann sind Sie bei
-					TAGARO genau richtig. Wir vermitteln Ihnen als Sky Onlinehändler
-					Sky Verträge bereits seit 2006.
+					TAGARO genau richtig. Wir vermitteln Ihnen als Sky Onlinehändler Sky Verträge bereits seit
+					2006.
 				</p>
 				<p>
 					Ihr Vorteil - Sie erhalten dazu bei den meisten Angeboten eine Abschlussprämie (Cashback)

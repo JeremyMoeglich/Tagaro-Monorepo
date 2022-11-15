@@ -4,7 +4,7 @@
 	import Line from '../elements/line.svelte';
 	import Button from '../elements/interactive/buttons/button.svelte';
 	import SideBySide from '../layout/side_by_side.svelte';
-	
+
 	export let sky_q = true;
 	export let peacock = true;
 	export let discovery = true;
