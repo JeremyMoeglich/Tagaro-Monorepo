@@ -44,7 +44,7 @@
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
 				'Sky Komplett Abo inkl. Netflix für €&nbsp;35 mtl. + €&nbsp;20 Bonus on top'
 			],
-			['allgemein', 'Sky Abo nach Wahl mit 12 Monaten Laufzeit + €&nbsp;20 Bonus on top']
+			['allgemein', 'Sky Abo nach Wahl inkl. €&nbsp;100 Amazon Gutschein ab 4 Paketen + €&nbsp;20 Bonus']
 		];
 		const title = titles.find(([p]) =>
 			typeof p === 'string'
