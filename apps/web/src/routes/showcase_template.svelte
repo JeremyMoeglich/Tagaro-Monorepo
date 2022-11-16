@@ -7,6 +7,7 @@
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 	import type { imaged_package_id } from 'asset_library/imaged_packages';
 	import { crossfade } from 'frontend/crossfade';
+	import ConditionalHref from '../../../../packages/components/layout/conditional_href.svelte';
 
 	const [send] = crossfade;
 
@@ -26,6 +27,7 @@
 	];
 	export let primary_image: undefined | string = undefined;
 	export let side_images: string[] = [];
+	export let redirect_url: string | undefined = undefined;
 
 	export let buttons: {
 		text: string;
@@ -77,7 +79,9 @@
 			<h2 class="gray">{@html subtitle1}</h2>
 			<h3 class="no_gradient">{@html subtitle2}</h3>
 			{#if primary_image}
-				<img src={primary_image} alt="" class="primary_image" />
+				<ConditionalHref active={!!redirect_url} href={redirect_url}>
+					<img src={primary_image} alt="" class="primary_image" />
+				</ConditionalHref>
 			{/if}
 
 			{#if !primary_image}
@@ -92,7 +96,7 @@
 			{/if}
 		</div>
 	</div>
-	<button class="side_bottom_images" on:click={async () => load_form('Showcase_points')}>
+	<div class="side_bottom_images">
 		{#each left_badges as badge}
 			<img src={badge} alt="" class="wrap_remove" />
 		{/each}
@@ -106,7 +110,7 @@
 		{#each right_badges as badge}
 			<img src={badge} alt="" class="wrap_remove" />
 		{/each}
-	</button>
+	</div>
 	<div class="button">
 		{#each buttons as button}
 			<AboformularButton source={'Showcase_button'} text={button.text} route={button.route} />
@@ -233,5 +237,9 @@
 	}
 	.button {
 		margin-top: 20px;
+	}
+
+	.side_bottom_images {
+		text-align: center;
 	}
 </style>

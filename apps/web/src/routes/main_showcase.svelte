@@ -8,6 +8,7 @@
 <ShowcaseTemplate
 	title={`Das Beste von Sky für nur €&nbsp;30 mtl. inkl. €&nbsp;100 Amazon Gutschein von Sky`}
 	primary_image={'/images/visuals/sky_22-11_cyberweek_text_l_v2.webp'}
+	redirect_url={"/angebote/4_oder_mehr_pakete/"}
 	points={[
 		`€&nbsp;100 Amazon Gutschein bei Buchung von mindestens Entertainment + 3 Pakete*`,
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
