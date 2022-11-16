@@ -16,5 +16,5 @@
 		'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!',
 		`UHD optional für ${get_price_string(['uhd'], 'jahr')} mtl.`
 	]}
-	price_asset_ids={['entertainmentplus', 'cinema', 'sport']}
+	price_asset_ids={['entertainment', 'cinema', 'sport']}
 />

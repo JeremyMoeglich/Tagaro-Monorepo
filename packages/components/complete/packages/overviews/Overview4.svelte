@@ -16,5 +16,5 @@
 		`UHD optional für ${get_price_string(['uhd'], 'jahr')} mtl.`,
 		`Sky Kids optional für ${get_price_string(['kids'], 'jahr')} mtl.`
 	]}
-	price_asset_ids={['entertainmentplus', 'cinema', 'sport', 'bundesliga']}
+	price_asset_ids={['entertainment', 'cinema', 'sport', 'bundesliga']}
 />

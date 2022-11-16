@@ -31,7 +31,7 @@
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo inkl. HD für €&nbsp;30 mtl. + €&nbsp;20 Bonus on top'
+				'Das Beste von Sky für nur € 30 mtl. + € 100 Amazon Gutschein & € 20 Bonus'
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
@@ -42,7 +42,7 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo inkl. Netflix für €&nbsp;35 mtl. + €&nbsp;20 Bonus on top'
+				'Komplett inkl. Netflix nur € 35 mtl. inkl. € 100 Amazon Gutschein & € 20 Bonus'
 			],
 			['allgemein', 'Sky Abo nach Wahl inkl. €&nbsp;100 Amazon Gutschein ab 4 Paketen + €&nbsp;20 Bonus']
 		];
