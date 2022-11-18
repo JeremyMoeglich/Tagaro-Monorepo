@@ -11,7 +11,7 @@
 	import { crossfade } from 'frontend/crossfade';
 	import { make_url } from 'frontend/url';
 	import { dev } from '$app/environment';
-	import { indexed_package_assets, package_id } from 'asset_library/assets/packages';
+	import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
 	const [send, receive] = crossfade;
 
 	export let title: string;
