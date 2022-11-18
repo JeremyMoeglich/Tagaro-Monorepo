@@ -3,6 +3,6 @@
 	import Vertragsinfomationen from './vertragsinfomationen.svelte';
 </script>
 
-<ExpandableBox title={'*Vertragsinformationen'}>
+<ExpandableBox title={'*Vertragsinformationen für Neukunden'}>
 	<Vertragsinfomationen />
 </ExpandableBox>
