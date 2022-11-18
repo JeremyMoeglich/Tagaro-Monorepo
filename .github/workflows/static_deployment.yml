@@ -28,7 +28,8 @@ jobs:
         run: |
           npx playwright install
           npx playwright install-deps
-          npm run test
+          npm run lint
+          npm run check
 
       - name: copy
         uses: appleboy/scp-action@master

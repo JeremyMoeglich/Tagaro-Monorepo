@@ -9,8 +9,7 @@
 		"build:netlify": "cross-env ADAPTER=netlify vite build",
 		"preview": "vite preview --port 3000",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"lint": "eslint -c .eslintrc.cjs .",
-		"test": "playwright test"
+		"lint": "eslint -c .eslintrc.cjs ."
 	},
 	"devDependencies": {
 		"@babel/core": "^7.20.2",

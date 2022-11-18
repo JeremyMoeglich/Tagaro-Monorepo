@@ -10,8 +10,7 @@
 		"preview": "turbo run preview",
 		"check": "turbo run check",
 		"lint": "turbo run lint",
-		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-		"test": "turbo run test"
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
 		"autoprefixer": "10.4.13",
