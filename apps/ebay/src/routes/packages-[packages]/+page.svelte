@@ -97,7 +97,7 @@
 			<p>
 				Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur
 				Aboabwicklung zugesandt. Die Anmeldung erfolgt durch uns im Anschluss umgehend. Als
-				Dankeschön erhalten Sie nach 6-8 Wochen eine €&nbsp;20 Prämie auf Ihr Konto überwiesen.
+				Dankeschön erhalten Sie nach 8 Wochen eine €&nbsp;20 Prämie auf Ihr Konto überwiesen.
 			</p>
 			<p>
 				Wir vermitteln Sky Verträge bereits seit 2006 und stehen für eine einfache und zügige

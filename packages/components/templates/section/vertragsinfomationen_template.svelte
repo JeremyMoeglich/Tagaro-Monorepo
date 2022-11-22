@@ -366,7 +366,7 @@
 		<h3 class={title_classes}>€&nbsp;20 Prämie von uns:</h3>
 		<p>
 			Als Dankeschön erhalten Sie eine Prämie von €&nbsp;20 auf Ihr Konto überwiesen. Sie erhalten
-			den Betrag innerhalb von 6-8 Wochen nach Abobeginn gutgeschrieben.
+			den Betrag innerhalb von 8 Wochen nach Abobeginn gutgeschrieben.
 		</p>
 	</div>
 	<br />
