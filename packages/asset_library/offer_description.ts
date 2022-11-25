@@ -184,13 +184,13 @@ export const empty_offer: offer_description_type = {
 		[
 			['entertainment', 'bundesliga'],
 			{
-				jahr: 25
+				jahr: 20
 			}
 		],
 		[
 			['entertainment', 'sport', 'bundesliga'],
 			{
-				jahr: 30
+				jahr: 25
 			}
 		],
 
