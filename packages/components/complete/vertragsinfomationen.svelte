@@ -19,7 +19,7 @@
 		nach Ablauf der Widerrufsfrist und positiver Bonitätsprüfung sowie des ersten positiven
 		Zahlungseingangs bei Sky, in Form eines digitalen Gutscheincodes ca. 6 - 8 Wochen nach
 		Abonnementvertragsabschluss von Sky elektronisch versendet. Die Einlösung des Gutscheins ist bis
-		zum 31.1.2023 befristet. Es gelten die Amazon-Gutscheinbedingungen.
+		zum 30.4.2023 befristet. Es gelten die Amazon-Gutscheinbedingungen.
 	</p>
 </VertragsinfomationenTemplate>
 
