@@ -6,6 +6,7 @@
 	import SideBySide from '../layout/side_by_side.svelte';
 
 	export let sky_q = true;
+	export let paramount_plus = true;
 	export let peacock = true;
 	export let discovery = true;
 	export let space = '70px';
@@ -49,9 +50,31 @@
 			</span>
 		</SideBySide>
 	{/if}
-	{#if peacock}
+	{#if paramount_plus}
 		<SideBySide primary="right">
+			<span slot="left">
+				<img
+					src={make_url('/images/visuals/sky_22-11_paramount-preregistration_v2.webp', dev)}
+					alt=""
+				/>
+			</span>
 			<span slot="right">
+				<h3 class={title_class}>Das erwartet dich mit Paramount+</h3>
+				<ul>
+					<li>✓ Grandiose Hollywood-Blockbuster</li>
+					<li>✓ Exklusive Originals</li>
+					<li>✓ Herausragende Serien</li>
+					<li>✓ Spektakuläre Shows</li>
+					<li>
+						✓ Ab 8.12.2022: Paramount+ ist im Sky Cinema Paket inklusive im Wert von €7,99 mtl.*
+					</li>
+				</ul>
+			</span>
+		</SideBySide>
+	{/if}
+	{#if peacock}
+		<SideBySide primary="left">
+			<span slot="left">
 				<h3 class={title_class}>Peacock für alle Sky Q Kunden</h3>
 				<ul>
 					<li>
@@ -76,7 +99,7 @@
 					</li>
 				</ul>
 			</span>
-			<span slot="left">
+			<span slot="right">
 				<img
 					src={make_url('/images/visuals/sky_22-01_hilfecenter_peacock_1360x706.jpg', dev)}
 					alt=""
@@ -85,8 +108,8 @@
 		</SideBySide>
 	{/if}
 	{#if discovery}
-		<SideBySide primary="left">
-			<span slot="left">
+		<SideBySide primary="right">
+			<span slot="right">
 				<h3 class={title_class}>discovery+ 1 Jahr geschenkt als Extra für alle Sky Q Kunden</h3>
 				<ul>
 					<li>Der Streaming Dienst für großartige Real-Life Unterhaltung die du lieben wirst</li>
@@ -101,7 +124,7 @@
 					Aktivierung der App auf dem Sky Q Receiver mit Anmeldung bei discovery+ mittels QR-Code.
 				</p>
 			</span>
-			<span slot="right">
+			<span slot="left">
 				<img src={make_url('/images/visuals/sky_22-06_discovery-plus_teaser.webp', dev)} alt="" />
 			</span>
 		</SideBySide>

@@ -18,8 +18,11 @@
 				format: string;
 		  }
 		| undefined = undefined;
-	export let subtitle1 = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
-	export let subtitle2 =
+	export let subtitle0: string | null = null;
+	export let subtitle1:
+		| string
+		| null = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
+	export let subtitle2: string | null =
 		'Sky Neukunden-Angebote vom Onlinehändler mit schneller und zuverlässiger Bearbeitung.';
 	export let points = [
 		'Vertrag für Internet, Sat- oder Kabel-Anschluss mit Sky Q Receiver oder Sky Q IPTV Box*',
@@ -48,6 +51,11 @@
 		'bundesliga',
 		'kids'
 	] as const;
+
+	function process(text: string): string {
+		// replace all prices like 9,99 € with 9.99&nbsp;€
+		return text.replace(/(\d+),(\d+)\s€/g, '$1.$2&nbsp;€');
+	}
 </script>
 
 <div class="alignment">
@@ -70,14 +78,21 @@
 			</button>
 		{/if}
 		<div class="right_side">
-			<h1>{@html title}*</h1>
+			<h1>{@html process(title)}*</h1>
 			{#if enddate}
 				<h2>
 					<Enddate enddate={enddate.date} format={enddate.format} />
 				</h2>
 			{/if}
-			<h2 class="gray">{@html subtitle1}</h2>
-			<h3 class="no_gradient">{@html subtitle2}</h3>
+			{#if subtitle0}
+				<h2 class="blue">{@html process(subtitle0)}</h2>
+			{/if}
+			{#if subtitle1}
+				<h2 class="gray">{@html process(subtitle1)}</h2>
+			{/if}
+			{#if subtitle2}
+				<h3 class="no_gradient">{@html process(subtitle2)}</h3>
+			{/if}
 			{#if primary_image}
 				<ConditionalHref active={!!redirect_url} href={redirect_url}>
 					<img src={primary_image} alt="" class="primary_image" />
@@ -88,7 +103,7 @@
 				<div class="package_overview">
 					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
 						{@const path = `/images/assets/packages/normal/${asset.id}.png`}
-						<a href={`/angebote/${asset.id}`} >
+						<a href={`/angebote/${asset.id}`}>
 							<img src={path} alt={asset.id} out:send={{ key: path }} in:send={{ key: path }} />
 						</a>
 					{/each}

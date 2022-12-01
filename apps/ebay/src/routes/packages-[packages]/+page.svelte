@@ -29,10 +29,7 @@
 			[['entertainment', 'sport', 'bundesliga'], 'Titel'],
 			[['entertainment', 'cinema', 'sport'], 'Titel'],
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
-			[
-				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				'Sky Aktion: Entertainment Plus + 3 Pakete (Cinema, Sport und Fußball Bundesliga) für € 30 mtl. (inkl. Netflix & Paramount+)'
-			],
+			[['entertainment', 'sport', 'bundesliga', 'cinema'], 'Titel'],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
 			[['entertainmentplus', 'cinema'], 'Titel'],
@@ -42,9 +39,9 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				'Komplett inkl. Netflix nur € 35 mtl. inkl. € 100 Amazon Gutschein & € 20 Bonus'
+				'Sky Komplett Abo inkl. Netflix & Paramount+ für €&nbsp;30 mtl. Dazu €&nbsp;20 Bonus von uns'
 			],
-			['allgemein', 'Sky Abo nach Wahl inkl. €&nbsp;100 Amazon Gutschein ab 4 Paketen + €&nbsp;20 Bonus']
+			['allgemein', 'Sky Abo nach Wahl mit bis zu € 288 Sparvorteil. Dazu €&nbsp;20 Bonus von uns']
 		];
 		const title = titles.find(([p]) =>
 			typeof p === 'string'
@@ -63,10 +60,10 @@
 		<div class="text-center flex flex-col gap-2">
 			<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 			<ul class="text-red-600 text-xl">
-				<!-- <li>
-					+ Sky Cyberweek Aktion: Bei Buchung von mind. Entertainment + 3 Paketen ein €&nbsp;100
-					Amazon Gutschein
-				</li> -->
+				<li>
+					+ Sky Aktion: Entertainment Plus + 3 Pakete (Cinema, Sport und Fußball Bundesliga) für €
+					30 mtl. (inkl. Netflix & Paramount+)
+				</li>
 				{#if bonus > 0}
 					<li>
 						✓ Bonus von TAGARO: {@html bonus_string} Bonus on top bei erfolgreichem Vertragsabschluss
@@ -74,20 +71,20 @@
 				{/if}
 			</ul>
 			<p class="max-w-6xl mt-2">
-				Bei unserem Cyberweek Angebot erhalten alle Besteller von Sky bei Wahl von Entertainment +
-				mindestens 3 Paketen (Cinema, Sport und Fußball Bundesliga) zusätzlich einen €&nbsp;100
-				Amazon Gutschein von Sky. Zusätzlich überweisen wir Ihnen einen Bonus von €&nbsp;20. Der
-				Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche
-				Zubuchoptionen zu Ihrem Vertrag wie Multiscreen, Netflix, DAZN und UHD an. Ihre PAYBACK
-				Nummer für 500 Basis-Punkte tragen wir gerne für Sie ein. Über die PAYBACK App oder online
-				sind weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie
-				profitieren bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger
-				Erfahrung seit 2006.
+				Bei unserem neuen Angebot, erhalten Sie Entertainment Plus inkl. 3 Pakete (Cinema, Sport und
+				Fußball Bundesliga) für € 30 mtl. im ersten Jahr. Netflix und Paramount+ sind in diesem
+				Komplettangebot inklusive. Zusätzlich überweisen wir Ihnen einen Bonus von € 20. Der Empfang
+				ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche Zubuchoptionen zu
+				Ihrem Vertrag wie Multiscreen, Netflix, DAZN und UHD an. Ihre PAYBACK Nummer für 500
+				Basis-Punkte tragen wir gerne für Sie ein. Über die PAYBACK App oder online sind weitere
+				Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren bei
+				TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung seit
+				2006.
 			</p>
 		</div>
 		<img
 			class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-			src={make_url('/images/visuals/sky1122_teaser_cyberweek.png', dev)}
+			src={make_url('/images/visuals/sky1222_teaser_komplettoffer.png', dev)}
 			alt=""
 		/>
 		<div class="max-w-4xl w-full">

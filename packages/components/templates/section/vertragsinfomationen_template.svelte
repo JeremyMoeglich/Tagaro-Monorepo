@@ -111,65 +111,114 @@
 			jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem Monat zum
 			Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende Preise:
 		</p>
-		<p class="laufzeit">
-			Sky Entertainment für mtl. {@html get_price_string(['entertainment'], 'monat')} in Kombination
-			mit Sky Sport mtl.
-			{@html get_price_string(['entertainment', 'sport'], 'monat')}; Sky Cinema mtl. {@html get_price_string(
-				['entertainment', 'cinema'],
-				'monat'
-			)}; Sky Fußball-Bundesliga mtl. {@html get_price_string(
-				['entertainment', 'bundesliga'],
-				'monat'
-			)}; Sky Sport + Sky Cinema mtl. {@html get_price_string(
-				['entertainment', 'sport', 'cinema'],
-				'monat'
-			)}; Sky Sport + Sky Fußball-Bundesliga mtl. {@html get_price_string(
-				['entertainment', 'sport', 'bundesliga'],
-				'monat'
-			)}; Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
-				['entertainment', 'cinema', 'bundesliga'],
-				'monat'
-			)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
-				['entertainment', 'sport', 'cinema', 'bundesliga'],
-				'monat'
-			)}
-		</p>
-		<p class="laufzeit">
-			Sky Ultimate TV mit Entertainment inkl. Netflix mtl. {@html get_price_string(
-				['entertainmentplus'],
-				'monat'
-			)}
-			in Kombination mit Sky Sport mtl. {@html get_price_string(
-				['entertainmentplus', 'sport'],
-				'monat'
-			)}; Sky Cinema mtl. {@html get_price_string(['entertainmentplus', 'cinema'], 'monat')}; Sky
-			Fußball-Bundesliga mtl. {@html get_price_string(
-				['entertainmentplus', 'bundesliga'],
-				'monat'
-			)}; Sky Sport + Sky Cinema mtl. {@html get_price_string(
-				['entertainmentplus', 'sport', 'cinema'],
-				'monat'
-			)}; Sky Sport + Sky Fußball-Bundesliga mtl. {@html get_price_string(
-				['entertainmentplus', 'sport', 'bundesliga'],
-				'monat'
-			)}; Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
-				['entertainmentplus', 'cinema', 'bundesliga'],
-				'monat'
-			)}; Sky Sport + Sky Cinema + Sky Fußball-Bundesliga mtl. {@html get_price_string(
-				['entertainmentplus', 'cinema', 'bundesliga', 'sport'],
-				'monat'
-			)}
-		</p>
-		<p class="laufzeit">
-			Mit UHD zzgl. {@html get_price_string(['uhd'], 'monat')}; Multiscreen {@html get_price_string(
-				['multiscreen'],
-				'monat'
-			)}; Netflix Standard-Abo {@html get_price_string(['netflixstandard'], 'monat')}; Netflix
-			Premium-Abo {@html get_price_string(['netflixpremium'], 'monat')}, Sky Kids {@html get_price_string(
-				['kids'],
-				'monat'
-			)}
-		</p>
+		<div class="laufzeit">
+			<ul>
+				<li>
+					Entertainment für {@html get_price_string(['entertainment'], 'monat')} mtl.
+				</li>
+				<li>
+					Entertainment + Sky Sport für {@html get_price_string(
+						['entertainment', 'sport'],
+						'monat'
+					)} mtl.
+				</li>
+				<li>
+					Entertainment + Sky Cinema für {@html get_price_string(
+						['entertainment', 'cinema'],
+						'monat'
+					)} mtl.
+				</li>
+				<li>
+					Entertainment + Sky Fußball-Bundesliga für {@html get_price_string(
+						['entertainment', 'bundesliga'],
+						'monat'
+					)} mtl.
+				</li>
+				<li>
+					Entertainment + Sky Sport + Sky Cinema für {@html get_price_string(
+						['entertainment', 'sport', 'cinema'],
+						'monat'
+					)} mtl.
+				</li>
+				<li>
+					Entertainment + Sky Sport + Sky Fußball-Bundesliga für {@html get_price_string(
+						['entertainment', 'sport', 'bundesliga'],
+						'monat'
+					)} mtl.
+				</li>
+				<li>
+					Entertainment + Sky Cinema + Sky Fußball-Bundesliga für {@html get_price_string(
+						['entertainment', 'cinema', 'bundesliga'],
+						'monat'
+					)} mtl.
+				</li>
+				<li>
+					Entertainment + Sky Sport + Sky Cinema + Sky Fußball-Bundesliga für {@html get_price_string(
+						['entertainment', 'sport', 'cinema', 'bundesliga'],
+						'monat'
+					)} mtl.
+				</li>
+			</ul>
+		</div>
+		<ul class="laufzeit">
+			<li>
+				Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'monat')} mtl.
+			</li>
+			<li>
+				Entertainment Plus + Sky Sport für {@html get_price_string(
+					['entertainmentplus', 'sport'],
+					'monat'
+				)} mtl.
+			</li>
+			<li>
+				Entertainment Plus + Sky Cinema für {@html get_price_string(
+					['entertainmentplus', 'cinema'],
+					'monat'
+				)} mtl.
+			</li>
+			<li>
+				Entertainment Plus + Sky Fußball-Bundesliga für {@html get_price_string(
+					['entertainmentplus', 'bundesliga'],
+					'monat'
+				)} mtl.
+			</li>
+			<li>
+				Entertainment Plus + Sky Sport + Sky Fußball-Bundesliga für {@html get_price_string(
+					['entertainmentplus', 'sport', 'bundesliga'],
+					'monat'
+				)} mtl.
+			</li>
+			<li>
+				Entertainment Plus + Sky Sport + Sky Cinema für {@html get_price_string(
+					['entertainmentplus', 'sport', 'cinema'],
+					'monat'
+				)} mtl.
+			</li>
+
+			<li>
+				Entertainment Plus + Sky Cinema + Sky Fußball-Bundesliga für {@html get_price_string(
+					['entertainmentplus', 'cinema', 'bundesliga'],
+					'monat'
+				)} mtl.
+			</li>
+			<li>
+				Entertainment Plus + Sky Sport + Sky Cinema + Sky Fußball-Bundesliga für {@html get_price_string(
+					['entertainmentplus', 'cinema', 'bundesliga', 'sport'],
+					'monat'
+				)} mtl.
+			</li>
+		</ul>
+		<ul class="laufzeit">
+			<li>Mit UHD {@html get_price_string(['uhd'], 'monat')} mtl.</li>
+			<li>Multiscreen {@html get_price_string(['multiscreen'], 'monat')} mtl.</li>
+			<li>
+				Netflix Standard-Abo, HD/2 Geräte (+{@html get_price_string(['netflixstandard'], 'monat')} mtl.)
+			</li>
+			<li>
+				Netflix Premium-Abo, UHD/4 Geräte (+{@html get_price_string(['netflixpremium'], 'monat')} mtl.)
+			</li>
+			<li>Sky Kids {@html get_price_string(['kids'], 'monat')} mtl.</li>
+		</ul>
 	</div>
 	<div>
 		<h3 class={title_classes}>Sky Entertainment Plus:</h3>

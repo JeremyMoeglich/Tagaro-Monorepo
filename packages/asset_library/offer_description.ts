@@ -144,8 +144,8 @@ export const offer_descriptions: offer_descriptions_type = [
 		aktivierung: 0,
 		conditions: [],
 		bonus: 20,
-		short_text: text_descriptions,
-		long_text: text_descriptions,
+		short_text: '',
+		long_text: '',
 		actions: [],
 		overwrites: [
 			[['entertainment'], { jahr: 16.5 }],

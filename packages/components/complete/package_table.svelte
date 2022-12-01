@@ -18,28 +18,33 @@
 	}
 
 	function is_combination(packages1: readonly package_id[], packages2: readonly package_id[]) {
-		return sorted(packages1).join(',') === sorted(packages2).join(',');
+		const s1 = sorted(packages1).join(',');
+		const s2 = sorted(packages2).join(',');
+		return s1 === s2;
 	}
 
-	let rows: (string | readonly package_id[])[];
-	$: rows = typed_entries(base_premium_package_combinations).flatMap(
-		([base, { title, combinations }]) => [
-			title,
-			...combinations.filter(c => {
-				!([
-					['entertainment', 'sport'],
-					['entertainment', 'bundesliga'],
-					['entertainment', 'sport', 'bundesliga'],
-					
-					['entertainmentplus'],
-					['entertainmentplus', 'sport'],
-					['entertainmentplus', 'cinema'],
-					['entertainmentplus', 'bundesliga'],
-					['entertainmentplus', 'sport', 'cinema', 'bundesliga'],
-				] satisfies package_id[][]).every(p => !is_combination(c, p));
-			}).map((combination) => [base, ...combination])
-		]
-	);
+	const rows: (string | readonly package_id[])[] = typed_entries(
+		base_premium_package_combinations
+	).flatMap(([base, { title, combinations }]) => [
+		title,
+		...combinations
+			.map((combination) => [base, ...combination])
+			.filter((c) =>
+				(
+					[
+						['entertainment', 'sport'],
+						['entertainment', 'bundesliga'],
+						['entertainment', 'sport', 'bundesliga'],
+
+						['entertainmentplus'],
+						['entertainmentplus', 'sport'],
+						['entertainmentplus', 'cinema'],
+						['entertainmentplus', 'bundesliga'],
+						['entertainmentplus', 'sport', 'cinema', 'bundesliga']
+					] satisfies package_id[][]
+				).some((p) => is_combination(c, p))
+			)
+	]);
 
 	// let tables: Record<string, readonly (readonly package_id[])[]>;
 	// $: tables = typed_from_entries(

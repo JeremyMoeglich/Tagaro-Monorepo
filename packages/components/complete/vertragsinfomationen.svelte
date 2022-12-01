@@ -11,7 +11,7 @@
 	</p>
 </VertragsinfomationenTemplate> -->
 
-<VertragsinfomationenTemplate>
+<!-- <VertragsinfomationenTemplate>
 	<h3 class="marked">Amazon Gutschein von Sky:</h3>
 	<p>
 		Bei der Buchung von mindestens Sky Entertainment, Sky Cinema, Sky Sport und Sky
@@ -20,6 +20,20 @@
 		Zahlungseingangs bei Sky, in Form eines digitalen Gutscheincodes ca. 6 - 8 Wochen nach
 		Abonnementvertragsabschluss von Sky elektronisch versendet. Die Einlösung des Gutscheins ist bis
 		zum 30.4.2023 befristet. Es gelten die Amazon-Gutscheinbedingungen.
+	</p>
+</VertragsinfomationenTemplate> -->
+
+<VertragsinfomationenTemplate>
+	<h3 class="marked">Sky Cinema Paket / Paramount+</h3>
+	<p>
+		Voraussetzung ist ein Sky Abonnement mit gebuchtem Sky Cinema Paket. Ausgenommen sind Sky Kunden
+		mit gewerblichem Abonnement und Sky Ticket / WOW / Sky X Abonnement sowie Sky Abonnements mit
+		TV-Empfang via T-Mobile Austria (Magenta). Der Aktivierungscode berechtigt zur Registrierung
+		beim Paramount+ Streamingdienst. Solange das Sky Cinema Paket Bestandteil des Sky Abonnements
+		ist, besteht auch die Berechtigung zum Bezug des Paramount+ Streamingdienst. Mit Wegfall des Sky
+		Cinema Pakets, endet auch die Berechtigung für den Paramount+ Streamingdienst automatisch.
+		Mindestalter zur Teilnahme: 18 Jahre. Empfohlene Bandbreite 1 Mbit/s für SD-Qualität, 6 Mbit/s
+		für HD-Qualität.
 	</p>
 </VertragsinfomationenTemplate>
 
