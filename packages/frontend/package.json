@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"dependencies": {
 		"@types/js-cookie": "^3.0.2",
-		"@types/uuid": "^8.3.4",
+		"@types/uuid": "^9.0.0",
 		"firebase": "^9.14.0",
 		"functional-utilities": "^1.18.0",
 		"js-cookie": "^3.0.1",

@@ -3,7 +3,7 @@
 </script>
 
 <div class="outer_alignment">
-	<a href="/angebote" data-sveltekit-prefetch>
+	<a href="/angebote" >
 		<div class="alignment">
 			<h2>Schnell und einfach Sky abonnieren!</h2>
 			<p>

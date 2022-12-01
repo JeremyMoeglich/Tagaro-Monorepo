@@ -13,11 +13,31 @@
 
 	const col_amount = max_combination_length + 1;
 
+	function sorted(arr: readonly unknown[]): unknown[] {
+		return [...arr].sort();
+	}
+
+	function is_combination(packages1: readonly package_id[], packages2: readonly package_id[]) {
+		return sorted(packages1).join(',') === sorted(packages2).join(',');
+	}
+
 	let rows: (string | readonly package_id[])[];
 	$: rows = typed_entries(base_premium_package_combinations).flatMap(
 		([base, { title, combinations }]) => [
 			title,
-			...combinations.map((combination) => [base, ...combination])
+			...combinations.filter(c => {
+				!([
+					['entertainment', 'sport'],
+					['entertainment', 'bundesliga'],
+					['entertainment', 'sport', 'bundesliga'],
+					
+					['entertainmentplus'],
+					['entertainmentplus', 'sport'],
+					['entertainmentplus', 'cinema'],
+					['entertainmentplus', 'bundesliga'],
+					['entertainmentplus', 'sport', 'cinema', 'bundesliga'],
+				] satisfies package_id[][]).every(p => !is_combination(c, p));
+			}).map((combination) => [base, ...combination])
 		]
 	);
 

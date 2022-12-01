@@ -142,30 +142,29 @@ export const offer_descriptions: offer_descriptions_type = [
 	{
 		id: 'opt1',
 		aktivierung: 0,
-		conditions: [
-			{
-				set: 'premium',
-				min_amount: 3,
-				inverted: false
-			}
-		],
+		conditions: [],
 		bonus: 20,
 		short_text: text_descriptions,
 		long_text: text_descriptions,
 		actions: [],
 		overwrites: [
-			[
-				['entertainment', 'sport', 'cinema', 'bundesliga'],
-				{
-					jahr: 30
-				}
-			],
-			[
-				['entertainmentplus', 'sport', 'cinema', 'bundesliga'],
-				{
-					jahr: 35
-				}
-			]
+			[['entertainment'], { jahr: 16.5 }],
+			[['entertainment', 'sport'], { jahr: 23 }],
+			[['entertainment', 'cinema'], { jahr: 27.5 }],
+			[['entertainment', 'bundesliga'], { jahr: 20 }],
+			[['entertainment', 'sport', 'bundesliga'], { jahr: 25 }],
+			[['entertainment', 'cinema', 'sport'], { jahr: 34 }],
+			[['entertainment', 'cinema', 'bundesliga'], { jahr: 41.5 }],
+			[['entertainment', 'cinema', 'sport', 'bundesliga'], { jahr: 30 }],
+
+			[['entertainmentplus'], { jahr: 15 }],
+			[['entertainmentplus', 'sport'], { jahr: 29 }],
+			[['entertainmentplus', 'cinema'], { jahr: 25 }],
+			[['entertainmentplus', 'bundesliga'], { jahr: 25 }],
+			[['entertainmentplus', 'sport', 'bundesliga'], { jahr: 30 }],
+			[['entertainmentplus', 'cinema', 'sport'], { jahr: 40 }],
+			[['entertainmentplus', 'cinema', 'bundesliga'], { jahr: 47.5 }],
+			[['entertainmentplus', 'cinema', 'sport', 'bundesliga'], { jahr: 30 }]
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
 	}
@@ -180,45 +179,7 @@ export const empty_offer: offer_description_type = {
 	long_text: '',
 	actions: [],
 	route: aboformular,
-	overwrites: [
-		[
-			['entertainment', 'bundesliga'],
-			{
-				jahr: 20
-			}
-		],
-		[
-			['entertainment', 'sport', 'bundesliga'],
-			{
-				jahr: 25
-			}
-		],
-
-		[
-			['entertainmentplus'],
-			{
-				jahr: 15
-			}
-		],
-		[
-			['entertainmentplus', 'cinema'],
-			{
-				jahr: 25
-			}
-		],
-		[
-			['entertainmentplus', 'bundesliga'],
-			{
-				jahr: 30
-			}
-		],
-		[
-			['entertainmentplus', 'sport', 'bundesliga'],
-			{
-				jahr: 35
-			}
-		]
-	]
+	overwrites: []
 };
 
 export const indexed_offers = index_by(offer_descriptions, 'id');

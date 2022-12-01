@@ -71,7 +71,7 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 		},
 		{
 			id: 'multiscreen',
-			price: 10,
+			price: 5, //10,
 			name: 'Multiscreen',
 			note: '[TODO]',
 			image: `${zubuchoption_image_location}multiscreen.png`

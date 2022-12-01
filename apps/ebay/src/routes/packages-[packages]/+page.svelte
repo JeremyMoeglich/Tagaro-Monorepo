@@ -31,7 +31,7 @@
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				'Das Beste von Sky für nur € 30 mtl. + € 100 Amazon Gutschein & € 20 Bonus'
+				'Sky Aktion: Entertainment Plus + 3 Pakete (Cinema, Sport und Fußball Bundesliga) für € 30 mtl. (inkl. Netflix & Paramount+)'
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
@@ -63,13 +63,13 @@
 		<div class="text-center flex flex-col gap-2">
 			<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 			<ul class="text-red-600 text-xl">
-				<li>
+				<!-- <li>
 					+ Sky Cyberweek Aktion: Bei Buchung von mind. Entertainment + 3 Paketen ein €&nbsp;100
 					Amazon Gutschein
-				</li>
+				</li> -->
 				{#if bonus > 0}
 					<li>
-						+ Bonus von TAGARO: {@html bonus_string} Bonus on top bei erfolgreichem Vertragsabschluss
+						✓ Bonus von TAGARO: {@html bonus_string} Bonus on top bei erfolgreichem Vertragsabschluss
 					</li>
 				{/if}
 			</ul>

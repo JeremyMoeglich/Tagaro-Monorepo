@@ -88,7 +88,7 @@
 				<div class="package_overview">
 					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
 						{@const path = `/images/assets/packages/normal/${asset.id}.png`}
-						<a href={`/angebote/${asset.id}`} data-sveltekit-prefetch>
+						<a href={`/angebote/${asset.id}`} >
 							<img src={path} alt={asset.id} out:send={{ key: path }} in:send={{ key: path }} />
 						</a>
 					{/each}

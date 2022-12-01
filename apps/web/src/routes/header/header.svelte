@@ -26,7 +26,7 @@
 						{#if pair[1] instanceof Object}
 							{#if 'index' in pair[1]}
 								<a
-									data-sveltekit-prefetch
+									
 									class={`nav_element nav_element_hover ${
 										$page.url.pathname === pair[1]['index'] ? 'current_route' : ''
 									}`}
@@ -42,7 +42,7 @@
 							{/if}
 						{:else}
 							<a
-								data-sveltekit-prefetch
+								
 								title={pair[0] + ' öffnen'}
 								class={`nav_element nav_element_hover ${
 									$page.url.pathname === pair[1] ? 'current_route' : ''
@@ -83,7 +83,7 @@
 												{#if subtab[0] != 'index'}
 													<button class="selectable_element" on:click={deselect}>
 														<a
-															data-sveltekit-prefetch
+															
 															class="context_menu_element nav_element_hover"
 															href={subtab[1]}
 															title={subtab[0] + ' öffnen'}
