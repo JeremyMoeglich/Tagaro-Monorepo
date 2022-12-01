@@ -117,43 +117,43 @@
 					Entertainment für {@html get_price_string(['entertainment'], 'monat')} mtl.
 				</li>
 				<li>
-					Entertainment + Sky Sport für {@html get_price_string(
+					Entertainment + Sport für {@html get_price_string(
 						['entertainment', 'sport'],
 						'monat'
 					)} mtl.
 				</li>
 				<li>
-					Entertainment + Sky Cinema für {@html get_price_string(
+					Entertainment + Cinema für {@html get_price_string(
 						['entertainment', 'cinema'],
 						'monat'
 					)} mtl.
 				</li>
 				<li>
-					Entertainment + Sky Fußball-Bundesliga für {@html get_price_string(
+					Entertainment + Fußball-Bundesliga für {@html get_price_string(
 						['entertainment', 'bundesliga'],
 						'monat'
 					)} mtl.
 				</li>
 				<li>
-					Entertainment + Sky Sport + Sky Cinema für {@html get_price_string(
+					Entertainment + Sport + Cinema für {@html get_price_string(
 						['entertainment', 'sport', 'cinema'],
 						'monat'
 					)} mtl.
 				</li>
 				<li>
-					Entertainment + Sky Sport + Sky Fußball-Bundesliga für {@html get_price_string(
+					Entertainment + Sport + Fußball-Bundesliga für {@html get_price_string(
 						['entertainment', 'sport', 'bundesliga'],
 						'monat'
 					)} mtl.
 				</li>
 				<li>
-					Entertainment + Sky Cinema + Sky Fußball-Bundesliga für {@html get_price_string(
+					Entertainment + Cinema + Fußball-Bundesliga für {@html get_price_string(
 						['entertainment', 'cinema', 'bundesliga'],
 						'monat'
 					)} mtl.
 				</li>
 				<li>
-					Entertainment + Sky Sport + Sky Cinema + Sky Fußball-Bundesliga für {@html get_price_string(
+					Entertainment + Sport + Cinema + Fußball-Bundesliga für {@html get_price_string(
 						['entertainment', 'sport', 'cinema', 'bundesliga'],
 						'monat'
 					)} mtl.
@@ -165,44 +165,44 @@
 				Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'monat')} mtl.
 			</li>
 			<li>
-				Entertainment Plus + Sky Sport für {@html get_price_string(
+				Entertainment Plus + Sport für {@html get_price_string(
 					['entertainmentplus', 'sport'],
 					'monat'
 				)} mtl.
 			</li>
 			<li>
-				Entertainment Plus + Sky Cinema für {@html get_price_string(
+				Entertainment Plus + Cinema für {@html get_price_string(
 					['entertainmentplus', 'cinema'],
 					'monat'
 				)} mtl.
 			</li>
 			<li>
-				Entertainment Plus + Sky Fußball-Bundesliga für {@html get_price_string(
+				Entertainment Plus + Fußball-Bundesliga für {@html get_price_string(
 					['entertainmentplus', 'bundesliga'],
 					'monat'
 				)} mtl.
 			</li>
 			<li>
-				Entertainment Plus + Sky Sport + Sky Fußball-Bundesliga für {@html get_price_string(
+				Entertainment Plus + Sport + Fußball-Bundesliga für {@html get_price_string(
 					['entertainmentplus', 'sport', 'bundesliga'],
 					'monat'
 				)} mtl.
 			</li>
 			<li>
-				Entertainment Plus + Sky Sport + Sky Cinema für {@html get_price_string(
+				Entertainment Plus + Sport + Cinema für {@html get_price_string(
 					['entertainmentplus', 'sport', 'cinema'],
 					'monat'
 				)} mtl.
 			</li>
 
 			<li>
-				Entertainment Plus + Sky Cinema + Sky Fußball-Bundesliga für {@html get_price_string(
+				Entertainment Plus + Cinema + Fußball-Bundesliga für {@html get_price_string(
 					['entertainmentplus', 'cinema', 'bundesliga'],
 					'monat'
 				)} mtl.
 			</li>
 			<li>
-				Entertainment Plus + Sky Sport + Sky Cinema + Sky Fußball-Bundesliga für {@html get_price_string(
+				Entertainment Plus + Sport + Cinema + Fußball-Bundesliga für {@html get_price_string(
 					['entertainmentplus', 'cinema', 'bundesliga', 'sport'],
 					'monat'
 				)} mtl.

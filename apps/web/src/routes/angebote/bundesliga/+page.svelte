@@ -10,7 +10,7 @@
 		<BundesligaOverview animated show_price />
 		<BundesligaSenders />
 		<EntertainmentSenders />
-		<Inklusive />
+		<Inklusive version={"tagaro"} />
 	</div>
 </div>
 

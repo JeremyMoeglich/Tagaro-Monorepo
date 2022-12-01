@@ -24,7 +24,7 @@
 </VertragsinfomationenTemplate> -->
 
 <VertragsinfomationenTemplate>
-	<h3 class="marked">Sky Cinema Paket / Paramount+</h3>
+	<h3 class="light">Sky Cinema Paket / Paramount+</h3>
 	<p>
 		Voraussetzung ist ein Sky Abonnement mit gebuchtem Sky Cinema Paket. Ausgenommen sind Sky Kunden
 		mit gewerblichem Abonnement und Sky Ticket / WOW / Sky X Abonnement sowie Sky Abonnements mit

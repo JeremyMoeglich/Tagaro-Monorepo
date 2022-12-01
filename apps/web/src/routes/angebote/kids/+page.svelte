@@ -11,7 +11,7 @@
 		<KidsOverview animated show_price />
 		<KidsSenders />
 		<EntertainmentSenders />
-		<Inklusive />
+		<Inklusive version={"tagaro"} />
 	</div>
 </div>
 

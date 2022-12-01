@@ -31,6 +31,8 @@
 	export let primary_image: undefined | string = undefined;
 	export let side_images: string[] = [];
 	export let redirect_url: string | undefined = undefined;
+	export let hide_left: boolean = false;
+	export let top_margin: number = 10;
 
 	export let buttons: {
 		text: string;
@@ -58,9 +60,9 @@
 	}
 </script>
 
-<div class="alignment">
+<div class="alignment" style:margin-top={`${top_margin}px`}>
 	<div class="side_alignment">
-		{#if !primary_image}
+		{#if !primary_image && !hide_left}
 			<button class="left_side" on:click={async () => load_form('Showcase_images')}>
 				{#each left_badges as badge}
 					<img src={badge} alt="" class="wrap_add" />
@@ -78,21 +80,30 @@
 			</button>
 		{/if}
 		<div class="right_side">
-			<h1>{@html process(title)}*</h1>
-			{#if enddate}
-				<h2>
-					<Enddate enddate={enddate.date} format={enddate.format} />
-				</h2>
-			{/if}
-			{#if subtitle0}
-				<h2 class="blue">{@html process(subtitle0)}</h2>
-			{/if}
-			{#if subtitle1}
-				<h2 class="gray">{@html process(subtitle1)}</h2>
-			{/if}
-			{#if subtitle2}
-				<h3 class="no_gradient">{@html process(subtitle2)}</h3>
-			{/if}
+			<div class="text_side">
+				<div>
+					{#if hide_left}
+						<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
+					{/if}
+				</div>
+				<div>
+					<h1>{@html process(title)}*</h1>
+					{#if enddate}
+						<h2>
+							<Enddate enddate={enddate.date} format={enddate.format} />
+						</h2>
+					{/if}
+					{#if subtitle0}
+						<h2 class="blue">{@html process(subtitle0)}</h2>
+					{/if}
+					{#if subtitle1}
+						<h2 class="gray">{@html process(subtitle1)}</h2>
+					{/if}
+					{#if subtitle2}
+						<h3 class="no_gradient">{@html process(subtitle2)}</h3>
+					{/if}
+				</div>
+			</div>
 			{#if primary_image}
 				<ConditionalHref active={!!redirect_url} href={redirect_url}>
 					<img src={primary_image} alt="" class="primary_image" />
@@ -138,7 +149,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 10px;
 		margin-bottom: 70px;
 	}
 	.side_bottom_images {
@@ -234,7 +244,8 @@
 		}
 	}
 	h1 {
-		margin-bottom: 5px;
+		margin-bottom: 0px;
+		padding-bottom: 0px !important;
 	}
 	h2 {
 		margin-bottom: 10px;
@@ -243,6 +254,7 @@
 	h3 {
 		color: #868686;
 		margin-top: 0px;
+		margin-bottom: 20px;
 	}
 	h1,
 	h2,
@@ -256,5 +268,15 @@
 
 	.side_bottom_images {
 		text-align: center;
+		img {
+			padding: 10px;
+		}
+	}
+	.text_side {
+		display: flex;
+		gap: 50px;
+		img {
+			width: 150px;
+		}
 	}
 </style>

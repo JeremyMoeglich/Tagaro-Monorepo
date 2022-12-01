@@ -11,6 +11,8 @@
 	export let discovery = true;
 	export let space = '70px';
 
+	export let version: "tagaro" | "ebay"
+
 	const title_class = 'light';
 </script>
 
@@ -56,10 +58,11 @@
 				<img
 					src={make_url('/images/visuals/sky_22-11_paramount-preregistration_v2.webp', dev)}
 					alt=""
+					class:tagaro={version === "tagaro"}
 				/>
 			</span>
 			<span slot="right">
-				<h3 class={title_class}>Das erwartet dich mit Paramount+</h3>
+				<h3 class={title_class}>Paramount+ für alle Sky Cinema Kunden mit diesen Inhalten</h3>
 				<ul>
 					<li>✓ Grandiose Hollywood-Blockbuster</li>
 					<li>✓ Exklusive Originals</li>
@@ -150,5 +153,8 @@
 	}
 	h3 {
 		margin-bottom: 15px;
+	}
+	.tagaro {
+		padding: 25px;
 	}
 </style>

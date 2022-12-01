@@ -29,6 +29,7 @@
 	}
 	.primary {
 		max-width: 800px;
+		width: 100%;
 	}
 	.secondary {
 		width: 600px;

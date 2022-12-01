@@ -39,9 +39,9 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo inkl. Netflix & Paramount+ für €&nbsp;30 mtl. Dazu €&nbsp;20 Bonus von uns'
+				'Sky Komplett Abo inkl. Netflix & Paramount+ für €&nbsp;30 mtl. Dazu €&nbsp;20 Bonus von uns*'
 			],
-			['allgemein', 'Sky Abo nach Wahl mit bis zu € 288 Sparvorteil. Dazu €&nbsp;20 Bonus von uns']
+			['allgemein', 'Sky Abo nach Wahl mit bis zu € 288 Sparvorteil. Dazu €&nbsp;20 Bonus von uns*']
 		];
 		const title = titles.find(([p]) =>
 			typeof p === 'string'
@@ -61,8 +61,8 @@
 			<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 			<ul class="text-red-600 text-xl">
 				<li>
-					+ Sky Aktion: Entertainment Plus + 3 Pakete (Cinema, Sport und Fußball Bundesliga) für €
-					30 mtl. (inkl. Netflix & Paramount+)
+					✓ Sky Aktion: Entertainment Plus inkl. Netflix + 3 Pakete (Cinema, Sport & Fußball Bundesliga) für €
+					30 mtl.
 				</li>
 				{#if bonus > 0}
 					<li>
@@ -75,8 +75,8 @@
 				Fußball Bundesliga) für € 30 mtl. im ersten Jahr. Netflix und Paramount+ sind in diesem
 				Komplettangebot inklusive. Zusätzlich überweisen wir Ihnen einen Bonus von € 20. Der Empfang
 				ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche Zubuchoptionen zu
-				Ihrem Vertrag wie Multiscreen, Netflix, DAZN und UHD an. Ihre PAYBACK Nummer für 500
-				Basis-Punkte tragen wir gerne für Sie ein. Über die PAYBACK App oder online sind weitere
+				Ihrem Vertrag wie Multiscreen, DAZN & UHD an. Ihre PAYBACK Nummer für 500
+				Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind weitere
 				Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren bei
 				TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung seit
 				2006.
@@ -106,7 +106,7 @@
 			</p>
 		</Block>
 		<AllOverviews clickable={false} ebay_version={true} />
-		<Inklusive sky_q={false} space={'0px'} />
+		<Inklusive sky_q={false} space={'0px'} version={"ebay"} />
 		<div>
 			<Line />
 			<div class="max-w-6xl mt-12 ml-auto mr-auto flex flex-col gap-7 items-center">

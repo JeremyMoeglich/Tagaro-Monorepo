@@ -10,7 +10,7 @@
 		<SportOverview animated show_price />
 		<SportSenders />
 		<EntertainmentSenders />
-		<Inklusive />
+		<Inklusive version={"tagaro"} />
 	</div>
 </div>
 

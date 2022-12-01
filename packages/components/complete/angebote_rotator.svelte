@@ -9,41 +9,36 @@
 		route: string;
 	}> = [
 		{
-			title: `2 Sky Pakete nach Wahl + ${bonus_string} Prämie`,
+			title: `Entertainment + Sport + ${bonus_string} Prämie`,
 			package_ids: [`entertainment`, `sport`],
-			route: `/angebote/2_pakete`
+			route: `/angebote/sport`
 		},
 		{
-			title: `Sky Entertainment Paket + ${bonus_string} Prämie`,
-			package_ids: [`entertainment`],
+			title: `Entertainment Plus Paket inkl. Netflix + ${bonus_string} Prämie`,
+			package_ids: [`entertainmentplus`],
 			route: `/angebote/entertainmentplus`
 		},
 		{
-			title: `3 Sky Pakete nach Wahl + ${bonus_string} Prämie`,
-			package_ids: [`entertainment`, `sport`, `cinema`],
-			route: `/angebote/3_pakete`
+			title: `Entertainment + Sport + Bundesliga + ${bonus_string} Prämie`,
+			package_ids: [`entertainment`, `sport`, `bundesliga`],
+			route: `/angebote/sport_bundesliga`
 		},
 
 		{
-			title: `Alle 4 Sky Pakete + ${bonus_string} Prämie`,
-			package_ids: [`entertainment`, `cinema`, `sport`, `bundesliga`],
+			title: `Entertainment Plus inkl. Netflix + 3 Pakete + ${bonus_string} Prämie`,
+			package_ids: [`entertainmentplus`, `cinema`, `sport`, `bundesliga`],
 			route: `/angebote/4_oder_mehr_pakete`
 		},
 
 		{
-			title: `Entertainment Plus + Cinema Paket + ${bonus_string} Prämie`,
+			title: `Entertainment Plus inkl. Netflix + Cinema Paket + ${bonus_string} Prämie`,
 			package_ids: [`entertainmentplus`, `cinema`],
 			route: `/angebote/cinema`
 		},
 
-		{
-			title: `Entertainment + Sport Paket + ${bonus_string} Prämie`,
-			package_ids: [`entertainment`, `sport`],
-			route: `/angebote/sport`
-		},
 
 		{
-			title: `Entertainment + Fußball Bundesliga Paket + ${bonus_string} Prämie`,
+			title: `Entertainment + Fußball Bundesliga + ${bonus_string} Prämie`,
 			package_ids: [`entertainment`, `bundesliga`],
 			route: `/angebote/bundesliga`
 		}

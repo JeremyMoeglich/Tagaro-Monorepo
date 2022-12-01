@@ -11,7 +11,7 @@
 		<CinemaOverview animated show_price />
 		<CinemaSenders />
 		<EntertainmentSenders />
-		<Inklusive />
+		<Inklusive version={"tagaro"} />
 	</div>
 </div>
 

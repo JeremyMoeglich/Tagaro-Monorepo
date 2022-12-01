@@ -24,7 +24,7 @@
 			'Sky Fußball-Bundesliga': '/angebote/bundesliga',
 			'Sky Cinema': '/angebote/cinema',
 			'2 Sky Wunschpakete': '/angebote/2_pakete',
-			'3 Sky Wunschpakete': '/angebote/3_pakete',
+			'3 Sky Wunschpakete': '/angebote/sport_bundesliga',
 			'4 Sky Pakete oder mehr': '/angebote/4_oder_mehr_pakete',
 			'Sky Entertainment': '/angebote/entertainment'
 		},

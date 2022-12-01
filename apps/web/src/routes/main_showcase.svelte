@@ -8,13 +8,14 @@
 <ShowcaseTemplate
 	title={`Alles von Sky inkl. Paramount+ und Netflix für € 30 mtl.`}
 	subtitle0={`Komplettpreis inkl. Netflix statt € 54 mtl. im ersten Jahr.`}
-	subtitle2={null}
 	redirect_url={'/angebote/4_oder_mehr_pakete/'}
+	hide_left={true}
 	points={[
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
 		`Entertainment Plus + 3 Pakete jetzt nur € 30 mtl. im Jahres-Abo, danach € 66,50 mtl.*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
+	top_margin={20}
 />
 
 <!-- <ShowcaseTemplate

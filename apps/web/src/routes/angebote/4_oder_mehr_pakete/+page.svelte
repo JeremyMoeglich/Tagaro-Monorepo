@@ -6,7 +6,7 @@
 
 <div class="alignment">
 	<Overview4 />
-	<Inklusive />
+	<Inklusive version={"tagaro"} />
 	<AllOverviews ebay_version={false} />
 </div>
 

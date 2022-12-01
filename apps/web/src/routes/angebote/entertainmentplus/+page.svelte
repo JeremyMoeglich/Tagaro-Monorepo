@@ -8,7 +8,7 @@
 	<div class="alignment">
 		<EntertainmentPlusOverview animated show_price />
 		<EntertainmentSenders />
-		<Inklusive />
+		<Inklusive version={"tagaro"} />
 	</div>
 </div>
 

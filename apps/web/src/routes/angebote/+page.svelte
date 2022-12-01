@@ -9,5 +9,5 @@
 	<AngeboteRotator />
 	<AlleBuchbar />
 	<AllOverviews ebay_version={false} />
-	<Inklusive />
+	<Inklusive version={"tagaro"} />
 </div>
