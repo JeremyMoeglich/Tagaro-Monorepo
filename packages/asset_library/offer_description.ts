@@ -42,6 +42,8 @@ export const offer_ids = ['opt1'] as const;
 
 export type offer_id = typeof offer_ids[number];
 
+const text_descriptions  = '✓ {savings} Preisvorteil'
+
 export const offer_descriptions: offer_descriptions_type = [
 	/*{
 		id: '20alles',
@@ -142,26 +144,18 @@ export const offer_descriptions: offer_descriptions_type = [
 		aktivierung: 0,
 		conditions: [],
 		bonus: 20,
-		short_text: '',
-		long_text: '',
+		short_text: text_descriptions,
+		long_text: text_descriptions,
 		actions: [],
 		overwrites: [
-			[['entertainment'], { jahr: 16.5 }],
-			[['entertainment', 'sport'], { jahr: 23 }],
-			[['entertainment', 'cinema'], { jahr: 27.5 }],
 			[['entertainment', 'bundesliga'], { jahr: 20 }],
 			[['entertainment', 'sport', 'bundesliga'], { jahr: 25 }],
-			[['entertainment', 'cinema', 'sport'], { jahr: 34 }],
-			[['entertainment', 'cinema', 'bundesliga'], { jahr: 41.5 }],
 			[['entertainment', 'cinema', 'sport', 'bundesliga'], { jahr: 30 }],
 
 			[['entertainmentplus'], { jahr: 15 }],
-			[['entertainmentplus', 'sport'], { jahr: 29 }],
 			[['entertainmentplus', 'cinema'], { jahr: 25 }],
 			[['entertainmentplus', 'bundesliga'], { jahr: 25 }],
 			[['entertainmentplus', 'sport', 'bundesliga'], { jahr: 30 }],
-			[['entertainmentplus', 'cinema', 'sport'], { jahr: 40 }],
-			[['entertainmentplus', 'cinema', 'bundesliga'], { jahr: 47.5 }],
 			[['entertainmentplus', 'cinema', 'sport', 'bundesliga'], { jahr: 30 }]
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'

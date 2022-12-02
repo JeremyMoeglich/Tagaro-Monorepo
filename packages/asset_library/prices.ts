@@ -10,7 +10,7 @@ import { asset_sets } from './sets';
 import { zubuchoption_ids } from './assets/zubuchoptionen';
 import type { zubuchoption_id } from './assets/zubuchoptionen';
 
-function to_price_string(v: number): string {
+export function to_price_string(v: number): string {
 	let str = '€&nbsp' + v.toFixed(2).replace('.', ',');
 	if (str.endsWith(',00')) {
 		str = str.slice(0, -3);
@@ -90,7 +90,12 @@ function chose_offer(assets: ReadonlyArray<priceable_asset_id>): offer_id | unde
 				get_offer_price(offer_id ? indexed_offers[offer_id] : empty_offer, assets)
 			] as const
 	);
-	return minBy(prices, ([, price]) => price.jahr)[0];
+	const base_price = get_offer_price(empty_offer, assets);
+	const min = minBy(prices, ([, price]) => price.jahr);
+	if (base_price.jahr <= min[1].jahr) {
+		return undefined;
+	}
+	return min[0];
 }
 
 export function get_price(assets: ReadonlyArray<priceable_asset_id>): Price {
@@ -119,18 +124,19 @@ export function sort_by_price(lst: Array<priceable_asset_id>): Array<priceable_a
 
 function get_offer_savings_string(
 	offer: offer_description_type,
-	packages: ReadonlyArray<package_id>
+	ids: ReadonlyArray<priceable_asset_id>
 ): string {
 	return to_price_string(
-		(get_offer_price(empty_offer, packages).jahr - get_offer_price(offer, packages).jahr) * 12
+		(get_offer_price(empty_offer, ids).jahr - get_offer_price(offer, ids).jahr) * 12
 	);
 }
-export function get_savings_string(packages: ReadonlyArray<package_id>): string {
-	const chosen_offer = chose_offer(packages);
+
+export function get_savings_string(ids: ReadonlyArray<priceable_asset_id>): string {
+	const chosen_offer = chose_offer(ids);
 	if (chosen_offer === undefined) {
 		return to_price_string(0);
 	}
-	return get_offer_savings_string(indexed_offers[chosen_offer], packages);
+	return get_offer_savings_string(indexed_offers[chosen_offer], ids);
 }
 
 export function get_offer_note(packages: ReadonlyArray<package_id>, long = false): string {

@@ -17,10 +17,12 @@ export type package_id = typeof package_ids[number];
 
 const packages_image_location = '/images/assets/packages/';
 
+
+
 export const packages_assets = dynamic_to_static_assets([
 	{
 		id: 'entertainment',
-		price: { jahr: 14.5, monat: 19, singular: 0 },
+		price: { jahr: 16.5, monat: 19, singular: 0 },
 		name: 'Entertainment',
 		note: 'Exklusives Entertainment ohne Ende.',
 		image: {
@@ -40,7 +42,7 @@ export const packages_assets = dynamic_to_static_assets([
 	},
 	{
 		id: 'entertainmentplus',
-		price: { jahr: 20, monat: 27.5, singular: 0 },
+		price: { jahr: 22.5, monat: 27.5, singular: 0 },
 		name: 'Entertainment Plus',
 		note: 'Alle Sky Serien und Netflix.',
 		image: {
@@ -58,7 +60,7 @@ export const packages_assets = dynamic_to_static_assets([
 	},
 	{
 		id: 'cinema',
-		price: { jahr: 10, monat: 13.5, singular: 0 },
+		price: { jahr: 11, monat: 13.5, singular: 0 },
 		name: 'Cinema',
 		note: 'Jeden Tag ein neuer Film.',
 		image: {
@@ -75,7 +77,7 @@ export const packages_assets = dynamic_to_static_assets([
 	},
 	{
 		id: 'sport',
-		price: { jahr: 5.5, monat: 9, singular: 0 },
+		price: { jahr: 6.5, monat: 9, singular: 0 },
 		name: 'Sport',
 		note: 'Der beste Live-Sport.',
 		image: {
@@ -93,7 +95,7 @@ export const packages_assets = dynamic_to_static_assets([
 	},
 	{
 		id: 'bundesliga',
-		price: { jahr: 12.5, monat: 16.5, singular: 0 },
+		price: { jahr: 14, monat: 16.5, singular: 0 },
 		name: 'Bundesliga',
 		note: 'Die Heimat der Bundesliga - garantiert bis 2025.',
 		image: {

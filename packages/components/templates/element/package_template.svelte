@@ -1,13 +1,14 @@
 <script lang="ts">
-	//import GradientBadge from '../../elements/gradient_badge.svelte';
+	import GradientBadge from '../../elements/gradient_badge.svelte';
 
 	import type { priceable_asset_id } from 'asset_library/asset_types';
-	import { get_offer_note, get_price_string } from 'asset_library/prices';
+	import {
+		get_offer_note,
+		get_price_string,
+	} from 'asset_library/prices';
 	import { typed_keys } from 'functional-utilities';
 	import SquarePackageList from '../../generators/square_package_list.svelte';
 
-	import { make_url } from 'frontend/url';
-	import { dev } from '$app/environment';
 	import AssetImage from '../../generators/asset_image.svelte';
 	import { sort_assets } from 'asset_library/all_assets';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
@@ -65,16 +66,16 @@
 					Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
 				</p>
 			{/if}
-			{#if offer_string}
+			<!-- {#if offer_string}
 				<img
 					src={make_url('/images/external/amazongiftcard.png', dev)}
 					alt=""
 					class="amazon_badge"
 				/>
-			{/if}
-			<!-- {#if offer_string}
-					<GradientBadge>{offer_string}</GradientBadge>
 			{/if} -->
+			{#if offer_string}
+					<GradientBadge>{@html offer_string}</GradientBadge>
+			{/if}
 		</div>
 		{#if show_senders}
 			<div class="senders">
@@ -98,10 +99,6 @@
 		margin-bottom: 20px;
 	}
 
-	.amazon_badge {
-		width: 170px;
-		margin-top: 20px;
-	}
 	.points {
 		list-style: none;
 		font-size: 16px;
