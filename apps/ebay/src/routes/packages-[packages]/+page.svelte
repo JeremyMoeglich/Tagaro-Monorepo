@@ -56,7 +56,7 @@
 
 <div class="outer">
 	<Header />
-	<div class="flex flex-col items-center gap-16 content w-full">
+	<div class="content w-full">
 		<div class="spacer">
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
@@ -256,8 +256,12 @@
 		width: calc(100% - 80px);
 		min-width: min(500px, 95%);
 		max-width: 100%;
-		margin-top: 40px;
+		padding-top: 40px;
 		margin-left: auto;
 		margin-right: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
 	}
 </style>
