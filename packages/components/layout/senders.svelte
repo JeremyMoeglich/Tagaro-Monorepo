@@ -1,23 +1,19 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
+	import { priceable_asset_id } from 'asset_library/asset_types';
+	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 	import { make_url } from 'frontend/url';
 
-	export let title: string;
-
-	interface Sender {
-		image: string;
-		text: string;
-	}
-
-	export let content: ReadonlyArray<Sender>;
+	export let id: priceable_asset_id;
+	$: asset = indexed_priceable_assets[id];
 </script>
 
 <div class="outer">
 	<h2>
-		{title}
+		{asset.name} Paket
 	</h2>
 	<div class="main_alignment">
-		{#each content as element}
+		{#each asset.senders as element}
 			<div class="sender_box">
 				<img src={make_url(element.image, dev)} alt="" />
 				<p>{element.text}</p>

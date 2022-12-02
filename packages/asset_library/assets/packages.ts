@@ -2,6 +2,7 @@ import { dynamic_to_static_assets } from '../priceable_asset_types';
 import type { Priceable_Asset } from '../priceable_asset_types';
 import { index_by, typed_entries } from 'functional-utilities';
 import type { base_package_set, premium_package_set } from '../offer_description';
+import { senders } from './senders';
 import { clone } from 'lodash-es';
 
 export const package_ids = [
@@ -34,7 +35,8 @@ export const packages_assets = dynamic_to_static_assets([
 			'Sky Q Receiver mit 1TB Festplatte, Ultra HD fähig und Sky On Demand Zugang',
 			'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!'
 		],
-		sort_priority: 1
+		sort_priority: 1,
+		senders: senders.entertainment
 	},
 	{
 		id: 'entertainmentplus',
@@ -51,7 +53,8 @@ export const packages_assets = dynamic_to_static_assets([
 			'Alle Inhalte von Sky, Free TV, deinen Lieblingsapps und Mediatheken auf einen Blick vereint',
 			'Einfach. Alles mit einer Sprachfernbedienung'
 		],
-		sort_priority: 0
+		sort_priority: 0,
+		senders: senders.entertainment
 	},
 	{
 		id: 'cinema',
@@ -67,7 +70,8 @@ export const packages_assets = dynamic_to_static_assets([
 			'Große Filmvielfalt über alle Genres hinweg',
 			'Alle Filme ohne Werbeunterbrechung'
 		],
-		sort_priority: 2
+		sort_priority: 2,
+		senders: senders.cinema
 	},
 	{
 		id: 'sport',
@@ -84,7 +88,8 @@ export const packages_assets = dynamic_to_static_assets([
 			'Alle Spiele der Premier League exklusiv, davon über 250 Spiele live und erstmals ausgewählte Spiele der FA Women`s Super League exklusiv',
 			'NHL, Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
 		],
-		sort_priority: 3
+		sort_priority: 3,
+		senders: senders.sport
 	},
 	{
 		id: 'bundesliga',
@@ -100,7 +105,8 @@ export const packages_assets = dynamic_to_static_assets([
 			'Alle Spiele der 2. Bundesliga live',
 			'Alle Relegationsspiele und der Supercup live'
 		],
-		sort_priority: 4
+		sort_priority: 4,
+		senders: senders.bundesliga
 	}
 ]) satisfies ReadonlyArray<Priceable_Asset<package_id>>;
 
@@ -155,7 +161,7 @@ export const package_combinations: ReadonlyArray<readonly package_id[]> = typed_
 	)
 	.map((packages) => sort_ids(packages));
 
-const showcased_combinations = [
+export const showcased_combinations = [
 	['entertainment', 'sport'],
 	['entertainment', 'bundesliga'],
 	['entertainment', 'sport', 'bundesliga'],

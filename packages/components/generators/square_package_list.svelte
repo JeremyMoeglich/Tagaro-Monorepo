@@ -1,11 +1,15 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
-	import type { imaged_package_id } from 'asset_library/imaged_packages';
+	import { indexed_assets } from 'asset_library/all_assets';
+	import { type asset_id } from 'asset_library/asset_types';
 	import { make_url } from 'frontend/url';
 
-	export let package_ids: imaged_package_id[];
-	const base_url = '/images/assets/packages/square/';
-	$: elements = package_ids.join(';+;').split(';');
+	export let package_ids: asset_id[];
+	$: elements = package_ids
+		.map((v) => indexed_assets[v].image.square)
+		.filter((v) => v)
+		.join(';+;')
+		.split(';');
 </script>
 
 <div class="alignment">
@@ -13,7 +17,11 @@
 		{#if element === '+'}
 			<div class="seperator">+</div>
 		{:else}
-			<img class="element" src={make_url(`${base_url}${element}.webp`, dev)} alt={element} />
+			<img
+				class="element"
+				src={make_url(`${element}`, dev)}
+				alt={element}
+			/>
 		{/if}
 	{/each}
 </div>

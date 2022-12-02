@@ -8,9 +8,10 @@
 
 	import { make_url } from 'frontend/url';
 	import { dev } from '$app/environment';
-	import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
 	import AssetImage from '../../generators/asset_image.svelte';
 	import { sort_assets } from 'asset_library/all_assets';
+	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
+	import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
 
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
@@ -24,22 +25,29 @@
 		: '';
 
 	$: sorted_assets = sort_assets(price_asset_ids);
-	$: asset_square_images = sorted_assets.filter((v) => 'square' in indexed_package_assets[v].image);
+	$: asset_square_images = sorted_assets.filter((v) => {
+		return 'square' in indexed_priceable_assets[v].image;
+	});
 </script>
 
 <div class="package_overview">
 	<div class="alignment">
-		<AssetImage asset_ids={price_asset_ids} {animated} />
+		<div class="image">
+			<AssetImage ids={price_asset_ids} {animated} />
+		</div>
 
 		<div class="description">
 			<h2 class="title">
 				{sort_assets(price_asset_ids)
-					.map((v) => indexed_package_assets[v].name)
+					.map((v) => indexed_priceable_assets[v].name)
 					.join(' + ')}
+				{#if price_asset_ids.length === 1}
+					- {indexed_priceable_assets[price_asset_ids[0]].note}
+				{/if}
 			</h2>
 			<ul class="points">
 				{#each sorted_assets as asset}
-					{#each indexed_package_assets[asset].aspects as point}
+					{#each indexed_priceable_assets[asset].aspects as point}
 						<li>{@html point}</li>
 					{/each}
 				{/each}

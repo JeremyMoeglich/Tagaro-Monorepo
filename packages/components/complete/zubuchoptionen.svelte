@@ -20,10 +20,10 @@
 		{
 			image: '/images/assets/zubuchoptionen/dazn.svg',
 			html: /*html*/ `<b>DAZN jährlich + ${get_price_string(
-				['dazn_yearly'],
+				['dazn'],
 				'jahr'
 			)} mtl. </b>oder<b><br /> DAZN monatlich + ${get_price_string(
-				['dazn_monthly'],
+				['dazn'],
 				'monat'
 			)} mtl.</b>`
 		},

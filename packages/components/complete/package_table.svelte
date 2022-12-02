@@ -3,7 +3,9 @@
 	import {
 		max_combination_length,
 		base_premium_package_combinations,
-		type package_id
+		type package_id,
+		showcased_combinations,
+		indexed_package_assets
 	} from 'asset_library/assets/packages';
 	import Zubuchoptionen from './zubuchoptionen.svelte';
 	//import AktivierungSentence from './aktivierung_sentence.svelte';
@@ -29,21 +31,7 @@
 		title,
 		...combinations
 			.map((combination) => [base, ...combination])
-			.filter((c) =>
-				(
-					[
-						['entertainment', 'sport'],
-						['entertainment', 'bundesliga'],
-						['entertainment', 'sport', 'bundesliga'],
-
-						['entertainmentplus'],
-						['entertainmentplus', 'sport'],
-						['entertainmentplus', 'cinema'],
-						['entertainmentplus', 'bundesliga'],
-						['entertainmentplus', 'sport', 'cinema', 'bundesliga']
-					] satisfies package_id[][]
-				).some((p) => is_combination(c, p))
-			)
+			.filter((c) => showcased_combinations.some((p) => is_combination(c, p)))
 	]);
 
 	// let tables: Record<string, readonly (readonly package_id[])[]>;
@@ -65,7 +53,7 @@
 			{:else}
 				{#each row as element, col_index}
 					<div style:--col={col_index + 1} style:--row={row_index + 1} class="cell">
-						<img src={make_url(`/images/assets/packages/square/${element}.webp`, dev)} alt="" />
+						<img src={make_url(indexed_package_assets[element].image.square, dev)} alt="" />
 					</div>
 				{/each}
 				<div class="cell text-cell" style:--row={row_index + 1} style:--col={col_amount}>

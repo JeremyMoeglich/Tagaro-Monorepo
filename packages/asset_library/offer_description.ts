@@ -42,8 +42,6 @@ export const offer_ids = ['opt1'] as const;
 
 export type offer_id = typeof offer_ids[number];
 
-const text_descriptions = '+ € 100 Amazon Gutschein';
-
 export const offer_descriptions: offer_descriptions_type = [
 	/*{
 		id: '20alles',

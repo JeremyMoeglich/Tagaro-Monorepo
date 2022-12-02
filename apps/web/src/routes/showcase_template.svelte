@@ -5,9 +5,9 @@
 	import { aboformular } from 'open_constants';
 	import Enddate from 'components/generators/enddate.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
-	import type { imaged_package_id } from 'asset_library/imaged_packages';
 	import { crossfade } from 'frontend/crossfade';
 	import ConditionalHref from '../../../../packages/components/layout/conditional_href.svelte';
+	import type { priceable_asset_id } from 'asset_library/asset_types';
 
 	const [send] = crossfade;
 
@@ -46,13 +46,13 @@
 
 	const left_badges = [] as const;
 	const right_badges = ['/images/badges/mtlkuendbar.svg'] as const;
-	const showcase_assets: readonly imaged_package_id[] = [
+	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',
 		'sport',
 		'bundesliga',
 		'kids'
-	] as const;
+	] satisfies priceable_asset_id[];
 
 	function process(text: string): string {
 		// replace all prices like 9,99 € with 9.99&nbsp;€
@@ -114,7 +114,7 @@
 				<div class="package_overview">
 					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
 						{@const path = `/images/assets/packages/normal/${asset.id}.png`}
-						<a href={`/angebote/legacy/${asset.id}`}>
+						<a href={`/angebote/${asset.id}`}>
 							<img src={path} alt={asset.id} out:send={{ key: path }} in:send={{ key: path }} />
 						</a>
 					{/each}

@@ -8,7 +8,7 @@
 <ShowcaseTemplate
 	title={`Alles von Sky inkl. Paramount+ und Netflix für € 30 mtl.`}
 	subtitle0={`Komplettpreis inkl. Netflix statt € 54 mtl. im ersten Jahr.`}
-	redirect_url={'/angebote/legacy/4_oder_mehr_pakete/'}
+	redirect_url={'/angebote/entertainmentplus_cinema_sport_bundesliga'}
 	hide_left={true}
 	points={[
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,

@@ -40,7 +40,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				square: `${zubuchoption_image_location}uhd.png`
 			},
 			aspects: [],
-			sort_priority: 6
+			sort_priority: 6,
+			senders: []
 		},
 		{
 			id: 'skygoplus',
@@ -51,7 +52,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				normal: `${zubuchoption_image_location}skygoplus.png`
 			},
 			aspects: [],
-			sort_priority: 7
+			sort_priority: 7,
+			senders: []
 		},
 		{
 			id: 'dazn',
@@ -59,8 +61,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 			name: 'DAZN',
 			note: 'Live-Sport, Dokus und vieles mehr per App und TV-Sender.',
 			image: {
-				normal: `${zubuchoption_image_location}dazn.png`,
-				square: `${zubuchoption_image_location}dazn.png`
+				normal: `${zubuchoption_image_location}dazn.svg`,
+				square: `${zubuchoption_image_location}dazn.svg`
 			},
 			aspects: [
 				'Mehr Top-Fußball mit allen Freitags- und Sonntagsspiele der Bundesliga, fast alle Live-Spiele und die Konferenz der UEFA Champions League sowie einer Reihe weiterer populärer Sportarten wie US-Sport, Tennis, Kampfsport und vielem mehr.',
@@ -68,7 +70,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				'DAZN Top Events direkt neben deinem Sky Programm auf Sky Q. Nur mit einer Fernbedienung - ohne Hin- und Herschalten.',
 				'Abrechnung und Kundenservice aus einer Hand. Sky ist dein Ansprechpartner.'
 			],
-			sort_priority: 8
+			sort_priority: 8,
+			senders: []
 		},
 		{
 			id: 'multiscreen',
@@ -80,7 +83,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				square: `${zubuchoption_image_location}multiscreen.png`
 			},
 			aspects: [],
-			sort_priority: 9
+			sort_priority: 9,
+			senders: []
 		},
 		{
 			id: 'kids',
@@ -97,7 +101,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				'Alles auf Abruf ohne Werbung',
 				'Mit Download-Funktion'
 			],
-			sort_priority: 5
+			sort_priority: 5,
+			senders: []
 		},
 		{
 			id: 'trendsports',
@@ -108,7 +113,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				normal: `${zubuchoption_image_location}trendsports.png`
 			},
 			aspects: [],
-			sort_priority: 10
+			sort_priority: 10,
+			senders: []
 		},
 		{
 			id: 'plus18',
@@ -119,7 +125,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				normal: `${zubuchoption_image_location}plus18.png`
 			},
 			aspects: [],
-			sort_priority: 11
+			sort_priority: 11,
+			senders: []
 		},
 		{
 			id: 'hdplus4monategratis',
@@ -130,7 +137,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				normal: `${zubuchoption_image_location}hdplus.png`
 			},
 			aspects: [],
-			sort_priority: 12
+			sort_priority: 12,
+			senders: []
 		},
 		{
 			id: 'hdplus',
@@ -141,7 +149,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				normal: `${zubuchoption_image_location}hdplus.png`
 			},
 			aspects: [],
-			sort_priority: 13
+			sort_priority: 13,
+			senders: []
 		},
 		{
 			id: 'netflixstandard',
@@ -165,7 +174,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				type: 'AND'
 			},
 			aspects: [],
-			sort_priority: 14
+			sort_priority: 14,
+			senders: []
 		},
 		{
 			id: 'netflixpremium',
@@ -189,6 +199,7 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				type: 'AND'
 			},
 			aspects: [],
-			sort_priority: 15
+			sort_priority: 15,
+			senders: []
 		}
 	]);

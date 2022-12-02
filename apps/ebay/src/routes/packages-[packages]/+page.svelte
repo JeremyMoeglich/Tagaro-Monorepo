@@ -7,7 +7,7 @@
 	import { dev } from '$app/environment';
 	import PackageTable from 'components/complete/package_table.svelte';
 	import Inklusive from 'components/complete/inklusive.svelte';
-	import AllOverviews from 'components/complete/packages/overviews/all_overviews.svelte';
+	import AllOverviews from '../../../../../packages/components/complete/all_overviews.svelte';
 	import Vertragsinfomationen from 'components/complete/vertragsinfomationen.svelte';
 	import Line from 'components/elements/line.svelte';
 	import Block from './block.svelte';

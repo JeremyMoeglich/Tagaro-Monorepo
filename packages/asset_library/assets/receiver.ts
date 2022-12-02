@@ -21,7 +21,8 @@ export const receiver_assets: ReadonlyArray<Readonly<Priceable_Asset<receiver_id
 			},
 			price: 0,
 			aspects: [],
-			sort_priority: 22
+			sort_priority: 22,
+			senders: []
 		},
 		{
 			id: 'receiver2x',
@@ -32,7 +33,8 @@ export const receiver_assets: ReadonlyArray<Readonly<Priceable_Asset<receiver_id
 			},
 			price: 99,
 			aspects: [],
-			sort_priority: 23
+			sort_priority: 23,
+			senders: []
 		}
 	]);
 
@@ -53,7 +55,8 @@ export const iptv_assets: ReadonlyArray<Dynamic_Priceable_Asset<iptv_id>> = [
 		},
 		price: 0,
 		aspects: [],
-		sort_priority: 24
+		sort_priority: 24,
+		senders: []
 	},
 	{
 		id: 'iptv2x',
@@ -64,6 +67,7 @@ export const iptv_assets: ReadonlyArray<Dynamic_Priceable_Asset<iptv_id>> = [
 		},
 		price: 99,
 		aspects: [],
-		sort_priority: 25
+		sort_priority: 25,
+		senders: []
 	}
 ];

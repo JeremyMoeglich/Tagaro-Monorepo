@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AllOverviews from 'components/complete/packages/overviews/all_overviews.svelte';
+	import AllOverviews from '../../../../../packages/components/complete/all_overviews.svelte';
 	import AlleBuchbar from 'components/complete/alle_buchbar.svelte';
 	import AboformularButton from 'components/elements/interactive/buttons/aboformular_button.svelte';
 	import VertragsinfomationenBox from '../../../../../packages/components/complete/vertragsinfomationen_box.svelte';

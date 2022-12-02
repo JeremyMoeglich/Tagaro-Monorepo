@@ -1,6 +1,6 @@
 import type { selector } from './selector';
 import type { Asset, priceable_asset_id } from './asset_types';
-
+import type { Sender } from './sender';
 export interface Price {
 	singular: number;
 	monat: number;
@@ -11,13 +11,13 @@ export interface Priceable_Asset<T extends priceable_asset_id = priceable_asset_
 	extends Asset<T> {
 	price: Price;
 	selector: selector;
-	senders: readonly string[];
+	senders: readonly Sender[];
 }
 
 export interface Dynamic_Priceable_Asset<T extends priceable_asset_id> extends Asset<T> {
 	price: number | Price;
 	selector?: selector;
-	senders?: readonly string[];
+	senders: readonly Sender[];
 }
 
 export function dynamic_to_static_asset<T extends priceable_asset_id>(

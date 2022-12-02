@@ -10,6 +10,8 @@
 	import { typed_entries } from 'functional-utilities';
 	import Header from './header/header.svelte';
 	import { enter_filter } from 'utils';
+	import { indexed_package_assets, showcased_combinations } from 'asset_library/assets/packages';
+	import { get_title } from 'asset_library/title';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -17,16 +19,13 @@
 	const navbar_elements: Record<string, string | Record<string, string>> = {
 		Startseite: '/',
 		//Aboformular: '/aboformular',
-		'Sky Angebote old': {
-			index: '/angebote',
-			'Sky Entertainment Plus': '/angebote/legacy/entertainmentplus',
-			'Sky Sport': '/angebote/legacy/sport',
-			'Sky Fußball-Bundesliga': '/angebote/legacy/bundesliga',
-			'Sky Cinema': '/angebote/legacy/cinema',
-			'2 Sky Wunschpakete': '/angebote/legacy/sport_bundesliga',
-			'4 Sky Pakete oder mehr': '/angebote/legacy/4_oder_mehr_pakete',
-			'Sky Entertainment': '/angebote/legacy/entertainment'
-		},
+		'Sky Angebote': Object.fromEntries([
+			['index', '/angebote'],
+			...showcased_combinations.map((combination) => [
+				get_title(combination),
+				`/angebote/${combination.join('_')}`
+			])
+		]),
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
 		Kontakt: '/kontakt'
@@ -134,7 +133,6 @@
 					{#if pair[1] instanceof Object}
 						{#if 'index' in pair[1]}
 							<a
-								
 								class="nav_element_mobile nav_element_hover_mobile no_margin"
 								on:click={close_sidebar}
 								href={pair[1]['index']}
@@ -144,7 +142,6 @@
 						{/if}
 					{:else}
 						<a
-							
 							class="nav_element_mobile nav_element_hover_mobile"
 							title={pair[0] + ' öffnen'}
 							on:click={close_sidebar}
@@ -165,7 +162,6 @@
 						{#each typed_entries(pair[1]) as subpair}
 							{#if subpair[0] !== 'index'}
 								<a
-									
 									class="nav_element_mobile nav_element_hover_mobile"
 									on:click={close_sidebar}
 									href={subpair[1]}
