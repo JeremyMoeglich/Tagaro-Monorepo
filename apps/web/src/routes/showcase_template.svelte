@@ -8,6 +8,7 @@
 	import { crossfade } from 'frontend/crossfade';
 	import ConditionalHref from '../../../../packages/components/layout/conditional_href.svelte';
 	import type { priceable_asset_id } from 'asset_library/asset_types';
+	import { includes } from 'lodash-es';
 
 	const [send] = crossfade;
 
@@ -114,7 +115,15 @@
 				<div class="package_overview">
 					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
 						{@const path = `/images/assets/packages/normal/${asset.id}.png`}
-						<a href={`/angebote/${asset.id}`}>
+						<a
+							href={asset.id.includes('entertainment')
+								? `/angebote/${asset.id}`
+								: `/angebote/${asset.id}_${
+										['sport', 'bundesliga'].includes(asset.id)
+											? 'entertainment'
+											: 'entertainmentplus'
+								  }`}
+						>
 							<img src={path} alt={asset.id} out:send={{ key: path }} in:send={{ key: path }} />
 						</a>
 					{/each}

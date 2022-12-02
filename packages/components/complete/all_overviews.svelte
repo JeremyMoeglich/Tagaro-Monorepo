@@ -27,7 +27,7 @@
 		<PackageTemplate
 			show_senders={ebay_version ? 'cinema' : undefined}
 			show_price={!ebay_version}
-			price_asset_ids={['cinema']}
+			price_asset_ids={['cinema', 'entertainmentplus']}
 		/>
 	</ConditionalHref>
 	<LineSpacer {space} />
@@ -35,7 +35,7 @@
 		<PackageTemplate
 			show_senders={ebay_version ? 'sport' : undefined}
 			show_price={!ebay_version}
-			price_asset_ids={['sport']}
+			price_asset_ids={['sport', 'entertainment']}
 		/>
 	</ConditionalHref>
 	<LineSpacer {space} />
@@ -43,7 +43,7 @@
 		<PackageTemplate
 			show_senders={ebay_version ? 'bundesliga' : undefined}
 			show_price={!ebay_version}
-			price_asset_ids={['bundesliga']}
+			price_asset_ids={['bundesliga', 'entertainment']}
 		/>
 	</ConditionalHref>
 

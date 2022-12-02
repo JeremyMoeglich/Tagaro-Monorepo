@@ -92,8 +92,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 			name: 'Kids',
 			note: 'Große Unterhaltung für alle Kleinen.',
 			image: {
-				normal: `${zubuchoption_image_location}kids.png`,
-				square: `${zubuchoption_image_location}kids.png`
+				normal: `/images/assets/packages/normal/kids.png`,
+				square: `/images/assets/packages/square/kids.webp`
 			},
 			aspects: [
 				'5 beliebte Kindersender und mehr als 4.500 Inhalte',
