@@ -39,7 +39,7 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo inkl. Netflix & Paramount+ für €&nbsp;30 mtl. Dazu €&nbsp;20 Bonus von uns*'
+				'Sky Komplett Abo inkl. Netflix & Paramount+ für €&nbsp;30 mtl. Dazu €&nbsp;20 Bonus*'
 			],
 			['allgemein', 'Sky Abo nach Wahl mit bis zu € 288 Sparvorteil. Dazu €&nbsp;20 Bonus von uns*']
 		];
@@ -256,12 +256,12 @@
 		width: calc(100% - 80px);
 		min-width: min(500px, 95%);
 		max-width: 100%;
-		padding-top: 40px;
+		padding-top: 50px;
 		margin-left: auto;
 		margin-right: auto;
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
+		gap: 60px;
 		align-items: center;
 	}
 </style>

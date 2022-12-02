@@ -134,6 +134,8 @@
 		border-radius: 10px;
 		width: 100%;
 		height: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 	.title_row {
 		grid-column: 1 / calc(var(--col_amount) + 1);

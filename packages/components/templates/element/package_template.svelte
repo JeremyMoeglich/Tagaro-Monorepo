@@ -1,6 +1,4 @@
 <script lang="ts">
-	import GradientBadge from '../../elements/gradient_badge.svelte';
-
 	import type { priceable_asset_id } from 'asset_library/asset_types';
 	import {
 		get_offer_note,
@@ -73,9 +71,9 @@
 					class="amazon_badge"
 				/>
 			{/if} -->
-			{#if offer_string}
+			<!-- {#if offer_string}
 					<GradientBadge>{@html offer_string}</GradientBadge>
-			{/if}
+			{/if}  -->
 		</div>
 		{#if show_senders}
 			<div class="senders">
