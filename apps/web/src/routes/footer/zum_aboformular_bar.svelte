@@ -22,7 +22,7 @@
 	}
 	.inner_container {
 		overflow: hidden;
-		width: 100vw;
+		width: 100%;
 	}
 	.main_container {
 		display: flex;
@@ -31,7 +31,7 @@
 		align-content: center;
 		justify-content: center;
 		align-items: center;
-		width: calc(100% - 60px);
+		width: 100%;
 		padding: 30px;
 		min-height: 80px;
 		background: linear-gradient(to right, #49358d, #027fc7);

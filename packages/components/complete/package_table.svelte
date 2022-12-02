@@ -96,7 +96,23 @@
 	}
 
 	$gap: 1rem;
-	$col-gap: 1rem;
+
+	$collapse_start: 600px;
+	$collapse_end: 400px;
+	$collapse_min: 0rem;
+
+	// increase $col-gap from $collapse_start to $collapse_end to $collapse_min
+
+	$col-gap: max(
+		$collapse_min,
+		min(
+			$gap,
+			$gap - ($collapse_start - $collapse_end) / ($collapse_start - $collapse_end) *
+				($collapse_start - $collapse_end)
+		)
+	);
+
+	$added_padding: calc($gap - $col-gap);
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(var(--col_amount), 1fr);
@@ -106,6 +122,8 @@
 		border: 1px solid #ccc;
 		border-radius: 15px;
 		width: 100%;
+		padding-left: $added_padding / 2 + 1rem;
+		padding-right: $added_padding / 2 + 1rem;
 	}
 	.background_box {
 		grid-column: 1 / var(--col_amount);
@@ -128,8 +146,7 @@
 		text-align: center;
 		background-color: rgb(226, 242, 255);
 		border-radius: 10px;
-		margin-left: 0px;
-		margin-left: calc($gap - $col-gap);
+		margin-left: $added_padding;
 		//border: 1px solid #ccc;
 	}
 	.title_row {

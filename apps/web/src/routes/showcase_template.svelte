@@ -8,7 +8,6 @@
 	import { crossfade } from 'frontend/crossfade';
 	import ConditionalHref from '../../../../packages/components/layout/conditional_href.svelte';
 	import type { priceable_asset_id } from 'asset_library/asset_types';
-	import { includes } from 'lodash-es';
 
 	const [send] = crossfade;
 
@@ -82,11 +81,11 @@
 		{/if}
 		<div class="right_side">
 			<div class="text_side">
-				<div>
-					{#if hide_left}
-						<img class="wrap_remove" src="/images/badges/sky_signature.svg" alt="" />
-					{/if}
-				</div>
+				{#if hide_left}
+					<div class="wrap_remove">
+						<img src="/images/badges/sky_signature.svg" alt="" />
+					</div>
+				{/if}
 				<div>
 					<h1>{@html process(title)}*</h1>
 					{#if enddate}
@@ -217,7 +216,7 @@
 					width: 200px;
 					min-width: 0px;
 					transition-duration: 200ms;
-					padding: 5px;
+					padding: 2px;
 					&:hover {
 						z-index: 5;
 						transform: scale(1.1);
