@@ -10,7 +10,7 @@
 	import { typed_entries } from 'functional-utilities';
 	import Header from './header/header.svelte';
 	import { enter_filter } from 'utils';
-	import { indexed_package_assets, showcased_combinations } from 'asset_library/assets/packages';
+	import { showcased_combinations } from 'asset_library/assets/packages';
 	import { get_title } from 'asset_library/title';
 
 	let mobile_slider_value = 0;
@@ -22,7 +22,7 @@
 		'Sky Angebote': Object.fromEntries([
 			['index', '/angebote'],
 			...showcased_combinations.map((combination) => [
-				get_title(combination),
+				get_title(combination, true),
 				`/angebote/${combination.join('_')}`
 			])
 		]),
@@ -137,7 +137,7 @@
 								on:click={close_sidebar}
 								href={pair[1]['index']}
 							>
-								<p class="no_margin small_start_margin">{pair[0]}</p>
+								<p class="no_margin small_start_margin">{@html pair[0]}</p>
 							</a>
 						{/if}
 					{:else}
@@ -148,7 +148,7 @@
 							href={pair[1]}
 							target={pair[1].includes('ebay') ? '_blank' : '_self'}
 						>
-							<p class="no_margin small_start_margin">{pair[0]}</p>
+							<p class="no_margin small_start_margin">{@html pair[0]}</p>
 						</a>
 					{/if}
 				</div>
@@ -167,7 +167,7 @@
 									href={subpair[1]}
 									title={subpair[0] + ' öffnen'}
 								>
-									<p class="no_margin small_start_margin">{subpair[0]}</p>
+									<p class="no_margin small_start_margin">{@html subpair[0]}</p>
 								</a>
 							{/if}
 						{/each}

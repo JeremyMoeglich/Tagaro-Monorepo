@@ -12,11 +12,13 @@
 	import { sort_assets } from 'asset_library/all_assets';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 	import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
+	import { get_title } from 'asset_library/title';
+	import Senders from '../../layout/senders.svelte';
 
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
 	export let show_price: boolean;
-	export let show_senders: boolean;
+	export let show_senders: priceable_asset_id | undefined = undefined;
 
 	$: offer_string = price_asset_ids.every((id) =>
 		typed_keys(indexed_package_assets).includes(id as package_id)
@@ -38,9 +40,7 @@
 
 		<div class="description">
 			<h2 class="title">
-				{sort_assets(price_asset_ids)
-					.map((v) => indexed_priceable_assets[v].name)
-					.join(' + ')}
+				{@html get_title(price_asset_ids, price_asset_ids.length === 1)}
 				{#if price_asset_ids.length === 1}
 					- {indexed_priceable_assets[price_asset_ids[0]].note}
 				{/if}
@@ -76,6 +76,11 @@
 					<GradientBadge>{offer_string}</GradientBadge>
 			{/if} -->
 		</div>
+		{#if show_senders}
+			<div class="senders">
+				<Senders id={show_senders} />
+			</div>
+		{/if}
 	</div>
 </div>
 

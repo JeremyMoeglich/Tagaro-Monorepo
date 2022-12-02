@@ -14,7 +14,7 @@
 
 	<ConditionalHref href="/angebote/entertainmentplus" active={clickable}>
 		<PackageTemplate
-			show_senders={ebay_version}
+			show_senders={ebay_version ? 'entertainmentplus' : undefined}
 			show_price={!ebay_version}
 			price_asset_ids={['entertainmentplus']}
 		/>
@@ -25,7 +25,7 @@
 	<LineSpacer {space} />
 	<ConditionalHref href="/angebote/cinema" active={clickable}>
 		<PackageTemplate
-			show_senders={ebay_version}
+			show_senders={ebay_version ? 'cinema' : undefined}
 			show_price={!ebay_version}
 			price_asset_ids={['cinema']}
 		/>
@@ -33,7 +33,7 @@
 	<LineSpacer {space} />
 	<ConditionalHref href="/angebote/sport" active={clickable}>
 		<PackageTemplate
-			show_senders={ebay_version}
+			show_senders={ebay_version ? 'sport' : undefined}
 			show_price={!ebay_version}
 			price_asset_ids={['sport']}
 		/>
@@ -41,7 +41,7 @@
 	<LineSpacer {space} />
 	<ConditionalHref href="/angebote/bundesliga" active={clickable}>
 		<PackageTemplate
-			show_senders={ebay_version}
+			show_senders={ebay_version ? 'bundesliga' : undefined}
 			show_price={!ebay_version}
 			price_asset_ids={['bundesliga']}
 		/>
@@ -49,7 +49,7 @@
 
 	{#if !ebay_version}
 		<LineSpacer {space} />
-		<PackageTemplate show_price={!ebay_version} show_senders={false} price_asset_ids={['dazn']} />
+		<PackageTemplate show_price={!ebay_version} price_asset_ids={['dazn']} />
 	{/if}
 </div>
 

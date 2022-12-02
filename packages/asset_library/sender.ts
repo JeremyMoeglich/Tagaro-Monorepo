@@ -1,4 +1,4 @@
 export interface Sender {
-    image: string,
-    text: string,
+	image: string;
+	text: string;
 }

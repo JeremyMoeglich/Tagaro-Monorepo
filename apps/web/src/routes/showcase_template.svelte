@@ -31,8 +31,8 @@
 	export let primary_image: undefined | string = undefined;
 	export let side_images: string[] = [];
 	export let redirect_url: string | undefined = undefined;
-	export let hide_left: boolean = false;
-	export let top_margin: number = 10;
+	export let hide_left = false;
+	export let top_margin = 10;
 
 	export let buttons: {
 		text: string;

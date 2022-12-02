@@ -3,7 +3,7 @@
 </script>
 
 <div class="outer_alignment">
-	<a href="/angebote" >
+	<a href="/angebote">
 		<div class="alignment">
 			<h2>Schnell und einfach Sky abonnieren!</h2>
 			<p>

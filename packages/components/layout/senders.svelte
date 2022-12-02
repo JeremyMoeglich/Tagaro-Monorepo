@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
-	import { priceable_asset_id } from 'asset_library/asset_types';
+	import type { priceable_asset_id } from 'asset_library/asset_types';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 	import { make_url } from 'frontend/url';
 

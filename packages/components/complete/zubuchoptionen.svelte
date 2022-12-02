@@ -22,10 +22,7 @@
 			html: /*html*/ `<b>DAZN jährlich + ${get_price_string(
 				['dazn'],
 				'jahr'
-			)} mtl. </b>oder<b><br /> DAZN monatlich + ${get_price_string(
-				['dazn'],
-				'monat'
-			)} mtl.</b>`
+			)} mtl. </b>oder<b><br /> DAZN monatlich + ${get_price_string(['dazn'], 'monat')} mtl.</b>`
 		},
 		{
 			image: '/images/assets/zubuchoptionen/multiscreen.png',

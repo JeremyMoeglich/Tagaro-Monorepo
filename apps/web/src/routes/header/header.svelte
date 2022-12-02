@@ -26,23 +26,21 @@
 						{#if pair[1] instanceof Object}
 							{#if 'index' in pair[1]}
 								<a
-									
 									class={`nav_element nav_element_hover ${
 										$page.url.pathname === pair[1]['index'] ? 'current_route' : ''
 									}`}
 									href={pair[1]['index']}
 									title={pair[0] + ' öffnen'}
 								>
-									{pair[0]}
+									{@html pair[0]}
 								</a>
 							{:else}
 								<p class="nav_element">
-									{pair[0]}
+									{@html pair[0]}
 								</p>
 							{/if}
 						{:else}
 							<a
-								
 								title={pair[0] + ' öffnen'}
 								class={`nav_element nav_element_hover ${
 									$page.url.pathname === pair[1] ? 'current_route' : ''
@@ -83,12 +81,11 @@
 												{#if subtab[0] != 'index'}
 													<button class="selectable_element" on:click={deselect}>
 														<a
-															
 															class="context_menu_element nav_element_hover"
 															href={subtab[1]}
 															title={subtab[0] + ' öffnen'}
 														>
-															{subtab[0]}
+															{@html subtab[0]}
 														</a>
 													</button>
 												{/if}

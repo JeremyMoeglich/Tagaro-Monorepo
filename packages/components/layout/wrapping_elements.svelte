@@ -146,7 +146,7 @@
 								.map((id) => indexed_package_assets[id].name)
 								.join(' + ')}) <br />
 							Optional {#if !item.package_ids.includes('entertainmentplus')}
-								Netflix,  
+								Netflix,
 							{/if} DAZN und UHD<br />
 							+ 500 PAYBACK Punkte
 						</p>

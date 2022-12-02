@@ -1,4 +1,4 @@
-import { dynamic_to_static_assets, type Price } from '../priceable_asset_types';
+import { dynamic_to_static_assets } from '../priceable_asset_types';
 import type { Priceable_Asset } from '../priceable_asset_types';
 
 export const zubuchoption_ids = [

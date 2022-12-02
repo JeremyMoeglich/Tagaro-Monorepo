@@ -42,7 +42,7 @@
 		<div class="asset_images">
 			{#each selected_priceable_assets as asset}
 				<img
-					src={indexed_priceable_assets[asset].image}
+					src={indexed_priceable_assets[asset].image.normal}
 					alt={indexed_priceable_assets[asset].name}
 				/>
 			{/each}

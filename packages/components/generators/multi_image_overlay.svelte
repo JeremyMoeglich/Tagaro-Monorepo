@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { indexed_package_assets } from 'asset_library/assets/packages';
-	import type { imaged_package_id } from 'asset_library/imaged_packages';
-	export let packages: imaged_package_id[];
+	import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
+	export let packages: package_id[];
 	export let offset_multiplier = 1;
 	const image_width_percentage = 0.4;
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
 	import { indexed_assets } from 'asset_library/all_assets';
-	import { type asset_id } from 'asset_library/asset_types';
+	import type { asset_id } from 'asset_library/asset_types';
 	import { make_url } from 'frontend/url';
 
 	export let package_ids: asset_id[];
@@ -17,11 +17,7 @@
 		{#if element === '+'}
 			<div class="seperator">+</div>
 		{:else}
-			<img
-				class="element"
-				src={make_url(`${element}`, dev)}
-				alt={element}
-			/>
+			<img class="element" src={make_url(`${element}`, dev)} alt={element} />
 		{/if}
 	{/each}
 </div>

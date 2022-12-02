@@ -11,7 +11,7 @@
 	export let discovery = true;
 	export let space = '70px';
 
-	export let version: "tagaro" | "ebay"
+	export let version: 'tagaro' | 'ebay';
 
 	const title_class = 'light';
 </script>
@@ -58,7 +58,7 @@
 				<img
 					src={make_url('/images/visuals/sky_22-11_paramount-preregistration_v2.webp', dev)}
 					alt=""
-					class:tagaro={version === "tagaro"}
+					class:tagaro={version === 'tagaro'}
 				/>
 			</span>
 			<span slot="right">
