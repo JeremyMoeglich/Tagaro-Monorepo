@@ -17,16 +17,15 @@
 	const navbar_elements: Record<string, string | Record<string, string>> = {
 		Startseite: '/',
 		//Aboformular: '/aboformular',
-		'Sky Angebote': {
+		'Sky Angebote old': {
 			index: '/angebote',
-			'Sky Entertainment Plus': '/angebote/entertainmentplus',
-			'Sky Sport': '/angebote/sport',
-			'Sky Fußball-Bundesliga': '/angebote/bundesliga',
-			'Sky Cinema': '/angebote/cinema',
-			'2 Sky Wunschpakete': '/angebote/2_pakete',
-			'3 Sky Wunschpakete': '/angebote/sport_bundesliga',
-			'4 Sky Pakete oder mehr': '/angebote/4_oder_mehr_pakete',
-			'Sky Entertainment': '/angebote/entertainment'
+			'Sky Entertainment Plus': '/angebote/legacy/entertainmentplus',
+			'Sky Sport': '/angebote/legacy/sport',
+			'Sky Fußball-Bundesliga': '/angebote/legacy/bundesliga',
+			'Sky Cinema': '/angebote/legacy/cinema',
+			'2 Sky Wunschpakete': '/angebote/legacy/sport_bundesliga',
+			'4 Sky Pakete oder mehr': '/angebote/legacy/4_oder_mehr_pakete',
+			'Sky Entertainment': '/angebote/legacy/entertainment'
 		},
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',

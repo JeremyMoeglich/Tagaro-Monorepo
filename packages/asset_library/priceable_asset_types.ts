@@ -11,11 +11,13 @@ export interface Priceable_Asset<T extends priceable_asset_id = priceable_asset_
 	extends Asset<T> {
 	price: Price;
 	selector: selector;
+	senders: readonly string[];
 }
 
 export interface Dynamic_Priceable_Asset<T extends priceable_asset_id> extends Asset<T> {
 	price: number | Price;
 	selector?: selector;
+	senders?: readonly string[];
 }
 
 export function dynamic_to_static_asset<T extends priceable_asset_id>(
@@ -30,7 +32,10 @@ export function dynamic_to_static_asset<T extends priceable_asset_id>(
 				? { jahr: asset.price, monat: asset.price, singular: 0 }
 				: asset.price,
 		note: asset.note,
-		image: asset.image
+		image: asset.image,
+		aspects: asset.aspects,
+		sort_priority: asset.sort_priority,
+		senders: asset.senders
 	};
 }
 export function dynamic_to_static_assets<T extends priceable_asset_id>(

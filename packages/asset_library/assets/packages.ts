@@ -14,47 +14,95 @@ export const package_ids = [
 
 export type package_id = typeof package_ids[number];
 
-const packages_image_location = '/images/assets/packages/square/';
+const packages_image_location = '/images/assets/packages/';
 
-export const packages_assets: ReadonlyArray<Priceable_Asset<package_id>> = dynamic_to_static_assets(
-	[
-		{
-			id: 'entertainment',
-			price: { jahr: 14.5, monat: 19, singular: 0 },
-			name: 'Entertainment',
-			note: '[TODO]',
-			image: `${packages_image_location}entertainment.webp`
+export const packages_assets = dynamic_to_static_assets([
+	{
+		id: 'entertainment',
+		price: { jahr: 14.5, monat: 19, singular: 0 },
+		name: 'Entertainment',
+		note: 'Exklusives Entertainment ohne Ende.',
+		image: {
+			normal: `${packages_image_location}normal/entertainment.png`,
+			square: `${packages_image_location}square/entertainment.webp`
 		},
-		{
-			id: 'entertainmentplus',
-			price: { jahr: 20, monat: 27.5, singular: 0 },
-			name: 'Entertainment Plus',
-			note: '[TODO]',
-			image: `${packages_image_location}entertainmentplus.webp`
+		aspects: [
+			'Exklusive Top-Serien von Sky und HBO',
+			'Große Auswahl an kompletten Serien und Dokumentationen jederzeit auf Abruf verfügbar',
+			'Alles ohne Werbeunterbrechung',
+			'Großartige Programmvielfalt mit Premium-Sendern für jeden Geschmack - live und auf Abruf',
+			'Sky Q Receiver mit 1TB Festplatte, Ultra HD fähig und Sky On Demand Zugang',
+			'Sky Go, Sky Kids App - einfach jederzeit auf tausende Titel zugreifen!'
+		],
+		sort_priority: 1
+	},
+	{
+		id: 'entertainmentplus',
+		price: { jahr: 20, monat: 27.5, singular: 0 },
+		name: 'Entertainment Plus',
+		note: 'Alle Sky Serien und Netflix.',
+		image: {
+			normal: `${packages_image_location}normal/entertainmentplus.png`,
+			square: `${packages_image_location}square/entertainmentplus.webp`
 		},
-		{
-			id: 'cinema',
-			price: { jahr: 10, monat: 13.5, singular: 0 },
-			name: 'Cinema',
-			note: '[TODO]',
-			image: `${packages_image_location}cinema.webp`
+		aspects: [
+			'Hunderte  Serien, Dokus und Show mit exklusiven Top-Inhalten von Sky und HBO',
+			'Netflix Basis-Abo (HD, 1 Gerät) inklusive. Einfach dein bestehendes Netflix Konto mitnehmen',
+			'Alle Inhalte von Sky, Free TV, deinen Lieblingsapps und Mediatheken auf einen Blick vereint',
+			'Einfach. Alles mit einer Sprachfernbedienung'
+		],
+		sort_priority: 0
+	},
+	{
+		id: 'cinema',
+		price: { jahr: 10, monat: 13.5, singular: 0 },
+		name: 'Cinema',
+		note: 'Jeden Tag ein neuer Film.',
+		image: {
+			normal: `${packages_image_location}normal/cinema.png`,
+			square: `${packages_image_location}square/cinema.webp`
 		},
-		{
-			id: 'sport',
-			price: { jahr: 5.5, monat: 9, singular: 0 },
-			name: 'Sport',
-			note: '[TODO]',
-			image: `${packages_image_location}sport.webp`
+		aspects: [
+			'Exklusive Top-Filme kurz nach dem Kino',
+			'Große Filmvielfalt über alle Genres hinweg',
+			'Alle Filme ohne Werbeunterbrechung'
+		],
+		sort_priority: 2
+	},
+	{
+		id: 'sport',
+		price: { jahr: 5.5, monat: 9, singular: 0 },
+		name: 'Sport',
+		note: 'Der beste Live-Sport.',
+		image: {
+			normal: `${packages_image_location}normal/sport.png`,
+			square: `${packages_image_location}square/sport.webp`
 		},
-		{
-			id: 'bundesliga',
-			price: { jahr: 12.5, monat: 16.5, singular: 0 },
-			name: 'Bundesliga',
-			note: '[TODO]',
-			image: `${packages_image_location}bundesliga.webp`
-		}
-	]
-);
+		aspects: [
+			'Alle Rennen der Formel 1 live - exklusiv auf Sky',
+			'Alle Spiele des DFB Pokals einzeln und in der Original Sky Konferenz live',
+			'Alle Spiele der Premier League exklusiv, davon über 250 Spiele live und erstmals ausgewählte Spiele der FA Women`s Super League exklusiv',
+			'NHL, Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
+		],
+		sort_priority: 3
+	},
+	{
+		id: 'bundesliga',
+		price: { jahr: 12.5, monat: 16.5, singular: 0 },
+		name: 'Bundesliga',
+		note: 'Die Heimat der Bundesliga - garantiert bis 2025.',
+		image: {
+			normal: `${packages_image_location}normal/bundesliga.png`,
+			square: `${packages_image_location}square/bundesliga.webp`
+		},
+		aspects: [
+			'Alle Samstagsspiele der Bundesliga live und exklusiv',
+			'Alle Spiele der 2. Bundesliga live',
+			'Alle Relegationsspiele und der Supercup live'
+		],
+		sort_priority: 4
+	}
+]) satisfies ReadonlyArray<Priceable_Asset<package_id>>;
 
 const sort_priorities: Record<package_id, number> = {
 	entertainment: 0,
@@ -106,6 +154,18 @@ export const package_combinations: ReadonlyArray<readonly package_id[]> = typed_
 		combinations.map((premium_packages) => [base_package, ...premium_packages])
 	)
 	.map((packages) => sort_ids(packages));
+
+const showcased_combinations = [
+	['entertainment', 'sport'],
+	['entertainment', 'bundesliga'],
+	['entertainment', 'sport', 'bundesliga'],
+
+	['entertainmentplus'],
+	['entertainmentplus', 'sport'],
+	['entertainmentplus', 'cinema'],
+	['entertainmentplus', 'bundesliga'],
+	['entertainmentplus', 'sport', 'cinema', 'bundesliga']
+] satisfies package_id[][];
 
 export const indexed_package_assets = index_by(packages_assets, 'id');
 

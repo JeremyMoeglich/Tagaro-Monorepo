@@ -8,7 +8,7 @@
 <ShowcaseTemplate
 	title={`Alles von Sky inkl. Paramount+ und Netflix für € 30 mtl.`}
 	subtitle0={`Komplettpreis inkl. Netflix statt € 54 mtl. im ersten Jahr.`}
-	redirect_url={'/angebote/4_oder_mehr_pakete/'}
+	redirect_url={'/angebote/legacy/4_oder_mehr_pakete/'}
 	hide_left={true}
 	points={[
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
@@ -21,7 +21,7 @@
 <!-- <ShowcaseTemplate
 	title={`Das Beste von Sky für nur €&nbsp;30 mtl. inkl. €&nbsp;100 Amazon Gutschein von Sky`}
 	primary_image={'/images/visuals/sky_22-11_cyberweek_text_l_v2.webp'}
-	redirect_url={"/angebote/4_oder_mehr_pakete/"}
+	redirect_url={"/angebote/legacy/4_oder_mehr_pakete/"}
 	points={[
 		`€&nbsp;100 Amazon Gutschein bei Buchung von mindestens Entertainment + 3 Pakete*`,
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,

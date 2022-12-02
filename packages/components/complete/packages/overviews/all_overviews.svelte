@@ -16,22 +16,22 @@
 <div class="outer">
 	<h1>Programmpakete bei Sky</h1>
 
-	<ConditionalHref href="/angebote/entertainmentplus" active={clickable}>
+	<ConditionalHref href="/angebote/legacy/entertainmentplus" active={clickable}>
 		<EntertainmentPlusOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
-	<!-- <a href="/angebote/entertainment">
+	<!-- <a href="/angebote/legacy/entertainment">
 		<EntertainmentOverview />
 	</a> -->
 	<LineSpacer {space} />
-	<ConditionalHref href="/angebote/cinema" active={clickable}>
+	<ConditionalHref href="/angebote/legacy/cinema" active={clickable}>
 		<CinemaOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
 	<LineSpacer {space} />
-	<ConditionalHref href="/angebote/sport" active={clickable}>
+	<ConditionalHref href="/angebote/legacy/sport" active={clickable}>
 		<SportOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
 	<LineSpacer {space} />
-	<ConditionalHref href="/angebote/bundesliga" active={clickable}>
+	<ConditionalHref href="/angebote/legacy/bundesliga" active={clickable}>
 		<BundesligaOverview show_senders={ebay_version} show_price={!ebay_version} />
 	</ConditionalHref>
 

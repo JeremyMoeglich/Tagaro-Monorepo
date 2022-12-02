@@ -20,25 +20,41 @@ export const cable_receive_assets: ReadonlyArray<Asset<cable_receive_types>> = [
 		id: 'automatic',
 		name: 'Automatische Ermittlung (Sky Adressdatenbank)',
 		note: '[TODO]',
-		image: temp_asset_image
+		image: {
+			normal: temp_asset_image
+		},
+		aspects: [],
+		sort_priority: 15
 	},
 	{
 		id: 'vodafone_kabel_deutschland',
 		name: 'Vodafone (vormals Kabel Deutschland) ',
 		note: '[TODO]',
-		image: temp_asset_image
+		image: {
+			normal: temp_asset_image
+		},
+		aspects: [],
+		sort_priority: 16
 	},
 	{
 		id: 'Vodafone_unitymedia',
 		name: 'Vodafone (vormals Unitymedia)',
 		note: '[TODO]',
-		image: temp_asset_image
+		image: {
+			normal: temp_asset_image
+		},
+		aspects: [],
+		sort_priority: 17
 	},
 	{
 		id: 'other',
 		name: 'Anderer privater Anbieter ',
 		note: '[TODO]',
-		image: temp_asset_image
+		image: {
+			normal: temp_asset_image
+		},
+		aspects: [],
+		sort_priority: 18
 	}
 ];
 
@@ -49,18 +65,30 @@ export const receive_assets: ReadonlyArray<Asset<receive_id>> = [
 		id: 'kabel',
 		name: 'Kabel',
 		note: '[TODO]',
-		image: `${receiver_image_location}kabel.webp`
+		image: {
+			normal: `${receiver_image_location}kabel.webp`
+		},
+		aspects: [],
+		sort_priority: 19
 	},
 	{
 		id: 'satelit',
 		name: 'Satelit',
 		note: '[TODO]',
-		image: `${receiver_image_location}satelit.webp`
+		image: {
+			normal: `${receiver_image_location}satelit.webp`
+		},
+		aspects: [],
+		sort_priority: 20
 	},
 	{
 		id: 'internet',
 		name: 'Internet',
 		note: '[TODO]',
-		image: `${receiver_image_location}internet.webp`
+		image: {
+			normal: `${receiver_image_location}internet.webp`
+		},
+		aspects: [],
+		sort_priority: 21
 	}
 ];

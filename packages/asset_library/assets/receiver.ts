@@ -16,15 +16,23 @@ export const receiver_assets: ReadonlyArray<Readonly<Priceable_Asset<receiver_id
 			id: 'receiver1x',
 			name: 'Sky Q Receiver + Smartcard',
 			note: '[TODO]',
-			image: temp_asset_image,
-			price: 0
+			image: {
+				normal: temp_asset_image
+			},
+			price: 0,
+			aspects: [],
+			sort_priority: 22
 		},
 		{
 			id: 'receiver2x',
 			name: '2x Sky Q Receiver + Multiscreen + Sky Go Plus + Smartcard',
 			note: '[TODO]',
-			image: temp_asset_image,
-			price: 99
+			image: {
+				normal: temp_asset_image
+			},
+			price: 99,
+			aspects: [],
+			sort_priority: 23
 		}
 	]);
 
@@ -40,14 +48,22 @@ export const iptv_assets: ReadonlyArray<Dynamic_Priceable_Asset<iptv_id>> = [
 		id: 'iptv1x',
 		name: 'Sky Q IPTV Box + Sky Go',
 		note: '[TODO]',
-		image: temp_asset_image,
-		price: 0
+		image: {
+			normal: temp_asset_image
+		},
+		price: 0,
+		aspects: [],
+		sort_priority: 24
 	},
 	{
 		id: 'iptv2x',
 		name: '2x Sky IPTV Box + Sky Q App + Sky Go Plus + Multiscreen',
 		note: '[TODO]',
-		image: temp_asset_image,
-		price: 99
+		image: {
+			normal: temp_asset_image
+		},
+		price: 99,
+		aspects: [],
+		sort_priority: 25
 	}
 ];

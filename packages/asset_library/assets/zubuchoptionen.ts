@@ -3,9 +3,7 @@ import type { Priceable_Asset } from '../priceable_asset_types';
 
 export const zubuchoption_ids = [
 	'uhd',
-	'dazn_monthly',
-	'dazn_yearly',
-	'dazn_generic',
+	'dazn',
 	'multiscreen',
 	'kids',
 	'trendsports',
@@ -18,8 +16,6 @@ export const zubuchoption_ids = [
 ] as const;
 
 export type zubuchoption_id = typeof zubuchoption_ids[number];
-
-const dazn_price: Price = { jahr: 24.99, monat: 29.99, singular: 0 };
 
 const zubuchoption_image_location = '/images/assets/zubuchoptionen/';
 
@@ -39,84 +35,122 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				type: 'AND'
 			},
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}uhd.png`
+			image: {
+				normal: `${zubuchoption_image_location}uhd.png`,
+				square: `${zubuchoption_image_location}uhd.png`
+			},
+			aspects: [],
+			sort_priority: 6
 		},
 		{
 			id: 'skygoplus',
 			price: 5,
 			name: `Sky Go Plus`,
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}skygoplus.png`
+			image: {
+				normal: `${zubuchoption_image_location}skygoplus.png`
+			},
+			aspects: [],
+			sort_priority: 7
 		},
 		{
-			id: 'dazn_monthly',
-			price: { jahr: dazn_price.monat, monat: dazn_price.monat, singular: 0 },
+			id: 'dazn',
+			price: { jahr: 24.99, monat: 29.99, singular: 0 },
 			name: 'DAZN',
-			note: '[TODO]',
-			image: `${zubuchoption_image_location}dazn.svg`
-		},
-		{
-			id: 'dazn_yearly',
-			price: { jahr: dazn_price.jahr, monat: dazn_price.jahr, singular: 0 },
-			name: 'DAZN',
-			note: '[TODO]',
-			image: `${zubuchoption_image_location}dazn.svg`
-		},
-		{
-			id: 'dazn_generic',
-			price: dazn_price,
-			name: 'DAZN',
-			note: '[TODO]',
-			image: `${zubuchoption_image_location}dazn.svg`
+			note: 'Live-Sport, Dokus und vieles mehr per App und TV-Sender.',
+			image: {
+				normal: `${zubuchoption_image_location}dazn.png`,
+				square: `${zubuchoption_image_location}dazn.png`
+			},
+			aspects: [
+				'Mehr Top-Fußball mit allen Freitags- und Sonntagsspiele der Bundesliga, fast alle Live-Spiele und die Konferenz der UEFA Champions League sowie einer Reihe weiterer populärer Sportarten wie US-Sport, Tennis, Kampfsport und vielem mehr.',
+				'Das Beste von DAZN auf zwei neuen DAZN TV-Sendern im Sky Programm (derzeit nicht verfügbar im Kabelnetz von Vodafone/Unitymedia)',
+				'DAZN Top Events direkt neben deinem Sky Programm auf Sky Q. Nur mit einer Fernbedienung - ohne Hin- und Herschalten.',
+				'Abrechnung und Kundenservice aus einer Hand. Sky ist dein Ansprechpartner.'
+			],
+			sort_priority: 8
 		},
 		{
 			id: 'multiscreen',
 			price: { jahr: 5, monat: 10, singular: 0 },
 			name: 'Multiscreen',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}multiscreen.png`
+			image: {
+				normal: `${zubuchoption_image_location}multiscreen.png`,
+				square: `${zubuchoption_image_location}multiscreen.png`
+			},
+			aspects: [],
+			sort_priority: 9
 		},
 		{
 			id: 'kids',
 			price: 5,
 			name: 'Kids',
-			note: '[TODO]',
-			image: `${zubuchoption_image_location}kids.png`
+			note: 'Große Unterhaltung für alle Kleinen.',
+			image: {
+				normal: `${zubuchoption_image_location}kids.png`,
+				square: `${zubuchoption_image_location}kids.png`
+			},
+			aspects: [
+				'5 beliebte Kindersender und mehr als 4.500 Inhalte',
+				'Unser Kids Mode schafft eine kindersichere Umgebung',
+				'Alles auf Abruf ohne Werbung',
+				'Mit Download-Funktion'
+			],
+			sort_priority: 5
 		},
 		{
 			id: 'trendsports',
 			price: 5.99,
 			name: 'trendSports',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}trendsports.png`
+			image: {
+				normal: `${zubuchoption_image_location}trendsports.png`
+			},
+			aspects: [],
+			sort_priority: 10
 		},
 		{
 			id: 'plus18',
 			price: 0,
 			name: '18+ für Blue Movie',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}plus18.png`
+			image: {
+				normal: `${zubuchoption_image_location}plus18.png`
+			},
+			aspects: [],
+			sort_priority: 11
 		},
 		{
 			id: 'hdplus4monategratis',
 			price: 0,
 			name: 'HD+ 4 Monate gratis',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}hdplus.png`
+			image: {
+				normal: `${zubuchoption_image_location}hdplus.png`
+			},
+			aspects: [],
+			sort_priority: 12
 		},
 		{
 			id: 'hdplus',
 			price: 6,
 			name: 'HD+ 6 monate gratis',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}hdplus.png`
+			image: {
+				normal: `${zubuchoption_image_location}hdplus.png`
+			},
+			aspects: [],
+			sort_priority: 13
 		},
 		{
 			id: 'netflixstandard',
 			price: 5,
 			name: 'Netflix Standard-Abo',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}Netflix_standard.png`,
+			image: {
+				normal: `${zubuchoption_image_location}netflix_standard.png`
+			},
 			selector: {
 				descriptor: [
 					{
@@ -129,14 +163,18 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 					}
 				],
 				type: 'AND'
-			}
+			},
+			aspects: [],
+			sort_priority: 14
 		},
 		{
 			id: 'netflixpremium',
 			price: 10,
 			name: 'Netflix Premium-Abo',
 			note: '[TODO]',
-			image: `${zubuchoption_image_location}Netflix_premium.png`,
+			image: {
+				normal: `${zubuchoption_image_location}netflix_premium.png`
+			},
 			selector: {
 				descriptor: [
 					{
@@ -149,6 +187,8 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 					}
 				],
 				type: 'AND'
-			}
+			},
+			aspects: [],
+			sort_priority: 15
 		}
 	]);

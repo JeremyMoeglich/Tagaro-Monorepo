@@ -5,22 +5,17 @@
 	import { get_offer_note, get_price_string } from 'asset_library/prices';
 	import { typed_keys } from 'functional-utilities';
 	import SquarePackageList from '../../generators/square_package_list.svelte';
-	import type { imaged_package_id } from 'asset_library/imaged_packages';
-	import { imaged_package_ids } from 'asset_library/imaged_packages';
 
-	import { crossfade } from 'frontend/crossfade';
 	import { make_url } from 'frontend/url';
 	import { dev } from '$app/environment';
 	import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
-	const [send, receive] = crossfade;
+	import AssetImage from '../../generators/asset_image.svelte';
+	import { sort_assets } from 'asset_library/all_assets';
 
-	export let title: string;
-	export let points: ReadonlyArray<string>;
-	export let image: string = undefined;
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
 	export let show_price: boolean;
-	export let show_slot: boolean;
+	export let show_senders: boolean;
 
 	$: offer_string = price_asset_ids.every((id) =>
 		typed_keys(indexed_package_assets).includes(id as package_id)
@@ -28,40 +23,32 @@
 		? get_offer_note(price_asset_ids as package_id[])
 		: '';
 
-	function is_imaged_package(id: priceable_asset_id): id is imaged_package_id {
-		return imaged_package_ids.includes(id as imaged_package_id);
-	}
-
+	$: sorted_assets = sort_assets(price_asset_ids);
+	$: asset_square_images = sorted_assets.filter((v) => 'square' in indexed_package_assets[v].image);
 </script>
 
 <div class="package_overview">
 	<div class="alignment">
-		{#if image}
-			{#if animated}
-				<img
-					src={make_url(image, dev)}
-					alt=""
-					class="image"
-					out:send={{ key: image }}
-					in:receive={{ key: image }}
-				/>
-			{:else}
-				<img src={make_url(image, dev)} alt="" class="image" />
-			{/if}
-		{/if}
+		<AssetImage asset_ids={price_asset_ids} {animated} />
 
 		<div class="description">
-			<h2 class="title ">{title}</h2>
+			<h2 class="title">
+				{sort_assets(price_asset_ids)
+					.map((v) => indexed_package_assets[v].name)
+					.join(' + ')}
+			</h2>
 			<ul class="points">
-				{#each points as point}
-					<li>{@html point}</li>
+				{#each sorted_assets as asset}
+					{#each indexed_package_assets[asset].aspects as point}
+						<li>{@html point}</li>
+					{/each}
 				{/each}
 			</ul>
 			{#if show_price}
-				{#if price_asset_ids.every(is_imaged_package)}
+				{#if asset_square_images.length > 0}
 					<SquarePackageList package_ids={price_asset_ids} />
 				{/if}
-				<h3 class:spaced={!price_asset_ids.every(is_imaged_package)}>
+				<h3 class:spaced={asset_square_images.length === 0}>
 					12 Monate nur {@html get_price_string(price_asset_ids, 'jahr')} mtl.*
 				</h3>
 				<p>
@@ -81,11 +68,6 @@
 					<GradientBadge>{offer_string}</GradientBadge>
 			{/if} -->
 		</div>
-		{#if show_slot}
-			<div class="senders">
-				<slot />
-			</div>
-		{/if}
 	</div>
 </div>
 

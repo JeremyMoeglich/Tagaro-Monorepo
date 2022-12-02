@@ -44,9 +44,8 @@
 					<li><b>Optional:</b></li>
 					<li>- UHD mtl. {@html get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
 					<li>
-						- DAZN jährlich für {@html get_price_string(['dazn_yearly'], 'jahr')} mtl. oder DAZN monatlich
-						für
-						{@html get_price_string(['dazn_monthly'], 'monat')} mtl.
+						- DAZN jährlich für {@html get_price_string(['dazn'], 'jahr')} mtl. oder DAZN monatlich für
+						{@html get_price_string(['dazn'], 'monat')} mtl.
 					</li>
 					<li>
 						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
@@ -117,16 +116,10 @@
 					Entertainment für {@html get_price_string(['entertainment'], 'monat')} mtl.
 				</li>
 				<li>
-					Entertainment + Sport für {@html get_price_string(
-						['entertainment', 'sport'],
-						'monat'
-					)} mtl.
+					Entertainment + Sport für {@html get_price_string(['entertainment', 'sport'], 'monat')} mtl.
 				</li>
 				<li>
-					Entertainment + Cinema für {@html get_price_string(
-						['entertainment', 'cinema'],
-						'monat'
-					)} mtl.
+					Entertainment + Cinema für {@html get_price_string(['entertainment', 'cinema'], 'monat')} mtl.
 				</li>
 				<li>
 					Entertainment + Fußball-Bundesliga für {@html get_price_string(
@@ -264,7 +257,7 @@
 		<p>
 			Die Laufzeit entspricht 1 Monat oder 12 Monate, jeweils mit anschließender automatischer
 			Verlängerung jeweils um einen Monat. Im Falle der Verlängerung fällt bei der 12-Monats Option
-			ein monatlicher Preis von {@html get_price_string(['dazn_monthly'], 'jahr')} an. Im deutschen Kabelnetz
+			ein monatlicher Preis von {@html get_price_string(['dazn'], 'jahr')} an. Im deutschen Kabelnetz
 			von Vodafone/Unitymedia sind die beiden Sender aus lizenzrechtlichen Gründen derzeit nicht verfügbar.
 			Kunden, die Sky über dieses Netz empfangen, können ebenfalls wie Kunden anderer Netze, die DAZN
 			Inhalte über Sky Q in der DAZN App empfangen. Zum Empfang über die DAZN App ist eine dauerhafte
