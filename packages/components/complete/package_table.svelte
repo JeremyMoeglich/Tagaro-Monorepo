@@ -57,19 +57,21 @@
 					</div>
 				{/each}
 				<div class="cell text-cell" style:--row={row_index + 1} style:--col={col_amount}>
-					<p>
-						<b>
-							{#if get_offer_note(row)}
-								<mark class="nowrap">{@html get_offer_note(row)}</mark>
-								<br />
-							{/if}
+					<div class="text-cell-inner">
+						<p>
+							<b>
+								{#if get_offer_note(row)}
+									<mark class="nowrap">{@html get_offer_note(row)}</mark>
+									<br />
+								{/if}
 
-							{@html get_price_string(row, 'jahr')}&nbsp;mtl.*
-						</b>
-					</p>
-					<p class="small">
-						im Jahres-Abo danach {@html get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
-					</p>
+								{@html get_price_string(row, 'jahr')}&nbsp;mtl.*
+							</b>
+						</p>
+						<p class="small">
+							im Jahres-Abo danach {@html get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
+						</p>
+					</div>
 				</div>
 				<div class="background_box" style:--row={row_index + 1} />
 			{/if}
@@ -95,35 +97,14 @@
 		margin: 0px;
 	}
 
-	$gap: 1rem;
-
-	$collapse_start: 600px;
-	$collapse_end: 400px;
-	$collapse_min: 0rem;
-
-	// increase $col-gap from $collapse_start to $collapse_end to $collapse_min
-
-	$col-gap: max(
-		$collapse_min,
-		min(
-			$gap,
-			$gap - ($collapse_start - $collapse_end) / ($collapse_start - $collapse_end) *
-				($collapse_start - $collapse_end)
-		)
-	);
-
-	$added_padding: calc($gap - $col-gap);
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(var(--col_amount), 1fr);
 		padding: 1rem;
 		row-gap: 1rem;
-		column-gap: $col-gap;
 		border: 1px solid #ccc;
 		border-radius: 15px;
 		width: 100%;
-		padding-left: $added_padding / 2 + 1rem;
-		padding-right: $added_padding / 2 + 1rem;
 	}
 	.background_box {
 		grid-column: 1 / var(--col_amount);
@@ -140,14 +121,19 @@
 		aspect-ratio: 1 / 1;
 	}
 	.text-cell {
+		padding: 0px;
+		padding-left: 1rem;
+		//border: 1px solid #ccc;
+	}
+	.text-cell-inner {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
 		background-color: rgb(226, 242, 255);
 		border-radius: 10px;
-		margin-left: $added_padding;
-		//border: 1px solid #ccc;
+		width: 100%;
+		height: 100%;
 	}
 	.title_row {
 		grid-column: 1 / calc(var(--col_amount) + 1);
