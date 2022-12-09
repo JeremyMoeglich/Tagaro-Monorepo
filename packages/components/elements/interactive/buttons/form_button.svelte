@@ -7,3 +7,9 @@
 </script>
 
 <button class="form_button" on:click={async () => load_form(source, route)}><slot /></button>
+
+<style>
+	.form_button {
+		width: 100%;
+	}
+</style>
