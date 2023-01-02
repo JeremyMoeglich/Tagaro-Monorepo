@@ -52,18 +52,18 @@ export const entertainment_senders = [
 		image: 'sky_logo_universalchannelhd_b.png',
 		text: 'Für alle Film-und Serienfans von Comedy bis Drama'
 	},
-	{
-		image: 'sky_logo_natgeowild-hd_w.png',
-		text: 'Faszinierende Dokumentationen aus Natur und Tierwelt'
-	},
+	// {
+	// 	image: 'sky_logo_natgeowild-hd_w.png',
+	// 	text: 'Faszinierende Dokumentationen aus Natur und Tierwelt'
+	// },
 	{
 		image: '83_sky_logo_discovery-hd_w.png',
 		text: 'Packende Dokumentationen zu Abenteuer, Technik und Wissenschaft'
 	},
-	{
-		image: '81_sky_logo_natgeochannelhd_w.png',
-		text: 'Für Entdecker - mit spannenden Dokumentationen'
-	},
+	// {
+	// 	image: '81_sky_logo_natgeochannelhd_w.png',
+	// 	text: 'Für Entdecker - mit spannenden Dokumentationen'
+	// },
 	{
 		image: '86_sky_logo_historyhd_w.png',
 		text: 'Dokumentationen über besondere Menschen und Ereignisse mit preisgekrönten Eigenproduktionen'
