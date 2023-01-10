@@ -29,19 +29,25 @@
 			[['entertainment', 'sport', 'bundesliga'], 'Titel'],
 			[['entertainment', 'cinema', 'sport'], 'Titel'],
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
-			[['entertainment', 'sport', 'bundesliga', 'cinema'], 'Titel'],
+			[
+				['entertainment', 'sport', 'bundesliga', 'cinema'],
+				'Sky Abo mit Entertainment + 3 Paketen für €&nbsp;30 mtl. Dazu €&nbsp;20 Bonus*'
+			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
-			[['entertainmentplus', 'cinema'], 'Titel'],
+			[
+				['entertainmentplus', 'cinema'],
+				'Sky Entertainment Plus + Cinema inkl. Paramount+ für €&nbsp;25 mtl.*'
+			],
 			[['entertainmentplus', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'cinema', 'sport'], 'Titel'],
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo inkl. Netflix & Paramount+ für €&nbsp;30 mtl. Dazu €&nbsp;20 Bonus*'
+				'Sky Komplett Abo inkl. Netflix & Paramount+ für €&nbsp;35 mtl. Dazu €&nbsp;20 Bonus*'
 			],
-			['allgemein', 'Sky Abo nach Wahl mit bis zu € 288 Sparvorteil. Dazu €&nbsp;20 Bonus von uns*']
+			['allgemein', 'Sky Abo nach Wahl z.B. Entertainment Plus für € 15 mtl. Dazu €&nbsp;20 Bonus*']
 		];
 		const title = titles.find(([p]) =>
 			typeof p === 'string'
@@ -62,8 +68,7 @@
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
 					<li>
-						✓ Sky Aktion: Entertainment Plus inkl. Netflix + 3 Pakete (Cinema, Sport & Fußball
-						Bundesliga) für € 30 mtl.
+						✓ Sky Aktion: Cinema hinzubuchen und Paramount+ im Wert von € 7,99 mtl. dazu erhalten*
 					</li>
 					{#if bonus > 0}
 						<li>
@@ -72,20 +77,19 @@
 					{/if}
 				</ul>
 				<p class="max-w-6xl mt-2">
-					Bei unserem neuen Angebot, erhalten Sie Entertainment Plus inkl. 3 Pakete (Cinema, Sport
-					und Fußball Bundesliga) für € 30 mtl. im ersten Jahr. Netflix und Paramount+ sind in
-					diesem Komplettangebot inklusive. Zusätzlich überweisen wir Ihnen einen Bonus von € 20.
-					Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche
-					Zubuchoptionen zu Ihrem Vertrag wie Multiscreen, DAZN & UHD an. Ihre PAYBACK Nummer für
-					500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind weitere
-					Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren bei
-					TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung seit
-					2006.
+					Entdecken Sie die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
+					Buchung des Cinema Pakets, erhalten Sie Paramount+ dazu. Zusätzlich überweisen wir Ihnen
+					einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
+					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen, DAZN & UHD an. Ihre
+					PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online
+					sind weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie
+					profitieren bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger
+					Erfahrung seit 2006.
 				</p>
 			</div>
 			<img
 				class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-				src={make_url('/images/visuals/sky1222_teaser_komplettoffer.png', dev)}
+				src={make_url('/images/visuals/sky0123_teaser.png', dev)}
 				alt=""
 			/>
 			<div class="max-w-4xl w-full">
