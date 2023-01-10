@@ -38,7 +38,7 @@
 		},
 		{
 			image: '/images/assets/zubuchoptionen/netflix_standard.png',
-			html: /*html*/ `<b>Netflix Standard-Abo (HD) <br> + ${get_price_string(
+			html: /*html*/ `<b>Netflix Standard-Abo (Full HD 1080p) <br> + ${get_price_string(
 				['netflixstandard'],
 				'jahr'
 			)} mtl.</b> <br> 2 Geräte`

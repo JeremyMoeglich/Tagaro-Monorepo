@@ -217,7 +217,7 @@
 		<h3 class={title_classes}>Sky Entertainment Plus:</h3>
 		<p>
 			Das Sky Entertainment Plus Paket umfasst zusätzlich den Zugang zu Netflix Basis (beinhaltet
-			aktuell HD und die gleichzeitige Nutzung von Netflix auf einem Gerät) des Anbieters Netflix
+			aktuell HD 720p und die gleichzeitige Nutzung von Netflix auf einem Gerät) des Anbieters Netflix
 			International B.V. Voraussetzung für die Nutzung des Netflix Dienstes über die Sky Q Plattform
 			im Rahmen des Pakets Sky Entertainment Plus ist ein Sky Q Receiver oder eine Sky Q IPTV Box,
 			welcher mit dem Internet verbunden ist. Für die Internetverbindung anfallende Kosten sind kein
@@ -242,7 +242,7 @@
 		<h3 class={title_classes}>Sky Entertainment Plus Upgrade auf Netflix Standard/Premium:</h3>
 		<p>
 			Gegen Aufpreis kann jederzeit ein Upgrade des Entertainment Plus Pakets von Netflix Basis auf
-			Netflix Standard oder Premium vorgenommen werden. Netflix Standard beinhaltet aktuell HD und
+			Netflix Standard oder Premium vorgenommen werden. Netflix Standard beinhaltet aktuell Full HD 1080p und
 			die gleichzeitige Nutzung von Netflix auf bis zu zwei Geräten. Netflix Premium beinhaltet
 			aktuell UHD und die gleichzeitige Nutzung von Netflix auf bis zu vier Geräten. Das Sky
 			Entertainment Plus Upgrade kann vom Kunden jederzeit sowohl mittels Erklärung gegenüber Sky

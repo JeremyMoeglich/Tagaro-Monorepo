@@ -51,7 +51,7 @@ export const packages_assets = dynamic_to_static_assets([
 		},
 		aspects: [
 			'Hunderte  Serien, Dokus und Show mit exklusiven Top-Inhalten von Sky und HBO',
-			'Netflix Basis-Abo (HD, 1 Gerät) inklusive. Einfach dein bestehendes Netflix Konto mitnehmen',
+			'Netflix Basis-Abo (HD 720p, 1 Gerät) inklusive. Einfach dein bestehendes Netflix Konto mitnehmen',
 			'Alle Inhalte von Sky, Free TV, deinen Lieblingsapps und Mediatheken auf einen Blick vereint',
 			'Einfach. Alles mit einer Sprachfernbedienung'
 		],
