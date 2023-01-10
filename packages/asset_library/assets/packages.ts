@@ -167,11 +167,10 @@ export const showcased_combinations = [
 	['entertainment', 'sport'],
 	['entertainment', 'bundesliga'],
 	['entertainment', 'sport', 'bundesliga'],
+	['entertainment', 'sport', 'bundesliga', "cinema"],
 
 	['entertainmentplus'],
-	['entertainmentplus', 'sport'],
 	['entertainmentplus', 'cinema'],
-	['entertainmentplus', 'bundesliga'],
 	['entertainmentplus', 'sport', 'cinema', 'bundesliga']
 ] satisfies package_id[][];
 

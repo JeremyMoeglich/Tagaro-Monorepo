@@ -57,7 +57,7 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 		},
 		{
 			id: 'dazn',
-			price: { jahr: 24.99, monat: 29.99, singular: 0 },
+			price: { jahr: 18.99, monat: 29.99, singular: 0 },
 			name: 'DAZN',
 			note: 'Live-Sport, Dokus und vieles mehr per App und TV-Sender.',
 			image: {
@@ -75,7 +75,7 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 		},
 		{
 			id: 'multiscreen',
-			price: { jahr: 5, monat: 10, singular: 0 },
+			price: { jahr: 10, monat: 10, singular: 0 },
 			name: 'Multiscreen',
 			note: '[TODO]',
 			image: {

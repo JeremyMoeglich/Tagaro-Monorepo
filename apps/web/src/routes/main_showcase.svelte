@@ -1,18 +1,18 @@
 <script lang="ts">
 	import ShowcaseTemplate from './showcase_template.svelte';
-	import { bonus_string } from 'asset_library/prices';
+	import { bonus_string, get_price_string } from 'asset_library/prices';
 
 	//const savings = get_savings_string(['entertainmentplus', 'cinema', 'sport', 'bundesliga']);
 </script>
 
 <ShowcaseTemplate
-	title={`Alles von Sky inkl. Paramount+ und Netflix für € 30 mtl.`}
-	subtitle0={`Komplettpreis inkl. Netflix statt € 54 mtl. im ersten Jahr.`}
+	title={`Sky Pakete inkl. Paramount+ und Netflix ab ${get_price_string(["entertainmentplus", "cinema"], "jahr")} mtl.`}
+	subtitle0={`Alternativ Entertainment + alle drei Pakete jetzt nur ${get_price_string(["entertainment", "cinema", "bundesliga", "sport"], "jahr")}*`}
 	redirect_url={'/angebote/entertainmentplus_cinema_sport_bundesliga'}
 	hide_left={true}
 	points={[
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
-		`Entertainment Plus + 3 Pakete jetzt nur € 30 mtl. im Jahres-Abo, danach € 66,50 mtl.*`,
+		`Entertainment + 3 Pakete jetzt nur ${get_price_string(["entertainment", "cinema", "bundesliga", "sport"], "jahr")} mtl. im Jahres-Abo, danach ${get_price_string(["entertainment", "cinema", "bundesliga", "sport"], "monat")} mtl.*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	top_margin={20}
