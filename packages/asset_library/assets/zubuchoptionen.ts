@@ -58,7 +58,7 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 		{
 			id: 'dazn',
 			price: { jahr: 18.99, monat: 29.99, singular: 0 },
-			name: 'DAZN',
+			name: 'DAZN STANDARD',
 			note: 'Live-Sport, Dokus und vieles mehr per App und TV-Sender.',
 			image: {
 				normal: `${zubuchoption_image_location}dazn.svg`,

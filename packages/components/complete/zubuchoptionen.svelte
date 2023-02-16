@@ -19,10 +19,11 @@
 		},
 		{
 			image: '/images/assets/zubuchoptionen/dazn.svg',
-			html: /*html*/ `<b>DAZN jährlich + ${get_price_string(
+			html: /*html*/ `<b>DAZN STANDARD + ${get_price_string(
 				['dazn'],
 				'jahr'
-			)} mtl. </b>oder<b><br /> DAZN monatlich + ${get_price_string(['dazn'], 'monat')} mtl.</b>`
+			)} mtl.<br />(nach 12 Monaten € 29,99 pro Monat) </b>oder<b>
+			<br /> DAZN STANDARD monatliche Option + ${get_price_string(['dazn'], 'monat')} mtl.</b>`
 		},
 		{
 			image: '/images/assets/zubuchoptionen/multiscreen.png',
@@ -82,7 +83,7 @@
 	}
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 		grid-auto-rows: 1fr;
 		width: 100%;
 		gap: 1rem;
