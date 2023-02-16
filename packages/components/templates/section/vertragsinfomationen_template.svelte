@@ -1,5 +1,5 @@
 <script lang="ts">
-	//import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
+	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
 	import { get_offer_note, get_price_string } from 'asset_library/prices';
@@ -39,7 +39,7 @@
 						</div>
 					{/each}
 				</div>
-				<!-- <AktivierungSentence /> -->
+				<AktivierungSentence />
 				<ul>
 					<li><b>Optional:</b></li>
 					<li>- UHD mtl. {@html get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>

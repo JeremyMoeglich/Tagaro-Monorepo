@@ -18,7 +18,7 @@ export function to_price_string(v: number): string {
 	return str;
 }
 
-export const aktivierung = 0;
+export const aktivierung = 29;
 export const aktivierung_string = to_price_string(aktivierung);
 
 export const bonus = 20 as number;

@@ -76,10 +76,10 @@ export const entertainment_senders = [
 		image: 'sky_logo_beateuhse-hd.png',
 		text: 'Schärfer fernsehen mit prickelnder Erotik.'
 	},
-	{
-		image: '117_sky_logo_entertainment_w.png',
-		text: 'Entertainment täglich aus der Welt des Showbiz'
-	},
+	// {
+	// 	image: '117_sky_logo_entertainment_w.png',
+	// 	text: 'Entertainment täglich aus der Welt des Showbiz'
+	// },
 	{
 		image: 'sky_logo_sky-sport-news.png',
 		text: '24 Stunden Sportnachrichten aus aller Welt live.'

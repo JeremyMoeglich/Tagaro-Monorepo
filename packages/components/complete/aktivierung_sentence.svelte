@@ -11,7 +11,7 @@
 {:else}
 	<p>
 		Zu allen Angeboten kommt durch Sky eine <b
-			>einmalige Aktivierungsgebühr in Höhe von {aktivierung_string}</b
+			>einmalige Aktivierungsgebühr in Höhe von {@html aktivierung_string}</b
 		>
 		hinzu. Diese wird zusammen mit der ersten monatlichen Programmgebühr abgebucht.
 	</p>
