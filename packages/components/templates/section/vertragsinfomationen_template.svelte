@@ -105,10 +105,10 @@
 	<div>
 		<h3 class={title_classes}>Laufzeit und Preise bei Verlängerung:</h3>
 		<p>
-			Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
-			Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten automatisch
-			jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem Monat zum
-			Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende Preise:
+			Das Abonnement verlängert sich automatisch nach der Mindestvertragslaufzeit auf unbestimmte
+			Zeit, wenn es nicht mit einer Frist von einem Monat zum Ende der Mindestvertragslaufzeit
+			gekündigt wird. Im Anschluss ist das Abonnement mit selber Frist monatlich kündbar. Im Falle
+			der Verlängerung gelten folgende Preise:
 		</p>
 		<div class="laufzeit">
 			<ul>
@@ -217,22 +217,22 @@
 		<h3 class={title_classes}>Sky Entertainment Plus:</h3>
 		<p>
 			Das Sky Entertainment Plus Paket umfasst zusätzlich den Zugang zu Netflix Basis (beinhaltet
-			aktuell HD 720p und die gleichzeitige Nutzung von Netflix auf einem Gerät) des Anbieters Netflix
-			International B.V. Voraussetzung für die Nutzung des Netflix Dienstes über die Sky Q Plattform
-			im Rahmen des Pakets Sky Entertainment Plus ist ein Sky Q Receiver oder eine Sky Q IPTV Box,
-			welcher mit dem Internet verbunden ist. Für die Internetverbindung anfallende Kosten sind kein
-			Bestandteil des Sky Abonnements. Der Netflix Dienst steht auf Sky Go und der Sky Q App für
-			Smart-TVs nicht zur Verfügung. Sobald der Netflix Dienst im Rahmen des Sky Entertainment
-			Plus-Abonnements aktiviert ist, kann er auch außerhalb von Sky Q über die Plattformen und Apps
-			von Netflix genutzt werden. Das Sky Entertainment Plus-Abonnement gewährt den Zugang zum
-			Netflix-Dienst wie oben näher beschrieben. Für Netflix-Accounts, die mit Sky Entertainment
-			Plus verbunden sind, gilt für die Dauer des Sky Entertainment Plus-Abonnements folgendes: Die
-			Geschäftsbedingungen von Sky regeln das Abonnementverhältnis des Kunden mit Sky sowie das Sky
-			Entertainment Plus-Abonnement selbst, während die Nutzungsbedingungen von Netflix die
-			Benutzung des Netflix-Dienstes durch den Kunden regeln. Alle Ansprüche des Kunden im Hinblick
-			auf das Entertainment Plus-Abonnement müssen gegenüber Sky geltend gemacht werden. Sky erklärt
-			hiermit im Namen von Netflix, dass die Netflix-Nutzungsbedingungen in Bezug auf die Laufzeit,
-			die Rechnungsstellung, den Preis, ausdrückliche
+			aktuell HD 720p und die gleichzeitige Nutzung von Netflix auf einem Gerät) des Anbieters
+			Netflix International B.V. Voraussetzung für die Nutzung des Netflix Dienstes über die Sky Q
+			Plattform im Rahmen des Pakets Sky Entertainment Plus ist ein Sky Q Receiver oder eine Sky Q
+			IPTV Box, welcher mit dem Internet verbunden ist. Für die Internetverbindung anfallende Kosten
+			sind kein Bestandteil des Sky Abonnements. Der Netflix Dienst steht auf Sky Go und der Sky Q
+			App für Smart-TVs nicht zur Verfügung. Sobald der Netflix Dienst im Rahmen des Sky
+			Entertainment Plus-Abonnements aktiviert ist, kann er auch außerhalb von Sky Q über die
+			Plattformen und Apps von Netflix genutzt werden. Das Sky Entertainment Plus-Abonnement gewährt
+			den Zugang zum Netflix-Dienst wie oben näher beschrieben. Für Netflix-Accounts, die mit Sky
+			Entertainment Plus verbunden sind, gilt für die Dauer des Sky Entertainment Plus-Abonnements
+			folgendes: Die Geschäftsbedingungen von Sky regeln das Abonnementverhältnis des Kunden mit Sky
+			sowie das Sky Entertainment Plus-Abonnement selbst, während die Nutzungsbedingungen von
+			Netflix die Benutzung des Netflix-Dienstes durch den Kunden regeln. Alle Ansprüche des Kunden
+			im Hinblick auf das Entertainment Plus-Abonnement müssen gegenüber Sky geltend gemacht werden.
+			Sky erklärt hiermit im Namen von Netflix, dass die Netflix-Nutzungsbedingungen in Bezug auf
+			die Laufzeit, die Rechnungsstellung, den Preis, ausdrückliche
 			Zusicherungen/Gewährleistungsansprüche/Garantien (soweit vorhanden), Probezeiträume und
 			Kündigungen nicht anwendbar sind. Und Netflix wird in Bezug auf den jeweiligen Netflix-Account
 			keine Entgelte in Rechnung stellen.
@@ -242,11 +242,11 @@
 		<h3 class={title_classes}>Sky Entertainment Plus Upgrade auf Netflix Standard/Premium:</h3>
 		<p>
 			Gegen Aufpreis kann jederzeit ein Upgrade des Entertainment Plus Pakets von Netflix Basis auf
-			Netflix Standard oder Premium vorgenommen werden. Netflix Standard beinhaltet aktuell Full HD 1080p und
-			die gleichzeitige Nutzung von Netflix auf bis zu zwei Geräten. Netflix Premium beinhaltet
-			aktuell UHD und die gleichzeitige Nutzung von Netflix auf bis zu vier Geräten. Das Sky
-			Entertainment Plus Upgrade kann vom Kunden jederzeit sowohl mittels Erklärung gegenüber Sky
-			als auch gegenüber Netflix beendet werden. Im letzteren Fall (Erklärung der Kündigung
+			Netflix Standard oder Premium vorgenommen werden. Netflix Standard beinhaltet aktuell Full HD
+			1080p und die gleichzeitige Nutzung von Netflix auf bis zu zwei Geräten. Netflix Premium
+			beinhaltet aktuell UHD und die gleichzeitige Nutzung von Netflix auf bis zu vier Geräten. Das
+			Sky Entertainment Plus Upgrade kann vom Kunden jederzeit sowohl mittels Erklärung gegenüber
+			Sky als auch gegenüber Netflix beendet werden. Im letzteren Fall (Erklärung der Kündigung
 			gegenüber Netflix) handelt Netflix als Empfangsbote für Sky. Das Entertainment Plus Paket
 			enthält ab dem Wirksamwerden dieser Kündigung wiederum nur noch Netflix Basis oder Netflix
 			Standard.
@@ -400,8 +400,8 @@
 		<h3 class={title_classes}>Zusätzliche Informationen:</h3>
 		<p>
 			Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse zur
-			Bestellung erforderlich. Der Abobeginn ist nicht verlegbar. Der Vertrag
-			startet innerhalb von 7 Tagen nach Erhalt der Ware.
+			Bestellung erforderlich. Der Abobeginn ist nicht verlegbar. Der Vertrag startet innerhalb von
+			7 Tagen nach Erhalt der Ware.
 		</p>
 	</div>
 	<div>
