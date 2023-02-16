@@ -13,11 +13,9 @@ export const package_ids = [
 	'bundesliga'
 ] as const;
 
-export type package_id = typeof package_ids[number];
+export type package_id = (typeof package_ids)[number];
 
 const packages_image_location = '/images/assets/packages/';
-
-
 
 export const packages_assets = dynamic_to_static_assets([
 	{
@@ -167,10 +165,12 @@ export const showcased_combinations = [
 	['entertainment', 'sport'],
 	['entertainment', 'bundesliga'],
 	['entertainment', 'sport', 'bundesliga'],
-	['entertainment', 'sport', 'bundesliga', "cinema"],
+	['entertainment', 'sport', 'bundesliga', 'cinema'],
 
 	['entertainmentplus'],
+	['entertainmentplus', 'bundesliga'],
 	['entertainmentplus', 'cinema'],
+	['entertainmentplus', 'sport', 'bundesliga'],
 	['entertainmentplus', 'sport', 'cinema', 'bundesliga']
 ] satisfies package_id[][];
 
