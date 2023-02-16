@@ -65,10 +65,12 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 				square: `${zubuchoption_image_location}dazn.svg`
 			},
 			aspects: [
-				'Mehr Top-Fußball mit allen Freitags- und Sonntagsspiele der Bundesliga, fast alle Live-Spiele und die Konferenz der UEFA Champions League sowie einer Reihe weiterer populärer Sportarten wie US-Sport, Tennis, Kampfsport und vielem mehr.',
-				'Das Beste von DAZN auf zwei neuen DAZN TV-Sendern im Sky Programm (derzeit nicht verfügbar im Kabelnetz von Vodafone/Unitymedia)',
-				'DAZN Top Events direkt neben deinem Sky Programm auf Sky Q. Nur mit einer Fernbedienung - ohne Hin- und Herschalten.',
-				'Abrechnung und Kundenservice aus einer Hand. Sky ist dein Ansprechpartner.'
+				'Bundesliga: Alle Freitags- und Sonntagsspiele',
+				'121 Spiele der UEFA Champions League inklusive Konferenz nur auf DAZN - garantiert bis 2027',
+				'Serie A, LaLiga, Ligue 1 und die UEFA Women\'s Champions League',
+				'Zudem der beste US-Sport mit NFL, NBA, UFC und die wichtigsten Schwergewichts-Boxkämpfe',
+				'Alles per App und das Beste von DAZN zeitgleich über die linearen Kanäle DAZN 1 und DAZN 2',
+				'Eine Abrechnung für Sky und DAZN'
 			],
 			sort_priority: 8,
 			senders: []

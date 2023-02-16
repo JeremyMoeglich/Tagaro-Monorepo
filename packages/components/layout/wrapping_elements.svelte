@@ -147,7 +147,7 @@
 								.join(' + ')}) <br />
 							Optional {#if !item.package_ids.includes('entertainmentplus')}
 								Netflix,
-							{/if} DAZN und UHD<br />
+							{/if} DAZN STANDARD und UHD<br />
 							+ 500 PAYBACK Punkte
 						</p>
 						<div class="button">

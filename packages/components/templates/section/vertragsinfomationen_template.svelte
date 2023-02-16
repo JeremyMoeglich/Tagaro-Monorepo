@@ -44,7 +44,7 @@
 					<li><b>Optional:</b></li>
 					<li>- UHD mtl. {@html get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
 					<li>
-						- DAZN jährlich für {@html get_price_string(['dazn'], 'jahr')} mtl. oder DAZN monatlich für
+						- DAZN STANDARD jährlich für {@html get_price_string(['dazn'], 'jahr')} mtl. oder DAZN STANDARD monatlich für
 						{@html get_price_string(['dazn'], 'monat')} mtl.
 					</li>
 					<li>
