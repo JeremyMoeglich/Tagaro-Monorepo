@@ -6,7 +6,6 @@ import { optimizeImports } from 'carbon-preprocess-svelte';
 import staticAdapter from '@sveltejs/adapter-static';
 import nodeAdapter from '@sveltejs/adapter-node';
 import netlifyAdapter from '@sveltejs/adapter-netlify';
-//import image from "svelte-image";
 
 //@ts-check
 
