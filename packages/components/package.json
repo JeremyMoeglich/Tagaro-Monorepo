@@ -3,19 +3,19 @@
 	"version": "0.1.0",
 	"devDependencies": {
 		"@types/dateformat": "^5.0.0",
-		"sass": "^1.56.1"
+		"sass": "^1.57.1"
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/kit": "1.0.0-next.570",
+		"@sveltejs/kit": "1.0.11",
 		"asset_library": "workspace:*",
 		"dateformat": "^5.0.3",
 		"frontend": "workspace:0.1.0",
-		"functional-utilities": "^1.18.0",
+		"functional-utilities": "^1.18.1",
 		"open_constants": "workspace:0.1.0",
-		"svelte": "^3.53.1",
-		"svelte-preprocess": "^4.10.7",
+		"svelte": "^3.55.0",
+		"svelte-preprocess": "^5.0.0",
 		"utils": "workspace:0.1.0",
-		"vite": "^3.2.4"
+		"vite": "^4.0.4"
 	}
 }

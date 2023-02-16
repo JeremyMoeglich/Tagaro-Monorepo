@@ -4,11 +4,11 @@
 	"dependencies": {
 		"@types/js-cookie": "^3.0.2",
 		"@types/uuid": "^9.0.0",
-		"firebase": "^9.14.0",
-		"functional-utilities": "^1.18.0",
+		"firebase": "^9.15.0",
+		"functional-utilities": "^1.18.1",
 		"js-cookie": "^3.0.1",
 		"open_constants": "workspace:0.1.0",
-		"svelte": "^3.53.1",
+		"svelte": "^3.55.0",
 		"uuid": "^9.0.0"
 	}
 }
