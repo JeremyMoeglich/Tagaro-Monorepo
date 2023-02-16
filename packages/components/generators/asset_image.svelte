@@ -37,6 +37,6 @@
 		max-width: 160px;
 	}
 	.large img {
-		max-width: 280px;
+		max-width: 230px;
 	}
 </style>

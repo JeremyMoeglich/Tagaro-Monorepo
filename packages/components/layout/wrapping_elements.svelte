@@ -58,7 +58,7 @@
 	let last = 0;
 	function animate(now: number) {
 		if (!(Math.abs(current_x_pos - center_index) < 0.001)) {
-			let dt = Math.max(Math.min(((now - last) / 200) * 2, 1), 0);
+			let dt = Math.max(Math.min(((now - last) / 400) * 2, 1), 0);
 			last = now;
 			current_x_pos = lerp(current_x_pos, center_index, dt);
 			stop_id = requestAnimationFrame(animate);
@@ -71,13 +71,16 @@
 	let focused = true;
 	function slide(amount = 1) {
 		if (focused) {
-			center_index += amount;
-			last = performance.now();
-			cancelAnimationFrame(stop_id);
-			requestAnimationFrame(animate);
+			slide_to(center_index + amount);
 		}
 		clearTimeout(slide_timeout_id);
 		slide_timeout_id = setTimeout(slide, delay);
+	}
+	function slide_to(index: number) {
+		center_index = index;
+		last = performance.now();
+		cancelAnimationFrame(stop_id);
+		requestAnimationFrame(animate);
 	}
 	onMount(() => {
 		setTimeout(slide, delay);
@@ -110,7 +113,20 @@
 {#if browser}
 	<div style={css_vars_style}>
 		<div class="main_container">
-			<h2 style="text-align: center;">{title}</h2>
+			<h2>{title}</h2>
+			<div class="navigation">
+				{#each components as _, id}
+					<button
+						class="navigation_element"
+						class:center_nav={id == wrap(center_index)}
+						on:click={() => {
+							slide_to(id);
+						}}
+					>
+						{id + 1}
+					</button>
+				{/each}
+			</div>
 			<div class="alignment">
 				{#each components as item, id}
 					<a
@@ -118,17 +134,18 @@
 						style={get_x_pos(id, current_x_pos)}
 						href={item.route}
 					>
-						<h3>{@html item.title}</h3>
-						<MultiImageOverlay packages={item.package_ids} />
-						<ul>
-							<li>✓ Für Internet, Sat- oder Kabel,</li>
-							<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu,</li>
-							<li>✓ 12 Monatsabo, danach mtl. kündbar,</li>
-							{#if bonus !== 0}
-								<li>✓ {@html bonus_string} Bonus on top</li>
-							{/if}
-							<li>✓ 500 PAYBACK Basis Punkte</li>
-							<!-- 
+						<div class="inner_alignment">
+							<h3>{@html item.title}</h3>
+							<MultiImageOverlay packages={item.package_ids} />
+							<ul>
+								<li>✓ Für Internet, Sat- oder Kabel</li>
+								<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu</li>
+								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
+								{#if bonus !== 0}
+									<li>✓ {@html bonus_string} Bonus on top</li>
+								{/if}
+								<li>✓ 500 PAYBACK Basis Punkte</li>
+								<!-- 
 							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
 							<li><b>✓ €&nbsp;50 Amazon Gutschein bei Ent+1 Paket oder €&nbsp;125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
 							<li><b>✓ Bis 31.12.21 keine Abogebühren durch Sky</b></li>
@@ -136,20 +153,23 @@
 							<li><b>✓ Bis zu €&nbsp;100 Gutschrift von Sky</b>`</li>
 							<li><b>✓ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b></li>
 						-->
-							<li><mark>{@html get_offer_note(item.package_ids, true)}</mark></li>
-						</ul>
-						<h3>
-							ab {@html get_price_string(item.package_ids, `jahr`)} monatlich*
-						</h3>
-						<p>
-							(im Jahres-Abo, danach flexibel monatlich kündbar, Preis bezieht sich auf {item.package_ids
-								.map((id) => indexed_package_assets[id].name)
-								.join(' + ')}) <br />
-							Optional {#if !item.package_ids.includes('entertainmentplus')}
-								Netflix,
-							{/if} DAZN STANDARD und UHD<br />
-							+ 500 PAYBACK Punkte
-						</p>
+								<li class="preisvorteil">
+									<mark>{@html get_offer_note(item.package_ids, true)}</mark>
+								</li>
+							</ul>
+							<h3 class="price">
+								{@html get_price_string(item.package_ids, `jahr`)} mtl.*
+							</h3>
+							<p class="bottom_text">
+								(im Jahres-Abo, danach {@html get_price_string(item.package_ids, 'monat')} mtl., Preis
+								bezieht sich auf {item.package_ids
+									.map((id) => indexed_package_assets[id].name)
+									.join(' + ')})
+								<br />
+								Optional DAZN STANDARD und UHD<br />
+								+ 500 PAYBACK Punkte
+							</p>
+						</div>
 						<div class="button">
 							<Button text={'Mehr erfahren'} on_click={item.route} />
 						</div>
@@ -175,7 +195,7 @@
 
 <style lang="scss">
 	$background_height: calc((900px - 6vw) * 1.5);
-	$outer_padding: 70px;
+	$outer_padding: 40px;
 	$background_color: #f2f2f2;
 	$side_distance: max(25px, calc(15vw - 100px));
 	.controls {
@@ -209,9 +229,15 @@
 	}
 
 	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 9px;
+		text-align: center;
 		list-style: none;
 		padding-left: 0px;
-		line-height: 35px;
+		line-height: 23px;
+		margin-top: 15px;
+		font-size: 15px;
 	}
 	.alignment {
 		position: relative;
@@ -223,25 +249,63 @@
 		margin-right: auto;
 	}
 	.package_alignment {
-		position: absolute;
 		display: flex;
 		flex-direction: column;
-		padding: 70px var(--x_padding);
+		align-items: center;
+		position: absolute;
+		padding: 30px var(--x_padding);
 		border-radius: 2px;
 		max-width: var(--box_width);
 		min-width: var(--box_width);
+	}
+	.inner_alignment {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 670px;
+	}
+	.bottom_text {
+		font-size: small;
+		text-align: center;
+		color: gray;
+	}
+	.price {
+		padding-top: 20px;
+		font-size: 30px;
 	}
 	.middle_element {
 		box-shadow: 0 6px 20px 0 rgb(0 0 0 / 12%);
 		background-color: white;
 	}
 	h3 {
-		min-height: 60px;
 		margin: 0px;
+		text-align: center;
 	}
 	h2 {
-		margin-bottom: 60px;
 		font-size: 35px;
+		margin-bottom: 10px;
+	}
+	.navigation {
+		display: flex;
+		margin-bottom: 30px;
+		border-radius: 15px;
+		background-color: rgb(230, 230, 230);
+		border: 1px solid rgba(207, 207, 207, 0.123);
+	}
+
+	.center_nav {
+		background-color: rgb(255, 255, 255);
+		color: blue;
+		font-weight: bold;
+	}
+
+	.navigation_element {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 35px;
+		height: 35px;
+		font-size: 14px;
 	}
 	p {
 		margin: 0px;
@@ -287,5 +351,9 @@
 		padding-top: $outer_padding;
 		padding-bottom: $outer_padding;
 		min-height: $background_height;
+	}
+	.preisvorteil {
+		margin-top: 10px;
+		font-size: 20px;
 	}
 </style>
