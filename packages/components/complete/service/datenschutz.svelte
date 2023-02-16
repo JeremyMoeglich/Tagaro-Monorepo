@@ -108,22 +108,21 @@
 			<li>
 				Internet Explorer: <a
 					href="https://support.microsoft.com/de-de/windows/l%C3%B6schen-und-verwalten-von-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
-					alt=""
 					>https://support.microsoft.com/de-de/windows/l%C3%B6schen-und-verwalten-von-cookies-168dab11-0753-043d-7c16-ede5947fc64d</a
 				>
 			</li>
 			<li>
-				Firefox: <a href="https://support.mozilla.org/de/kb/Cookies-blockieren" alt=""
+				Firefox: <a href="https://support.mozilla.org/de/kb/Cookies-blockieren"
 					>https://support.mozilla.org/de/kb/Cookies-blockieren</a
 				>
 			</li>
 			<li>
-				Chrome: <a href="https://support.google.com/chrome/answer/95647?hl=DE" alt=""
+				Chrome: <a href="https://support.google.com/chrome/answer/95647?hl=DE"
 					>https://support.google.com/chrome/answer/95647?hl=DE</a
 				>
 			</li>
 			<li>
-				Safari: <a href="https://support.apple.com/de-de/guide/safari/sfri11471/mac" alt=""
+				Safari: <a href="https://support.apple.com/de-de/guide/safari/sfri11471/mac"
 					>https://support.apple.com/de-de/guide/safari/sfri11471/mac</a
 				>
 			</li>
