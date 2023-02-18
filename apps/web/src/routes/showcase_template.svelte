@@ -44,8 +44,7 @@
 		}
 	];
 
-	const left_badges = [] as const;
-	const right_badges = ['/images/badges/mtlkuendbar.svg'] as const;
+	const left_badges = ['/images/badges/mtlkuendbar.svg'] as const;
 	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',
@@ -69,9 +68,6 @@
 				{/each}
 				{#each side_images as image}
 					<img src={image} alt="" />
-				{/each}
-				{#each right_badges.slice(Math.max(side_images.length - 1, 0)) as badge}
-					<img src={badge} alt="" class="wrap_add" />
 				{/each}
 
 				{#if side_images.length < 2}
@@ -137,13 +133,10 @@
 		<ul class="points">
 			{#each points as point}
 				<li>
-					✓ {@html point}
+					{@html point}
 				</li>
 			{/each}
 		</ul>
-		{#each right_badges as badge}
-			<img src={badge} alt="" class="wrap_remove" />
-		{/each}
 	</div>
 	<div class="button">
 		{#each buttons as button}
@@ -169,10 +162,17 @@
 			width: 150px;
 			height: 150px;
 		}
-		ul {
+		.points {
 			list-style: none;
+			text-align: left;
 			font-size: large;
 			margin-right: 20px;
+			padding-left: 1em;
+			text-indent: -1em;
+			li:before {
+				content: '✓';
+				padding-right: 5px;
+			}
 		}
 	}
 	.side_alignment {
@@ -181,6 +181,7 @@
 		align-items: center;
 		gap: 10px;
 		margin-top: 40px;
+		margin-bottom: 10px;
 		.left_side {
 			display: flex;
 			flex-direction: column-reverse;

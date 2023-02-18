@@ -3,7 +3,13 @@
 	import { indexed_package_assets } from 'asset_library/assets/packages';
 	import type { package_id } from 'asset_library/assets/packages';
 
-	import { bonus, bonus_string, get_offer_note, get_price_string } from 'asset_library/prices';
+	import {
+		aktivierung,
+		bonus,
+		bonus_string,
+		get_offer_note,
+		get_price_string
+	} from 'asset_library/prices';
 	import MultiImageOverlay from '../generators/multi_image_overlay.svelte';
 	import Button from '../elements/interactive/buttons/button.svelte';
 	import { onMount } from 'svelte';
@@ -141,6 +147,9 @@
 								<li>✓ Für Internet, Sat- oder Kabel</li>
 								<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu</li>
 								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
+								{#if aktivierung === 0}
+									<li>✓ € 0 statt € 29 Aktivierungsgebühr</li>
+								{/if}
 								{#if bonus !== 0}
 									<li>✓ {@html bonus_string} Bonus on top</li>
 								{/if}

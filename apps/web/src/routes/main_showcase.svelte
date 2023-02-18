@@ -11,6 +11,7 @@
 	redirect_url={'/angebote/entertainmentplus_cinema_sport_bundesliga'}
 	hide_left={true}
 	points={[
+		`0 € statt 29 € Aktivierungsgebühr`,
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
 		`Entertainment + 3 Pakete jetzt nur ${get_price_string(["entertainment", "cinema", "bundesliga", "sport"], "jahr")} mtl. im Jahres-Abo, danach ${get_price_string(["entertainment", "cinema", "bundesliga", "sport"], "monat")} mtl.*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
