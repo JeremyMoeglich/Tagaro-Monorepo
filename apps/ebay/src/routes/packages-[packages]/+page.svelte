@@ -23,7 +23,7 @@
 	function get_title(packages: package_id[] | 'allgemein'): string {
 		const titles: [package_id[] | 'allgemein', string][] = [
 			[['entertainment'], 'Titel'],
-			[['entertainment', 'sport'], 'Titel'],
+			[['entertainment', 'sport'], 'Sky Sport Abo inkl. der Formel 1 2023 live für € 20 mtl.*'],
 			[['entertainment', 'cinema'], 'Titel'],
 			[['entertainment', 'bundesliga'], 'Titel'],
 			[['entertainment', 'sport', 'bundesliga'], 'Titel'],

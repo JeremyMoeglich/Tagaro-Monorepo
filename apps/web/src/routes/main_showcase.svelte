@@ -10,7 +10,7 @@
 		['entertainmentplus'],
 		'jahr'
 	)} mtl.`}
-	subtitle0={`Az.B. Entertainment Plus für ${get_price_string(
+	subtitle0={`z.B. Entertainment Plus für ${get_price_string(
 		['entertainmentplus'],
 		'jahr'
 	)} oder Komplett für ${get_price_string(
