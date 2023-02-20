@@ -256,7 +256,7 @@
 		<h3 class={title_classes}>DAZN</h3>
 		<p>
 			Nach Ablauf der Mindestlaufzeit wird ein DAZN STANDARD Abonnement als flexible DAZN STANDARD
-			Monatsmitgliedschaft auf unbestimmte Zeit zum Preis von {get_price_string(['dazn'], 'monat')}
+			Monatsmitgliedschaft auf unbestimmte Zeit zum Preis von {@html get_price_string(['dazn'], 'monat')}
 			/ Monat weitergeführt, sofern Sie nicht gemäß den Nutzungsbedingungen von DAZN zum Ende der Mindestlaufzeit
 			kündigen. Zum Empfang über die DAZN App ist eine dauerhafte Internetverbindung nötig. Empfohlene
 			Übertragungsrate von mindestens 8 Mbit/s für HD-Qualität. Durch eine parallele Nutzung von Inhalten

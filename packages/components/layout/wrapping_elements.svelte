@@ -74,11 +74,8 @@
 	}
 	let slide_timeout_id: ReturnType<typeof setTimeout>;
 	const delay = 9000;
-	let focused = true;
 	function slide(amount = 1) {
-		if (focused) {
-			slide_to(center_index + amount);
-		}
+		slide_to(center_index + amount);
 		clearTimeout(slide_timeout_id);
 		slide_timeout_id = setTimeout(slide, delay);
 	}
@@ -86,18 +83,15 @@
 		center_index = index;
 		last = performance.now();
 		cancelAnimationFrame(stop_id);
+		reset_delay();
 		requestAnimationFrame(animate);
 	}
+	function reset_delay() {
+		clearTimeout(slide_timeout_id);
+		slide_timeout_id = setTimeout(slide, delay);
+	}
 	onMount(() => {
-		setTimeout(slide, delay);
-		onfocus = function () {
-			focused = true;
-			cancelAnimationFrame(stop_id);
-			requestAnimationFrame(animate);
-		};
-		onblur = function () {
-			focused = false;
-		};
+		slide_timeout_id = setTimeout(slide, delay);
 	});
 	$: css_vars_style = (function () {
 		let combined_style = '';
@@ -300,6 +294,7 @@
 		border-radius: 15px;
 		background-color: rgb(230, 230, 230);
 		border: 1px solid rgba(207, 207, 207, 0.123);
+		overflow: hidden;
 	}
 
 	.center_nav {

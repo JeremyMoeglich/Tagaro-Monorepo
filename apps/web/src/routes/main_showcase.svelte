@@ -6,14 +6,29 @@
 </script>
 
 <ShowcaseTemplate
-	title={`Sky Pakete inkl. Paramount+ und Netflix ab ${get_price_string(["entertainmentplus", "cinema"], "jahr")} mtl.`}
-	subtitle0={`Alternativ Entertainment + alle drei Pakete jetzt nur ${get_price_string(["entertainment", "cinema", "bundesliga", "sport"], "jahr")}*`}
+	title={`Sky Verträge vom Sky Onlinehändler ab ${get_price_string(
+		['entertainmentplus'],
+		'jahr'
+	)} mtl.`}
+	subtitle0={`Az.B. Entertainment Plus für ${get_price_string(
+		['entertainmentplus'],
+		'jahr'
+	)} oder Komplett für ${get_price_string(
+		['entertainment', 'cinema', 'bundesliga', 'sport'],
+		'jahr'
+	)} mtl.*`}
 	redirect_url={'/angebote/entertainmentplus_cinema_sport_bundesliga'}
 	hide_left={true}
 	points={[
 		`0 € statt 29 € Aktivierungsgebühr`,
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
-		`Entertainment + 3 Pakete jetzt nur ${get_price_string(["entertainment", "cinema", "bundesliga", "sport"], "jahr")} mtl. im Jahres-Abo, danach ${get_price_string(["entertainment", "cinema", "bundesliga", "sport"], "monat")} mtl.*`,
+		`Entertainment + 3 Pakete jetzt nur ${get_price_string(
+			['entertainment', 'cinema', 'bundesliga', 'sport'],
+			'jahr'
+		)} mtl. im Jahres-Abo, danach ${get_price_string(
+			['entertainment', 'cinema', 'bundesliga', 'sport'],
+			'monat'
+		)} mtl.*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	top_margin={20}
