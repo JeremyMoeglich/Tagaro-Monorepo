@@ -164,7 +164,7 @@
 								{@html get_price_string(item.package_ids, `jahr`)} mtl.*
 							</h3>
 							<p class="bottom_text">
-								(im Jahres-Abo, danach {@html get_price_string(item.package_ids, 'monat')} mtl., Preis
+								(im Jahres-Abo, danach {@html get_price_string(item.package_ids, 'monat')} mtl. und monatlich kündbar, Preis
 								bezieht sich auf {item.package_ids
 									.map((id) => indexed_package_assets[id].name)
 									.join(' + ')})

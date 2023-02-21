@@ -1,9 +1,6 @@
 <script lang="ts">
 	import type { priceable_asset_id } from 'asset_library/asset_types';
-	import {
-		get_offer_note,
-		get_price_string,
-	} from 'asset_library/prices';
+	import { get_offer_note, get_price_string } from 'asset_library/prices';
 	import { typed_keys } from 'functional-utilities';
 	import SquarePackageList from '../../generators/square_package_list.svelte';
 
@@ -55,14 +52,16 @@
 				{#if asset_square_images.length > 0}
 					<SquarePackageList package_ids={price_asset_ids} />
 				{/if}
-				<h3 class:spaced={asset_square_images.length === 0}>
-					12 Monate nur {@html get_price_string(price_asset_ids, 'jahr')} mtl.*
-				</h3>
-				<p>
-					(im Jahres-Abo, danach {@html get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)
-					<br />
-					Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
-				</p>
+				<div>
+					<h3 class:spaced={asset_square_images.length === 0}>
+						12 Monate nur {@html get_price_string(price_asset_ids, 'jahr')} mtl.*
+					</h3>
+					<p class="small_text">
+						(im Jahres-Abo, danach {@html get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)
+						<br />
+						Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
+					</p>
+				</div>
 			{/if}
 			<!-- {#if offer_string}
 				<img
@@ -94,7 +93,11 @@
 	.title,
 	:global(.description h3) {
 		font-size: 25px;
-		margin-bottom: 20px;
+	}
+	.description {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
 	}
 
 	.points {
@@ -104,6 +107,10 @@
 		flex-direction: column;
 		gap: 15px;
 		line-height: 150%;
+	}
+	.small_text {
+		font-size: 15px;
+		color: gray;
 	}
 	.points > li {
 		position: relative;
