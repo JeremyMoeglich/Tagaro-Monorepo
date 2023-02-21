@@ -12,6 +12,7 @@
 	import { enter_filter } from 'utils';
 	import { showcased_combinations } from 'asset_library/assets/packages';
 	import { get_title } from 'asset_library/title';
+	import { sort_assets } from 'asset_library/all_assets';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -23,7 +24,7 @@
 			['index', '/angebote'],
 			...showcased_combinations.map((combination) => [
 				get_title(combination, true),
-				`/angebote/${combination.join('_')}`
+				`/angebote/${sort_assets(combination).join('_')}`
 			])
 		]),
 		'Sky Q': '/sky_q',
