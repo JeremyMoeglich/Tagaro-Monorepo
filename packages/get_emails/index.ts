@@ -127,18 +127,23 @@ async function uncached_get_emails(config: GetEmailConfig = {}): Promise<SentEma
 							// Create an array to store the parsed emails
 							const emails: SentEmail[] = [];
 							let remaining_tasks = 0;
+							let got_end_event = false;
 							const end = () => {
 								imapConnection.end(); // Close connection
 								resolve(emails.reverse()); // Resolve promise with array of emails
 							};
+							const err_end = (err: unknown) => {
+								imapConnection.end(); // Close connection
+								reject(err);
+							};
 							const check_done = () => {
-								if (remaining_tasks === 0) {
+								if (remaining_tasks === 0 && got_end_event) {
 									end();
 								}
 							};
 
 							// Handle each fetched message
-							fetch.on('message', (msg, seqno) => {
+							fetch.on('message', (msg) => {
 								let emailBody = ''; // Store the raw email body
 
 								// Handle each message part
@@ -164,18 +169,17 @@ async function uncached_get_emails(config: GetEmailConfig = {}): Promise<SentEma
 											check_done();
 										})
 										.catch((err) => {
-											console.log('Mailparser error: ' + err);
-											end();
+											err_end(err);
 										});
 								});
 							});
 
 							fetch.once('error', (err) => {
-								console.log('Fetch error: ' + err);
-								end();
+								err_end(err);
 							});
 
 							fetch.once('end', () => {
+								got_end_event = true;
 								check_done();
 							});
 						}

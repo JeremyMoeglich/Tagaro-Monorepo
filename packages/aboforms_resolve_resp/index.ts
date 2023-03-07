@@ -1,6 +1,6 @@
 import { SkyFormData } from 'aboforms/form_data';
 import { indexed_assets } from 'asset_library/all_assets';
-import { bonus, get_price_string } from 'asset_library/prices';
+import { bonus, get_price, get_price_string, to_price_string } from 'asset_library/prices';
 import { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
 import { UnsentEmail } from 'get_emails';
 import dayjs from 'dayjs';
@@ -98,6 +98,10 @@ export interface RegisterInfo {
 	vertragsbeginn: Date;
 }
 
+function removed<T>(list: T[], remove: T): T[] {
+	return list.filter((item) => item !== remove);
+}
+
 export function generate_form_response_email(
 	form: SkyFormData,
 	register: RegisterInfo
@@ -152,6 +156,12 @@ export function generate_form_response_email(
 			body += `Gesamt`;
 		}
 		body += `preis von ${get_price_string(sky_assets, 'jahr')}${
+			!form.zubuchoptionen.includes('hdplus')
+				? ''
+				: `in den ersten 6 Monaten sowie ${to_price_string(
+						get_price(removed(sky_assets, 'hdplus')).jahr + get_price(['hdplus']).monat
+				  )} ab dem 7. Monat`
+		}${
 			!includes_dazn
 				? ''
 				: ` für Sky Inhalte zuzüglich ${

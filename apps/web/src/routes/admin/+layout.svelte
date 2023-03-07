@@ -62,7 +62,8 @@
 		'IP Log': 'ip_log',
 		'Paket Bild Generator': 'package_renderer',
 		'Preis Liste': 'price',
-		'Email Log': 'email_log'
+		'Email Log': 'email_log',
+		Test: 'email_gen'
 	} as const;
 
 	const layout_route = '/admin';
