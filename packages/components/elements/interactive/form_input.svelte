@@ -17,7 +17,7 @@
 		plz: '',
 		telefon: '',
 		base_package: 'entertainment',
-		cable_receiver: 'Vodaphone',
+		cable_receiver: 'Vodafone',
 		email: 'test@test.test',
 		empfangsart: 'cable',
 		form_name: 'Sky-Bestellung-4',
@@ -93,6 +93,10 @@
 			name={'Straße / Packstation Lieferadresse'}
 			bind:value={form.straße_oder_packstation_liefer}
 		/>
+		<QInput
+			name="Hausnummer oder DHL Kundennummer"
+			bind:value={form.hausnummer_oder_dhl_kundennummer_liefer}
+		/>
 		<QoInput name={'Adresszusatz Lieferadresse'} bind:value={form.adresszusatz_liefer} />
 		<QInput name={'PLZ Lieferadresse'} bind:value={form.plz_liefer} />
 		<QInput name={'Ort Lieferadresse'} bind:value={form.ort_liefer} />
@@ -123,14 +127,14 @@
 
 	<QSelect
 		name={'Empfangsart'}
-		options={['cable', 'satellite', 'both']}
+		options={['cable', 'satellit', 'internet']}
 		bind:selected={form.empfangsart}
 	/>
 	{#if form.empfangsart === 'cable'}
 		<QSelect
 			name={'Cable Receiver'}
 			options={[
-				'Vodaphone',
+				'Vodafone',
 				'Unitymedia',
 				'Kabel Deutschland',
 				'Kabel BW',
