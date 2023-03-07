@@ -49,7 +49,7 @@
 
 	{#if !ebay_version}
 		<LineSpacer {space} />
-		<PackageTemplate show_price={!ebay_version} price_asset_ids={['dazn']} />
+		<PackageTemplate show_price={!ebay_version} price_asset_ids={['dazn_yearly']} />
 	{/if}
 </div>
 

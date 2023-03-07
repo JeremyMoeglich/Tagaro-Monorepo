@@ -2,13 +2,14 @@
 	"name": "frontend",
 	"version": "0.1.0",
 	"dependencies": {
-		"@types/js-cookie": "^3.0.2",
-		"@types/uuid": "^9.0.0",
-		"firebase": "^9.17.1",
-		"functional-utilities": "^1.20.0",
+		"@types/js-cookie": "^3.0.3",
+		"@types/uuid": "^9.0.1",
+		"firebase": "^9.17.2",
+		"functional-utilities": "^1.21.0",
 		"js-cookie": "^3.0.1",
-		"open_constants": "workspace:0.1.0",
+		"open_constants": "workspace:*",
 		"svelte": "^3.55.1",
+		"tsconfig": "workspace:*",
 		"uuid": "^9.0.0"
 	}
 }

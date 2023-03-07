@@ -1,0 +1,15 @@
+{
+	"name": "get_emails",
+	"dependencies": {
+		"@types/imap": "^0.8.35",
+		"@types/mailparser": "^3.4.0",
+		"@types/node": "^18.14.6",
+		"file-system-cache": "^2.0.2",
+		"functional-utilities": "^1.21.0",
+		"imap": "^0.8.19",
+		"mailparser": "^3.6.4",
+		"tsconfig": "workspace:*",
+		"types": "workspace:*"
+	},
+	"version": "1.0.0"
+}

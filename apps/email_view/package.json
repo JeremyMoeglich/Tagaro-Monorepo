@@ -1,0 +1,15 @@
+{
+	"name": "email_view",
+	"dependencies": {
+		"@types/inquirer": "^9.0.3",
+		"aboforms": "workspace:*",
+		"dayjs": "^1.11.7",
+		"get_emails": "workspace:*",
+		"inquirer": "^9.1.4",
+		"tsx": "^3.12.3",
+		"type-fest": "^3.6.1"
+	},
+	"scripts": {
+		"start": "tsx index.ts"
+	}
+}

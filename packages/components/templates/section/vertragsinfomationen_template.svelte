@@ -44,8 +44,9 @@
 					<li><b>Optional:</b></li>
 					<li>- UHD mtl. {@html get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
 					<li>
-						- DAZN STANDARD jährlich für {@html get_price_string(['dazn'], 'jahr')} mtl. oder DAZN STANDARD monatlich für
-						{@html get_price_string(['dazn'], 'monat')} mtl.
+						- DAZN STANDARD jährlich für {@html get_price_string(['dazn_yearly'], 'jahr')} mtl. oder
+						DAZN STANDARD monatlich für
+						{@html get_price_string(['dazn_monthly'], 'monat')} mtl.
 					</li>
 					<li>
 						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
@@ -256,7 +257,10 @@
 		<h3 class={title_classes}>DAZN</h3>
 		<p>
 			Nach Ablauf der Mindestlaufzeit wird ein DAZN STANDARD Abonnement als flexible DAZN STANDARD
-			Monatsmitgliedschaft auf unbestimmte Zeit zum Preis von {@html get_price_string(['dazn'], 'monat')}
+			Monatsmitgliedschaft auf unbestimmte Zeit zum Preis von {@html get_price_string(
+				['dazn_yearly'],
+				'monat'
+			)}
 			/ Monat weitergeführt, sofern Sie nicht gemäß den Nutzungsbedingungen von DAZN zum Ende der Mindestlaufzeit
 			kündigen. Zum Empfang über die DAZN App ist eine dauerhafte Internetverbindung nötig. Empfohlene
 			Übertragungsrate von mindestens 8 Mbit/s für HD-Qualität. Durch eine parallele Nutzung von Inhalten

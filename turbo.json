@@ -27,11 +27,18 @@
 		},
 		"dev": {
 			"dependsOn": ["^dev"],
-			"cache": false
+			"cache": false,
+			"persistent": true
+		},
+		"start": {
+			"dependsOn": ["^start"],
+			"cache": false,
+			"persistent": true
 		},
 		"preview": {
 			"dependsOn": ["^preview"],
-			"cache": false
+			"cache": false,
+			"persistent": true
 		},
 		"package": {
 			"dependsOn": ["^package"],

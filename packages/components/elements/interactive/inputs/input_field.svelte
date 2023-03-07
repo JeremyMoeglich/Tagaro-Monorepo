@@ -8,8 +8,8 @@
 	export let autocomplete = 'on';
 	export let value = '';
 
-	function onInput(target: EventTarget & HTMLTextAreaElement) {
-		value = target.value;
+	function typeAction(node: HTMLInputElement) {
+		node.type = type;
 	}
 </script>
 
@@ -28,12 +28,12 @@
 			{required}
 			placeholder=" "
 			{autocomplete}
-			on:change={(e) => onInput(e.currentTarget)}
+			bind:value
 		/>
 	{:else}
 		<input
 			{name}
-			{type}
+			use:typeAction
 			style={'min-height: ' +
 				box_height +
 				'px;max-height: ' +
@@ -45,6 +45,7 @@
 			{required}
 			placeholder=" "
 			{autocomplete}
+			bind:value
 		/>
 	{/if}
 	<p style={'top: calc(' + box_height + 'px / 2 - 12px);'}>{text}</p>

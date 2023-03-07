@@ -40,9 +40,9 @@ export type offer_descriptions_type = ReadonlyArray<offer_description_type>;
 
 export const offer_ids = ['opt1'] as const;
 
-export type offer_id = typeof offer_ids[number];
+export type offer_id = (typeof offer_ids)[number];
 
-const text_descriptions = '✓ {savings} Preisvorteil'
+const text_descriptions = '✓ {savings} Preisvorteil';
 
 export const offer_descriptions: offer_descriptions_type = [
 	/*{
@@ -156,7 +156,7 @@ export const offer_descriptions: offer_descriptions_type = [
 			[['entertainmentplus'], { jahr: 15 }],
 			[['entertainmentplus', 'cinema'], { jahr: 25 }],
 			[['entertainmentplus', 'bundesliga'], { jahr: 25 }],
-			[["entertainmentplus", "sport"], { jahr: 25 }],
+			[['entertainmentplus', 'sport'], { jahr: 25 }],
 			[['entertainmentplus', 'sport', 'bundesliga'], { jahr: 30 }],
 			[['entertainmentplus', 'cinema', 'sport', 'bundesliga'], { jahr: 35 }]
 		],

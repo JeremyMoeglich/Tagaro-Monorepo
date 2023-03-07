@@ -6,5 +6,5 @@ declare module 'html-inline-external' {
 		minify?: boolean;
 	}
 
-	export default async function htmlInlineExternal(options: Options): Promise<string>;
+	export default function htmlInlineExternal(options: Options): Promise<string>;
 }

@@ -1,0 +1,12 @@
+{
+	"name": "aboforms_resolve_resp",
+	"dependencies": {
+		"aboforms": "workspace:*",
+		"asset_library": "workspace:*",
+		"dayjs": "^1.11.7",
+		"functional-utilities": "^1.21.0",
+		"get_emails": "workspace:*",
+		"tsconfig": "workspace:*"
+	},
+	"version": "1.0.0"
+}

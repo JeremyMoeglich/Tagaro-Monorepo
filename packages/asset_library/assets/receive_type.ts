@@ -28,7 +28,7 @@ export const cable_receive_assets: ReadonlyArray<Asset<cable_receive_types>> = [
 	},
 	{
 		id: 'vodafone_kabel_deutschland',
-		name: 'Vodafone (vormals Kabel Deutschland) ',
+		name: 'Vodafone',
 		note: '[TODO]',
 		image: {
 			normal: temp_asset_image
@@ -38,7 +38,7 @@ export const cable_receive_assets: ReadonlyArray<Asset<cable_receive_types>> = [
 	},
 	{
 		id: 'Vodafone_unitymedia',
-		name: 'Vodafone (vormals Unitymedia)',
+		name: 'Vodafone',
 		note: '[TODO]',
 		image: {
 			normal: temp_asset_image

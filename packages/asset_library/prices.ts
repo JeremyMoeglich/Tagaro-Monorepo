@@ -10,8 +10,8 @@ import { asset_sets } from './sets';
 import { zubuchoption_ids } from './assets/zubuchoptionen';
 import type { zubuchoption_id } from './assets/zubuchoptionen';
 
-export function to_price_string(v: number): string {
-	let str = '€&nbsp' + v.toFixed(2).replace('.', ',');
+export function to_price_string(v: number, escaped: boolean = true): string {
+	let str = `€${escaped ? '&nbsp' : ' '}` + v.toFixed(2).replace('.', ',');
 	if (str.endsWith(',00')) {
 		str = str.slice(0, -3);
 	}
@@ -30,7 +30,7 @@ export function get_offer_price(
 	offer: offer_description_type,
 	assets: ReadonlyArray<priceable_asset_id>,
 	exclude_overwrite?: boolean
-): Price | undefined {
+): Price {
 	const current_price_table = clone(price_table);
 
 	for (const overwrite of offer.overwrites) {
@@ -92,7 +92,7 @@ function chose_offer(assets: ReadonlyArray<priceable_asset_id>): offer_id | unde
 	);
 	const base_price = get_offer_price(empty_offer, assets);
 	const min = minBy(prices, ([, price]) => price.jahr);
-	if (base_price.jahr <= min[1].jahr) {
+	if (!min || base_price.jahr <= min[1].jahr) {
 		return undefined;
 	}
 	return min[0];
@@ -111,9 +111,10 @@ export function get_price(assets: ReadonlyArray<priceable_asset_id>): Price {
 
 export function get_price_string(
 	assets: ReadonlyArray<priceable_asset_id>,
-	subscription_time: keyof Price
+	subscription_time: keyof Price,
+	escaped: boolean = true
 ): string {
-	return to_price_string(get_price(assets)[subscription_time]);
+	return to_price_string(get_price(assets)[subscription_time], escaped);
 }
 
 export function sort_by_price(lst: Array<priceable_asset_id>): Array<priceable_asset_id> {

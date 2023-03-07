@@ -12,3 +12,9 @@ logs
 
 *.timestamp-*js
 .netlify
+
+.cache
+temp
+.temp
+tmp
+*.tmp
