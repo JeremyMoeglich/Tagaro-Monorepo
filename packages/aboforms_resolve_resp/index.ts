@@ -121,8 +121,8 @@ export function generate_form_response_email(
 		...extra_keys.filter((k) => ['dazn_monthly', 'dazn_yearly', 'uhd'].includes(k))
 	]
 		.map((a) => (a === 'dazn_monthly' || a === 'dazn_yearly' ? 'DAZN' : indexed_assets[a].name))
-		.join(' + ')} (${map_empfangsart(form.empfangsart)} ${
-		form.zubuchoptionen.includes('multiscreen') ? 'Multiscreen' : ''
+		.join(' + ')} (${map_empfangsart(form.empfangsart)}${
+		form.zubuchoptionen.includes('multiscreen') ? ' Multiscreen' : ''
 	})`;
 
 	let body = `Sehr geehrter ${
@@ -248,7 +248,7 @@ export function generate_form_response_email(
 	`);
 
 	return {
-		body,
+		body: body.replace(/\n/g, '<br>').trim(),
 		subject
 	};
 }

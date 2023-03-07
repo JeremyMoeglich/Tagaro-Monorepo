@@ -63,7 +63,7 @@
 		'Paket Bild Generator': 'package_renderer',
 		'Preis Liste': 'price',
 		'Email Log': 'email_log',
-		Test: 'email_gen'
+		'Email Generator': 'email_gen'
 	} as const;
 
 	const layout_route = '/admin';

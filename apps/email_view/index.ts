@@ -1,4 +1,4 @@
-import { get_recent_forms } from 'aboforms';
+import { get_recent_forms } from 'get_aboforms';
 import { SkyFormData } from 'aboforms/form_data';
 import inquirer from 'inquirer';
 import { generate_form_response_email } from '../../packages/aboforms_resolve_resp';

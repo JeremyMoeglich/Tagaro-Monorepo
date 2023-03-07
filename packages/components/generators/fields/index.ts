@@ -42,50 +42,51 @@ type Field =
 
 export type Fields = ReadonlyArray<Field>;
 
-// example: [
-//          {name: 'name', type: 'text'},
-//          {name: 'age', type: 'number'},
-//          {options: ['male', 'female'], 'type': 'select', name: gender},
-// 			{type: 'alt', options: [{option_name: "Some Name1", fields: [
-//
-//
-// ] as const;
-// maps to:
-// {
-//     name: string;
-//     age: number;
-//	   gender: 'male' | 'female';
-// }
-
-type todo = never;
-
 type AltType<T extends Alt> = {
 	[I in keyof T['options']]: T['options'][I] extends AltOption
-		? TFieldsType<T['options'][I]['fields']>
+		? TFieldsType<T['options'][I]['fields']>[number]
 		: never;
 }[number];
 
-type TFieldType<T extends Field> = T extends { type: 'text'; name: string }
-	? { key: T['name']; value: string }
-	: T extends { type: 'number'; name: string }
-	? [[{ key: T['name']; value: number }]]
-	: T extends Option
-	? OptionType<T>
-	: T extends Alt
-	? AltType<T>
-	: T extends { type: 'subfield'; name: string; fields: Fields }
-	? [[{ key: T['name']; value: TFieldsType<T['fields']> }]]
-	: never;
+type ToObj<K extends string, V> = {
+	[key in K]: V;
+};
+
+type TFieldType<T extends Field> = Simplify<
+	T extends { type: 'text'; name: string }
+		? ToObj<T['name'], string>
+		: T extends { type: 'number'; name: string }
+		? ToObj<T['name'], number>
+		: T extends Option
+		? OptionType<T>
+		: T extends Alt
+		? AltType<T>
+		: T extends { type: 'subfield'; name: string; fields: Fields }
+		? ToObj<T['name'], FieldsType<T['fields']>> // Removing this line removes the error, but I don't want to remove subfields
+		: never
+>;
 
 type OptionType<T extends Option> = {
 	[I in keyof T['options']]: T['options'][I] extends string
-		? [[{ key: T['name']; value: T['options'][I] }]]
+		? ToObj<T['name'], T['options'][I]>
 		: never;
 }[number];
 
 type TFieldsType<T extends Fields> = {
 	[I in keyof T]: TFieldType<T[I]>;
 };
+
+type MergeTuple<T extends ReadonlyArray<any>> = T extends readonly [
+	infer Head,
+	infer Next,
+	...infer Rest
+]
+	? MergeTuple<[Head & Next, ...Rest]>
+	: T extends readonly [infer Last]
+	? Last
+	: Record<string, never>;
+
+type FieldsType<T extends Fields> = MergeTuple<TFieldsType<T>>; // <-- Type instantiation is excessively deep and possibly infinite.
 
 const fields = [
 	{
@@ -101,26 +102,9 @@ const fields = [
 		name: 'some_subfield'
 	},
 	{
-		type: 'text',
-		name: 'foo'
+		type: 'number',
+		name: 'something'
 	}
 ] as const;
 
-type UnionToIntersection<T> = (T extends any ? (x: T) => void : never) extends (x: infer R) => void
-	? R
-	: never;
-
-type IsUnion<T> = T extends any[] ? T[number] : never;
-
-type IntersectionFromObject<T> = T extends object ? { [K in keyof T]: T[K] } : never;
-
-type ToIntersectionOrObject<T> = T extends any[]
-	? IntersectionFromObject<T[number]>
-	: IntersectionFromObject<T>;
-
-type MergeTuple<T extends any[]> = ToIntersectionOrObject<T[number]> &
-	UnionToIntersection<Extract<T, IsUnion<T>>>;
-
-// Example usage:
-type MyTuple = [{ a: number }, { b: string }, { c: number; d: number } | { c: string }];
-type MyMergedObject = MergeTuple<MyTuple>; // { a: number; } & { b: string; } & ({ c: number; d: number; } | { c: string; })
+type FieldsTypeResult = FieldsType<typeof fields>; // <-- The output is correct, but the error is still there

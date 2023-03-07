@@ -2,7 +2,7 @@
 	"name": "email_view",
 	"dependencies": {
 		"@types/inquirer": "^9.0.3",
-		"aboforms": "workspace:*",
+		"get_aboforms": "workspace:*",
 		"dayjs": "^1.11.7",
 		"get_emails": "workspace:*",
 		"inquirer": "^9.1.4",

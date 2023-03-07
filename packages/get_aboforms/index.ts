@@ -1,5 +1,5 @@
 import { get_emails } from 'get_emails';
-import { FormEmail, to_form_data } from './parse';
+import { FormEmail, to_form_data } from 'aboforms/parse';
 import dayjs from 'dayjs';
 
 export async function get_recent_forms(

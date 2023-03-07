@@ -8,5 +8,7 @@
 		"get_emails": "workspace:*",
 		"tsconfig": "workspace:*"
 	},
-	"version": "1.0.0"
+	"version": "1.0.0",
+	"main": "index.ts",
+	"svelte": "index.ts"
 }
