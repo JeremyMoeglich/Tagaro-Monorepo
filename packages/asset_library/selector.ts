@@ -2,16 +2,22 @@ import { final_join } from 'functional-utilities';
 import { indexed_assets } from './all_assets';
 import type { asset_id } from './asset_types';
 
+type Action = 'exclude' | 'require';
+
 interface sub_selector_type {
-	required: boolean;
-	word: asset_id;
+	action: Action;
+	asset_id: asset_id;
 }
 export interface selector {
 	descriptor: ReadonlyArray<sub_selector_type>;
 	type: 'AND' | 'OR';
 }
 
-export function matches_selector(
+function match(action: Action, contained: boolean): boolean {
+	return action === 'require' ? contained : !contained;
+}
+
+export function is_selector_allowed(
 	words: ReadonlyArray<asset_id>,
 	chosen_selector: selector
 ): boolean {
@@ -20,8 +26,8 @@ export function matches_selector(
 	}
 	let did_break = false;
 	for (const sub_selector of chosen_selector.descriptor) {
-		const contained = words.includes(sub_selector.word);
-		if (!sub_selector.required === contained) {
+		const contained = words.includes(sub_selector.asset_id);
+		if (!match(sub_selector.action, contained)) {
 			if (chosen_selector.type == 'AND') {
 				return false;
 			}
@@ -43,12 +49,12 @@ export function get_selector_errors(
 	const missing: Array<asset_id> = [];
 	const conflicts: Array<asset_id> = [];
 	for (const sub_selector of chosen_selector.descriptor) {
-		const contained = words.includes(sub_selector.word);
-		if (!sub_selector.required === contained) {
+		const contained = words.includes(sub_selector.asset_id);
+		if (sub_selector.action === contained) {
 			if (contained) {
-				conflicts.push(sub_selector.word);
+				conflicts.push(sub_selector.asset_id);
 			} else {
-				missing.push(sub_selector.word);
+				missing.push(sub_selector.asset_id);
 			}
 		}
 	}

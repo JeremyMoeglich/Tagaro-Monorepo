@@ -27,15 +27,15 @@ const all_extras = {
 	multiscreen: `Multiscreen Option inkl. Sky Go Plus zum monatlichen Preis von ${get_price_string(
 		['multiscreen'],
 		'monat'
-	)}`,
+	)}`
 } satisfies Partial<Record<zubuchoption_id, string>>;
 
 const map_empfangsart = (empfangsart: SkyFormData['empfangsart']): string =>
-({
-	cable: 'Kabel',
-	satellit: 'Sat',
-	internet: 'Internet'
-}[empfangsart]);
+	({
+		cable: 'Kabel',
+		satellit: 'Sat',
+		internet: 'Internet'
+	}[empfangsart]);
 
 function capitalize(str: string): string {
 	// maps the first letter of each word to uppercase
@@ -121,19 +121,23 @@ export function generate_form_response_email(
 		...extra_keys.filter((k) => ['dazn_monthly', 'dazn_yearly', 'uhd'].includes(k))
 	]
 		.map((a) => (a === 'dazn_monthly' || a === 'dazn_yearly' ? 'DAZN' : indexed_assets[a].name))
-		.join(' + ')} (${map_empfangsart(form.empfangsart)}${form.zubuchoptionen.includes('multiscreen') ? ' Multiscreen' : ''
-		})`;
+		.join(' + ')} (${map_empfangsart(form.empfangsart)}${
+		form.zubuchoptionen.includes('multiscreen') ? ' Multiscreen' : ''
+	})`;
 
-	let body = `Sehr geehrter ${form.anrede === 'keine_angabe' ? form.vorname : capitalize(form.anrede)
-		} ${form.nachname},\n\n\n`;
+	let body = `Sehr geehrter ${
+		form.anrede === 'keine_angabe' ? form.vorname : capitalize(form.anrede)
+	} ${form.nachname},\n\n\n`;
 
 	const extras = extra_keys.map((k) => all_extras[k]);
 
-	body += `wir freuen uns Ihnen mitteilen zu können, dass Ihr Auftrag für das Sky Abo inklusive ${package_ids.length === 1 ? 'dem' : ''} ${package_ids
-		.map((p) => indexed_assets[p].name)
-		.join(' + ')} ${package_ids.length === 1 ? 'Paket' : ''} ${form.zubuchoptionen.includes('uhd') ? '' : 'inkl. HD'
-		} ${extras.length === 0 ? '' : `zum monatlichen Preis von ${get_price_string(package_ids, 'jahr')}`
-		} erfolgreich von uns angemeldet werden konnte.\n\n`;
+	body += `wir freuen uns Ihnen mitteilen zu können, dass Ihr Auftrag für das Sky Abo inklusive ${
+		package_ids.length === 1 ? 'dem' : ''
+	} ${package_ids.map((p) => indexed_assets[p].name).join(' + ')} ${
+		package_ids.length === 1 ? 'Paket' : ''
+	} ${form.zubuchoptionen.includes('uhd') ? '' : 'inkl. HD'} ${
+		extras.length === 0 ? '' : `zum monatlichen Preis von ${get_price_string(package_ids, 'jahr')}`
+	} erfolgreich von uns angemeldet werden konnte.\n\n`;
 
 	if (extras.length !== 0) {
 		body += 'Ihre gewählten Extras:\n';
@@ -151,20 +155,23 @@ export function generate_form_response_email(
 		if (form.zubuchoptionen.includes('hdplus') || form.zubuchoptionen.includes('uhd')) {
 			body += `Gesamtpreis`;
 		} else {
-			body += "Preis"
+			body += 'Preis';
 		}
-		body += ` von ${get_price_string(sky_assets, 'jahr')}${!form.zubuchoptionen.includes('hdplus')
-			? ''
-			: ` in den ersten 6 Monaten sowie ${to_price_string(
-				get_price(removed(sky_assets, 'hdplus')).jahr + get_price(['hdplus']).monat
-			)} ab dem 7. Monat`
-			}${!includes_dazn
+		body += ` von ${get_price_string(sky_assets, 'jahr')}${
+			!form.zubuchoptionen.includes('hdplus')
 				? ''
-				: ` für Sky Inhalte zuzüglich ${form.zubuchoptionen.includes('dazn_yearly')
-					? get_price_string(['dazn_yearly'], 'jahr')
-					: get_price_string(['dazn_monthly'], 'jahr')
-				} monatlich für DAZN Programme`
-			}.\n\n`;
+				: ` in den ersten 6 Monaten sowie ${to_price_string(
+						get_price(removed(sky_assets, 'hdplus')).jahr + get_price(['hdplus']).monat
+				  )} ab dem 7. Monat`
+		}${
+			!includes_dazn
+				? ''
+				: ` für Sky Inhalte zuzüglich ${
+						form.zubuchoptionen.includes('dazn_yearly')
+							? get_price_string(['dazn_yearly'], 'jahr')
+							: get_price_string(['dazn_monthly'], 'jahr')
+				  } monatlich für DAZN Programme`
+		}.\n\n`;
 	}
 
 	if (form.empfangsart === 'internet') {
@@ -174,19 +181,22 @@ export function generate_form_response_email(
 	body += `Wird das Abo nicht 1 Monat vor Ende der Vertragslaufzeit gekündigt, verlängert es sich automatisch jeweils um 1 MONAT zum monatlichen Preis von ${get_price_string(
 		sky_assets,
 		'monat'
-	)}${!includes_dazn
-		? ''
-		: ` für Sky Inhalte zuzüglich DAZN monatlich von ${form.zubuchoptionen.includes('dazn_yearly')
-			? get_price_string(['dazn_yearly'], 'monat')
-			: get_price_string(['dazn_monthly'], 'monat')
-		}`
-		}.\n\n`;
+	)}${
+		!includes_dazn
+			? ''
+			: ` für Sky Inhalte zuzüglich DAZN monatlich von ${
+					form.zubuchoptionen.includes('dazn_yearly')
+						? get_price_string(['dazn_yearly'], 'monat')
+						: get_price_string(['dazn_monthly'], 'monat')
+			  }`
+	}.\n\n`;
 
-	body += `Ihre Empfangsart ist ${map_empfangsart(form.empfangsart)}${form.empfangsart === 'cable' &&
+	body += `Ihre Empfangsart ist ${map_empfangsart(form.empfangsart)}${
+		form.empfangsart === 'cable' &&
 		remove_brackets(form.cable_receiver) !== 'Automatische Ermittlung'
-		? ` über ${remove_brackets(form.cable_receiver)}`
-		: ''
-		}.\n\n`;
+			? ` über ${remove_brackets(form.cable_receiver)}`
+			: ''
+	}.\n\n`;
 
 	if (form.payback_number) {
 		body += `Ihre PAYBACK Nummer wurde eingetragen.\n\n`;
@@ -207,20 +217,27 @@ export function generate_form_response_email(
 		.toLocaleDateString('de-DE');
 
 	body += dedent(/*html*/ `
-		<b>Die Lieferung erfolgt täglich direkt von Sky an Ihre angegebene ${form.abweichende_lieferadresse ? "abweichende Lieferadresse" : "Adresse"}${form.abweichende_lieferadresse && (() => {
+		<b>Die Lieferung erfolgt täglich direkt von Sky an Ihre angegebene ${
+			form.abweichende_lieferadresse ? 'abweichende Lieferadresse' : 'Adresse'
+		}${
+		form.abweichende_lieferadresse &&
+		(() => {
 			if (!form.hausnummer_oder_dhl_kundennummer_liefer) {
-				return false
+				return false;
 			}
 
 			const shortened = form.hausnummer_oder_dhl_kundennummer_liefer.trim();
 			if (shortened.length <= 5) {
-				return false
+				return false;
 			}
 			if (!parseInt(shortened)) {
-				return false
+				return false;
 			}
-			return true
-		})() ? " (Packstation)" : ""}.</b>
+			return true;
+		})()
+			? ' (Packstation)'
+			: ''
+	}.</b>
 		<b>Bei Fragen zum Versandstatus können Sie Sky unter der Kundenhotline 089 - 99 72 79 00 kontaktieren (gebührenfrei).</b>
 
 		<b>Dazu erhalten Sie von uns nach ca. 8 Wochen einen Bonus von € ${bonus} auf Ihr Konto überwiesen.</b>
@@ -231,7 +248,7 @@ export function generate_form_response_email(
 		Wir wünschen Ihnen schon jetzt gute Unterhaltung mit Ihrem Wunschprogramm und bedanken uns recht herzlich für das entgegengebrachte Vertrauen! 
 	`);
 
-	body += "\n\n"
+	body += '\n\n';
 
 	if (form.form_name === 'Sky-Bestellung-4') {
 		body += dedent(/*html*/ `

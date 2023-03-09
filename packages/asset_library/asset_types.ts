@@ -16,8 +16,10 @@ export interface Asset<T extends asset_id = asset_id> {
 	name: string;
 	note: string;
 	image: Image;
-	aspects: readonly string[];
+	aspects: ReadonlyArray<string>;
 	sort_priority: number;
+	depends_on: ReadonlyArray<asset_id>;
+	excludes: ReadonlyArray<asset_id>;
 }
 
 export const temp_asset_image = '/images/assets/temp.png';

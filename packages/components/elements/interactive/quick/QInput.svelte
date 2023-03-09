@@ -5,7 +5,7 @@
 
 <div class="outer">
 	<p>{name}</p>
-	<input type="text" id={name} bind:value placeholder="Nothing here yet"/>
+	<input type="text" id={name} bind:value placeholder="Nothing here yet" />
 </div>
 
 <style>
