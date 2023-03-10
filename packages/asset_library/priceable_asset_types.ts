@@ -1,4 +1,4 @@
-import type { selector } from './selector';
+import type { Selector } from './selector';
 import type { Asset, priceable_asset_id } from './asset_types';
 import type { Sender } from './sender';
 export interface Price {
@@ -10,7 +10,7 @@ export interface Price {
 export interface Priceable_Asset<T extends priceable_asset_id = priceable_asset_id>
 	extends Asset<T> {
 	price: Price;
-	selector: selector;
+	selector: Selector;
 	senders: readonly Sender[];
 }
 

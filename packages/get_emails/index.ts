@@ -3,7 +3,7 @@ import { default as Imap } from 'imap';
 import * as mailparser from 'mailparser';
 import { error } from 'functional-utilities';
 import Cache from 'file-system-cache';
-import { JsonEq } from 'types';
+import type { JsonEq } from 'types';
 
 // Define interface types
 interface GetEmailConfig {

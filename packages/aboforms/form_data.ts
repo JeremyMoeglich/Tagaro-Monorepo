@@ -1,5 +1,5 @@
-import { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
-import { base_package_set, premium_package_set } from 'asset_library/offer_description';
+import type { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
+import type { base_package_set, premium_package_set } from 'asset_library/offer_description';
 
 type title =
 	| 'Kein_Titel'

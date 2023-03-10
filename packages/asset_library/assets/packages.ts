@@ -1,4 +1,3 @@
-import { dynamic_to_static_assets } from '../priceable_asset_types';
 import type { Priceable_Asset } from '../priceable_asset_types';
 import { index_by, typed_entries } from 'functional-utilities';
 import type { base_package_set, premium_package_set } from '../offer_description';
@@ -17,7 +16,7 @@ export type package_id = (typeof package_ids)[number];
 
 const packages_image_location = '/images/assets/packages/';
 
-export const packages_assets = dynamic_to_static_assets([
+export const packages_assets = [
 	{
 		id: 'entertainment',
 		price: { jahr: 16.5, monat: 19, singular: 0 },
@@ -26,6 +25,10 @@ export const packages_assets = dynamic_to_static_assets([
 		image: {
 			normal: `${packages_image_location}normal/entertainment.png`,
 			square: `${packages_image_location}square/entertainment.webp`
+		},
+		selector: {
+			action: 'exclude',
+			asset_id: 'entertainmentplus'
 		},
 		aspects: [
 			'Exklusive Top-Serien von Sky und HBO',
@@ -47,6 +50,10 @@ export const packages_assets = dynamic_to_static_assets([
 			normal: `${packages_image_location}normal/entertainmentplus.png`,
 			square: `${packages_image_location}square/entertainmentplus.webp`
 		},
+		selector: {
+			action: 'exclude',
+			asset_id: 'entertainment'
+		},
 		aspects: [
 			'Hunderte  Serien, Dokus und Show mit exklusiven Top-Inhalten von Sky und HBO',
 			'Netflix Basis-Abo (HD 720p, 1 Gerät) inklusive. Einfach dein bestehendes Netflix Konto mitnehmen',
@@ -64,6 +71,10 @@ export const packages_assets = dynamic_to_static_assets([
 		image: {
 			normal: `${packages_image_location}normal/cinema.png`,
 			square: `${packages_image_location}square/cinema.webp`
+		},
+		selector: {
+			type: 'AND',
+			selectors: []
 		},
 		aspects: [
 			'Exklusive Top-Filme kurz nach dem Kino',
@@ -88,6 +99,10 @@ export const packages_assets = dynamic_to_static_assets([
 			'Alle Spiele der Premier League exklusiv, davon über 250 Spiele live und erstmals ausgewählte Spiele der FA Women`s Super League exklusiv',
 			'NHL, Handball, Tennis, Leichtathletik, Golf und noch mehr Motorsport live und vieles exklusiv'
 		],
+		selector: {
+			type: 'AND',
+			selectors: []
+		},
 		sort_priority: 3,
 		senders: senders.sport
 	},
@@ -100,6 +115,10 @@ export const packages_assets = dynamic_to_static_assets([
 			normal: `${packages_image_location}normal/bundesliga.png`,
 			square: `${packages_image_location}square/bundesliga.webp`
 		},
+		selector: {
+			type: 'AND',
+			selectors: []
+		},
 		aspects: [
 			'Alle Samstagsspiele der Bundesliga live und exklusiv',
 			'Alle Spiele der 2. Bundesliga live',
@@ -108,7 +127,7 @@ export const packages_assets = dynamic_to_static_assets([
 		sort_priority: 4,
 		senders: senders.bundesliga
 	}
-]) satisfies ReadonlyArray<Priceable_Asset<package_id>>;
+] satisfies ReadonlyArray<Priceable_Asset<package_id>>;
 
 const sort_priorities: Record<package_id, number> = {
 	entertainment: 0,

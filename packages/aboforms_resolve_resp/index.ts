@@ -1,10 +1,10 @@
-import { SkyFormData } from 'aboforms/form_data';
+import type { SkyFormData } from 'aboforms/form_data';
 import { indexed_assets } from 'asset_library/all_assets';
 import { bonus, get_price, get_price_string, to_price_string } from 'asset_library/prices';
-import { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
-import { UnsentEmail } from 'get_emails';
+import type { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
+import type { UnsentEmail } from 'get_emails';
 import dayjs from 'dayjs';
-import { package_id } from 'asset_library/assets/packages';
+import type { package_id } from 'asset_library/assets/packages';
 import { typed_keys } from 'functional-utilities';
 
 const all_extras = {

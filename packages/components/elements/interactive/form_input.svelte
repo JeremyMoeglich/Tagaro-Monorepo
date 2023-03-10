@@ -108,7 +108,7 @@
 	<QInputMulti name={'Telefon (weitere)'} bind:value={form.telefon_weitere} />
 
 	<QBool name={'SEPA vorhanden'} bind:active={form.sepa_vorhanden} />
-	{#if !form.sepa_vorhanden}
+	{#if !form.sepa_vorhanden && 'kontonummer' in form && 'bankleitzahl' in form}
 		<QInput name={'Kontonummer'} bind:value={form.kontonummer} />
 		<QInput name={'Bankleitzahl'} bind:value={form.bankleitzahl} />
 	{:else}
@@ -130,6 +130,7 @@
 		options={['cable', 'satellit', 'internet']}
 		bind:selected={form.empfangsart}
 	/>
+
 	{#if form.empfangsart === 'cable'}
 		<QSelect
 			name={'Cable Receiver'}

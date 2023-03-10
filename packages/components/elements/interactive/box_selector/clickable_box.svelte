@@ -2,7 +2,7 @@
 	import type { Asset, asset_id } from 'asset_library/asset_types';
 	import type { Priceable_Asset } from 'asset_library/priceable_asset_types';
 	import { get_price_string } from 'asset_library/prices';
-	import { get_selector_error_strings, matches_selector } from 'asset_library/selector';
+	import { get_selector_error_strings, is_selector_allowed } from 'asset_library/selector';
 
 	export let asset: Asset | Priceable_Asset;
 	export let func: () => unknown;
@@ -16,7 +16,7 @@
 		}
 	}
 
-	$: disabled = 'selector' in asset ? !matches_selector(selector_assets, asset.selector) : false;
+	$: disabled = 'selector' in asset ? !is_selector_allowed(selector_assets, asset.selector) : false;
 
 	$: {
 		if (disabled && selected) {
