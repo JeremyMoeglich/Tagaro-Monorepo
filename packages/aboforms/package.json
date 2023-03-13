@@ -9,8 +9,10 @@
 		"ibantools": "^4.2.2",
 		"lodash-es": "^4.17.21",
 		"string-similarity": "^4.0.4",
-		"tsconfig": "workspace:*",
-		"zod": "^3.21.3"
+		"config": "workspace:*",
+		"zod": "^3.21.4",
+		"functional-utilities": "^2.0.1"
 	},
-	"version": "1.0.0"
+	"version": "1.0.0",
+	"type": "module"
 }

@@ -43,7 +43,10 @@
 		"package": {
 			"dependsOn": ["^package"],
 			"outputs": ["package"]
+		},
+		"generate": {
+			"dependsOn": ["^generate"]
 		}
 	},
-	"globalEnv": ["ADAPTER"]
+	"globalEnv": ["ADAPTER", "DATABASE_URL"]
 }

@@ -5,8 +5,9 @@
 	"svelte": "index.ts",
 	"dependencies": {
 		"@types/lodash-es": "^4.17.6",
+		"functional-utilities": "2.0.1",
 		"lodash-es": "^4.17.21",
 		"ts-key-enum": "^2.0.12",
-		"tsconfig": "workspace:*"
+		"config": "workspace:*"
 	}
 }

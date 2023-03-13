@@ -30,7 +30,6 @@
 	interface activity_type {
 		active: boolean;
 		delay: number; //in minutes
-
 		last: Date;
 	}
 

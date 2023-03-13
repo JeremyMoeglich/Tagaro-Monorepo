@@ -1,6 +1,6 @@
 <script lang="ts">
-	import 'styles/app.css';
-	import 'styles/global.scss';
+	import 'config/app.css';
+	import 'config/global.scss';
 
 	import Footer from './footer/footer.svelte';
 	import * as open_constants from 'open_constants';
@@ -13,7 +13,6 @@
 	import { showcased_combinations } from 'asset_library/assets/packages';
 	import { get_title } from 'asset_library/title';
 	import { sort_assets } from 'asset_library/all_assets';
-	import { browser } from '$app/environment';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -32,6 +31,7 @@
 		'Sky übers Internet': '/sky_q_internet',
 		Kontakt: '/kontakt'
 	} as const;
+	const navbar_entries = typed_entries<string, (typeof navbar_elements)[string]>(navbar_elements);
 	navbar_elements[open_constants.ebay.name + ' 🡆'] = open_constants.ebay.route;
 
 	let screen_y_position: number;
@@ -130,7 +130,7 @@
 					<p class="no_margin" style="text-align: center;">Tagaro</p>
 				</div>
 			</div>
-			{#each typed_entries(navbar_elements) as pair}
+			{#each navbar_entries as pair}
 				<div class="selectable_element_vert">
 					{#if pair[1] instanceof Object}
 						{#if 'index' in pair[1]}
@@ -155,7 +155,7 @@
 					{/if}
 				</div>
 			{/each}
-			{#each typed_entries(navbar_elements) as pair}
+			{#each navbar_entries as pair}
 				{#if typeof pair[1] === 'object'}
 					<div class="selectable_element_vert">
 						<div class="nav_element_mobile">

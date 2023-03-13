@@ -2,20 +2,26 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"display": "Default",
 	"compilerOptions": {
+		"module": "esnext",
 		"lib": ["ESNext"],
+		"target": "ES2019",
 		"composite": false,
 		"declaration": true,
 		"declarationMap": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"inlineSources": false,
 		"isolatedModules": true,
 		"moduleResolution": "node",
-		"noUnusedLocals": false,
-		"noUnusedParameters": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 		"preserveWatchOutput": true,
 		"skipLibCheck": true,
-		"strict": true
+		"strict": true,
+		"alwaysStrict": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictPropertyInitialization": true,
+		"allowJs": true
 	},
-	"exclude": ["node_modules"]
+	"exclude": ["**/node_modules"]
 }

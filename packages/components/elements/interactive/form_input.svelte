@@ -175,5 +175,9 @@
 	.outer {
 		display: flex;
 		flex-direction: column;
+		gap: 2px;
+		overflow-y: scroll;
+		height: 100%;
+		width: 100%;
 	}
 </style>

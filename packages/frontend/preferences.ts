@@ -1,4 +1,4 @@
-import { is_json, typed_from_entries, typed_keys } from 'functional-utilities';
+import { has_property, is_json, typed_from_entries, typed_keys } from 'functional-utilities';
 import Cookies from 'js-cookie';
 import { writable, type Writable } from 'svelte/store';
 
@@ -17,11 +17,11 @@ export const preferences_keys = Object.keys(
 export type preferences_obj = Record<preferences_keys_type, boolean | undefined>;
 
 export function is_preferences_obj(value: unknown, log = true): value is preferences_obj {
-	if (typeof value !== 'object') {
+	if (!value || typeof value !== 'object') {
 		return false;
 	}
 	preferences_keys.forEach((key) => {
-		if (!(key in value)) {
+		if (!has_property(value, key)) {
 			if (log) {
 				console.error(`${key} is missing from preferences object`);
 			}
@@ -51,7 +51,7 @@ export const blank_prefredences_obj: Readonly<preferences_obj> = typed_from_entr
 
 export function get_preferences(): preferences_obj {
 	const cookie_json = Cookies.get('preferences');
-	if (!is_json(cookie_json)) {
+	if (!cookie_json || !is_json(cookie_json)) {
 		return blank_prefredences_obj;
 	}
 	const parsed = JSON.parse(cookie_json);

@@ -86,7 +86,8 @@ type MergeTuple<T extends ReadonlyArray<any>> = T extends readonly [
 	? Last
 	: Record<string, never>;
 
-type FieldsType<T extends Fields> = MergeTuple<TFieldsType<T>>; // <-- Type instantiation is excessively deep and possibly infinite.
+// @ts-expect-error - This type is too deep for ts
+export type FieldsType<T extends Fields> = MergeTuple<TFieldsType<T>>;
 
 const fields = [
 	{

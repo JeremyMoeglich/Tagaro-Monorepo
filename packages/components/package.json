@@ -3,21 +3,23 @@
 	"version": "0.1.0",
 	"devDependencies": {
 		"@types/dateformat": "^5.0.0",
-		"sass": "^1.58.3"
+		"sass": "^1.59.2"
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/kit": "1.10.0",
+		"@sveltejs/kit": "1.11.0",
+		"@types/lodash-es": "^4.17.6",
 		"aboforms": "workspace:*",
 		"aboforms_resolve_resp": "workspace:^1.0.0",
 		"asset_library": "workspace:*",
+		"config": "workspace:*",
 		"dateformat": "^5.0.3",
 		"frontend": "workspace:*",
-		"functional-utilities": "^1.21.0",
+		"functional-utilities": "^2.0.1",
+		"lodash-es": "^4.17.21",
 		"open_constants": "workspace:*",
-		"svelte": "^3.55.1",
+		"svelte": "^3.56.0",
 		"svelte-preprocess": "^5.0.1",
-		"tsconfig": "workspace:*",
 		"type-fest": "^3.6.1",
 		"utils": "workspace:*",
 		"vite": "^4.1.4"

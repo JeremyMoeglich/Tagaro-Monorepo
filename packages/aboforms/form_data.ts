@@ -1,3 +1,4 @@
+import type { package_id } from 'asset_library/assets/packages';
 import type { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
 import type { base_package_set, premium_package_set } from 'asset_library/offer_description';
 
@@ -85,7 +86,7 @@ export type SkyFormData = {
 	) & {
 		base_package: base_package_set;
 		premium_packages: premium_package_set[];
-		zubuchoptionen: zubuchoption_id[];
+		zubuchoptionen: (zubuchoption_id | package_id)[];
 		payback_number?: string;
 		hardware: 'KEINE' | 'SMC' | 'SMC UND STB / CI PLUS' | 'STB / CI PLUS';
 	};

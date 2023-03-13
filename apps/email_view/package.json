@@ -2,13 +2,16 @@
 	"name": "email_view",
 	"dependencies": {
 		"@types/inquirer": "^9.0.3",
-		"get_aboforms": "workspace:*",
+		"aboforms": "workspace:^1.0.0",
 		"dayjs": "^1.11.7",
+		"get_aboforms": "workspace:*",
 		"get_emails": "workspace:*",
 		"inquirer": "^9.1.4",
 		"tsx": "^3.12.3",
+		"aboforms_resolve_resp": "workspace:*",
 		"type-fest": "^3.6.1"
 	},
+	"type": "module",
 	"scripts": {
 		"start": "tsx index.ts"
 	}

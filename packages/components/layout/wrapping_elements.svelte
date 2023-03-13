@@ -2,6 +2,7 @@
 	import { browser } from '$app/environment';
 	import { indexed_package_assets } from 'asset_library/assets/packages';
 	import type { package_id } from 'asset_library/assets/packages';
+	import { minBy } from 'lodash-es';
 
 	import {
 		aktivierung,
@@ -14,6 +15,7 @@
 	import Button from '../elements/interactive/buttons/button.svelte';
 	import { onMount } from 'svelte';
 	import { enter_filter } from 'utils';
+	import { panic } from 'functional-utilities';
 
 	export let title: string;
 	export let components: ReadonlyArray<{
@@ -60,7 +62,7 @@
 		}
 		return v1 * (1 - f) + v2 * f;
 	}
-	let stop_id = undefined;
+	let stop_id: number | undefined = undefined;
 	let last = 0;
 	function animate(now: number) {
 		if (!(Math.abs(current_x_pos - center_index) < 0.001)) {
@@ -75,14 +77,26 @@
 	let slide_timeout_id: ReturnType<typeof setTimeout>;
 	const delay = 9000;
 	function slide(amount = 1) {
-		slide_to(center_index + amount);
+		slide_to(wrap(center_index) + amount);
 		clearTimeout(slide_timeout_id);
 		slide_timeout_id = setTimeout(slide, delay);
 	}
+
 	function slide_to(index: number) {
-		center_index = index;
+		const offset = wrap(center_index);
+		const segment_index = center_index + (index - offset);
+		const left_segment_index = segment_index - components.length;
+		const right_segment_index = segment_index + components.length;
+
+		center_index =
+			minBy([segment_index, left_segment_index, right_segment_index], (i: number) =>
+				Math.abs(i - center_index)
+			) ?? panic('No min found');
+
 		last = performance.now();
-		cancelAnimationFrame(stop_id);
+		if (stop_id !== undefined) {
+			cancelAnimationFrame(stop_id);
+		}
 		reset_delay();
 		requestAnimationFrame(animate);
 	}
@@ -136,7 +150,10 @@
 					>
 						<div class="inner_alignment">
 							<h3>{@html item.title}</h3>
-							<MultiImageOverlay packages={item.package_ids} />
+							<MultiImageOverlay
+								packages={item.package_ids}
+								offset_multiplier={1 - Math.abs(element_wrap(id - wrap(current_x_pos))) / 2}
+							/>
 							<ul>
 								<li>✓ Für Internet, Sat- oder Kabel</li>
 								<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu</li>

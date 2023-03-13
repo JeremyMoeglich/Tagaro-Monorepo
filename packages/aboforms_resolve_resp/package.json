@@ -4,11 +4,12 @@
 		"aboforms": "workspace:*",
 		"asset_library": "workspace:*",
 		"dayjs": "^1.11.7",
-		"functional-utilities": "^1.21.0",
+		"functional-utilities": "^2.0.1",
 		"get_emails": "workspace:*",
-		"tsconfig": "workspace:*"
+		"config": "workspace:*"
 	},
 	"version": "1.0.0",
 	"main": "index.ts",
+	"type": "module",
 	"svelte": "index.ts"
 }

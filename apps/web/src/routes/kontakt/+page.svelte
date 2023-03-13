@@ -4,7 +4,7 @@
 </script>
 
 <div>
-	<h1 class="main_title ">Kontakt</h1>
+	<h1 class="main_title">Kontakt</h1>
 	<div class="side_alignment">
 		<div class="side_text_container">
 			<p>
@@ -46,6 +46,7 @@
 		text-align: center;
 		font-size: 40px;
 		margin-bottom: 50px;
+		margin-top: 50px;
 	}
 
 	* {

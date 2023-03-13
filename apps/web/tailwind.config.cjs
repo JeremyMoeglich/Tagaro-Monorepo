@@ -1,10 +1,7 @@
-const config = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+const tailwindConfig = require('config/tailwind.config.cjs');
 
-	theme: {
-		extend: {}
-	},
-	plugins: [require('daisyui')]
+const config = {
+	...tailwindConfig
 };
 
 module.exports = config;

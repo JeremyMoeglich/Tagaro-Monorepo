@@ -3,13 +3,15 @@ import { index_by, typed_entries } from 'functional-utilities';
 import type { base_package_set, premium_package_set } from '../offer_description';
 import { senders } from './senders';
 import { clone } from 'lodash-es';
+import { cprice } from './definition_utils';
 
 export const package_ids = [
 	'entertainment',
 	'entertainmentplus',
 	'sport',
 	'cinema',
-	'bundesliga'
+	'bundesliga',
+	'kids'
 ] as const;
 
 export type package_id = (typeof package_ids)[number];
@@ -126,6 +128,28 @@ export const packages_assets = [
 		],
 		sort_priority: 4,
 		senders: senders.bundesliga
+	},
+	{
+		id: 'kids',
+		price: cprice(5),
+		name: 'Kids',
+		note: 'Große Unterhaltung für alle Kleinen.',
+		image: {
+			normal: `/images/assets/packages/normal/kids.png`,
+			square: `/images/assets/packages/square/kids.webp`
+		},
+		aspects: [
+			'5 beliebte Kindersender und mehr als 4.500 Inhalte',
+			'Unser Kids Mode schafft eine kindersichere Umgebung',
+			'Alles auf Abruf ohne Werbung',
+			'Mit Download-Funktion'
+		],
+		sort_priority: 5,
+		senders: [],
+		selector: {
+			type: 'AND',
+			selectors: []
+		}
 	}
 ] satisfies ReadonlyArray<Priceable_Asset<package_id>>;
 
@@ -134,7 +158,8 @@ const sort_priorities: Record<package_id, number> = {
 	entertainmentplus: 0,
 	sport: 1,
 	bundesliga: 2,
-	cinema: 3
+	cinema: 3,
+	kids: 4
 };
 
 function sort_ids(ids: ReadonlyArray<package_id>): ReadonlyArray<package_id> {

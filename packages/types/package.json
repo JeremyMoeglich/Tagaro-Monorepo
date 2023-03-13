@@ -2,6 +2,6 @@
 	"name": "types",
 	"version": "1.0.0",
 	"dependencies": {
-		"tsconfig": "workspace:*"
+		"config": "workspace:*"
 	}
 }

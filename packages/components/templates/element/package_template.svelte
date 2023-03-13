@@ -1,13 +1,13 @@
 <script lang="ts">
 	import type { priceable_asset_id } from 'asset_library/asset_types';
-	import { get_offer_note, get_price_string } from 'asset_library/prices';
-	import { typed_keys } from 'functional-utilities';
+	import { get_price_string } from 'asset_library/prices';
+	// import { typed_keys } from 'functional-utilities';
 	import SquarePackageList from '../../generators/square_package_list.svelte';
 
 	import AssetImage from '../../generators/asset_image.svelte';
 	import { sort_assets } from 'asset_library/all_assets';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
-	import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
+	// import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
 	import { get_title } from 'asset_library/title';
 	import Senders from '../../layout/senders.svelte';
 
@@ -16,11 +16,11 @@
 	export let show_price: boolean;
 	export let show_senders: priceable_asset_id | undefined = undefined;
 
-	$: offer_string = price_asset_ids.every((id) =>
-		typed_keys(indexed_package_assets).includes(id as package_id)
-	)
-		? get_offer_note(price_asset_ids as package_id[])
-		: '';
+	// $: offer_string = price_asset_ids.every((id) =>
+	// 	typed_keys(indexed_package_assets).includes(id as package_id)
+	// )
+	// 	? get_offer_note(price_asset_ids as package_id[])
+	// 	: '';
 
 	$: sorted_assets = sort_assets(price_asset_ids);
 	$: asset_square_images = sorted_assets.filter((v) => {

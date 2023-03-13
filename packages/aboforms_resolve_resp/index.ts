@@ -2,7 +2,7 @@ import type { SkyFormData } from 'aboforms/form_data';
 import { indexed_assets } from 'asset_library/all_assets';
 import { bonus, get_price, get_price_string, to_price_string } from 'asset_library/prices';
 import type { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
-import type { UnsentEmail } from 'get_emails';
+import type { UnsentEmail } from 'get_emails/types';
 import dayjs from 'dayjs';
 import type { package_id } from 'asset_library/assets/packages';
 import { typed_keys } from 'functional-utilities';
@@ -18,16 +18,27 @@ const all_extras = {
 	)}`,
 	uhd: `UHD für die gebuchten Pakete zum monatlichen Preis von zuzüglich ${get_price_string(
 		['uhd'],
-		'monat'
+		'jahr'
 	)}`,
 	hdplus: `HD+ 6 Monate gratis, danach zum monatlichen Preis von zuzüglich ${get_price_string(
 		['hdplus'],
-		'monat'
+		'jahr'
 	)}`,
 	multiscreen: `Multiscreen Option inkl. Sky Go Plus zum monatlichen Preis von ${get_price_string(
 		['multiscreen'],
-		'monat'
-	)}`
+		'jahr'
+	)}`,
+	netflixstandard: `Netflix 2 Geräte Upgrade zum monatlichen Preis von ${get_price_string(
+		['netflixstandard'],
+		'jahr'
+	)}`,
+	netflixpremium: `Netflix Premium 4K und 4 Geräte Upgrade zum monatlichen Preis von ${get_price_string(
+		['netflixpremium'],
+		'jahr'
+	)}`,
+	skygoplus: `Sky Go Plus zum monatlichen Preis von ${get_price_string(['skygoplus'], 'jahr')}`,
+	trendsports: `trendSports zum monatlichen Preis von ${get_price_string(['trendsports'], 'jahr')}`,
+	plus18: `18+ Option für Blue Movie`
 } satisfies Partial<Record<zubuchoption_id, string>>;
 
 const map_empfangsart = (empfangsart: SkyFormData['empfangsart']): string =>
@@ -114,7 +125,9 @@ export function generate_form_response_email(
 	const includes_dazn = extra_keys.includes('dazn_monthly') || extra_keys.includes('dazn_yearly');
 	const sky_assets = [
 		...package_ids,
-		...form.zubuchoptionen.filter((z) => (['uhd', 'multiscreen'] as zubuchoption_id[]).includes(z))
+		...form.zubuchoptionen.filter((z) =>
+			(['uhd', 'multiscreen'] as (zubuchoption_id | package_id)[]).includes(z)
+		)
 	];
 	const subject = `Sky Auftragsbestätigung für ${[
 		...package_ids,
@@ -147,7 +160,43 @@ export function generate_form_response_email(
 
 	if (form.zubuchoptionen.includes('multiscreen')) {
 		body += `Dazu erhalten Sie einen mietfreien Sky Q UHD Receiver für einmalig € 0 sowie die benötigte Smartcard für Ihr Wunschprogramm.\n`;
-		body += `Darüber hinaus erhalten Sie einen 2. Sky Q UHD Receiver für einmalig € 49 mit der Multiscreen Option inkl. Sky Go Plus zum monatlichen Preis von € 10.\n\n`;
+		const multiscreen_extras = (
+			[
+				'multiscreen_extra_qmini_1',
+				'multiscreen_extra_qmini_2',
+				'multiscreen_extra_quhd'
+			] satisfies zubuchoption_id[]
+		).filter((z) => form.zubuchoptionen.includes(z));
+		body += `Darüber hinaus erhalten Sie `;
+		if (multiscreen_extras.length !== 0) {
+			if (multiscreen_extras.includes('multiscreen_extra_quhd')) {
+				body += `einen 2. Sky Q UHD Receiver für einmalig ${get_price_string(
+					['multiscreen_extra_quhd'],
+					'singular'
+				)} `;
+			}
+			if (multiscreen_extras.length >= 2) {
+				body += `sowie `;
+			}
+			if (multiscreen_extras.includes('multiscreen_extra_qmini_1')) {
+				body += `eine Sky Q Mini für einmalig ${get_price_string(
+					['multiscreen_extra_qmini_1'],
+					'singular'
+				)} `;
+			} else if (multiscreen_extras.includes('multiscreen_extra_qmini_2')) {
+				body += `2 Sky Q Mini für einmalig ${get_price_string(
+					['multiscreen_extra_qmini_2'],
+					'singular'
+				)} `;
+			}
+			body += `mit der `;
+		} else {
+			body += `die `;
+		}
+		body += `Multiscreen Option inkl. Sky Go Plus zum monatlichen Preis von ${get_price_string(
+			['multiscreen'],
+			'jahr'
+		)}.\n\n`;
 	}
 
 	{

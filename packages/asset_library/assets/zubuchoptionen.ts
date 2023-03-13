@@ -12,7 +12,6 @@ export const zubuchoption_ids = [
 	'multiscreen_extra_qmini_1',
 	'multiscreen_extra_qmini_2',
 	'multiscreen_extra_quhd',
-	'kids',
 	'trendsports',
 	'plus18',
 	'netflixstandard',
@@ -166,28 +165,6 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 		},
 		sort_priority: 11,
 		senders: []
-	},
-	{
-		id: 'kids',
-		price: cprice(5),
-		name: 'Kids',
-		note: 'Große Unterhaltung für alle Kleinen.',
-		image: {
-			normal: `/images/assets/packages/normal/kids.png`,
-			square: `/images/assets/packages/square/kids.webp`
-		},
-		aspects: [
-			'5 beliebte Kindersender und mehr als 4.500 Inhalte',
-			'Unser Kids Mode schafft eine kindersichere Umgebung',
-			'Alles auf Abruf ohne Werbung',
-			'Mit Download-Funktion'
-		],
-		sort_priority: 5,
-		senders: [],
-		selector: {
-			type: 'AND',
-			selectors: []
-		}
 	},
 	{
 		id: 'trendsports',

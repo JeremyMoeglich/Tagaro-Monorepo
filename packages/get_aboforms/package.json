@@ -3,15 +3,16 @@
 	"dependencies": {
 		"@types/lodash-es": "^4.17.6",
 		"@types/string-similarity": "^4.0.0",
+		"aboforms": "workspace:*",
 		"asset_library": "workspace:*",
 		"dayjs": "^1.11.7",
 		"get_emails": "workspace:*",
 		"ibantools": "^4.2.2",
 		"lodash-es": "^4.17.21",
 		"string-similarity": "^4.0.4",
-		"tsconfig": "workspace:*",
-		"zod": "^3.21.3",
-		"aboforms": "workspace:*"
+		"config": "workspace:*",
+		"zod": "^3.21.4"
 	},
-	"version": "1.0.0"
+	"version": "1.0.0",
+	"type": "module"
 }

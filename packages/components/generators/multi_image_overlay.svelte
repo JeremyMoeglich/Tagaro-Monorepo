@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
 	import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
+	import { make_url } from 'frontend/url';
 	export let packages: package_id[];
 	export let offset_multiplier = 1;
 	const image_width_percentage = 0.4;
@@ -24,7 +26,7 @@
 		style:transform={`translateX(${50 - (total_width * 100) / 2}%)`}
 	>
 		<img
-			src={`/images/assets/packages/normal/${assets[0].id}.png`}
+			src={make_url(`/images/assets/packages/normal/${assets[0].id}.png`, dev)}
 			alt={assets[0].id}
 			class="size_image"
 			style:transform={`scale(${back_scale})`}
@@ -33,7 +35,7 @@
 			{#each assets.slice(1) as asset, i}
 				{@const index = i + 1}
 				<img
-					src={`/images/assets/packages/normal/${asset.id}.png`}
+					src={make_url(`/images/assets/packages/normal/${asset.id}.png`, dev)}
 					alt={asset.id}
 					class="positioned_images"
 					style:transform={`translateX(${

@@ -1,0 +1,21 @@
+{
+	"name": "db",
+	"scripts": {
+		"db:migrate:deploy": "dotenv -e ../../.env -- prisma migrate deploy",
+		"db:migrate:dev": "dotenv -e ../../.env -- prisma migrate dev",
+		"db:push": "dotenv -e ../../.env -- prisma db push",
+		"db:studio": "dotenv -e ../../.env -- prisma studio",
+		"generate": "prisma generate",
+		"format": "prisma format"
+	},
+	"dependencies": {
+		"@prisma/client": "^4.11.0",
+		"@types/lodash-es": "^4.17.6",
+		"@types/node": "^18.15.0",
+		"config": "workspace:1.0.0",
+		"dotenv-cli": "^7.1.0",
+		"functional-utilities": "^2.0.1",
+		"lodash-es": "^4.17.21",
+		"prisma": "^4.11.0"
+	}
+}

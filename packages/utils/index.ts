@@ -1,3 +1,4 @@
+import { panic } from 'functional-utilities';
 import { Key } from 'ts-key-enum';
 
 export function key_filter<R>(
@@ -163,6 +164,8 @@ export function generate_filter(target_color: string): string {
 					case b:
 						h = (r - g) / d + 4;
 						break;
+					default:
+						throw new Error('Invalid color');
 				}
 				h /= 6;
 			}
@@ -208,7 +211,7 @@ export function generate_filter(target_color: string): string {
 			const c = 15;
 			const a = [60, 180, 18000, 600, 1.2, 1.2];
 
-			let best = { loss: Infinity, values: [] };
+			let best: Wide = { loss: Infinity, values: [] };
 			for (let i = 0; best.loss > 25 && i < 3; i++) {
 				let initial = [50, 20, 3750, 50, 100, 100];
 				let result = this.spsa(A, a, c, initial, 1000);
@@ -258,7 +261,7 @@ export function generate_filter(target_color: string): string {
 					bestLoss = loss;
 				}
 			}
-			return { values: best, loss: bestLoss };
+			return { values: best ?? panic(), loss: bestLoss };
 
 			function fix(value: number, idx: number) {
 				let max = 100;

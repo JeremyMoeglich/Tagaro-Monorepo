@@ -1,16 +1,13 @@
-import { get_recent_forms } from 'get_aboforms';
+import { get_recent_forms } from 'get_aboforms/get';
 import { SkyFormData } from 'aboforms/form_data';
 import inquirer from 'inquirer';
-import { generate_form_response_email } from '../../packages/aboforms_resolve_resp';
+import { generate_form_response_email } from 'aboforms_resolve_resp';
 import dayjs from 'dayjs';
 import fs from 'fs/promises';
 
 (async () => {
 	const forms = await get_recent_forms({
-		archived: true,
-		cached: true,
-		since: dayjs().subtract(1, 'months').toDate(),
-		up_to: 30
+		archived: true
 	});
 	const form: SkyFormData = (
 		await inquirer.prompt([

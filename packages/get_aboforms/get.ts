@@ -1,9 +1,17 @@
-import { get_emails } from 'get_emails';
-import { FormEmail, to_form_data } from 'aboforms/parse';
+import { get_emails } from 'get_emails/get';
+import { type FormEmail, to_form_data } from 'aboforms/parse';
 import dayjs from 'dayjs';
+import { z } from 'zod';
+
+export const get_recent_forms_schema = z.object({
+	cached: z.boolean().optional(),
+	since: z.date().optional(),
+	archived: z.boolean().optional(),
+	up_to: z.number().optional()
+});
 
 export async function get_recent_forms(
-	config: { cached?: boolean; since?: Date; archived?: boolean; up_to?: number } = {}
+	config: z.infer<typeof get_recent_forms_schema> = {}
 ): Promise<FormEmail[]> {
 	const cached = config.cached ?? true;
 	const since = config.since ?? dayjs().subtract(4, 'day').toDate();

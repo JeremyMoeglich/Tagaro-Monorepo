@@ -1,39 +1,19 @@
 // Import modules
 import { default as Imap } from 'imap';
 import * as mailparser from 'mailparser';
-import { error } from 'functional-utilities';
-import Cache from 'file-system-cache';
+import { panic } from 'functional-utilities';
+import PkgCache from 'file-system-cache';
+const Cache = 'default' in PkgCache ? ((PkgCache as any).default as typeof PkgCache) : PkgCache;
 import type { JsonEq } from 'types';
-
-// Define interface types
-interface GetEmailConfig {
-	max_amount?: number;
-	mark_as_seen?: boolean;
-	subject?: string;
-	folder?: string;
-	from?: string;
-	since?: Date;
-	cached?: boolean;
-}
-
-export interface UnsentEmail {
-	subject: string;
-	body: string;
-}
-
-export interface SentEmail extends UnsentEmail {
-	seen: boolean;
-	date: Date;
-}
-
-const cache = Cache();
+// import { writeFile } from 'fs/promises';
+import { GetEmailConfig, SentEmail } from './types';
 
 function get_imap_connection(): Imap {
 	// Create a new IMAP connection using environment variables
 	return new Imap({
-		user: process.env.IMAP_USERNAME ?? error('IMAP_USERNAME environment variable not set'),
-		password: process.env.IMAP_PASSWORD ?? error('IMAP_PASSWORD environment variable not set'),
-		host: process.env.IMAP_HOST ?? error('IMAP_HOST environment variable not set'),
+		user: process.env.IMAP_USERNAME ?? panic('IMAP_USERNAME environment variable not set'),
+		password: process.env.IMAP_PASSWORD ?? panic('IMAP_PASSWORD environment variable not set'),
+		host: process.env.IMAP_HOST ?? panic('IMAP_HOST environment variable not set'),
 		port: 993,
 		tls: true
 	});
@@ -42,6 +22,8 @@ function get_imap_connection(): Imap {
 const default_amount = 10;
 
 export async function get_emails(config: GetEmailConfig = {}): Promise<SentEmail[]> {
+	const cache = Cache();
+
 	const cache_key = [
 		'emails',
 		config.max_amount ?? default_amount,
@@ -72,10 +54,6 @@ export async function get_emails(config: GetEmailConfig = {}): Promise<SentEmail
 	}
 
 	return new_value();
-}
-
-async function sleep(ms: number) {
-	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // Define function
@@ -147,9 +125,10 @@ async function uncached_get_emails(config: GetEmailConfig = {}): Promise<SentEma
 								let emailBody = ''; // Store the raw email body
 
 								// Handle each message part
-								msg.on('body', (stream, info) => {
+								msg.on('body', (stream) => {
+									stream.setEncoding('utf8');
 									stream.on('data', (chunk) => {
-										emailBody += chunk.toString('utf8'); // Append chunk to email body
+										emailBody += chunk.toString('utf8');
 									});
 								});
 
@@ -161,6 +140,7 @@ async function uncached_get_emails(config: GetEmailConfig = {}): Promise<SentEma
 											// Extract the title, body and seen status from the parsed email object
 											const subject = parsedEmail.subject || '';
 											const body = parsedEmail.text || '';
+											console.log(`body: ${body}`);
 											const seen = attrs.flags.includes('\\Seen');
 											const date = new Date(parsedEmail.date || new Date());
 											// Push the extracted email data to the array of emails

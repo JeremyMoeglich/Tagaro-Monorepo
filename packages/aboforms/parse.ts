@@ -1,12 +1,44 @@
 import { SkyFormData } from './form_data';
-import { SentEmail } from 'get_emails/index';
+import type { SentEmail } from 'get_emails/types';
 import { z } from 'zod';
-import { compareTwoStrings } from 'string-similarity';
 import { maxBy } from 'lodash-es';
 import { base_package_set, premium_package_set } from 'asset_library/offer_description';
 import { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
 import { validateIBAN } from 'ibantools';
+import { panic } from 'functional-utilities';
+import { package_id } from 'asset_library/assets/packages';
 
+function compareTwoStrings(a: string, b: string): number {
+	const m = a.length;
+	const n = b.length;
+
+	if (m === 0) return n;
+	if (n === 0) return m;
+
+	const dp: number[][] = [];
+
+	for (let i = 0; i <= m; i++) {
+		dp[i] = [];
+		dp[i][0] = i;
+	}
+
+	for (let j = 0; j <= n; j++) {
+		dp[0][j] = j;
+	}
+
+	for (let i = 1; i <= m; i++) {
+		for (let j = 1; j <= n; j++) {
+			const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+			dp[i][j] = Math.min(
+				dp[i - 1][j] + 1, // deletion
+				dp[i][j - 1] + 1, // insertion
+				dp[i - 1][j - 1] + cost // substitution
+			);
+		}
+	}
+	const similarity = 1 - dp[m][n] / Math.max(m, n);
+	return similarity;
+}
 function trim_spaces(text: string): string {
 	while (text.startsWith(' ')) {
 		text = text.slice(1);
@@ -15,10 +47,6 @@ function trim_spaces(text: string): string {
 		text = text.slice(0, -1);
 	}
 	return text;
-}
-
-function error(message: string): never {
-	throw new Error(message);
 }
 
 function get_object(text: string): Record<string, string | string[]> {
@@ -89,6 +117,7 @@ function get_object(text: string): Record<string, string | string[]> {
 
 export function to_form_data(text: string): SkyFormData {
 	const obj = get_object(text);
+	console.log(JSON.stringify(obj, null, 2));
 	const alt = <T extends keyof typeof obj>(opt: T[]) => {
 		return opt
 			.map((e) => obj[e])
@@ -101,6 +130,7 @@ export function to_form_data(text: string): SkyFormData {
 			return safe_parsed.data;
 		} else {
 			console.log(`Got an error here ${loc}`);
+			console.log('got this: ', v);
 			if (!('error' in safe_parsed)) {
 				throw new Error("This won't happen");
 			}
@@ -217,15 +247,15 @@ export function to_form_data(text: string): SkyFormData {
 		const options = arrp(obj['(Jahres-Abo, ab dem 13. Monat monatlich kündbar)']).filter(
 			(v) => v !== ''
 		);
-		const premium_string = options[0] ?? error('No premium string');
-		const sect1 = premium_string.split(' --> ')[0] ?? error('Invalid premium string');
+		const premium_string = options[0] ?? panic('No premium string');
+		const sect1 = premium_string.split(' --> ')[0] ?? panic('Invalid premium string');
 		const package_names = sect1.split(' + ').slice(1);
 		const package_clite = clite(['cinema', 'sport', 'bundesliga'], 'premium_package');
 		return package_names.map((name) => package_clite(name));
 	})();
-	const zubuchoptionen: zubuchoption_id[] = (() => {
+	const extras: (zubuchoption_id | package_id)[] = (() => {
 		const zubuchoptionen_lst = arrp(obj['Sky Zubuchoptionen']);
-		const zubuchoptionen_table: Record<string, zubuchoption_id | undefined> = {
+		const zubuchoptionen_table: Record<string, zubuchoption_id | package_id | undefined> = {
 			'HD+ 4 Monate gratis testen (endet automatisch)': 'hdplus4monategratis',
 			'Netflix Premium 4K und 4 Geräte Upgrade --> ? 10 mtl.': 'netflixpremium',
 			'UHD für die gebuchten Pakete --> ? 5 mtl.': 'uhd',
@@ -363,7 +393,7 @@ export function to_form_data(text: string): SkyFormData {
 			payback_number: ostrp(obj['PAYBACK Kundennummer'], 'payback_number'),
 			base_package,
 			premium_packages,
-			zubuchoptionen
+			zubuchoptionen: extras
 		}
 	} as SkyFormData;
 }

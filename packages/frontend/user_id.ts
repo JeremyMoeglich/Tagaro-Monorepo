@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Cookies from 'js-cookie';
 import { preferences_store } from './preferences';
 
-export const user_id_store = writable(get_uuid());
+export const user_id_store = writable<string | undefined>(get_uuid());
 
 preferences_store.subscribe(() => {
 	user_id_store.set(get_uuid());
