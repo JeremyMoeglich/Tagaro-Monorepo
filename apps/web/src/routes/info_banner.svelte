@@ -16,7 +16,7 @@
 	import { cloneDeep } from 'lodash-es';
 	import { page } from '$app/stores';
 	import { enter_filter } from 'utils';
-
+	// to whom it may concern, i have completely and utterly given up on humanity
 	const disabled_routes = ['/service'];
 
 	$: banner_enabled = !disabled_routes.some((element) => $page.url.pathname.startsWith(element));
