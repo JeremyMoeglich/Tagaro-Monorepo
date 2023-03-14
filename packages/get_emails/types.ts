@@ -1,8 +1,6 @@
 import { z } from 'zod';
 
 export const get_email_config_schema = z.object({
-	max_amount: z.number().optional(),
-	mark_as_seen: z.boolean().optional(),
 	subject: z.string().optional(),
 	folder: z.string().optional(),
 	from: z.string().optional(),
