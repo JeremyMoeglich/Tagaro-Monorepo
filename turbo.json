@@ -13,6 +13,10 @@
 			"dependsOn": ["build", "^build:netlify"],
 			"outputs": [".svelte-kit/**", ".build/**"]
 		},
+		"build:vercel": {
+			"dependsOn": ["build", "^build:vercel"],
+			"outputs": [".svelte-kit/**", ".build/**"]
+		},
 		"lint": {
 			"dependsOn": ["^lint"],
 			"outputs": []

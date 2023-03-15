@@ -5,6 +5,7 @@
 	"scripts": {
 		"dev": "vite dev --port 3002",
 		"build": "vite build",
+		"build:vercel": "cross-env ADAPTER=vercel npm run build",
 		"preview": "vite preview --port 3002",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"lint": "eslint -c .eslintrc.cjs ."
@@ -19,6 +20,7 @@
 		"asset_library": "workspace:*",
 		"components": "workspace:^0.1.0",
 		"config": "workspace:*",
+		"cross-env": "^7.0.3",
 		"db": "workspace:*",
 		"emails": "workspace:*",
 		"eslint": "^8.36.0",

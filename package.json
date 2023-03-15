@@ -5,6 +5,7 @@
 	"scripts": {
 		"build:static": "turbo run build:static",
 		"build:netlify": "turbo run build:netlify",
+		"build:vercel": "turbo run build:vercel",
 		"build": "turbo run build",
 		"dev": "dotenv -- turbo run dev",
 		"preview": "turbo run preview",

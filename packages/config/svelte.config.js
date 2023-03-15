@@ -4,6 +4,7 @@ import { optimizeImports } from 'carbon-preprocess-svelte';
 import staticAdapter from '@sveltejs/adapter-static';
 import nodeAdapter from '@sveltejs/adapter-node';
 import netlifyAdapter from '@sveltejs/adapter-netlify';
+import vercelAdapter from '@sveltejs/adapter-vercel';
 
 //@ts-check
 
@@ -18,6 +19,11 @@ const getAdapters = (adapt) => {
             return staticAdapter();
         case 'netlify':
             return netlifyAdapter();
+        case 'vercel':
+			return vercelAdapter({
+				runtime: 'nodejs18.x',
+				split: true
+			});
         default:
             throw new Error(`Adapter ${adapt} not found`);
     }
