@@ -1,35 +1,41 @@
 <script lang="ts">
 	import FormInput from 'components/elements/interactive/form_input.svelte';
 	import type { SkyFormData } from 'aboforms/form_data';
-	import { generate_form_response_email } from 'aboforms_resolve_resp';
+	import { to_form_data } from 'aboforms/parse';
+	import { generate_form_response_email, type RegisterInfo } from 'aboforms_resolve_resp';
 	import dayjs from 'dayjs';
 	import { onMount } from 'svelte';
-	import type { z } from 'zod';
-	import type { get_email_config_schema, SentEmail } from 'get_emails/types';
+	import { z } from 'zod';
+	import { type get_email_config_schema, type SentEmail, sent_email_schema } from 'emails';
+	import { parse_to_date } from '$lib/zod_utils';
+	import QInput from '../../../../../../packages/components/elements/interactive/quick/QInput.svelte';
 
 	export let form: SkyFormData | undefined;
 
-	let emails: SentEmail[] | undefined = undefined;
+	let emails: { email: SentEmail; form: SkyFormData }[] | undefined = undefined;
 
 	let email_html: ReturnType<typeof generate_form_response_email> = {
 		body: '',
 		subject: ''
 	};
 
+	let register_info: RegisterInfo = {
+		sky_kundennummer: '123456',
+		sky_vertragsnummer: '123456',
+		vertragsbeginn: dayjs().toDate()
+	};
+
 	$: {
 		if (form) {
-			email_html = generate_form_response_email(form, {
-				sky_kundennummer: '123456',
-				sky_vertragsnummer: '123456',
-				vertragsbeginn: dayjs().toDate()
-			});
+			email_html = generate_form_response_email(form, register_info);
 		}
 	}
 
 	onMount(async () => {
 		const args: z.infer<typeof get_email_config_schema> = {
 			cached: true,
-			folder: 'Sky Aboformulare'
+			folder: 'Sky Aboformulare',
+			since: dayjs().subtract(1, 'week').toDate()
 		};
 		const res = await fetch('/api/emails', {
 			method: 'POST',
@@ -38,10 +44,23 @@
 			},
 			body: JSON.stringify(args)
 		});
-		emails = await res.json();
+		emails = z
+			.array(z.unknown())
+			.parse(await res.json())
+			.map((v) => {
+				const email = parse_to_date(v, sent_email_schema, ['date']);
+				return {
+					email,
+					form: to_form_data(email.body)
+				};
+			})
+			.sort((a, b) => {
+				return dayjs(b.email.date).diff(dayjs(a.email.date));
+			});
+		console.log(emails);
 	});
 
-	const tabs = ['Tab 1', 'Tab 2', 'Tab 3'] as const;
+	const tabs = ['Edit', 'Emails'] as const;
 	let tab: (typeof tabs)[number] = tabs[0];
 </script>
 
@@ -63,17 +82,24 @@
 			{/each}
 		</div>
 		<div class="bg-gray-800 text-slate-300 p-4 rounded-b-lg rounded-r-lg overflow-y-scroll">
-			{#if tab === 'Tab 1'}
+			{#if tab === 'Edit'}
 				<div class="form_input">
+					<QInput name={'Kundennummer'} bind:value={register_info.sky_kundennummer} />
+					<QInput name={'Vertragsnummer'} bind:value={register_info.sky_vertragsnummer} />
 					<FormInput bind:current_form={form} />
 				</div>
-			{:else if tab === 'Tab 2'}
+			{:else if tab === 'Emails'}
 				<div>
 					{#if emails}
 						{#each emails as email}
 							<div class="flex">
-								<div class="flex-grow">{email.subject}</div>
-								<div class="flex-grow">{email.date}</div>
+								<div class="flex-grow">{email.form.vorname} {email.form.nachname}</div>
+								<div class="flex-grow">{dayjs(email.email.date).format('DD.MM.YYYY - HH:mm')}</div>
+								<button
+									on:click={() => {
+										form = email.form;
+									}}>Use</button
+								>
 							</div>
 						{/each}
 					{/if}

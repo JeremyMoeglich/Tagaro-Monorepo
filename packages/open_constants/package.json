@@ -4,7 +4,8 @@
 	"main": "index.ts",
 	"svelte": "index.ts",
 	"dependencies": {
-		"config": "workspace:*"
+		"config": "workspace:*",
+		"test": "^3.3.0"
 	},
 	"type": "module"
 }

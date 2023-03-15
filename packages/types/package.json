@@ -2,6 +2,7 @@
 	"name": "types",
 	"version": "1.0.0",
 	"dependencies": {
-		"config": "workspace:*"
+		"config": "workspace:*",
+		"test": "^3.3.0"
 	}
 }

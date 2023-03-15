@@ -1,5 +1,5 @@
 {
-	"name": "get_emails",
+	"name": "emails",
 	"dependencies": {
 		"@types/iconv": "^3.0.1",
 		"@types/imap": "^0.8.35",
@@ -7,11 +7,7 @@
 		"@types/mailparser": "^3.4.0",
 		"@types/node": "^18.15.1",
 		"config": "workspace:*",
-		"file-system-cache": "^2.0.2",
 		"functional-utilities": "^2.0.1",
-		"imapflow": "^1.0.121",
-		"mailparser": "^3.6.4",
-		"postal-mime": "^1.0.15",
 		"types": "workspace:*",
 		"zod": "^3.21.4"
 	},
@@ -19,5 +15,7 @@
 		"imap": "^0.8.19"
 	},
 	"version": "1.0.0",
-	"type": "module"
+	"type": "module",
+	"main": "index.ts",
+	"svelte": "index.ts"
 }

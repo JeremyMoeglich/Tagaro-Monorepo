@@ -1,5 +1,5 @@
 import { SkyFormData } from './form_data';
-import type { SentEmail } from 'get_emails/types';
+import type { SentEmail } from 'emails';
 import { z } from 'zod';
 import { maxBy } from 'lodash-es';
 import { base_package_set, premium_package_set } from 'asset_library/offer_description';
@@ -51,6 +51,7 @@ function trim_spaces(text: string): string {
 
 function get_object(text: string): Record<string, string | string[]> {
 	const lines = text
+		.replace(/\r/g, '')
 		.replace(/\n*\t/g, '\t')
 		.replace(/(?<=.)\n(?=[a-zA-Z0-9](?!.*\t))/g, ';;;')
 		.split('\n')
@@ -117,7 +118,6 @@ function get_object(text: string): Record<string, string | string[]> {
 
 export function to_form_data(text: string): SkyFormData {
 	const obj = get_object(text);
-	console.log(JSON.stringify(obj, null, 2));
 	const alt = <T extends keyof typeof obj>(opt: T[]) => {
 		return opt
 			.map((e) => obj[e])

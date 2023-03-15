@@ -2,10 +2,11 @@
 	"name": "asset_library",
 	"dependencies": {
 		"@types/lodash-es": "^4.17.6",
+		"config": "workspace:*",
 		"functional-utilities": "^2.0.1",
 		"lodash-es": "^4.17.21",
 		"open_constants": "workspace:*",
-		"config": "workspace:*"
+		"test": "^3.3.0"
 	},
 	"type": "module"
 }

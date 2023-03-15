@@ -4,14 +4,15 @@
 		"@types/lodash-es": "^4.17.6",
 		"@types/string-similarity": "^4.0.0",
 		"asset_library": "workspace:*",
+		"config": "workspace:*",
 		"dayjs": "^1.11.7",
-		"get_emails": "workspace:*",
+		"functional-utilities": "^2.0.1",
+		"emails": "workspace:*",
 		"ibantools": "^4.2.2",
 		"lodash-es": "^4.17.21",
 		"string-similarity": "^4.0.4",
-		"config": "workspace:*",
-		"zod": "^3.21.4",
-		"functional-utilities": "^2.0.1"
+		
+		"zod": "^3.21.4"
 	},
 	"version": "1.0.0",
 	"type": "module"

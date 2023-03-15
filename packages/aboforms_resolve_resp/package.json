@@ -3,10 +3,11 @@
 	"dependencies": {
 		"aboforms": "workspace:*",
 		"asset_library": "workspace:*",
+		"config": "workspace:*",
 		"dayjs": "^1.11.7",
 		"functional-utilities": "^2.0.1",
-		"get_emails": "workspace:*",
-		"config": "workspace:*"
+		"emails": "workspace:*",
+		"test": "^3.3.0"
 	},
 	"version": "1.0.0",
 	"main": "index.ts",

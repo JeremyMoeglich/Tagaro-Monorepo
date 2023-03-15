@@ -20,6 +20,7 @@
 		"open_constants": "workspace:*",
 		"svelte": "^3.56.0",
 		"svelte-preprocess": "^5.0.1",
+		
 		"type-fest": "^3.6.1",
 		"utils": "workspace:*",
 		"vite": "^4.1.4"

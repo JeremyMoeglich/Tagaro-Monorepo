@@ -1,6 +1,0 @@
-{
-	"extends": "config/tsconfig/base.json",
-	"include": [
-		"./postal-mime.d.ts"
-	]
-}
