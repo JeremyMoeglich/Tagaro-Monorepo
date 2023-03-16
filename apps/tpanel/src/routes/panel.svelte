@@ -31,11 +31,11 @@
 			<h3 class="no_gradient text-blue-400">Activity</h3>
 			<Activity />
 		</div>
-		<div class="flex flex-col gap-2 mt-4">
+		<div class="flex flex-col gap-2 mt-4 w-full">
 			{#each typed_entries(panels) as [id, name]}
 				<a
 					href={`/panel/${id}`}
-					class="flex items-center gap-2 px-2 py-1 rounded-lg hover:bg-slate-700 text-gray-400"
+					class="flex items-center gap-2 px-6 py-1 hover:bg-slate-700 text-gray-400 w-full"
 					class:active={current_page === id}
 				>
 					{name}
@@ -50,6 +50,6 @@
 
 <style>
 	.active {
-		background-color: var(--color-slate-700);
+		background-color: rgba(68, 66, 180, 0.336);
 	}
 </style>
