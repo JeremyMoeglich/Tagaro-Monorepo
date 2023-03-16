@@ -20,9 +20,9 @@ jobs:
               args: [--frozen-lockfile, --strict-peer-dependencies]
 
       - name: Use Node.js 17.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 17.x
+          node-version: 18
 
       - name: lint, check, build
         run: |
