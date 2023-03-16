@@ -4,11 +4,12 @@
 	import { to_form_data } from 'aboforms/parse';
 	import { generate_form_response_email, type RegisterInfo } from 'aboforms_resolve_resp';
 	import dayjs from 'dayjs';
-	import { onMount } from 'svelte';
 	import { z } from 'zod';
 	import { type get_email_config_schema, type SentEmail, sent_email_schema } from 'emails';
 	import { parse_to_date } from '$lib/zod_utils';
-	import QInput from '../../../../../../packages/components/elements/interactive/quick/QInput.svelte';
+	import QInput from 'components/elements/interactive/quick/QInput.svelte';
+	import { browser } from '$app/environment';
+	import QSelect from 'components/elements/interactive/quick/QSelect.svelte';
 
 	export let form: SkyFormData | undefined;
 
@@ -31,11 +32,21 @@
 		}
 	}
 
-	onMount(async () => {
+	type FolderType = 'Sky Aboformulare' | 'INBOX';
+
+	let folder: FolderType = 'INBOX';
+	let loading_state: 'loading' | 'loaded' | 'error' = 'loading';
+
+	async function refresh_emails(folder: FolderType) {
+		if (!browser) {
+			return;
+		}
+		loading_state = 'loading';
 		const args: z.infer<typeof get_email_config_schema> = {
 			cached: true,
-			folder: 'Sky Aboformulare',
-			since: dayjs().subtract(1, 'week').toDate()
+			folder,
+			since: dayjs().subtract(1, 'week').toDate(),
+			from: 'Sky Abodaten Eingang'
 		};
 		const res = await fetch('/api/emails', {
 			method: 'POST',
@@ -44,6 +55,10 @@
 			},
 			body: JSON.stringify(args)
 		});
+		if (!res.ok) {
+			loading_state = 'error';
+			return;
+		}
 		emails = z
 			.array(z.unknown())
 			.parse(await res.json())
@@ -58,7 +73,10 @@
 				return dayjs(b.email.date).diff(dayjs(a.email.date));
 			});
 		console.log(emails);
-	});
+		loading_state = 'loaded';
+	}
+
+	$: refresh_emails(folder);
 
 	const tabs = ['Edit', 'Emails'] as const;
 	let tab: (typeof tabs)[number] = tabs[0];
@@ -90,19 +108,40 @@
 				</div>
 			{:else if tab === 'Emails'}
 				<div>
-					{#if emails}
-						{#each emails as email}
-							<div class="flex">
-								<div class="flex-grow">{email.form.vorname} {email.form.nachname}</div>
-								<div class="flex-grow">{dayjs(email.email.date).format('DD.MM.YYYY - HH:mm')}</div>
-								<button
-									on:click={() => {
-										form = email.form;
-									}}>Use</button
-								>
-							</div>
-						{/each}
-					{/if}
+					<div class="form_input">
+						<QSelect
+							name={'Folder'}
+							bind:selected={folder}
+							options={['Sky Aboformulare', 'INBOX']}
+						/>
+					</div>
+					<div class="flex flex-col gap-2">
+						<h3 class="text-xl">Emails</h3>
+						{#if loading_state === 'loaded'}
+							{#if emails && emails.length > 0}
+								{#each emails as email}
+									<div class="flex">
+										<div class="flex-grow">{email.form.vorname} {email.form.nachname}</div>
+										<div class="flex-grow">
+											{dayjs(email.email.date).format('DD.MM.YYYY - HH:mm')}
+										</div>
+										<button
+											class="btn btn-primary btn-sm"
+											on:click={() => {
+												form = email.form;
+											}}>Use</button
+										>
+									</div>
+								{/each}
+							{:else}
+								<div class="text-center">No Emails</div>
+							{/if}
+						{:else if loading_state === 'loading'}
+							<div class="text-center">Loading...</div>
+						{:else if loading_state === 'error'}
+							<div class="text-center">An Error Occured</div>
+						{/if}
+					</div>
 				</div>
 			{/if}
 		</div>

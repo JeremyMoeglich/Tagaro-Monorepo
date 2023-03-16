@@ -251,8 +251,8 @@ export function generate_form_response_email(
 		body += `Ihre PAYBACK Nummer wurde eingetragen.\n\n`;
 	}
 
-	body += `Ihre Sky-Vertragsnummer lautet: ${register.sky_vertragsnummer}\n`;
-	body += `Ihre Sky-Kundennummer lautet: ${register.sky_kundennummer}\n\n`;
+	body += `Ihre Sky-Vertragsnummer lautet ${register.sky_vertragsnummer}.\n`;
+	body += `Ihre Sky-Kundennummer lautet ${register.sky_kundennummer}.\n\n`;
 
 	if (form.empfangsart === 'internet') {
 		body += `Dazu erhalten Sie eine mietfreie Sky Q IPTV Box für einmalig € 0.\n\n`;

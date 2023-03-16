@@ -12,6 +12,9 @@ import type { GetEmailConfig, SentEmail } from 'emails';
 import pkg_iconv from 'iconv-lite';
 import type * as iconv_types from 'iconv-lite';
 const iconv = pkg_iconv as typeof iconv_types;
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import dayjs from 'dayjs';
 
 const use_cache =
 	{
@@ -46,7 +49,8 @@ export async function get_emails(config: GetEmailConfig = {}): Promise<SentEmail
 		'emails',
 		config.subject ?? 'ALL',
 		config.folder ?? 'INBOX',
-		config.from ?? 'ALL'
+		config.from ?? 'ALL',
+		config.since ? Math.floor(dayjs(config.since).unix() / 60) : 'ALL' // Round to nearest minute to avoid cache misses
 	].join('_');
 
 	const new_value = async () => {
