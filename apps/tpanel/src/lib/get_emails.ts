@@ -13,6 +13,13 @@ import pkg_iconv from 'iconv-lite';
 import type * as iconv_types from 'iconv-lite';
 const iconv = pkg_iconv as typeof iconv_types;
 
+const use_cache =
+	{
+		true: true,
+		false: false
+	}[process.env.FS_CACHE ?? 'true'] ??
+	panic("FS_CACHE environment variable has an invalid value. Must be 'true' or 'false'");
+
 async function get_imap_connection(): Promise<ImapFlow> {
 	const client = new ImapFlow({
 		host: process.env.IMAP_HOST ?? panic('IMAP_HOST environment variable not set'),
@@ -30,8 +37,11 @@ async function get_imap_connection(): Promise<ImapFlow> {
 }
 
 export async function get_emails(config: GetEmailConfig = {}): Promise<SentEmail[]> {
-	const cache = Cache();
+	if (!use_cache) {
+		return uncached_get_emails(config);
+	}
 
+	const cache = Cache();
 	const cache_key = [
 		'emails',
 		config.subject ?? 'ALL',
