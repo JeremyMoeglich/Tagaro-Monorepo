@@ -7,7 +7,7 @@ const Cache = 'default' in PkgCache ? ((PkgCache as any).default as typeof PkgCa
 import type { JsonEq } from 'types';
 // import { writeFile } from 'fs/promises';
 import type { GetEmailConfig, SentEmail } from 'emails';
-import * as iconv from 'iconv-lite';
+import { decode } from 'iconv-lite';
 
 async function get_imap_connection(): Promise<ImapFlow> {
 	const client = new ImapFlow({
@@ -79,7 +79,7 @@ function decode_mime(str: string): string {
 
 	// Decode message content from iso-8859-1 to UTF-8
 	const messageBuffer = Buffer.from(decodedContent, 'binary');
-	const decodedBuffer = iconv.decode(messageBuffer, 'iso-8859-1');
+	const decodedBuffer = decode(messageBuffer, 'iso-8859-1');
 
 	// Convert decoded content to a JavaScript string
 	const messageString = decodedBuffer.toString();
