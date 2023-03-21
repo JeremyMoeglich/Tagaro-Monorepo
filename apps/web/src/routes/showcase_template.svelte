@@ -4,12 +4,10 @@
 	import AboformularButton from 'components/elements/interactive/buttons/aboformular_button.svelte';
 	import { aboformular } from 'open_constants';
 	import Enddate from 'components/generators/enddate.svelte';
-	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
-	import { crossfade } from 'frontend/crossfade';
 	import ConditionalHref from '../../../../packages/components/layout/conditional_href.svelte';
 	import type { priceable_asset_id } from 'asset_library/asset_types';
-
-	const [send] = crossfade;
+	import AImage from 'components/elements/aimage.svelte';
+	import { indexed_package_assets } from 'asset_library/assets/packages';
 
 	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let enddate:
@@ -101,15 +99,14 @@
 				</div>
 			</div>
 			{#if primary_image}
-				<ConditionalHref active={!!redirect_url} href={redirect_url}>
+				<ConditionalHref active={!!redirect_url} href={redirect_url ?? ''}>
 					<img src={primary_image} alt="" class="primary_image" />
 				</ConditionalHref>
 			{/if}
 
 			{#if !primary_image}
 				<div class="package_overview">
-					{#each showcase_assets.map((v) => indexed_priceable_assets[v]) as asset}
-						{@const path = `/images/assets/packages/normal/${asset.id}.png`}
+					{#each showcase_assets.map((v) => indexed_package_assets[v]) as asset}
 						<a
 							href={asset.id.includes('entertainment')
 								? `/angebote/${asset.id}`
@@ -119,7 +116,7 @@
 											: 'entertainmentplus'
 								  }`}
 						>
-							<img src={path} alt={asset.id} out:send={{ key: path }} in:send={{ key: path }} />
+							<AImage image={{ asset_id: asset.id, variant: 'normal' }} />
 						</a>
 					{/each}
 				</div>
