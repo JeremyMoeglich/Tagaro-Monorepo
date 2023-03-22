@@ -10,7 +10,6 @@
 		"js-cookie": "^3.0.1",
 		"open_constants": "workspace:*",
 		"svelte": "^3.56.0",
-		
 		"uuid": "^9.0.0"
 	}
 }

@@ -2,17 +2,11 @@
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
 		"paths": {
-			"$lib": [
-				"./src/lib"
-			],
-			"$lib/*": [
-				"./src/lib/*"
-			]
+			"$lib": ["./src/lib"],
+			"$lib/*": ["./src/lib/*"]
 		},
 		"module": "esnext",
-		"lib": [
-			"ESNext"
-		],
+		"lib": ["ESNext"],
 		"target": "ES2019",
 		"declaration": true,
 		"declarationMap": true,
@@ -31,9 +25,5 @@
 		"strictPropertyInitialization": true,
 		"allowJs": true
 	},
-	"include": [
-		"./postbuild.ts",
-		"./.svelte-kit/ambient.d.ts",
-		"./html_inline_external.d.ts"
-	]
+	"include": ["./postbuild.ts", "./.svelte-kit/ambient.d.ts", "./html_inline_external.d.ts"]
 }

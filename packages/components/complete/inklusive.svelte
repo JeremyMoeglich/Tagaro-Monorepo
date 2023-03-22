@@ -69,7 +69,7 @@
 					<li>✓ Herausragende Serien</li>
 					<li>✓ Spektakuläre Shows</li>
 					<li>
-						✓ Ab 8.12.2022: Paramount+ ist im Sky Cinema Paket inklusive im Wert von €7,99 mtl.*
+						✓ Paramount+ ist im Sky Cinema Paket inklusive im Wert von €7,99 mtl.*
 					</li>
 				</ul>
 			</span>

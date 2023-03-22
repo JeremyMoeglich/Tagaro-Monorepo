@@ -2,12 +2,8 @@
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
 		"paths": {
-			"$lib": [
-				"./src/lib"
-			],
-			"$lib/*": [
-				"./src/lib/*"
-			]
+			"$lib": ["./src/lib"],
+			"$lib/*": ["./src/lib/*"]
 		},
 		"module": "esnext",
 		"lib": ["ESNext"],
@@ -29,7 +25,5 @@
 		"strictPropertyInitialization": true,
 		"allowJs": true
 	},
-	"include": [
-		"./.svelte-kit/ambient.d.ts",
-	]
+	"include": ["./.svelte-kit/ambient.d.ts"]
 }

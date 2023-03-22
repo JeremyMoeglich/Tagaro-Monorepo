@@ -209,27 +209,28 @@
 				max-width: 100vw;
 				justify-content: center;
 				gap: max(0px, calc(2vw - 20px));
-				img {
-					max-width: 100%;
-					width: 200px;
-					min-width: 0px;
-					transition-duration: 200ms;
-					padding: 2px;
-					&:hover {
-						z-index: 5;
-						transform: scale(1.1);
-						background: linear-gradient(
-							142deg,
-							rgba(253, 122, 29, 1) 0%,
-							rgba(253, 29, 29, 1) 21%,
-							rgba(194, 64, 159, 1) 51%,
-							rgba(106, 92, 186, 1) 77%,
-							rgba(29, 162, 253, 1) 100%
-						);
-						box-shadow: 0px 10px 36px -10px rgba(0, 0, 0, 0.75);
-					}
-				}
 			}
+		}
+	}
+
+	.package_overview :global(img) {
+		max-width: 100%;
+		width: 200px;
+		min-width: 0px;
+		transition-duration: 200ms;
+		padding: 2px;
+		&:hover {
+			z-index: 5;
+			transform: scale(1.1);
+			background: linear-gradient(
+				142deg,
+				rgba(253, 122, 29, 1) 0%,
+				rgba(253, 29, 29, 1) 21%,
+				rgba(194, 64, 159, 1) 51%,
+				rgba(106, 92, 186, 1) 77%,
+				rgba(29, 162, 253, 1) 100%
+			);
+			box-shadow: 0px 10px 36px -10px rgba(0, 0, 0, 0.75);
 		}
 	}
 	.wrap_add {

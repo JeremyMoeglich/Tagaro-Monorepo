@@ -1,7 +1,7 @@
-import svelteConfig from 'config/svelte.config.js'
+import svelteConfig from 'config/svelte.config.js';
 
 const config = {
-    ...svelteConfig
-}
+	...svelteConfig
+};
 
 export default config;

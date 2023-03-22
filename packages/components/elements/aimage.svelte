@@ -1,8 +1,10 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
 	import { indexed_assets } from 'asset_library/all_assets';
 	import type { package_id } from 'asset_library/assets/packages';
 	import { receive_assets, receive_id } from 'asset_library/assets/receive_type';
 	import { zubuchoption_id } from 'asset_library/assets/zubuchoptionen';
+	import { make_url } from 'frontend/url';
 
 	type AImageType =
 		| ({
@@ -42,11 +44,9 @@
 			} else {
 				path += `${image.variant}/${image.asset_id}.${image.variant === 'normal' ? 'png' : 'webp'}`;
 			}
-		}
-		if ('wahl' in image) {
+		} else if ('wahl' in image) {
 			path += `packages/wahl/${image.wahl}.png`;
-		}
-		if (is_receive_id(image.asset_id)) {
+		} else if (is_receive_id(image.asset_id)) {
 			path += `receivers/${image.asset_id}.png`;
 		} else {
 			path += `zubuchoptionen/${image.asset_id}.png`;
@@ -57,4 +57,14 @@
 	$: path = get_path(image);
 </script>
 
-<img src={path} alt={'wahl' in image ? image.wahl : indexed_assets[image.asset_id].name} />
+<img
+	src={make_url(path, dev)}
+	alt={'wahl' in image ? image.wahl : indexed_assets[image.asset_id].name}
+	class="img"
+/>
+
+<style>
+	.img {
+		width: 100%;
+	}
+</style>

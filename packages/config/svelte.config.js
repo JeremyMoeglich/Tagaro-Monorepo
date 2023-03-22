@@ -12,39 +12,38 @@ const hasAdapter = process.env.ADAPTER;
 const adapt = hasAdapter ? hasAdapter : 'node';
 
 const getAdapters = (adapt) => {
-    switch (adapt) {
-        case 'node':
-            return nodeAdapter();
-        case 'static':
-            return staticAdapter();
-        case 'netlify':
-            return netlifyAdapter();
-        case 'vercel':
+	switch (adapt) {
+		case 'node':
+			return nodeAdapter();
+		case 'static':
+			return staticAdapter();
+		case 'netlify':
+			return netlifyAdapter();
+		case 'vercel':
 			return vercelAdapter({
 				runtime: 'nodejs18.x',
 				split: true
 			});
-        default:
-            throw new Error(`Adapter ${adapt} not found`);
-    }
+		default:
+			throw new Error(`Adapter ${adapt} not found`);
+	}
 };
 
 const adapter = getAdapters(adapt);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    // Consult https://github.com/sveltejs/svelte-preprocess
-    // for more information about preprocessors
-    preprocess: [
-        preprocess({
-            postcss: true
-        }),
-        optimizeImports()
-    ],
-    kit: {
-        adapter: adapter
-    }
+	// Consult https://github.com/sveltejs/svelte-preprocess
+	// for more information about preprocessors
+	preprocess: [
+		preprocess({
+			postcss: true
+		}),
+		optimizeImports()
+	],
+	kit: {
+		adapter: adapter
+	}
 };
-
 
 export default config;
