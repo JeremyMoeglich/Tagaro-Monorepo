@@ -5,7 +5,7 @@ const start = '/images/assets/packages/senders/sport/';
 export const sport_senders = [
 	{
 		image: 'sky_logo_sky-sport-f1.png',
-		text: 'Die komplette Formel 1 Saison 2022 - alle Rennen live auf Sky.'
+		text: 'Die komplette Formel 1 Saison - alle Rennen live auf Sky.'
 	},
 	{ image: 'sky_logo_sky-sport-uhd.png', text: 'Ausgewählte Sport-Events in brillantem UHD' },
 	//{ image: 'sky_logo_eurosport2-hd_w.png', text: '' },

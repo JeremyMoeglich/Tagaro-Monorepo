@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import type { package_id } from 'asset_library/assets/packages';
-	import { bonus, bonus_string } from 'asset_library/prices';
+	import { bonus, bonus_string, get_price_string } from 'asset_library/prices';
 	import { make_url } from 'frontend/url';
 	import Header from './header.svelte';
 	import { dev } from '$app/environment';
@@ -23,7 +23,13 @@
 	function get_title(packages: package_id[] | 'allgemein'): string {
 		const titles: [package_id[] | 'allgemein', string][] = [
 			[['entertainment'], 'Titel'],
-			[['entertainment', 'sport'], 'Sky Sport Abo inkl. der Formel 1 2023 live für € 20 mtl.*'],
+			[
+				['entertainment', 'sport'],
+				`Sky Sport Abo inkl. der Formel 1 2023 live für ${get_price_string(
+					['entertainment', 'sport'],
+					'jahr'
+				)} mtl.*`
+			],
 			[['entertainment', 'cinema'], 'Titel'],
 			[['entertainment', 'bundesliga'], 'Titel'],
 			[['entertainment', 'sport', 'bundesliga'], 'Titel'],
@@ -31,13 +37,19 @@
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				'Sky Abo mit Entertainment + 3 Paketen für €&nbsp;30 mtl. Dazu €&nbsp;20 Bonus*'
+				`Sky Abo mit Entertainment + 3 Paketen für ${get_price_string(
+					['entertainment', 'sport', 'bundesliga', 'cinema'],
+					'jahr'
+				)} mtl. Dazu €&nbsp;20 Bonus*`
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
 			[
 				['entertainmentplus', 'cinema'],
-				'Sky Entertainment Plus + Cinema inkl. Paramount+ für €&nbsp;25 mtl.*'
+				`Sky Entertainment Plus + Cinema inkl. Paramount+ für ${get_price_string(
+					['entertainmentplus', 'cinema'],
+					'jahr'
+				)} mtl.*`
 			],
 			[['entertainmentplus', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
@@ -45,9 +57,18 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo inkl. Netflix & Paramount+ für €&nbsp;35 mtl. Dazu €&nbsp;20 Bonus*'
+				`Sky Komplett Abo inkl. Netflix & Paramount+ für ${get_price_string(
+					['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
+					'jahr'
+				)} mtl. Dazu €&nbsp;20 Bonus*`
 			],
-			['allgemein', 'Sky Abo nach Wahl z.B. Entertainment Plus für € 15 mtl. Dazu €&nbsp;20 Bonus*']
+			[
+				'allgemein',
+				`Sky Abo nach Wahl z.B. Entertainment Plus für ${get_price_string(
+					['entertainmentplus'],
+					'jahr'
+				)} mtl. Dazu €&nbsp;20 Bonus*`
+			]
 		];
 		const title = titles.find(([p]) =>
 			typeof p === 'string'
