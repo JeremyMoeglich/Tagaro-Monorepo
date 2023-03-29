@@ -45,7 +45,7 @@
 		const args: z.infer<typeof get_email_config_schema> = {
 			cached: true,
 			folder,
-			since: dayjs().subtract(1, 'week').toDate(),
+			since: dayjs().subtract(2, 'week').toDate(),
 			from: 'Sky Abodaten Eingang'
 		};
 		const res = await fetch('/api/emails', {
