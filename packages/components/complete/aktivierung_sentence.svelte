@@ -6,12 +6,12 @@
 
 {#if aktivierung <= 0}
 	{#if always_show}
-		<p>Es fällt <b>keine Aktivierungsgebühr</b> durch Sky an. Sie sparen €&nbsp;29.</p>
+		<p>Es fällt <b>keine einmalige Gebühr</b> durch Sky an. Sie sparen €&nbsp;29.</p>
 	{/if}
 {:else}
 	<p>
 		Zu allen Angeboten kommt durch Sky eine <b
-			>einmalige Aktivierungsgebühr in Höhe von {@html aktivierung_string}</b
+			>einmalige Gebühr in Höhe von {@html aktivierung_string}</b
 		>
 		hinzu. Diese wird zusammen mit der ersten monatlichen Programmgebühr abgebucht.
 	</p>
