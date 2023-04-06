@@ -1,8 +1,7 @@
 <script lang="ts">
-	import { expire_time_days } from '$lib/expire_time';
+	import { expire } from 'open_constants';
 	import { z } from 'zod';
 	import cookie from 'cookiejs';
-	import dayjs from 'dayjs';
 	import type { User } from 'firebase/auth';
 	import { auth } from 'frontend/firebase';
 	import {
@@ -51,7 +50,7 @@
 					token: z.string()
 				})
 				.parse(await res.json());
-			cookie.set('token', token, { expires: dayjs().add(expire_time_days, 'day').toDate() });
+			cookie.set('token', token, expire.cookie_config);
 
 			if (await firebase_promise) {
 				data.logged_in = true;

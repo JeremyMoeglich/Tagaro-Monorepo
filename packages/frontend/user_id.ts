@@ -1,7 +1,8 @@
 import { get, writable } from 'svelte/store';
 import { v4 as uuidv4 } from 'uuid';
-import Cookies from 'js-cookie';
+import cookie from 'js-cookie';
 import { preferences_store } from './preferences';
+import { expire } from 'open_constants';
 
 export const user_id_store = writable<string | undefined>(get_uuid());
 
@@ -13,12 +14,12 @@ function get_uuid() {
 	if (!get(preferences_store).analytics) {
 		return undefined;
 	}
-	const value = Cookies.get('user_id');
+	const value = cookie.get('user_id');
 	if (value) {
 		return value;
 	} else {
 		const new_value = uuidv4();
-		Cookies.set('user_id', new_value);
+		cookie.set('user_id', new_value, expire.cookie_config);
 		return new_value;
 	}
 }

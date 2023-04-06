@@ -1,7 +1,7 @@
 {
 	"name": "asset_library",
 	"dependencies": {
-		"@types/lodash-es": "^4.17.6",
+		"@types/lodash-es": "^4.17.7",
 		"config": "workspace:*",
 		"functional-utilities": "^2.0.1",
 		"lodash-es": "^4.17.21",

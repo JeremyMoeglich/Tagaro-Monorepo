@@ -5,7 +5,7 @@ import type { JsonValue } from 'type-fest';
 import { prisma } from 'db';
 import { parse } from 'cookie';
 import dayjs from 'dayjs';
-import { expire_time_weeks } from './expire_time';
+import { expire } from 'open_constants';
 
 export async function get_request_body<T extends ZodObjectAny>(
 	request: Request,
@@ -48,7 +48,7 @@ export async function validate_token(token_value: string): Promise<boolean> {
 		return false;
 	}
 
-	if (dayjs().diff(create_time, 'week') > expire_time_weeks) {
+	if (dayjs().diff(create_time, 'weeks') > expire.weeks) {
 		prisma.loginToken.delete({
 			where: {
 				value: token_value

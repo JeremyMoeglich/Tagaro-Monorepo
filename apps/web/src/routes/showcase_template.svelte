@@ -156,8 +156,7 @@
 		color: black;
 		gap: 10px;
 		img {
-			width: 150px;
-			height: 150px;
+			width: 180px;
 		}
 		.points {
 			list-style: none;
