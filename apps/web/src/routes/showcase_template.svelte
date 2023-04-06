@@ -42,7 +42,7 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/mtlkuendbar.svg'] as const;
+	const left_badges = ['/images/badges/einmalige_gebuehr.svg'] as const;
 	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',

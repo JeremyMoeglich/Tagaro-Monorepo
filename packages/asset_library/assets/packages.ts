@@ -81,7 +81,9 @@ export const packages_assets = [
 		aspects: [
 			'Exklusive Top-Filme kurz nach dem Kino',
 			'Große Filmvielfalt über alle Genres hinweg',
-			'Alle Filme ohne Werbeunterbrechung'
+			'Alle Filme ohne Werbeunterbrechung',
+			'Paramount+ bereits inklusive',
+			'Zugriff auf 9 Sky Cinema Kanäle, inkl. Sky Cinema Special mit ausgewählten Themen-Events'
 		],
 		sort_priority: 2,
 		senders: senders.cinema
