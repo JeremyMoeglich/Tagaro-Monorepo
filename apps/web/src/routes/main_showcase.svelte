@@ -20,7 +20,7 @@
 	redirect_url={'/angebote/entertainmentplus_cinema_sport_bundesliga'}
 	hide_left={true}
 	points={[
-		`0 € statt 29 € einmalige Gebühr`,
+		`Nur im Web: € 0 statt € 29 einmalige Gebühr*`,
 		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
 		`Entertainment + 3 Pakete jetzt nur ${get_price_string(
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
