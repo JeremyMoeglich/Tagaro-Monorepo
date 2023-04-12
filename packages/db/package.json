@@ -14,7 +14,7 @@
 		"@types/node": "^18.15.11",
 		"config": "workspace:1.0.0",
 		"dotenv-cli": "^7.2.1",
-		"functional-utilities": "^2.0.1",
+		"functional-utilities": "^2.1.0",
 		"lodash-es": "^4.17.21",
 		"prisma": "^4.12.0"
 	}

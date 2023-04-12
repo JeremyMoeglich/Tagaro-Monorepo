@@ -7,7 +7,7 @@
 		"@types/mailparser": "^3.4.0",
 		"@types/node": "^18.15.11",
 		"config": "workspace:*",
-		"functional-utilities": "^2.0.1",
+		"functional-utilities": "^2.1.0",
 		"types": "workspace:*",
 		"zod": "^3.21.4"
 	},

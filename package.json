@@ -20,6 +20,6 @@
 		"dotenv-cli": "^7.2.1",
 		"prettier": "~2.8.7",
 		"turbo": "1.8.3",
-		"typescript": "^5.0.3"
+		"typescript": "^5.0.4"
 	}
 }
