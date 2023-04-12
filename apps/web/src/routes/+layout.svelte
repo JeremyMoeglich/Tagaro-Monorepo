@@ -227,7 +227,6 @@
 		margin-right: 0;
 		margin-left: 0;
 		overflow-x: hidden;
-		overflow-x: clip;
 	}
 
 	.mobile_slider {
