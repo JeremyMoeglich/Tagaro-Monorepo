@@ -126,7 +126,7 @@ export function generate_form_response_email(
 	const sky_assets = [
 		...package_ids,
 		...form.zubuchoptionen.filter((z) =>
-			(['uhd', 'multiscreen'] as (zubuchoption_id | package_id)[]).includes(z)
+			(['uhd', 'multiscreen', 'hdplus'] as (zubuchoption_id | package_id)[]).includes(z)
 		)
 	];
 	const subject = `Sky Auftragsbestätigung für ${[
