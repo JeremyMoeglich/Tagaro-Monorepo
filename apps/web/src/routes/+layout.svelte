@@ -29,10 +29,10 @@
 		]),
 		'Sky Q': '/sky_q',
 		'Sky übers Internet': '/sky_q_internet',
-		Kontakt: '/kontakt'
+		Kontakt: '/kontakt',
+		[open_constants.ebay.name + ' 🡆']: open_constants.ebay.route
 	} as const;
 	const navbar_entries = typed_entries<string, (typeof navbar_elements)[string]>(navbar_elements);
-	navbar_elements[open_constants.ebay.name + ' 🡆'] = open_constants.ebay.route;
 
 	let screen_y_position: number;
 
@@ -227,7 +227,6 @@
 		margin-right: 0;
 		margin-left: 0;
 		overflow-x: hidden;
-		overflow-x: clip;
 	}
 
 	.mobile_slider {

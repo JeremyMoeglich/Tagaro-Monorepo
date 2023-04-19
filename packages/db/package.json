@@ -9,13 +9,13 @@
 		"format": "prisma format"
 	},
 	"dependencies": {
-		"@prisma/client": "^4.11.0",
-		"@types/lodash-es": "^4.17.6",
-		"@types/node": "^18.15.1",
+		"@prisma/client": "^4.12.0",
+		"@types/lodash-es": "^4.17.7",
+		"@types/node": "^18.15.11",
 		"config": "workspace:1.0.0",
-		"dotenv-cli": "^7.1.0",
-		"functional-utilities": "^2.0.1",
+		"dotenv-cli": "^7.2.1",
+		"functional-utilities": "^2.1.0",
 		"lodash-es": "^4.17.21",
-		"prisma": "^4.11.0"
+		"prisma": "^4.12.0"
 	}
 }

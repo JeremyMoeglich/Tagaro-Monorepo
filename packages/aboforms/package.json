@@ -1,14 +1,14 @@
 {
 	"name": "aboforms",
 	"dependencies": {
-		"@types/lodash-es": "^4.17.6",
+		"@types/lodash-es": "^4.17.7",
 		"@types/string-similarity": "^4.0.0",
 		"asset_library": "workspace:*",
 		"config": "workspace:*",
 		"dayjs": "^1.11.7",
-		"functional-utilities": "^2.0.1",
 		"emails": "workspace:*",
-		"ibantools": "^4.2.2",
+		"functional-utilities": "^2.1.0",
+		"ibantools": "^4.3.0",
 		"lodash-es": "^4.17.21",
 		"string-similarity": "^4.0.4",
 		"zod": "^3.21.4"

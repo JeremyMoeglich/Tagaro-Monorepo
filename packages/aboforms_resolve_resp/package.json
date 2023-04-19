@@ -5,8 +5,8 @@
 		"asset_library": "workspace:*",
 		"config": "workspace:*",
 		"dayjs": "^1.11.7",
-		"functional-utilities": "^2.0.1",
 		"emails": "workspace:*",
+		"functional-utilities": "^2.1.0",
 		"test": "^3.3.0"
 	},
 	"version": "1.0.0",

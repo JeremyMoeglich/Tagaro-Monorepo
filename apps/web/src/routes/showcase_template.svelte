@@ -42,7 +42,7 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/mtlkuendbar.svg'] as const;
+	const left_badges = ['/images/badges/einmalige_gebuehr.svg'] as const;
 	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',
@@ -156,8 +156,7 @@
 		color: black;
 		gap: 10px;
 		img {
-			width: 150px;
-			height: 150px;
+			width: 180px;
 		}
 		.points {
 			list-style: none;
