@@ -13,6 +13,7 @@
 	import { showcased_combinations } from 'asset_library/assets/packages';
 	import { get_title } from 'asset_library/title';
 	import { sort_assets } from 'asset_library/all_assets';
+	import Analytics from './analytics.svelte';
 
 	let mobile_slider_value = 0;
 	let is_shown = false;
@@ -24,11 +25,11 @@
 			['index', '/angebote'],
 			...showcased_combinations.map((combination) => [
 				get_title(combination, true),
-				`/angebote/${sort_assets(combination).join('_')}`
+				`/angebote/${sort_assets(combination).join('-')}`
 			])
 		]),
-		'Sky Q': '/sky_q',
-		'Sky übers Internet': '/sky_q_internet',
+		'Sky Q': '/sky-q',
+		'Sky übers Internet': '/sky-q-internet',
 		Kontakt: '/kontakt',
 		[open_constants.ebay.name + ' 🡆']: open_constants.ebay.route
 	} as const;
@@ -52,20 +53,11 @@
 	}
 </script>
 
-<svelte:head>
-	{#if $preferences_store.analytics}
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-70CD2JS6R8"></script>
-		<script lang="ts">
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+{#if $preferences_store.analytics}
+	<Analytics />
+{/if}
 
-			gtag('config', 'G-70CD2JS6R8');
-		</script>
-	{/if}
+<svelte:head>
 	{#if $preferences_store.socialmedia}
 		<script
 			id="trustamiwidget"

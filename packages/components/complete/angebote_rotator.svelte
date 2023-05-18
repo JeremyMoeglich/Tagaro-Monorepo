@@ -5,7 +5,7 @@
 	import WrappingElements from '../layout/wrapping_elements.svelte';
 
 	function get_route(ids: package_id[]): string {
-		return `/angebote/${sort_assets(ids).join('_')}`;
+		return `/angebote/${sort_assets(ids).join('-')}`;
 	}
 
 	const components: ReadonlyArray<{

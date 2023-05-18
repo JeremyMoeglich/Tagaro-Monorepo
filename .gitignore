@@ -21,3 +21,7 @@ tmp
 
 dist
 .vercel
+
+# Added by cargo
+
+/target

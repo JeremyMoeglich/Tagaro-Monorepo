@@ -17,7 +17,7 @@
 		['entertainment', 'cinema', 'bundesliga', 'sport'],
 		'jahr'
 	)} mtl.*`}
-	redirect_url={'/angebote/entertainmentplus_cinema_sport_bundesliga'}
+	redirect_url={'/angebote/entertainmentplus-cinema-sport-bundesliga'}
 	hide_left={true}
 	points={[
 		`Nur im Web: € 0 statt € 29 einmalige Gebühr*`,

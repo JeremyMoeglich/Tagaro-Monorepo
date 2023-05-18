@@ -110,7 +110,7 @@
 						<a
 							href={asset.id.includes('entertainment')
 								? `/angebote/${asset.id}`
-								: `/angebote/${asset.id}_${
+								: `/angebote/${asset.id}-${
 										['sport', 'bundesliga'].includes(asset.id)
 											? 'entertainment'
 											: 'entertainmentplus'

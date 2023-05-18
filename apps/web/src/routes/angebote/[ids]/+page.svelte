@@ -7,7 +7,7 @@
 	import { sort_assets } from 'asset_library/all_assets';
 	import Inklusive from 'components/complete/inklusive.svelte';
 	$: ids_string = $page.params.ids;
-	$: ids = ids_string ? sort_assets(ids_string.split('_') as package_id[]) : [];
+	$: ids = ids_string ? sort_assets(ids_string.split('-') as package_id[]) : [];
 </script>
 
 <div class="outer">

@@ -44,7 +44,7 @@
 					> an.
 				</p>
 				<div class="button">
-					<Button text="Alle Infomationen zu Sky Q" on_click="/sky_q" />
+					<Button text="Alle Infomationen zu Sky Q" on_click="/sky-q" />
 				</div>
 			</span>
 			<span slot="right">
