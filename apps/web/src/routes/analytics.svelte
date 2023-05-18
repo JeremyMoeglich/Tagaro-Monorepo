@@ -1,12 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-	const MEASUREMENT_ID = 'G-FDX2HHHSTF';
-
 	$: {
 		if (typeof gtag !== 'undefined') {
 			// eslint-disable-next-line no-undef
-			gtag('config', MEASUREMENT_ID, {
+			gtag('config', "G-FDX2HHHSTF", {
 				page_title: document.title,
 				page_path: $page.url.pathname
 			});
@@ -15,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<script async src={`https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`}>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FDX2HHHSTF">
 	</script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -25,6 +23,6 @@
 		}
 
 		gtag('js', new Date());
-		gtag('config', MEASUREMENT_ID);
+		gtag('config', "https://www.googletagmanager.com/gtag/js?id=G-FDX2HHHSTF");
 	</script>
 </svelte:head>
