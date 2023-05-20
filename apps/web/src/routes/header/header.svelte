@@ -12,6 +12,7 @@
 	}
 </script>
 
+
 <div class="header_blue_bar" />
 <div class="top_header_container" id="nav_bar">
 	<div class="top_header_container_items">

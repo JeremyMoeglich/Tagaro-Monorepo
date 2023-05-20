@@ -19,12 +19,12 @@
 	export let subtitle0: string | null = null;
 	export let subtitle1:
 		| string
-		| null = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string} Bonus.`;
+		| null = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string()} Bonus.`;
 	export let subtitle2: string | null =
 		'Sky Neukunden-Angebote vom Onlinehändler mit schneller und zuverlässiger Bearbeitung.';
 	export let points = [
 		'Vertrag für Internet, Sat- oder Kabel-Anschluss mit Sky Q Receiver oder Sky Q IPTV Box*',
-		`${bonus_string} Bonus und versandkostenfreie Vermittlung*`
+		`${bonus_string()} Bonus und versandkostenfreie Vermittlung*`
 	];
 	export let primary_image: undefined | string = undefined;
 	export let side_images: string[] = [];

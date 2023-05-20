@@ -3,7 +3,10 @@
 	import AllOverviews from '../../../../../packages/components/complete/all_overviews.svelte';
 	import AlleBuchbar from 'components/complete/alle_buchbar.svelte';
 	import Inklusive from 'components/complete/inklusive.svelte';
+	import Meta from '../meta.svelte';
 </script>
+
+<Meta />
 
 <div>
 	<AngeboteRotator />

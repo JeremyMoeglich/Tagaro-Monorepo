@@ -4,7 +4,12 @@
 	import AboformularButton from 'components/elements/interactive/buttons/aboformular_button.svelte';
 	import VertragsinfomationenBox from '../../../../../packages/components/complete/vertragsinfomationen_box.svelte';
 	import { get_price_string } from 'asset_library/prices';
+	import Meta from '../meta.svelte';
+	import { nspace } from 'open_constants';
 </script>
+
+<Meta />
+
 
 <div class="outer">
 	<div class="alignment">
@@ -14,11 +19,11 @@
 		<p>
 			Mit Ihrem Sky Abonnement erhalten Sie auch Zugang zu Sky Q. Damit schauen Sie Ihr Programm
 			zuhause und unterwegs mit Sky Go und können bis zu 5 Geräte gleichzeitig nutzen (3 TVs und 3
-			mobile Geräte). Voraussetzung ist die Multiscreen Option für zzgl. {get_price_string(
+			mobile Geräte). Voraussetzung ist die Multiscreen Option für zzgl. {@html get_price_string(
 				['multiscreen'],
 				'jahr'
 			)} mtl. zu ihrem Wunschabonnement. Zusätzlich mit Multiscreen erhalten Sie einen Sky Q Mini Receiver
-			für einmalig €&nbsp;29 oder einen 2. Sky Q Receiver für einmalig €&nbsp;49.
+			für einmalig €{@html nspace}29 oder einen 2. Sky Q Receiver für einmalig €{@html nspace}49.
 		</p>
 
 		<img src="/images/visuals/skyq_header_4.png" alt="" />

@@ -1,13 +1,32 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
-	import { blur } from 'svelte/transition';
+	import { onMount, afterUpdate } from 'svelte';
 
 	export let title: string;
 	let opened = dev ? true : false;
+	let content: HTMLElement;
+	let height = 0;
 
 	function toggle_box() {
 		opened = !opened;
+		if (opened) {
+			height = content.scrollHeight;
+		} else {
+			height = 0;
+		}
 	}
+
+	onMount(() => {
+		if (opened) {
+			height = content.scrollHeight;
+		}
+	});
+
+	afterUpdate(() => {
+		if (opened) {
+			height = content.scrollHeight;
+		}
+	});
 </script>
 
 <div class="main_container">
@@ -15,7 +34,7 @@
 		<p class="aufklappen">
 			{opened ? title : `${title} aufklappen`}
 		</p>
-		<p class="pm ">
+		<p class="pm">
 			{#if opened}
 				-
 			{:else}
@@ -23,11 +42,11 @@
 			{/if}
 		</p>
 	</button>
-	{#if opened}
-		<div class="main_text" transition:blur>
+	<div class="wrapper" bind:this={content} style={`max-height: ${height}px`}>
+		<div class="main_text" class:closed={!opened}>
 			<slot>This is empty</slot>
 		</div>
-	{/if}
+	</div>
 </div>
 
 <style lang="scss">
@@ -60,7 +79,29 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	.main_text {
+
+	.wrapper {
 		max-width: 90%;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.5s ease;
+	}
+
+	.main_text {
+		padding: 1em;
+		opacity: 1;
+		transition: filter 0.4s ease;
+	}
+
+	.wrapper:after {
+		content: '';
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+
+	.closed {
+		filter: blur(10px);
+		transition: filter 1s ease;
 	}
 </style>

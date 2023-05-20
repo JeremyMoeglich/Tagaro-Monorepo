@@ -1,3 +1,9 @@
+<script>
+	import Meta from '../meta.svelte';
+</script>
+
+<Meta />
+
 <div class="outer">
 	<div class="back">
 		<div class="tb">

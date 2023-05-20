@@ -11,6 +11,7 @@
 	import Button from 'components/elements/interactive/buttons/button.svelte';
 	import { collection, onSnapshot } from 'firebase/firestore';
 	import { browser } from '$app/environment';
+	import Meta from '../meta.svelte';
 
 	const admin_email = 'info@tagaro.de';
 
@@ -74,6 +75,8 @@
 		}, 1000);
 	}
 </script>
+
+<Meta />
 
 <div>
 	{#if !user}

@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Impressum from 'components/complete/service/impressum.svelte';
+	import Meta from '../../meta.svelte';
 </script>
+
+<Meta />
 
 <div>
 	<h1>Datenschutz</h1>

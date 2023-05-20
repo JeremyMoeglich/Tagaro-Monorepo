@@ -1,4 +1,5 @@
 {
 	"svg.preview.background": "dark-transparent",
-	"python.formatting.provider": "black"
+	"python.formatting.provider": "black",
+	"cSpell.words": ["priceable", "tagaro"]
 }

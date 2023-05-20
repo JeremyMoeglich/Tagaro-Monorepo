@@ -21,7 +21,7 @@
 	hide_left={true}
 	points={[
 		`Nur im Web: € 0 statt € 29 einmalige Gebühr*`,
-		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
+		`On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
 		`Entertainment + 3 Pakete jetzt nur ${get_price_string(
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
 			'jahr'
@@ -40,7 +40,7 @@
 	redirect_url={"/angebote/legacy/4_oder_mehr_pakete/"}
 	points={[
 		`€&nbsp;100 Amazon Gutschein bei Buchung von mindestens Entertainment + 3 Pakete*`,
-		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
+		`On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	side_images={['/images/badges/dazn.svg']}
@@ -51,7 +51,7 @@
 	points={[
 		`Bis zu ${savings} Sparvorteil und Vorteilspreis für DAZN Jahresabo erhalten*`,
 		'Zusätzlich 500 PAYBACK Punkte, wenn Sie sammeln*',
-		`On top ${bonus_string} Bonus von uns und versandkostenfreie Lieferung*`,
+		`On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	side_images={['/images/badges/dazn.svg']}

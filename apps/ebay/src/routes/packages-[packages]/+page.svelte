@@ -93,7 +93,7 @@
 					</li>
 					{#if bonus > 0}
 						<li>
-							✓ Bonus von TAGARO: {@html bonus_string} Bonus on top bei erfolgreichem Vertragsabschluss
+							✓ Bonus von TAGARO: {@html bonus_string()} Bonus on top bei erfolgreichem Vertragsabschluss
 						</li>
 					{/if}
 				</ul>

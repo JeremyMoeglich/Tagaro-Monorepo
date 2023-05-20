@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Agb from 'components/complete/service/AGB.svelte';
+	import Meta from '../../meta.svelte';
 </script>
+
+<Meta />
 
 <div>
 	<h1>Allgemeine Geschäftsbedingungen</h1>

@@ -2,12 +2,12 @@
 	"name": "emails",
 	"dependencies": {
 		"@types/iconv": "^3.0.1",
-		"@types/imap": "^0.8.35",
-		"@types/imapflow": "^1.0.12",
+		"@types/imap": "^0.8.37",
+		"@types/imapflow": "^1.0.13",
 		"@types/mailparser": "^3.4.0",
-		"@types/node": "^18.15.11",
+		"@types/node": "^20.2.1",
 		"config": "workspace:*",
-		"functional-utilities": "^2.1.0",
+		"functional-utilities": "^2.2.1",
 		"types": "workspace:*",
 		"zod": "^3.21.4"
 	},

@@ -121,4 +121,26 @@
 		content: '✓';
 		margin-right: 10px;
 	}
+
+	@media (max-width: 425px) {
+		.outer {
+			flex-direction: column;
+			padding: 10px;
+		}
+		.title {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		.nowrap {
+			white-space: normal;
+		}
+		.text_sky {
+			margin-top: 0px;
+		}
+		.rimage,
+		.limage {
+			display: none;
+		}
+	}
 </style>

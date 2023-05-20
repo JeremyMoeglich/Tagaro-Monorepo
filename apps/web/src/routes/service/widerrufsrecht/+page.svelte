@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Widerrufsrecht from 'components/complete/service/widerrufsrecht.svelte';
+	import Meta from '../../meta.svelte';
 </script>
+
+<Meta />
+
 
 <div>
 	<h1>Widerrufsbelehrung</h1>

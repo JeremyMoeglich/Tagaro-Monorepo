@@ -162,7 +162,7 @@
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
 								{/if}
 								{#if bonus !== 0}
-									<li>✓ {@html bonus_string} Bonus on top</li>
+									<li>✓ {@html bonus_string()} Bonus on top</li>
 								{/if}
 								<li>✓ 500 PAYBACK Basis Punkte</li>
 								<!-- 

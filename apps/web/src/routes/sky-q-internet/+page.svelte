@@ -1,6 +1,9 @@
 <script lang="ts">
 	import VertragsinfomationenBox from 'components/complete/vertragsinfomationen_box.svelte';
+	import Meta from '../meta.svelte';
 </script>
+
+<Meta />
 
 <div>
 	<div class="header-text-image-align">

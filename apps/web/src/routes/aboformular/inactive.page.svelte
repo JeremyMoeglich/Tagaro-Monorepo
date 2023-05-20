@@ -5,9 +5,9 @@
 	import { indexed_assets } from 'asset_library/all_assets';
 	import OfferSummary from './offer_summary.svelte';
 	import type { asset_id, priceable_asset_id } from 'asset_library/asset_types';
-	import { iban_validator } from 'src/routes/aboformular/validators/iban';
-	import { bic_validator } from 'src/routes/aboformular/validators/bic';
-	import type { aboformular_options } from 'src/routes/aboformular/aboformular';
+	import { iban_validator } from './validators/iban';
+	import { bic_validator } from './validators/bic';
+	import type { aboformular_options } from './aboformular';
 	import { sort_by_price } from 'asset_library/prices';
 	import type { category_id } from 'asset_library/categories';
 	import SingleBoxSelector from 'components/elements/interactive/box_selector/single_box_selector.svelte';
@@ -15,6 +15,7 @@
 	import SimpleInputField from 'components/elements/interactive/inputs/simple_input_field.svelte';
 	import RadioButton from 'components/elements/interactive/radio_button.svelte';
 	import { asset_sets } from 'asset_library/sets';
+	import Meta from '../meta.svelte';
 	// #endregion
 
 	let options: aboformular_options = {
@@ -91,6 +92,8 @@
 	];
 	//#endregion
 </script>
+
+<Meta />
 
 <div class="alignment">
 	<h1>Aboformular</h1>

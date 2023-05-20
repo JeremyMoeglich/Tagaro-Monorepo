@@ -1,7 +1,11 @@
 <script lang="ts">
+	import Meta from '../meta.svelte';
+
 	//import InputField from 'components/layout_components/input_field.svelte';
 	import KontaktForm from './contact_form.svelte';
 </script>
+
+<Meta />
 
 <div>
 	<h1 class="main_title">Kontakt</h1>
