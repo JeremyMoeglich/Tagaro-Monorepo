@@ -3,56 +3,56 @@
 	 * The URL of the image to be used as a preview when sharing the website.
 	 * @type {string}
 	 */
-	export let previewImageUrl: string = '/share_preview.png';
+	export let previewImageUrl = '/share_preview.png';
 
 	/**
 	 * A short description of the website or webpage.
 	 * @type {string}
 	 */
-	export let websiteDescription: string =
-		'Sky Onlinehändler seit 2006 und bietet Ihnen zahlreiche Artikel aus den Bereichen Unterhaltungselektronik und Pay-TV an.';
+	export let websiteDescription =
+		'Sky Abo nach Wahl + € 20 Bonus vom Sky Onlinehändler · Täglicher Versand · Immer sparen · Service seit 2006 · Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.';
 
 	/**
 	 * The canonical URL of the website or webpage.
 	 * @type {string}
 	 */
-	export let websiteUrl: string = 'https://tagaro.de';
+	export let websiteUrl = 'https://tagaro.de';
 
 	/**
 	 * The width of the preview image, in pixels.
 	 * @type {string}
 	 */
-	export let previewImageWidth: string = '2209';
+	export let previewImageWidth = '2209';
 
 	/**
 	 * The height of the preview image, in pixels.
 	 * @type {string}
 	 */
-	export let previewImageHeight: string = '2209';
+	export let previewImageHeight = '2209';
 
 	/**
 	 * The type of the website (e.g., website, blog, app).
 	 * @type {string}
 	 */
-	export let websiteType: string = 'website';
+	export let websiteType = 'website';
 
 	/**
 	 * A list of keywords that represent the content of the website.
 	 * @type {string}
 	 */
-	export let websiteKeywords: string = 'Sky, Abo, Tagaro';
+	export let websiteKeywords = 'Sky, Abo, Tagaro';
 
 	/**
 	 * The name of the author of the website.
 	 * @type {string}
 	 */
-	export let websiteAuthor: string = 'Jeremy Möglich';
+	export let websiteAuthor = 'Jeremy Möglich';
 
 	/**
 	 * The title of the website or webpage.
 	 * @type {string}
 	 */
-	export let websiteTitle: string = 'Sky Abo mit Prämie vom Sky Onlinehändler seit 2006';
+	export let websiteTitle = 'Sky Abo mit Prämie vom Sky Onlinehändler seit 2006';
 </script>
 
 <svelte:head>
