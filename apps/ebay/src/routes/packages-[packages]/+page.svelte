@@ -214,7 +214,8 @@
 					<mark style="color: #0072c9;">Wir vermitteln Sky Verträge bereits seit 2006.</mark>
 					<br />
 					Wir stehen für eine einfache und zügige Abwicklung mit tausenden zufriedenen Kunden (siehe
-					Bewertungen).
+					Bewertungen). <br />
+					Unsere Angebote werden regelmäßig von Sky Deutschland überprüft.
 				</p>
 
 				<p>

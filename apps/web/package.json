@@ -64,6 +64,7 @@
 		"lodash-es": "^4.17.21",
 		"open_constants": "workspace:0.1.0",
 		"svelte-checkbox": "^1.0.1",
+		"tailwindcss": "^3.3.2",
 		"ts-key-enum": "^2.0.12",
 		"utils": "workspace:0.1.0",
 		"uuid": "^9.0.0"
