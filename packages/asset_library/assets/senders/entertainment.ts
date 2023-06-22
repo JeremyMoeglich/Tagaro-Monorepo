@@ -65,12 +65,8 @@ export const entertainment_senders = [
 	// 	text: 'Für Entdecker - mit spannenden Dokumentationen'
 	// },
 	{
-		image: '86_sky_logo_historyhd_w.png',
+		image: 'sky_logo_history.png',
 		text: 'Dokumentationen über besondere Menschen und Ereignisse mit preisgekrönten Eigenproduktionen'
-	},
-	{
-		image: '388_sky_logo_spiegelgeschichtehd_w.png',
-		text: 'Weltgeschichte mit packenden Dokumentationen über Ereignisse, Menschen und Momente des 20. Jahrhunderts'
 	},
 	{
 		image: 'sky_logo_beateuhse-hd.png',
@@ -93,15 +89,11 @@ export const entertainment_senders = [
 		text: 'Fernsehen mit Herz - beliebte deutschsprachige Heimatfilme und Serien'
 	},
 	{
-		image: 'sky_logo_spiegel-wissen-curiosity.png',
-		text: 'Echte, lebensnahe, spannende und journalistische Reportagen und Dokus'
-	},
-	{
 		image: 'sky_logo_crime-investigation_w.png',
 		text: 'Packende True-Crime-Formate rund um die Uhr.'
 	},
 	{
-		image: '94_sky_logo_boomerang.png',
+		image: 'sky_logo_cartoonito_w.png',
 		text: 'Die größten Cartoonstars aller Zeiten in Filmen und Serien.'
 	},
 	{
@@ -116,7 +108,6 @@ export const entertainment_senders = [
 		image: '52_sky_logo_motorvision_w.png',
 		text: 'Live Motorsport und unterhaltsame Reportagen für alle Fans von Autos und Fahrspaß'
 	}
-	//{image:'sky_logo_spiegel-wissen.png'},
 ].map((e) => ({
 	...e,
 	image: start + e.image
