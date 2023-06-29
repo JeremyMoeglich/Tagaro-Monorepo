@@ -10,7 +10,7 @@
 	 * @type {string}
 	 */
 	export let websiteDescription =
-		'Sky Abo nach Wahl + € 20 Bonus vom Sky Onlinehändler · Täglicher Versand · Immer sparen · Service seit 2006 · Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.';
+		'Sky Abo nach Wahl + € 20 Bonus vom Sky Onlinehändler ✓ Täglicher Versand ✓ Immer sparen ✓ Service seit 2006 ✓ Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.';
 
 	/**
 	 * The canonical URL of the website or webpage.
@@ -52,7 +52,7 @@
 	 * The title of the website or webpage.
 	 * @type {string}
 	 */
-	export let websiteTitle = 'Sky Abo mit Prämie vom Sky Onlinehändler seit 2006';
+	export let websiteTitle = 'Sky Abo + 20€ Prämie | Sky Händler seit 2006 | Spare bis zu 188€';
 </script>
 
 <svelte:head>
