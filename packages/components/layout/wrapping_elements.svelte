@@ -187,7 +187,7 @@
 									.map((id) => indexed_package_assets[id].name)
 									.join(' + ')})
 								<br />
-								Optional DAZN Unlimited und UHD<br />
+								Optional DAZN Unlimited<br />
 								+ 500 PAYBACK Punkte
 							</p>
 						</div>

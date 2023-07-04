@@ -10,6 +10,8 @@
 	// import { indexed_package_assets, type package_id } from 'asset_library/assets/packages';
 	import { get_title } from 'asset_library/title';
 	import Senders from '../../layout/senders.svelte';
+	import { make_url } from 'frontend/url';
+	import { dev } from '$app/environment';
 
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
@@ -30,8 +32,13 @@
 
 <div class="package_overview">
 	<div class="alignment">
-		<div class="image">
+		<div class="image flex flex-col items-center">
 			<AssetImage ids={price_asset_ids} {animated} />
+			<img
+				src={make_url('/images/badges/sky_23-06_aa_split_stoerer_uhd.avif', dev)}
+				alt=""
+				class="w-32"
+			/>
 		</div>
 
 		<div class="description">
@@ -63,13 +70,7 @@
 					</p>
 				</div>
 			{/if}
-			<!-- {#if offer_string}
-				<img
-					src={make_url('/images/external/amazongiftcard.png', dev)}
-					alt=""
-					class="amazon_badge"
-				/>
-			{/if} -->
+
 			<!-- {#if offer_string}
 					<GradientBadge>{@html offer_string}</GradientBadge>
 			{/if}  -->

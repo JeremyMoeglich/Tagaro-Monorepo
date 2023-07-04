@@ -78,11 +78,15 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 			square: `${zubuchoption_image_location}dazn.svg`
 		},
 		aspects: [
-			'Bundesliga: Alle Freitags- und Sonntagsspiele',
-			'121 Spiele der UEFA Champions League inklusive Konferenz nur auf DAZN - garantiert bis 2027',
-			"Serie A, LaLiga, Ligue 1 und die UEFA Women's Champions League",
-			'Zudem der beste US-Sport mit NFL, NBA, UFC und die wichtigsten Schwergewichts-Boxkämpfe',
-			'Alles per App und das Beste von DAZN zeitgleich über die linearen Kanäle DAZN 1 und DAZN 2',
+			'Alle Freitags- und Sonntagsspiele der Bundesliga – garantiert bis 2025',
+			'121 Spiele UEFA Champions League inkl. Konferenz – garantiert bis 2027',
+			'Europäische Top-Ligen und Pokalwettbewerbe',
+			'UEFA Women´s Champions League und Frauen-Bundesliga',
+			'NFL ENDZN und Prime-Time-Spiele',
+			'Die NBA mit über 200 Spielen inklusive der Playoffs und den Finals',
+			'Kampfsport mit UFC und Boxen',
+			'Weiterer Spitzensport aus Darts, Handball und Tennis',
+			'Alles per App und das Beste von DAZN zeitgleich über die linearen Kanäle DAZN1 und DAZN2',
 			'Eine Abrechnung für Sky und DAZN'
 		],
 		sort_priority: 8,

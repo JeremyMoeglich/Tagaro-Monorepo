@@ -28,8 +28,8 @@
 	</span>
 	<span slot="subtitle0">
 		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} oder Komplett für
-		{@html get_price_string(['entertainment', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl. immer inkl.
-		<span class="color_text font-semibold font-sans">Ultra HD</span>*
+		{@html get_price_string(['entertainment', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl. inkl.
+		<span class="color_text font-semibold font-sans">Ultra HD</span> gratis*
 	</span>
 </ShowcaseTemplate>
 
