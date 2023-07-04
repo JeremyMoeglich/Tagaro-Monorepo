@@ -47,7 +47,7 @@
 				<ul>
 					<li><b>Optional:</b></li>
 					<li>
-						- DAZN Unlimited jährlich für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
+						- DAZN UNLIMITED im Jahresabo für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
 					</li>
 					<li>
 						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
@@ -204,7 +204,7 @@
 			</li>
 		</ul>
 		<ul class="laufzeit">
-			<li>Mit UHD {@html get_price_string(['uhd'], 'monat')} mtl.</li>
+			<li>UHD {@html get_price_string(['uhd'], 'monat')} mtl.</li>
 			<li>
 				DAZN Unlimited {@html get_price_string(['dazn_unlimited'], 'monat')} mtl.
 			</li>
