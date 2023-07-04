@@ -50,9 +50,6 @@
 						- DAZN Unlimited jährlich für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
 					</li>
 					<li>
-						- UHD mtl. {@html get_price_string(['uhd'], 'jahr')}
-					</li>
-					<li>
 						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
 						für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €&nbsp;49, 1-2 Sky Q Mini für je einmalig
 						€&nbsp;29 (zur Leihe)
@@ -281,15 +278,6 @@
 			die benötigte Mindestbandbreite.
 			<br />
 			Vertragspartner ist die DAZN Limited, 12 Hammersmith Grove, London, W6 7AP, England.
-			<br />
-			Alle Preise inkl. MwSt. Stand: Juli 2023. Änderungen vorbehalten.
-			<br />
-			DAZN wird dir E-Mails oder andere elektronische Post mit Neuigkeiten, Aktionen und Sonderangeboten
-			über DAZN senden, die für dich von Interesse sein könnten („Marketing Mitteilungen“). Du kannst
-			den Erhalt dieser Marketing-Mitteilungen jederzeit kostenlos (mit Ausnahme der Übermittlungskosten
-			nach den Basistarifen deines Anbieters) über Einstellungen im Bereich „Mein Konto“, indem du DAZN
-			persönlich unter help@dazn.com kontaktierst oder über einen direkt in der Marketing Mitteilung
-			enthaltenen Link abbestellen.
 		</p>
 	</div>
 	<div>
