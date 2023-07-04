@@ -21,7 +21,7 @@
 				<b>DAZN Unlimited + ${get_price_string(
 					['dazn_unlimited'],
 					'jahr'
-				)} mtl.<br />(nach 12 Monaten ${get_price_string(
+				)} mtl.</b><br />(nach 12 Monaten ${get_price_string(
 				['dazn_unlimited'],
 				'monat'
 			)} pro Monat und monatlich kündbare Mitgliedschaft)    
