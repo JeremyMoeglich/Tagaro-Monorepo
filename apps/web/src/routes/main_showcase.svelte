@@ -6,17 +6,6 @@
 </script>
 
 <ShowcaseTemplate
-	title={`Sky Verträge vom Sky Onlinehändler ab ${get_price_string(
-		['entertainmentplus'],
-		'jahr'
-	)} mtl.`}
-	subtitle0={`z.B. Entertainment Plus für ${get_price_string(
-		['entertainmentplus'],
-		'jahr'
-	)} oder Komplett für ${get_price_string(
-		['entertainment', 'cinema', 'bundesliga', 'sport'],
-		'jahr'
-	)} mtl. immer inkl. Ultra HD*`}
 	redirect_url={'/angebote/entertainmentplus-cinema-sport-bundesliga'}
 	hide_left={true}
 	points={[
@@ -33,7 +22,16 @@
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	top_margin={20}
-/>
+>
+	<span slot="title">
+		Sky Verträge vom Sky Onlinehändler ab {@html get_price_string(['entertainmentplus'], 'jahr')} mtl.
+	</span>
+	<span slot="subtitle0">
+		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} oder Komplett für
+		{@html get_price_string(['entertainment', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl. immer inkl.
+		<span class="color_text font-semibold font-sans">Ultra HD</span>*
+	</span>
+</ShowcaseTemplate>
 
 <!-- <ShowcaseTemplate
 	title={`Das Beste von Sky für nur €&nbsp;30 mtl. inkl. €&nbsp;100 Amazon Gutschein von Sky`}

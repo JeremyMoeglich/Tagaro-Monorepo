@@ -9,19 +9,12 @@
 	import AImage from 'components/elements/aimage.svelte';
 	import { indexed_package_assets } from 'asset_library/assets/packages';
 
-	export let title = 'Jetzt Sky Wunschpakete buchen';
 	export let enddate:
 		| {
 				date: Date;
 				format: string;
 		  }
 		| undefined = undefined;
-	export let subtitle0: string | null = null;
-	export let subtitle1:
-		| string
-		| null = `Bei Vermittlung über TAGARO zusätzlich mit ${bonus_string()} Bonus.`;
-	export let subtitle2: string | null =
-		'Sky Neukunden-Angebote vom Onlinehändler mit schneller und zuverlässiger Bearbeitung.';
 	export let points = [
 		'Vertrag für Internet, Sat- oder Kabel-Anschluss mit Sky Q Receiver oder Sky Q IPTV Box*',
 		`${bonus_string()} Bonus und versandkostenfreie Vermittlung*`
@@ -42,7 +35,7 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/einmalige_gebuehr.svg'] as const;
+	const left_badges = ['/images/badges/sky_23-06_aa_split_stoerer_uhd.avif'] as const;
 	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',
@@ -50,11 +43,6 @@
 		'bundesliga',
 		'kids'
 	] satisfies priceable_asset_id[];
-
-	function process(text: string): string {
-		// replace all prices like 9,99 € with 9.99&nbsp;€
-		return text.replace(/(\d+),(\d+)\s€/g, '$1.$2&nbsp;€');
-	}
 </script>
 
 <div class="alignment" style:margin-top={`${top_margin}px`}>
@@ -81,21 +69,25 @@
 					</div>
 				{/if}
 				<div>
-					<h1>{@html process(title)}*</h1>
+					<h1><slot name="title">Jetzt Sky Wunschpakete buchen</slot>*</h1>
 					{#if enddate}
 						<h2>
 							<Enddate enddate={enddate.date} format={enddate.format} />
 						</h2>
 					{/if}
-					{#if subtitle0}
-						<h2 class="blue">{@html process(subtitle0)}</h2>
+					{#if $$slots.subtitle0}
+						<h2 class="blue"><slot name="subtitle0" /></h2>
 					{/if}
-					{#if subtitle1}
-						<h2 class="gray">{@html process(subtitle1)}</h2>
-					{/if}
-					{#if subtitle2}
-						<h3 class="no_gradient">{@html process(subtitle2)}</h3>
-					{/if}
+					<h2 class="gray">
+						<slot name="subtitle1">
+							Bei Vermittlung über TAGARO zusätzlich mit {@html bonus_string(true)} Bonus.
+						</slot>
+					</h2>
+					<h3 class="no_gradient">
+						<slot name="subtitle2">
+							Sky Neukunden-Angebote vom Onlinehändler mit schneller und zuverlässiger Bearbeitung.
+						</slot>
+					</h3>
 				</div>
 			</div>
 			{#if primary_image}

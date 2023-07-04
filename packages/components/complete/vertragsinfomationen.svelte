@@ -24,17 +24,26 @@
 </VertragsinfomationenTemplate> -->
 
 <VertragsinfomationenTemplate>
-	<h3 class="light">Sky Cinema Paket / Paramount+</h3>
-	<p>
-		Voraussetzung ist ein Sky Abonnement mit gebuchtem Sky Cinema Paket. Ausgenommen sind Sky Kunden
-		mit gewerblichem Abonnement und Sky Ticket / WOW / Sky X Abonnement sowie Sky Abonnements mit
-		TV-Empfang via T-Mobile Austria (Magenta). Der Aktivierungscode berechtigt zur Registrierung
-		beim Paramount+ Streamingdienst. Solange das Sky Cinema Paket Bestandteil des Sky Abonnements
-		ist, besteht auch die Berechtigung zum Bezug des Paramount+ Streamingdienst. Mit Wegfall des Sky
-		Cinema Pakets, endet auch die Berechtigung für den Paramount+ Streamingdienst automatisch.
-		Mindestalter zur Teilnahme: 18 Jahre. Empfohlene Bandbreite 1 Mbit/s für SD-Qualität, 6 Mbit/s
-		für HD-Qualität.
-	</p>
+	<div class="mb-7">
+		<h3 class="light marked">UHD-Aktion</h3>
+		<p>
+			Bei Buchung von Sky UHD entfällt die monatliche Gebühr i. H. v. mtl. € 5,00 während der
+			Mindestvertragslaufzeit. Danach zzgl. mtl. € 5,00.
+		</p>
+	</div>
+	<div>
+		<h3 class="light">Sky Cinema Paket / Paramount+</h3>
+		<p>
+			Voraussetzung ist ein Sky Abonnement mit gebuchtem Sky Cinema Paket. Ausgenommen sind Sky
+			Kunden mit gewerblichem Abonnement und Sky Ticket / WOW / Sky X Abonnement sowie Sky
+			Abonnements mit TV-Empfang via T-Mobile Austria (Magenta). Der Aktivierungscode berechtigt zur
+			Registrierung beim Paramount+ Streamingdienst. Solange das Sky Cinema Paket Bestandteil des
+			Sky Abonnements ist, besteht auch die Berechtigung zum Bezug des Paramount+ Streamingdienst.
+			Mit Wegfall des Sky Cinema Pakets, endet auch die Berechtigung für den Paramount+
+			Streamingdienst automatisch. Mindestalter zur Teilnahme: 18 Jahre. Empfohlene Bandbreite 1
+			Mbit/s für SD-Qualität, 6 Mbit/s für HD-Qualität.
+		</p>
+	</div>
 </VertragsinfomationenTemplate>
 
 <!-- <VertragsinfomationenLayout>

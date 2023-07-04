@@ -1,5 +1,5 @@
 <script lang="ts">
-	// import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
+	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
 	import { get_offer_note, get_price_string } from 'asset_library/prices';
@@ -39,15 +39,18 @@
 						</div>
 					{/each}
 				</div>
-				<!-- <AktivierungSentence /> -->
-				<ul>
+				<AktivierungSentence />
+				<!-- <ul>
 					<li><b>Inklusive: </b></li>
 					<li>- UHD ... Temp</li>
-				</ul>
+				</ul> -->
 				<ul>
 					<li><b>Optional:</b></li>
 					<li>
 						- DAZN Unlimited jährlich für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
+					</li>
+					<li>
+						- UHD mtl. {@html get_price_string(['uhd'], 'jahr')}
 					</li>
 					<li>
 						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
@@ -205,6 +208,9 @@
 		</ul>
 		<ul class="laufzeit">
 			<li>Mit UHD {@html get_price_string(['uhd'], 'monat')} mtl.</li>
+			<li>
+				DAZN Unlimited {@html get_price_string(['dazn_unlimited'], 'monat')} mtl.
+			</li>
 			<li>Multiscreen {@html get_price_string(['multiscreen'], 'monat')} mtl.</li>
 			<li>
 				Netflix Standard-Abo, HD/2 Geräte (+{@html get_price_string(['netflixstandard'], 'monat')} mtl.)
@@ -257,24 +263,33 @@
 	<div>
 		<h3 class={title_classes}>DAZN</h3>
 		<p>
-			Nach Ablauf der Mindestlaufzeit wird ein DAZN Unlimited Abonnement als flexible DAZN Unlimited
-			Monatsmitgliedschaft auf unbestimmte Zeit zum Preis von {@html get_price_string(
-				['dazn_unlimited'],
-				'monat'
-			)}
-			/ Monat weitergeführt, sofern Sie nicht gemäß den Nutzungsbedingungen von DAZN zum Ende der Mindestlaufzeit
-			kündigen. Zum Empfang über die DAZN App ist eine dauerhafte Internetverbindung nötig. Empfohlene
-			Übertragungsrate von mindestens 8 Mbit/s für HD-Qualität. Durch eine parallele Nutzung von Inhalten
-			erhöht sich die benötigte Mindestbandbreite. Erst mit Aktivierung des DAZN Abonnements beginnt
-			dessen zahlungspflichtige Laufzeit. Sky übersendet nach Zustandekommen des Vertrag einen DAZN Aktivierungslink.
-			Über diese kann das DAZN Abonnement direkt bei DAZN aktiviert werden. Die Aktivierung ist bis 7
-			Tage ab Versand des Aktivierungslinks möglich. Falls das DAZN Abonnement nicht innerhalb dieser
-			Frist aktiviert wird, wird die Buchung automatisch nach 7 Tagen storniert. Vertragspartner ist
-			die DAZN Limited, 12 Hammersmith Grove, London, W6 7AP, England. Voraussetzung für die Nutzung
-			der linearen Kanäle im DAZN Unlimited Abonnement über Sky ist ein aktives nicht-gewerbliches Sky
-			Abonnement, dem steht ein Mietverhältnis eines Sky Receivers gleich. Das DAZN Abonnement kann mit
-			einer Kündigungsfrist von 30 Tagen, frühestens jedoch mit Wirkung zum Ende Mindestlaufzeit, gekündigt
-			werden. Nach Ablauf der Mindestlaufzeit ist das Abonnement mit gleicher Frist monatlich kündbar.
+			Nach deiner ursprünglichen Vertragslaufzeit von 12 Monaten wird deine Mitgliedschaft als
+			monatlich kündbare Mitgliedschaft zum Preis von 44,99 € weitergeführt und beinhaltet ab diesem
+			Zeitpunkt der Monatsmitgliedschaft entsprechend einen Stream und maximal drei parallel
+			registrierte Geräte. Erst mit Aktivierung des DAZN Abonnements beginnt dessen
+			zahlungspflichtige Laufzeit. Hierzu übermittelt dir Sky einen Aktivierungslink per E-Mail. Die
+			Aktivierung ist bis 7 Tage ab Versand des Aktivierungslinks möglich. Solltest du dein
+			DAZN-Abonnement nicht innerhalb der angegebenen Frist aktivieren, wird die Buchung automatisch
+			storniert. Deine zahlungspflichtige Mitgliedschaft ist mit einer Kündigungsfrist von dreißig
+			(30) Tagen zum Ende der jeweils geltenden Mindestvertragslaufzeit kündbar. Das Sky-Abonnement
+			bleibt davon unberührt. Voraussetzung für die Nutzung der linearen Kanäle im DAZN Abonnement
+			über Sky ist ein aktives nicht-gewerbliches Sky Abonnement, dem steht ein Mietverhältnis eines
+			Sky Receivers gleich.
+			<br />
+			Zum Empfang über die DAZN App ist eine dauerhafte Internetverbindung nötig. Empfohlene Übertragungsrate
+			von mindestens 8 Mbit/s für HD-Qualität. Durch eine parallele Nutzung von Inhalten erhöht sich
+			die benötigte Mindestbandbreite.
+			<br />
+			Vertragspartner ist die DAZN Limited, 12 Hammersmith Grove, London, W6 7AP, England.
+			<br />
+			Alle Preise inkl. MwSt. Stand: Juli 2023. Änderungen vorbehalten.
+			<br />
+			DAZN wird dir E-Mails oder andere elektronische Post mit Neuigkeiten, Aktionen und Sonderangeboten
+			über DAZN senden, die für dich von Interesse sein könnten („Marketing Mitteilungen“). Du kannst
+			den Erhalt dieser Marketing-Mitteilungen jederzeit kostenlos (mit Ausnahme der Übermittlungskosten
+			nach den Basistarifen deines Anbieters) über Einstellungen im Bereich „Mein Konto“, indem du DAZN
+			persönlich unter help@dazn.com kontaktierst oder über einen direkt in der Marketing Mitteilung
+			enthaltenen Link abbestellen.
 		</p>
 	</div>
 	<div>
@@ -302,14 +317,15 @@
 		</p>
 	</div>
 	<div>
-		<h3 class={title_classes}>UHD:</h3>
+		<h3 class={title_classes}>UHD/Dolby Atmos:</h3>
 		<p>
-			Für den Empfang der UHD-Kanäle ist ein Sky Q Receiver sowie ein UHD-fähiges Endgerät (z.B.
-			Fernseher) erforderlich. Welche UHD-Sender enthalten sind, richtet sich nach den gewählten
-			Programmpaketen und der Verfügbarkeit beim jeweiligen Netzbetreiber. Weitere Informationen
-			unter www.sky.de/senderempfang. Vereinzelt sind aus lizenzrechtlichen Gründen bestimmte
-			Inhalte nicht in UHD verfügbar. Über die Sky Q IPTV Box und Sky Q-Mini sind UHD-Inhalte nicht
-			verfügbar.
+			Für den Empfang der UHD- und Dolby-Atmos-Inhalte sind ein Sky Abonnement inkl. UHD Paket, ein
+			Sky Q Receiver sowie ein UHD- und Dolby Atmos-fähiges Endgerät (z. B. Fernseher oder Soundbar)
+			erforderlich. Welche UHD- und Dolby-Atmos-Programme enthalten sind, richtet sich nach den
+			gewählten Sky Programmpaketen und der Verfügbarkeit beim jeweiligen Netzbetreiber. Aus
+			lizenzrechtlichen Gründen sind bestimmte Inhalte nicht in UHD oder Dolby Atmos verfügbar. Mehr
+			Info unter www.sky.de/uhd. Über die Sky Q IPTV Box und Sky Q Mini sind UHD- und
+			Dolby-Atmos-Inhalte nicht verfügbar.
 		</p>
 	</div>
 	<div>

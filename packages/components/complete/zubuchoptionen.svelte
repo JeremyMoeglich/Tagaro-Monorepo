@@ -11,10 +11,8 @@
 
 	const zubuchoptionen: Zubuchoption[] = [
 		{
-			html: /*html*/ `<b>UHD + ${get_price_string(
-				['uhd'],
-				'jahr'
-			)} mtl.</b> <br> Für Sat oder Kabel-Empfang`,
+			html: /*html*/ `<b class="marked">UHD 12 Monate GRATIS</b><br> 
+			Für Sat oder Kabel-Empfang`,
 			image: '/images/assets/zubuchoptionen/uhd.png'
 		},
 		{
@@ -26,7 +24,7 @@
 				)} mtl.<br />(nach 12 Monaten ${get_price_string(
 				['dazn_unlimited'],
 				'monat'
-			)} pro Monat)    
+			)} pro Monat und monatlich kündbare Mitgliedschaft)    
 			</div>
 				`
 		},
