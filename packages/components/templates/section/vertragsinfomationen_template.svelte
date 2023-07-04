@@ -323,8 +323,7 @@
 			Sky Q Receiver sowie ein UHD- und Dolby Atmos-fähiges Endgerät (z. B. Fernseher oder Soundbar)
 			erforderlich. Welche UHD- und Dolby-Atmos-Programme enthalten sind, richtet sich nach den
 			gewählten Sky Programmpaketen und der Verfügbarkeit beim jeweiligen Netzbetreiber. Aus
-			lizenzrechtlichen Gründen sind bestimmte Inhalte nicht in UHD oder Dolby Atmos verfügbar. Mehr
-			Info unter www.sky.de/uhd. Über die Sky Q IPTV Box und Sky Q Mini sind UHD- und
+			lizenzrechtlichen Gründen sind bestimmte Inhalte nicht in UHD oder Dolby Atmos verfügbar. Über die Sky Q IPTV Box und Sky Q Mini sind UHD- und
 			Dolby-Atmos-Inhalte nicht verfügbar.
 		</p>
 	</div>
