@@ -20,15 +20,13 @@
 		{
 			image: '/images/assets/zubuchoptionen/dazn.svg',
 			html: /*html*/ `<div style="font-size: 15px;">
-				<b>DAZN STANDARD + ${get_price_string(
-					['dazn_yearly'],
+				<b>DAZN Unlimited + ${get_price_string(
+					['dazn_unlimited'],
 					'jahr'
-				)} mtl.<br />(nach 12 Monaten ${get_price_string(['dazn_yearly'], 'monat')} pro Monat)    
-			    </b>oder<b>
-			    <br /> DAZN STANDARD monatliche Option <br />+ ${get_price_string(
-						['dazn_monthly'],
-						'monat'
-					)} mtl.</b>
+				)} mtl.<br />(nach 12 Monaten ${get_price_string(
+				['dazn_unlimited'],
+				'monat'
+			)} pro Monat)    
 			</div>
 				`
 		},

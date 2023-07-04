@@ -6,15 +6,12 @@ import type { UnsentEmail } from 'emails';
 import dayjs from 'dayjs';
 import type { package_id } from 'asset_library/assets/packages';
 import { typed_keys } from 'functional-utilities';
+import { asset_id } from 'asset_library/asset_types';
 
 const all_extras = {
-	dazn_yearly: `DAZN jährlich zum monatlichen Preis von zuzüglich ${get_price_string(
-		['dazn_yearly'],
+	dazn_unlimited: `DAZN jährlich zum monatlichen Preis von zuzüglich ${get_price_string(
+		['dazn_unlimited'],
 		'jahr'
-	)}`,
-	dazn_monthly: `DAZN monatlich zum monatlichen Preis von zuzüglich ${get_price_string(
-		['dazn_monthly'],
-		'monat'
 	)}`,
 	uhd: `UHD für die gebuchten Pakete zum monatlichen Preis von zuzüglich ${get_price_string(
 		['uhd'],
@@ -122,7 +119,7 @@ export function generate_form_response_email(
 	const extra_keys = (form.zubuchoptionen as (keyof typeof all_extras)[]).filter((z) =>
 		typed_keys(all_extras).includes(z)
 	);
-	const includes_dazn = extra_keys.includes('dazn_monthly') || extra_keys.includes('dazn_yearly');
+	const includes_dazn = extra_keys.includes('dazn_unlimited');
 	const sky_assets = [
 		...package_ids,
 		...form.zubuchoptionen.filter((z) =>
@@ -131,9 +128,9 @@ export function generate_form_response_email(
 	];
 	const subject = `Sky Auftragsbestätigung für ${[
 		...package_ids,
-		...extra_keys.filter((k) => ['dazn_monthly', 'dazn_yearly', 'uhd'].includes(k))
+		...extra_keys.filter((k) => (['dazn_unlimited', 'uhd'] as asset_id[]).includes(k))
 	]
-		.map((a) => (a === 'dazn_monthly' || a === 'dazn_yearly' ? 'DAZN' : indexed_assets[a].name))
+		.map((a) => (a === 'dazn_unlimited' ? 'DAZN' : indexed_assets[a].name))
 		.join(' + ')} (${map_empfangsart(form.empfangsart)}${
 		form.zubuchoptionen.includes('multiscreen') ? ' Multiscreen' : ''
 	})`;
@@ -215,11 +212,10 @@ export function generate_form_response_email(
 		}${
 			!includes_dazn
 				? ''
-				: ` für Sky Inhalte zuzüglich ${
-						form.zubuchoptionen.includes('dazn_yearly')
-							? get_price_string(['dazn_yearly'], 'jahr')
-							: get_price_string(['dazn_monthly'], 'jahr')
-				  } monatlich für DAZN Programme`
+				: ` für Sky Inhalte zuzüglich ${get_price_string(
+						['dazn_unlimited'],
+						'jahr'
+				  )} monatlich für DAZN Programme`
 		}.\n\n`;
 	}
 
@@ -233,11 +229,10 @@ export function generate_form_response_email(
 	)}${
 		!includes_dazn
 			? ''
-			: ` für Sky Inhalte zuzüglich DAZN monatlich von ${
-					form.zubuchoptionen.includes('dazn_yearly')
-						? get_price_string(['dazn_yearly'], 'monat')
-						: get_price_string(['dazn_monthly'], 'monat')
-			  }`
+			: ` für Sky Inhalte zuzüglich DAZN monatlich von ${get_price_string(
+					['dazn_unlimited'],
+					'monat'
+			  )}`
 	}.\n\n`;
 
 	body += `Ihre Empfangsart ist ${map_empfangsart(form.empfangsart)}${

@@ -259,8 +259,8 @@ export function to_form_data(text: string): SkyFormData {
 			'HD+ 4 Monate gratis testen (endet automatisch)': 'hdplus4monategratis',
 			'Netflix Premium 4K und 4 Geräte Upgrade --> ? 10 mtl.': 'netflixpremium',
 			'UHD für die gebuchten Pakete --> ? 5 mtl.': 'uhd',
-			'DAZN jährlich --> ? 18,99 mtl. (Bestes Preisleistungsverhältnis, 12 Monatsraten)':
-				'dazn_yearly',
+			// 'DAZN jährlich --> ? 18,99 mtl. (Bestes Preisleistungsverhältnis, 12 Monatsraten)':
+			// 	'dazn_yearly',
 			'Netflix HD und 2 Geräte Upgrade --> ? 5 mtl.': 'netflixstandard',
 			'Netflix 2 Geräte Upgrade --> ? 5 mtl.': 'netflixstandard',
 			'HD+ 6 Monate gratis, danach mtl. ? 6 (monatlich kündbar)': 'hdplus',

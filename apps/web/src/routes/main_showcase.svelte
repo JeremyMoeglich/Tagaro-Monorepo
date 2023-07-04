@@ -16,7 +16,7 @@
 	)} oder Komplett für ${get_price_string(
 		['entertainment', 'cinema', 'bundesliga', 'sport'],
 		'jahr'
-	)} mtl.*`}
+	)} mtl. immer inkl. Ultra HD*`}
 	redirect_url={'/angebote/entertainmentplus-cinema-sport-bundesliga'}
 	hide_left={true}
 	points={[
@@ -29,6 +29,7 @@
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
 			'monat'
 		)} mtl.*`,
+		'UHD 12 Monate GRATIS - Für Sat oder Kabel-Empfang',
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	top_margin={20}

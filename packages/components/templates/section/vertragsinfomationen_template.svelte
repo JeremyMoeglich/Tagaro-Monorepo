@@ -41,12 +41,13 @@
 				</div>
 				<!-- <AktivierungSentence /> -->
 				<ul>
+					<li><b>Inklusive: </b></li>
+					<li>- UHD ... Temp</li>
+				</ul>
+				<ul>
 					<li><b>Optional:</b></li>
-					<li>- UHD mtl. {@html get_price_string(['uhd'], 'jahr')} (für Sat oder Kabel-Empfang)</li>
 					<li>
-						- DAZN STANDARD jährlich für {@html get_price_string(['dazn_yearly'], 'jahr')} mtl. oder
-						DAZN STANDARD monatlich für
-						{@html get_price_string(['dazn_monthly'], 'monat')} mtl.
+						- DAZN Unlimited jährlich für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
 					</li>
 					<li>
 						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
@@ -256,9 +257,9 @@
 	<div>
 		<h3 class={title_classes}>DAZN</h3>
 		<p>
-			Nach Ablauf der Mindestlaufzeit wird ein DAZN STANDARD Abonnement als flexible DAZN STANDARD
+			Nach Ablauf der Mindestlaufzeit wird ein DAZN Unlimited Abonnement als flexible DAZN Unlimited
 			Monatsmitgliedschaft auf unbestimmte Zeit zum Preis von {@html get_price_string(
-				['dazn_yearly'],
+				['dazn_unlimited'],
 				'monat'
 			)}
 			/ Monat weitergeführt, sofern Sie nicht gemäß den Nutzungsbedingungen von DAZN zum Ende der Mindestlaufzeit
@@ -270,7 +271,7 @@
 			Tage ab Versand des Aktivierungslinks möglich. Falls das DAZN Abonnement nicht innerhalb dieser
 			Frist aktiviert wird, wird die Buchung automatisch nach 7 Tagen storniert. Vertragspartner ist
 			die DAZN Limited, 12 Hammersmith Grove, London, W6 7AP, England. Voraussetzung für die Nutzung
-			der linearen Kanäle im DAZN STANDARD Abonnement über Sky ist ein aktives nicht-gewerbliches Sky
+			der linearen Kanäle im DAZN Unlimited Abonnement über Sky ist ein aktives nicht-gewerbliches Sky
 			Abonnement, dem steht ein Mietverhältnis eines Sky Receivers gleich. Das DAZN Abonnement kann mit
 			einer Kündigungsfrist von 30 Tagen, frühestens jedoch mit Wirkung zum Ende Mindestlaufzeit, gekündigt
 			werden. Nach Ablauf der Mindestlaufzeit ist das Abonnement mit gleicher Frist monatlich kündbar.

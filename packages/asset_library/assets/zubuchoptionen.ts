@@ -5,8 +5,7 @@ import { cprice } from './definition_utils';
 
 export const zubuchoption_ids = [
 	'uhd',
-	'dazn_yearly',
-	'dazn_monthly',
+	'dazn_unlimited',
 	'multiscreen',
 	'skygoplus',
 	'multiscreen_extra_qmini_1',
@@ -24,38 +23,12 @@ export type zubuchoption_id = (typeof zubuchoption_ids)[number];
 
 const zubuchoption_image_location = '/images/assets/zubuchoptionen/';
 
-const dazn_yearly_price = { jahr: 18.99, monat: 29.99, singular: 0 } satisfies Price;
-
-const get_dazn_asset = (id: zubuchoption_id, price: Price) =>
-	({
-		id: id,
-		price,
-		name: 'DAZN STANDARD',
-		note: 'Live-Sport, Dokus und vieles mehr per App und TV-Sender.',
-		image: {
-			normal: `${zubuchoption_image_location}dazn.svg`,
-			square: `${zubuchoption_image_location}dazn.svg`
-		},
-		aspects: [
-			'Bundesliga: Alle Freitags- und Sonntagsspiele',
-			'121 Spiele der UEFA Champions League inklusive Konferenz nur auf DAZN - garantiert bis 2027',
-			"Serie A, LaLiga, Ligue 1 und die UEFA Women's Champions League",
-			'Zudem der beste US-Sport mit NFL, NBA, UFC und die wichtigsten Schwergewichts-Boxkämpfe',
-			'Alles per App und das Beste von DAZN zeitgleich über die linearen Kanäle DAZN 1 und DAZN 2',
-			'Eine Abrechnung für Sky und DAZN'
-		],
-		sort_priority: 8,
-		senders: [],
-		selector: {
-			type: 'AND',
-			selectors: []
-		}
-	} satisfies Priceable_Asset<zubuchoption_id>);
+const dazn_yearly_price = { jahr: 25.99, monat: 39.99, singular: 0 } satisfies Price;
 
 export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_id>> = [
 	{
 		id: 'uhd',
-		price: cprice(5),
+		price: { jahr: 0, monat: 5, singular: 0 },
 		name: `UHD`,
 		selector: {
 			type: 'AND',
@@ -95,8 +68,30 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 		sort_priority: 7,
 		senders: []
 	},
-	get_dazn_asset('dazn_yearly', dazn_yearly_price),
-	get_dazn_asset('dazn_monthly', cprice(dazn_yearly_price.monat)),
+	{
+		id: 'dazn_unlimited',
+		price: dazn_yearly_price,
+		name: 'DAZN Unlimited',
+		note: 'Live-Sport, Dokus und vieles mehr per App und TV-Sender.',
+		image: {
+			normal: `${zubuchoption_image_location}dazn.svg`,
+			square: `${zubuchoption_image_location}dazn.svg`
+		},
+		aspects: [
+			'Bundesliga: Alle Freitags- und Sonntagsspiele',
+			'121 Spiele der UEFA Champions League inklusive Konferenz nur auf DAZN - garantiert bis 2027',
+			"Serie A, LaLiga, Ligue 1 und die UEFA Women's Champions League",
+			'Zudem der beste US-Sport mit NFL, NBA, UFC und die wichtigsten Schwergewichts-Boxkämpfe',
+			'Alles per App und das Beste von DAZN zeitgleich über die linearen Kanäle DAZN 1 und DAZN 2',
+			'Eine Abrechnung für Sky und DAZN'
+		],
+		sort_priority: 8,
+		senders: [],
+		selector: {
+			type: 'AND',
+			selectors: []
+		}
+	},
 	{
 		id: 'multiscreen',
 		price: { jahr: 10, monat: 10, singular: 0 },
