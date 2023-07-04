@@ -27,8 +27,12 @@
 	<div class="mb-7">
 		<h3 class="light marked">UHD-Aktion</h3>
 		<p>
-			Bei Buchung von Sky UHD entfällt die monatliche Gebühr i. H. v. mtl. € 5,00 während der
-			Mindestvertragslaufzeit. Danach zzgl. mtl. € 5,00.
+			Die UHD-Ersparnis i. H. v. € 60 ergibt sich aus der monatlichen Gebühr von € 5,00 über die
+			Dauer der Mindestvertragslaufzeit von 12 Monaten.
+			<br /><br />
+			Die Ersparnis bis zu € 226 ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im Vergleich
+			zum Sky Standard-Jahresabonnementspreis sowie aus dem rabattierten DAZN Jahresabonnementspreis
+			im Vergleich zum regulären DAZN Jahresabonnementspreis und der UHD-Ersparnis.
 		</p>
 	</div>
 	<div>

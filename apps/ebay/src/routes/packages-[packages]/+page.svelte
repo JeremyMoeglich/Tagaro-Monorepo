@@ -89,7 +89,7 @@
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
 					<li>
-						✓ Sky Aktion: Cinema hinzubuchen und Paramount+ im Wert von € 7,99 mtl. dazu erhalten*
+						✓ UHD Aktion: Sky abonnieren und UHD im Wert von € 60 ein Jahr gratis erhalten*
 					</li>
 					{#if bonus > 0}
 						<li>
@@ -101,7 +101,7 @@
 					Entdecken Sie die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
 					Buchung des Cinema Pakets, erhalten Sie Paramount+ dazu. Zusätzlich überweisen wir Ihnen
 					einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
-					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen, DAZN & UHD an. Ihre
+					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre
 					PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online
 					sind weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie
 					profitieren bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger

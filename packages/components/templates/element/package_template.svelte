@@ -34,11 +34,13 @@
 	<div class="alignment">
 		<div class="image flex flex-col items-center">
 			<AssetImage ids={price_asset_ids} {animated} />
-			<img
-				src={make_url('/images/badges/sky_23-06_aa_split_stoerer_uhd.avif', dev)}
-				alt=""
-				class="w-32"
-			/>
+			{#if !price_asset_ids.includes('dazn_unlimited')}
+				<img
+					src={make_url('/images/badges/sky_23-06_aa_split_stoerer_uhd.avif', dev)}
+					alt=""
+					class="w-32"
+				/>
+			{/if}
 		</div>
 
 		<div class="description">
@@ -94,6 +96,7 @@
 	.title,
 	:global(.description h3) {
 		font-size: 25px;
+		margin-top: 0px;
 	}
 	.description {
 		display: flex;
@@ -137,7 +140,7 @@
 		min-width: max(340px, 25%);
 		max-width: 700px;
 		flex: 1 1 0;
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 	.package_overview {
 		transition-duration: 300ms;
