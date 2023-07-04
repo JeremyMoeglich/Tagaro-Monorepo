@@ -29,5 +29,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: 4rem;
+		margin-top: 40px;
 	}
 </style>
