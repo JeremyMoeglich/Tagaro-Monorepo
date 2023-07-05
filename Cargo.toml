@@ -1,2 +1,2 @@
 [workspace]
-members = ["apps/cron"]
+members = []
