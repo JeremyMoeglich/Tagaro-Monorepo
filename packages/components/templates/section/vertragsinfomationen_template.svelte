@@ -260,23 +260,25 @@
 	<div>
 		<h3 class={title_classes}>DAZN</h3>
 		<p>
-			Nach deiner ursprünglichen Vertragslaufzeit von 12 Monaten wird deine Mitgliedschaft als
-			monatlich kündbare Mitgliedschaft zum Preis von 44,99 € weitergeführt und beinhaltet ab diesem
-			Zeitpunkt der Monatsmitgliedschaft entsprechend einen Stream und maximal drei parallel
-			registrierte Geräte. Erst mit Aktivierung des DAZN Abonnements beginnt dessen
-			zahlungspflichtige Laufzeit. Hierzu übermittelt dir Sky einen Aktivierungslink per E-Mail. Die
-			Aktivierung ist bis 7 Tage ab Versand des Aktivierungslinks möglich. Solltest du dein
+			Mit Abschluss des DAZN Abonnements erhältst du DAZN UNLIMITED zum Preis von {@html get_price_string(
+				['dazn_unlimited'],
+				'jahr'
+			)} monatlich. Die Mindestlaufzeit entspricht 12 Monate, wie im Rahmen Deiner Anmeldung für den
+			DAZN Service angegeben. Nach deiner ursprünglichen Vertragslaufzeit von 12 Monaten wird deine Mitgliedschaft
+			als monatlich kündbare Mitgliedschaft zum Preis von {@html get_price_string(
+				['dazn_unlimited'],
+				'monat'
+			)} weitergeführt und beinhaltet ab diesem Zeitpunkt der Monatsmitgliedschaft entsprechend einen
+			Stream und maximal drei parallel registrierte Geräte. Erst mit Aktivierung des DAZN Abonnements
+			beginnt dessen zahlungspflichtige Laufzeit. Hierzu übermittelt dir Sky einen Aktivierungslink per
+			E-Mail. Die Aktivierung ist bis 7 Tage ab Versand des Aktivierungslinks möglich. Solltest du dein
 			DAZN-Abonnement nicht innerhalb der angegebenen Frist aktivieren, wird die Buchung automatisch
-			storniert. Deine zahlungspflichtige Mitgliedschaft ist mit einer Kündigungsfrist von dreißig
-			(30) Tagen zum Ende der jeweils geltenden Mindestvertragslaufzeit kündbar. Das Sky-Abonnement
-			bleibt davon unberührt. Voraussetzung für die Nutzung der linearen Kanäle im DAZN Abonnement
-			über Sky ist ein aktives nicht-gewerbliches Sky Abonnement, dem steht ein Mietverhältnis eines
-			Sky Receivers gleich.
-			<br />
+			storniert. Deine zahlungspflichtige Mitgliedschaft ist mit einer Kündigungsfrist von dreißig (30)
+			Tagen zum Ende der jeweils geltenden Mindestvertragslaufzeit kündbar. Das Sky-Abonnement bleibt
+			davon unberührt. <br />
 			Zum Empfang über die DAZN App ist eine dauerhafte Internetverbindung nötig. Empfohlene Übertragungsrate
 			von mindestens 8 Mbit/s für HD-Qualität. Durch eine parallele Nutzung von Inhalten erhöht sich
-			die benötigte Mindestbandbreite.
-			<br />
+			die benötigte Mindestbandbreite. <br />
 			Vertragspartner ist die DAZN Limited, 12 Hammersmith Grove, London, W6 7AP, England.
 		</p>
 	</div>
@@ -311,8 +313,8 @@
 			Sky Q Receiver sowie ein UHD- und Dolby Atmos-fähiges Endgerät (z. B. Fernseher oder Soundbar)
 			erforderlich. Welche UHD- und Dolby-Atmos-Programme enthalten sind, richtet sich nach den
 			gewählten Sky Programmpaketen und der Verfügbarkeit beim jeweiligen Netzbetreiber. Aus
-			lizenzrechtlichen Gründen sind bestimmte Inhalte nicht in UHD oder Dolby Atmos verfügbar. Über die Sky Q IPTV Box und Sky Q Mini sind UHD- und
-			Dolby-Atmos-Inhalte nicht verfügbar.
+			lizenzrechtlichen Gründen sind bestimmte Inhalte nicht in UHD oder Dolby Atmos verfügbar. Über
+			die Sky Q IPTV Box und Sky Q Mini sind UHD- und Dolby-Atmos-Inhalte nicht verfügbar.
 		</p>
 	</div>
 	<div>
