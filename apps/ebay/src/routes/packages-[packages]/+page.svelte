@@ -40,7 +40,7 @@
 				`Sky Abo mit Entertainment + 3 Paketen für ${get_price_string(
 					['entertainment', 'sport', 'bundesliga', 'cinema'],
 					'jahr'
-				)} mtl. Dazu €&nbsp;20 Bonus*`
+				)} mtl. Dazu €&nbsp;${bonus} Bonus*`
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
@@ -60,14 +60,14 @@
 				`Sky Komplett Abo inkl. Netflix & Paramount+ für ${get_price_string(
 					['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
 					'jahr'
-				)} mtl. Dazu €&nbsp;20 Bonus*`
+				)} mtl. Dazu €&nbsp;${bonus} Bonus*`
 			],
 			[
 				'allgemein',
 				`Sky Abo nach Wahl z.B. Entertainment Plus für ${get_price_string(
 					['entertainmentplus'],
 					'jahr'
-				)} mtl. Dazu €&nbsp;20 Bonus*`
+				)} mtl. Dazu €&nbsp;${bonus} Bonus*`
 			]
 		];
 		const title = titles.find(([p]) =>
@@ -100,7 +100,7 @@
 				<p class="max-w-6xl mt-2">
 					Entdecken Sie die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
 					Buchung des Cinema Pakets, erhalten Sie Paramount+ dazu. Zusätzlich überweisen wir Ihnen
-					einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
+					einen Bonus von € {bonus}. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
 					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre
 					PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online
 					sind weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie

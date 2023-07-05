@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { bonus } from 'asset_library/prices';
 	/**
 	 * The URL of the image to be used as a preview when sharing the website.
 	 * @type {string}
@@ -10,7 +11,7 @@
 	 * @type {string}
 	 */
 	export let websiteDescription =
-		'Sky Abo nach Wahl + € 20 Bonus vom Sky Onlinehändler ✓ Täglicher Versand ✓ Immer sparen ✓ Service seit 2006 ✓ Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.';
+		`Sky Abo nach Wahl + € ${bonus} Bonus vom Sky Onlinehändler ✓ Täglicher Versand ✓ Immer sparen ✓ Service seit 2006 ✓ Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.`;
 
 	/**
 	 * The canonical URL of the website or webpage.
@@ -52,7 +53,7 @@
 	 * The title of the website or webpage.
 	 * @type {string}
 	 */
-	export let websiteTitle = 'Sky Abo + 20€ Prämie | Sky Händler seit 2006 | Spare bis zu 188€';
+	export let websiteTitle = `Sky Abo + ${bonus}€ Prämie | Spare bis zu 228€ | seit 2006`;
 </script>
 
 <svelte:head>

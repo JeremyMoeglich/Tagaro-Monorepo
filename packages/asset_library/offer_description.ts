@@ -7,6 +7,7 @@ import type { zubuchoption_id } from './assets/zubuchoptionen';
 import type { asset_id, priceable_asset_id } from './asset_types';
 import type { Price } from './priceable_asset_types';
 import { asset_sets } from './sets';
+import { bonus } from './prices';
 
 export type package_set_id = 'all' | 'premium' | 'base' | package_id;
 export type base_package_set = 'entertainment' | 'entertainmentplus';
@@ -143,7 +144,7 @@ export const offer_descriptions: offer_descriptions_type = [
 		id: 'opt1',
 		aktivierung: 0,
 		conditions: [],
-		bonus: 20,
+		bonus: bonus,
 		short_text: text_descriptions,
 		long_text: text_descriptions,
 		actions: [],
@@ -168,7 +169,7 @@ export const empty_offer: offer_description_type = {
 	id: '',
 	aktivierung: 0,
 	conditions: [],
-	bonus: 20,
+	bonus: bonus,
 	short_text: '',
 	long_text: '',
 	actions: [],
