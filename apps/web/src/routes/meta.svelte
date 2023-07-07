@@ -11,7 +11,7 @@
 	 * @type {string}
 	 */
 	export let websiteDescription =
-		`Sky Abo nach Wahl + € ${bonus} Bonus vom Sky Onlinehändler ✓ Täglicher Versand ✓ Immer sparen ✓ Service seit 2006 ✓ Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.`;
+		`Sky Abo nach Wahl + € ${bonus} Bonus (Juli-Aktion) vom Sky Onlinehändler ✓ Täglicher Versand ✓ Immer sparen ✓ Service seit 2006 ✓ Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.`;
 
 	/**
 	 * The canonical URL of the website or webpage.

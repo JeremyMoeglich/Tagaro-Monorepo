@@ -9,7 +9,7 @@ import { typed_keys } from 'functional-utilities';
 import { asset_id } from 'asset_library/asset_types';
 
 const all_extras = {
-	dazn_unlimited: `DAZN jährlich zum monatlichen Preis von zuzüglich ${get_price_string(
+	dazn_unlimited: `DAZN Unlimited zum monatlichen Preis von zuzüglich ${get_price_string(
 		['dazn_unlimited'],
 		'jahr'
 	)}`,

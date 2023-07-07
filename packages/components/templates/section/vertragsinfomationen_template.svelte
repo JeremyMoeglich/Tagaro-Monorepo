@@ -2,7 +2,7 @@
 	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
-	import { get_offer_note, get_price_string } from 'asset_library/prices';
+	import { bonus, get_offer_note, get_price_string } from 'asset_library/prices';
 	import { base_premium_package_combinations } from 'asset_library/assets/packages';
 	import { typed_entries } from 'functional-utilities';
 
@@ -413,9 +413,9 @@
 		</p>
 	</div>
 	<div>
-		<h3 class={title_classes}>€&nbsp;20 Prämie von uns:</h3>
+		<h3 class={title_classes}>€&nbsp;{bonus} Prämie von uns (Juli-Aktion):</h3>
 		<p>
-			Als Dankeschön erhalten Sie eine Prämie von €&nbsp;20 auf Ihr Konto überwiesen. Sie erhalten
+			Als Dankeschön erhalten Sie eine Prämie von €&nbsp;{bonus} auf Ihr Konto überwiesen. Sie erhalten
 			den Betrag nach ca. 8 Wochen nach dem Abobeginn gutgeschrieben.
 		</p>
 	</div>

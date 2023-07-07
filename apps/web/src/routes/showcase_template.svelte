@@ -80,7 +80,7 @@
 					{/if}
 					<h2 class="gray">
 						<slot name="subtitle1">
-							Bei Vermittlung über TAGARO zusätzlich mit {@html bonus_string(true)} Bonus.
+							Bei Vermittlung über TAGARO zusätzlich mit {@html bonus_string(true)} Bonus. (Juli-Aktion)
 						</slot>
 					</h2>
 					<h3 class="no_gradient">
