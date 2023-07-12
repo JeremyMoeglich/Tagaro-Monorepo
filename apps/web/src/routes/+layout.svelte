@@ -69,6 +69,7 @@
 			async
 		>
 		</script>
+		<script src="https://app.authorized.by/trustedretailers/badges.js"></script>
 	{/if}
 </svelte:head>
 
@@ -174,6 +175,14 @@
 		{/if}
 	</div>
 	<InfoBanner />
+</div>
+
+<div>
+	<div
+		data-authorizedby
+	>
+		<div data-authorizedby-badge="sidebar" />
+	</div>
 </div>
 
 <svelte:window bind:scrollY={screen_y_position} />
