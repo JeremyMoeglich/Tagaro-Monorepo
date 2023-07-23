@@ -157,8 +157,6 @@ export const offer_descriptions: offer_descriptions_type = [
 			[['entertainmentplus'], { jahr: 15 }],
 			[['entertainmentplus', 'cinema'], { jahr: 25 }],
 			[['entertainmentplus', 'bundesliga'], { jahr: 30 }],
-			[['entertainmentplus', 'sport'], { jahr: 25 }],
-			[['entertainmentplus', 'sport', 'bundesliga'], { jahr: 35 }],
 			[['entertainmentplus', 'cinema', 'sport', 'bundesliga'], { jahr: 40 }]
 		],
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
