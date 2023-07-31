@@ -17,7 +17,7 @@
 		| undefined = undefined;
 	export let points = [
 		'Vertrag für Internet, Sat- oder Kabel-Anschluss mit Sky Q Receiver oder Sky Q IPTV Box*',
-		`${bonus_string()} Bonus und versandkostenfreie Vermittlung (Juli-Aktion)*`
+		`${bonus_string()} Bonus und versandkostenfreie Vermittlung*`
 	];
 	export let primary_image: undefined | string = undefined;
 	export let side_images: string[] = [];
@@ -80,7 +80,7 @@
 					{/if}
 					<h2 class="gray">
 						<slot name="subtitle1">
-							Bei Vermittlung über TAGARO zusätzlich mit {@html bonus_string(true)} Bonus (Juli-Aktion)
+							Bei Vermittlung über TAGARO zusätzlich mit {@html bonus_string(true)} Bonus
 						</slot>
 					</h2>
 					<h3 class="no_gradient">

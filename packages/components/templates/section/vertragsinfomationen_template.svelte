@@ -413,7 +413,7 @@
 		</p>
 	</div>
 	<div>
-		<h3 class={title_classes}>€&nbsp;{bonus} Prämie von uns (Juli-Aktion):</h3>
+		<h3 class={title_classes}>€&nbsp;{bonus} Prämie von uns:</h3>
 		<p>
 			Als Dankeschön erhalten Sie eine Prämie von €&nbsp;{bonus} auf Ihr Konto überwiesen. Sie erhalten
 			den Betrag nach ca. 8 Wochen nach dem Abobeginn gutgeschrieben.

@@ -162,7 +162,7 @@
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
 								{/if}
 								{#if bonus !== 0}
-									<li>✓ {@html bonus_string()} Bonus on top (Juli-Aktion)</li>
+									<li>✓ {@html bonus_string()} Bonus on top</li>
 								{/if}
 								<li>✓ Optional: UHD ein Jahr gratis* - zusätzlich € 60 sparen</li>
 								<li>✓ 500 PAYBACK Basis Punkte</li>
