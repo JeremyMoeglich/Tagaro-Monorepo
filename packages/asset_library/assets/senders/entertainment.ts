@@ -24,10 +24,10 @@ export const entertainment_senders = [
 		image: 'sky_logo_sky-documentary_b.png',
 		text: 'Dokumentarfilme und Serien, die herausfordern, fesseln und unterhalten'
 	},
-	{
-		image: 'sky_logo_sky-comedy_w.png',
-		text: 'Der Gute-Laune-Sender mit beliebten Sitcoms und Comedy-Serien aus den USA.'
-	},
+	// {
+	// 	image: 'sky_logo_sky-comedy_w.png',
+	// 	text: 'Der Gute-Laune-Sender mit beliebten Sitcoms und Comedy-Serien aus den USA.'
+	// },
 	{
 		image: 'sky_logo_sky-crime_w.png',
 		text: 'Sky Crime ist das Zuhause für alle Fans von Hochspannung und True Crime.'
