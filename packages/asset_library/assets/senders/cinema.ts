@@ -5,27 +5,27 @@ const start = '/images/assets/packages/senders/cinema/';
 export const cinema_senders = [
 	{
 		image: 'sky_logo_sky-cinema-thriller_w.png',
-		text: 'Gänsehaut Alarm – die spannendsten Thriller, die dich zum zittern bringen'
+		text: 'Gänsehaut-Alarm – die spannendsten Thriller, die dich zum Zittern bringen.'
 	},
 	{
 		image: 'sky_logo_sky-cinema-premieren_w.png',
-		text: 'Das Privatkino mit exklusiven deutschen TV-Premieren in HD-Qualität'
+		text: 'Dein Premieren-Sender – mit den aktuellsten Filmen kurz nach dem Kino.'
 	},
 	{
 		image: 'sky_logo_sky-cinema-premieren-plus24_w.png',
-		text: 'Alles von Sky Cinema Premieren HD noch mal einen Tag später.'
+		text: 'Alle Premieren nochmal einen Tag später.'
 	},
 	{
 		image: 'sky_logo_sky-cinema-action_w.png',
-		text: 'Achtung, Hochspannung: mit Action, Horror und Sci-Fi in HD.'
+		text: 'Pure Action – die neuesten und besten Crime-und Actionfilme.'
 	},
 	{
 		image: 'sky_logo_sky-cinema-family_w.png',
-		text: 'Immer der richtige Film für die ganze Familie.'
+		text: 'Das beste Entertainment für Kinder und die ganze Familie.'
 	},
 	{
 		image: 'sky_logo_sky-cinema-best-of_w.png',
-		text: 'Die besten Filme der letzten Jahrzehnte in HD.'
+		text: 'Die beliebtesten Filme aller Zeiten – von den 90ern bis heute.'
 	},
 	{
 		image: 'sky_logo_wb-film-hd_b.png',
@@ -37,7 +37,7 @@ export const cinema_senders = [
 	},
 	{
 		image: 'sky_logo_sky-cinema-classics_w.png',
-		text: 'Filmklassiker und Kultserien von den 30er- bis zu den 80er-Jahren.'
+		text: 'Die großartigsten Filmklassiker und Kult-Serien aus den Genres Abenteuer und Western – von den 30ern bis hin zu den 80ern.'
 	}
 ].map((e) => ({
 	...e,
