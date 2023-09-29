@@ -36,12 +36,8 @@ export const cinema_senders = [
 		text: 'Sky Cinema Fun HD zeigt die besten und lustigsten Komödien.'
 	},
 	{
-		image: 'sky_logo_sky-cinema-fun-hd_w.png',
-		text: 'Filmklassiker und Kultserien von den 30er- bis zu den 80er-Jahren.'
-	},
-	{
 		image: 'sky_logo_sky-cinema-fun_w.png',
-		text: 'Sky Fun zeigt die besten und lustigsten Komödien.'
+		text: 'Zum Schreien komisch – das neue Zuhause der witzigsten Filme aller Zeiten.'
 	},
 	{
 		image: 'sky_logo_sky-cinema-classics_w.png',
