@@ -47,6 +47,9 @@
 				<ul>
 					<li><b>Optional:</b></li>
 					<li>
+						- UHD für {@html get_price_string(['uhd'], 'jahr')} mtl.
+					</li>
+					<li>
 						- DAZN UNLIMITED im Jahresabo für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
 					</li>
 					<li>
