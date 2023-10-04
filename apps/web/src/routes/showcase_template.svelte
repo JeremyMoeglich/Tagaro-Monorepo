@@ -35,7 +35,7 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/sky_23-06_aa_split_stoerer_uhd.avif'] as const;
+	const left_badges = ['/images/badges/einmalige_gebuehr.svg'] as const;
 	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',

@@ -24,7 +24,7 @@
 </VertragsinfomationenTemplate> -->
 
 <VertragsinfomationenTemplate>
-	<div class="mb-7">
+	<!-- <div class="mb-7">
 		<h3 class="light marked">UHD-Aktion</h3>
 		<p>
 			Die UHD-Ersparnis i. H. v. € 60 ergibt sich aus der monatlichen Gebühr von € 5,00 über die
@@ -34,7 +34,7 @@
 			zum Sky Standard-Jahresabonnementspreis sowie aus dem rabattierten DAZN Jahresabonnementspreis
 			im Vergleich zum regulären DAZN Jahresabonnementspreis und der UHD-Ersparnis.
 		</p>
-	</div>
+	</div> -->
 	<div>
 		<h3 class="light">Sky Cinema Paket / Paramount+</h3>
 		<p>

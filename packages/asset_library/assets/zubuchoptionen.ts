@@ -16,7 +16,8 @@ export const zubuchoption_ids = [
 	'netflixstandard',
 	'netflixpremium',
 	'hdplus4monategratis',
-	'hdplus'
+	'hdplus',
+	'dyn'
 ] as const;
 
 export type zubuchoption_id = (typeof zubuchoption_ids)[number];
@@ -56,6 +57,22 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 		id: 'skygoplus',
 		price: cprice(5),
 		name: `Sky Go Plus`,
+		note: '[TODO]',
+		image: {
+			normal: `${zubuchoption_image_location}skygoplus.png`
+		},
+		selector: {
+			type: 'AND',
+			selectors: []
+		},
+		aspects: [],
+		sort_priority: 7,
+		senders: []
+	},
+	{
+		id: 'dyn',
+		price: { jahr: 12.5, monat: 14.5, singular: 0 },
+		name: `Dyn`,
 		note: '[TODO]',
 		image: {
 			normal: `${zubuchoption_image_location}skygoplus.png`

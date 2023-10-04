@@ -7,7 +7,7 @@
 		"build:netlify": "turbo run build:netlify",
 		"build:vercel": "turbo run build:vercel",
 		"build": "turbo run build",
-		"dev": "dotenv -- turbo run dev",
+		"dev": "dotenv -- turbo run dev --concurrency 16",
 		"preview": "turbo run preview",
 		"check": "turbo run check",
 		"lint": "turbo run lint",

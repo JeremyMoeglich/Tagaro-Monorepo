@@ -11,20 +11,23 @@
 
 	const zubuchoptionen: Zubuchoption[] = [
 		{
-			html: /*html*/ `<b class="marked">UHD 12 Monate GRATIS</b><br> 
-			Für Sat oder Kabel-Empfang`,
+			html: /*html*/ `<b>UHD + ${get_price_string(
+				['uhd'],
+				'jahr'
+			)} mtl.</b> <br> Für Sat oder Kabel-Empfang`,
 			image: '/images/assets/zubuchoptionen/uhd.png'
 		},
 		{
 			image: '/images/assets/zubuchoptionen/dazn.svg',
 			html: /*html*/ `<div style="font-size: 15px;">
-				<b>DAZN Unlimited + ${get_price_string(
+				<b>DAZN Unlimited + ${get_price_string(['dazn_unlimited'], 'jahr')} mtl.</b>
+				<br />
+				statt €&nbsp;29,99 mtl. <br />
+				im Jahresabo <br />
+				(nach 12 Monaten ${get_price_string(
 					['dazn_unlimited'],
-					'jahr'
-				)} mtl.</b><br />(nach 12 Monaten ${get_price_string(
-				['dazn_unlimited'],
-				'monat'
-			)} pro Monat und monatlich kündbare Mitgliedschaft)    
+					'monat'
+				)} pro Monat und monatlich kündbare Mitgliedschaft)    
 			</div>
 				`
 		},
@@ -35,10 +38,28 @@
 				'jahr'
 			)} mtl. <br /></b> Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €&nbsp;49, 1-2 Sky Q Mini für je einmalig €&nbsp;29 (zur Leihe oder OHNE zusätzliche Hardware)`
 		},
-
 		{
 			image: '/images/assets/zubuchoptionen/kids.png',
 			html: /*html*/ `<b>Sky Kids + ${get_price_string(['kids'], 'jahr')} mtl.</b>`
+		},
+		{
+			html: /*html*/ `<b>Dyn Jahresabo + ${get_price_string(
+				['dyn'],
+				'jahr'
+			)} mtl. statt €&nbsp;12,59 mtl.</b> <br>
+			(Wird als Einmalzahlung für 12 Monate in Höhe von € 114 berechnet, <br>
+			nach 12 Monaten € 14,50 pro Monat und monatlich kündbare Mitgliedschaft)
+			`,
+			image: '/images/assets/zubuchoptionen/dyn.png'
+		},
+		{
+			image: '/images/assets/zubuchoptionen/dyn.png',
+			html: /*html*/ `<div style="font-size: 15px;">
+				<b>Dyn 3-Monate-Schnupperangebot für €&nbsp;14,50 einmalig statt €&nbsp;43,50 mtl.</b> <br />
+				(Wird als Einmalzahlung für 3 Monate in Höhe von € 14,50 berechnet, <br />
+				danach € 14,50 pro Monat und monatlich kündbare Mitgliedschaft)
+			</div>
+				`
 		},
 		{
 			image: '/images/assets/zubuchoptionen/netflix_standard.png',

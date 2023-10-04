@@ -164,7 +164,6 @@
 								{#if bonus !== 0}
 									<li>✓ {@html bonus_string()} Bonus on top</li>
 								{/if}
-								<li>✓ Optional: UHD ein Jahr gratis* - zusätzlich € 60 sparen</li>
 								<li>✓ 500 PAYBACK Basis Punkte</li>
 								<!-- 
 							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
