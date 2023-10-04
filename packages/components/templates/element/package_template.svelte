@@ -36,9 +36,9 @@
 			<AssetImage ids={price_asset_ids} {animated} />
 			{#if !price_asset_ids.includes('dazn_unlimited')}
 				<img
-					src={make_url('/images/badges/sky_23-06_aa_split_stoerer_uhd.avif', dev)}
+					src={make_url('/images/badges/einmalige_gebuehr.svg', dev)}
 					alt=""
-					class="w-32"
+					class="w-32 mt-4"
 				/>
 			{/if}
 		</div>
