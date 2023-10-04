@@ -1,5 +1,10 @@
 <script lang="ts">
-	import { get_offer_note, get_price_string } from 'asset_library/prices';
+	import {
+		get_offer_note,
+		get_offer_price,
+		get_price_string,
+		to_price_string
+	} from 'asset_library/prices';
 	import {
 		max_combination_length,
 		base_premium_package_combinations,
@@ -12,6 +17,7 @@
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
 	import { typed_entries } from 'functional-utilities';
+	import { empty_offer } from 'asset_library/offer_description';
 
 	const col_amount = max_combination_length + 1;
 
@@ -69,7 +75,8 @@
 							</b>
 						</p>
 						<p class="small">
-							im Jahres-Abo danach {@html get_price_string(row, 'monat')}&nbsp;mtl.* im Monats-Abo
+							statt: {@html to_price_string(get_offer_price(empty_offer, row).jahr, true)} mtl. <br />
+							(im Jahres-Abo, danach {@html get_price_string(row, 'monat')}&nbsp;mtl. im Monats-Abo)
 						</p>
 					</div>
 				</div>
@@ -154,5 +161,10 @@
 	h3 {
 		font-size: 17px;
 		margin: 0px;
+	}
+	.small {
+		font-size: 13px;
+		margin-top: 4px;
+		line-height: 19px;
 	}
 </style>

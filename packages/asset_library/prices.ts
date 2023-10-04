@@ -128,7 +128,7 @@ function get_offer_savings_string(
 	ids: ReadonlyArray<priceable_asset_id>
 ): string {
 	return to_price_string(
-		(get_offer_price(empty_offer, ids).jahr - get_offer_price(offer, ids).jahr) * 12 + 60
+		(get_offer_price(empty_offer, ids).jahr - get_offer_price(offer, ids).jahr) * 12
 	);
 }
 

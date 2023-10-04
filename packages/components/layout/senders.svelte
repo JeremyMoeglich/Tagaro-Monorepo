@@ -29,7 +29,7 @@
 <style lang="scss">
 	.main_alignment {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 		justify-content: center;
 		width: 100%;
 		max-width: 1100px;

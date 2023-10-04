@@ -42,25 +42,25 @@
 			image: '/images/assets/zubuchoptionen/kids.png',
 			html: /*html*/ `<b>Sky Kids + ${get_price_string(['kids'], 'jahr')} mtl.</b>`
 		},
-		{
-			html: /*html*/ `<b>Dyn Jahresabo + ${get_price_string(
-				['dyn'],
-				'jahr'
-			)} mtl. statt €&nbsp;12,59 mtl.</b> <br>
-			(Wird als Einmalzahlung für 12 Monate in Höhe von € 114 berechnet, <br>
-			nach 12 Monaten € 14,50 pro Monat und monatlich kündbare Mitgliedschaft)
-			`,
-			image: '/images/assets/zubuchoptionen/dyn.png'
-		},
-		{
-			image: '/images/assets/zubuchoptionen/dyn.png',
-			html: /*html*/ `<div style="font-size: 15px;">
-				<b>Dyn 3-Monate-Schnupperangebot für €&nbsp;14,50 einmalig statt €&nbsp;43,50 mtl.</b> <br />
-				(Wird als Einmalzahlung für 3 Monate in Höhe von € 14,50 berechnet, <br />
-				danach € 14,50 pro Monat und monatlich kündbare Mitgliedschaft)
-			</div>
-				`
-		},
+		// {
+		// 	html: /*html*/ `<b>Dyn Jahresabo + ${get_price_string(
+		// 		['dyn'],
+		// 		'jahr'
+		// 	)} mtl. statt €&nbsp;12,59 mtl.</b> <br>
+		// 	(Wird als Einmalzahlung für 12 Monate in Höhe von € 114 berechnet, <br>
+		// 	nach 12 Monaten € 14,50 pro Monat und monatlich kündbare Mitgliedschaft)
+		// 	`,
+		// 	image: '/images/assets/zubuchoptionen/dyn.png'
+		// },
+		// {
+		// 	image: '/images/assets/zubuchoptionen/dyn.png',
+		// 	html: /*html*/ `<div style="font-size: 15px;">
+		// 		<b>Dyn 3-Monate-Schnupperangebot für €&nbsp;14,50 einmalig statt €&nbsp;43,50 mtl.</b> <br />
+		// 		(Wird als Einmalzahlung für 3 Monate in Höhe von € 14,50 berechnet, <br />
+		// 		danach € 14,50 pro Monat und monatlich kündbare Mitgliedschaft)
+		// 	</div>
+		// 		`
+		// },
 		{
 			image: '/images/assets/zubuchoptionen/netflix_standard.png',
 			html: /*html*/ `<b>Netflix Standard-Abo (Full HD 1080p) <br> + ${get_price_string(

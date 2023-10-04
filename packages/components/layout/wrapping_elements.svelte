@@ -9,13 +9,16 @@
 		bonus,
 		bonus_string,
 		get_offer_note,
-		get_price_string
+		get_offer_price,
+		get_price_string,
+		to_price_string
 	} from 'asset_library/prices';
 	import MultiImageOverlay from '../generators/multi_image_overlay.svelte';
 	import Button from '../elements/interactive/buttons/button.svelte';
 	import { onMount } from 'svelte';
 	import { enter_filter } from 'utils';
 	import { panic } from 'functional-utilities';
+	import { empty_offer } from 'asset_library/offer_description';
 
 	export let title: string;
 	export let components: ReadonlyArray<{
@@ -181,13 +184,16 @@
 								{@html get_price_string(item.package_ids, `jahr`)} mtl.*
 							</h3>
 							<p class="bottom_text">
+								statt: {@html to_price_string(
+									get_offer_price(empty_offer, item.package_ids).jahr,
+									true
+								)} mtl. <br />
 								(im Jahres-Abo, danach {@html get_price_string(item.package_ids, 'monat')} mtl., Preis
 								bezieht sich auf {item.package_ids
 									.map((id) => indexed_package_assets[id].name)
 									.join(' + ')})
 								<br />
-								Optional DAZN Unlimited<br />
-								+ 500 PAYBACK Punkte
+								Optional DAZN Unlimited
 							</p>
 						</div>
 						<div class="button">

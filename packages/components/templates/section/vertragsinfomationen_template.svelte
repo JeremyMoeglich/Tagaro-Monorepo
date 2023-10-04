@@ -2,7 +2,12 @@
 	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
-	import { bonus, get_offer_note, get_price_string } from 'asset_library/prices';
+	import {
+		bonus,
+		get_offer_note,
+		get_price_string,
+		get_savings_string
+	} from 'asset_library/prices';
 	import { base_premium_package_combinations } from 'asset_library/assets/packages';
 	import { typed_entries } from 'functional-utilities';
 
@@ -318,6 +323,18 @@
 			gewählten Sky Programmpaketen und der Verfügbarkeit beim jeweiligen Netzbetreiber. Aus
 			lizenzrechtlichen Gründen sind bestimmte Inhalte nicht in UHD oder Dolby Atmos verfügbar. Über
 			die Sky Q IPTV Box und Sky Q Mini sind UHD- und Dolby-Atmos-Inhalte nicht verfügbar.
+		</p>
+	</div>
+	<div>
+		<h3 class={title_classes}>Ersparnis:</h3>
+		<p>
+			Ersparnis: Die Ersparnis bis zu {@html get_savings_string([
+				'entertainmentplus',
+				'cinema',
+				'bundesliga',
+				'sport'
+			])} ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im Vergleich zum Sky Standard-Jahresabonnementspreis
+			sowie aus dem rabattierten DAZN Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis.
 		</p>
 	</div>
 	<div>
