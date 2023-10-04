@@ -22,8 +22,7 @@
 			html: /*html*/ `<div style="font-size: 15px;">
 				<b>DAZN Unlimited + ${get_price_string(['dazn_unlimited'], 'jahr')} mtl.</b>
 				<br />
-				statt €&nbsp;29,99 mtl. <br />
-				im Jahresabo <br />
+				statt €&nbsp;29,99 mtl. im Jahresabo <br />
 				(nach 12 Monaten ${get_price_string(
 					['dazn_unlimited'],
 					'monat'

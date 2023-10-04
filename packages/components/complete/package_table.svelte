@@ -64,7 +64,7 @@
 				{/each}
 				<div class="cell text-cell" style:--row={row_index + 1} style:--col={col_amount}>
 					<div class="text-cell-inner">
-						<p>
+						<p style="line-height: 23px;">
 							<b>
 								{#if get_offer_note(row)}
 									<mark class="nowrap">{@html get_offer_note(row)}</mark>
