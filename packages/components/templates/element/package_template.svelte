@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { priceable_asset_id } from 'asset_library/asset_types';
-	import { get_price_string } from 'asset_library/prices';
+	import { get_offer_price, get_price_string, to_price_string } from 'asset_library/prices';
 	// import { typed_keys } from 'functional-utilities';
 	import SquarePackageList from '../../generators/square_package_list.svelte';
 
@@ -12,6 +12,7 @@
 	import Senders from '../../layout/senders.svelte';
 	import { make_url } from 'frontend/url';
 	import { dev } from '$app/environment';
+	import { empty_offer } from 'asset_library/offer_description';
 
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
@@ -35,11 +36,7 @@
 		<div class="image flex flex-col items-center">
 			<AssetImage ids={price_asset_ids} {animated} />
 			{#if !price_asset_ids.includes('dazn_unlimited')}
-				<img
-					src={make_url('/images/badges/einmalige_gebuehr.svg', dev)}
-					alt=""
-					class="w-32 mt-4"
-				/>
+				<img src={make_url('/images/badges/einmalige_gebuehr.svg', dev)} alt="" class="w-32 mt-4" />
 			{/if}
 		</div>
 
@@ -66,6 +63,7 @@
 						12 Monate nur {@html get_price_string(price_asset_ids, 'jahr')} mtl.*
 					</h3>
 					<p class="small_text">
+						statt {@html to_price_string(get_offer_price(empty_offer, price_asset_ids).jahr)} mtl. <br />
 						(im Jahres-Abo, danach {@html get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)
 						<br />
 						Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
