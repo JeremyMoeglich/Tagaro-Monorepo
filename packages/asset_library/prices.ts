@@ -34,10 +34,10 @@ export function get_offer_price(
 	const current_price_table = clone(price_table);
 
 	for (const overwrite of offer.overwrites) {
-		const filtered_zubuchoptionen = assets.filter((id) =>
-			zubuchoption_ids.includes(id as zubuchoption_id)
-		);
-		const other_assets = assets.filter((id) => !zubuchoption_ids.includes(id as zubuchoption_id));
+		const matches = (id: priceable_asset_id) =>
+			zubuchoption_ids.includes(id as zubuchoption_id) || id === 'kids';
+		const filtered_zubuchoptionen = assets.filter(matches);
+		const other_assets = assets.filter((id) => !matches(id));
 		if (isEqual(sortBy(overwrite[0]), sortBy(other_assets)) && !exclude_overwrite) {
 			const price = (() => {
 				if (isEqual(empty_offer, offer)) {

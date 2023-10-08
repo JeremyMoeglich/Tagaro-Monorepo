@@ -77,6 +77,9 @@
 					</li>
 					<li>- trendSports mtl. {@html get_price_string(['trendsports'], 'jahr')}</li>
 					<li>- 18+ für Blue Movie €&nbsp;0, einmalige Versandpauschale 18+ PIN</li>
+					<li>
+						- Sky Kids für {@html get_price_string(['kids'], 'jahr')} mtl.
+					</li>
 					<!-- <li>
 						- UHD für €&nbsp;4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €&nbsp;5 mtl. mit Entertainment
 						(für Sat oder Kabel-Empfang)
@@ -98,10 +101,6 @@
 							>(20% Rabatt)</mark
 						>
 						oder €&nbsp;10 mtl. mit Entertainment
-					</li>
-					<li>
-						- Sky Kids Zubuchung für €&nbsp;4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €
-						5 mtl. mit Entertainment
 					</li>
 					<li>- trendSports für €&nbsp;5,99 mtl.</li>
 					<li>- 18+ für Blue Movie €&nbsp;0, einmalige Versandpauschale 18+ PIN</li> -->
