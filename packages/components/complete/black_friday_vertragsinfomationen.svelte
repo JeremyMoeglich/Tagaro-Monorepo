@@ -21,7 +21,7 @@
 			<ul>
 				<li><b>Optional:</b></li>
 				<li>
-					- UHD für {@html get_price_string(['uhd'], 'jahr')} mtl.
+					- Sky UHD - € 0 mtl. statt € 5 mtl. für die ersten 12 Monate, danach + € 5 mtl.
 				</li>
 				<li>
 					- DAZN UNLIMITED im Jahresabo für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
