@@ -9,9 +9,16 @@
 	<h2 class="no_gradient text-white text-center mt-0 mb-3">
 		Bis zu 3 parallele Streams + € 100 Wunschgutschein*
 	</h2>
-	<img src="/images/visuals/sky_23-11_black-friday_header_l.avif" alt="" class="mb-10 w-3/4 max-w-[1000px]"/>
+	<img
+		src="/images/visuals/sky_23-11_black-friday_header_l.avif"
+		alt=""
+		class="mb-10 w-3/4 max-w-[1000px]"
+	/>
 
-	<AboformularButton source="Black Friday Showcase"/>
+	<AboformularButton
+		source="Black Friday Showcase"
+		route="https://fd10.formdesk.com/tagaro/Sky-Bestellung-6"
+	/>
 </div>
 
 <style>
