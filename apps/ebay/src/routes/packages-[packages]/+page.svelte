@@ -5,10 +5,11 @@
 	import { make_url } from 'frontend/url';
 	import Header from './header.svelte';
 	import { dev } from '$app/environment';
-	import PackageTable from 'components/complete/package_table.svelte';
+	//import PackageTable from 'components/complete/package_table.svelte';
+	import Wunschgutschein from 'components/complete/wunschgutschein.svelte';
 	import Inklusive from 'components/complete/inklusive.svelte';
 	import AllOverviews from '../../../../../packages/components/complete/all_overviews.svelte';
-	import Vertragsinfomationen from 'components/complete/vertragsinfomationen.svelte';
+	import Vertragsinfomationen from 'components/complete/black_friday_vertragsinfomationen.svelte';
 	import Line from 'components/elements/line.svelte';
 	import Block from './block.svelte';
 	import Footer from './footer.svelte';
@@ -107,12 +108,13 @@
 			</div>
 			<img
 				class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-				src={make_url('/images/visuals/sky1023_teaser.png', dev)}
+				src={make_url('/images/visuals/sky_bf_23_2.png', dev)}
 				alt=""
 			/>
-			<div class="max-w-4xl w-full">
+			<!-- <div class="max-w-4xl w-full">
 				<PackageTable />
-			</div>
+			</div> -->
+			<Wunschgutschein />
 			<Block title="Abovermittlung mit TAGARO">
 				<p>
 					Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur

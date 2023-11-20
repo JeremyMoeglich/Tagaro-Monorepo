@@ -35,9 +35,9 @@
 	<div class="alignment">
 		<div class="image flex flex-col items-center">
 			<AssetImage ids={price_asset_ids} {animated} />
-			{#if !price_asset_ids.includes('dazn_unlimited')}
+			<!-- {#if !price_asset_ids.includes('dazn_unlimited')}
 				<img src={make_url('/images/badges/einmalige_gebuehr.svg', dev)} alt="" class="w-32 mt-4" />
-			{/if}
+			{/if} -->
 		</div>
 
 		<div class="description">

@@ -1,240 +1,89 @@
 <script lang="ts">
-	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
-	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
-
-	import {
-		bonus,
-		get_offer_note,
-		get_price_string,
-		get_savings_string
-	} from 'asset_library/prices';
-	import { base_premium_package_combinations } from 'asset_library/assets/packages';
-	import { typed_entries } from 'functional-utilities';
+	import { bonus, get_price_string } from 'asset_library/prices';
 
 	const title_classes = 'light';
 </script>
 
 <div class="vertragsinfomationen_outer">
 	<div>
-		<slot name="wählbare_pakete">
-			<div class="wählbare_pakete">
-				<h3 class={title_classes}>Wählbare Pakete und Kombinationen:</h3>
-				<p>
-					Angebote gelten mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
-					(anteilig) zzgl. 12 Monaten)
-				</p>
-				<div class="base_package_combinations">
-					{#each typed_entries(base_premium_package_combinations) as [base, { title, combinations }]}
-						<div>
-							<h4 class={title_classes}>{@html title}</h4>
-							<ul>
-								{#each combinations as combination}
-									{@const comb = [base, ...combination]}
-									{@const offer_note = get_offer_note(comb)}
-									<li>
-										- {comb.map((id) => indexed_priceable_assets[id].name).join(' + ')} für {@html get_price_string(
-											comb,
-											'jahr'
-										)}&nbsp;mtl. im 12-Monats-Abo* {#if offer_note}
-											<mark>({@html offer_note})</mark>
-										{/if}
-									</li>
-								{/each}
-							</ul>
-						</div>
-					{/each}
-				</div>
-				<AktivierungSentence />
-				<!-- <ul>
-					<li><b>Inklusive: </b></li>
-					<li>- UHD ... Temp</li>
-				</ul> -->
-				<ul>
-					<li><b>Optional:</b></li>
-					<li>
-						- UHD für {@html get_price_string(['uhd'], 'jahr')} mtl.
-					</li>
-					<li>
-						- DAZN UNLIMITED im Jahresabo für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
-					</li>
-					<li>
-						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
-						für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €&nbsp;49, 1-2 Sky Q Mini für je einmalig
-						€&nbsp;29 (zur Leihe)
-					</li>
-					<li>
-						- Netflix Standard-Abo, HD/2 Geräte (+ {@html get_price_string(
-							['netflixstandard'],
-							'jahr'
-						)} mtl.)
-					</li>
-					<li>
-						- Netflix Premium-Abo, UHD/4 Geräte (+ {@html get_price_string(
-							['netflixpremium'],
-							'jahr'
-						)}
-						mtl.)
-					</li>
-					<li>- trendSports mtl. {@html get_price_string(['trendsports'], 'jahr')}</li>
-					<li>- 18+ für Blue Movie €&nbsp;0, einmalige Versandpauschale 18+ PIN</li>
-					<li>
-						- Sky Kids für {@html get_price_string(['kids'], 'jahr')} mtl.
-					</li>
-					<!-- <li>
-						- UHD für €&nbsp;4 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €&nbsp;5 mtl. mit Entertainment
-						(für Sat oder Kabel-Empfang)
-					</li>
-					<li>- DAZN jährlich für €&nbsp;24,99 mtl. oder DAZN monatlich für €&nbsp;29,99 mtl.</li>
-					<li>
-						- Multiscreen für €&nbsp;8 mtl. mit Entertainment Plus <mark>(20% Rabatt)</mark> oder €&nbsp;10 mtl.
-						mit Entertainment (Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig
-						€&nbsp;49, 1 Sky Q Mini für einmalig €&nbsp;29 oder OHNE zusätzliche Hardware)
-					</li>
-					<li>
-						- Netflix Standard-Abo, HD/2 Streams für €&nbsp;4 mtl. mit Entertainment Plus <mark
-							>(20% Rabatt)</mark
-						>
-						oder €&nbsp;5 mtl. mit Entertainment
-					</li>
-					<li>
-						- Netflix Premium-Abo, UHD/4 Streams für €&nbsp;8 mtl. mit Entertainment Plus <mark
-							>(20% Rabatt)</mark
-						>
-						oder €&nbsp;10 mtl. mit Entertainment
-					</li>
-					<li>- trendSports für €&nbsp;5,99 mtl.</li>
-					<li>- 18+ für Blue Movie €&nbsp;0, einmalige Versandpauschale 18+ PIN</li> -->
-				</ul>
-			</div>
-		</slot>
-	</div>
-	<div class="slot">
-		<slot />
+		<div class="wählbare_pakete">
+			<h2>Black Friday Deals Vertragsinfomationen</h2>
+			<p>
+				Angebot gilt mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
+				(anteilig) zzgl. 12 Monaten) bei Buchung von Sky Entertainment Plus, Sky Cinema, Sky
+				Fußball-Bundesliga, Sky Sport, Sky Kids, Sky UHD und Sky Go Plus zu mtl. € 40. Hinweis: UHD
+				ist nur bei Auswahl von Satellit oder Kabel verfügbar. Das Abonnement verlängert sich
+				automatisch nach der Mindestvertragslaufzeit auf unbestimmte Zeit zu mtl. € 81,50 (mtl. €
+				76,50 ohne UHD-Buchung), wenn es nicht mit einer Frist von einem Monat zum Ende der
+				Mindestvertragslaufzeit gekündigt wird. Während der unbestimmten Laufzeit beträgt die
+				Kündigungsfrist 1 Monat.
+			</p>
+			<ul>
+				<li><b>Optional:</b></li>
+				<li>
+					- UHD für {@html get_price_string(['uhd'], 'jahr')} mtl.
+				</li>
+				<li>
+					- DAZN UNLIMITED im Jahresabo für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
+				</li>
+				<li>
+					- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
+					für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €&nbsp;49, 1-2 Sky Q Mini für je einmalig
+					€&nbsp;29 (zur Leihe)
+				</li>
+				<li>
+					- Netflix Standard-Abo, HD/2 Geräte (+ {@html get_price_string(
+						['netflixstandard'],
+						'jahr'
+					)} mtl.)
+				</li>
+				<li>
+					- Netflix Premium-Abo, UHD/4 Geräte (+ {@html get_price_string(
+						['netflixpremium'],
+						'jahr'
+					)}
+					mtl.)
+				</li>
+				<li>- trendSports mtl. {@html get_price_string(['trendsports'], 'jahr')}</li>
+				<li>- 18+ für Blue Movie €&nbsp;0, einmalige Versandpauschale 18+ PIN</li>
+				<li>
+					- Sky Kids für {@html get_price_string(['kids'], 'jahr')} mtl.
+				</li>
+			</ul>
+		</div>
 	</div>
 	<div>
 		<h3 class={title_classes}>Laufzeit und Preise bei Verlängerung:</h3>
 		<p>
-			Das Abonnement verlängert sich automatisch nach der Mindestvertragslaufzeit auf unbestimmte
-			Zeit, wenn es nicht mit einer Frist von einem Monat zum Ende der Mindestvertragslaufzeit
-			gekündigt wird. Im Anschluss ist das Abonnement mit selber Frist monatlich kündbar. Im Falle
-			der Verlängerung gelten folgende Preise:
+			Das Abonnement kann erstmals mit einer Frist von einem Monat zum Ablauf der
+			Mindestvertragslaufzeit gekündigt werden. Das Abonnement verlängert sich ansonsten automatisch
+			jeweils um einen weiteren Monat, wenn es nicht jeweils mit einer Frist von einem Monat zum
+			Ablauf der Laufzeit, gekündigt wird. Im Falle der Verlängerung gelten folgende Preise:
+			<br /><br />
+			Entertainment Plus + Sport + Bundesliga + Cinema + Kids + UHD + Sky Go Plus für € 81,50 (mtl. €
+			76,50 ohne UHD-Buchung) Hinweis: UHD ist nur bei Auswahl von Satellit oder Kabel verfügbar.
 		</p>
-		<div class="laufzeit">
-			<ul>
-				<li>
-					Entertainment für {@html get_price_string(['entertainment'], 'monat')} mtl.
-				</li>
-				<li>
-					Entertainment + Sport für {@html get_price_string(['entertainment', 'sport'], 'monat')} mtl.
-				</li>
-				<li>
-					Entertainment + Cinema für {@html get_price_string(['entertainment', 'cinema'], 'monat')} mtl.
-				</li>
-				<li>
-					Entertainment + Fußball-Bundesliga für {@html get_price_string(
-						['entertainment', 'bundesliga'],
-						'monat'
-					)} mtl.
-				</li>
-				<li>
-					Entertainment + Sport + Cinema für {@html get_price_string(
-						['entertainment', 'sport', 'cinema'],
-						'monat'
-					)} mtl.
-				</li>
-				<li>
-					Entertainment + Sport + Fußball-Bundesliga für {@html get_price_string(
-						['entertainment', 'sport', 'bundesliga'],
-						'monat'
-					)} mtl.
-				</li>
-				<li>
-					Entertainment + Cinema + Fußball-Bundesliga für {@html get_price_string(
-						['entertainment', 'cinema', 'bundesliga'],
-						'monat'
-					)} mtl.
-				</li>
-				<li>
-					Entertainment + Sport + Cinema + Fußball-Bundesliga für {@html get_price_string(
-						['entertainment', 'sport', 'cinema', 'bundesliga'],
-						'monat'
-					)} mtl.
-				</li>
-			</ul>
-		</div>
-		<ul class="laufzeit">
-			<li>
-				Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'monat')} mtl.
-			</li>
-			<li>
-				Entertainment Plus + Sport für {@html get_price_string(
-					['entertainmentplus', 'sport'],
-					'monat'
-				)} mtl.
-			</li>
-			<li>
-				Entertainment Plus + Cinema für {@html get_price_string(
-					['entertainmentplus', 'cinema'],
-					'monat'
-				)} mtl.
-			</li>
-			<li>
-				Entertainment Plus + Fußball-Bundesliga für {@html get_price_string(
-					['entertainmentplus', 'bundesliga'],
-					'monat'
-				)} mtl.
-			</li>
-			<li>
-				Entertainment Plus + Sport + Fußball-Bundesliga für {@html get_price_string(
-					['entertainmentplus', 'sport', 'bundesliga'],
-					'monat'
-				)} mtl.
-			</li>
-			<li>
-				Entertainment Plus + Sport + Cinema für {@html get_price_string(
-					['entertainmentplus', 'sport', 'cinema'],
-					'monat'
-				)} mtl.
-			</li>
-
-			<li>
-				Entertainment Plus + Cinema + Fußball-Bundesliga für {@html get_price_string(
-					['entertainmentplus', 'cinema', 'bundesliga'],
-					'monat'
-				)} mtl.
-			</li>
-			<li>
-				Entertainment Plus + Sport + Cinema + Fußball-Bundesliga für {@html get_price_string(
-					['entertainmentplus', 'cinema', 'bundesliga', 'sport'],
-					'monat'
-				)} mtl.
-			</li>
-		</ul>
-		<ul class="laufzeit">
-			<li>UHD {@html get_price_string(['uhd'], 'monat')} mtl.</li>
-			<li>
-				DAZN Unlimited {@html get_price_string(['dazn_unlimited'], 'monat')} mtl.
-			</li>
-			<li>Multiscreen {@html get_price_string(['multiscreen'], 'monat')} mtl.</li>
-			<li>
-				Netflix Standard-Abo, HD/2 Geräte (+{@html get_price_string(['netflixstandard'], 'monat')} mtl.)
-			</li>
-			<li>
-				Netflix Premium-Abo, UHD/4 Geräte (+{@html get_price_string(['netflixpremium'], 'monat')} mtl.)
-			</li>
-			<li>Sky Kids {@html get_price_string(['kids'], 'monat')} mtl.</li>
-		</ul>
 	</div>
 	<div>
 		<h3 class={title_classes}>Ersparnis:</h3>
 		<p>
-			Die Ersparnis bis zu {@html get_savings_string([
-				'entertainmentplus',
-				'cinema',
-				'bundesliga',
-				'sport'
-			])} ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im Vergleich zum Sky Standard-Jahresabonnementspreis
-			sowie aus dem rabattierten DAZN Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis.
+			Die Ersparnis in Höhe von bis zu € 348 ergibt sich aus dem monatlichen Preis während der
+			rabattierten Laufzeit im Vergleich zum monatlichen Preis der nach der rabattierten Laufzeit
+			automatisch anfällt.
+		</p>
+	</div>
+	<div>
+		<h3 class={title_classes}>Gutschein:</h3>
+		<p>
+			Bei Buchung von Sky Entertainment Plus, Sky Cinema, Sky Fußball-Bundesliga, Sky Sport, Sky
+			Kids, Sky UHD und Sky Go Plus zu mtl. € 40 erhält der Kunde einen Wertgutschein im Wert von €
+			100 durch Sky. Der Gutschein wird nach Ablauf der Widerrufsfrist und positiver Bonitätsprüfung
+			sowie des ersten positiven Zahlungseingangs bei Sky, in Form eines digitalen Gutscheincodes
+			ca. 6 Wochen nach Abonnementvertragsabschluss per E-Mail durch Sky direkt versendet. Mit
+			diesem Gutscheincode kann über sky.cadooz.com ein Gutschein oder mehrere Gutscheine im
+			Gesamtwert von € 100 bei den von Cadooz gelisteten Anbietern (z.B. Amazon, Media Markt und
+			Zalando) bestellt werden. Der Versand des Gutscheins erfolgt über Cadooz. Barauszahlung sowie
+			Umtausch ausgeschlossen.
 		</p>
 	</div>
 	<div>
