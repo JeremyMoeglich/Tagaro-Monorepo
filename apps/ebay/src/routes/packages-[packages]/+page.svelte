@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import type { package_id } from 'asset_library/assets/packages';
-	import { bonus, bonus_string, get_price_string } from 'asset_library/prices';
+	import { bonus, get_price_string } from 'asset_library/prices';
 	import { make_url } from 'frontend/url';
 	import Header from './header.svelte';
 	import { dev } from '$app/environment';
@@ -58,10 +58,7 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				`Sky Komplett Abo inkl. Netflix & Paramount+ für ${get_price_string(
-					['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-					'jahr'
-				)} mtl. Dazu €&nbsp;${bonus} Bonus*`
+				`Alles von Sky für € 40 mtl. - Inkl. Paramount+, Netlix, UHD, Kids & Sky Go Plus*`
 			],
 			[
 				'allgemein',
@@ -89,21 +86,20 @@
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					{#if bonus > 0}
-						<li>
-							✓ Bonus von TAGARO: {@html bonus_string()} Bonus on top bei erfolgreichem Vertragsabschluss
-						</li>
-					{/if}
+					<li>
+						✓ Erleben Sie das beste Angebot des Jahres von Sky mit dem aktuellen Black Friday Deal
+					</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
-					Entdecken Sie die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
-					Buchung des Cinema Pakets, erhalten Sie Paramount+ dazu. Zusätzlich überweisen wir Ihnen
-					einen Bonus von € {bonus}. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
-					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre
-					PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online
-					sind weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie
-					profitieren bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger
-					Erfahrung seit 2006.
+					Im Abo inklusive sind die Pakete Entertainment Plus mit Netflix, Cinema inkl.
+					Paramount+, Sport, Bundesliga, Kids, UHD (nur bei Sat- oder Kabel-Empfang) sowie Sky Go
+					Plus mit 3 parallelen Streams. Darüber hinaus erhalten Sie von Sky einen Wunschgutschein
+					im Wert von € 100. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
+					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre PAYBACK
+					Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind
+					weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren
+					bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung
+					seit 2006.
 				</p>
 			</div>
 			<img
@@ -118,8 +114,7 @@
 			<Block title="Abovermittlung mit TAGARO">
 				<p>
 					Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur
-					Aboabwicklung zugesandt. Die Anmeldung erfolgt durch uns im Anschluss umgehend. Als
-					Dankeschön erhalten Sie nach 8 Wochen eine €&nbsp;{bonus} Prämie auf Ihr Konto überwiesen.
+					Aboabwicklung zugesandt. Die Anmeldung erfolgt durch uns im Anschluss umgehend.
 				</p>
 				<p>
 					Wir vermitteln Sky Verträge bereits seit 2006 und stehen für eine einfache und zügige
@@ -156,9 +151,9 @@
 
 			<div class="max-w-7xl w-full p-5">
 				<Line />
-				<h2 class="text-3xl mb-7 mt-14 font-bold text-center">*Angebotsdetails für Neukunden</h2>
+				<h2 class="text-3xl mb-7 mt-14 font-bold text-center">*Angebotsdetails</h2>
 				<Vertragsinfomationen />
-				<div class="mb-4" />
+				<div class="mb-16" />
 				<Line space={'0px'} />
 			</div>
 

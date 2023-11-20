@@ -23,7 +23,9 @@
 	.outer {
 		display: flex;
 		justify-content: center;
-		padding: 50px;
+		padding: 35px;
+		padding-left: 50px;
+		padding-right: 50px;
 		background-color: rgb(230, 230, 230);
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.438);
         max-width: 100%;

@@ -6,15 +6,15 @@
 	import { tabindex } from 'frontend/tabindex';
 </script>
 
-<ExpandableBox title={'*Vertragsinformationen für Neukunden'}>
+<ExpandableBox title={'*Vertragsinformationen'}>
 	<Tabs tabs={[
 		{
 			component: BlackFridayVertragsinfomationen,
-			name: 'Black Friday'
+			name: 'Black Friday Deals (Komplett)'
 		},
 		{
 			component: Vertragsinfomationen,
-			name: 'Normal'
+			name: 'Angebote mit weniger Paketen'
 		}
 	]} bind:active={$tabindex}/>
 </ExpandableBox>

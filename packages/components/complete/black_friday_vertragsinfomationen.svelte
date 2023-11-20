@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { bonus, get_price_string } from 'asset_library/prices';
+	import { get_price_string } from 'asset_library/prices';
 
 	const title_classes = 'light';
 </script>
@@ -7,7 +7,7 @@
 <div class="vertragsinfomationen_outer">
 	<div>
 		<div class="wählbare_pakete">
-			<h2>Black Friday Deals Vertragsinfomationen</h2>
+			<h3 class={title_classes}>Black Friday Deals Vertragsinfomationen:</h3>
 			<p>
 				Angebot gilt mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
 				(anteilig) zzgl. 12 Monaten) bei Buchung von Sky Entertainment Plus, Sky Cinema, Sky
@@ -46,9 +46,6 @@
 				</li>
 				<li>- trendSports mtl. {@html get_price_string(['trendsports'], 'jahr')}</li>
 				<li>- 18+ für Blue Movie €&nbsp;0, einmalige Versandpauschale 18+ PIN</li>
-				<li>
-					- Sky Kids für {@html get_price_string(['kids'], 'jahr')} mtl.
-				</li>
 			</ul>
 		</div>
 	</div>
@@ -164,18 +161,17 @@
 	<div>
 		<h3 class={title_classes}>Sky Go inkl. Download:</h3>
 		<p>
-			Sky Go für 1 Stream gleichzeitig ist kostenlos im Abonnement enthalten. Mit Sky Go können
-			einzelne Inhalte des Sky Abonnements (ausgenommen gewerbliche und Sky Ticket Abonnements) über
-			das Internet (ausgeschlossen ist die Verbindung über einen VPN-Zugang) mit einem mobilen
-			Endgerät (Smartphones/Tablets ab iOS 9.0, Android 4.2, Windows 7, MacOS 10.9) empfangen und
-			abgerufen werden. Die verfügbaren Inhalte sind abhängig von den gebuchten Sky Programmpaketen.
-			Empfohlene Bandbreite 1 Mbit/s für SD-Qualität, 6 Mbit/s für HD-Qualität. Kunden können Sky Go
-			gemäß EU-Portabilitätsverordnung auch während eines vorübergehenden Aufenthalts in einem
-			anderen EU-Mitgliedstaat als Österreich oder Deutschland nutzen. Mit der Download-Funktion
-			können bis zu 25 Titel (max. 5 Spielfilme) gleichzeitig und jeder Titel kann nur zweimal im
-			Kalenderjahr heruntergeladen werden. Die heruntergeladenen Titel bleiben jeweils 30 Tage
-			verfügbar. Nach Beginn der Wiedergabe stehen die Titel 48 Stunden lang zur Verfügung und
-			werden anschließend gesperrt.
+			Mit Sky Go können einzelne Inhalte des Sky Abonnements (ausgenommen gewerbliche und Sky Ticket
+			Abonnements) über das Internet (ausgeschlossen ist die Verbindung über einen VPN-Zugang) mit
+			einem mobilen Endgerät (Smartphones/Tablets ab iOS 9.0, Android 4.2, Windows 7, MacOS 10.9)
+			empfangen und abgerufen werden. Die verfügbaren Inhalte sind abhängig von den gebuchten Sky
+			Programmpaketen. Empfohlene Bandbreite 1 Mbit/s für SD-Qualität, 6 Mbit/s für HD-Qualität.
+			Kunden können Sky Go gemäß EU-Portabilitätsverordnung auch während eines vorübergehenden
+			Aufenthalts in einem anderen EU-Mitgliedstaat als Österreich oder Deutschland nutzen. Mit der
+			Download-Funktion können bis zu 25 Titel (max. 5 Spielfilme) gleichzeitig und jeder Titel kann
+			nur zweimal im Kalenderjahr heruntergeladen werden. Die heruntergeladenen Titel bleiben
+			jeweils 30 Tage verfügbar. Nach Beginn der Wiedergabe stehen die Titel 48 Stunden lang zur
+			Verfügung und werden anschließend gesperrt.
 		</p>
 	</div>
 	<div>
@@ -280,14 +276,6 @@
 			7 Tagen nach Erhalt der Ware.
 		</p>
 	</div>
-	<div>
-		<h3 class={title_classes}>€&nbsp;{bonus} Prämie von uns:</h3>
-		<p>
-			Als Dankeschön erhalten Sie eine Prämie von €&nbsp;{bonus} auf Ihr Konto überwiesen. Sie erhalten
-			den Betrag nach ca. 8 Wochen nach dem Abobeginn gutgeschrieben.
-		</p>
-	</div>
-	<br />
 </div>
 
 <style>

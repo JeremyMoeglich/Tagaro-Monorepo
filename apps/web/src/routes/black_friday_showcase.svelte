@@ -3,7 +3,7 @@
 </script>
 
 <div class="bg-slate-900 py-8 shade w-full flex flex-col items-center">
-	<h1 class="gradient text-center glow mb-0">
+	<h1 class="no_gradient text-white text-center glow mb-0">
 		Alles von Sky inklusive Paramount+ und Netflix ab € 40 mtl.*
 	</h1>
 	<h2 class="no_gradient text-white text-center mt-0 mb-3">

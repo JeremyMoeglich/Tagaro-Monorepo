@@ -10,7 +10,7 @@
 	import MainShowcase from './main_showcase.svelte';
 </script>
 
-<Meta /><
+<Meta />
 
 <div>
 	{#if $tabindex === 0}
@@ -21,11 +21,11 @@
 	<Tabs
 		tabs={[
 			{
-				name: 'Black Friday',
+				name: 'Black Friday Deals (Komplett)',
 				component: Wunschgutschein
 			},
 			{
-				name: 'Angebote',
+				name: 'Angebote mit weniger Paketen',
 				component: AngeboteRotator
 			}
 		]}
