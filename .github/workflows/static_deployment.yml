@@ -26,6 +26,7 @@ jobs:
 
       - name: lint, check, build
         run: |
+           pnpm build:static --scope web
 #          pnpm lint --scope web
 #          pnpm check --scope web
 
