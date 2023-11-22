@@ -6,7 +6,7 @@
 	"dependencies": {
 		"@types/lodash-es": "^4.17.7",
 		"config": "workspace:*",
-		"functional-utilities": "2.2.1",
+		"functional-utilities": "3.8.0",
 		"lodash-es": "^4.17.21",
 		"ts-key-enum": "^2.0.12"
 	}

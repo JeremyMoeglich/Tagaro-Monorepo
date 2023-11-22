@@ -7,7 +7,7 @@
 		"config": "workspace:*",
 		"dayjs": "^1.11.7",
 		"emails": "workspace:*",
-		"functional-utilities": "^2.2.1",
+		"functional-utilities": "^3.8.0",
 		"ibantools": "^4.3.2",
 		"lodash-es": "^4.17.21",
 		"string-similarity": "^4.0.4",
