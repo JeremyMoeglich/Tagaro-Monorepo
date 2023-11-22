@@ -29,6 +29,11 @@ body {
 
 :root {
 	--block-width: min(1000px, calc(100vw - 70px));
+	--top_bar_size: max(min(230px - 11vw, 180px), 100px);
+}
+
+.showcase_size {
+	min-height: calc(100vh - var(--top_bar_size) - 38px);
 }
 
 $gradient-safezone: 5px;

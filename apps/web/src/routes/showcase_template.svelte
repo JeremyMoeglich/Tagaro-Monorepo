@@ -45,7 +45,7 @@
 	] satisfies priceable_asset_id[];
 </script>
 
-<div class="alignment" style:margin-top={`${top_margin}px`}>
+<div class="alignment showcase_size" style:margin-top={`${top_margin}px`}>
 	<div class="side_alignment">
 		{#if !primary_image && !hide_left}
 			<button class="left_side" on:click={async () => load_form('Showcase_images')}>

@@ -107,7 +107,6 @@
 </div>
 
 <style lang="scss">
-	$top_bar_size: max(min(230px - 11vw, 180px), 100px);
 	.top_header_container {
 		position: absolute;
 		left: 0px;
@@ -122,7 +121,7 @@
 		justify-content: left;
 	}
 	.header_center_alignment {
-		padding-top: calc($top_bar_size / 2 - 35px);
+		padding-top: calc(var(--top_bar_size) / 2 - 35px);
 		display: flex;
 		align-items: center;
 		height: 70px;
@@ -131,7 +130,7 @@
 	.header_blue_bar {
 		background: linear-gradient(to right, #49358d, #027fc7);
 		min-height: 100px;
-		min-height: $top_bar_size;
+		min-height: var(--top_bar_size);
 		min-width: 100vw;
 	}
 	.header_logo {

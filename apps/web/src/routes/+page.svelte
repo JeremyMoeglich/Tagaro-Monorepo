@@ -8,16 +8,13 @@
 	import { tabindex } from 'frontend/tabindex';
 	import Wunschgutschein from 'components/complete/wunschgutschein.svelte';
 	import MainShowcase from './main_showcase.svelte';
+	import EqualSwap from 'components/layout/equal_swap.svelte';
 </script>
 
 <Meta />
 
 <div>
-	{#if $tabindex === 0}
-		<BlackFridayShowcase />
-	{:else}
-		<MainShowcase />
-	{/if}
+	<EqualSwap components={[BlackFridayShowcase, MainShowcase]} bind:active={$tabindex} />
 	<Tabs
 		tabs={[
 			{

@@ -2,7 +2,7 @@
 	import AboformularButton from 'components/elements/interactive/buttons/aboformular_button.svelte';
 </script>
 
-<div class="bg-slate-900 py-8 shade w-full flex flex-col items-center">
+<div class="bg-slate-900 py-8 shade w-full flex flex-col items-center showcase_size h-full">
 	<h1 class="no_gradient text-white text-center glow mb-0">
 		Alles von Sky inklusive Paramount+ und Netflix ab € 40 mtl.*
 	</h1>
