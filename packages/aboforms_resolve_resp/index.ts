@@ -43,7 +43,7 @@ const map_empfangsart = (empfangsart: SkyFormData['empfangsart']): string =>
 		cable: 'Kabel',
 		satellit: 'Sat',
 		internet: 'Internet'
-	}[empfangsart]);
+	})[empfangsart];
 
 function capitalize(str: string): string {
 	// maps the first letter of each word to uppercase
@@ -264,24 +264,24 @@ export function generate_form_response_email(
 		<b>Die Lieferung erfolgt täglich direkt von Sky an Ihre angegebene ${
 			form.abweichende_lieferadresse ? 'abweichende Lieferadresse' : 'Adresse'
 		}${
-		form.abweichende_lieferadresse &&
-		(() => {
-			if (!form.hausnummer_oder_dhl_kundennummer_liefer) {
-				return false;
-			}
+			form.abweichende_lieferadresse &&
+			(() => {
+				if (!form.hausnummer_oder_dhl_kundennummer_liefer) {
+					return false;
+				}
 
-			const shortened = form.hausnummer_oder_dhl_kundennummer_liefer.trim();
-			if (shortened.length <= 5) {
-				return false;
-			}
-			if (!parseInt(shortened)) {
-				return false;
-			}
-			return true;
-		})()
-			? ' (Packstation)'
-			: ''
-	}.</b>
+				const shortened = form.hausnummer_oder_dhl_kundennummer_liefer.trim();
+				if (shortened.length <= 5) {
+					return false;
+				}
+				if (!parseInt(shortened)) {
+					return false;
+				}
+				return true;
+			})()
+				? ' (Packstation)'
+				: ''
+		}.</b>
 		<b>Bei Fragen zum Versandstatus können Sie Sky unter der Kundenhotline 089 - 99 72 79 00 kontaktieren (gebührenfrei).</b>
 
 		<b>Dazu erhalten Sie von uns nach ca. 8 Wochen einen Bonus von € ${bonus} auf Ihr Konto überwiesen.</b>

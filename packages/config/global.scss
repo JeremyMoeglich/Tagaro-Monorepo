@@ -47,7 +47,14 @@ $gradient-safezone: 5px;
 }
 
 .color_text {
-	background: linear-gradient(142deg, rgb(253, 122, 29) 0%, rgb(253, 29, 29) 21%, rgb(194, 64, 159) 51%, rgb(106, 92, 186) 77%, rgb(29, 162, 253) 100%);
+	background: linear-gradient(
+		142deg,
+		rgb(253, 122, 29) 0%,
+		rgb(253, 29, 29) 21%,
+		rgb(194, 64, 159) 51%,
+		rgb(106, 92, 186) 77%,
+		rgb(29, 162, 253) 100%
+	);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;

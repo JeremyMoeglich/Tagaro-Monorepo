@@ -20,10 +20,13 @@ export function parse_to_date<S extends ZodObjectAny, K extends keyof z.infer<S>
 		}
 	});
 
-	const date_data = keys.reduce((acc, key) => {
-		acc[key] = new Date((obj as Record<K, string>)[key]);
-		return acc;
-	}, {} as Record<K, Date>);
+	const date_data = keys.reduce(
+		(acc, key) => {
+			acc[key] = new Date((obj as Record<K, string>)[key]);
+			return acc;
+		},
+		{} as Record<K, Date>
+	);
 
 	return schema.parse(Object.assign({}, obj, date_data));
 }

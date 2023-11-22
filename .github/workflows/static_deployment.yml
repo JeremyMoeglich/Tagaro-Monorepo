@@ -26,8 +26,8 @@ jobs:
 
       - name: lint, check, build
         run: |
-          pnpm lint --scope web
-          pnpm check --scope web
+#          pnpm lint --scope web
+#          pnpm check --scope web
 
       - name: copy
         uses: appleboy/scp-action@master

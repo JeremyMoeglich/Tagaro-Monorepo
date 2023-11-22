@@ -56,14 +56,14 @@ type TFieldType<T extends Field> = Simplify<
 	T extends { type: 'text'; name: string }
 		? ToObj<T['name'], string>
 		: T extends { type: 'number'; name: string }
-		? ToObj<T['name'], number>
-		: T extends Option
-		? OptionType<T>
-		: T extends Alt
-		? AltType<T>
-		: T extends { type: 'subfield'; name: string; fields: Fields }
-		? ToObj<T['name'], FieldsType<T['fields']>> // Removing this line removes the error, but I don't want to remove subfields
-		: never
+		  ? ToObj<T['name'], number>
+		  : T extends Option
+		    ? OptionType<T>
+		    : T extends Alt
+		      ? AltType<T>
+		      : T extends { type: 'subfield'; name: string; fields: Fields }
+		        ? ToObj<T['name'], FieldsType<T['fields']>> // Removing this line removes the error, but I don't want to remove subfields
+		        : never
 >;
 
 type OptionType<T extends Option> = {
@@ -83,8 +83,8 @@ type MergeTuple<T extends ReadonlyArray<any>> = T extends readonly [
 ]
 	? MergeTuple<[Head & Next, ...Rest]>
 	: T extends readonly [infer Last]
-	? Last
-	: Record<string, never>;
+	  ? Last
+	  : Record<string, never>;
 
 // @ts-expect-error - This type is too deep for ts
 export type FieldsType<T extends Fields> = MergeTuple<TFieldsType<T>>;
