@@ -2,13 +2,13 @@
 	"name": "components",
 	"version": "0.1.0",
 	"devDependencies": {
-		"@types/dateformat": "^5.0.0",
-		"sass": "^1.62.1"
+		"@types/dateformat": "^5.0.2",
+		"sass": "^1.69.5"
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/kit": "1.18.0",
-		"@types/lodash-es": "^4.17.7",
+		"@sveltejs/kit": "1.27.6",
+		"@types/lodash-es": "^4.17.12",
 		"aboforms": "workspace:*",
 		"aboforms_resolve_resp": "workspace:^1.0.0",
 		"asset_library": "workspace:*",
@@ -18,10 +18,10 @@
 		"functional-utilities": "^3.8.0",
 		"lodash-es": "^4.17.21",
 		"open_constants": "workspace:*",
-		"svelte": "^3.59.1",
-		"svelte-preprocess": "^5.0.3",
-		"type-fest": "^3.11.0",
+		"svelte": "^4.2.7",
+		"svelte-preprocess": "^5.1.1",
+		"type-fest": "^4.8.2",
 		"utils": "workspace:*",
-		"vite": "^4.3.8"
+		"vite": "^4.5.0"
 	}
 }

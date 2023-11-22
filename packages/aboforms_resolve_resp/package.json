@@ -4,7 +4,7 @@
 		"aboforms": "workspace:*",
 		"asset_library": "workspace:*",
 		"config": "workspace:*",
-		"dayjs": "^1.11.7",
+		"dayjs": "^1.11.10",
 		"emails": "workspace:*",
 		"functional-utilities": "^3.8.0",
 		"test": "^3.3.0"
