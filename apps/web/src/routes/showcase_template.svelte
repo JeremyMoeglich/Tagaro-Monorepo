@@ -45,8 +45,8 @@
 	] satisfies priceable_asset_id[];
 </script>
 
-<div class="alignment showcase_size" style:margin-top={`${top_margin}px`}>
-	<div class="side_alignment">
+<div class="alignment showcase_size" >
+	<div class="side_alignment" style:padding-top={`${top_margin}px`}>
 		{#if !primary_image && !hide_left}
 			<button class="left_side" on:click={async () => load_form('Showcase_images')}>
 				{#each left_badges as badge}
@@ -139,7 +139,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 70px;
 	}
 	.side_bottom_images {
 		display: flex;
@@ -262,6 +261,7 @@
 	}
 	.button {
 		margin-top: 20px;
+		margin-bottom: 70px;
 	}
 
 	.side_bottom_images {

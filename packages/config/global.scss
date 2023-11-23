@@ -34,7 +34,33 @@ body {
 
 .showcase_size {
 	min-height: calc(100vh - var(--top_bar_size) - 38px);
+	height: 870px;
 }
+
+@media screen and (max-width: 700px) {
+	.showcase_size {
+		height: 900px
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.showcase_size {
+		height: 1000px
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.showcase_size {
+		height: 1100px
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.showcase_size {
+		height: 1300px
+	}
+}
+
 
 $gradient-safezone: 5px;
 
