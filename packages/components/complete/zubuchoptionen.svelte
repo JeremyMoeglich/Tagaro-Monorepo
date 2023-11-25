@@ -95,7 +95,7 @@
 				return true;
 			}
 
-			if (z.image.includes('multiscreen') || z.image.includes('kids')) {
+			if (z.image.includes('uhd') || z.image.includes('kids')) {
 				return false;
 			}
 			return true;

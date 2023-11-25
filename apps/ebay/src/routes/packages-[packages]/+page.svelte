@@ -88,7 +88,7 @@
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
 					<li>
-						✓ Erleben Sie das beste Angebot des Jahres von Sky mit dem aktuellen Black Friday Deal
+						✓ Bis zum 26.11.: Das beste Angebot des Jahres von Sky mit dem aktuellen Black Friday Deal!
 					</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
