@@ -6,6 +6,7 @@
 	import Header from './header.svelte';
 	import { dev } from '$app/environment';
 	//import PackageTable from 'components/complete/package_table.svelte';
+	import Zubuchoptionen from 'components/complete/zubuchoptionen.svelte';
 	import Wunschgutschein from 'components/complete/wunschgutschein.svelte';
 	import Inklusive from 'components/complete/inklusive.svelte';
 	import AllOverviews from '../../../../../packages/components/complete/all_overviews.svelte';
@@ -91,15 +92,14 @@
 					</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
-					Im Abo inklusive sind die Pakete Entertainment Plus mit Netflix, Cinema inkl.
-					Paramount+, Sport, Bundesliga, Kids, UHD (nur bei Sat- oder Kabel-Empfang) sowie Sky Go
-					Plus mit 3 parallelen Streams. Darüber hinaus erhalten Sie von Sky einen Wunschgutschein
-					im Wert von € 100. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
-					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre PAYBACK
-					Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind
-					weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren
-					bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung
-					seit 2006.
+					Im Abo inklusive sind die Pakete Entertainment Plus mit Netflix, Cinema inkl. Paramount+,
+					Sport, Bundesliga, Kids, UHD (nur bei Sat- oder Kabel-Empfang) sowie Sky Go Plus mit 3
+					parallelen Streams. Darüber hinaus erhalten Sie von Sky einen Wunschgutschein im Wert von
+					€ 100. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche
+					Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre PAYBACK Nummer für 500
+					Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind weitere Punkte
+					möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren bei TAGARO von
+					einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung seit 2006.
 				</p>
 			</div>
 			<img
@@ -107,10 +107,11 @@
 				src={make_url('/images/visuals/sky_bf_23_2.png', dev)}
 				alt=""
 			/>
-			<!-- <div class="max-w-4xl w-full">
-				<PackageTable />
-			</div> -->
 			<Wunschgutschein />
+			<div class="max-w-4xl w-full">
+				<!-- <PackageTable /> -->
+				<Zubuchoptionen variant="black"/>
+			</div>
 			<Block title="Abovermittlung mit TAGARO">
 				<p>
 					Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur

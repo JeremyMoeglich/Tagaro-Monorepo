@@ -8,6 +8,7 @@
 		image: string;
 		mobile_order?: number;
 	}
+	export let variant: 'black' | 'default' = 'default';
 
 	const zubuchoptionen: Zubuchoption[] = [
 		{
@@ -89,7 +90,16 @@
 <div class="outer">
 	<h2 class="title large center">Zubuchoptionen</h2>
 	<div class="grid">
-		{#each zubuchoptionen as zubuchoption}
+		{#each zubuchoptionen.filter((z) => {
+			if (variant === 'default') {
+				return true;
+			}
+
+			if (z.image.includes('multiscreen') || z.image.includes('kids')) {
+				return false;
+			}
+			return true;
+		}) as zubuchoption}
 			<div class="zubuchoption" style:--order={zubuchoption.mobile_order}>
 				<img src={make_url(zubuchoption.image, dev)} alt="" />
 				<div class="text">
