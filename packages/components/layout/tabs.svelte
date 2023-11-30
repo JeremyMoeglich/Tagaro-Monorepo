@@ -3,7 +3,7 @@
 
 	export let tabs: {
 		name: string;
-		component: typeof SvelteComponent<{}>;
+		component: typeof SvelteComponent<{}> | undefined;
 	}[];
     export let active = 0;
 </script>
@@ -22,7 +22,7 @@
     </div>
     <div>
         {#each tabs as { component }, i}
-            {#if i === active}
+            {#if i === active && component}
                 <svelte:component this={component} />
             {/if}
         {/each}

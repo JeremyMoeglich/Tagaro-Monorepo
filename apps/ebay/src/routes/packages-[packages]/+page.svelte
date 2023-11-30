@@ -107,7 +107,7 @@
 				src={make_url('/images/visuals/sky_bf_23_2.png', dev)}
 				alt=""
 			/>
-			<Wunschgutschein />
+			<!-- <Wunschgutschein /> -->
 			<div class="max-w-4xl w-full">
 				<!-- <PackageTable /> -->
 				<Zubuchoptionen variant="black"/>

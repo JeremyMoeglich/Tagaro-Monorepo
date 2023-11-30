@@ -7,7 +7,7 @@
 <div class="vertragsinfomationen_outer">
 	<div>
 		<div class="wählbare_pakete">
-			<h3 class={title_classes}>Black Friday Deals Vertragsinfomationen:</h3>
+			<h3 class={title_classes}>X-Mas Special Vertragsinfomationen:</h3>
 			<p>
 				Angebot gilt mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
 				(anteilig) zzgl. 12 Monaten) bei Buchung von Sky Entertainment Plus, Sky Cinema, Sky
@@ -67,7 +67,7 @@
 			automatisch anfällt.
 		</p>
 	</div>
-	<div>
+	<!-- <div>
 		<h3 class={title_classes}>Gutschein:</h3>
 		<p>
 			Bei Buchung von Sky Entertainment Plus, Sky Cinema, Sky Fußball-Bundesliga, Sky Sport, Sky
@@ -80,7 +80,7 @@
 			Zalando) bestellt werden. Der Versand des Gutscheins erfolgt über Cadooz. Barauszahlung sowie
 			Umtausch ausgeschlossen.
 		</p>
-	</div>
+	</div> -->
 	<div>
 		<h3 class={title_classes}>UHD/Dolby Atmos:</h3>
 		<p>

@@ -10,7 +10,7 @@
 	<Tabs tabs={[
 		{
 			component: BlackFridayVertragsinfomationen,
-			name: 'Black Friday Deals (Komplett)'
+			name: 'X-Mas Special (Komplett)'
 		},
 		{
 			component: Vertragsinfomationen,

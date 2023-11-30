@@ -21,8 +21,8 @@
 	<Tabs
 		tabs={[
 			{
-				name: 'Black Friday Deals (Komplett)',
-				component: Wunschgutschein
+				name: 'X-Mas Special (Komplett)',
+				component: undefined
 			},
 			{
 				name: 'Angebote mit weniger Paketen',
