@@ -34,6 +34,16 @@
 	<VertragsinfomationenBox />
 </div>
 
+<div class="invisible">
+	<a href="/angebote/entertainmentplus">.</a>
+	<a href="/angebote/cinema-entertainmentplus">.</a>
+	<a href="/angebote/sport-entertainment">.</a>
+	<a href="/angebote/sport-entertainmentplus">.</a>
+	<a href="/angebote/bundesliga-entertainment">.</a>
+	<a href="/angebote/bundesliga-entertainmentplus">.</a>
+	<a href="/angebote/kids-entertainmentplus">.</a>
+</div>
+
 <style>
 	div {
 		margin-bottom: 50px;
