@@ -6,7 +6,6 @@
 	import Meta from './meta.svelte';
 	import BlackFridayShowcase from './black_friday_showcase.svelte';
 	import { tabindex } from 'frontend/tabindex';
-	import Wunschgutschein from 'components/complete/wunschgutschein.svelte';
 	import MainShowcase from './main_showcase.svelte';
 </script>
 

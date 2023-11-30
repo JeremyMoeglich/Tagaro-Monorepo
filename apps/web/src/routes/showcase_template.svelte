@@ -47,7 +47,7 @@
 
 <div class="alignment showcase_size" >
 	<div class="side_alignment" style:padding-top={`${top_margin}px`}>
-		{#if !primary_image && !hide_left}
+		{#if !hide_left}
 			<button class="left_side" on:click={async () => load_form('Showcase_images')}>
 				{#each left_badges as badge}
 					<img src={badge} alt="" class="wrap_add" />
