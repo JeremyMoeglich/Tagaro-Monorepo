@@ -37,27 +37,15 @@ body {
 	height: 870px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 970px) {
 	.showcase_size {
-		height: 900px
+		height: 950px
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.showcase_size {
 		height: 1000px
-	}
-}
-
-@media screen and (max-width: 400px) {
-	.showcase_size {
-		height: 1100px
-	}
-}
-
-@media screen and (max-width: 300px) {
-	.showcase_size {
-		height: 1300px
 	}
 }
 

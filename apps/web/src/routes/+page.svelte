@@ -24,7 +24,7 @@
 				component: undefined
 			},
 			{
-				name: 'Angebote mit weniger Paketen',
+				name: 'X-Mas Angebote mit weniger Paketen',
 				component: AngeboteRotator
 			}
 		]}

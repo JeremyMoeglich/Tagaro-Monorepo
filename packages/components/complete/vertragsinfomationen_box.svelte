@@ -14,7 +14,7 @@
 		},
 		{
 			component: Vertragsinfomationen,
-			name: 'Angebote mit weniger Paketen'
+			name: 'X-Mas Angebote mit weniger Paketen'
 		}
 	]} bind:active={$tabindex}/>
 </ExpandableBox>

@@ -20,7 +20,7 @@
 		},
 		{
 			image: '/images/assets/zubuchoptionen/dazn.svg',
-			html: /*html*/ `<div style="font-size: 15px;">
+			html: /*html*/ `<div>
 				<b>DAZN Unlimited + ${get_price_string(['dazn_unlimited'], 'jahr')} mtl.</b>
 				<br />
 				im Jahresabo <br />
@@ -36,7 +36,7 @@
 			html: /*html*/ `<b>Multiscreen + ${get_price_string(
 				['multiscreen'],
 				'jahr'
-			)} mtl. <br /></b> Inkl. Sky Go Plus für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €&nbsp;49, 1-2 Sky Q Mini für je einmalig €&nbsp;29 (zur Leihe oder OHNE zusätzliche Hardware)`
+			)} mtl. <br /></b> für 2 TV's und 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 29 (zur Leihe) oder OHNE zusätzliche Hardware`
 		},
 		{
 			image: '/images/assets/zubuchoptionen/kids.png',

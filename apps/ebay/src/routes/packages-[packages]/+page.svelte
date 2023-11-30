@@ -59,7 +59,7 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				`Alles von Sky für € 40 mtl. - Inkl. Paramount+, Netlix, UHD, Kids & Sky Go Plus*`
+				`Alles von Sky für € 40 mtl. mit Paramount+, Netflix, UHD & Sky Go Plus*`
 			],
 			[
 				'allgemein',
@@ -88,14 +88,13 @@
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
 					<li>
-						✓ Bis zum 26.11.: Das beste Angebot des Jahres von Sky mit dem aktuellen Black Friday Deal!
+						✓ Mit dem X-Mas Special jetzt bis zu € 348 im ersten Jahr sparen!
 					</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
 					Im Abo inklusive sind die Pakete Entertainment Plus mit Netflix, Cinema inkl. Paramount+,
 					Sport, Bundesliga, Kids, UHD (nur bei Sat- oder Kabel-Empfang) sowie Sky Go Plus mit 3
-					parallelen Streams. Darüber hinaus erhalten Sie von Sky einen Wunschgutschein im Wert von
-					€ 100. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche
+					parallelen Streams. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche
 					Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre PAYBACK Nummer für 500
 					Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind weitere Punkte
 					möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren bei TAGARO von
@@ -104,7 +103,7 @@
 			</div>
 			<img
 				class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-				src={make_url('/images/visuals/sky_bf_23_2.png', dev)}
+				src={make_url('/images/visuals/sky1223_teaser_xmas_komplett.png', dev)}
 				alt=""
 			/>
 			<!-- <Wunschgutschein /> -->

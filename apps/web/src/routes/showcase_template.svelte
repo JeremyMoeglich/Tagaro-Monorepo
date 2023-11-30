@@ -152,7 +152,7 @@
 		.points {
 			list-style: none;
 			text-align: left;
-			font-size: large;
+			font-size: 18px;
 			margin-right: 20px;
 			padding-left: 1em;
 			text-indent: -1em;
