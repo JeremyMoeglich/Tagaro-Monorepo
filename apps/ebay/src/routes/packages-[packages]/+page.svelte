@@ -88,7 +88,7 @@
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
 					<li>
-						✓ Mit dem X-Mas Special jetzt bis zu € 348 im ersten Jahr sparen!
+						✓ Mit dem Top-Deal Angebot jetzt bis zu € 348 im ersten Jahr sparen!
 					</li>
 				</ul>
 				<p class="max-w-6xl mt-2">

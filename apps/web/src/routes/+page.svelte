@@ -20,11 +20,11 @@
 	<Tabs
 		tabs={[
 			{
-				name: 'X-Mas Special (Komplett)',
+				name: 'Sky Top-Deal für Komplett',
 				component: undefined
 			},
 			{
-				name: 'X-Mas Angebote mit weniger Paketen',
+				name: 'Top-Deal Angebote mit weniger Paketen',
 				component: AngeboteRotator
 			}
 		]}

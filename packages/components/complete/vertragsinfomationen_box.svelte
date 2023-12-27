@@ -10,11 +10,11 @@
 	<Tabs tabs={[
 		{
 			component: BlackFridayVertragsinfomationen,
-			name: 'X-Mas Special (Komplett)'
+			name: 'Sky Top-Deal für Komplett'
 		},
 		{
 			component: Vertragsinfomationen,
-			name: 'X-Mas Angebote mit weniger Paketen'
+			name: 'Top-Deal Angebote mit weniger Paketen'
 		}
 	]} bind:active={$tabindex}/>
 </ExpandableBox>
