@@ -12,7 +12,7 @@
 		<div style:color={text_color}>
 			<p class="title">Abonnieren Sie schnell und einfach Ihr Wunschprogramm.</p>
 			<p>TAGARO vermittelt Sky Verträge bereits seit 2006</p>
-			<p>© 2006-2023 TAGARO Medienshop Möglich & Möglich GbR</p>
+			<p>© 2006-2024 TAGARO Medienshop Möglich & Möglich GbR</p>
 		</div>
 		<div class="logo">
 			<SiteLogo />
