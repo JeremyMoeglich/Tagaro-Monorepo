@@ -33,7 +33,7 @@
 	<div>
 		<h2>Finanzamt</h2>
 		<p>
-			Finanzamt Wetzlar <br />
+			Finanzamt Hamm <br />
 			Steuer-Nummer: 322/5990/1202 <br />
 			USt-IdNr.: DE248966903
 		</p>

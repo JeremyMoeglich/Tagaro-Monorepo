@@ -6,7 +6,7 @@
 <Meta />
 
 <div>
-	<h1>Datenschutz</h1>
+	<h1>Impressum</h1>
 	<Impressum />
 </div>
 

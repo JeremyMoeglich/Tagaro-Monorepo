@@ -535,8 +535,8 @@
 
 	<p>
 		12.2 Sofern es sich bei dem Kaeufer um einen Unternehmer, ein oeffentlich-rechtliches
-		Sondervermoegen oder um eine juristische Person des oeffentlichen Rechts handelt, wird Wetzlar
-		als ausschliesslicher Gerichtsstand vereinbart. In diesem Fall ist Wetzlar auch Erfuellungsort.
+		Sondervermoegen oder um eine juristische Person des oeffentlichen Rechts handelt, wird Hamm
+		als ausschliesslicher Gerichtsstand vereinbart. In diesem Fall ist Hamm auch Erfuellungsort.
 	</p>
 
 	<p>12.3 Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts</p>
