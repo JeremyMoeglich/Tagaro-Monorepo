@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<a href="https://fd10.formdesk.com/tagaro/Sky-Bestellung-6" class="mb-5 mt-[3px] w-3/4">
-		<img src="/images/visuals/xmas_special.png" alt="" class=" ml-auto mr-auto w-full max-w-[800px] image" />
+		<img src="/images/visuals/sky_24-01_best-deals_entplus-cin-buli-spo.avif" alt="" class=" ml-auto mr-auto w-full max-w-[800px] image" />
 	</a>
 
 	<div class="flex items-center justify-center pb-8 gap-12">
