@@ -63,17 +63,17 @@
 		// },
 		{
 			image: '/images/assets/zubuchoptionen/netflix_standard.png',
-			html: /*html*/ `<b>Netflix Standard-Abo (Full HD 1080p) <br> + ${get_price_string(
+			html: /*html*/ `<b>Netflix Standard-Abo <br> + ${get_price_string(
 				['netflixstandard'],
 				'jahr'
-			)} mtl.</b> <br> 2 Geräte`
+			)} mtl.</b> <br> 2 Geräte statt 1 Gerät gleichzeitig <br> Full HD 1080p statt 720p`
 		},
 		{
 			image: '/images/assets/zubuchoptionen/netflix_premium.png',
-			html: /*html*/ `<b>Netflix Premium-Abo (UHD) <br> + ${get_price_string(
+			html: /*html*/ `<b>Netflix Premium-Abo <br> + ${get_price_string(
 				['netflixpremium'],
 				'jahr'
-			)} mtl.</b>  <br> 4 Geräte`
+			)} mtl.</b>  <br> 4 Geräte statt 1 Gerät gleichzeitig <br> UHD - Höchste Auflösung (4K Ultra-HD)`
 		},
 
 		{
