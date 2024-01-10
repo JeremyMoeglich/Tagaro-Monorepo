@@ -1,23 +1,24 @@
 <script lang="ts">
 	import AngeboteRotator from 'components/complete/angebote_rotator.svelte';
 	import SchnellSkyAbonnieren from 'components/complete/schnell_sky_abonnieren.svelte';
-	import Tabs from 'components/layout/tabs.svelte';
+	// import Tabs from 'components/layout/tabs.svelte';
 	import VertragsinfomationenBox from 'components/complete/vertragsinfomationen_box.svelte';
 	import Meta from './meta.svelte';
-	import BlackFridayShowcase from './black_friday_showcase.svelte';
-	import { tabindex } from 'frontend/tabindex';
+	// import BlackFridayShowcase from './black_friday_showcase.svelte';
+	// import { tabindex } from 'frontend/tabindex';
 	import MainShowcase from './main_showcase.svelte';
 </script>
 
 <Meta />
 
 <div>
-	{#if $tabindex === 0}
+	<!-- {#if $tabindex === 0}
 		<BlackFridayShowcase />
 	{:else}
 		<MainShowcase />
-	{/if}
-	<Tabs
+	{/if} -->
+	<MainShowcase />
+	<!-- <Tabs
 		tabs={[
 			{
 				name: 'Sky Top-Deal für Komplett',
@@ -29,7 +30,8 @@
 			}
 		]}
 		bind:active={$tabindex}
-	/>
+	/> -->
+	<AngeboteRotator />
 	<SchnellSkyAbonnieren />
 	<VertragsinfomationenBox />
 </div>
