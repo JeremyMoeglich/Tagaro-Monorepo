@@ -7,7 +7,6 @@ import type { zubuchoption_id } from './assets/zubuchoptionen';
 import type { asset_id, priceable_asset_id } from './asset_types';
 import type { Price } from './priceable_asset_types';
 import { asset_sets } from './sets';
-import { bonus } from './prices';
 
 export type package_set_id = 'all' | 'premium' | 'base' | package_id;
 export type base_package_set = 'entertainment' | 'entertainmentplus';
@@ -174,7 +173,10 @@ export const empty_offer: offer_description_type = {
 	long_text: '',
 	actions: [],
 	route: aboformular,
-	overwrites: []
+	overwrites: [
+		[["entertainment", "cinema", "sport", "bundesliga"], { "jahr": 50 }],
+		[["entertainmentplus", "cinema", "sport", "bundesliga"], { "jahr": 59 }],
+	]
 };
 
 export const indexed_offers = index_by(offer_descriptions, 'id');
