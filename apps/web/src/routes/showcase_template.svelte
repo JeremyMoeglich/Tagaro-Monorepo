@@ -35,7 +35,7 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/top-deal.png'] as const;
+	const left_badges = ['/images/badges/keine_aktivierung.svg'] as const;
 	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',

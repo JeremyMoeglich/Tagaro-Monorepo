@@ -19,7 +19,7 @@
 	</a>
 
 	<div class="flex items-center justify-center pb-8 gap-12">
-		<img src="/images/badges/top-deal.png" alt="" class="w-40 h-40 xmas_image" />
+		<img src="/images/badges/keine_aktivierung.svg" alt="" class="w-40 h-40 xmas_image" />
 		<ul class="leading-7 text-[18px]">
 			<li>✓ Alles von Sky inkl. Paramount+ und Netflix für € 40 mtl. statt € 64 mtl.</li>
 			<li>✓ Inklusive Sky Go Plus mit 3 parallelen Streams</li>
