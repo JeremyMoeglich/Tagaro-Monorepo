@@ -60,7 +60,7 @@
 					<li>
 						- Multiscreen für {@html get_price_string(['multiscreen'], 'jahr')} mtl. - Inkl. Sky Go Plus
 						für 3 mobile Geräte, 2. Sky Q Receiver für einmalig €&nbsp;49, 1-2 Sky Q Mini für je einmalig
-						€&nbsp;29 (zur Leihe)
+						€&nbsp;39 (zur Leihe)
 					</li>
 					<li>
 						- Netflix Standard-Abo, HD/2 Geräte (+ {@html get_price_string(
@@ -351,8 +351,8 @@
 			App auf mobilen Endgeräten (Betriebssysteme: Android, iOS, Windows; Hersteller: Mac, Huawei)
 			möglich. Über die Sky Q IPTV Box und Sky Q-Mini sind UHD-Inhalte nicht verfügbar. Pro Sky Q
 			Abonnement über SAT oder Kabel sind maximal 2 Sky Q Receiver (je €&nbsp;49 durch Sky) zzgl.
-			maximal 2 Sky Q-Mini (je €&nbsp;29 durch Sky) oder bei einem Sky Q Abonnement über das
-			Internet maximal 3 Sky Q IPTV Boxen (je €&nbsp;29 durch Sky) buchbar. Eine Buchung von
+			maximal 2 Sky Q-Mini (je €&nbsp;39 durch Sky) oder bei einem Sky Q Abonnement über das
+			Internet maximal 3 Sky Q IPTV Boxen (je €&nbsp;39 durch Sky) buchbar. Eine Buchung von
 			Multiscreen ohne zusätzliches Gerät ist ebenso möglich.
 		</p>
 	</div>

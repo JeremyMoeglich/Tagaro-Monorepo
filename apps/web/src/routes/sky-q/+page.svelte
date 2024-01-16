@@ -23,7 +23,7 @@
 				['multiscreen'],
 				'jahr'
 			)} mtl. zu ihrem Wunschabonnement. Zusätzlich mit Multiscreen erhalten Sie einen Sky Q Mini Receiver
-			für einmalig €{@html nspace}29 oder einen 2. Sky Q Receiver für einmalig €{@html nspace}49.
+			für einmalig €{@html nspace}39 oder einen 2. Sky Q Receiver für einmalig €{@html nspace}49.
 		</p>
 
 		<img src="/images/visuals/skyq_header_4.png" alt="" />

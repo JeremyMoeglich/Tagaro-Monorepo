@@ -265,13 +265,13 @@ export function to_form_data(text: string): SkyFormData {
 			'Netflix 2 Geräte Upgrade --> ? 5 mtl.': 'netflixstandard',
 			'HD+ 6 Monate gratis, danach mtl. ? 6 (monatlich kündbar)': 'hdplus',
 			'Free TV HD-Senderpaket mit RTL, ProSiebenSat.1, ARD uvm. (automatisch inklusive)': undefined,
-			'Multiscreen Option OHNE zusätzliche Hardware (Sky Q App benötigt / inkl. Sky Go Plus) --> ? 10 mtl.':
+			'Multiscreen Option OHNE zusätzliche Hardware (Sky Q App benötigt / inkl. Sky Go Plus) --> ? 15 mtl.':
 				'multiscreen',
 			'18+ für Blue Movie --> ? 0, einmalige Versandpauschale 18+ PIN': 'plus18',
 			'Sky Go Plus (auf 3 Geräten gleichzeitig streamen und herunterladen) --> ? 5 mtl.':
 				'skygoplus',
 			'Sky Kids --> ? 5 mtl.': 'kids',
-			'2. Sky Q Receiver inkl. Multiscreen --> ? 10 mtl. + ? 49 einmalig': 'multiscreen'
+			'2. Sky Q Receiver inkl. Multiscreen --> ? 15 mtl. + ? 49 einmalig': 'multiscreen'
 		};
 		return zubuchoptionen_lst
 			.filter((v) => {

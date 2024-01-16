@@ -36,7 +36,7 @@
 			html: /*html*/ `<b>Multiscreen + ${get_price_string(
 				['multiscreen'],
 				'jahr'
-			)} mtl. <br /></b> für 2 TV's und 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 29 (zur Leihe) oder OHNE zusätzliche Hardware`
+			)} mtl. <br /></b> für 2 TV's und 3 mobile Geräte, 2. Sky Q Receiver für einmalig € 49, 1-2 Sky Q Mini für je einmalig € 39 (zur Leihe) oder OHNE zusätzliche Hardware`
 		},
 		{
 			image: '/images/assets/zubuchoptionen/kids.png',
