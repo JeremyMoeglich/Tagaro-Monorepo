@@ -130,8 +130,8 @@ function get_offer_savings_string(
 	const actual_savings =
 		(get_offer_price(empty_offer, ids).jahr - get_offer_price(offer, ids).jahr) * 12;
 	const overwrites: [package_id[], number][] = [
-		[['entertainment', 'cinema', 'sport', 'bundesliga'], 240],
-		[['entertainmentplus', 'cinema', 'sport', 'bundesliga'], 288]
+		// [['entertainment', 'cinema', 'sport', 'bundesliga'], 240],
+		// [['entertainmentplus', 'cinema', 'sport', 'bundesliga'], 288]
 	];
 	const savings = overwrites.find(([packages]) =>
 		isEqual(sort_by_price(packages), sort_by_price(ids))
