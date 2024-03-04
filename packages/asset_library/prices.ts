@@ -117,8 +117,8 @@ export function get_price_string(
 	return to_price_string(get_price(assets)[subscription_time], escaped);
 }
 
-export function sort_by_price(lst: Array<priceable_asset_id>): Array<priceable_asset_id> {
-	return lst.sort(
+export function sort_by_price(lst: ReadonlyArray<priceable_asset_id>): Array<priceable_asset_id> {
+	return [...lst].sort(
 		(a, b) => indexed_priceable_assets[b].price.jahr - indexed_priceable_assets[a].price.jahr
 	);
 }
@@ -127,9 +127,19 @@ function get_offer_savings_string(
 	offer: offer_description_type,
 	ids: ReadonlyArray<priceable_asset_id>
 ): string {
-	return to_price_string(
-		(get_offer_price(empty_offer, ids).jahr - get_offer_price(offer, ids).jahr) * 12
+	const actual_savings =
+		(get_offer_price(empty_offer, ids).jahr - get_offer_price(offer, ids).jahr) * 12;
+	const overwrites: [package_id[], number][] = [
+		// [['entertainment', 'cinema', 'sport', 'bundesliga'], 240],
+		// [['entertainmentplus', 'cinema', 'sport', 'bundesliga'], 288]
+	];
+	const savings = overwrites.find(([packages]) =>
+		isEqual(sort_by_price(packages), sort_by_price(ids))
 	);
+	if (savings) {
+		return to_price_string(savings[1]);
+	}
+	return to_price_string(actual_savings);
 }
 
 export function get_savings_string(ids: ReadonlyArray<priceable_asset_id>): string {
