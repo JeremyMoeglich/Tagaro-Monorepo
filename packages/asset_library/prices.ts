@@ -169,7 +169,7 @@ function get_offer_savings_string(
 	const actual_savings =
 		(get_offer_price(empty_offer, ids).jahr -
 			get_offer_price(offer, ids).jahr) *
-			12 +
+		12 +
 		60;
 	const overwrites: [package_id[], number][] = [
 		// [['entertainment', 'cinema', 'sport', 'bundesliga'], 240],
@@ -198,11 +198,10 @@ export function get_offer_note(
 	packages: ReadonlyArray<package_id>,
 	long = false,
 ): string {
-	// const chosen_offer = chose_offer(packages);
-	// if (chosen_offer === undefined) {
-	// 	return "";
-	// }
-	const chosen_offer = "opt1";
+	const chosen_offer = chose_offer(packages);
+	if (chosen_offer === undefined) {
+		return "";
+	}
 	const offer = indexed_offers[chosen_offer];
 	const text = long ? offer.long_text : offer.short_text;
 	return text.replaceAll(
