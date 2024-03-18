@@ -24,24 +24,26 @@
 </VertragsinfomationenTemplate> -->
 
 <VertragsinfomationenTemplate>
-	<div>
-		<h3 class="light">UHD-Aktion</h3>
-		<p>
-			Bei Buchung von UHD entfällt die monatliche Gebühr i. H. v. mtl. € 5 in den ersten 12 Monaten.
-			Danach zzgl. mtl. € 5.
-		</p>
-	</div>
-	<div>
-		<h3 class="light">Ersparnis</h3>
-		<p>
-			Die UHD-Ersparnis i. H. v. € 60 ergibt sich aus der monatlichen Gebühr von € 5 über die Dauer
-			der Mindestvertragslaufzeit von 12 Monaten. <br /><br />
+	<div class="elements">
+		<div>
+			<h3 class="light">UHD-Aktion</h3>
+			<p>
+				Bei Buchung von UHD entfällt die monatliche Gebühr i. H. v. mtl. € 5 in den ersten 12
+				Monaten. Danach zzgl. mtl. € 5.
+			</p>
+		</div>
+		<div>
+			<h3 class="light">Ersparnis</h3>
+			<p>
+				Die UHD-Ersparnis i. H. v. € 60 ergibt sich aus der monatlichen Gebühr von € 5 über die
+				Dauer der Mindestvertragslaufzeit von 12 Monaten. <br />
 
-			Die Ersparnis bis zu € 288 ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im
-			Vergleich zum Sky Standard-Jahresabonnementspreis sowie aus dem rabattierten DAZN
-			Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis und der
-			UHD-Ersparnis.
-		</p>
+				Die Ersparnis bis zu € 288 ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im
+				Vergleich zum Sky Standard-Jahresabonnementspreis sowie aus dem rabattierten DAZN
+				Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis und der
+				UHD-Ersparnis.
+			</p>
+		</div>
 	</div>
 </VertragsinfomationenTemplate>
 
@@ -192,3 +194,11 @@
 		</ul>
 	</span>
 </VertragsinfomationenTemplate> -->
+
+<style>
+	.elements {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+</style>
