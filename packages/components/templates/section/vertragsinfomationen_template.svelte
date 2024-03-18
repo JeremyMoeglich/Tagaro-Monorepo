@@ -2,12 +2,7 @@
 	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
-	import {
-		bonus,
-		get_offer_note,
-		get_price_string,
-		get_savings_string
-	} from 'asset_library/prices';
+	import { bonus, get_offer_note, get_price_string } from 'asset_library/prices';
 	import { base_premium_package_combinations } from 'asset_library/assets/packages';
 	import { typed_entries } from 'functional-utilities';
 
@@ -54,6 +49,7 @@
 					<li>
 						- UHD für {@html get_price_string(['uhd'], 'jahr')} mtl.
 					</li>
+					<li>- UHD 12 Monate für € 0 statt € 5 mtl.</li>
 					<li>
 						- DAZN UNLIMITED im Jahresabo für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
 					</li>
@@ -225,7 +221,7 @@
 			<li>Sky Kids {@html get_price_string(['kids'], 'monat')} mtl.</li>
 		</ul>
 	</div>
-	<div>
+	<!-- <div>
 		<h3 class={title_classes}>Ersparnis:</h3>
 		<p>
 			Die Ersparnis bis zu {@html get_savings_string([
@@ -236,7 +232,7 @@
 			])} ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im Vergleich zum Sky Standard-Jahresabonnementspreis
 			sowie aus dem rabattierten DAZN Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis.
 		</p>
-	</div>
+	</div> -->
 	<div>
 		<h3 class={title_classes}>UHD/Dolby Atmos:</h3>
 		<p>

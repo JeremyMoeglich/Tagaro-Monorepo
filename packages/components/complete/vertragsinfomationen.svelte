@@ -24,17 +24,13 @@
 </VertragsinfomationenTemplate> -->
 
 <VertragsinfomationenTemplate>
-	<!-- <div class="mb-7">
-		<h3 class="light marked">UHD-Aktion</h3>
+	<div>
+		<h3 class="light">UHD-Aktion</h3>
 		<p>
-			Die UHD-Ersparnis i. H. v. € 60 ergibt sich aus der monatlichen Gebühr von € 5,00 über die
-			Dauer der Mindestvertragslaufzeit von 12 Monaten.
-			<br /><br />
-			Die Ersparnis bis zu € 226 ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im Vergleich
-			zum Sky Standard-Jahresabonnementspreis sowie aus dem rabattierten DAZN Jahresabonnementspreis
-			im Vergleich zum regulären DAZN Jahresabonnementspreis und der UHD-Ersparnis.
+			Bei Buchung von UHD entfällt die monatliche Gebühr i. H. v. mtl. € 5 in den ersten 12 Monaten.
+			Danach zzgl. mtl. € 5.
 		</p>
-	</div> -->
+	</div>
 	<div>
 		<h3 class="light">Sky Cinema Paket / Paramount+</h3>
 		<p>
@@ -46,6 +42,18 @@
 			Mit Wegfall des Sky Cinema Pakets, endet auch die Berechtigung für den Paramount+
 			Streamingdienst automatisch. Mindestalter zur Teilnahme: 18 Jahre. Empfohlene Bandbreite 1
 			Mbit/s für SD-Qualität, 6 Mbit/s für HD-Qualität.
+		</p>
+	</div>
+	<div>
+		<h3 class="light">Ersparnis</h3>
+		<p>
+			Die UHD-Ersparnis i. H. v. € 60 ergibt sich aus der monatlichen Gebühr von € 5 über die Dauer
+			der Mindestvertragslaufzeit von 12 Monaten. <br /><br />
+
+			Die Ersparnis bis zu € 288 ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im
+			Vergleich zum Sky Standard-Jahresabonnementspreis sowie aus dem rabattierten DAZN
+			Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis und der
+			UHD-Ersparnis.
 		</p>
 	</div>
 </VertragsinfomationenTemplate>
