@@ -18,6 +18,7 @@
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
 			'monat'
 		)} mtl.*`,
+		"UHD im Wert von € 60 im ersten Jahr",
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	top_margin={20}

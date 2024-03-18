@@ -161,6 +161,7 @@
 								<li>✓ Für Internet, Sat- oder Kabel</li>
 								<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu</li>
 								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
+								<li>✓ Optional: UHD im Wert von € 60 im ersten Jahr</li>
 								{#if aktivierung === 0}
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
 								{/if}
@@ -168,7 +169,6 @@
 									<li>✓ {@html bonus_string()} Bonus on top</li>
 								{/if}
 								<li>✓ 500 PAYBACK Basis Punkte</li>
-								<li>✓ Optional: UHD im Wert von € 60 im ersten Jahr</li>
 								<!-- 
 							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
 							<li><b>✓ €&nbsp;50 Amazon Gutschein bei Ent+1 Paket oder €&nbsp;125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>

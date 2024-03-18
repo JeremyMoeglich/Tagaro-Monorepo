@@ -12,10 +12,8 @@
 
 	const zubuchoptionen: Zubuchoption[] = [
 		{
-			html: /*html*/ `<b>UHD + ${get_price_string(
-				['uhd'],
-				'jahr'
-			)} mtl.</b> <br> Für Sat oder Kabel-Empfang`,
+			html: /*html*/ `<b class="marked">UHD 12 Monate GRATIS</b><br> 
+			Für Sat oder Kabel-Empfang`,
 			image: '/images/assets/zubuchoptionen/uhd.png'
 		},
 		{

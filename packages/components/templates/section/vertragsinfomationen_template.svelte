@@ -46,9 +46,9 @@
 				</ul> -->
 				<ul>
 					<li><b>Optional:</b></li>
-					<li>
+					<!-- <li>
 						- UHD für {@html get_price_string(['uhd'], 'jahr')} mtl.
-					</li>
+					</li> -->
 					<li>- UHD 12 Monate für € 0 statt € 5 mtl.</li>
 					<li>
 						- DAZN UNLIMITED im Jahresabo für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
@@ -233,6 +233,19 @@
 			sowie aus dem rabattierten DAZN Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis.
 		</p>
 	</div> -->
+	<div>
+		<h3 class="light">Sky Cinema Paket / Paramount+</h3>
+		<p>
+			Voraussetzung ist ein Sky Abonnement mit gebuchtem Sky Cinema Paket. Ausgenommen sind Sky
+			Kunden mit gewerblichem Abonnement und Sky Ticket / WOW / Sky X Abonnement sowie Sky
+			Abonnements mit TV-Empfang via T-Mobile Austria (Magenta). Der Aktivierungscode berechtigt zur
+			Registrierung beim Paramount+ Streamingdienst. Solange das Sky Cinema Paket Bestandteil des
+			Sky Abonnements ist, besteht auch die Berechtigung zum Bezug des Paramount+ Streamingdienst.
+			Mit Wegfall des Sky Cinema Pakets, endet auch die Berechtigung für den Paramount+
+			Streamingdienst automatisch. Mindestalter zur Teilnahme: 18 Jahre. Empfohlene Bandbreite 1
+			Mbit/s für SD-Qualität, 6 Mbit/s für HD-Qualität.
+		</p>
+	</div>
 	<div>
 		<h3 class={title_classes}>UHD/Dolby Atmos:</h3>
 		<p>
