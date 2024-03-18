@@ -47,10 +47,8 @@
 		/>
 	</ConditionalHref>
 
-	{#if !ebay_version}
-		<LineSpacer {space} />
-		<PackageTemplate show_price={!ebay_version} price_asset_ids={['dazn_unlimited']} />
-	{/if}
+	<LineSpacer {space} />
+	<PackageTemplate show_price={!ebay_version} price_asset_ids={['dazn_unlimited']} />
 </div>
 
 <style lang="scss">

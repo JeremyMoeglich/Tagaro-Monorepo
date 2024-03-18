@@ -5,12 +5,11 @@
 	import { make_url } from 'frontend/url';
 	import Header from './header.svelte';
 	import { dev } from '$app/environment';
-	//import PackageTable from 'components/complete/package_table.svelte';
+	import PackageTable from 'components/complete/package_table.svelte';
 	import Zubuchoptionen from 'components/complete/zubuchoptionen.svelte';
-	import Wunschgutschein from 'components/complete/wunschgutschein.svelte';
 	import Inklusive from 'components/complete/inklusive.svelte';
 	import AllOverviews from '../../../../../packages/components/complete/all_overviews.svelte';
-	import Vertragsinfomationen from 'components/complete/black_friday_vertragsinfomationen.svelte';
+	import Vertragsinfomationen from 'components/complete/vertragsinfomationen.svelte';
 	import Line from 'components/elements/line.svelte';
 	import Block from './block.svelte';
 	import Footer from './footer.svelte';
@@ -59,7 +58,7 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				`Alles von Sky für € 40 mtl. mit Paramount+, Netflix, UHD & Sky Go Plus*`
+				`Sky Komplett Abo inkl. Netflix & Paramount+ € 40 mtl. Dazu € 20 Bonus*`
 			],
 			[
 				'allgemein',
@@ -87,29 +86,27 @@
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					<li>
-						✓ Mit dem Top-Deal Angebot jetzt bis zu € 348 im ersten Jahr sparen!
-					</li>
+					<li>✓ Bonus von TAGARO: € 20 Bonus on top bei erfolgreichem Vertragsabschluss</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
-					Im Abo inklusive sind die Pakete Entertainment Plus mit Netflix, Cinema inkl. Paramount+,
-					Sport, Bundesliga, Kids, UHD (nur bei Sat- oder Kabel-Empfang) sowie Sky Go Plus mit 3
-					parallelen Streams. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche
-					Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre PAYBACK Nummer für 500
-					Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind weitere Punkte
-					möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren bei TAGARO von
-					einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung seit 2006.
+					Entdecken Sie die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
+					Buchung des Cinema Pakets, erhalten Sie Paramount+ dazu. Zusätzlich überweisen wir Ihnen
+					einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
+					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre PAYBACK
+					Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind
+					weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren
+					bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung
+					seit 2006.
 				</p>
 			</div>
 			<img
 				class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-				src={make_url('/images/visuals/sky1223_teaser_xmas_komplett.png', dev)}
+				src={make_url('/images/visuals/sky1023_teaser.png', dev)}
 				alt=""
 			/>
 			<!-- <Wunschgutschein /> -->
 			<div class="max-w-4xl w-full">
-				<!-- <PackageTable /> -->
-				<Zubuchoptionen variant="black"/>
+				<PackageTable />
 			</div>
 			<Block title="Abovermittlung mit TAGARO">
 				<p>
@@ -151,7 +148,7 @@
 
 			<div class="max-w-7xl w-full p-5">
 				<Line />
-				<h2 class="text-3xl mb-7 mt-14 font-bold text-center">*Angebotsdetails</h2>
+				<h2 class="text-3xl mb-7 mt-14 font-bold text-center">*Angebotsdetails für Neukunden</h2>
 				<Vertragsinfomationen />
 				<div class="mb-16" />
 				<Line space={'0px'} />

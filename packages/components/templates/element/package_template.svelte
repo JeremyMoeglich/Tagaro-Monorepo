@@ -35,9 +35,9 @@
 	<div class="alignment">
 		<div class="image flex flex-col items-center">
 			<AssetImage ids={price_asset_ids} {animated} />
-			<!-- {#if !price_asset_ids.includes('dazn_unlimited')}
+			{#if !price_asset_ids.includes('dazn_unlimited')}
 				<img src={make_url('/images/badges/einmalige_gebuehr.svg', dev)} alt="" class="w-32 mt-4" />
-			{/if} -->
+			{/if}
 		</div>
 
 		<div class="description">
@@ -63,7 +63,8 @@
 						12 Monate nur {@html get_price_string(price_asset_ids, 'jahr')} mtl.*
 					</h3>
 					<p class="small_text">
-						statt {@html to_price_string(get_offer_price(empty_offer, price_asset_ids).jahr)} mtl. <br />
+						statt {@html to_price_string(get_offer_price(empty_offer, price_asset_ids).jahr)} mtl.
+						<br />
 						(im Jahres-Abo, danach {@html get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)
 						<br />
 						Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar
