@@ -134,7 +134,7 @@ function chose_offer(
 }
 
 export function get_price(assets: ReadonlyArray<priceable_asset_id>): Price {
-	const chosen_offer = chose_offer(assets);
+	const chosen_offer = 'opt1'
 	const offer = chosen_offer ? indexed_offers[chosen_offer] : empty_offer;
 	const offer_price = get_offer_price(offer, assets);
 	if (offer_price === undefined) {

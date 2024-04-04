@@ -115,7 +115,7 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 	},
 	{
 		id: 'multiscreen',
-		price: { jahr: 15, monat: 15, singular: 0 },
+		price: { jahr: 10, monat: 10, singular: 0 },
 		name: 'Multiscreen',
 		note: '[TODO]',
 		image: {

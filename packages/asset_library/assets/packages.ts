@@ -214,6 +214,7 @@ export const showcased_combinations = [
 	['entertainment', 'sport', 'bundesliga', 'cinema'],
 
 	['entertainmentplus'],
+	['entertainmentplus', 'sport'],
 	['entertainmentplus', 'bundesliga'],
 	['entertainmentplus', 'cinema'],
 	['entertainmentplus', 'sport', 'bundesliga'],
