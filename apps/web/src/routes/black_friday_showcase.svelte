@@ -23,7 +23,6 @@
 		<ul class="leading-7 text-[18px]">
 			<li>✓ Alles von Sky inkl. Paramount+ und Netflix für € 40 mtl. statt € 64 mtl.</li>
 			<li>✓ Inklusive Sky Go Plus mit 3 parallelen Streams</li>
-			<li>✓ Optional: UHD im Wert von € 60 im ersten Jahr</li>
 			<li>✓ 500 PAYBACK Basis Punkte</li>
 			<li>✓ Ersparnis: € 348 im ersten Jahr</li>
 		</ul>

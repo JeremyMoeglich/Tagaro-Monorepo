@@ -161,7 +161,6 @@
 								<li>✓ Für Internet, Sat- oder Kabel</li>
 								<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu</li>
 								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
-								<li>✓ Optional: UHD im Wert von € 60 im ersten Jahr</li>
 								{#if aktivierung === 0}
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
 								{/if}

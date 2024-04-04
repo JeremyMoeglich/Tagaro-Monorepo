@@ -18,7 +18,6 @@
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
 			'monat'
 		)} mtl.*`,
-		"UHD im Wert von € 60 im ersten Jahr",
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}
 	top_margin={20}
@@ -29,7 +28,7 @@
 	<span slot="subtitle0">
 		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} oder alles
 		von Sky inkl. Paramount+ für
-		{@html get_price_string(['entertainment', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl.*
+		{@html get_price_string(['entertainmentplus', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl.*
 	</span>
 </ShowcaseTemplate>
 
