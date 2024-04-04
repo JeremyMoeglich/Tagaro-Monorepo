@@ -184,10 +184,10 @@
 								{@html get_price_string(item.package_ids, `jahr`)} mtl.*
 							</h3>
 							<p class="bottom_text">
-								statt: {@html to_price_string(
+								<!-- statt: {@html to_price_string(
 									get_offer_price(empty_offer, item.package_ids).jahr,
 									true
-								)} mtl. <br />
+								)} mtl. <br /> -->
 								(im Jahres-Abo, danach {@html get_price_string(item.package_ids, 'monat')} mtl., Preis
 								bezieht sich auf {item.package_ids
 									.map((id) => indexed_package_assets[id].name)
