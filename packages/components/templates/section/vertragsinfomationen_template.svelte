@@ -49,7 +49,7 @@
 					<!-- <li>
 						- UHD für {@html get_price_string(['uhd'], 'jahr')} mtl.
 					</li> -->
-					<li>- UHD 12 Monate für € 0 statt € 5 mtl.</li>
+					<li>- UHD € 5 mtl.</li>
 					<li>
 						- DAZN UNLIMITED im Jahresabo für {@html get_price_string(['dazn_unlimited'], 'jahr')} mtl.
 					</li>

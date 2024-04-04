@@ -1,6 +1,11 @@
 <script lang="ts">
 	import type { priceable_asset_id } from 'asset_library/asset_types';
-	import { get_offer_price, get_price_string, to_price_string } from 'asset_library/prices';
+	import {
+		get_offer_price,
+		get_price,
+		get_price_string,
+		to_price_string
+	} from 'asset_library/prices';
 	// import { typed_keys } from 'functional-utilities';
 	import SquarePackageList from '../../generators/square_package_list.svelte';
 
@@ -29,6 +34,9 @@
 	$: asset_square_images = sorted_assets.filter((v) => {
 		return 'square' in indexed_priceable_assets[v].image;
 	});
+
+	$: primary_price = get_price(price_asset_ids).jahr;
+	$: base_price = get_offer_price(empty_offer, price_asset_ids).jahr;
 </script>
 
 <div class="package_overview">
@@ -60,11 +68,13 @@
 				{/if}
 				<div>
 					<h3 class:spaced={asset_square_images.length === 0}>
-						12 Monate nur {@html get_price_string(price_asset_ids, 'jahr')} mtl.*
+						12 Monate nur {@html to_price_string(primary_price)} mtl.*
 					</h3>
 					<p class="small_text">
-						statt {@html to_price_string(get_offer_price(empty_offer, price_asset_ids).jahr)} mtl.
-						<br />
+						{#if base_price > primary_price}
+							statt {@html to_price_string(base_price)} mtl.
+							<br />
+						{/if}
 						(im Jahres-Abo, danach {@html get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)
 						<br />
 						Der Vertrag hat eine Laufzeit von 12 Monaten und ist im Anschluss monatlich kündbar

@@ -202,6 +202,7 @@ export function get_offer_note(
 	if (chosen_offer === undefined) {
 		return "";
 	}
+	return ""
 	const offer = indexed_offers[chosen_offer];
 	const text = long ? offer.long_text : offer.short_text;
 	return text.replaceAll(
