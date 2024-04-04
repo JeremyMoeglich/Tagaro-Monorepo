@@ -75,7 +75,7 @@
 							</b>
 						</p>
 						<p class="small">
-							statt: {@html to_price_string(get_offer_price(empty_offer, row).jahr, true)} mtl. <br />
+							<!-- statt: {@html to_price_string(get_offer_price(empty_offer, row).jahr, true)} mtl. <br /> -->
 							(im Jahres-Abo, danach {@html get_price_string(row, 'monat')}&nbsp;mtl. im Monats-Abo)
 						</p>
 					</div>

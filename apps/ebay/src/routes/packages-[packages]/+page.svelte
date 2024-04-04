@@ -26,7 +26,7 @@
 			[['entertainment'], 'Titel'],
 			[
 				['entertainment', 'sport'],
-				`Sky Sport Abo inkl. der Formel 1 2023 live für ${get_price_string(
+				`Sky Sport Abo inkl. der Formel 1 2024 live für ${get_price_string(
 					['entertainment', 'sport'],
 					'jahr'
 				)} mtl.*`
@@ -58,7 +58,7 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				`Sky Komplett Abo inkl. Netflix & Paramount+ € 40 mtl. Dazu € 20 Bonus*`
+				`Sky Komplett Abo inkl. Netflix & Paramount+ € 45 mtl. Dazu € 20 Bonus*`
 			],
 			[
 				'allgemein',
