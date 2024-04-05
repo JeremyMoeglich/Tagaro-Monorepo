@@ -226,9 +226,9 @@ export function to_form_data(text: string): SkyFormData {
 	const empfangsart = clite(
 		['satellit', 'internet', 'cabel'],
 		'empfangsart'
-	)(obj['Ihre Empfangsart']);
+	)(obj['Deine Empfangsart']);
 
-	const base_string = strp(obj['In Ihrem Paket inklusive:'], 'base_package_string');
+	const base_string = strp(obj['In deinem Paket inklusive:'], 'base_package_string');
 
 	const process_telephone = (t: string) => {
 		t = t.replace(/[^0-9]/g, '');
@@ -344,7 +344,7 @@ export function to_form_data(text: string): SkyFormData {
 				obj['(Das Geburtsdatum muss dem des Abonnenten entsprechen)'],
 				'birth_date'
 			),
-			email: strp(obj['Ihre E-Mail-Adresse'], 'email'),
+			email: strp(obj['Deine E-Mail-Adresse'], 'email'),
 			telefon: process_telephone(strp(obj['Telefon (Kontaktnummer)'], 'phone')),
 			telefon_weitere: strp(obj['Telefon (Weitere)'], 'phone_2')
 				.split(',')
@@ -383,7 +383,7 @@ export function to_form_data(text: string): SkyFormData {
 		...(empfangsart === 'cabel'
 			? {
 					empfangsart: 'cable',
-					cable_receiver: strp(obj['Ihr Kabelnetzbetreiber'], 'cable_receiver')
+					cable_receiver: strp(obj['Dein Kabelnetzbetreiber'], 'cable_receiver')
 			  }
 			: {
 					empfangsart

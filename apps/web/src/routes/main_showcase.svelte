@@ -48,7 +48,7 @@
 	title={`Die beliebtesten Paketkombis mit bis zu ${savings} Sparvorteil`}
 	points={[
 		`Bis zu ${savings} Sparvorteil und Vorteilspreis für DAZN Jahresabo erhalten*`,
-		'Zusätzlich 500 PAYBACK Punkte, wenn Sie sammeln*',
+		'Zusätzlich 500 PAYBACK Punkte, wenn du sammelst*',
 		`On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
 	]}

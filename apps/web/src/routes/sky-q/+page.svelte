@@ -14,15 +14,15 @@
 <div class="outer">
 	<div class="alignment">
 		<h1>Sky Q ist da - Alles in einem auf allen Geräten</h1>
-		<h2>Schauen Sie ihr Sky Programm auf bis zu 5 Geräten gleichzeitig</h2>
+		<h2>Schaue dein Sky Programm auf bis zu 5 Geräten gleichzeitig</h2>
 
 		<p>
-			Mit Ihrem Sky Abonnement erhalten Sie auch Zugang zu Sky Q. Damit schauen Sie Ihr Programm
+			Mit deinem Sky Abonnement erhältst du auch Zugang zu Sky Q. Damit schaust du dein Programm
 			zuhause und unterwegs mit Sky Go und können bis zu 5 Geräte gleichzeitig nutzen (3 TVs und 3
 			mobile Geräte). Voraussetzung ist die Multiscreen Option für zzgl. {@html get_price_string(
 				['multiscreen'],
 				'jahr'
-			)} mtl. zu ihrem Wunschabonnement. Zusätzlich mit Multiscreen erhalten Sie einen Sky Q Mini Receiver
+			)} mtl. zu deinem Wunschabonnement. Zusätzlich mit Multiscreen erhältst du einen Sky Q Mini Receiver
 			für einmalig €{@html nspace}39 oder einen 2. Sky Q Receiver für einmalig €{@html nspace}49.
 		</p>
 
@@ -44,7 +44,7 @@
 						<li>
 							Mediatheken von ARD und ZDF sowie Smart-TV-Apps sind in der Sky Q App integriert
 						</li>
-						<li>Eigene Aufnahmen können Sie auf Ihrem Sky Receiver speichern</li>
+						<li>Eigene Aufnahmen können kannst du auf deinem Sky Receiver speichern</li>
 						<li>Sky Q App kann im jeweiligen App Store heruntergeladen werden</li>
 					</ul>
 				</div>
@@ -65,16 +65,16 @@
 				<div>
 					<h4>Persönlicher, einfacher, komfortabler</h4>
 					<ul>
-						<li>Nahtlos Folge für Folge Ihrer Lieblingsserie schauen</li>
-						<li>Schauen Sie weiter, wo Sie zuletzt aufgehört haben - auf jedem der 5 Geräte</li>
-						<li>Ganz einfach finden, was Sie sehen möchten</li>
+						<li>Nahtlos Folge für Folge deiner Lieblingsserie schauen</li>
+						<li>Schaue weiter, wo du zuletzt aufgehört hast - auf jedem der 5 Geräte</li>
+						<li>Ganz einfach finden, was du sehen möchtest</li>
 					</ul>
 				</div>
 				<div>
 					<h4>Auf all deinen Geräten</h4>
 					<ul>
 						<li>Zuhause und unterwegs schauen</li>
-						<li>Schauen Sie Ihr Wunschprogramm auf bis zu 5 Geräten gleichzeitig</li>
+						<li>Schaue dein Wunschprogramm auf bis zu 5 Geräten gleichzeitig</li>
 					</ul>
 				</div>
 			</div>
@@ -82,7 +82,7 @@
 		</div>
 		<div class="button">
 			<AboformularButton
-				text={'Jetzt Ihr Sky Wunschabo mit Sky Q zusammenstellen'}
+				text={'Jetzt dein Sky Wunschabo mit Sky Q zusammenstellen'}
 				source={'Sky_Q_button'}
 			/>
 		</div>

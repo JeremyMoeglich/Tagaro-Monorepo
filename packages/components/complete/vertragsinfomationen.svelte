@@ -64,7 +64,7 @@
 	<span>
 		<h3>20% Preisnachlass auf Entertainment Plus Paketkombinationen:</h3>
 		<p>
-			Bei der Buchung von Entertainment Plus + mindestens 1 oder mehr Programmpakete, erhalten Sie
+			Bei der Buchung von Entertainment Plus + mindestens 1 oder mehr Programmpakete, erhältst du 
 			einen 20% Preisnachlass auf den gesamten Paketpreis. Der 20% Rabatt gilt auch für
 			Zubuchoptionen wie Netflix Upgrades, UHD, Multiscreen, Sky Go Plus und Sky Kids. Ausgenommen
 			vom Rabatt sind HD+ , DAZN und trendSports. Der Rabatt gilt über 12 Monate des Jahres-Abos.
@@ -143,7 +143,7 @@
 			</li>
 		</ul>
 
-		<p>Es fällt keine Aktivierungsgebühr durch Sky an. Sie sparen €&nbsp;29.</p>
+		<p>Es fällt keine Aktivierungsgebühr durch Sky an. Du sparst €&nbsp;29.</p>
 		<p><b>Optional hinzubuchbar:</b></p>
 
 		<ul>

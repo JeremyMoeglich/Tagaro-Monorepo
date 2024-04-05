@@ -170,8 +170,8 @@ function sort_ids(ids: ReadonlyArray<package_id>): ReadonlyArray<package_id> {
 }
 
 const premium_combinations: ReadonlyArray<readonly premium_package_set[]> = [
-	['sport'],
 	['cinema'],
+	['sport'],
 	['bundesliga'],
 	['sport', 'bundesliga'],
 	['cinema', 'sport'],

@@ -10,42 +10,42 @@
 			<h1 class="no_gradient">Service</h1>
 		</div>
 		<div class="tb">
-			<h2 class="no_gradient">Holen Sie sich Sky mit exklusivem Preisvorteil nach Hause!</h2>
+			<h2 class="no_gradient">Hole dir Sky mit einem exklusivem Preisvorteil nach Hause!</h2>
 		</div>
 		<div class="side_alignment">
 			<div>
 				<p>
-					Sie möchten gerne Sky bestellen und das bessere Fernsehen kennenlernen? Dann sind Sie bei
-					TAGARO genau richtig. Wir vermitteln Ihnen als Sky Onlinehändler Sky Verträge bereits seit
+					Du möchtest gerne Sky bestellen und das bessere Fernsehen kennenlernen? Dann bist du bei
+					TAGARO genau richtig. Wir vermitteln dir als Sky Onlinehändler Sky Verträge bereits seit
 					2006.
 				</p>
 				<p>
-					Ihr Vorteil - Sie erhalten dazu bei den meisten Angeboten eine Abschlussprämie (Cashback)
-					und profitieren von einem schnellen und persönlichen Service bei allen Fragen.
+					Dein Vorteil - Du erhältst dazu bei den meisten Angeboten eine Abschlussprämie (Cashback)
+					und profitierst von einem schnellen und persönlichen Service bei allen Fragen.
 				</p>
 				<p>
 					Mit persönlicher Betreuung und direkten Ansprechpartnern konnten wir bereits tausende
-					Kunden über die Jahre von unserem Service überzeugen. Schauen Sie sich gerne unsere
+					Kunden über die Jahre von unserem Service überzeugen. Schaue dir gerne unsere
 					Bewertungen u.a. bei eBay an.
 				</p>
 			</div>
 			<div>
 				<p>
-					Mit wenigen Klicks auf unserer Seite gelangen Sie direkt zum passenden
-					Sky-Abo-Bestellformular. Dort können Sie Ihren Paketwunsch, Ihre Empfangsart sowie Ihre
+					Mit wenigen Klicks auf unserer Seite gelangst du direkt zum passenden
+					Sky-Abo-Bestellformular. Dort kannst du deinen Paketwunsch, deine Empfangsart sowie deine
 					Anschrift direkt online eintragen. Das Formular ist SSL-geschützt für eine sichere
 					Übertragung der sensiblen Daten.
 				</p>
 				<p>
-					Nach erfolgreicher Anmeldung erhalten Sie von uns sowie von Sky direkt eine schriftliche
-					Bestätigung Ihres Sky-Abonnements. Ihre Unterlagen, die Smartcard sowie die bestellte
-					Sky-Hardware erhalten Sie von Sky zugesendet. Die Ware ist in der Regel in 1-3 Tagen bei
-					Ihnen.
+					Nach erfolgreicher Anmeldung erhältst du von uns sowie von Sky direkt eine schriftliche
+					Bestätigung deines Sky-Abonnements. Deine Unterlagen, die Smartcard sowie die bestellte
+					Sky-Hardware erhältst du von Sky zugesendet. Die Ware ist in der Regel in 1-3 Tagen bei
+					dir.
 				</p>
 				<p>
-					Im Gegensatz zum stationären Handel können Sie Ihr Sky-Abonnement bei uns innerhalb von 14
-					Tagen ab Vertragsschluss auch wieder widerrufen. Dieses Recht steht Ihnen nur im
-					Onlinehandel zu. Melden Sie sich einfach rechtzeitig bei uns und wir leiten die
+					Im Gegensatz zum stationären Handel kannst du dein Sky-Abonnement bei uns innerhalb von 14
+					Tagen ab Vertragsschluss auch wieder widerrufen. Dieses Recht steht dir nur im
+					Onlinehandel zu. Melde dich einfach rechtzeitig bei uns und wir leiten die
 					Rückabwicklung ein.
 				</p>
 			</div>

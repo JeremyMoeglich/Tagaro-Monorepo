@@ -3,11 +3,11 @@
 		<h1>€ 100 Wunschgutschein</h1>
 		<ul>
 			<li>
-				Sie erhalten Ihren Gutschein ca. 6 Wochen nach Abschluss direkt von Sky in Form eines
+				Du erhältst deinen Gutschein ca. 6 Wochen nach Abschluss direkt von Sky in Form eines
 				digitalen Gutscheincodes.
 			</li>
 			<li>
-				Sie können auf der Sky Cadooz Seite, die Ihnen mitgeteilt wird, nach Eingabe Ihres Codes
+				Du kannst auf der Sky Cadooz Seite, die dir mitgeteilt wird, nach Eingabe deines Codes
 				einen oder mehrere Gutscheine im Gesamtwert von € 100 bei den von Cadooz gelisteten
 				Anbietern bestellen.
 			</li>

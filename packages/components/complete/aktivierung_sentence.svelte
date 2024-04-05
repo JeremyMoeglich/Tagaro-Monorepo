@@ -6,7 +6,7 @@
 
 {#if aktivierung <= 0}
 	{#if always_show}
-		<p>Es fällt <b>keine einmalige Gebühr</b> durch Sky an. Sie sparen €&nbsp;29.</p>
+		<p>Es fällt <b>keine einmalige Gebühr</b> durch Sky an. Du sparst €&nbsp;29.</p>
 	{/if}
 {:else}
 	<p>

@@ -10,8 +10,8 @@
 		<div class="hover_container">
 			<p><b>Geschäftszeiten</b></p>
 			<p>
-				Am Telefon sind wir <b>Montag&nbsp;-&nbsp;Freitag&nbsp;von&nbsp;10-18&nbsp;Uhr</b> für Sie
-				da. <br /> Wenn Sie uns mal nicht erreichen sollten, rufen wir Sie gerne zurück. <br /> Ihre
+				Am Telefon sind wir <b>Montag&nbsp;-&nbsp;Freitag&nbsp;von&nbsp;10-18&nbsp;Uhr</b> für dich
+				da. <br /> Wenn du uns mal nicht erreichen solltest, rufen wir dich gerne zurück. <br /> Deine
 				E-Mails beantworten wir innerhalb von 24 Stunden.
 			</p>
 			<p />

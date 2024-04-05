@@ -11,7 +11,7 @@
 	<img class="sky" src={make_url('/images/badges/sky_signature.svg', dev)} alt="" />
 	<div style:color={text_color} class="text off">
 		<div class="title min-w-max">
-			<p class="nowrap">Hier können Sie</p>
+			<p class="nowrap">Hier kannst Du</p>
 			<img
 				class="text_sky"
 				style={`filter: ${filter}`}

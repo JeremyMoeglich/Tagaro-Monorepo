@@ -24,19 +24,19 @@
 			<span slot="left">
 				<h3 class={title_class}>Sky Q</h3>
 				<p>
-					Mit unserem Sky Angebot können Sie Ihr Wunschprogramm über die gesamte Laufzeit von 12
+					Mit unserem Sky Angebot kannst du dein Wunschprogramm über die gesamte Laufzeit von 12
 					Monaten zu Neukunden-Preisen genießen. Der Sky Vertrag hat eine Laufzeit von 12 Monaten
 					und ist nach 1 Jahr monatlich kündbar. Immer inklusive - Das Entertainment Paket oder das
 					Entertainment Plus Paket, der Sky Q Receiver, Sky Go und das Programm in HD-Qualität! Das
 					Fußball Bundesliga Paket, das Sport Paket, das Sky Cinema Paket und das Sky Kids Paket ist
-					zubuchbar. Ebenso können Sie Ultra HD hinzubuchen oder die Multiscreen Option mit Sky Go
-					Plus für noch mehr Flexibilität. Sehen Sie TV-Premieren, brandneue Top-Serien und
+					zubuchbar. Ebenso kannst du Ultra HD hinzubuchen oder die Multiscreen Option mit Sky Go
+					Plus für noch mehr Flexibilität. Sehe TV-Premieren, brandneue Top-Serien und
 					spannende Dokumentationen. Dazu Samstags- und Sonntagsspiele der Bundesliga live, die
 					Formel 1 und die größten Sport-Events live. Immer dabei Sky On Demand.
 				</p>
 				<p>
 					Als Sky Onlinehändler seit 2006 stehen wir für eine einfache und zügige Abwicklung mit
-					persönlichem Service. Schauen Sie sich unsere tausenden zufriedenen Kunden über
+					persönlichem Service. Schaue dir unsere tausenden zufriedenen Kunden über
 					<a
 						rel="noreferrer"
 						href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung"

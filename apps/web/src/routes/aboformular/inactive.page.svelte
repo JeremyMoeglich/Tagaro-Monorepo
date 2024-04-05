@@ -115,7 +115,7 @@
 					bind:verbose
 				/>
 				<SingleBoxSelector
-					title="Ihr Kabelnetzbetreiber"
+					title="Dein Kabelnetzbetreiber"
 					boxes={cable_receive_assets.map((v) => ({
 						asset: v,
 						disabled: false

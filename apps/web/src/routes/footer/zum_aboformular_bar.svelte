@@ -8,7 +8,7 @@
 <FormButton source={'Footer_bar'} route={$tabindex === 0 ? "https://fd10.formdesk.com/tagaro/Sky-Bestellung-5" : undefined}>
 	<div class="inner_container">
 		<div class="main_container">
-			<h2 class="main_text no_gradient">Jetzt Ihr Sky Abo individuell zusammenstellen!</h2>
+			<h2 class="main_text no_gradient">Jetzt dein Sky Abo individuell zusammenstellen!</h2>
 			<Button text="Zum Aboformular" reversed={true} />
 		</div>
 	</div>

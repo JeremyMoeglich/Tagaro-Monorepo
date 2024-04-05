@@ -25,7 +25,7 @@
 		</ul>
 	</div>
 	<div class="sofortkontakt">
-		<h3 class="no_gradient">Ihr Sofortkontakt</h3>
+		<h3 class="no_gradient">Dein Sofortkontakt</h3>
 		<p>
 			Montag - Freitag <br />
 			10:00 - 18:00 Uhr <br />
@@ -43,7 +43,7 @@
 		<!-- <a
 				href="https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung"
 				target="_blank"
-				title="Klicken Sie für weitere Informationen"
+				title="Klicke hier für weitere Informationen"
 				rel="noopener"
 			>
 				<img

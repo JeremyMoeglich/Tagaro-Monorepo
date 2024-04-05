@@ -7,8 +7,8 @@
 <div>
 	<h1 class="centered_text">Alle Sky Pakete flexibel buchbar</h1>
 	<p class="styled_p centered_text">
-		Erhalten Sie hier Ihr Sky Abonnement mit versandkostenfreier Lieferung. <br />
-		Wählen Sie Ihre Wunschpakete individuell aus Sky Entertainment, Cinema, Sport und/oder Fußball-Bundesliga.
+		Erhalte hier dein Sky Abonnement mit versandkostenfreier Lieferung. <br />
+		Wähle deine Wunschpakete individuell aus Sky Entertainment, Cinema, Sport und/oder Fußball-Bundesliga.
 	</p>
 </div>
 <LineSpacer {space} />

@@ -89,12 +89,12 @@
 					<li>✓ Bonus von TAGARO: € 20 Bonus on top bei erfolgreichem Vertragsabschluss</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
-					Entdecken Sie die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
-					Buchung des Cinema Pakets, erhalten Sie Paramount+ dazu. Zusätzlich überweisen wir Ihnen
+					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
+					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich überweisen wir dir
 					einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
-					ebenso sämtliche Zubuchoptionen zu Ihrem Vertrag wie Multiscreen und DAZN an. Ihre PAYBACK
+					ebenso sämtliche Zubuchoptionen zu deinem Vertrag wie Multiscreen und DAZN an. Deine PAYBACK
 					Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind
-					weitere Punkte möglich, wenn Sie vor Aboaufnahme einen eCoupon aktivieren. Sie profitieren
+					weitere Punkte möglich, wenn du vor Aboaufnahme einen eCoupon aktivierst. Du profitierst
 					bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung
 					seit 2006.
 				</p>
@@ -110,7 +110,7 @@
 			</div>
 			<Block title="Abovermittlung mit TAGARO">
 				<p>
-					Nach dem eBay Sofort-Kauf erhalten Sie von uns eine leicht verständliche Nachricht zur
+					Nach dem eBay Sofort-Kauf erhältst du von uns eine leicht verständliche Nachricht zur
 					Aboabwicklung zugesandt. Die Anmeldung erfolgt durch uns im Anschluss umgehend.
 				</p>
 				<p>
@@ -118,8 +118,8 @@
 					Abwicklung mit tausenden zufriedenen Kunden (siehe Bewertungen).
 				</p>
 				<p>
-					Haben Sie Fragen, helfen wir Ihnen gerne weiter: Stellen Sie uns über das eBay
-					Nachrichten-System ihre Fragen. Wir antworten innerhalb von kurzer Zeit!
+					Hast du Fragen, helfen wir dir gerne weiter: Stelle uns über das eBay
+					Nachrichten-System deine Fragen. Wir antworten innerhalb von kurzer Zeit!
 				</p>
 			</Block>
 			<AllOverviews clickable={false} ebay_version={true} />
@@ -135,7 +135,7 @@
 						losschauen – egal welcher Internetanbieter. Auf dem Smartphone, Tablet oder PC/ Mac über
 						Sky Go – natürlich auch unterwegs. Darüber hinaus erhalten Sie alle wichtigen Free
 						TV-Sender in brillanter HD-Qualität ohne Aufpreis. Mit dem Sky Q Receiver für Sat oder
-						Kabel können Sie aufnehmen, haben Zugang auf Sky On Demand und können UHD-Inhalte
+						Kabel kannst du aufnehmen, hast Zugang auf Sky On Demand und kannst UHD-Inhalte
 						genießen.
 					</p>
 					<img
@@ -157,16 +157,16 @@
 			<div
 				class="text-center flex flex-col gap-4 rounded-xl shadow-lg w-full border-slate-300 max-w-4xl border-[1px] p-8 pb-11"
 			>
-				<h3 class="text-2xl m-0">So einfach erhalten Sie Sky:</h3>
+				<h3 class="text-2xl m-0">So einfach erhältst du Sky:</h3>
 				<ul>
 					<li>1. Bei eBay auf Sofort-Kaufen klicken.</li>
 					<li>
 						2. Auf unsere Nachricht warten.<br />
-						Sie stellen Ihr Sky Programm mittels Aboformular zusammen.
+						Du stellst dein Sky Programm mittels Aboformular zusammen.
 					</li>
 					<li>
 						3. Bestätigung erhalten und Sky schauen<br />
-						Wir und Sky bestätigen Ihnen den Auftrag und Sie werden beliefert<br />
+						Wir und Sky bestätigen dir den Auftrag und du wirst beliefert<br />
 					</li>
 				</ul>
 				<h3 class="text-2xl mt-4">Benötigte Anmeldedaten nach dem eBay Sofort-Kauf:</h3>
@@ -182,26 +182,26 @@
 					<li>Kontoinhaber: ...</li>
 					<li>Empfangsart: Sat oder Kabel (Kabel-Anbieter falls bekannt)</li>
 					<li>Gewünschte Programmpakete: ...</li>
-					<li>Wählen Sie Ihr Sky Abo flexibel mit unserem Aboformular aus.</li>
+					<li>Wähle dein Sky Abo flexibel mit unserem Aboformular aus.</li>
 				</ul>
 			</div>
 			<div class="text-center flex flex-col gap-7">
-				<p>Holen Sie sich Sky mit exklusivem Preisvorteil nach Hause.</p>
+				<p>Hole dir Sky mit exklusivem Preisvorteil nach Hause.</p>
 
 				<p>
-					Nach dem Sofort-Kauf bei eBay erhalten Sie von uns eine Nachricht zur Aboabwicklung
+					Nach dem Sofort-Kauf bei eBay erhältst du von uns eine Nachricht zur Aboabwicklung
 					zugesandt. <br />
 					Die Anmeldung erfolgt durch uns im Anschluss umgehend.
 				</p>
 
 				<p>
-					Nach erfolgreicher Anmeldung erhalten Sie von uns Ihr Sky Abonnement schriftlich
+					Nach erfolgreicher Anmeldung erhältst du von uns dein Sky Abonnement schriftlich
 					bestätigt. <br />
-					Ihre Unterlagen, die Smartcard sowie die bestellte Sky Hardware erhalten Sie umgehend zugeschickt.
+					Deine Unterlagen, die Smartcard sowie die bestellte Sky Hardware erhältst du umgehend zugeschickt.
 				</p>
 
 				<p>
-					Sie bestellen bei TAGARO -
+					Du bestellst bei TAGARO -
 					<mark style="color: #0072c9;">Wir vermitteln Sky Verträge bereits seit 2006.</mark>
 					<br />
 					Wir stehen für eine einfache und zügige Abwicklung mit tausenden zufriedenen Kunden (siehe
@@ -210,9 +210,9 @@
 				</p>
 
 				<p>
-					Haben Sie Fragen, helfen wir Ihnen gerne weiter. Stellen Sie uns über eBay Ihre Fragen. <br
+					Hast du Fragen, helfen wir dir gerne weiter. Stelle uns über eBay deine Fragen. <br
 					/>
-					Wir antworten innerhalb von kurzer Zeit! Wir wünschen Ihnen gute Unterhaltung.
+					Wir antworten innerhalb von kurzer Zeit! Wir wünschen dir eine gute Unterhaltung.
 				</p>
 
 				<div class="flex justify-center items-center gap-4">

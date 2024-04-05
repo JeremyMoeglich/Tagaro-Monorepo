@@ -13,14 +13,14 @@
 		<div class="side_text_container">
 			<p>
 				<b>
-					Wir helfen Ihnen gerne weiter - sowohl per E-Mail und Kontaktformular rund um die Uhr als
+					Wir helfen dir gerne weiter - sowohl per E-Mail und Kontaktformular rund um die Uhr als
 					auch per Telefon zum Festnetzpreis.
 				</b>
 			</p>
 			<p>
-				Sie möchten gerne persönlich mit uns sprechen? Wir sind Montag bis Freitag von 10:00 bis
-				18:00 Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne mittels Rückruf, wenn sie uns
-				Ihren Kontaktwunsch mitteilen.
+				Du möchtest gerne persönlich mit uns sprechen? Wir sind Montag bis Freitag von 10:00 bis
+				18:00 Uhr telefonisch erreichbar. Zu anderen Zeiten auch gerne mittels Rückruf, wenn du uns
+				deinen Kontaktwunsch mitteilst.
 			</p>
 			<ul>
 				<li><b>Telefon: </b>02381-9874699</li>

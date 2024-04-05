@@ -11,7 +11,7 @@
 			<p>
 				Angebot gilt mit einer Mindestvertragslaufzeit von 12 Monaten (Monat der Freischaltung
 				(anteilig) zzgl. 12 Monaten) bei Buchung von Sky Entertainment Plus, Sky Cinema, Sky
-				Fußball-Bundesliga, Sky Sport, Sky Kids, Sky UHD und Sky Go Plus zu mtl. € 40. Sie haben
+				Fußball-Bundesliga, Sky Sport, Sky Kids, Sky UHD und Sky Go Plus zu mtl. € 40. Du hast
 				keinerlei zusätzliche Einmalgebühren. Hinweis: UHD ist nur bei Auswahl von Satellit oder
 				Kabel verfügbar. Das Abonnement verlängert sich automatisch nach der Mindestvertragslaufzeit
 				auf unbestimmte Zeit zu mtl. € 81,50 (mtl. € 76,50 ohne UHD-Buchung), wenn es nicht mit

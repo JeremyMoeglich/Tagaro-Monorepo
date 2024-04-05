@@ -141,7 +141,7 @@ export function generate_form_response_email(
 
 	const extras = extra_keys.map((k) => all_extras[k]);
 
-	body += `wir freuen uns Ihnen mitteilen zu können, dass Ihr Auftrag für das Sky Abo inklusive ${
+	body += `wir freuen uns dir mitteilen zu können, dass dein Auftrag für das Sky Abo inklusive ${
 		package_ids.length === 1 ? 'dem' : ''
 	} ${package_ids.map((p) => indexed_assets[p].name).join(' + ')} ${
 		package_ids.length === 1 ? 'Paket' : ''
@@ -150,13 +150,13 @@ export function generate_form_response_email(
 	} erfolgreich von uns angemeldet werden konnte.\n\n`;
 
 	if (extras.length !== 0) {
-		body += 'Ihre gewählten Extras:\n';
+		body += 'Deine gewählten Extras:\n';
 		body += extras.map((e) => `- ${e}`).join('\n');
 		body += `\n\n`;
 	}
 
 	if (form.zubuchoptionen.includes('multiscreen')) {
-		body += `Dazu erhalten Sie einen mietfreien Sky Q UHD Receiver für einmalig € 0 sowie die benötigte Smartcard für Ihr Wunschprogramm.\n`;
+		body += `Dazu erhältst du einen mietfreien Sky Q UHD Receiver für einmalig € 0 sowie die benötigte Smartcard für dein Wunschprogramm.\n`;
 		const multiscreen_extras = (
 			[
 				'multiscreen_extra_qmini_1',
@@ -164,7 +164,7 @@ export function generate_form_response_email(
 				'multiscreen_extra_quhd'
 			] satisfies zubuchoption_id[]
 		).filter((z) => form.zubuchoptionen.includes(z));
-		body += `Darüber hinaus erhalten Sie `;
+		body += `Darüber hinaus erhältst du `;
 		if (multiscreen_extras.length !== 0) {
 			if (multiscreen_extras.includes('multiscreen_extra_quhd')) {
 				body += `einen 2. Sky Q UHD Receiver für einmalig ${get_price_string(
@@ -197,7 +197,7 @@ export function generate_form_response_email(
 	}
 
 	{
-		body += `Ihr Vertrag hat eine Laufzeit von 12 Monaten zum monatlichen `;
+		body += `Dein Vertrag hat eine Laufzeit von 12 Monaten zum monatlichen `;
 		if (form.zubuchoptionen.includes('hdplus') || form.zubuchoptionen.includes('uhd')) {
 			body += `Gesamtpreis`;
 		} else {
@@ -235,7 +235,7 @@ export function generate_form_response_email(
 			  )}`
 	}.\n\n`;
 
-	body += `Ihre Empfangsart ist ${map_empfangsart(form.empfangsart)}${
+	body += `Deine Empfangsart ist ${map_empfangsart(form.empfangsart)}${
 		form.empfangsart === 'cable' &&
 		remove_brackets(form.cable_receiver) !== 'Automatische Ermittlung'
 			? ` über ${remove_brackets(form.cable_receiver)}`
@@ -243,16 +243,16 @@ export function generate_form_response_email(
 	}.\n\n`;
 
 	if (form.payback_number) {
-		body += `Ihre PAYBACK Nummer wurde eingetragen.\n\n`;
+		body += `Deine PAYBACK Nummer wurde eingetragen.\n\n`;
 	}
 
-	body += `Ihre Sky-Vertragsnummer lautet ${register.sky_vertragsnummer}.\n`;
-	body += `Ihre Sky-Kundennummer lautet ${register.sky_kundennummer}.\n\n`;
+	body += `Deine Sky-Vertragsnummer lautet ${register.sky_vertragsnummer}.\n`;
+	body += `Deine Sky-Kundennummer lautet ${register.sky_kundennummer}.\n\n`;
 
 	if (form.empfangsart === 'internet') {
-		body += `Dazu erhalten Sie eine mietfreie Sky Q IPTV Box für einmalig € 0.\n\n`;
+		body += `Dazu erhältst du eine mietfreie Sky Q IPTV Box für einmalig € 0.\n\n`;
 	} else {
-		body += `Dazu erhalten Sie einen mietfreien Sky Q UHD Receiver für einmalig € 0 sowie die benötigte Smartcard für Ihr Wunschprogramm.\n\n`;
+		body += `Dazu erhältst du einen mietfreien Sky Q UHD Receiver für einmalig € 0 sowie die benötigte Smartcard für dein Wunschprogramm.\n\n`;
 	}
 
 	const widerruf_end_date = dayjs(register.vertragsbeginn)
@@ -261,7 +261,7 @@ export function generate_form_response_email(
 		.toLocaleDateString('de-DE');
 
 	body += dedent(/*html*/ `
-		<b>Die Lieferung erfolgt täglich direkt von Sky an Ihre angegebene ${
+		<b>Die Lieferung erfolgt täglich direkt von Sky an deine angegebene ${
 			form.abweichende_lieferadresse ? 'abweichende Lieferadresse' : 'Adresse'
 		}${
 			form.abweichende_lieferadresse &&
@@ -282,24 +282,24 @@ export function generate_form_response_email(
 				? ' (Packstation)'
 				: ''
 		}.</b>
-		<b>Bei Fragen zum Versandstatus können Sie Sky unter der Kundenhotline 089 - 99 72 79 00 kontaktieren (gebührenfrei).</b>
+		<b>Bei Fragen zum Versandstatus kannst du Sky unter der Kundenhotline 089 - 99 72 79 00 kontaktieren (gebührenfrei).</b>
 
-		<b>Dazu erhalten Sie von uns nach ca. 8 Wochen einen Bonus von € ${bonus} auf Ihr Konto überwiesen.</b>
+		<b>Dazu erhältst du von uns nach ca. 8 Wochen einen Bonus von € ${bonus} auf dein Konto überwiesen.</b>
 
-		Sie haben für dieses Sky Abonnement ein Widerrufsrecht von 14 Tagen ab Vertragsschluss. Dieses können Sie schriftlich bis spätestens ${widerruf_end_date} direkt bei uns als Fachhändler in Anspruch nehmen.
-		Ein Widerruf direkt bei Sky ist bei einem Fachhandels-Abonnement nicht möglich. Bitte wenden Sie sich im Falle eines Rücktrittswunsch somit spätestens bis zum ${widerruf_end_date} an uns.
+		Du hast für dieses Sky Abonnement ein Widerrufsrecht von 14 Tagen ab Vertragsschluss. Dieses kannst du schriftlich bis spätestens ${widerruf_end_date} direkt bei uns als Fachhändler in Anspruch nehmen.
+		Ein Widerruf direkt bei Sky ist bei einem Fachhandels-Abonnement nicht möglich. Bitte wende dich im Falle eines Rücktrittswunsch somit spätestens bis zum ${widerruf_end_date} an uns.
 
-		Wir wünschen Ihnen schon jetzt gute Unterhaltung mit Ihrem Wunschprogramm und bedanken uns recht herzlich für das entgegengebrachte Vertrauen! 
+		Wir wünschen dir schon jetzt gute Unterhaltung mit deinem Wunschprogramm und bedanken uns recht herzlich für das entgegengebrachte Vertrauen! 
 	`);
 
 	body += '\n\n';
 
 	if (form.form_name === 'Sky-Bestellung-4') {
 		body += dedent(/*html*/ `
-			Eine positive Bewertung wurde soeben abgegeben. Wir möchten Sie ebenso dazu einladen, uns bei eBay positiv zu bewerten, wenn Sie am Ende mit allem zufrieden waren.
+			Eine positive Bewertung wurde soeben abgegeben. Wir möchten dich ebenso dazu einladen, uns bei eBay positiv zu bewerten, wenn du am Ende mit allem zufrieden waren.
 			Dies würde uns sehr helfen!
 
-			Loggen Sie sich dafür einfach in Ihr Mein eBay Konto ein und suchen Sie die passende Transaktion raus:
+			Logge dich dafür einfach in dein Mein eBay Konto ein und suche dir die passende Transaktion raus:
 			<a href="https://www.ebay.de/mye/myebay/purchase">https://www.ebay.de/mye/myebay/purchase</a>
 		`);
 	}
@@ -309,7 +309,7 @@ export function generate_form_response_email(
 	body += dedent(/*html*/ `
 		<b>Mit freundlichen Grüßen</b>
 
-		<b>Ihr TAGARO Team</b>
+		<b>Dein TAGARO Team</b>
 
 		TAGARO Medienshop - Möglich & Möglich GbR / Großer Sandweg 32 / 59065 Hamm
 		Telefon 02381 987 46 99 / Fax 0321 21 11 65 58 
