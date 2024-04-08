@@ -14,7 +14,7 @@
 			</h2>
 		</div>
 	</div>
-	<a href="https://fd10.formdesk.com/tagaro/Sky-Bestellung-6" class="mb-5 mt-[3px] w-3/4">
+	<a href="https://fd10.formdesk.com/tagaro/Sky-Bestellung-5" class="mb-5 mt-[3px] w-3/4">
 		<img src="/images/visuals/sky_24-01_best-deals_entplus-cin-buli-spo.avif" alt="" class=" ml-auto mr-auto w-full max-w-[800px] image" />
 	</a>
 
@@ -30,7 +30,7 @@
 
 	<AboformularButton
 		source="Xmas Special Showcase"
-		route="https://fd10.formdesk.com/tagaro/Sky-Bestellung-6"
+		route="https://fd10.formdesk.com/tagaro/Sky-Bestellung-5"
 	/>
 </div>
 

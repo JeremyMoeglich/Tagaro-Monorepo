@@ -448,7 +448,7 @@
 		</p>
 	</div> -->
 	<div>
-		<h3>1 Monat deiner Abogebühren geschenkt:</h3>
+		<h3 class={title_classes}>1 Monat deiner Abogebühren geschenkt:</h3>
 		<p>
 			Als Dankeschön erhältst du eine Gutschrift über den Abobetrag eines Monats deines gewählten
 			Wunschabos auf dein Konto überwiesen. Die Auszahlung erfolgt von uns nach ca. 8 Wochen.
