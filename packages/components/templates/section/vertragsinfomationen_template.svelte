@@ -440,11 +440,18 @@
 			7 Tagen nach Erhalt der Ware.
 		</p>
 	</div>
-	<div>
+	<!-- <div>
 		<h3 class={title_classes}>€&nbsp;{bonus} Prämie von uns:</h3>
 		<p>
 			Als Dankeschön erhältst du eine Prämie von €&nbsp;{bonus} auf dein Konto überwiesen. Du erhältst
 			den Betrag nach ca. 8 Wochen nach dem Abobeginn gutgeschrieben.
+		</p>
+	</div> -->
+	<div>
+		<h3>1 Monat deiner Abogebühren geschenkt:</h3>
+		<p>
+			Als Dankeschön erhältst du eine Gutschrift über den Abobetrag eines Monats deines gewählten
+			Wunschabos auf dein Konto überwiesen. Die Auszahlung erfolgt von uns nach ca. 8 Wochen.
 		</p>
 	</div>
 	<br />

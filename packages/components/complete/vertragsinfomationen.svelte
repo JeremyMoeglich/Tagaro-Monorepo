@@ -25,7 +25,7 @@
 
 <VertragsinfomationenTemplate>
 	<div class="elements">
-
+		
 	</div>
 </VertragsinfomationenTemplate>
 

@@ -164,9 +164,10 @@
 								{#if aktivierung === 0}
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
 								{/if}
-								{#if bonus !== 0}
+								<!-- {#if bonus !== 0}
 									<li>✓ {@html bonus_string()} Bonus on top</li>
-								{/if}
+								{/if} -->
+								<li>✓ 1 Monat deiner Abogebühren geschenkt</li>
 								<li>✓ 500 PAYBACK Basis Punkte</li>
 								<!-- 
 							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
