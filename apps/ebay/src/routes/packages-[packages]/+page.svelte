@@ -101,7 +101,7 @@
 			</div>
 			<img
 				class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-				src={make_url('/images/visuals/sky1023_teaser.png', dev)}
+				src={make_url('/images/visuals/sky0424_teaser.png', dev)}
 				alt=""
 			/>
 			<!-- <Wunschgutschein /> -->
