@@ -69,7 +69,7 @@ export const packages_assets = [
 		id: 'cinema',
 		price: { jahr: 11, monat: 13.5, singular: 0 },
 		name: 'Cinema',
-		note: 'Jeden Tag ein neuer Film.',
+		note: 'Dein Kino für zu Hause.',
 		image: {
 			normal: `${packages_image_location}normal/cinema.png`,
 			square: `${packages_image_location}square/cinema.webp`
