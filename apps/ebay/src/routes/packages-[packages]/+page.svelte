@@ -26,31 +26,22 @@
 			[['entertainment'], 'Titel'],
 			[
 				['entertainment', 'sport'],
-				`Sky Sport Abo inkl. der Formel 1 2024 live für ${get_price_string(
-					['entertainment', 'sport'],
-					'jahr'
-				)} mtl.*`
+				`Sky Sport Abo inkl. der Formel 1 2024 live in HD für € 25 mtl.*`
 			],
 			[['entertainment', 'cinema'], 'Titel'],
-			[['entertainment', 'bundesliga'], 'Titel'],
-			[['entertainment', 'sport', 'bundesliga'], 'Titel'],
+			[['entertainment', 'bundesliga'], 'Sky Entertainment + Fußball Bundesliga Abo in HD für € 30 mtl.*'],
+			[['entertainment', 'sport', 'bundesliga'], 'Sky Entertainment + Sport + Bundesliga Abo in HD für € 35 mtl.*'],
 			[['entertainment', 'cinema', 'sport'], 'Titel'],
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				`Sky Abo mit Entertainment + 3 Paketen für ${get_price_string(
-					['entertainment', 'sport', 'bundesliga', 'cinema'],
-					'jahr'
-				)} mtl. Dazu €&nbsp;${bonus} Bonus*`
+				`Sky Abo mit Entertainment + 3 Paketen in HD für € 40 mtl.*`
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
 			[
 				['entertainmentplus', 'cinema'],
-				`Sky Entertainment Plus + Cinema inkl. Paramount+ für ${get_price_string(
-					['entertainmentplus', 'cinema'],
-					'jahr'
-				)} mtl.*`
+				`Sky Entertainment Plus + Cinema in HD inkl. Paramount+ für € 25 mtl.*`
 			],
 			[['entertainmentplus', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
@@ -58,14 +49,11 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				`Sky Komplett Abo inkl. Netflix & Paramount+ € 45 mtl. Dazu € 20 Bonus*`
+				`Sky Komplett Abo in HD inklusive Netflix & Paramount+ für € 45 mtl.*`
 			],
 			[
 				'allgemein',
-				`Sky Abo nach Wahl z.B. Entertainment Plus für ${get_price_string(
-					['entertainmentplus'],
-					'jahr'
-				)} mtl. Dazu €&nbsp;${bonus} Bonus*`
+				`Sky Abo nach Wahl z.B. Entertainment Plus mit Netflix für € 15 mtl.*`
 			]
 		];
 		const title = titles.find(([p]) =>
@@ -86,17 +74,17 @@
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					<li>✓ Bonus von TAGARO: € 20 Bonus on top bei erfolgreichem Vertragsabschluss</li>
+					<li>✓ Inklusive 1 Monat deiner Abogebühren von TAGARO geschenkt</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
 					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
-					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich überweisen wir dir
-					einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
-					ebenso sämtliche Zubuchoptionen zu deinem Vertrag wie Multiscreen und DAZN an. Deine PAYBACK
-					Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online sind
-					weitere Punkte möglich, wenn du vor Aboaufnahme einen eCoupon aktivierst. Du profitierst
-					bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger Erfahrung
-					seit 2006.
+					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. On top erhältst du von uns eine
+					Gutschrift über die Gebühren eines Monats deines Wunschabos erstattet. Der Empfang ist
+					über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche Zubuchoptionen zu
+					deinem Vertrag wie Multiscreen und DAZN an. Deine PAYBACK Nummer für 500 Basis-Punkte
+					tragen wir gerne ein. Über die PAYBACK App oder online sind weitere Punkte möglich, wenn
+					du vor Aboaufnahme einen eCoupon aktivierst. Du profitierst bei TAGARO von einer schnellen
+					und zuverlässigen Betreuung sowie jahrelanger Erfahrung seit 2006.
 				</p>
 			</div>
 			<img
@@ -118,8 +106,8 @@
 					Abwicklung mit tausenden zufriedenen Kunden (siehe Bewertungen).
 				</p>
 				<p>
-					Hast du Fragen, helfen wir dir gerne weiter: Stelle uns über das eBay
-					Nachrichten-System deine Fragen. Wir antworten innerhalb von kurzer Zeit!
+					Hast du Fragen, helfen wir dir gerne weiter: Stelle uns über das eBay Nachrichten-System
+					deine Fragen. Wir antworten innerhalb von kurzer Zeit!
 				</p>
 			</Block>
 			<AllOverviews clickable={false} ebay_version={true} />
@@ -210,8 +198,7 @@
 				</p>
 
 				<p>
-					Hast du Fragen, helfen wir dir gerne weiter. Stelle uns über eBay deine Fragen. <br
-					/>
+					Hast du Fragen, helfen wir dir gerne weiter. Stelle uns über eBay deine Fragen. <br />
 					Wir antworten innerhalb von kurzer Zeit! Wir wünschen dir eine gute Unterhaltung.
 				</p>
 
