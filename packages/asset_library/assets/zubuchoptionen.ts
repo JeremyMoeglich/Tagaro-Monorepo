@@ -24,7 +24,7 @@ export type zubuchoption_id = (typeof zubuchoption_ids)[number];
 
 const zubuchoption_image_location = '/images/assets/zubuchoptionen/';
 
-const dazn_yearly_price = { jahr: 29.99, monat: 44.99, singular: 0 } satisfies Price;
+const dazn_yearly_price = { jahr: 34.99, monat: 44.99, singular: 0 } satisfies Price;
 
 export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_id>> = [
 	{
