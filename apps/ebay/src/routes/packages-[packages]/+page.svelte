@@ -29,8 +29,14 @@
 				`Sky Sport Abo inkl. der Formel 1 2024 live in HD für € 25 mtl.*`
 			],
 			[['entertainment', 'cinema'], 'Titel'],
-			[['entertainment', 'bundesliga'], 'Sky Entertainment + Fußball Bundesliga Abo in HD für € 30 mtl.*'],
-			[['entertainment', 'sport', 'bundesliga'], 'Sky Entertainment + Sport + Bundesliga Abo in HD für € 35 mtl.*'],
+			[
+				['entertainment', 'bundesliga'],
+				'Sky Entertainment + Fußball Bundesliga Abo in HD für € 30 mtl.*'
+			],
+			[
+				['entertainment', 'sport', 'bundesliga'],
+				'Sky Entertainment + Sport + Bundesliga Abo in HD für € 35 mtl.*'
+			],
 			[['entertainment', 'cinema', 'sport'], 'Titel'],
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
@@ -51,10 +57,7 @@
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
 				`Sky Komplett Abo in HD inklusive Netflix & Paramount+ für € 45 mtl.*`
 			],
-			[
-				'allgemein',
-				`Sky Abo nach Wahl z.B. Entertainment Plus mit Netflix für € 15 mtl.*`
-			]
+			['allgemein', `Sky Abo nach Wahl z.B. Entertainment Plus mit Netflix für € 15 mtl.*`]
 		];
 		const title = titles.find(([p]) =>
 			typeof p === 'string'
@@ -241,10 +244,12 @@
 		position: relative;
 		bottom: 20px;
 		background-color: white;
-		border-radius: 20px;
 		width: 100%;
 		box-shadow: inset 0px 0px 14px rgba(0, 0, 0, 0.192);
 		z-index: 2;
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent;
+		border-image: linear-gradient(to right, rgb(255, 197, 37), rgb(255, 37, 37), rgb(0, 47, 255)) 1;
 	}
 	.outer {
 		border-radius: 20px;
