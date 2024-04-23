@@ -247,8 +247,8 @@
 		width: 100%;
 		box-shadow: inset 0px 0px 14px rgba(0, 0, 0, 0.192);
 		z-index: 2;
-		border-top: 4px solid transparent;
-		border-bottom: 4px solid transparent;
+		border-top: 3px solid transparent;
+		border-bottom: 3px solid transparent;
 		border-image: linear-gradient(to right, rgb(255, 197, 37), rgb(255, 37, 37), rgb(0, 47, 255)) 1;
 	}
 	.outer {
