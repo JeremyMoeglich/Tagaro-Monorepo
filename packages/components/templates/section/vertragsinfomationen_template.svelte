@@ -435,9 +435,10 @@
 	<div>
 		<h3 class={title_classes}>Zusätzliche Informationen:</h3>
 		<p>
-			Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse zur
-			Bestellung erforderlich. Der Abobeginn ist nicht verlegbar. Der Vertrag startet innerhalb von
-			7 Tagen nach Erhalt der Ware.
+			Dieses Angebot gilt für Internet, Sat- oder Kabelanschluss. Es ist eine deutsche Adresse und
+			Bankverbindung zur Bestellung erforderlich. Eine Änderung auf eine andere Zahlweise ist später
+			in deinem Sky Kundencenter möglich. Der Abobeginn ist nicht verlegbar. Der Vertrag startet
+			innerhalb von 7 Tagen nach Erhalt der Ware.
 		</p>
 	</div>
 	<!-- <div>
