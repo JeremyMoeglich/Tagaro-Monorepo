@@ -11,7 +11,7 @@
 	points={[
 		`Nur im Web: € 0 statt € 29 einmalige Gebühr*`,
 		// `On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
-		"On top erhältst du von uns eine Gutschrift über die Gebühren eines Monats deines Wunschabos erstattet*",
+		`On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
 		`Entertainment + 3 Pakete jetzt nur ${get_price_string(
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
 			'jahr'
