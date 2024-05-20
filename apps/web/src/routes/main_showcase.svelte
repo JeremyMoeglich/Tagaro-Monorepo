@@ -27,9 +27,9 @@
 		Sky Verträge vom Sky Onlinehändler ab {@html get_price_string(['entertainmentplus'], 'jahr')} mtl.
 	</span>
 	<span slot="subtitle0">
-		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} oder alles
-		von Sky inkl. Paramount+ für
-		{@html get_price_string(['entertainmentplus', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl.*
+		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} oder alle Sky
+		Pakete inkl. Paramount+ für
+		{@html get_price_string(['entertainment', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl.*
 	</span>
 </ShowcaseTemplate>
 
