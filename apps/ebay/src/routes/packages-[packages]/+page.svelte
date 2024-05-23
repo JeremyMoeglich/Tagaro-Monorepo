@@ -77,22 +77,19 @@
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					<li>✓ Inklusive 1 Monat deiner Abogebühren von TAGARO geschenkt</li>
+					<li>✓ Frühlingsaktion: TAGARO schenkt dir den Betrag eines Monats von deinem Wunschabo</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
 					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
-					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. On top erhältst du von uns eine
-					Gutschrift über die Gebühren eines Monats deines Wunschabos erstattet. Der Empfang ist
-					über Sat, Kabel oder Internet möglich. Wir bieten ebenso sämtliche Zubuchoptionen zu
-					deinem Vertrag wie Multiscreen und DAZN an. Deine PAYBACK Nummer für 500 Basis-Punkte
-					tragen wir gerne ein. Über die PAYBACK App oder online sind weitere Punkte möglich, wenn
-					du vor Aboaufnahme einen eCoupon aktivierst. Du profitierst bei TAGARO von einer schnellen
-					und zuverlässigen Betreuung sowie jahrelanger Erfahrung seit 2006.
+					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich erhältst du eine Gutschrift über den Abobetrag eines Monats deines gewählten Wunschabos auf dein Konto überwiesen. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
+					ebenso sämtliche Zubuchoptionen zu deinem Vertrag wie Multiscreen und DAZN an. Deine
+					PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online
+					sind weitere Punkte möglich, wenn du vor Aboaufnahme einen eCoupon aktivierst. Du profitierst bei uns von einer schnellen und zuverlässigen Betreuung.
 				</p>
 			</div>
 			<img
 				class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-				src={make_url('/images/visuals/sky0424_teaser.png', dev)}
+				src={make_url('/images/visuals/sky0524_teaser.png', dev)}
 				alt=""
 			/>
 			<!-- <Wunschgutschein /> -->
