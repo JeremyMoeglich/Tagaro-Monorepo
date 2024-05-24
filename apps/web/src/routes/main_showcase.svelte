@@ -11,7 +11,7 @@
 	points={[
 		`Nur im Web: € 0 statt € 29 einmalige Gebühr*`,
 		// `On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
-		"On top erhältst du von uns eine Gutschrift über die Gebühren eines Monats deines Wunschabos erstattet*",
+		'On top erhältst du von uns eine Gutschrift über die Gebühren eines Monats deines Wunschabos erstattet*',
 		`Entertainment + 3 Pakete jetzt nur ${get_price_string(
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
 			'jahr'
@@ -27,9 +27,9 @@
 		Sky Verträge vom Sky Onlinehändler ab {@html get_price_string(['entertainmentplus'], 'jahr')} mtl.
 	</span>
 	<span slot="subtitle0">
-		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} oder alles
-		von Sky inkl. Paramount+ für
-		{@html get_price_string(['entertainmentplus', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl.*
+		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} oder alle Sky
+		Pakete inkl. Paramount+ für
+		{@html get_price_string(['entertainment', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl.*
 	</span>
 </ShowcaseTemplate>
 
