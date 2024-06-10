@@ -77,14 +77,17 @@
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					<li>✓ Frühlingsaktion: TAGARO schenkt dir den Betrag eines Monats von deinem Wunschabo</li>
+					<li>✓ Bonus von TAGARO: € 20 Bonus on top bei erfolgreichem Vertragsabschluss</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
 					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
-					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich erhältst du eine Gutschrift über den Abobetrag eines Monats deines gewählten Wunschabos auf dein Konto überwiesen. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
+					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich überweisen wir dir
+					einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
 					ebenso sämtliche Zubuchoptionen zu deinem Vertrag wie Multiscreen und DAZN an. Deine
 					PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online
-					sind weitere Punkte möglich, wenn du vor Aboaufnahme einen eCoupon aktivierst. Du profitierst bei uns von einer schnellen und zuverlässigen Betreuung.
+					sind weitere Punkte möglich, wenn du vor Aboaufnahme einen eCoupon aktivierst. Du
+					profitierst bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger
+					Erfahrung seit 2006.
 				</p>
 			</div>
 			<img
