@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { priceable_asset_id } from 'asset_library/asset_types';
 	import {
-		get_offer_price,
 		get_price,
 		get_price_string,
+		get_statt_price_string,
 		to_price_string
 	} from 'asset_library/prices';
 	// import { typed_keys } from 'functional-utilities';
@@ -17,7 +17,6 @@
 	import Senders from '../../layout/senders.svelte';
 	import { make_url } from 'frontend/url';
 	import { dev } from '$app/environment';
-	import { empty_offer } from 'asset_library/offer_description';
 
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
@@ -36,7 +35,7 @@
 	});
 
 	$: primary_price = get_price(price_asset_ids).jahr;
-	$: base_price = get_offer_price(empty_offer, price_asset_ids).jahr;
+	$: base_price = get_statt_price_string(price_asset_ids);
 </script>
 
 <div class="package_overview">
@@ -71,8 +70,8 @@
 						12 Monate nur {@html to_price_string(primary_price)} mtl.*
 					</h3>
 					<p class="small_text">
-						{#if base_price > primary_price}
-							statt {@html to_price_string(base_price)} mtl.
+						{#if base_price}
+							statt {@html base_price} mtl.
 							<br />
 						{/if}
 						(im Jahres-Abo, danach {@html get_price_string(price_asset_ids, 'monat')} mtl.* im Monats-Abo)

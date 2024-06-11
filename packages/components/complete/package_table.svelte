@@ -1,10 +1,5 @@
 <script lang="ts">
-	import {
-		get_offer_note,
-		get_offer_price,
-		get_price_string,
-		to_price_string
-	} from 'asset_library/prices';
+	import { get_offer_note, get_statt_price_string, get_price_string } from 'asset_library/prices';
 	import {
 		max_combination_length,
 		base_premium_package_combinations,
@@ -17,7 +12,6 @@
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
 	import { typed_entries } from 'functional-utilities';
-	import { empty_offer } from 'asset_library/offer_description';
 
 	const col_amount = max_combination_length + 1;
 
@@ -64,18 +58,22 @@
 				{/each}
 				<div class="cell text-cell" style:--row={row_index + 1} style:--col={col_amount}>
 					<div class="text-cell-inner">
+						{#if get_offer_note(row)}
+							<span class="nowrap color_text" style="font-size:15px;padding-bottom: 15px;letter-spacing:.2px;"><b>{@html get_offer_note(row)}</b></span>
+						{/if}
 						<p style="line-height: 23px;color:#ff4444;font-size:20px;">
 							<b>
-								{#if get_offer_note(row)}
-									<mark class="nowrap">{@html get_offer_note(row)}</mark>
-									<br />
-								{/if}
-
 								{@html get_price_string(row, 'jahr')}&nbsp;mtl.*
 							</b>
 						</p>
 						<p class="small">
-							<!-- statt: {@html to_price_string(get_offer_price(empty_offer, row).jahr, true)} mtl. <br /> -->
+							<!-- {@html (() => {
+								const statt = get_statt_price_string(row);
+								if (statt) {
+									return `statt: ${statt}<br>`;
+								}
+								return '';
+							})()} -->
 							(im Jahres-Abo, danach {@html get_price_string(row, 'monat')}&nbsp;mtl. im Monats-Abo)
 						</p>
 					</div>

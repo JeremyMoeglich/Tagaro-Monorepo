@@ -39,16 +39,15 @@ body {
 
 @media screen and (max-width: 970px) {
 	.showcase_size {
-		height: 950px
+		height: 950px;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	.showcase_size {
-		height: 1000px
+		height: 1000px;
 	}
 }
-
 
 $gradient-safezone: 5px;
 
@@ -62,12 +61,12 @@ $gradient-safezone: 5px;
 
 .color_text {
 	background: linear-gradient(
-		142deg,
-		rgb(253, 122, 29) 0%,
-		rgb(253, 29, 29) 21%,
-		rgb(194, 64, 159) 51%,
-		rgb(106, 92, 186) 77%,
-		rgb(29, 162, 253) 100%
+		to right,
+		rgb(245, 100, 0) 0%,
+		rgb(255, 0, 0) 25%,
+		rgb(181, 0, 125) 50%,
+		rgb(33, 66, 156) 75%,
+		rgb(0, 113, 255) 100%
 	);
 	-webkit-background-clip: text;
 	background-clip: text;

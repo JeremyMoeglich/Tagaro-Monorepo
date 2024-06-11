@@ -21,7 +21,8 @@ const packages_image_location = '/images/assets/packages/';
 export const packages_assets = [
 	{
 		id: 'entertainment',
-		price: { jahr: 16.5, monat: 19, singular: 0 },
+		// price: { jahr: 16.5, monat: 19, singular: 0 },
+		price: { jahr: 18.5, monat: 19, singular: 0 },
 		name: 'Entertainment',
 		note: 'Exklusives Entertainment ohne Ende.',
 		image: {
@@ -45,7 +46,8 @@ export const packages_assets = [
 	},
 	{
 		id: 'entertainmentplus',
-		price: { jahr: 21.5, monat: 27.5, singular: 0 },
+		// price: { jahr: 21.5, monat: 27.5, singular: 0 },
+		price: { jahr: 27.5, monat: 27.5, singular: 0 },
 		name: 'Entertainment Plus',
 		note: 'Alle Sky Serien und Netflix.',
 		image: {
