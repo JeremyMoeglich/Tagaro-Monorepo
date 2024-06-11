@@ -2,7 +2,7 @@
 	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
-	import { bonus, get_offer_note, get_price_string } from 'asset_library/prices';
+	import { bonus, get_offer_note, get_price_string, get_savings_string } from 'asset_library/prices';
 	import { base_premium_package_combinations } from 'asset_library/assets/packages';
 	import { typed_entries } from 'functional-utilities';
 
@@ -221,7 +221,7 @@
 			<li>Sky Kids {@html get_price_string(['kids'], 'monat')} mtl.</li>
 		</ul>
 	</div>
-	<!-- <div>
+	<div>
 		<h3 class={title_classes}>Ersparnis:</h3>
 		<p>
 			Die Ersparnis bis zu {@html get_savings_string([
@@ -229,10 +229,9 @@
 				'cinema',
 				'bundesliga',
 				'sport'
-			])} ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im Vergleich zum Sky Standard-Jahresabonnementspreis
-			sowie aus dem rabattierten DAZN Jahresabonnementspreis im Vergleich zum regulären DAZN Jahresabonnementspreis.
+			])} ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im Vergleich zum Sky Standard-Jahresabonnementspreis.
 		</p>
-	</div> -->
+	</div>
 	<div>
 		<h3 class="light">Sky Cinema Paket / Paramount+</h3>
 		<p>

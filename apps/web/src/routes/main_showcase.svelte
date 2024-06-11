@@ -19,7 +19,8 @@
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
 			'monat'
 		)} mtl.*`,
-		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme'
+		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme',
+		`Sicher dir alles von Sky und spare bis zu € 168 im ersten Jahr*`
 	]}
 	top_margin={20}
 >
