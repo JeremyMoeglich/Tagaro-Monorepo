@@ -2,7 +2,12 @@
 	import AktivierungSentence from '../../complete/aktivierung_sentence.svelte';
 	import { indexed_priceable_assets } from 'asset_library/priceable_asset';
 
-	import { bonus, get_offer_note, get_price_string, get_savings_string } from 'asset_library/prices';
+	import {
+		bonus,
+		get_offer_note,
+		get_price_string,
+		get_savings_string
+	} from 'asset_library/prices';
 	import { base_premium_package_combinations } from 'asset_library/assets/packages';
 	import { typed_entries } from 'functional-utilities';
 
@@ -345,23 +350,27 @@
 		</p>
 	</div>
 	<div>
-		<h3 class={title_classes}>Multiscreen (bis zu 5 Geräte):</h3>
+		<h3 class={title_classes}>Multiscreen:</h3>
 		<p>
-			Mit Multiscreen kann das Sky Programm mit Sky Q über das Internet auf bis zu 3 Endgeräten und
-			auf Sky Q über SAT oder Kabel auf bis zu 5 Endgeräten gleichzeitig gestreamt werden.
-			Voraussetzung ist die Nutzung von mindestens einem Sky Q Receiver oder einer Sky Q IPTV Box
-			sowie eine stabile Internetverbindung (ausgeschlossen ist die Verbindung über einen
-			VPN-Zugang). Empfohlene Bandbreite 6 Mbit/s für HD-Qualität. Für die Internetverbindung
-			anfallende Kosten sind nicht Bestandteil des Abonnements. Das Streaming des Sky Programmes ist
-			mit der Sky Q-Mini, der Sky Q IPTV Box, der Sky Q App (auf Apple TV ab Generation 4, auf Smart
-			TV von LG Electronics mit Betriebssystem Web OS 2.0 oder höher oder Samsung Smart TV ab
-			Modelljahr 2015 mit Tizen Betriebssystem oder einer Playstation 4 Konsole) und mit der Sky Go
-			App auf mobilen Endgeräten (Betriebssysteme: Android, iOS, Windows; Hersteller: Mac, Huawei)
-			möglich. Über die Sky Q IPTV Box und Sky Q-Mini sind UHD-Inhalte nicht verfügbar. Pro Sky Q
-			Abonnement über SAT oder Kabel sind maximal 2 Sky Q Receiver (je €&nbsp;49 durch Sky) zzgl.
-			maximal 2 Sky Q-Mini (je €&nbsp;39 durch Sky) oder bei einem Sky Q Abonnement über das
-			Internet maximal 3 Sky Q IPTV Boxen (je €&nbsp;39 durch Sky) buchbar. Eine Buchung von
-			Multiscreen ohne zusätzliches Gerät ist ebenso möglich.
+			Mit Multiscreen kann das Sky Programm bei der Empfangsart IPTV auf bis zu 6 Endgeräten und bei
+			der Empfangsart SAT oder Kabel auf bis zu 4 Endgeräten gleichzeitig geschaut werden.
+			Voraussetzung ist ein Sky Abonnement und bei IPTV mindestens eine Sky Stream Box (maximal 3
+			Sky Stream Boxen), bei Sat oder Kabel mindestens einen Sky Q Receiver (maximal 2 Sky Q
+			Receiver zzgl. maximal 2 Sky Q-Mini), sowie jeweils eine stabile Internetverbindung
+			(ausgeschlossen ist die Verbindung über einen VPN-Zugang). Empfohlene Bandbreite 6 Mbit/s für
+			HD-Qualität. Für die Internetverbindung anfallende Kosten sind nicht Bestandteil des
+			Abonnements. Das Streaming des Sky Programmes ist mit der Sky Stream Box, Sky Q Mini und der
+			Sky Q App (auf Apple TV ab Generation 4, auf Smart TV von LG Electronics mit Betriebssystem
+			Web OS 4.0 oder höher oder Samsung Smart TV ab Modelljahr 2017 mit Tizen Betriebssystem oder
+			einer Playstation 4 bzw. 5 oder einer Xbox One, Xbox Series S oder Xbox Series X Konsole) und
+			mit der Sky Go App auf mobilen Endgeräten (Betriebssysteme: Android, iOS, Windows; Hersteller:
+			Mac, Huawei) möglich. Über die Sky Q Mini sind UHD-Inhalte nicht verfügbar. <br><br>
+
+			<b>Aufnahmekapazität:</b> entspricht einer Aufnahmequalität in SD von einem Sky Sender (bspw.
+			Sky Cinema Premiere, Sky Sport Bundesliga 1, Sky Sport 3 usw.). <br><br>
+
+			<b>Apps:</b> Nicht enthalten ist die Nutzung von kostenpflichtigen Apps/Mediatheken wie z. B. Prime
+			Video, Netflix, DAZN etc. Hierfür ist ein separates Abonnement des jeweiligen Anbieters nötig.
 		</p>
 	</div>
 	<div>
@@ -401,17 +410,6 @@
 			HDMI-Anschluss empfangen werden. Voraussetzung ist ein Sky Abonnement inkl. Sky Q. UHD-Inhalte
 			sind über Sky Q Mini nicht verfügbar. Für die Internetverbindung anfallende Kosten sind kein
 			Bestandteil des Sky Abonnements.
-		</p>
-	</div>
-	<div>
-		<h3 class={title_classes}>Sky Q IPTV Box:</h3>
-		<p>
-			Die Sky Q IPTV Box wird leihweise für die Dauer des Sky Abonnements zur Verfügung gestellt.
-			Mit der Sky Q IPTV Box können einzelne Inhalte des Sky Abonnements über das Internet auf einem
-			TV-Gerät mit HDMI-Anschluss empfangen werden. Voraussetzung ist ein Sky Abonnement inkl. Sky Q
-			sowie eine dauerhafte Internetverbindung. Empfohlene Bandbreite mindestens 3,5 Mbit/s für
-			SD-Qualität, 6 Mbit/s für HD-Qualität. Für die Internetverbindung anfallende Kosten sind kein
-			Bestandteil des Sky Abonnements. UHD-Inhalte sind über die Sky Q IPTV Box nicht verfügbar.
 		</p>
 	</div>
 	<div>

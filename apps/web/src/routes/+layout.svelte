@@ -29,7 +29,6 @@
 			])
 		]),
 		'Sky Q': '/sky-q',
-		'Sky übers Internet': '/sky-q-internet',
 		Kontakt: '/kontakt',
 		[open_constants.ebay.name + ' 🡆']: open_constants.ebay.route
 	} as const;

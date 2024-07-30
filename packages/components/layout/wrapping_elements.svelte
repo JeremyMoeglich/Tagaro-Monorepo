@@ -158,8 +158,7 @@
 								offset_multiplier={1 - Math.abs(element_wrap(id - wrap(current_x_pos))) / 2}
 							/>
 							<ul>
-								<li>✓ Für Internet, Sat- oder Kabel</li>
-								<li>✓ Sky Q Receiver oder Sky Q IPTV Box gratis zum Abo dazu</li>
+								<li>✓ Sky Q Receiver gratis zum Abo dazu</li>
 								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
 								{#if aktivierung === 0}
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
