@@ -159,7 +159,7 @@
 							/>
 							<ul>
 								{#if item.package_ids.includes('entertainmentplus')}
-									<li>✓ 2 Entertainment Plus inkl. Netflix</li>
+									<li>✓ Entertainment Plus inkl. Netflix</li>
 								{/if}
 								{#if item.package_ids.includes('cinema')}
 									<li>✓ Cinema inkl. Paramount+</li>
