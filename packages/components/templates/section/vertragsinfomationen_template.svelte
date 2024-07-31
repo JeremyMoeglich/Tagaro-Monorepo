@@ -364,13 +364,14 @@
 			Web OS 4.0 oder höher oder Samsung Smart TV ab Modelljahr 2017 mit Tizen Betriebssystem oder
 			einer Playstation 4 bzw. 5 oder einer Xbox One, Xbox Series S oder Xbox Series X Konsole) und
 			mit der Sky Go App auf mobilen Endgeräten (Betriebssysteme: Android, iOS, Windows; Hersteller:
-			Mac, Huawei) möglich. Über die Sky Q Mini sind UHD-Inhalte nicht verfügbar. <br><br>
-
-			<b>Aufnahmekapazität:</b> entspricht einer Aufnahmequalität in SD von einem Sky Sender (bspw.
-			Sky Cinema Premiere, Sky Sport Bundesliga 1, Sky Sport 3 usw.). <br><br>
-
-			<b>Apps:</b> Nicht enthalten ist die Nutzung von kostenpflichtigen Apps/Mediatheken wie z. B. Prime
-			Video, Netflix, DAZN etc. Hierfür ist ein separates Abonnement des jeweiligen Anbieters nötig.
+			Mac, Huawei) möglich. Über die Sky Q Mini sind UHD-Inhalte nicht verfügbar.
+		</p>
+	</div>
+	<div>
+		<h3 class={title_classes}>Aufnahmekapazität:</h3>
+		<p>
+			entspricht einer Aufnahmequalität in SD von einem Sky Sender (bspw. Sky Cinema Premiere, Sky
+			Sport Bundesliga 1, Sky Sport 3 usw.).
 		</p>
 	</div>
 	<div>

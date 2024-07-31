@@ -27,7 +27,7 @@
 		route: string;
 	}>;
 
-	let center_index = Math.floor(components.length * (0.5 + 0 ** 10));
+	let center_index = 0;
 	let current_x_pos = center_index;
 
 	const x_padding = '50px';
@@ -158,7 +158,15 @@
 								offset_multiplier={1 - Math.abs(element_wrap(id - wrap(current_x_pos))) / 2}
 							/>
 							<ul>
+								{#if item.package_ids.includes('entertainmentplus')}
+									<li>✓ 2 Entertainment Plus inkl. Netflix</li>
+								{/if}
+								{#if item.package_ids.includes('cinema')}
+									<li>✓ Cinema inkl. Paramount+</li>
+								{/if}
 								<li>✓ Sky Q Receiver gratis zum Abo dazu</li>
+								<li>✓ Nur im Web: € 0 statt € 29 einmalige Gebühr</li>
+								<li>✓ Optional: 12 Monate Discovery+ geschenkt</li>
 								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
 								{#if aktivierung === 0}
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
@@ -168,6 +176,7 @@
 								{/if}
 								<!-- <li>✓ 1 Monat deiner Abogebühren geschenkt</li> -->
 								<li>✓ 500 PAYBACK Basis Punkte</li>
+								<li>Sofort losschauen mit Sky Go</li>
 								<!-- 
 							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
 							<li><b>✓ €&nbsp;50 Amazon Gutschein bei Ent+1 Paket oder €&nbsp;125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
@@ -220,7 +229,7 @@
 {/if}
 
 <style lang="scss">
-	$background_height: calc((900px - 6vw) * 1.5);
+	$background_height: calc((950px - 6vw) * 1.5);
 	$outer_padding: 40px;
 	$background_color: #f2f2f2;
 	$side_distance: max(25px, calc(15vw - 100px));
