@@ -176,7 +176,7 @@
 								{/if}
 								<!-- <li>✓ 1 Monat deiner Abogebühren geschenkt</li> -->
 								<li>✓ 500 PAYBACK Basis Punkte</li>
-								<li>Sofort losschauen mit Sky Go</li>
+								<li>✓ Sofort losschauen mit Sky Go</li>
 								<!-- 
 							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
 							<li><b>✓ €&nbsp;50 Amazon Gutschein bei Ent+1 Paket oder €&nbsp;125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
