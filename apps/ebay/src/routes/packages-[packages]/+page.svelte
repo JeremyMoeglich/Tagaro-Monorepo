@@ -82,12 +82,13 @@
 				<p class="max-w-6xl mt-2">
 					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
 					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich überweisen wir dir
-					einen Bonus von € 20. Der Empfang ist über Sat, Kabel oder Internet möglich. Wir bieten
-					ebenso sämtliche Zubuchoptionen zu deinem Vertrag wie Multiscreen und DAZN an. Deine
-					PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein. Über die PAYBACK App oder online
-					sind weitere Punkte möglich, wenn du vor Aboaufnahme einen eCoupon aktivierst. Du
-					profitierst bei TAGARO von einer schnellen und zuverlässigen Betreuung sowie jahrelanger
-					Erfahrung seit 2006.
+					einen Bonus von € 20. Der Empfang ist über Sat oder Kabel möglich. Die Empfangsart
+					Internet / Sky Stream können wir derzeit aufgrund einer Systemumstellung bei uns als
+					Händler nicht vermitteln. Wir bieten ebenso sämtliche Zubuchoptionen zu deinem Vertrag wie
+					Multiscreen und DAZN an. Deine PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein.
+					Über die PAYBACK App oder online sind weitere Punkte möglich, wenn du vor Aboaufnahme
+					einen eCoupon aktivierst. Du profitierst bei TAGARO von einer schnellen und zuverlässigen
+					Betreuung sowie jahrelanger Erfahrung seit 2006.
 				</p>
 			</div>
 			<img
@@ -115,27 +116,7 @@
 			</Block>
 			<AllOverviews clickable={false} ebay_version={true} />
 			<Inklusive sky_q={false} space={'0px'} version={'ebay'} />
-			<div>
-				<Line />
-				<div class="max-w-6xl mt-12 ml-auto mr-auto flex flex-col gap-7 items-center">
-					<h2 class="text-2xl font-bold text-center">
-						Sky Q als Receiver oder IPTV Box Neue flexible Empfangsmöglichkeiten auch übers Internet
-					</h2>
-					<p class="text-center mb-5">
-						Die neue Sky Q IPTV Box bietet Plug and Play: Einfach mit dem Internet verbinden und
-						losschauen – egal welcher Internetanbieter. Auf dem Smartphone, Tablet oder PC/ Mac über
-						Sky Go – natürlich auch unterwegs. Darüber hinaus erhalten Sie alle wichtigen Free
-						TV-Sender in brillanter HD-Qualität ohne Aufpreis. Mit dem Sky Q Receiver für Sat oder
-						Kabel kannst du aufnehmen, hast Zugang auf Sky On Demand und kannst UHD-Inhalte
-						genießen.
-					</p>
-					<img
-						class="rounded-xl shadow-lg w-full border-slate-300 max-w-4xl border-[1px] p-4"
-						src={make_url('/images/visuals/skyq_geraete.png', dev)}
-						alt=""
-					/>
-				</div>
-			</div>
+			
 
 			<div class="max-w-7xl w-full p-5">
 				<Line />
