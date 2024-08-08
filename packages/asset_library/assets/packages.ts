@@ -21,8 +21,8 @@ const packages_image_location = '/images/assets/packages/';
 export const packages_assets = [
 	{
 		id: 'entertainment',
-		// price: { jahr: 16.5, monat: 19, singular: 0 },
-		price: { jahr: 18.5, monat: 19, singular: 0 },
+		price: { jahr: 16.5, monat: 19, singular: 0 },
+		// price: { jahr: 18.5, monat: 19, singular: 0 },
 		name: 'Entertainment',
 		note: 'Exklusives Entertainment ohne Ende.',
 		image: {
