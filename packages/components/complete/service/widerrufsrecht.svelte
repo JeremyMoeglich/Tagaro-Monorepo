@@ -62,9 +62,9 @@
 		einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht
 		notwendigen Umgang mit ihnen zurückzuführen ist.
 	</p>
-	<p>
+	<p class="p-8 font-bold text-blue-700 border-black">
 		<a href="/downloads/Widerrufsformular.pdf" target="_blank">
-			Widerrufsformular zum Download (PDF)
+			- Widerrufsformular zum Download (PDF) -
 		</a>
 	</p>
 </div>
