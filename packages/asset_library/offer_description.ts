@@ -1,16 +1,16 @@
-import { aboformular } from "open_constants";
-import { index_by } from "functional-utilities";
-import { intersection as intersect, isEqual, sortBy } from "lodash-es";
-import type { package_id } from "./assets/packages";
-import { zubuchoption_ids } from "./assets/zubuchoptionen";
-import type { zubuchoption_id } from "./assets/zubuchoptionen";
-import type { asset_id, priceable_asset_id } from "./asset_types";
-import type { Price } from "./priceable_asset_types";
-import { asset_sets } from "./sets";
+import { aboformular } from 'open_constants';
+import { index_by } from 'functional-utilities';
+import { intersection as intersect, isEqual, sortBy } from 'lodash-es';
+import type { package_id } from './assets/packages';
+import { zubuchoption_ids } from './assets/zubuchoptionen';
+import type { zubuchoption_id } from './assets/zubuchoptionen';
+import type { asset_id, priceable_asset_id } from './asset_types';
+import type { Price } from './priceable_asset_types';
+import { asset_sets } from './sets';
 
-export type package_set_id = "all" | "premium" | "base" | package_id;
-export type base_package_set = "entertainment" | "entertainmentplus";
-export type premium_package_set = "cinema" | "sport" | "bundesliga";
+export type package_set_id = 'all' | 'premium' | 'base' | package_id;
+export type base_package_set = 'entertainment' | 'entertainmentplus';
+export type premium_package_set = 'cinema' | 'sport' | 'bundesliga';
 
 interface conditions_type {
 	set: package_set_id;
@@ -25,27 +25,24 @@ interface action {
 }
 
 export interface offer_description_type {
-	id: offer_id | "";
+	id: offer_id | '';
 	aktivierung: number;
 	conditions: ReadonlyArray<conditions_type>;
 	bonus: number;
 	short_text: string;
 	long_text: string;
 	actions: ReadonlyArray<action>;
-	overwrites: readonly (readonly [
-		readonly priceable_asset_id[],
-		Partial<Price>,
-	])[];
+	overwrites: readonly (readonly [readonly priceable_asset_id[], Partial<Price>])[];
 	route: string;
 }
 
 export type offer_descriptions_type = ReadonlyArray<offer_description_type>;
 
-export const offer_ids = ["opt1"] as const;
+export const offer_ids = ['opt1'] as const;
 
 export type offer_id = (typeof offer_ids)[number];
 
-const text_descriptions = "✓ {savings} Sparvorteil";
+const text_descriptions = '✓ {savings} Sparvorteil';
 
 export const offer_descriptions: offer_descriptions_type = [
 	/*{
@@ -143,7 +140,7 @@ export const offer_descriptions: offer_descriptions_type = [
 		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
 	}*/
 	{
-		id: "opt1",
+		id: 'opt1',
 		aktivierung: 0,
 		conditions: [],
 		bonus: 20,
@@ -151,51 +148,47 @@ export const offer_descriptions: offer_descriptions_type = [
 		long_text: text_descriptions,
 		actions: [],
 		overwrites: [
-			[["entertainment", "sport"], { jahr: 25 }],
-			[["entertainment", "bundesliga"], { jahr: 30 }],
-			[["entertainment", "sport", "cinema"], { jahr: 39 }],
-			[["entertainment", "sport", "bundesliga"], { jahr: 35 }],
-			[["entertainment", "cinema", "bundesliga"], { jahr: 46.5 }],
-			[["entertainment", "cinema", "sport", "bundesliga"], { jahr: 40 }],
+			[['entertainment'], { monat: 19 }],
+			[['entertainment', 'sport'], { jahr: 25 }],
+			[['entertainment', 'bundesliga'], { jahr: 30 }],
+			[['entertainment', 'sport', 'cinema'], { jahr: 39 }],
+			[['entertainment', 'sport', 'bundesliga'], { jahr: 35 }],
+			[['entertainment', 'cinema', 'bundesliga'], { jahr: 46.5 }],
+			[['entertainment', 'cinema', 'sport', 'bundesliga'], { jahr: 40 }],
 
-			[["entertainmentplus"], { jahr: 15 }],
-			[["entertainmentplus", "cinema"], { jahr: 25 }],
-			[["entertainmentplus", "sport"], { jahr: 30 }],
-			[["entertainmentplus", "cinema", "sport"], { jahr: 44 }],
-			[["entertainmentplus", "bundesliga"], { jahr: 35 }],
-			[["entertainmentplus", "cinema", "bundesliga"], { jahr: 51.5 }],
-			[["entertainmentplus", "sport", "bundesliga"], { jahr: 40 }],
-			[["entertainmentplus", "cinema", "sport", "bundesliga"], { jahr: 45 }],
+			[['entertainmentplus'], { jahr: 15 }],
+			[['entertainmentplus', 'cinema'], { jahr: 25 }],
+			[['entertainmentplus', 'sport'], { jahr: 30 }],
+			[['entertainmentplus', 'cinema', 'sport'], { jahr: 44 }],
+			[['entertainmentplus', 'bundesliga'], { jahr: 35 }],
+			[['entertainmentplus', 'cinema', 'bundesliga'], { jahr: 51.5 }],
+			[['entertainmentplus', 'sport', 'bundesliga'], { jahr: 40 }],
+			[['entertainmentplus', 'cinema', 'sport', 'bundesliga'], { jahr: 45 }]
 		],
-		route: "https://fd10.formdesk.com/tagaro/Sky-Bestellung-5",
-	},
+		route: 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5'
+	}
 ] as const;
 
 export const empty_offer: offer_description_type = {
-	id: "",
+	id: '',
 	aktivierung: 0,
 	conditions: [],
 	bonus: 20,
-	short_text: "",
-	long_text: "",
+	short_text: '',
+	long_text: '',
 	actions: [],
 	route: aboformular,
-	overwrites: [],
+	overwrites: []
 };
 
-export const indexed_offers = index_by(offer_descriptions, "id");
+export const indexed_offers = index_by(offer_descriptions, 'id');
 
-export function offer_applicable(
-	offer_id: offer_id,
-	asset_ids: ReadonlyArray<asset_id>,
-): boolean {
+export function offer_applicable(offer_id: offer_id, asset_ids: ReadonlyArray<asset_id>): boolean {
 	if (offer_id === undefined) {
-		throw new Error("Invalid offer_id");
+		throw new Error('Invalid offer_id');
 	}
 	const offer = indexed_offers[offer_id];
-	asset_ids = asset_ids.filter(
-		(id) => !zubuchoption_ids.includes(id as zubuchoption_id),
-	);
+	asset_ids = asset_ids.filter((id) => !zubuchoption_ids.includes(id as zubuchoption_id));
 
 	for (const overwrite of offer.overwrites) {
 		if (isEqual(sortBy(overwrite[0]), sortBy(asset_ids))) {

@@ -21,8 +21,7 @@ const packages_image_location = '/images/assets/packages/';
 export const packages_assets = [
 	{
 		id: 'entertainment',
-		price: { jahr: 16.5, monat: 19, singular: 0 },
-		// price: { jahr: 18.5, monat: 19, singular: 0 },
+		price: { jahr: 16.5, monat: 20, singular: 0 },
 		name: 'Entertainment',
 		note: 'Exklusives Entertainment ohne Ende.',
 		image: {
@@ -47,7 +46,7 @@ export const packages_assets = [
 	{
 		id: 'entertainmentplus',
 		// price: { jahr: 21.5, monat: 27.5, singular: 0 },
-		price: { jahr: 27.5, monat: 27.5, singular: 0 },
+		price: { jahr: 20.5, monat: 25, singular: 0 },
 		name: 'Entertainment Plus',
 		note: 'Alle Sky Serien und Netflix.',
 		image: {
@@ -69,7 +68,7 @@ export const packages_assets = [
 	},
 	{
 		id: 'cinema',
-		price: { jahr: 11, monat: 13.5, singular: 0 },
+		price: { jahr: 11, monat: 10, singular: 0 },
 		name: 'Cinema',
 		note: 'Dein Kino für zu Hause.',
 		image: {
@@ -91,7 +90,7 @@ export const packages_assets = [
 	},
 	{
 		id: 'sport',
-		price: { jahr: 6.5, monat: 9, singular: 0 },
+		price: { jahr: 6.5, monat: 10, singular: 0 },
 		name: 'Sport',
 		note: 'Der beste Live-Sport.',
 		image: {
@@ -113,7 +112,7 @@ export const packages_assets = [
 	},
 	{
 		id: 'bundesliga',
-		price: { jahr: 14, monat: 16.5, singular: 0 },
+		price: { jahr: 14, monat: 20, singular: 0 },
 		name: 'Bundesliga',
 		note: 'Die Heimat der Bundesliga - garantiert bis 2025.',
 		image: {
