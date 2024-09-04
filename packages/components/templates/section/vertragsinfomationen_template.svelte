@@ -230,7 +230,7 @@
 		<h3 class={title_classes}>Ersparnis:</h3>
 		<p>
 			Die Ersparnis bis zu {@html get_savings_string([
-				'entertainmentplus',
+				'entertainment',
 				'cinema',
 				'bundesliga',
 				'sport'
