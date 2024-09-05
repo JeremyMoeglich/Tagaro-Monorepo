@@ -53,7 +53,7 @@
 	 * The title of the website or webpage.
 	 * @type {string}
 	 */
-	export let websiteTitle = `Sky Abo + ${bonus}€ Prämie | Spare bis zu 168€ | seit 2006`;
+	export let websiteTitle = `Sky Abo + ${bonus}€ Prämie | Spare bis zu 96€ | seit 2006`;
 </script>
 
 <svelte:head>
