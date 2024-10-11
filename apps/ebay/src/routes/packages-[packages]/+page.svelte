@@ -77,12 +77,12 @@
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					<li>✓ Bonus von TAGARO: € 20 Bonus on top bei erfolgreichem Vertragsabschluss</li>
+					<li>✓ Bonus von TAGARO: € 30 Bonus on top bei erfolgreichem Vertragsabschluss</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
 					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
 					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich überweisen wir dir
-					einen Bonus von € 20. Der Empfang ist über Sat oder Kabel möglich. Die Empfangsart
+					einen Bonus von € 30. Der Empfang ist über Sat oder Kabel möglich. Die Empfangsart
 					Internet / Sky Stream können wir derzeit aufgrund einer Systemumstellung bei uns als
 					Händler nicht vermitteln. Wir bieten ebenso sämtliche Zubuchoptionen zu deinem Vertrag wie
 					Multiscreen und DAZN an. Deine PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein.
