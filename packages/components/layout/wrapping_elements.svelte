@@ -172,7 +172,7 @@
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
 								{/if}
 								{#if bonus !== 0}
-									<li>✓ {@html bonus_string()} Bonus on top</li>
+									<li>✓ € 50 Überweisung nach ca. 8 Wochen</li>
 								{/if}
 								<!-- <li>✓ 1 Monat deiner Abogebühren geschenkt</li> -->
 								<li>✓ 500 PAYBACK Basis Punkte</li>

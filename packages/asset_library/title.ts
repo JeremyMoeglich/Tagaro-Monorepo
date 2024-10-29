@@ -11,7 +11,7 @@ export function get_title(
 	escape = true
 ): string {
 	const sp = escape ? nspace : ' ';
-	const praemie = short ? '' : ` +${sp}${bonus_string(escape)}${sp}Prämie`;
+	const praemie = short ? '' : ` +${sp}${bonus_string(escape)}${sp}Überweisung`;
 	// const praemie =  short ? '' : ` +${sp}${get_price_string(ids, "jahr")}${sp}Gutschrift (1${sp}Abobetrag${sp}geschenkt)`;
 	if (ids.filter((id) => package_ids.includes(id as package_id)).length === 4) {
 		if (ids.includes('entertainmentplus')) {
