@@ -78,7 +78,7 @@
 					{#if $$slots.subtitle0}
 						<h2 class="blue"><slot name="subtitle0" /></h2>
 					{/if}
-					<h2 class="gray">
+					<h2 class="gray text-[22px]">
 						<slot name="subtitle1">
 							Bei Abschluss über TAGARO.DE zusätzlich eine € 50 Überweisung nach 8 Wochen* (Aktion
 							bis zum 10.11.2024)
