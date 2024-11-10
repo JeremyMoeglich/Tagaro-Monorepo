@@ -80,7 +80,7 @@
 					{#if $$slots.subtitle0}
 						<h2 class="blue gradient_text"><slot name="subtitle0" /></h2>
 					{/if}
-					<h2 class="gray">
+					<h2 class="gray text-[20px]">
 						<slot name="subtitle1">
 							Bei Vermittlung über TAGARO zusätzlich mit {@html bonus_string(true)} Bonus
 							<!-- Frühlingsaktion: TAGARO schenkt dir den Betrag eines Monats von deinem Wunschabo -->
@@ -155,7 +155,7 @@
 		.points {
 			list-style: none;
 			text-align: left;
-			font-size: 18px;
+			font-size: 16px;
 			margin-right: 20px;
 			padding-left: 1em;
 			text-indent: -1em;

@@ -17,6 +17,7 @@
 			show_senders={ebay_version ? 'entertainmentplus' : undefined}
 			show_price={!ebay_version}
 			price_asset_ids={['entertainmentplus']}
+			ebay_version={ebay_version}
 		/>
 	</ConditionalHref>
 	<!-- <a href="/angebote/legacy/entertainment">

@@ -109,9 +109,6 @@
 			</div>
 		</slot>
 	</div>
-	<div class="slot">
-		<slot />
-	</div>
 	<div>
 		<h3 class={title_classes}>Laufzeit und Preise bei Verlängerung:</h3>
 		<p>
@@ -238,7 +235,7 @@
 		</p>
 	</div>
 	<div>
-		<h3>50 € Wunschgutschein:</h3>
+		<h3 class={title_classes}>50 € Wunschgutschein:</h3>
 		<p>
 			Aktion gilt nur für Neukunden bei Buchung der folgenden Paket-Kombinationen: Sky Entertainment
 			Plus bzw. Sky Entertainment Plus + Sky Cinema bzw. Sky Entertainment + Sky Sport + Sky Cinema

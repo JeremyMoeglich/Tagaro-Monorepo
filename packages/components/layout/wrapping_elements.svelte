@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { indexed_package_assets } from 'asset_library/assets/packages';
+	import { is_wunschgutschein_offer } from 'asset_library/wunschgutschein_matcher';
 	import type { package_id } from 'asset_library/assets/packages';
 	import { minBy } from 'lodash-es';
-
 	import {
 		aktivierung,
 		bonus,
@@ -16,7 +16,7 @@
 	import { onMount } from 'svelte';
 	import { enter_filter } from 'utils';
 	import { panic } from 'functional-utilities';
-	import { get_praemie, get_title } from 'asset_library/title';
+	import { get_title } from 'asset_library/title';
 
 	export let title: string;
 	export let components: ReadonlyArray<{
@@ -149,10 +149,10 @@
 						href={item.route}
 					>
 						<div class="inner_alignment">
-							<h3>
+							<h3 class="sm_title">
 								<span class="gradient_text">{@html get_title(item.package_ids)}</span><br />
-								<span class="red">
-									+ {#if item.package_ids.includes('entertainmentplus')}
+								<span class="gradient_text red">
+									+ {#if is_wunschgutschein_offer(item.package_ids)}
 										€ 50 Gutschein &
 									{/if}
 									{@html bonus_string()} Bonus
@@ -169,14 +169,13 @@
 								{#if item.package_ids.includes('cinema')}
 									<li>✓ Cinema inkl. Paramount+</li>
 								{/if}
-								{#if item.package_ids.includes('entertainmentplus')}
-									<li>€ 50 Wunschgutschein* (z.B. für Amazon, Zalando, MediaMarkt u.v.m.)</li>
+								{#if is_wunschgutschein_offer(item.package_ids)}
+									<li>✓ € 50 Wunschgutschein* (z.B. für Amazon, Zalando, MediaMarkt u.v.m.)</li>
 								{/if}
 								{#if bonus !== 0}
-									<li>✓ {@html bonus_string()} Bonus on top</li>
+									<li>✓ {@html bonus_string()} Bonus von uns nach ca. 8 Wochen</li>
 								{/if}
 								<li>✓ Sky Q Receiver gratis zum Abo dazu</li>
-								<li>✓ Nur im Web: € 0 statt € 29 einmalige Gebühr</li>
 								<li>✓ Optional: 12 Monate Discovery+ geschenkt</li>
 								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
 								{#if aktivierung === 0}
@@ -265,7 +264,7 @@
 	ul {
 		display: flex;
 		flex-direction: column;
-		gap: 9px;
+		gap: 4px;
 		text-align: center;
 		list-style: none;
 		padding-left: 0px;
@@ -393,6 +392,12 @@
 	}
 
 	.red {
-		color: red;
+		background: linear-gradient(to right, #ef4d10 0%, #f26a37 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.sm_title {
+		font-size: 17px;
 	}
 </style>
