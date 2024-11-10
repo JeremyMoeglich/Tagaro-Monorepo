@@ -9,29 +9,24 @@
 	redirect_url={'/angebote/entertainmentplus-cinema-sport-bundesliga'}
 	hide_left={true}
 	points={[
-		`Nur im Web: € 0 statt € 29 einmalige Gebühr*`,
-		// `On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
-		`On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
-		`Entertainment + 3 Pakete jetzt nur ${get_price_string(
-			['entertainment', 'cinema', 'bundesliga', 'sport'],
-			'jahr'
-		)} mtl. im Jahres-Abo, danach ${get_price_string(
-			['entertainment', 'cinema', 'bundesliga', 'sport'],
-			'monat'
-		)} mtl.*`,
-		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, <br />bei Aktivierung eines eCoupons vor Aboaufnahme',
+		`€ 50 Wunschgutschein von Sky nach ca. 8 Wochen per E-Mail. In Frage kommende Paketkombinationen beachten. Die Aktion gilt bis zum 26.11.2024*`,
+		`${bonus_string()} Bonus von TAGARO nach ca. 8 Wochen auf dein Konto*`,
+		'Nur im Web: € 0 statt € 29 einmalige Gebühr*',
+		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte',
 		`Sicher dir alles von Sky und spare bis zu € 96 im ersten Jahr*`
 	]}
 	top_margin={20}
 >
-	<span slot="title">
-		Sky Verträge vom Sky Onlinehändler ab {@html get_price_string(['entertainmentplus'], 'jahr')} mtl.
-	</span>
+	<span slot="title">Der beste TV-Deal des Jahres, jetzt mit Prämie über TAGARO</span>
 	<span slot="subtitle0">
-		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} oder alle Sky
-		Pakete inkl. Paramount+ für
-		{@html get_price_string(['entertainment', 'cinema', 'bundesliga', 'sport'], 'jahr')} mtl.*
+		Sky über TAGARO abonnieren und € 20 Bonus UND € 50 Wunschgutschein von Sky erhalten*
 	</span>
+	<span slot="subtitle1">
+		Bei Abschluss vieler Paketkombinationen z.B. Entertainment Plus ab € 15, gibt es von Sky einen €
+		50 Gutschein <br /> und von TAGARO einen € 20 Bonus. Die Aktion gilt bis zum 26.11.2024. Bitte in
+		Frage kommende Kombinationen beachten*
+	</span>
+	<span slot="subtitle2"></span>
 </ShowcaseTemplate>
 
 <!-- <ShowcaseTemplate

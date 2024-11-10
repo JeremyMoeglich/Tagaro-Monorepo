@@ -42,13 +42,13 @@
 	<div class="alignment">
 		<div class="image flex flex-col items-center">
 			<AssetImage ids={price_asset_ids} {animated} />
-			{#if !price_asset_ids.includes('dazn_unlimited')}
-				<img src={make_url('/images/badges/einmalige_gebuehr.svg', dev)} alt="" class="w-32 mt-4" />
+			{#if !price_asset_ids.includes('dazn_unlimited') && (price_asset_ids.includes('entertainmentplus') || price_asset_ids.length === 4)}
+				<img src={make_url('/images/badges/50gutschein2.png', dev)} alt="" class="w-32 mt-4" />
 			{/if}
 		</div>
 
 		<div class="description">
-			<h2 class="title">
+			<h2 class="title gradient_text">
 				{@html get_title(price_asset_ids, price_asset_ids.length === 1)}
 				{#if price_asset_ids.length === 1}
 					- {indexed_priceable_assets[price_asset_ids[0]].note}

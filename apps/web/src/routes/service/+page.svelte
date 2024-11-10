@@ -7,10 +7,10 @@
 <div class="outer">
 	<div class="back">
 		<div class="tb">
-			<h1 class="no_gradient">Service</h1>
+			<h1 class="gradient_text">Service</h1>
 		</div>
 		<div class="tb">
-			<h2 class="no_gradient">Hole dir Sky mit einem exklusivem Preisvorteil nach Hause!</h2>
+			<h2 class="gradient_text">Hole dir Sky mit einem exklusivem Preisvorteil nach Hause!</h2>
 		</div>
 		<div class="side_alignment">
 			<div>
@@ -25,8 +25,8 @@
 				</p>
 				<p>
 					Mit persönlicher Betreuung und direkten Ansprechpartnern konnten wir bereits tausende
-					Kunden über die Jahre von unserem Service überzeugen. Schaue dir gerne unsere
-					Bewertungen u.a. bei eBay an.
+					Kunden über die Jahre von unserem Service überzeugen. Schaue dir gerne unsere Bewertungen
+					u.a. bei eBay an.
 				</p>
 			</div>
 			<div>
@@ -45,8 +45,8 @@
 				<p>
 					Im Gegensatz zum stationären Handel kannst du dein Sky-Abonnement bei uns innerhalb von 14
 					Tagen ab Vertragsschluss auch wieder widerrufen. Dieses Recht steht dir nur im
-					Onlinehandel zu. Melde dich einfach rechtzeitig bei uns und wir leiten die
-					Rückabwicklung ein.
+					Onlinehandel zu. Melde dich einfach rechtzeitig bei uns und wir leiten die Rückabwicklung
+					ein.
 				</p>
 			</div>
 		</div>

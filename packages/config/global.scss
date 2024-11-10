@@ -130,13 +130,6 @@ h4 {
 	margin-top: 0.5rem;
 }
 
-h1:not(.no_gradient):not(.gray):not(.light):not(.marked),
-h2:not(.no_gradient):not(.gray):not(.light):not(.marked),
-h3:not(.no_gradient):not(.gray):not(.light):not(.marked),
-h4:not(.no_gradient):not(.gray):not(.light):not(.marked) {
-	@extend .gradient_text;
-}
-
 h1.gray,
 h2.gray,
 h3.gray,

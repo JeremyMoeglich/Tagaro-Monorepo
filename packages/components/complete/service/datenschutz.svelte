@@ -3,7 +3,7 @@
 </script>
 
 <div class="text_block">
-	<h2>Datenschutzhinweise von TAGARO Medienshop - Möglich & Möglich GbR</h2>
+	<h2 class="gradient_text">Datenschutzhinweise von TAGARO Medienshop - Möglich & Möglich GbR</h2>
 	<p>
 		Auf dieser Seite erhalten Sie eine umfassende Übersicht über die Verarbeitung Ihrer Daten bei
 		der TAGARO Medienshop - Möglich & Möglich GbR. <br />
@@ -16,7 +16,7 @@
 		<br />
 	</p>
 	<div>
-		<h2>
+		<h2 class="gradient_text">
 			1) Information über die Erhebung personenbezogener Daten und Kontaktdaten des Verantwortlichen
 		</h2>
 		<p>
@@ -41,7 +41,7 @@
 		</p>
 	</div>
 	<div>
-		<h2>2) Datenerfassung beim Besuch unserer Website</h2>
+		<h2 class="gradient_text">2) Datenerfassung beim Besuch unserer Website</h2>
 		<p>
 			Bei der bloß informatorischen Nutzung unserer Website, also ohne Vertragsbestellung über das
 			verlinkte Aboformular, erheben wir nur solche Daten, die Ihr Browser an unsere Server
@@ -66,7 +66,7 @@
 		</p>
 	</div>
 	<div>
-		<h2>3) Cookies</h2>
+		<h2 class="gradient_text">3) Cookies</h2>
 		<p>
 			Um den Besuch unserer Website attraktiv zu gestalten und die Nutzung bestimmter Funktionen zu
 			ermöglichen, verwenden wir auf verschiedenen Seiten sogenannte Cookies. Hierbei handelt es
@@ -133,7 +133,7 @@
 		</p>
 	</div>
 	<div>
-		<h2>4) Kontaktaufnahme</h2>
+		<h2 class="gradient_text">4) Kontaktaufnahme</h2>
 		<p>
 			Im Rahmen der Kontaktaufnahme mit uns (z.B. per Kontaktformular oder E-Mail) werden
 			personenbezogene Daten erhoben. Welche Daten im Falle eines Kontaktformulars erhoben werden,
@@ -149,7 +149,7 @@
 		</p>
 	</div>
 	<div>
-		<h2>5) Datenverarbeitung zur Bestellabwicklung</h2>
+		<h2 class="gradient_text">5) Datenverarbeitung zur Bestellabwicklung</h2>
 		<p>
 			5.1 Zur Abwicklung Ihrer Bestellung arbeiten wir mit dem / den nachstehenden Dienstleistern
 			zusammen, die uns ganz oder teilweise bei der Durchführung geschlossener Verträge
@@ -233,7 +233,7 @@
 		</p>
 	</div>
 	<div>
-		<h2>6) Vertrauenssiegel - Trustami</h2>
+		<h2 class="gradient_text">6) Vertrauenssiegel - Trustami</h2>
 		<p>
 			Zur Anzeige der gesammelten Bewertungen sowie von Social Media Feedback ist auf dieser
 			Webseite das Trustami Vertrauenssiegels eingebunden. Dies dient der Umsetzung unserer
@@ -247,7 +247,7 @@
 		</p>
 	</div>
 	<div>
-		<h2>7) Webanalysedienste - Google (Universal) Analytics</h2>
+		<h2 class="gradient_text">7) Webanalysedienste - Google (Universal) Analytics</h2>
 		<p>
 			-Google Analytics<br />
 			Diese Website benutzt Google Analytics, einen Webanalysedienst der Google LLC, 1600 Amphitheatre
@@ -293,7 +293,7 @@
 		<br />
 	</div>
 	<div>
-		<h2>8) Rechte der Betroffenen</h2>
+		<h2 class="gradient_text">8) Rechte der Betroffenen</h2>
 		<p>
 			Das geltende Datenschutzrecht gewährt Ihnen gegenüber dem Verantwortlichen hinsichtlich der
 			Verarbeitung Ihrer personenbezogenen Daten umfassende Betroffenenrechte (Auskunfts- und
@@ -371,7 +371,7 @@
 		</ul>
 	</div>
 	<div>
-		<h2>9) reCAPTCHA</h2>
+		<h2 class="gradient_text">9) reCAPTCHA</h2>
 		<p>
 			Zum Schutz Ihrer Anfragen per Internetformular verwenden wir den Dienst reCAPTCHA des
 			Unternehmens Google Inc. (Google). Die Abfrage dient der Unterscheidung, ob die Eingabe durch
@@ -384,7 +384,7 @@
 		</p>
 	</div>
 	<div>
-		<h2>10) Dauer der Speicherung personenbezogener Daten</h2>
+		<h2 class="gradient_text">10) Dauer der Speicherung personenbezogener Daten</h2>
 		<p>
 			Die Dauer der Speicherung von personenbezogenen Daten bemisst sich anhand der jeweiligen
 			gesetzlichen Aufbewahrungsfrist (z.B. handels- und steuerrechtliche Aufbewahrungsfristen).
@@ -409,7 +409,7 @@
 		</p>
 	</div>
 	<div>
-		<h2>11) WIDERSPRUCHSRECHT</h2>
+		<h2 class="gradient_text">11) WIDERSPRUCHSRECHT</h2>
 		<p>
 			WENN WIR IM RAHMEN EINER INTERESSENABWÄGUNG IHRE PERSONENBEZOGENEN DATEN AUFGRUND UNSERES
 			ÜBERWIEGENDEN BERECHTIGTEN INTERESSES VERARBEITEN, HABEN SIE DAS JEDERZEITIGE RECHT, AUS

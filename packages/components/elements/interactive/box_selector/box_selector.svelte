@@ -17,7 +17,7 @@
 </script>
 
 <div class="alignment" {id}>
-	<h2>{title}</h2>
+	<h2 class="gradient_text">{title}</h2>
 	<div class="boxes">
 		{#each boxes as box}
 			<ClickableBox

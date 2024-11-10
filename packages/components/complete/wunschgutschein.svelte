@@ -1,6 +1,6 @@
 <div class="outer">
 	<div class="inner">
-		<h1>€ 100 Wunschgutschein</h1>
+		<h1 class="gradient_text">€ 100 Wunschgutschein</h1>
 		<ul>
 			<li>
 				Du erhältst deinen Gutschein ca. 6 Wochen nach Abschluss direkt von Sky in Form eines

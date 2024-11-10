@@ -3,7 +3,7 @@
 </script>
 
 <div class="text_block">
-	<h2>Widerrufsrecht</h2>
+	<h2 class="gradient_text">Widerrufsrecht</h2>
 	<p>
 		Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.
 	</p>
@@ -33,7 +33,7 @@
 		Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.
 	</p>
 
-	<h2>Folgen des Widerrufs</h2>
+	<h2 class="gradient_text">Folgen des Widerrufs</h2>
 
 	<p>
 		Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten
