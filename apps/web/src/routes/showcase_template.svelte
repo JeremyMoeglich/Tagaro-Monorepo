@@ -45,7 +45,7 @@
 	] satisfies priceable_asset_id[];
 </script>
 
-<div class="alignment showcase_size">
+<div class="alignment showcase_size" >
 	<div class="side_alignment" style:padding-top={`${top_margin}px`}>
 		{#if !hide_left}
 			<button class="left_side" on:click={async () => load_form('Showcase_images')}>
@@ -78,10 +78,10 @@
 					{#if $$slots.subtitle0}
 						<h2 class="blue"><slot name="subtitle0" /></h2>
 					{/if}
-					<h2 class="gray text-[22px]">
+					<h2 class="gray">
 						<slot name="subtitle1">
-							Bei Abschluss über TAGARO.DE zusätzlich eine € 50 Überweisung nach 8 Wochen* (Aktion
-							bis zum 10.11.2024)
+							Bei Vermittlung über TAGARO zusätzlich mit {@html bonus_string(true)} Bonus
+							<!-- Frühlingsaktion: TAGARO schenkt dir den Betrag eines Monats von deinem Wunschabo -->
 						</slot>
 					</h2>
 					<h3 class="no_gradient">
