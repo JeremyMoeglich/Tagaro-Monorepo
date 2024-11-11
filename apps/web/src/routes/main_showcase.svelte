@@ -9,7 +9,7 @@
 	redirect_url={'/angebote/entertainmentplus-cinema-sport-bundesliga'}
 	hide_left={true}
 	points={[
-		`€ 50 Wunschgutschein von Sky nach ca. 8 Wochen per E-Mail. In Frage kommende Paketkombinationen beachten. Die Aktion gilt bis zum 26.11.2024*`,
+		`€ 50 Wunschgutschein von Sky nach ca. 8 Wochen per E-Mail. In Frage kommende Paketkombinationen beachten.<br>Die Aktion gilt bis zum 26.11.2024*`,
 		`${bonus_string()} Bonus von TAGARO nach ca. 8 Wochen auf dein Konto*`,
 		'Nur im Web: € 0 statt € 29 einmalige Gebühr*',
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte',
@@ -23,7 +23,7 @@
 	</span>
 	<span slot="subtitle1">
 		Bei Abschluss vieler Paketkombinationen z.B. Entertainment Plus ab € 15, gibt es von Sky einen €
-		50 Gutschein <br /> und von TAGARO einen € 20 Bonus. Die Aktion gilt bis zum 26.11.2024. Bitte in
+		50 Gutschein und von TAGARO einen € 20 Bonus. Die Aktion gilt bis zum 26.11.2024. Bitte in
 		Frage kommende Kombinationen beachten*
 	</span>
 	<span slot="subtitle2"></span>
