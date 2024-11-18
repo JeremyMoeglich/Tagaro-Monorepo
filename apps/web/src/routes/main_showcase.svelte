@@ -11,7 +11,7 @@
 	points={[
 		`Nur im Web: € 0 statt € 29 einmalige Gebühr*`,
 		// `On top ${bonus_string()} Bonus von uns und versandkostenfreie Lieferung*`,
-		`€ 50 Überweisung nach ca. 8 Wochen auf dein Konto (Aktion bis zum 10.11.2024)*`,
+		`€ 50 Überweisung nach ca. 8 Wochen auf dein Konto*`,
 		`Entertainment + 3 Pakete jetzt nur ${get_price_string(
 			['entertainment', 'cinema', 'bundesliga', 'sport'],
 			'jahr'
