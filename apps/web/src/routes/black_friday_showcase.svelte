@@ -6,20 +6,16 @@
 	<div class="flex flex-wrap items-center justify-center pt-[60px] gap-[50px]">
 		<img src="/images/badges/sky_signature.svg" alt="" class="w-[150px]" />
 		<div>
-			<h1 class="text-center glow mb-0 gradient_text">
+			<h1 class="text-center glow mb-0">
 				Alles von Sky inklusive Paramount+ und Netflix für € 40 mtl.*
 			</h1>
-			<h2 class="text-center mt-0 mb-3 gradient_text">
+			<h2 class="no_gradient text-center mt-0 mb-3">
 				Bis zu 3 parallele Streams und UHD bei Sat- & Kabel-Empfang inklusive*
 			</h2>
 		</div>
 	</div>
 	<a href="https://fd10.formdesk.com/tagaro/Sky-Bestellung-5" class="mb-5 mt-[3px] w-3/4">
-		<img
-			src="/images/visuals/sky_24-01_best-deals_entplus-cin-buli-spo.avif"
-			alt=""
-			class=" ml-auto mr-auto w-full max-w-[800px] image"
-		/>
+		<img src="/images/visuals/sky_24-01_best-deals_entplus-cin-buli-spo.avif" alt="" class=" ml-auto mr-auto w-full max-w-[800px] image" />
 	</a>
 
 	<div class="flex items-center justify-center pb-8 gap-12">
@@ -37,6 +33,7 @@
 		route="https://fd10.formdesk.com/tagaro/Sky-Bestellung-5"
 	/>
 </div>
+
 
 <style>
 	@media (max-width: 677px) {

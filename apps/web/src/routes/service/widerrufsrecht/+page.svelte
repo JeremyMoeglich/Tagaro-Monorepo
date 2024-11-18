@@ -7,7 +7,7 @@
 
 
 <div>
-	<h1 class="gradient_text">Widerrufsbelehrung</h1>
+	<h1>Widerrufsbelehrung</h1>
 	<Widerrufsrecht />
 </div>
 

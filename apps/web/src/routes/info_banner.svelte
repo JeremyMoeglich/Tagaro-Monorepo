@@ -107,7 +107,7 @@
 	<div class="outer">
 		<div class="top_bar">
 			<img src="/favicon.svg" alt="" style="height: 30px;" />
-			<h2 class="gradient_text">Datenschutz</h2>
+			<h2>Datenschutz</h2>
 		</div>
 		<div class="options_top">
 			{#each Object.entries(edit_preferences) as pair}

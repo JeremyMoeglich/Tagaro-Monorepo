@@ -28,7 +28,7 @@
 <div class="flex h-full">
 	<div class="w-72 h-full bg-slate-800 flex flex-col items-center py-4">
 		<div class="border-[1px] p-3 border-slate-700 rounded-lg">
-			<h3 class="text-blue-400">Activity</h3>
+			<h3 class="no_gradient text-blue-400">Activity</h3>
 			<Activity />
 		</div>
 		<div class="flex flex-col gap-2 mt-4 w-full">

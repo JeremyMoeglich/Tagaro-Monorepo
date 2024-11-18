@@ -9,7 +9,7 @@
 </script>
 
 <div class="outer">
-	<h2 class="gradient_text">
+	<h2>
 		{asset.name} Paket
 	</h2>
 	<div class="main_alignment">

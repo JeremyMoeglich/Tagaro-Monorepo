@@ -5,7 +5,7 @@
 <div class="outer_alignment">
 	<a href="/angebote">
 		<div class="alignment">
-			<h2 class="gradient_text">Schnell und einfach Sky abonnieren!</h2>
+			<h2>Schnell und einfach Sky abonnieren!</h2>
 			<p>
 				Du möchtest gerne Sky bestellen und das bessere Fernsehen kennenlernen? Dann bist du bei
 				TAGARO genau richtig. Wir vermitteln dir als Sky Onlinehändler Sky Verträge bereits seit

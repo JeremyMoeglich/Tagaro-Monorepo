@@ -7,7 +7,7 @@
 
 
 <div>
-	<h1 class="gradient_text">Datenschutz</h1>
+	<h1>Datenschutz</h1>
 	<Datenschutz />
 </div>
 

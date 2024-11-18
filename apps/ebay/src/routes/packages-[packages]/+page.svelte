@@ -6,6 +6,7 @@
 	import Header from './header.svelte';
 	import { dev } from '$app/environment';
 	import PackageTable from 'components/complete/package_table.svelte';
+	import Zubuchoptionen from 'components/complete/zubuchoptionen.svelte';
 	import Inklusive from 'components/complete/inklusive.svelte';
 	import AllOverviews from '../../../../../packages/components/complete/all_overviews.svelte';
 	import Vertragsinfomationen from 'components/complete/vertragsinfomationen.svelte';
@@ -20,7 +21,7 @@
 			? 'allgemein'
 			: ($page.params.packages.split(',') as package_id[]);
 
-	function get_overview_title(packages: package_id[] | 'allgemein'): string {
+	function get_title(packages: package_id[] | 'allgemein'): string {
 		const titles: [package_id[] | 'allgemein', string][] = [
 			[['entertainment'], 'Titel'],
 			[
@@ -40,13 +41,13 @@
 			[['entertainment', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainment', 'sport', 'bundesliga', 'cinema'],
-				'Sky Abo mit Entertainment + 3 Paketen in HD für € 40 mtl.*'
+				`Sky Abo mit Entertainment + 3 Paketen in HD für € 40 mtl.*`
 			],
 			[['entertainmentplus'], 'Titel'],
 			[['entertainmentplus', 'sport'], 'Titel'],
 			[
 				['entertainmentplus', 'cinema'],
-				'Sky Entertainment Plus + Cinema in HD inkl. Paramount+ für € 25 mtl.*'
+				`Sky Entertainment Plus + Cinema in HD inkl. Paramount+ für € 25 mtl.*`
 			],
 			[['entertainmentplus', 'bundesliga'], 'Titel'],
 			[['entertainmentplus', 'sport', 'bundesliga'], 'Titel'],
@@ -54,7 +55,7 @@
 			[['entertainmentplus', 'cinema', 'bundesliga'], 'Titel'],
 			[
 				['entertainmentplus', 'sport', 'bundesliga', 'cinema'],
-				'Sky Komplett Abo in HD inklusive Netflix & Paramount+ für € 45 mtl.*'
+				`Sky Komplett Abo in HD inklusive Netflix & Paramount+ für € 45 mtl.*`
 			],
 			['allgemein', `Sky Abo nach Wahl z.B. Entertainment Plus mit Netflix für € 15 mtl.*`]
 		];
@@ -74,29 +75,25 @@
 	<div class="content w-full">
 		<div class="spacer">
 			<div class="text-center flex flex-col gap-2">
-				<h1 class="title font-bold text-3xl gradient_text">{@html get_overview_title(packages)}</h1>
+				<h1 class="title font-bold text-3xl">{@html get_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					<li>
-						✓ Der beste TV-Deal des Jahres: € 50 Wunschgutschein von Sky und € 20 Bonus von TAGARO
-						(Aktion bis 26.11.2024)*
-					</li>
+					<li>✓ Bonus von TAGARO: € 30 Bonus on top bei erfolgreichem Vertragsabschluss</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
-					Der beste TV-Deal des Jahres. Zu vielen Paket-Kombinationen gibt es jetzt von Sky nach
-					Abschluss einen € 50 Wunschgutschein durch Cadooz für zahlreiche Anbieter dazu (z.B.
-					Amazon, Douglas, MediaMarkt, Zalando uvm.). On top überweisen wir dir einen Bonus von € 20
-					auf dein Konto. Als Empfangsart kannst du Sat oder Kabel auswählen (Internet / Sky Stream
-					ist momentan noch nicht vermittelbar). Den passenden Sky Q Receiver schickt dir Sky
-					kostenlos zu. Wir bieten ebenso sämtliche Zubuchoptionen wie Multiscreen zu deinem Vertrag
-					an. Und Sky Go ist immer inklusive! Deine PAYBACK Nummer für 500 °Punkte tragen wir
-					ebenfalls gerne ein. Über die App oder online kannst du für weitere Punkte vorab einen
-					eCoupon aktivieren. Du profitierst bei TAGARO von einer zuverlässigen Betreuung sowie
-					jahrelanger Erfahrung seit 2006.
+					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
+					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich überweisen wir dir
+					einen Bonus von € 30. Der Empfang ist über Sat oder Kabel möglich. Die Empfangsart
+					Internet / Sky Stream können wir derzeit aufgrund einer Systemumstellung bei uns als
+					Händler nicht vermitteln. Wir bieten ebenso sämtliche Zubuchoptionen zu deinem Vertrag wie
+					Multiscreen und DAZN an. Deine PAYBACK Nummer für 500 Basis-Punkte tragen wir gerne ein.
+					Über die PAYBACK App oder online sind weitere Punkte möglich, wenn du vor Aboaufnahme
+					einen eCoupon aktivierst. Du profitierst bei TAGARO von einer schnellen und zuverlässigen
+					Betreuung sowie jahrelanger Erfahrung seit 2006.
 				</p>
 			</div>
 			<img
 				class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-				src={make_url('/images/visuals/sky1124_teaser.png', dev)}
+				src={make_url('/images/visuals/sky0524_teaser.png', dev)}
 				alt=""
 			/>
 			<!-- <Wunschgutschein /> -->
@@ -119,12 +116,11 @@
 			</Block>
 			<AllOverviews clickable={false} ebay_version={true} />
 			<Inklusive sky_q={false} space={'0px'} version={'ebay'} />
+			
 
 			<div class="max-w-7xl w-full p-5">
 				<Line />
-				<h2 class="text-3xl mb-7 mt-14 font-bold text-center gradient_text">
-					*Angebotsdetails für Neukunden
-				</h2>
+				<h2 class="text-3xl mb-7 mt-14 font-bold text-center">*Angebotsdetails für Neukunden</h2>
 				<Vertragsinfomationen />
 				<div class="mb-16" />
 				<Line space={'0px'} />

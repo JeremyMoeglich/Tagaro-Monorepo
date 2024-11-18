@@ -23,7 +23,11 @@
 	</p>
 </VertragsinfomationenTemplate> -->
 
-<VertragsinfomationenTemplate></VertragsinfomationenTemplate>
+<VertragsinfomationenTemplate>
+	<div class="elements">
+		
+	</div>
+</VertragsinfomationenTemplate>
 
 <!-- <VertragsinfomationenLayout>
 	<h3>Amazon Gutschein von Sky:</h3>
