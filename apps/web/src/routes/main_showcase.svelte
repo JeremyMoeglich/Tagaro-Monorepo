@@ -9,7 +9,7 @@
 	redirect_url={'/angebote/entertainmentplus-cinema-sport-bundesliga'}
 	hide_left={true}
 	points={[
-		`€ 50 Wunschgutschein von Sky nach ca. 8 Wochen per E-Mail. In Frage kommende Paketkombinationen beachten.<br>Die Aktion gilt bis zum 26.11.2024*`,
+		`€ 100 Wunschgutschein von Sky nach ca. 8 Wochen per E-Mail. In Frage kommende Paketkombinationen beachten.<br>Die Aktion gilt bis zum 26.11.2024*`,
 		`${bonus_string()} Bonus von TAGARO nach ca. 8 Wochen auf dein Konto*`,
 		'Nur im Web: € 0 statt € 29 einmalige Gebühr*',
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte',
@@ -17,16 +17,16 @@
 	]}
 	top_margin={20}
 >
-	<span slot="title">Der beste TV-Deal des Jahres, jetzt mit Prämie über TAGARO</span>
+	<span slot="title">Sky Black Friday Angebote mit € 100 Wunschgutschein + € 20 Bonus on top </span>
 	<span slot="subtitle0">
-		Sky über TAGARO abonnieren und € 20 Bonus UND € 50 Wunschgutschein von Sky erhalten*
+		Sky über TAGARO abonnieren und € 20 Bonus UND € 100 Wunschgutschein von Sky erhalten*
 	</span>
 	<span slot="subtitle1">
-		Bei Abschluss vieler Paketkombinationen z.B. Entertainment Plus ab € 15, gibt es von Sky einen €
-		50 Gutschein und von TAGARO einen € 20 Bonus. Die Aktion gilt bis zum 26.11.2024. Bitte in
-		Frage kommende Kombinationen beachten*
+		Bei Abschluss vieler Paketkombinationen, gibt es von Sky einen € 100 Wunschgutschein und von
 	</span>
-	<span slot="subtitle2"></span>
+	<span slot="subtitle2">
+		TAGARO einen € 20 Bonus. Bitte in Frage kommende Kombinationen beachten*
+	</span>
 </ShowcaseTemplate>
 
 <!-- <ShowcaseTemplate

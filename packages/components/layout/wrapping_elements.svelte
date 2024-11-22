@@ -170,7 +170,7 @@
 									<li>✓ Cinema inkl. Paramount+</li>
 								{/if}
 								{#if is_wunschgutschein_offer(item.package_ids)}
-									<li>✓ € 50 Wunschgutschein* (z.B. für Amazon, Zalando, MediaMarkt u.v.m.)</li>
+									<li>✓ € 100 Wunschgutschein* (z.B. für Amazon, Zalando, MediaMarkt u.v.m.)</li>
 								{/if}
 								{#if bonus !== 0}
 									<li>✓ {@html bonus_string()} Bonus von uns nach ca. 8 Wochen</li>

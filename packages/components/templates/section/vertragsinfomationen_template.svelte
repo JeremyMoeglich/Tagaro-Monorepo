@@ -224,32 +224,20 @@
 		</ul>
 	</div>
 	<div>
-		<h3 class={title_classes}>Ersparnis:</h3>
-		<p>
-			Die Ersparnis bis zu {@html get_savings_string([
-				'entertainment',
-				'cinema',
-				'bundesliga',
-				'sport'
-			])} ergibt sich aus dem rabattierten Sky Jahresabonnementspreis im Vergleich zum Sky Standard-Jahresabonnementspreis.
-		</p>
-	</div>
-	<div>
-		<h3 class={title_classes}>50 € Wunschgutschein:</h3>
+		<h3 class={title_classes}>100 € Wunschgutschein von Sky (Black Friday):</h3>
 		<p>
 			Aktion gilt nur für Neukunden bei Buchung der folgenden Paket-Kombinationen: Sky Entertainment
-			Plus bzw. Sky Entertainment Plus + Sky Cinema bzw. Sky Entertainment + Sky Sport + Sky Cinema
-			+ Sky Fußball-Bundesliga bzw. Sky Entertainment Plus + Sky Sport + Sky Cinema + Sky
-			Fußball-Bundesliga. Jeder Kunde erhält einen Gutschein von Cadooz in Höhe von € 50.Der
-			Gutschein wird nach Ablauf der Widerrufsfrist und positiver Bonitätsprüfung sowie des ersten
-			positiven Zahlungseingangs bei Sky, in Form eines digitalen Gutscheincodes ca. 8 Wochen nach
-			Abonnementvertragsabschluss per E-Mail versendet. Mit diesem Code kann über sky.cadooz.com ein
-			Gutschein bei einem von Cadooz gelisteten Anbieter (z.B. Amazon, Douglas, MediaMarkt, Zalando
-			u. v. m.) im Wert von € 50 aktiviert werden. Der Versand der Gutscheine erfolgt durch die
-			Firma CadoozGmbH. Der Sky Kunde erklärt sich damit einverstanden, dass die Sky Deutschland
-			Fernsehen GmbH & Co. KG zur Abwicklung (Versand des Gutscheins) ausschließlich Kontaktdaten
-			(Anrede, Vor- und Nachname, E-Mail-Adresse) an die CadoozGmbH übermittelt. Barauszahlung sowie
-			Umtausch ausgeschlossen.
+			+ Sky Sport + Sky Cinema + Sky Fußball-Bundesliga bzw. Sky Entertainment Plus + Sky Sport +
+			Sky Cinema + Sky Fußball-Bundesliga. Jeder Kunde erhält einen Gutschein von Cadooz in Höhe von
+			€ 100.Der Gutschein wird nach Ablauf der Widerrufsfrist und positiver Bonitätsprüfung sowie
+			des ersten positiven Zahlungseingangs bei Sky, in Form eines digitalen Gutscheincodes ca. 8
+			Wochen nach Abonnementvertragsabschluss per E-Mail versendet. Mit diesem Code kann über
+			sky.cadooz.com ein Gutschein bei einem von Cadooz gelisteten Anbieter (z.B. Amazon, Douglas,
+			MediaMarkt, Zalando u. v. m.) im Wert von € 100 aktiviert werden. Der Versand der Gutscheine
+			erfolgt durch die Firma Cadooz GmbH. Der Sky Kunde erklärt sich damit einverstanden, dass die
+			Sky Deutschland Fernsehen GmbH & Co. KG zur Abwicklung (Versand des Gutscheins) ausschließlich
+			Kontaktdaten (Anrede, Vor- und Nachname, E-Mail-Adresse) an die Cadooz GmbH übermittelt.
+			Barauszahlung sowie Umtausch ausgeschlossen.
 		</p>
 	</div>
 	<div>

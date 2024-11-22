@@ -35,7 +35,7 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/50gutschein.png'] as const;
+	const left_badges = ['/images/badges/100gutschein.png'] as const;
 	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { get_offer_note, get_statt_price_string, get_price_string } from 'asset_library/prices';
+	import { get_price_string } from 'asset_library/prices';
 	import {
 		max_combination_length,
 		base_premium_package_combinations,
@@ -12,7 +12,7 @@
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
 	import { typed_entries } from 'functional-utilities';
-	import { is_wunschgutschein_offer } from 'asset_library/wunschgutschein_matcher'; 
+	import { is_wunschgutschein_offer } from 'asset_library/wunschgutschein_matcher';
 
 	const col_amount = max_combination_length + 1;
 
@@ -64,7 +64,7 @@
 								class="nowrap gradient_text red"
 								style="font-size:15px;padding-bottom: 15px;letter-spacing:.2px;"
 							>
-								<b>✓ Inkl. € 50 Wunschgutschein </b>
+								<b>✓ Inkl. € 100 Wunschgutschein </b>
 							</span>
 						{/if}
 						<p style="line-height: 23px;color:#ff4444;font-size:20px;">
