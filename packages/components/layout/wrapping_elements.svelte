@@ -1,28 +1,25 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { indexed_package_assets } from 'asset_library/assets/packages';
+	import { is_wunschgutschein_offer } from 'asset_library/wunschgutschein_matcher';
 	import type { package_id } from 'asset_library/assets/packages';
 	import { minBy } from 'lodash-es';
-
 	import {
 		aktivierung,
 		bonus,
 		bonus_string,
 		get_offer_note,
-		get_offer_price,
-		get_price_string,
-		to_price_string
+		get_price_string
 	} from 'asset_library/prices';
 	import MultiImageOverlay from '../generators/multi_image_overlay.svelte';
 	import Button from '../elements/interactive/buttons/button.svelte';
 	import { onMount } from 'svelte';
 	import { enter_filter } from 'utils';
 	import { panic } from 'functional-utilities';
-	import { empty_offer } from 'asset_library/offer_description';
+	import { get_title } from 'asset_library/title';
 
 	export let title: string;
 	export let components: ReadonlyArray<{
-		title: string;
 		package_ids: package_id[];
 		route: string;
 	}>;
@@ -110,10 +107,10 @@
 	onMount(() => {
 		slide_timeout_id = setTimeout(slide, delay);
 	});
-	$: css_vars_style = (function () {
+	$: css_vars_style = (() => {
 		let combined_style = '';
 		for (const [key, value] of Object.entries(css_vars)) {
-			combined_style += '--' + key + ':' + value + ';';
+			combined_style += `--${key}:${value};`;
 		}
 		return combined_style;
 	})();
@@ -130,7 +127,7 @@
 {#if browser}
 	<div style={css_vars_style}>
 		<div class="main_container">
-			<h2>{title}</h2>
+			<h2 class="gradient_text">{title}</h2>
 			<div class="navigation">
 				{#each components as _, id}
 					<button
@@ -152,7 +149,15 @@
 						href={item.route}
 					>
 						<div class="inner_alignment">
-							<h3>{@html item.title}</h3>
+							<h3 class="sm_title">
+								<span class="gradient_text">{@html get_title(item.package_ids)}</span><br />
+								<span class="gradient_text red">
+									+ {#if is_wunschgutschein_offer(item.package_ids)}
+										€ 50 Gutschein &
+									{/if}
+									{@html bonus_string()} Bonus
+								</span>
+							</h3>
 							<MultiImageOverlay
 								packages={item.package_ids}
 								offset_multiplier={1 - Math.abs(element_wrap(id - wrap(current_x_pos))) / 2}
@@ -164,32 +169,25 @@
 								{#if item.package_ids.includes('cinema')}
 									<li>✓ Cinema inkl. Paramount+</li>
 								{/if}
+								{#if is_wunschgutschein_offer(item.package_ids)}
+									<li>✓ € 50 Wunschgutschein* (z.B. für Amazon, Zalando, MediaMarkt u.v.m.)</li>
+								{/if}
+								{#if bonus !== 0}
+									<li>✓ {@html bonus_string()} Bonus von uns nach ca. 8 Wochen</li>
+								{/if}
 								<li>✓ Sky Q Receiver gratis zum Abo dazu</li>
-								<li>✓ Nur im Web: € 0 statt € 29 einmalige Gebühr</li>
 								<li>✓ Optional: 12 Monate Discovery+ geschenkt</li>
 								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
 								{#if aktivierung === 0}
 									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
 								{/if}
-								{#if bonus !== 0}
-									<li>✓ € 50 Überweisung nach ca. 8 Wochen</li>
-								{/if}
-								<!-- <li>✓ 1 Monat deiner Abogebühren geschenkt</li> -->
 								<li>✓ 500 PAYBACK Basis Punkte</li>
 								<li>✓ Sofort losschauen mit Sky Go</li>
-								<!-- 
-							<li><b>✓ TVNOW PREMIUM Gutschein ab Ent+1 Paket über 12 Monate (Versand durch Sky)</b></li>
-							<li><b>✓ €&nbsp;50 Amazon Gutschein bei Ent+1 Paket oder €&nbsp;125 Amazon Gutschein bei Ent+2 Pakete oder Ent Plus+1 Paket (Versand durch Sky)</b></li>
-							<li><b>✓ Bis 31.12.21 keine Abogebühren durch Sky</b></li>
-							<li><b>✓ Sky Winteraktion: Bis zu 12 Monate Sky Sport gratis dazu</b></li>
-							<li><b>✓ Bis zu €&nbsp;100 Gutschrift von Sky</b>`</li>
-							<li><b>✓ 50% Rabatt auf Cinema, Bundesliga und/oder Sport</b></li>
-						-->
 								<li class="preisvorteil">
 									<mark>{@html get_offer_note(item.package_ids, true)}</mark>
 								</li>
 							</ul>
-							<h3 class="price">
+							<h3 class="price gradient_text">
 								{@html get_price_string(item.package_ids, `jahr`)} mtl.*
 							</h3>
 							<p class="bottom_text">
@@ -266,7 +264,7 @@
 	ul {
 		display: flex;
 		flex-direction: column;
-		gap: 9px;
+		gap: 4px;
 		text-align: center;
 		list-style: none;
 		padding-left: 0px;
@@ -391,5 +389,15 @@
 	.preisvorteil {
 		margin-top: 10px;
 		font-size: 20px;
+	}
+
+	.red {
+		background: linear-gradient(to right, #ef4d10 0%, #f26a37 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.sm_title {
+		font-size: 17px;
 	}
 </style>

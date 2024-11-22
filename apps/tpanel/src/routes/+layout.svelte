@@ -77,7 +77,7 @@
 			<div
 				class="flex flex-col items-center justify-center w-full max-w-md p-4 space-y-4 bg-white rounded-md shadow-md"
 			>
-				<h1 class="text-2xl font-bold">Login</h1>
+				<h1 class="text-2xl font-bold gradient_text">Login</h1>
 				<input
 					type="password"
 					class="input w-full input-bordered caret-white text-white"

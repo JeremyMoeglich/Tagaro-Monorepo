@@ -35,7 +35,7 @@
 		}
 	];
 
-	const left_badges = ['/images/badges/keine_aktivierung.svg'] as const;
+	const left_badges = ['/images/badges/50gutschein.png'] as const;
 	const showcase_assets = [
 		'entertainmentplus',
 		'cinema',
@@ -69,21 +69,24 @@
 					</div>
 				{/if}
 				<div>
-					<h1><slot name="title">Jetzt Sky Wunschpakete buchen</slot>*</h1>
+					<h1 class="gradient_text">
+						<slot name="title">Jetzt Sky Wunschpakete buchen</slot>*
+					</h1>
 					{#if enddate}
-						<h2>
+						<h2 class="gradient_text">
 							<Enddate enddate={enddate.date} format={enddate.format} />
 						</h2>
 					{/if}
 					{#if $$slots.subtitle0}
-						<h2 class="blue"><slot name="subtitle0" /></h2>
+						<h2 class="blue gradient_text"><slot name="subtitle0" /></h2>
 					{/if}
-					<h2 class="gray text-[22px]">
+					<h2 class="gray text-[20px]">
 						<slot name="subtitle1">
-							Bei Abschluss über TAGARO.DE zusätzlich eine € 50 Überweisung nach 8 Wochen*
+							Bei Vermittlung über TAGARO zusätzlich mit {@html bonus_string(true)} Bonus
+							<!-- Frühlingsaktion: TAGARO schenkt dir den Betrag eines Monats von deinem Wunschabo -->
 						</slot>
 					</h2>
-					<h3 class="no_gradient">
+					<h3>
 						<slot name="subtitle2">
 							Sky Neukunden-Angebote vom Onlinehändler mit schneller und zuverlässiger Bearbeitung.
 						</slot>
@@ -152,7 +155,7 @@
 		.points {
 			list-style: none;
 			text-align: left;
-			font-size: 18px;
+			font-size: 16px;
 			margin-right: 20px;
 			padding-left: 1em;
 			text-indent: -1em;

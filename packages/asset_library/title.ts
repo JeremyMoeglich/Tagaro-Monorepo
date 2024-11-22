@@ -1,27 +1,24 @@
-import { sort_assets } from './all_assets';
-import { type package_id, package_ids } from './assets/packages';
-import type { priceable_asset_id } from './asset_types';
-import { indexed_priceable_assets } from './priceable_asset';
-import { bonus_string, get_price_string } from './prices';
-import { nspace } from 'open_constants';
+import { sort_assets } from "./all_assets";
+import { type package_id, package_ids } from "./assets/packages";
+import type { priceable_asset_id } from "./asset_types";
+import { indexed_priceable_assets } from "./priceable_asset";
+import { bonus_string } from "./prices";
+import { nspace } from "open_constants";
 
-export function get_title(
-	ids: priceable_asset_id[],
-	short?: boolean | undefined,
-	escape = true
-): string {
-	const sp = escape ? nspace : ' ';
-	const praemie = short ? '' : ` +${sp}${bonus_string(escape)}${sp}Überweisung`;
-	// const praemie =  short ? '' : ` +${sp}${get_price_string(ids, "jahr")}${sp}Gutschrift (1${sp}Abobetrag${sp}geschenkt)`;
+export function get_title(ids: priceable_asset_id[]): string {
 	if (ids.filter((id) => package_ids.includes(id as package_id)).length === 4) {
-		if (ids.includes('entertainmentplus')) {
-			return 'Komplett inkl. Netflix' + praemie;
-		} else {
-			return 'Entertainment + 3 Pakete' + praemie;
+		if (ids.includes("entertainmentplus")) {
+			return "Komplett inkl. Netflix";
 		}
-	} else {
-		return `${sort_assets(ids)
-			.map((v) => indexed_priceable_assets[v].name)
-			.join(' + ')}${praemie}`;
+		return "Entertainment + 3 Pakete";
 	}
+	return `${sort_assets(ids)
+		.map((v) => indexed_priceable_assets[v].name)
+		.join(" + ")}`;
+}
+
+export function get_praemie(escapeSpace = true): string {
+	const sp = escapeSpace ? nspace : " ";
+	const praemie = `+${sp}${bonus_string(escapeSpace)}${sp}Bonus`;
+	return praemie;
 }
