@@ -153,7 +153,7 @@
 								<span class="gradient_text">{@html get_title(item.package_ids)}</span><br />
 								<span class="gradient_text red">
 									+ {#if is_wunschgutschein_offer(item.package_ids)}
-										€ 50 Gutschein &
+										€ 100 Gutschein &
 									{/if}
 									{@html bonus_string()} Bonus
 								</span>

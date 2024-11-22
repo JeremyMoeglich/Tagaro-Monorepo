@@ -45,7 +45,7 @@
 		<div class="image flex flex-col items-center">
 			<AssetImage ids={price_asset_ids} {animated} />
 			{#if is_wunschgutschein_offer(price_asset_ids) && !ebay_version}
-				<img src={make_url('/images/badges/100gutschein.png', dev)} alt="" class="w-32 mt-4" />
+				<img src={make_url('/images/badges/100gutschein.png', dev)} alt="" class="w-48 mt-4" />
 			{/if}
 		</div>
 

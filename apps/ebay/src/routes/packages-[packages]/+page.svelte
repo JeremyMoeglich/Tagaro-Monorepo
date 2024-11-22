@@ -78,7 +78,6 @@
 				<ul class="text-red-600 text-xl">
 					<li>
 						✓ Der beste TV-Deal des Jahres: € 50 Wunschgutschein von Sky und € 20 Bonus von TAGARO
-						(Aktion bis 26.11.2024)*
 					</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
