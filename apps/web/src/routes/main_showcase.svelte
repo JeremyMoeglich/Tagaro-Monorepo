@@ -10,7 +10,7 @@
 	hide_left={true}
 	points={[
 		`€ 100 Wunschgutschein von Sky nach ca. 8 Wochen per E-Mail. In Frage kommende Paketkombinationen beachten.`,
-		`${bonus_string()} Bonus von TAGARO nach ca. 8 Wochen auf dein Konto*`,
+		`${bonus_string()} Bonus von TAGARO nach ca. 8 Wochen auf dein Konto ODER € 50 Überweisung bei allen Paketkombinationen ohne Wunschgutschein*`,
 		'Nur im Web: € 0 statt € 29 einmalige Gebühr*',
 		'Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte',
 		`Sicher dir alles von Sky und spare bis zu € 96 im ersten Jahr*`
