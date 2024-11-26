@@ -12,5 +12,12 @@ export function is_wunschgutschein_offer(package_ids: asset_id[]) {
 		return true;
 	}
 
+	if (
+		package_ids.includes("entertainmentplus") &&
+		package_ids.includes("bundesliga")
+	) {
+		return true;
+	}
+
 	return false;
 }
