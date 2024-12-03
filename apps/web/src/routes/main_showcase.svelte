@@ -17,7 +17,7 @@
 	]}
 	top_margin={20}
 >
-	<span slot="title">Sky Black Friday Angebote mit € 100 Wunschgutschein + € 20 Bonus on top </span>
+	<span slot="title">Sky Angebote mit € 100 Wunschgutschein + € 20 Bonus on top </span>
 	<span slot="subtitle0">
 		Sky über TAGARO abonnieren und € 20 Bonus UND € 100 Wunschgutschein von Sky erhalten*
 	</span>

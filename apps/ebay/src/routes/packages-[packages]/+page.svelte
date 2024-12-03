@@ -77,11 +77,11 @@
 				<h1 class="title font-bold text-3xl gradient_text">{@html get_overview_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
 					<li>
-						✓ Das beste Angebot des Jahres: € 100 Wunschgutschein von Sky und € 20 Bonus von TAGARO*
+						✓ Hier triffst du die Besten: € 100 Wunschgutschein von Sky und € 20 Bonus von TAGARO*
 					</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
-					Das beste Angebot des Jahres. Zu vielen Paket-Kombinationen gibt es jetzt von Sky nach
+					Hier triffst du die Besten. Zu vielen Paket-Kombinationen gibt es jetzt von Sky nach
 					Abschluss einen € 100 Wunschgutschein durch Cadooz für zahlreiche Anbieter dazu (z.B.
 					Amazon, Douglas, MediaMarkt, Zalando uvm.). On top überweisen wir dir einen Bonus von € 20
 					auf dein Konto. Als Empfangsart kannst du Sat oder Kabel auswählen (Internet / Sky Stream

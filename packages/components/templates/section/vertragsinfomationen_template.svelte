@@ -224,7 +224,7 @@
 		</ul>
 	</div>
 	<div>
-		<h3 class={title_classes}>100 € Wunschgutschein von Sky (Black Friday):</h3>
+		<h3 class={title_classes}>100 € Wunschgutschein von Sky:</h3>
 		<p>
 			Die Aktion gilt nur für Neukunden bei Buchung der folgenden Paket-Kombinationen: Sky
 			Entertainment + Sky Fußball-Bundesliga für € 30,00 mtl. im Jahres-Abo, danach € 40 mtl., Sky
