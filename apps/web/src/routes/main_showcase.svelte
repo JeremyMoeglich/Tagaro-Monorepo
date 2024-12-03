@@ -17,14 +17,14 @@
 	]}
 	top_margin={20}
 >
-	<span slot="title">Sky Angebote mit € 100 Wunschgutschein + € 20 Bonus on top </span>
+	<span slot="title">Sky Angebote mit € 100 Wunschgutschein + € 40 Bonus on top </span>
 	<span slot="subtitle0">
-		Sky über TAGARO abonnieren und € 20 Bonus UND € 100 Wunschgutschein von Sky erhalten*
+		Sky über TAGARO abonnieren und € 40 Bonus UND € 100 Wunschgutschein von Sky erhalten*
 	</span>
 	<span slot="subtitle1">
 		Bei Abschluss vieler Paketkombinationen, gibt es von Sky einen € 100 Wunschgutschein und von <br
 		/>
-		TAGARO einen € 20 Bonus. Bitte in Frage kommende Kombinationen beachten*
+		TAGARO einen € 40 Bonus. Bitte in Frage kommende Kombinationen beachten*
 	</span>
 	<span slot="subtitle2"> </span>
 </ShowcaseTemplate>
