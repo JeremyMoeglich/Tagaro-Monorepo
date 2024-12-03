@@ -5,7 +5,7 @@
 </script>
 
 <div class="max-w-6xl ml-auto mr-auto">
-	<h3 class=" title font-bold text-3xl text-center gradient_text">{title}</h3>
+	<h3 class=" title font-bold text-3xl text-center">{title}</h3>
 	<div class="block_content">
 		<slot />
 	</div>

@@ -4,7 +4,7 @@
 
 <div class="text_block">
 	<div>
-		<h2 class="gradient_text">Unternehmen</h2>
+		<h2>Unternehmen</h2>
 		<p>
 			TAGARO Medienshop ist eine Domain der <br />
 			Möglich & Möglich GbR <br />
@@ -21,7 +21,7 @@
 	</div>
 
 	<div>
-		<h2 class="gradient_text">Adresse</h2>
+		<h2>Adresse</h2>
 		<p>
 			TAGARO Medienshop <br />
 			Möglich & Möglich GbR <br />
@@ -31,7 +31,7 @@
 	</div>
 
 	<div>
-		<h2 class="gradient_text">Finanzamt</h2>
+		<h2>Finanzamt</h2>
 		<p>
 			Finanzamt Hamm <br />
 			Steuer-Nummer: 322/5990/1202 <br />
@@ -40,7 +40,7 @@
 	</div>
 
 	<div>
-		<h2 class="gradient_text">Markenerwähnung „Sky“:</h2>
+		<h2>Markenerwähnung „Sky“:</h2>
 		<p>
 			Alle „Sky“-Marken einschließlich sonstiger geistiger Schutzrechte sind Eigentum der Sky
 			International AG und werden von Sky in Lizenz genutzt. Alle hier verwendeten Namen, Begriffe,
@@ -51,7 +51,7 @@
 	</div>
 
 	<div>
-		<h2 class="gradient_text">Bildnachweis:</h2>
+		<h2>Bildnachweis:</h2>
 		<p>
 			Teilweise werden auf tagaro.de Bilder bzw. Stockfotos von Shutterstock, Fotolia und der
 			Website Sky.de zu Vermittlungs- und Visualisierungszwecken der einzelnen Programmpakete
@@ -60,7 +60,7 @@
 	</div>
 
 	<div>
-		<h2 class="gradient_text">Zweck:</h2>
+		<h2>Zweck:</h2>
 		<p>
 			Die TAGARO Medienshop - Möglich & Möglich GbR ist ein von Sky autorisierter Onlinehändler der
 			„Sky Deutschland Fernsehen GmbH & Co. KG“ und dient dem Zweck, allen interessierten Neu- und
@@ -83,7 +83,7 @@
 	</div>
 
 	<div>
-		<h2 class="gradient_text">Post-Anschrift von Sky:</h2>
+		<h2>Post-Anschrift von Sky:</h2>
 		<p>
 			Sky Deutschland Fernsehen GmbH & Co. KG <br />
 			Medienallee 26 <br />
@@ -91,14 +91,14 @@
 		</p>
 	</div>
 	<div>
-		<h2 class="gradient_text">Kundenservice-Postanschrift (für Bestandskunden):</h2>
+		<h2>Kundenservice-Postanschrift (für Bestandskunden):</h2>
 		<p>
 			Sky Deutschland Fernsehen GmbH & Co. KG <br />
 			22033 Hamburg
 		</p>
 	</div>
 	<div>
-		<h2 class="gradient_text">Telefonischer Kundenservice von Sky:</h2>
+		<h2>Telefonischer Kundenservice von Sky:</h2>
 		<p>089 - 99 72 79 00 (gebührenfrei).</p>
 	</div>
 </div>

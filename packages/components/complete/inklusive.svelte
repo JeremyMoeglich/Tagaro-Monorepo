@@ -18,7 +18,7 @@
 
 <Line {space} />
 <div>
-	<h2 class="large title gradient_text">Im Angebot inklusive</h2>
+	<h2 class="large title">Im Angebot inklusive</h2>
 	{#if sky_q}
 		<SideBySide primary="left">
 			<span slot="left">

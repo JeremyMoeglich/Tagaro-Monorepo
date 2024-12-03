@@ -88,7 +88,7 @@
 </script>
 
 <div class="outer">
-	<h2 class="title large center gradient_text">Zubuchoptionen</h2>
+	<h2 class="title large center">Zubuchoptionen</h2>
 	<div class="grid">
 		{#each zubuchoptionen.filter((z) => {
 			if (variant === 'default') {

@@ -17,13 +17,11 @@
 	import Senders from '../../layout/senders.svelte';
 	import { make_url } from 'frontend/url';
 	import { dev } from '$app/environment';
-	import { is_wunschgutschein_offer } from 'asset_library/wunschgutschein_matcher';
 
 	export let price_asset_ids: priceable_asset_id[];
 	export let animated = false;
 	export let show_price: boolean;
 	export let show_senders: priceable_asset_id | undefined = undefined;
-	export let ebay_version = false;
 
 	// $: offer_string = price_asset_ids.every((id) =>
 	// 	typed_keys(indexed_package_assets).includes(id as package_id)
@@ -44,13 +42,13 @@
 	<div class="alignment">
 		<div class="image flex flex-col items-center">
 			<AssetImage ids={price_asset_ids} {animated} />
-			{#if is_wunschgutschein_offer(price_asset_ids) && !ebay_version}
-				<img src={make_url('/images/badges/100gutschein.png', dev)} alt="" class="w-48 mt-4" />
+			{#if !price_asset_ids.includes('dazn_unlimited')}
+				<img src={make_url('/images/badges/einmalige_gebuehr.svg', dev)} alt="" class="w-32 mt-4" />
 			{/if}
 		</div>
 
 		<div class="description">
-			<h2 class="title gradient_text">
+			<h2 class="title">
 				{@html get_title(price_asset_ids, price_asset_ids.length === 1)}
 				{#if price_asset_ids.length === 1}
 					- {indexed_priceable_assets[price_asset_ids[0]].note}
@@ -68,7 +66,7 @@
 					<SquarePackageList package_ids={price_asset_ids} />
 				{/if}
 				<div>
-					<h3 class:spaced={asset_square_images.length === 0} class="gradient_text">
+					<h3 class:spaced={asset_square_images.length === 0}>
 						12 Monate nur {@html to_price_string(primary_price)} mtl.*
 					</h3>
 					<p class="small_text">
@@ -119,7 +117,7 @@
 		font-size: 16px;
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 15px;
 		line-height: 150%;
 	}
 	.small_text {
