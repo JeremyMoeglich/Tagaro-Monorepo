@@ -62,7 +62,7 @@
 </script>
 
 <div class="outer">
-	<h2>Formular</h2>
+	<h2 class="gradient_text">Formular</h2>
 	<QSelect
 		name={'Bestellmethode'}
 		options={['Sky-Bestellung-5', 'Sky-Bestellung-4']}

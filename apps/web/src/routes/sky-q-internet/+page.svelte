@@ -7,7 +7,7 @@
 
 <div>
 	<div class="header-text-image-align">
-		<h1 class="main-title">
+		<h1 class="main_title gradient_text">
 			Das Sky Q Erlebnis einfach übers Internet.<br />Jetzt über uns ganz ohne Sat- oder
 			Kabel-TV-Anschluss buchbar
 		</h1>

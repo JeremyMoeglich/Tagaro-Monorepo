@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { get_offer_note, get_statt_price_string, get_price_string } from 'asset_library/prices';
+	import { get_price_string } from 'asset_library/prices';
 	import {
 		max_combination_length,
 		base_premium_package_combinations,
@@ -12,6 +12,7 @@
 	import { dev } from '$app/environment';
 	import { make_url } from 'frontend/url';
 	import { typed_entries } from 'functional-utilities';
+	import { is_wunschgutschein_offer } from 'asset_library/wunschgutschein_matcher';
 
 	const col_amount = max_combination_length + 1;
 
@@ -58,8 +59,13 @@
 				{/each}
 				<div class="cell text-cell" style:--row={row_index + 1} style:--col={col_amount}>
 					<div class="text-cell-inner">
-						{#if get_offer_note(row)}
-							<span class="nowrap color_text" style="font-size:15px;padding-bottom: 15px;letter-spacing:.2px;"><b>{@html get_offer_note(row)}</b></span>
+						{#if is_wunschgutschein_offer(row)}
+							<span
+								class="nowrap gradient_text red"
+								style="font-size:15px;padding-bottom: 15px;letter-spacing:.2px;"
+							>
+								<b>✓ Inkl. € 100 Wunschgutschein </b>
+							</span>
 						{/if}
 						<p style="line-height: 23px;color:#ff4444;font-size:20px;">
 							<b>
@@ -164,5 +170,11 @@
 		font-size: 13px;
 		margin-top: 4px;
 		line-height: 19px;
+	}
+	.red {
+		background: linear-gradient(to right, #ef4d10 0%, #f26a37 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 </style>
