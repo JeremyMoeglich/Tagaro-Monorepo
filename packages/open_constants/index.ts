@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 
 export const ebay = {
 	name: 'eBay Angebote',
-	route: 'https://www.ebay.de/sch/101366/i.html?_ssn=tagaro.medien'
+	route: 'https://www.ebay.de/usr/tagaro.medien'
 };
 export const aboformular = 'https://fd10.formdesk.com/tagaro/Sky-Bestellung-5';
 export const gbr = 'Möglich & Möglich GbR';
