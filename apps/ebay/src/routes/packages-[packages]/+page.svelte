@@ -25,7 +25,7 @@
 			[['entertainment'], 'Titel'],
 			[
 				['entertainment', 'sport'],
-				`Sky Sport Abo inkl. der Formel 1 2024 live in HD für € 25 mtl.*`
+				`Sky Sport Abo inkl. der Formel 1 2025 live in HD für € 25 mtl.*`
 			],
 			[['entertainment', 'cinema'], 'Titel'],
 			[

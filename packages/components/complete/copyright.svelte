@@ -1,7 +1,7 @@
 <script lang="ts"></script>
 
 <div>
-	<p class="copyright">© 2006-2024 - TAGARO Medienshop Möglich & Möglich GbR</p>
+	<p class="copyright">© 2006-2025 - TAGARO Medienshop Möglich & Möglich GbR</p>
 	<p class="notice">
 		Alle Sky Marken sind Eigentum der Sky International AG und werden von der Sky Deutschland
 		Fernsehen GmbH & Co. KG in Lizenz genutzt. Alle hier verwendeten Namen, Begriffe, Zeichen, Logos
