@@ -224,21 +224,9 @@
 		</ul>
 	</div>
 	<div>
-		<h3 class={title_classes}>100 € Wunschgutschein von Sky:</h3>
+		<h3 class={title_classes}>Rabatt/Ersparnis:</h3>
 		<p>
-			Die Aktion gilt nur für Neukunden bei Buchung der folgenden Paket-Kombinationen: Sky
-			Entertainment + Sky Sport + Sky Cinema + Sky Fußball-Bundesliga für € 40,00 mtl. im
-			Jahres-Abo, danach € 60 mtl. bzw. Sky Entertainment Plus + Sky Sport + Sky Cinema + Sky
-			Fußball-Bundesliga für € 45,00 mtl. im Jahres-Abo, danach € 65 mtl. Jeder Kunde erhält einen
-			Gutschein von Cadooz in Höhe von € 100. Der Gutschein wird nach Ablauf der Widerrufsfrist und
-			positiver Bonitätsprüfung sowie des ersten positiven Zahlungseingangs bei Sky, in Form eines
-			digitalen Gutscheincodes ca. 8 Wochen nach Abonnementvertragsabschluss per E-Mail versendet.
-			Mit diesem Code kann über sky.cadooz.com ein Gutschein bei einem von Cadooz gelisteten
-			Anbieter (z.B. Amazon, Douglas, MediaMarkt, Zalando u. v. m.) im Wert von € 100 aktiviert
-			werden. Der Versand der Gutscheine erfolgt durch die Firma Cadooz GmbH. Der Sky Kunde erklärt
-			sich damit einverstanden, dass die Sky Deutschland Fernsehen GmbH & Co. KG zur Abwicklung
-			(Versand des Gutscheins) ausschließlich Kontaktdaten (Anrede, Vor- und Nachname,
-			E-Mail-Adresse) an die Cadooz GmbH übermittelt. Barauszahlung sowie Umtausch ausgeschlossen.
+			Die Ersparnis ergibt sich aus dem regulären Jahresabonnementpreis im Vergleich zum rabattierten Jahresabonnementpreis.
 		</p>
 	</div>
 	<div>

@@ -59,7 +59,7 @@
 				{/each}
 				<div class="cell text-cell" style:--row={row_index + 1} style:--col={col_amount}>
 					<div class="text-cell-inner">
-						{#if is_wunschgutschein_offer(row)}
+						{#if false && is_wunschgutschein_offer(row)}
 							<span
 								class="nowrap gradient_text red"
 								style="font-size:15px;padding-bottom: 15px;letter-spacing:.2px;"

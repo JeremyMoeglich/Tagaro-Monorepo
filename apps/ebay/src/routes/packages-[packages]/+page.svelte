@@ -76,26 +76,22 @@
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl gradient_text">{@html get_overview_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					<li>
-						✓ Hier triffst du die Besten: € 100 Wunschgutschein von Sky und € 20 Bonus von TAGARO*
-					</li>
+					<li>✓ Bonus von TAGARO: € 30 Bonus on top bei erfolgreichem Vertragsabschluss*</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
-					Hier triffst du die Besten. Zu vielen Paket-Kombinationen gibt es jetzt von Sky nach
-					Abschluss einen € 100 Wunschgutschein durch Cadooz für zahlreiche Anbieter dazu (z.B.
-					Amazon, Douglas, MediaMarkt, Zalando uvm.). On top überweisen wir dir einen Bonus von € 20
-					auf dein Konto. Als Empfangsart kannst du Sat oder Kabel auswählen (Internet / Sky Stream
-					ist momentan noch nicht vermittelbar). Den passenden Sky Q Receiver schickt dir Sky
-					kostenlos zu. Wir bieten ebenso sämtliche Zubuchoptionen wie Multiscreen zu deinem Vertrag
-					an. Und Sky Go ist immer inklusive! Deine PAYBACK Nummer für 500 °Punkte tragen wir
-					ebenfalls gerne ein. Über die App oder online kannst du für weitere Punkte vorab einen
-					eCoupon aktivieren. Du profitierst bei TAGARO von einer zuverlässigen Betreuung sowie
-					jahrelanger Erfahrung seit 2006.
+					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei
+					Buchung des Cinema Pakets, erhältst du Paramount+ dazu. Zusätzlich überweisen wir dir
+					einen Bonus von € 30. Der Empfang ist über Sat oder Kabel möglich (Internet / Sky Stream
+					ist momentan noch nicht vermittelbar). Wir bieten ebenso sämtliche Zubuchoptionen zu
+					deinem Vertrag wie Multiscreen und DAZN an. Deine PAYBACK Nummer für 500 °Punkte tragen
+					wir gerne ein. Über die PAYBACK App oder online sind weitere Punkte möglich, wenn du vor
+					Aboaufnahme einen eCoupon aktivierst. Du profitierst bei TAGARO von einer schnellen und
+					zuverlässigen Betreuung sowie jahrelanger Erfahrung seit 2006.
 				</p>
 			</div>
 			<img
 				class="rounded-xl shadow-lg w-full border-slate-300 border-[1px] max-w-4xl"
-				src={make_url('/images/visuals/sky1124_teaser.png', dev)}
+				src={make_url('/images/visuals/sky0125_teaser.png', dev)}
 				alt=""
 			/>
 			<!-- <Wunschgutschein /> -->
@@ -117,7 +113,7 @@
 				</p>
 			</Block>
 			<AllOverviews clickable={false} ebay_version={true} />
-			<Inklusive sky_q={false} space={'0px'} version={'ebay'} />
+			<Inklusive sky_q={false} space={'0px'} version={'ebay'} peacock={false} />
 
 			<div class="max-w-7xl w-full p-5">
 				<Line />

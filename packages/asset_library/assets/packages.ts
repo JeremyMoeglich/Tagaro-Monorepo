@@ -114,7 +114,7 @@ export const packages_assets = [
 		id: 'bundesliga',
 		price: { jahr: 14, monat: 20, singular: 0 },
 		name: 'Bundesliga',
-		note: 'Die Heimat der Bundesliga - garantiert bis 2025.',
+		note: 'Die Heimat der Bundesliga – garantiert bis 2029',
 		image: {
 			normal: `${packages_image_location}normal/bundesliga.png`,
 			square: `${packages_image_location}square/bundesliga.webp`
@@ -124,9 +124,11 @@ export const packages_assets = [
 			selectors: []
 		},
 		aspects: [
-			'Alle Samstagsspiele der Bundesliga live und exklusiv',
-			'Alle Spiele der 2. Bundesliga live',
-			'Alle Relegationsspiele und der Supercup live'
+			'Alle Bundesliga-Samstagsspiele inkl. Topspiel live und in voller Länge – exklusiv bei Sky',
+			'NEU ab der Saison 2025/26: zusätzlich alle Freitagsspiele live und exklusiv bei Sky',
+			'Die komplette 2. Bundesliga live – exklusiv bei Sky',
+			'Alle Relegationsspiele und der Supercup live',
+			'Bundesliga Highlights XXL: Zusammenfassungen der Freitag- und Sonntagsspiele der Bundesliga'
 		],
 		sort_priority: 4,
 		senders: senders.bundesliga

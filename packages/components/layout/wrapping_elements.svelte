@@ -152,9 +152,9 @@
 							<h3 class="sm_title">
 								<span class="gradient_text">{@html get_title(item.package_ids)}</span><br />
 								<span class="gradient_text red">
-									+ {#if is_wunschgutschein_offer(item.package_ids)}
+									+ <!-- {#if is_wunschgutschein_offer(item.package_ids)}
 										€ 100 Gutschein &
-									{/if}
+									{/if} -->
 									{@html bonus_string()} Bonus
 								</span>
 							</h3>
@@ -168,9 +168,6 @@
 								{/if}
 								{#if item.package_ids.includes('cinema')}
 									<li>✓ Cinema inkl. Paramount+</li>
-								{/if}
-								{#if is_wunschgutschein_offer(item.package_ids)}
-									<li>✓ € 100 Wunschgutschein* (z.B. für Amazon, Zalando, MediaMarkt u.v.m.)</li>
 								{/if}
 								{#if bonus !== 0}
 									<li>✓ {@html bonus_string()} Bonus von uns nach ca. 8 Wochen</li>

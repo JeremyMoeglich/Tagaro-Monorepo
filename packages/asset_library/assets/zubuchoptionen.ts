@@ -95,14 +95,14 @@ export const zubuchoptionen_assets: ReadonlyArray<Priceable_Asset<zubuchoption_i
 			square: `${zubuchoption_image_location}dazn.svg`
 		},
 		aspects: [
-			'Alle Freitags- und Sonntagsspiele der Bundesliga – garantiert bis 2025',
-			'121 Spiele UEFA Champions League inkl. Konferenz – garantiert bis 2027',
+			'Bundesliga: Alle Freitags- & Sonntagsspiele (ab August 2025 die Konferenz am Samstag & alle Sonntagsspiele)',
+			'186 exklusive Spiele UEFA Champions League inkl. Konferenz live',
 			'Europäische Top-Ligen und Pokalwettbewerbe',
 			'UEFA Women´s Champions League und Frauen-Bundesliga',
 			'NFL ENDZN und Prime-Time-Spiele',
 			'Die NBA mit über 200 Spielen inklusive der Playoffs und den Finals',
 			'Kampfsport mit UFC und Boxen',
-			'Weiterer Spitzensport aus Darts, Handball und Tennis',
+			'Weiterer Spitzensport aus Darts, Handball, Golf und Tennis',
 			'Alles per App und das Beste von DAZN zeitgleich über die linearen Kanäle DAZN1 und DAZN2',
 			'Eine Abrechnung für Sky und DAZN'
 		],
