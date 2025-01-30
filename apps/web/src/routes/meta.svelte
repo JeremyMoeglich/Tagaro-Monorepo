@@ -10,8 +10,7 @@
 	 * A short description of the website or webpage.
 	 * @type {string}
 	 */
-	export let websiteDescription =
-		`Sky Abo nach Wahl + € ${bonus} Bonus vom Sky Onlinehändler ✓ Täglicher Versand ✓ Immer sparen ✓ Service seit 2006 ✓ Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.`;
+	export let websiteDescription = `Sky Abo nach Wahl + € ${bonus} Bonus vom Sky Onlinehändler ✓ Täglicher Versand ✓ Immer sparen ✓ Service seit 2006 ✓ Sky Cinema, Sport und Bundesliga mit Rabatt im Jahresabo inkl. Sky Q hier bestellen.`;
 
 	/**
 	 * The canonical URL of the website or webpage.
@@ -53,7 +52,7 @@
 	 * The title of the website or webpage.
 	 * @type {string}
 	 */
-	export let websiteTitle = `Sky Abo + ${bonus}€ Bonus | Spare bis zu 96€ | seit 2006`;
+	export let websiteTitle = `Sky Abo + ${bonus}€ Bonus on top | Februar 2025`;
 </script>
 
 <svelte:head>

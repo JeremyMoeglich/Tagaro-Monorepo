@@ -69,8 +69,9 @@
 					</div>
 				{/if}
 				<div>
-					<h1 class="gradient_text">
-						<slot name="title">Jetzt Sky Wunschpakete buchen</slot>*
+					<h1>
+						<span class="gradient_text">Sky Verträge vom Sky Onlinehändler</span>
+						<span class="text-red-500">+ {@html bonus_string()} Bonus</span>
 					</h1>
 					{#if enddate}
 						<h2 class="gradient_text">

@@ -16,9 +16,6 @@
 	]}
 	top_margin={20}
 >
-	<span slot="title">
-		Sky Verträge vom Sky Onlinehändler ab {@html get_price_string(['entertainmentplus'], 'jahr')} mtl.
-	</span>
 	<span slot="subtitle0">
 		z.B. Entertainment Plus für {@html get_price_string(['entertainmentplus'], 'jahr')} mtl. oder alle Sky
 		Pakete inkl. Paramount+ für
