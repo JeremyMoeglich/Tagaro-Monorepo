@@ -70,8 +70,8 @@
 				{/if}
 				<div>
 					<h1>
-						<span class="gradient_text">Sky Verträge vom Sky Onlinehändler</span>
-						<span class="text-red-500">+ {@html bonus_string()} Bonus</span>
+						<span class="gradient_text">Sky Vertrag vom Sky Onlinehändler</span>
+						<span class="text-red-500">+ {@html bonus_string()} Bonus auf dein Konto</span>
 					</h1>
 					{#if enddate}
 						<h2 class="gradient_text">
