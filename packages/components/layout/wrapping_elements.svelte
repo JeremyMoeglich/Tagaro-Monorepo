@@ -175,9 +175,6 @@
 								<li>✓ Sky Q Receiver gratis zum Abo dazu</li>
 								<li>✓ Optional: 12 Monate Discovery+ geschenkt</li>
 								<li>✓ 12 Monatsabo, danach mtl. kündbar</li>
-								{#if aktivierung === 0}
-									<li>✓ € 0 statt € 29 einmalige Gebühr</li>
-								{/if}
 								<li>✓ 500 PAYBACK Basis Punkte</li>
 								<li>✓ Sofort losschauen mit Sky Go</li>
 								<li class="preisvorteil">

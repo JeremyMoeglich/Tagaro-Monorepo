@@ -9,8 +9,7 @@
 	redirect_url={'/angebote/entertainmentplus-cinema-sport-bundesliga'}
 	hide_left={true}
 	points={[
-		`€ 30 Bonus von TAGARO nach ca. 8 Wochen auf dein Konto*`,
-		`Nur im Web: € 0 statt € 29 einmalige Gebühr*`,
+		`€ 20 Bonus von TAGARO nach ca. 8 Wochen auf dein Konto*`,
 		`Zusätzlich 500 PAYBACK Basis-Punkte. Oder über die PAYBACK App oder online weitere Punkte, bei Aktivierung eines eCoupons vor Aboaufnahme`,
 		`Sicher dir alles von Sky und spare bis zu € 96 im ersten Jahr*`
 	]}

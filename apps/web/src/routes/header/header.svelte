@@ -47,7 +47,7 @@
 									$page.url.pathname === pair[1] ? 'current_route' : ''
 								}`}
 								href={pair[1]}
-								target={pair[1].includes('ebay') ? '_blank' : '_self'}
+								target={(pair[1].includes('ebay') || pair[1].includes("trustami")) ? '_blank' : '_self'}
 							>
 								{pair[0]}
 							</a>

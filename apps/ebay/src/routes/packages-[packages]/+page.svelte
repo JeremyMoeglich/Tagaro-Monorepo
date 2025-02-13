@@ -76,7 +76,7 @@
 			<div class="text-center flex flex-col gap-2">
 				<h1 class="title font-bold text-3xl gradient_text">{@html get_overview_title(packages)}</h1>
 				<ul class="text-red-600 text-xl">
-					<li>✓ Bonus von TAGARO: € 30 Bonus on top bei erfolgreichem Vertragsabschluss*</li>
+					<li>✓ Bonus von TAGARO: € 20 Bonus on top bei erfolgreichem Vertragsabschluss*</li>
 				</ul>
 				<p class="max-w-6xl mt-2">
 					Entdecke die ganze Vielfalt von Sky mit unseren Wunschpaketen zum Vorteilspreis. Bei

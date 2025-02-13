@@ -30,6 +30,7 @@
 		]),
 		'Sky Q': '/sky-q',
 		Kontakt: '/kontakt',
+		"Bewertungen 🡆": "https://www.trustami.com/erfahrung/tagaro-medienshop-bewertung",
 		[open_constants.ebay.name + ' 🡆']: open_constants.ebay.route
 	} as const;
 	const navbar_entries = typed_entries<string, (typeof navbar_elements)[string]>(navbar_elements);
@@ -124,7 +125,7 @@
 							title={pair[0] + ' öffnen'}
 							on:click={close_sidebar}
 							href={pair[1]}
-							target={pair[1].includes('ebay') ? '_blank' : '_self'}
+							target={(pair[1].includes('ebay') || pair[1].includes("trustami")) ? '_blank' : '_self'}
 						>
 							<p class="no_margin small_start_margin">{@html pair[0]}</p>
 						</a>

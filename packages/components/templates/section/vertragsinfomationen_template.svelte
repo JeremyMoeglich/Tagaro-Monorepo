@@ -44,7 +44,6 @@
 						</div>
 					{/each}
 				</div>
-				<AktivierungSentence />
 				<!-- <ul>
 					<li><b>Inklusive: </b></li>
 					<li>- UHD ... Temp</li>
